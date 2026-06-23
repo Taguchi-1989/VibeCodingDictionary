@@ -120,19 +120,18 @@ PagedAttention、continuous batching、量子化（AWQ/GPTQ）、投機的デコ
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- PagedAttention は初めて聞いて分からなかった。メモリの断片化を防ぐ・再配置の手間がなくなる、という話が OS の仮想メモリ（ページング）と同じ仕組みと分かって腹落ちした。
+- continuous batching は「処理の時間の隙をなくす（GPU を遊ばせない）」という理解でつかめた。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: パソコン（OS）の仕組みと基本的に一緒なんだな、と感じる。
+- 👍 良い点: パソコンで既に成功している仕組みを反映できているところ。
+- 👎 ダメな点: 特にない。
+- 👥 誰向けか: 自分のような（OS・コンピュータの仕組みを知っている）人向け。他分野で枯れた技術を借りてくる発想が分かる人に響く。
 <!-- user-input:end key="my_comment" -->
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
@@ -194,6 +193,34 @@ Hand-drawn editorial line illustration, 2:1 horizontal composition (1254x627); m
 - Kwon et al., "Efficient Memory Management for Large Language Model Serving with PagedAttention" (vLLM, 2023) https://arxiv.org/abs/2309.06180 — checked 2026-06-22（PagedAttention と continuous batching の一次出典。KV キャッシュ断片化の問題提起とスループット向上の評価）
 - vLLM 公式ドキュメント https://docs.vllm.ai/ — checked 2026-06-22（`vllm serve`、OpenAI 互換 API、`gpu_memory_utilization`・`max_model_len`・`tensor_parallel_size` 等の設定、量子化・投機的デコード対応の確認）
 - vLLM GitHub リポジトリ https://github.com/vllm-project/vllm — checked 2026-06-22（OSS であること・対応モデル・active な開発状況の確認）
+
+### 将来アーキテクチャ調査メモ（2026-06-23 / 著者との対話で深掘り）
+
+*KV キャッシュをメモリ階層に逃がす流れと、それがローカル LLM・将来アーキに与える影響。誌面には出さない裏取りメモ。*
+
+**1. KV キャッシュの階層化は「研究 → 実装・製品化」フェーズに入った**
+- LMCache: GPU HBM → CPU DRAM → NVMe SSD の3階層を実装、vLLM/SGLang と統合。レイテンシ 3〜10倍削減を実証。v0.4.2 で layer-wise compute-I/O pipelining・GPU Direct Storage 対応。https://arxiv.org/abs/2510.09665 — checked 2026-06-23
+- Tutti: SSD 退避を長文脈サービングで実用化する専用論文。https://arxiv.org/html/2605.03375 — checked 2026-06-23
+- NVIDIA が CES 2026 で ICMSP（3階層 KV キャッシュ向けハードアーキ）発表
+- 肝: 「全部逃がす」ではなく、プリフェッチ・pipelining・GPU Direct Storage で「容量不足→帯域不足のすり替わり」を隠す賢い退避
+
+**2. 容量を逃がしてもローカルが一気に楽にはならない（帯域の壁）**
+- GPU HBM 〜3TB/s / CPU RAM（PCIe5経由）〜64GB/s / NVMe SSD 〜14GB/s。decode は毎トークン KV 全体を読むので、SSD 退避は「容量は確保できるが読み出しが律速」
+- 効くのはシングルユーザ・長文脈の一人作業。多人数同時提供（クラウド混雑）は HBM 帯域勝負なので階層化では救えない＝ローカルへの非対称な恩恵
+
+**3. Apple 統合メモリ優位は2026年に崩れつつある**
+- AMD Strix Halo（Ryzen AI Max+ 395）: x86 初の 128GB 統合メモリ、256GB/s、CES 2026 で 235B MoE をローカル実演。$/GB は Apple より安い（AMD $25.77/GB vs M3 Ultra $41.66/GB）
+- AMD 次世代 Gorgon Halo: 最大192GB、Zen5+RDNA3.5。NVIDIA DGX Spark/GB10 も 128GB 統合メモリで対抗
+- Apple の残る強み＝帯域（M3 Ultra 819GB/s vs Strix Halo 256GB/s）。token 生成は帯域律速なので同容量なら Mac が速い。容量・価格は並ばれ、帯域でまだ逃げている
+- Intel は大容量統合メモリ勝負には踏み込まず NPU 路線
+
+**4. PCIe 新規格と将来の賭け先**
+- 現ボトルネック: マルチGPU を PCIe5 x16 = 128GB/s で繋ぐと詰まる（NVLink は 900GB/s で7倍速）
+- PCIe 7.0 が x16 256GB/s/方向を策定中だが、HBM の数TB/s から見ればまだ一桁遅い＝根本解決にならない
+- 本命は CXL（メモリプール化）＋ near-data processing（運ばずにメモリ近傍で計算）。Beluga https://arxiv.org/pdf/2511.20172 ／ PNM for 1M-token https://arxiv.org/pdf/2511.00321 ／ GTC 2026 で Penguin が CXL KV キャッシュサーバ製品発表
+- 量子化も並走（TurboQuant が 3.5bit まで圧縮）。prefill/decode 分離（disaggregation）と decode 専用 SRAM アクセラレータも
+- 構図: 短期=ソフトで殴る（階層化・量子化）／中期=CXL でプール化＋運ばない／構造変化=役割別 GPU 分離。いずれも他分野（DC のメモリ共有、組込/DB の near-data）からの借り物
+- 注記: 2025年8月以降の動きが速い領域。書籍化前に LMCache 到達点・llama.cpp の KV オフロード実用度・各社統合メモリ帯域を一次情報で再確認すること
 
 ## 備考
 

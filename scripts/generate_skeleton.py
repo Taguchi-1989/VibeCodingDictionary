@@ -72,6 +72,13 @@ CATEGORY_DIR_MAP = {
 SLUG_OVERRIDES: dict[str, str] = {
     # Lv6 自己学習シェルフ（和文・混在タイトル用、2026-06-22）
     "J-94": "parallelism",
+    "J-95": "semiconductor_supply_chain",
+    "J-96": "semiconductor_equipment",
+    "J-97": "electronic_materials",
+    "J-98": "critical_minerals_geopolitics",
+    "J-99": "cowos",
+    "J-101": "semiconductor_process",
+    "C-15": "intel",
     "J-89": "moe_routing",
     "J-25": "tokenizer_bpe",
     "J-26": "latent_space",

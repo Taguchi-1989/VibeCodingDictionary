@@ -125,19 +125,18 @@ KV Cache、MHA / MQA、MLA、num_key_value_heads、Llama / GLM の技術レポ�
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- MHA / GQA / MQA の三文字略称が最初は分かりにくかった。
+- Multi と Attention（M・A）が共通と分かると、残りの G（Grouped）や Q（Query）が何を意味するか予測できるようになり、覚えやすくなった。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: 三文字略称がずらっと並んでいてとっつきにくかった。
+- 👍 良い点: KV キャッシュが課題というところに対して、ヘッド共有でちゃんとアプローチしているのが分かる。
+- 👎 ダメな点: バニラ（MHA）からどんどん複雑になっていくので、パッと全体像が掴めない。
+- 👥 誰向けか: 技術の進化の流れを理解したい人向け。「なぜ進歩したか」を答えられると手の内に技術がある感じがする。
 <!-- user-input:end key="my_comment" -->
 
 
