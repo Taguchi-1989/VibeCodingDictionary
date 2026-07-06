@@ -78,6 +78,7 @@ SLUG_OVERRIDES: dict[str, str] = {
     "J-98": "critical_minerals_geopolitics",
     "J-99": "cowos",
     "J-101": "semiconductor_process",
+    "J-102": "chiplet_3d_stacking",
     "C-15": "intel",
     "J-89": "moe_routing",
     "J-25": "tokenizer_bpe",

@@ -209,6 +209,19 @@
 - 出典: Tom's Hardware(Intel 7nm broken / 18A production before N2), Motley Fool(Intel Stealing Foundry Spotlight), TechTimes(18A-P risk production) — checked 2026-06-23
 - 関連既存エントリ: C-9 NVIDIA / C-12 TSMC / C-14 AMD（company）。Intel は未エントリ
 
+## 17. 微細化から3D積層へ（CPU/GPUアーキの進化・More than Moore）
+
+著者の問い「CPU/GPUの進歩は微細化以外に何があるか。積層・3次元方向か？」への答え=その通り。進歩は2本柱（①微細化=横に小さく・限界接近 / ②積層・統合=縦＋分割・いま主戦場）。
+
+- **チップレット**: 大きな1枚（モノリシック）をやめ機能ごとに小チップに分割し最適プロセスで作って後で繋ぐ。小ダイは歩留まり高＋旧プロセスの枝は安い。AMDが先行（RDNA 3でGPU消費者向け初のチップレット化、TSMC InFO-RDLで接続）
+- **3D積層**: チップを縦に重ねる。AMD 3D V-Cache（CPU上にSRAMダイを直接積む、TSV＋ハイブリッドボンディング、帯域従来比10倍、2026/4 Ryzen 9 9950X3D2は両CCDに積層）。HBMのメモリ縦積みも同類
+- **CFET（次世代）**: トランジスタ自体を縦積み（NMOSの上にPMOS）。GAAの次、TSMC研究中
+- **裏面給電（BSPDN）**: 電源を裏面に回し表を信号専用に。混雑解消＋抵抗減。Intel PowerVia（18Aの目玉）、TSMCも
+- **材料・加工**: ハイブリッドボンディング（はんだ無し銅直接接合、20μm以下ピッチ、3D積層の要）、ガラスコア基板（樹脂より平坦・大型化に強い、AMD/Intel/Samsung）、マイクロ流路冷却（チップに水路を彫り直接冷却）
+- **パラダイム転換**: Moore's Law（2次元微細化）→ More than Moore / CMOS 2.0（3次元の積層・分割・統合へ主戦場が移る）。方法論どおり「2次元微細化という手段が限界＝敵→3次元という新手段で突破」
+- 出典: IEEE Spectrum(3D Chip Stacking), CMOS 2.0(arXiv:2510.04535), Tom's Hardware(AMD 2nd-gen 3D V-Cache), PatSnap(Advanced packaging 2026) — checked 2026-06-23
+- エントリ化: J-102「チップレットと3D積層」(Lv6) として展開（2026-06-23）
+
 ## エントリ化メモ（2026-06-23 著者と合意）
 
 この4層構造は Lv6 独立エントリ群に育てる。候補（J章の空き番号は要確認）:
