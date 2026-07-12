@@ -384,7 +384,7 @@ J-105,,コンテキスト管理,term_general,agent_loop,skeleton,Lv6自己学習
 J-106,,ハーネスエンジニアリング,term_general,agent_loop,skeleton,Lv6自己学習シェルフ（刊行外）。LLM as OS・器全体,content/entries/term_general/J-106_harness_engineering.md
 J-107,,自律ループとガードレール,term_general,agent_loop,skeleton,Lv6自己学習シェルフ（刊行外）。ゴール→コマンド→停止条件。ralph/ultraworkの実体,content/entries/term_general/J-107_autonomous_loop_guardrails.md
 J-108,,Ralph Loop,term_general,agent_loop,skeleton,Lv6自己学習シェルフ（刊行外）。状態をディスクに逃がすループ,content/entries/term_general/J-108_ralph_loop.md
-J-109,,モデルルーティング,term_general,model_routing,skeleton,Lv6自己学習シェルフ（刊行外）。カスケード・ステップ別・スイッチングコスト,content/entries/term_general/J-109_model_routing.md
+J-109,,モデルルーティング,term_general,model_routing,drafting,Lv6自己学習シェルフ（刊行外）。カスケード・ステップ別・スイッチングコスト,content/entries/term_general/J-109_model_routing.md
 J-110,,不確実性デファーラル,term_general,model_routing,skeleton,Lv6自己学習シェルフ（刊行外）。小→大/人間への委譲。R2V・確信度ゲート,content/entries/term_general/J-110_uncertainty_deferral.md
 J-111,,人間の認知ボトルネック,term_general,human_cognition,skeleton,Lv6自己学習シェルフ（刊行外）。監督負担・認知過負荷・自動化バイアス,content/entries/term_general/J-111_human_cognition_bottleneck.md
 J-112,,認知コストの定量化,term_general,human_cognition,skeleton,Lv6自己学習シェルフ（刊行外）。resolution velocity・UX心理監査,content/entries/term_general/J-112_cognitive_cost_quantification.md

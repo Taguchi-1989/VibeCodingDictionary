@@ -1,13 +1,9 @@
 ---
-id:
-  "{ ID }":
-title:
-  "{ TITLE }":
+id: J-113
+title: 生成UIとagent-native設計
 title_reading:
-category:
-  "{ CATEGORY }":
-subtype:
-  "{ SUBTYPE }":
+category: term_general
+subtype: human_cognition
 experience_level:
 reader_level:
 importance:
@@ -17,8 +13,7 @@ start_date:
 end_date:
 version_status:
 pricing_note:
-evaluation_date:
-  "{ TODAY }":
+evaluation_date: 2026-07-12
 related_terms: []
 status: skeleton
 ---

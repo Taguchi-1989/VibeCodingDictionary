@@ -1,13 +1,9 @@
 ---
-id:
-  "{ ID }":
-title:
-  "{ TITLE }":
+id: {{ID}}
+title: {{TITLE}}
 title_reading:
-category:
-  "{ CATEGORY }":
-subtype:
-  "{ SUBTYPE }":
+category: {{CATEGORY}}
+subtype: {{SUBTYPE}}
 experience_level:
 reader_level:
 importance:
@@ -17,8 +13,7 @@ start_date:
 end_date:
 version_status:
 pricing_note:
-evaluation_date:
-  "{ TODAY }":
+evaluation_date: {{TODAY}}
 related_terms: []
 status: skeleton
 ---
