@@ -1,76 +1,59 @@
 ---
 id: J-112
 title: 認知コストの定量化
-title_reading:
+title_reading: ニンチコストノテイリョウカ
 category: term_general
 subtype: human_cognition
-experience_level:
-reader_level:
-importance:
+experience_level: research_only
+reader_level: 6
+importance: D
 figure_type: structure
 page_layout: spread_v1
 start_date:
 end_date:
-version_status:
-pricing_note:
-evaluation_date: 2026-07-12
-related_terms: []
-status: skeleton
+version_status: active
+pricing_note: none
+evaluation_date: 2026-06-23
+related_terms:
+  - 人間の認知ボトルネック
+  - 生成UIとagent-native設計
+  - 自律ループとガードレール
+  - 不確実性デファーラル
+  - 監督の持続可能性
+status: drafting
 ---
 
 # 認知コストの定量化
 
 <!--
-バイブコーディング図鑑 スケルトン雛形 v1（2026-04-28 追加）
-- 構造だけ先に置いた状態。本文は status を `drafting` に上げた段階で entry-writer が埋める
-- validator は status: skeleton を archived/sample と同様にスキップする
-- tagline には entry_candidates.md の「一言」を仮で流し込んでいる（本書きで磨き直す）
-
-YAML 補足（本書きで埋める／見直す欄）:
-- subtype: candidate.csv の subtype 列を流し込み済み（後で見直す）
-- experience_level: hands_on / partial / research_only
-- reader_level: 1〜6
-- figure_type: before_after / structure / comparison / workflow / timeline（仮で structure を入れている）
-- version_status: active / preview / deprecated（時変なら埋める）
-- pricing_note: none / paid / freemium（時変なら埋める）
-- related_terms: 3〜5 個目安
-- status: skeleton → drafting → needs_review → ready
+Lv6 自己学習シェルフ（reader_level: 6 / 刊行スコープ外）。
+validator は reader_level 6 のとき字数・ですます・著者欄チェックを外し、YAML/構造/出典日だけ見る。
+内容は専門的に踏み込む。文体は本書と揃えて です・ます維持。著者記入欄は空のまま。
 -->
 
 ## tagline
 
-<!-- 25〜60 字（推奨 30〜38、略称展開を含む場合 35〜50）。
-     タイトルが略称・ヌメロニム（MCP / a11y / LLM 等）なら冒頭に「{展開} の略。」を入れる（2026-04-28 追加）。
-     例: `Model Context Protocol の略。LLM とツール・データをつなぐ標準規格です。` -->
-
-認知コストの定量化
-
+UI・操作を人間に強いる「見えないコスト」を、視線や心拍などの生体反応から数値として測ろうとする動きです。
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 
 ## 何をしてくれるか
 
-<!-- 60〜200 字（推奨 80〜150）。役割と仕組みを 2〜4 文で。本書きで埋める。 -->
-
+2026 年に提唱され始めた考え方で、ソフトウェアが人間に強いる判断・操作の負担（認知コスト）を「好み」ではなく計測可能な指標として扱おうとします。The Cognitive Load Manifesto（副題 "Decision-Lite Interfaces for the 2026 SaaS Age"）が代表的な問題提起です。デザインの良し悪しをパフォーマンス指標に変える試みといえます。
 
 ## どこで出会うか
 
-<!-- 60〜200 字（推奨 80〜150）。読者が遭遇する具体シーン。本書きで埋める。 -->
-
+エージェントが業務の実行そのものを担うようになるほど、人間側の役割は「AI の出力を見て、判断し、直す」レビュー・監督作業に寄っていきます。この監督負担（oversight burden）が増える中で、「そもそもこの UI や作業手順は人間の脳にどれだけ負荷をかけているのか」を測る必要が出てきた、という文脈で登場します。
 
 ## メイン図
 
 ### 図の狙い
 
-<!-- 1〜2 文。この図で読者に何を掴んでもらうか。本書きで埋める。 -->
-
+人間の頭の中の「摩擦」を、視線・カーソル・心拍という 3 つの生体シグナルで外から数値化する様子と、そこから resolution velocity（解決速度）などの新指標が導かれる流れを一目で示す。
 
 ## 会話での使い方例
 
-<!-- 25〜50 字（推奨 30〜40）、1 文。本書きで埋める。 -->
-
-「」
-
+「UI の使いやすさも resolution velocity で測る時代なんですよね。」
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -78,52 +61,43 @@ YAML 補足（本書きで埋める／見直す欄）:
 
 ### 1. 役割
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+人間の負担を「主観の好み」から「測定できる指標」へ引き上げる考え方です。
 
 ### 2. うれしさ
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+認知コストが高い設計を、根拠を持って明示的に問題と指摘できます。
 
 ### 3. 注意点
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+指標も測定法も 2026 年時点でまだ定義が固まっていないことがあります。
 
 ### 4. どこで役立つか
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+AI エージェントが増える中で、監督作業の持続可能性を評価する場面で使われます。
 
 ### 5. はじめに
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+まず UX Psychology Audit という測定手法の存在を押さえるとよいです。
 
 ### 6. 深掘り先
 
-<!-- 15〜50 字、1〜3 語をカンマ区切り。本書きで埋める。 -->
-
+resolution velocity、interface disappearance、oversight sustainability
 
 ## 開発フローでの位置（必須）
 
-<!-- 4〜5 ステップ。本書きで埋める。 -->
-
-1. 
-2. 
-3. 
-4. 
-
+1. 摩擦の観測 — 視線追跡・カーソルの揺れ（cursor jitter）・HRV（心拍変動）で操作中の負荷を記録する
+2. 摩擦の数値化 — UX Psychology Audit として、混乱ヒートマップなどの形で摩擦を可視化する
+3. 指標化 — 意図が満たされる速さを resolution velocity、UI が不要になる度合いを interface disappearance と定義する
+4. 監督負担への接続 — 監督の持続可能性（oversight sustainability）という運用指標に結び付ける
+5. 設計判断への反映 — 認知コストが高い画面・手順を、数値根拠を持って見直す
 
 ## 関連用語
 
-<!-- 3〜5 個。本書きで埋める。YAML の related_terms と一致させる。 -->
-
-- 用語A —
-- 用語B —
-- 用語C —
-
+- 人間の認知ボトルネック
+- 生成UIとagent-native設計
+- 自律ループとガードレール
+- 不確実性デファーラル
+- 監督の持続可能性
 
 <!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
 
@@ -131,21 +105,20 @@ YAML 補足（本書きで埋める／見直す欄）:
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+-
+-
+-
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象:
+- 👍 良い点:
+- 👎 ダメな点:
+- 👥 誰向けか:
 <!-- user-input:end key="my_comment" -->
-
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
 
@@ -153,31 +126,41 @@ YAML 補足（本書きで埋める／見直す欄）:
 
 ### メイン図（左ページ中段 / figure_type: structure）
 
-- 描く内容: 
-- 登場人物（いれば）: 
-- 吹き出し・心の声: 
-- 中央に置くキーワード/ラベル: 
+- 描く内容: 画面の前に座る人物 1 名を中心に、頭部から 3 本の観測線（視線トラッカーの矢印、マウスカーソルの震え波形、腕の HRV センサーの波形）が伸び、それぞれが右側の「混乱ヒートマップ」「摩擦スコア」の板に集約される。その板から矢印が伸びて「resolution velocity」「interface disappearance」という 2 つの新指標ラベルへつながる。
+- 登場人物（いれば）: SaaS の画面を操作しているオフィスワーカー 1 名（著者の分身）。眉間にしわを寄せて画面を見ている。
+- 吹き出し・心の声: 「このモヤモヤした使いにくさ、ちゃんと数字で示せるようになったのか」
+- 中央に置くキーワード/ラベル: 「認知コスト＝測れるものに」「resolution velocity」「interface disappearance」
 
 ### 6 視点アイコン（右ページ上段）
 
-- 共通アイコン流用（個別演出が要るときだけ書き足す）
+- 共通アイコン流用（① 視線・カーソル・心拍の観測アイコン、② 指標ダッシュボードの板、を差し色で強調）
 
 ### 開発フロー図（右ページ下段）
 
-- Step 1 のアイコン/絵柄: 
-- Step 2 のアイコン/絵柄: 
-- Step 3 のアイコン/絵柄: 
-- Step 4 のアイコン/絵柄: 
-
+- Step 1 のアイコン/絵柄: 視線・カーソル・心拍のセンサーアイコン 3 種
+- Step 2 のアイコン/絵柄: 混乱ヒートマップの小さな板
+- Step 3 のアイコン/絵柄: resolution velocity のメーター
+- Step 4 のアイコン/絵柄: 監督の持続可能性を示す天秤
+- Step 5 のアイコン/絵柄: 見直された UI（要素が減ったシンプルな画面）
 
 ## コミュニティ補完メモ
 
+- 同じ Lv6 シェルフの近接語との住み分け:
+  - 人間の認知ボトルネック: 「なぜ人間の認知が次の制約になるか」の前提となる問題提起。本エントリはその負荷を「どう測るか」に絞る。
+  - 生成UIとagent-native設計: 測定した認知コストを「どう減らすか」の解決策側。本エントリは測定・指標化までを担う。
+  - 監督の持続可能性（oversight sustainability）: 定量化の応用先。個別指標というより、複数の測定値を束ねて運用判断に使う上位概念。
+- スコープ境界: 本エントリは「何を測るか・どう指標化するか」までを担い、「測った結果どう設計を変えるか」は agent-native 設計側に譲る。
 
 ## 出典メモ
 
 <!-- 形式: URL または誌名 — checked YYYY-MM-DD -->
 
-- 
-
+- The Cognitive Load Manifesto（timgraf.com） — checked 2026-06-23（副題 "Decision-Lite Interfaces for the 2026 SaaS Age"。UX Psychology Audit・resolution velocity・interface disappearance の初出）
+- ledgers/loop_engineering_landscape_2026.md §7〜8（著者との対話で集約した二次情報索引） — checked 2026-06-23
 
 ## 備考
+
+- reader_level: 6（自己学習シェルフ／刊行スコープ外）。今季の本には載せず、著者の勉強ノートとして育てる。docs/level_policy.md §2-6 準拠。
+- 自動昇格しない設定（reader_level 6 ルート）。status は著者本人が管理する。
+- 2026 年 6 月時点の情報。UX 指標系は一次論文ではなく業界ブログ（timgraf.com 等）が発信源であり、二次情報ベース・要一次確認の状態。resolution velocity・interface disappearance・oversight sustainability は定義がまだ揺れており、指標名・測定手法とも今後変わる可能性がある。
+- Workday の調査（AI が節約した時間の約 40% がレビュー・修正・検証に回帰）は、認知コスト定量化が求められる背景として §7 に別途整理済み。
