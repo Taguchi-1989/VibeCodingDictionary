@@ -1,16 +1,17 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-07-07 06:22 / `scripts/update_review_queue.py`*
+*自動生成: 2026-07-12 15:53 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
+- **skeleton**: 11 件
 - **drafting**: 24 件
 - **needs_review**: 68 件
 - **ready**: 252 件
 - **archived**: 8 件
-- **合計**: 352 件
+- **合計**: 363 件
 
 - **自己学習シェルフ（reader_level 6・刊行外）**: 23 件（誌面には出ません。`scripts/preview_gen.py` が除外）
 

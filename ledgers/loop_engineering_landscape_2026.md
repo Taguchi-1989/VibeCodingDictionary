@@ -1,0 +1,107 @@
+# ループエンジニアリングと人間の認知ボトルネック（2026-06-23 調査）
+
+*Lv6 自己学習シェルフの深掘りテーマ第2弾。著者との対話で掘った「エージェントループ／コンテキスト工学／ハーネス工学」と、その先の「人間の認知＝次のボトルネック」。著者オリジナルの仮説（認知コスト定量化 → SaaS の死）が研究最前線と一致した題材。*
+*注記: 2026年前半の動きが速い領域。エントリ化・書籍化前に一次情報で再確認。株価/割合/時期は「YYYY-MM時点」明記。*
+
+## 0. 出発点
+
+LLM は本来ステートレス（一問一答・記憶なし）。長い仕事をさせるには外側にループを付ける＝Claude Code / ralph / ultrawork の正体。この「ループを設計する工学」が主題。
+
+## 1. 3つの工学（著者の「ゴール→コマンド→ループ」の3層）
+
+- **ハーネスエンジニアリング** = モデルを包むシステム全体（ループ・ツール・メモリ・サンドボックス・権限）。「LLM を新しい OS と見なす」
+  - **ループエンジニアリング** = サイクルそのものを設計（何を繰り返すか・いつ止めるか）
+  - **コンテキストエンジニアリング** = 各周回でモデルに何を見せるか（限られた文脈窓に何を入れ何を捨てるか）
+
+## 2. ループの進化史（敵を潰すと次の敵が出る）
+
+- ReAct(2022): Thought→Action→Observation の繰り返し。原型。LangChain AgentExecutor の既定 / 敵=失敗しても学ばない
+- Reflexion: 自己批判を記憶に残す / 敵=計画と実行が混ざり遅い
+- Plan-and-Execute: 計画と実行を分離、並列で3.6倍速 / 敵=内側ループが詰まると戦略ごと死ぬ
+- OODA / Inner-Outer 二重ループ: 詰まったら戦略ごとリセット / 敵=長く回すと文脈溢れ ★最大の敵
+- **Ralph Loop(2025)**: 毎回ディスクから状態を読み文脈窓をリセット。OMC の ralph の正体
+- ネイティブ実装(2026): Claude の /goal コマンド等、ツールにループを埋め込む
+- 5段階サイクル: Perceive→Reason→Plan→Act→Observe
+
+## 3. 3つの共通の敵とガードレール
+
+| 敵 | 正体 | 対抗手段 |
+| :-- | :-- | :-- |
+| ①「終わり」が分からない | LLM に done の概念なし | 検証可能ゴール(テスト通過等)・停止条件・反復上限 |
+| ②文脈が溢れる | 長く回すと文脈窓が満杯 | コンテキスト工学(圧縮/メモリ/サブエージェント) |
+| ③コストが爆発 | 単体4倍/マルチ15倍のトークン | 予算・ハード上限・circuit breaker |
+
+- ガードレール: ハード反復上限 / トークン・コスト予算 / 無進捗検知(出力が変わらねば抜ける) / circuit breaker / 検証可能な完了条件(自己評価でなく自動チェック) / 不可逆操作前の人間チェックポイント
+- 最も厄介な失敗: productive に見えて何も変えていない(silent failure)。goal drift(関連するが別の目標を追う)
+- ゴール→コマンド→ループ: 検証可能ゴールを上流で指定→永続ループに翻訳→各周回で完了判定→条件成立まで自律実行。手動 prompt-wait-prompt を置き換える
+
+## 4. コンテキスト工学の中身(②の対抗手段・既存Lv6と直結)
+
+- 用語起源: Karpathy が2025-06 提唱、Anthropic が2025-09 に体系化＋2プリミティブ(context editing / memory tool)
+- コンパクション: 古い会話を要約圧縮(Claude Opus 4.6 の自動圧縮)。100ターンwebevalで**トークン84%削減**
+- 性能: context editing 単体+29%、memory tool 併用+39%
+- サブエージェント: 別の文脈窓を持つ子に投げ1000-2000トークンの要約だけ返す(entry-writer に今日やらせたのと同じ)
+
+## 5. モデル使い分け(③最前線・著者「Fable5をどのタイミングで」)
+
+- **カスケード**: 安→強の順に流し品質しきい値で止める。難所だけ旗艦に上げ**コスト5-10分の1**
+- **ステップ別ルーティング**: プランナー=旗艦 / ツール呼び出し=安い高速 / 最終要約=品質特化。TRIM=重要ステップだけ大モデルに上げる
+- スイッチングコストの罠: マルチではルーティング1ミスが下流全体に波及。ルーティングは独立判断でなくオーケストレーション全体の一部として扱う
+- 枠組み: Agent-as-a-Router(C-A-F ループ=Context→Action→Feedback→Context) / R2V(小モデルにいつ助けを求めるか教える)
+
+## 6. 小→大/人間への委譲の仕組み(著者の関心)
+
+- キーワード: uncertainty-aware deferral / confidence-gated escalation
+- **R2V**: Brier較正で「今のステップで大モデル介入が役立つ確率」を推定、コスト感応しきい値。トークン級不確実性は失敗とズレる(confidently wrong)ので単純確信度では不十分。CVaR(リスク感応RL)で分布の裾=稀だが致命的な失敗に強くする。ReDAct も同系
+- 設計思想: SLM-first / local-by-default, cloud-on-escalation。軽量ルーターが低確信・スキーマ違反・パース不能を監視しその1ターンだけ旗艦に上げる。**80-90%がローカルに留まる**(経験則)。確信度が閾値割れで人間オーナーに回す
+
+## 7. ★次のボトルネック=人間の認知(著者の仮説、データで裏付け)
+
+- 2026研究が「人間の認知こそAIエージェント展開の主要制約」と明言
+- **定量化データ**: Workday 3,200人調査=AIが節約した時間の**約40%をレビュー・修正・検証で返上**。「やる仕事が減り監督が増えた」
+- 用語分化: 認知過負荷(cognitive overload=AI提案を評価・選別・反復修正する負担) vs 監督負担(oversight burden=品質保証の負担)
+- 自動化バイアス(automation bias): 人間がAIを過信し証拠が矛盾しても信じる→監督が形骸化。oversight degradation
+- 測る動き: oversight sustainability を計測可能指標に。「加速が監督を追い越した」瞬間を運用シグナルで検知
+
+## 8. 認知コスト定量化 → SaaS の死(著者の仮説そのもの)
+
+- **The Cognitive Load Manifesto**(2026) 副題 "Decision-Lite Interfaces for the 2026 SaaS Age"=著者と同じ問題意識
+- 測り方: UX Psychology Audit(視線追跡=混乱ヒートマップ / cursor jitter=カーソルの揺れ / HRV=心拍変動)。摩擦を数値化。新指標 **resolution velocity**(意図が満たされる速さ) / **interface disappearance**(UIが無いほど良い)
+- 止め刺す構造: **AI Concierge / Dynamic Filter**(関係ないUI要素を抑制) / **agent-first design**(画面でなくアクションと制約で表現) / 「**UIはエージェントに同意しないとき行く場所になる**、日常業務をやりに行く場所ではない」/ dashboard obsolescence / post-SaaS reality
+- = 著者仮説「認知コストが高いSaaSはやめちまえと明示的に言えるはず」が resolution velocity・認知負荷監査で定量化され agent-first が実際にSaaSのUIを殺しにいく形で現実化
+
+## 9. AIネイティブ vs 人間向けの設計論(著者の設計課題)
+
+- **Generative UI(GenUI)**: 静的画面をやめAIがその瞬間の必要に応じUIをその場で組み立てる流動的インターフェース
+- **agent-native architecture**: 人間UIとAIエージェントが単一の共有DB状態・アクションモデル下に統合(人間用とAI用を別々に作らない)
+- **proposal card**: エージェントが作るほぼ完成品を人間は承認 or 微調整するだけ
+- **Agent Experience(AX)**: 検索でなく複雑なミッションを自律AIに委譲。受動的対話→能動的協働
+- 2026総意: 全自動でなく自動化と人間判断のバランス。AIは人間の専門性を増幅
+- 含意: 「AI的設計」と「人間的設計」を別々に作る時代は終わり、agent-native(同一状態を共有)へ。人間は不同意時だけ介入、AIは提案カードで認知負荷最小化、繋ぐのがGenUI
+
+## 10. ボトルネック・ロードマップ(拡張版)
+
+```
+①終わりが分からない  → 停止条件・検証可能ゴール          [解決済み]
+②文脈が溢れる        → コンテキスト工学(圧縮/メモリ/サブエージェント) [進行中]
+③コストが爆発        → モデル使い分け(カスケード/ステップ別ルーティング) [最前線]
+④★人間の認知が追いつかない → 定量化(resolution velocity/UX心理監査) + 減らす(SLM-first/decision-lite/GenUI) + agent-native設計 [次の主戦場=著者仮説]
+     ↓ 次の敵：自動化バイアス(③④を進めるほど人間が確認をサボり監督が形骸化)
+```
+逆説: ③でモデルが賢く安くなるほど、人間が確認すべき出力の量と速度が増え④が悪化。機械の改善が人間の負担を増やす。
+
+## 主要キーワード＆論文(勉強用索引)
+
+| テーマ | キーワード | 出典 |
+| :-- | :-- | :-- |
+| ループ工学 | loop/context/harness engineering, ReAct, Ralph Loop, /goal | happycapy.ai/blog/loop-engineering-ai-agents / datasciencedojo(agentic-loops 2026) / addyosmani.com(agent-harness-engineering) |
+| コンテキスト工学 | compaction, context editing, memory tool, sub-agent | platform.claude.com/cookbook(context-engineering) / arXiv:2606.11213(Structured Context Eviction) / arXiv:2510.12635(Memory as Action) |
+| モデル使い分け | cascade, step-level routing(TRIM), Agent-as-a-Router, switching cost | arXiv:2606.22902(Agent-as-a-Router) / arXiv:2605.18859(TwinRouterBench) |
+| 小→大委譲 | uncertainty-aware deferral, confidence-gated escalation, Brier calibration, CVaR | arXiv:2605.16604(R2V) / arXiv:2604.07036(ReDAct) / arXiv:2602.05073(UQ in LLM Agents) |
+| 人間の認知 | oversight burden, cognitive overload, automation bias, oversight sustainability | arXiv:2606.05770(Human Oversight and Overload) / arXiv:2605.16278(Framework for Human Oversight) |
+| 認知コスト定量化/SaaS | Cognitive Load Manifesto, decision-lite, resolution velocity, UX Psychology Audit | timgraf.com(Cognitive Load Manifesto) |
+| SaaSの死 | agent-first, post-SaaS, dashboard obsolescence, AI Concierge | medium/@jens.eriksvik(post-SaaS reality 2026) / agentnative.dev(Agentic SaaS) |
+| AIネイティブ設計 | Generative UI(GenUI), Agent Experience(AX), agent-native, proposal card | builder.io(Designing GenUI in Agent-Native World) / copilotkit.ai(GenUI 2026) |
+
+- 全て checked 2026-06-23
+- 未確認: 著者が言及した「エージェントを相談役/助言者として使う初期のブログ」は特定できず(geohot/Simon Willison/PG 等?)。著者名かURL断片が判明したら要再調査
