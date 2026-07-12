@@ -90,6 +90,7 @@ SLUG_OVERRIDES: dict[str, str] = {
     "J-111": "human_cognition_bottleneck",
     "J-112": "cognitive_cost_quantification",
     "J-113": "generative_ui_agent_native",
+    "J-114": "goodharts_law",
     "C-15": "intel",
     "J-89": "moe_routing",
     "J-25": "tokenizer_bpe",
