@@ -1,81 +1,59 @@
 ---
-id:
-  "{ ID }":
-title:
-  "{ TITLE }":
-title_reading:
-category:
-  "{ CATEGORY }":
-subtype:
-  "{ SUBTYPE }":
-experience_level:
-reader_level:
-importance:
+id: J-105
+title: コンテキスト管理
+title_reading: コンテキストカンリ
+category: term_general
+subtype: agent_loop
+experience_level: research_only
+reader_level: 6
+importance: D
 figure_type: structure
 page_layout: spread_v1
 start_date:
 end_date:
-version_status:
-pricing_note:
-evaluation_date:
-  "{ TODAY }":
-related_terms: []
-status: skeleton
+version_status: active
+pricing_note: none
+evaluation_date: 2026-06-23
+related_terms:
+  - Context Engineering
+  - Context Window
+  - Auto-compact
+  - Subagent
+  - ループエンジニアリング
+status: drafting
 ---
 
 # コンテキスト管理
 
 <!--
-バイブコーディング図鑑 スケルトン雛形 v1（2026-04-28 追加）
-- 構造だけ先に置いた状態。本文は status を `drafting` に上げた段階で entry-writer が埋める
-- validator は status: skeleton を archived/sample と同様にスキップする
-- tagline には entry_candidates.md の「一言」を仮で流し込んでいる（本書きで磨き直す）
-
-YAML 補足（本書きで埋める／見直す欄）:
-- subtype: candidate.csv の subtype 列を流し込み済み（後で見直す）
-- experience_level: hands_on / partial / research_only
-- reader_level: 1〜6
-- figure_type: before_after / structure / comparison / workflow / timeline（仮で structure を入れている）
-- version_status: active / preview / deprecated（時変なら埋める）
-- pricing_note: none / paid / freemium（時変なら埋める）
-- related_terms: 3〜5 個目安
-- status: skeleton → drafting → needs_review → ready
+Lv6 自己学習シェルフ（reader_level: 6 / 刊行スコープ外）。
+validator は reader_level 6 のとき字数・ですます・著者欄チェックを外し、YAML/構造/出典日だけ見る。
+内容は専門的に踏み込む。文体は本書と揃えて です・ます維持。著者記入欄は空のまま。
 -->
 
 ## tagline
 
-<!-- 25〜60 字（推奨 30〜38、略称展開を含む場合 35〜50）。
-     タイトルが略称・ヌメロニム（MCP / a11y / LLM 等）なら冒頭に「{展開} の略。」を入れる（2026-04-28 追加）。
-     例: `Model Context Protocol の略。LLM とツール・データをつなぐ標準規格です。` -->
-
-コンテキスト管理
-
+長いループで溢れる文脈窓（コンテキストウィンドウ）を、圧縮・退避・分割で捌く具体策の総称です。
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 
 ## 何をしてくれるか
 
-<!-- 60〜200 字（推奨 80〜150）。役割と仕組みを 2〜4 文で。本書きで埋める。 -->
-
+エージェントを長時間ループさせると、会話履歴やツール出力が積み上がり、文脈窓（モデルが一度に読める情報量の上限）が満杯になります。コンテキスト管理は、この「溢れ」に対する具体的な打ち手をまとめた総称で、古い履歴を要約して圧縮する「コンパクション（compaction）」、文脈の外へファイルとして記憶を逃がす「context editing（文脈編集）」「memory tool（メモリツール）」、別の文脈窓を持つ子に作業を投げて要約だけ受け取る「サブエージェント」の 3 系統に大別されます。
 
 ## どこで出会うか
 
-<!-- 60〜200 字（推奨 80〜150）。読者が遭遇する具体シーン。本書きで埋める。 -->
-
+Context Engineering（G-11、コンテキスト工学）は「各周回でモデルに何を見せるか」を設計する考え方の入口で、本エントリはその中身、つまり実際に何をどう圧縮・退避・分割するかの仕組みに踏み込みます。用語としては Karpathy（カーパシー）が 2025 年 6 月に提唱し、Anthropic が同年 9 月に context editing と memory tool の 2 プリミティブとして体系化しました。長時間ループを組む OMC の ralph や entry-writer のようなサブエージェント運用の裏側で、日常的に働いている仕組みです。
 
 ## メイン図
 
 ### 図の狙い
 
-<!-- 1〜2 文。この図で読者に何を掴んでもらうか。本書きで埋める。 -->
-
+「文脈窓が履歴で満杯になり止まりかける瞬間」と「コンパクション・退避・サブエージェント分割で空きを作り続けて走り続ける瞬間」を上下に並べ、3 系統がそれぞれ何を減らしているかを一目で掴んでもらう。
 
 ## 会話での使い方例
 
-<!-- 25〜50 字（推奨 30〜40）、1 文。本書きで埋める。 -->
-
-「」
-
+「文脈が溢れそうなら、コンパクションかサブエージェントで逃がすのが定石ですよね。」
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -83,52 +61,43 @@ YAML 補足（本書きで埋める／見直す欄）:
 
 ### 1. 役割
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+文脈窓の溢れという敵に対し、圧縮・退避・分割の具体策を提供します。
 
 ### 2. うれしさ
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+長いループでも文脈を保ちながらトークン消費を大きく減らせます。
 
 ### 3. 注意点
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+圧縮や分割で重要情報が落ちる（silent failure）リスクが残ります。
 
 ### 4. どこで役立つか
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+Ralph Loop 等の長時間ループやマルチステップの自律実行で効きます。
 
 ### 5. はじめに
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+まずコンパクションとサブエージェントの 2 つを押さえれば芯が掴めます。
 
 ### 6. 深掘り先
 
-<!-- 15〜50 字、1〜3 語をカンマ区切り。本書きで埋める。 -->
-
+context editing、memory tool、Structured Context Eviction
 
 ## 開発フローでの位置（必須）
 
-<!-- 4〜5 ステップ。本書きで埋める。 -->
-
-1. 
-2. 
-3. 
-4. 
-
+1. 履歴が積み上がる — 長時間ループで会話・ツール出力が文脈窓を圧迫し始める
+2. コンパクションで圧縮 — 古い会話を要約し、直近の必要情報だけ残す
+3. context editing / memory で退避 — 文脈の外にファイルとして記憶を逃がし必要時に呼び戻す
+4. サブエージェントへ分割 — 別の文脈窓を持つ子に作業を投げ、要約だけ親に返す
+5. 次の周回へ — 空いた文脈窓で Perceive→Reason→Plan→Act→Observe を継続する
 
 ## 関連用語
 
-<!-- 3〜5 個。本書きで埋める。YAML の related_terms と一致させる。 -->
-
-- 用語A —
-- 用語B —
-- 用語C —
-
+- Context Engineering
+- Context Window
+- Auto-compact
+- Subagent
+- ループエンジニアリング
 
 <!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
 
@@ -151,38 +120,51 @@ YAML 補足（本書きで埋める／見直す欄）:
 - 👥 誰向けか: 
 <!-- user-input:end key="my_comment" -->
 
-
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
 
 ## 誌面ポンチ絵メモ
 
 ### メイン図（左ページ中段 / figure_type: structure）
 
-- 描く内容: 
-- 登場人物（いれば）: 
-- 吹き出し・心の声: 
-- 中央に置くキーワード/ラベル: 
+- 描く内容: 上段「素朴なループ」、下段「コンテキスト管理ありのループ」の 2 段比較。上段は文脈窓の枠を 1 本描き、周回を重ねるごとに履歴の付箋が積み上がって枠からあふれ出す。あふれた付箋は灰色に薄れ「読めなくなった過去」として描く。下段は同じ枠の脇に 3 つの逃がし先（要約された巻物＝コンパクション、外部ファイル棚＝context editing/memory、小さな子エージェントの窓＝サブエージェント）を配置し、周回ごとに古い付箋がそこへ流れていき、枠の中は常に空きがある状態を保つ。
+- 登場人物（いれば）: 長時間ループを回すエンジニア 1 名（著者の分身）。上段では溢れた付箋を前に困った顔、下段では 3 つの逃がし先を指差しながら安心した顔。
+- 吹き出し・心の声: 「文脈がまた溢れた……」（上段）／「圧縮して、逃がして、子に任せて——それで走り続けられる」（下段）
+- 中央に置くキーワード/ラベル: 「コンパクション＝要約圧縮」「context editing/memory＝外に逃がす」「サブエージェント＝別窓で分担」
+- Before / After の場合の対比ポイント: 上段＝満杯であふれ続ける枠、下段＝3 系統の逃がし先で常に空きを保つ枠。「溜め込む」と「逃がす」の対比を色で結ぶ。
 
-### 6 視点アイコン（右ページ上段）
+### 6視点アイコン（右ページ上段）
 
-- 共通アイコン流用（個別演出が要るときだけ書き足す）
+- 共通アイコン流用（① 満杯であふれる文脈窓の枠、② 3 つの逃がし先（要約巻物・外部ファイル棚・子エージェント窓）、を差し色で強調）
 
 ### 開発フロー図（右ページ下段）
 
-- Step 1 のアイコン/絵柄: 
-- Step 2 のアイコン/絵柄: 
-- Step 3 のアイコン/絵柄: 
-- Step 4 のアイコン/絵柄: 
-
+- Step 1 のアイコン/絵柄: 付箋があふれ出す文脈窓の枠
+- Step 2 のアイコン/絵柄: 付箋が巻物に圧縮されるコンパクション
+- Step 3 のアイコン/絵柄: 付箋が外部ファイル棚へ移動する context editing/memory
+- Step 4 のアイコン/絵柄: 子エージェントの小窓に作業が渡り要約だけ戻る矢印
+- Step 5 のアイコン/絵柄: 空いた枠で次の周回（Perceive→Act→Observe）が回るループ矢印
+- 矢印で示す流れの意図: 履歴が積み上がる → 圧縮する → 退避する → 分割する → 次の周回へ、という「溢れを防ぎながらループを継続する」流れ
 
 ## コミュニティ補完メモ
 
+- G-11 Context Engineering（刊行済）との住み分け: G-11 は「各周回でモデルに何を見せるかを設計する」という考え方・上位概念の入口。本エントリはその実装レベル、つまり「具体的に何をどう圧縮・退避・分割するか」の仕組みに踏み込む深掘り版。G-11 本文でも本エントリへのクロスリンクを想定。
+- G-47 Auto-compact（刊行済）との住み分け: Auto-compact は Claude Code に実装された自動コンパクション機能そのもの（製品機能）。本エントリはコンパクションを含む 3 系統（コンパクション／context editing・memory／サブエージェント）の総称・概念整理。
+- G-41 Subagent（刊行済）との住み分け: Subagent はサブエージェントという仕組み自体の説明。本エントリでは「文脈窓の溢れを防ぐ手段の 1 つ」という位置づけで言及するに留める。
+- G-5 Context Window（刊行済）との住み分け: Context Window は「文脈窓とは何か・容量制限」の説明。本エントリはその容量が尽きたときの対処法（動的な管理）を担う。
+- J-103 ループエンジニアリング（Lv6、skeleton）との関係: ループエンジニアリングは「サイクルそのものの設計（何を繰り返すか・いつ止めるか）」。本エントリはループ工学の 3 つの敵のうち「②文脈が溢れる」への対抗手段という位置づけ（ledgers/loop_engineering_landscape_2026.md §3）。
+- スコープ境界: 本エントリは「文脈窓が溢れる問題への具体的な打ち手」までを担う。ハーネス工学全体やモデル使い分け（③コスト爆発への対抗手段）は別エントリに譲る。
 
 ## 出典メモ
 
 <!-- 形式: URL または誌名 — checked YYYY-MM-DD -->
 
-- 
-
+- Anthropic, "Effective context engineering for AI agents" (platform.claude.com/cookbook, context-engineering) — checked 2026-06-23（context editing / memory tool の 2 プリミティブ、コンパクションの評価。100 ターン webeval でトークン 84% 削減、context editing 単体 +29%、memory tool 併用 +39% の数値出典。2026 年 6 月時点の評価）
+- arXiv:2606.11213, "Structured Context Eviction"（文脈退避の構造化手法） — checked 2026-06-23
+- arXiv:2510.12635, "Memory as Action"（メモリを行動として扱う枠組み） — checked 2026-06-23
 
 ## 備考
+
+- reader_level: 6（自己学習シェルフ／刊行スコープ外）。今季の本には載せず、著者の勉強ノートとして育てる。docs/level_policy.md §2-6 準拠。
+- 自動昇格しない設定（reader_level 6 ルート）。status は著者本人が管理する。
+- 性能数字（84% 削減、+29%／+39%）は Anthropic による 2026 年 6 月時点の内部評価であり、モデル・タスクによって変動する時変情報として扱う。evaluation_date の定期見直しを推奨。
+- 用語起源: Karpathy が 2025-06 に提唱し、Anthropic が 2025-09 に context editing / memory tool の 2 プリミティブとして体系化（ledgers/loop_engineering_landscape_2026.md §4）。
