@@ -64,6 +64,7 @@ C-11,,Z.ai,person_org,company,needs_review,旧Zhipu AI→Z.ai リブランド 20
 C-12,,TSMC,person_org,company,ready,半導体ファウンドリ v2テンプレ書き起こし済（2026-04-30）,content/entries/person/C-12_tsmc[済].md
 C-13,,Groq,person_org,company,ready,AI推論チップ LPU v2テンプレ書き起こし済（2026-04-30）,content/entries/person/C-13_groq[済].md
 C-14,,AMD,person_org,company,ready,半導体,content/entries/person/C-14_amd[済].md
+C-15,,Intel,person_org,company,drafting,半導体IDM。EUV採用遅れ→18A復活途上,content/entries/person/C-15_intel.md
 C-50,,Sam Altman,person_org,person,needs_review,,content/entries/person/C-50_sam_altman[人書].md
 C-51,,Dario Amodei,person_org,person,ready,,content/entries/person/C-51_dario_amodei[済].md
 C-52,,Demis Hassabis,person_org,person,ready,,content/entries/person/C-52_demis_hassabis[済].md
@@ -369,4 +370,23 @@ J-91,,CLI,term_general,ui_os,ready,,content/entries/term_general/J-91_cli[済].m
 J-92,,Linux,term_general,ui_os,ready,,content/entries/term_general/J-92_linux[済].md
 J-93,,Ubuntu,term_general,ui_os,ready,,content/entries/term_general/J-93_ubuntu[済].md
 J-94,,並列化戦略,term_general,inference,drafting,Lv6自己学習シェルフ（刊行外）。分散推論 TP/PP/EP/DP,content/entries/term_general/J-94_parallelism.md
+J-95,,半導体サプライチェーン,term_general,hardware,drafting,Lv6自己学習シェルフ（刊行外）。4層入れ子の俯瞰,content/entries/term_general/J-95_semiconductor_supply_chain.md
+J-96,,半導体製造装置,term_general,hardware,drafting,Lv6自己学習シェルフ（刊行外）。ASML/DISCO/BESI/KLA,content/entries/term_general/J-96_semiconductor_equipment.md
+J-97,,電子材料,term_general,hardware,drafting,Lv6自己学習シェルフ（刊行外）。味の素ABF/旭化成Pimel/EUVレジスト,content/entries/term_general/J-97_electronic_materials.md
+J-98,,重要鉱物の地政学,term_general,hardware,drafting,Lv6自己学習シェルフ（刊行外）。ガリウム等・中国の精錬支配,content/entries/term_general/J-98_critical_minerals_geopolitics.md
+J-99,,CoWoS,term_general,hardware,drafting,Lv6自己学習シェルフ（刊行外）。先端パッケージ,content/entries/term_general/J-99_cowos.md
 J-100,,識字（リテラシー）,term_general,concept,ready,タイトルを驚き屋から識字（リテラシー）に変更（2026-04-30）,content/entries/term_general/J-100_literacy[済].md
+J-101,,半導体製造プロセス,term_general,hardware,drafting,Lv6自己学習シェルフ（刊行外）。微細化・FinFET→GAA・リーク電流・EUV,content/entries/term_general/J-101_semiconductor_process.md
+J-102,,チップレットと3D積層,term_general,hardware,drafting,Lv6自己学習シェルフ（刊行外）。More than Moore・V-Cache・CFET,content/entries/term_general/J-102_chiplet_3d_stacking.md
+J-103,,ループエンジニアリング,term_general,agent_loop,drafting,Lv6自己学習シェルフ（刊行外）。3工学の俯瞰・進化史ReAct→Ralph→/goal,content/entries/term_general/J-103_loop_engineering.md
+J-104,,ReAct,term_general,agent_loop,skeleton,Lv6自己学習シェルフ（刊行外）。エージェントループの原型Thought-Action-Observation,content/entries/term_general/J-104_react_agent_loop.md
+J-105,,コンテキスト管理,term_general,agent_loop,skeleton,Lv6自己学習シェルフ（刊行外）。圧縮・メモリ・退避。G-11の深掘り版,content/entries/term_general/J-105_context_management.md
+J-106,,ハーネスエンジニアリング,term_general,agent_loop,skeleton,Lv6自己学習シェルフ（刊行外）。LLM as OS・器全体,content/entries/term_general/J-106_harness_engineering.md
+J-107,,自律ループとガードレール,term_general,agent_loop,skeleton,Lv6自己学習シェルフ（刊行外）。ゴール→コマンド→停止条件。ralph/ultraworkの実体,content/entries/term_general/J-107_autonomous_loop_guardrails.md
+J-108,,Ralph Loop,term_general,agent_loop,skeleton,Lv6自己学習シェルフ（刊行外）。状態をディスクに逃がすループ,content/entries/term_general/J-108_ralph_loop.md
+J-109,,モデルルーティング,term_general,model_routing,drafting,Lv6自己学習シェルフ（刊行外）。カスケード・ステップ別・スイッチングコスト,content/entries/term_general/J-109_model_routing.md
+J-110,,不確実性デファーラル,term_general,model_routing,skeleton,Lv6自己学習シェルフ（刊行外）。小→大/人間への委譲。R2V・確信度ゲート,content/entries/term_general/J-110_uncertainty_deferral.md
+J-111,,人間の認知ボトルネック,term_general,human_cognition,skeleton,Lv6自己学習シェルフ（刊行外）。監督負担・認知過負荷・自動化バイアス,content/entries/term_general/J-111_human_cognition_bottleneck.md
+J-112,,認知コストの定量化,term_general,human_cognition,skeleton,Lv6自己学習シェルフ（刊行外）。resolution velocity・UX心理監査,content/entries/term_general/J-112_cognitive_cost_quantification.md
+J-113,,生成UIとagent-native設計,term_general,human_cognition,drafting,Lv6自己学習シェルフ（刊行外）。GenUI・提案カード・post-SaaS,content/entries/term_general/J-113_generative_ui_agent_native.md
+J-114,,グッドハートの法則,term_general,human_cognition,drafting,Lv6自己学習シェルフ（刊行外）。測定基準が目標になると腐る・KPI設計・eval設計,content/entries/term_general/J-114_goodharts_law.md
