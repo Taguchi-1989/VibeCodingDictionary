@@ -20,7 +20,7 @@ related_terms:
   - 自律ループのガードレール
   - Context Window
   - ハーネスエンジニアリング
-status: drafting
+status: needs_review
 ---
 
 # Ralph Loop

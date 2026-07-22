@@ -20,7 +20,7 @@ related_terms:
   - オーケストレーション
   - MoE ルーティング
   - Subagent
-status: drafting
+status: needs_review
 ---
 
 # モデルルーティング

@@ -20,7 +20,7 @@ related_terms:
   - LLM
   - Whisper
   - VLM
-status: drafting
+status: needs_review
 ---
 
 # Encoder-Decoder

@@ -20,7 +20,7 @@ related_terms:
   - CoWoS
   - 半導体サプライチェーン
   - GPU
-status: drafting
+status: needs_review
 ---
 
 # 半導体製造プロセス

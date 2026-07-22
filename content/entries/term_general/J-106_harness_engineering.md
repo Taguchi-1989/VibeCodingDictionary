@@ -20,7 +20,7 @@ related_terms:
   - 自律ループとガードレール
   - Subagent
   - Tool Use
-status: drafting
+status: needs_review
 ---
 
 # ハーネスエンジニアリング

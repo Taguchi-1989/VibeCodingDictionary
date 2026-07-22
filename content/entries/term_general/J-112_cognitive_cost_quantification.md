@@ -20,7 +20,7 @@ related_terms:
   - 自律ループとガードレール
   - 不確実性デファーラル
   - 監督の持続可能性
-status: drafting
+status: needs_review
 ---
 
 # 認知コストの定量化

@@ -20,7 +20,7 @@ related_terms:
   - 自律ループとガードレール
   - 人間の認知ボトルネック
   - 認知コストの定量化
-status: drafting
+status: needs_review
 ---
 
 # グッドハートの法則

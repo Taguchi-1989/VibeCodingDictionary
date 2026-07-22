@@ -20,7 +20,7 @@ related_terms:
   - RoPE
   - GLM
   - LLM
-status: drafting
+status: needs_review
 ---
 
 # QK-Norm

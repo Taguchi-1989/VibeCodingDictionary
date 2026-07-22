@@ -20,7 +20,7 @@ related_terms:
   - GPU
   - 半導体製造装置
   - EUVレジスト
-status: drafting
+status: needs_review
 ---
 
 # 重要鉱物の地政学

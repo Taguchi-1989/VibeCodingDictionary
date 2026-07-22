@@ -40,6 +40,7 @@ from validate_entry import (  # noqa: E402
     promote_to_needs_review,
     promote_to_ready,
     is_author_fields_filled,
+    reader_level_max,
     FRONT_LAYOUTS,
 )
 
@@ -62,6 +63,12 @@ def validate_silently(path: Path, fm: dict, body: str, status: str):
     if layout.startswith("front_"):
         check_yaml_front(fm, r)
         check_tone(body, r)
+    elif reader_level_max(fm) >= 6:
+        # Lv6 自己学習シェルフ: 誌面前提の制約（字数・ですます・著者欄）は外す
+        # （validate_entry.py の main() ゲートと同じ扱い。docs/level_policy.md §2-6）
+        check_yaml(fm, r)
+        check_structure(body, r)
+        check_sources_date(body, fm, r)
     else:
         check_yaml(fm, r)
         check_structure(body, r)

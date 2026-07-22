@@ -20,7 +20,7 @@ related_terms:
   - オーケストレーション
   - Ralph Loop
   - ハーネスエンジニアリング
-status: drafting
+status: needs_review
 ---
 
 # 自律ループとガードレール

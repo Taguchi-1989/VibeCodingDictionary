@@ -20,7 +20,7 @@ related_terms:
   - 半導体製造装置
   - TSMC
   - 重要鉱物の地政学
-status: drafting
+status: needs_review
 ---
 
 # 電子材料

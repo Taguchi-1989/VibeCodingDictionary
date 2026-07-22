@@ -20,7 +20,7 @@ related_terms:
   - スループットとレイテンシ
   - ollama
   - LLM
-status: drafting
+status: needs_review
 ---
 
 # vLLM

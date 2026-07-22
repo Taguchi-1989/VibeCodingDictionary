@@ -20,7 +20,7 @@ related_terms:
   - GPU
   - 半導体サプライチェーン
   - ハイブリッドボンディング
-status: drafting
+status: needs_review
 ---
 
 # CoWoS

@@ -20,7 +20,7 @@ related_terms:
   - Transformer
   - スループットとレイテンシ
   - Attention
-status: drafting
+status: needs_review
 ---
 
 # 投機的デコード

@@ -20,7 +20,7 @@ related_terms:
   - Attention
   - Transformer
   - GLM
-status: drafting
+status: needs_review
 ---
 
 # GQA

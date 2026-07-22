@@ -20,7 +20,7 @@ related_terms:
   - HBM
   - 半導体製造装置
   - GPU
-status: drafting
+status: needs_review
 ---
 
 # チップレットと3D積層

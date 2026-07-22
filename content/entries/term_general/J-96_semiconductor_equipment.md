@@ -20,7 +20,7 @@ related_terms:
   - CoWoS
   - TSMC
   - 半導体サプライチェーン
-status: drafting
+status: needs_review
 ---
 
 # 半導体製造装置

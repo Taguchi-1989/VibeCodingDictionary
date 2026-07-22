@@ -20,7 +20,7 @@ related_terms:
   - ASML
   - TSMC
   - GPU
-status: drafting
+status: needs_review
 ---
 
 # 半導体サプライチェーン

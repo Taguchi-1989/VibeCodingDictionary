@@ -20,7 +20,7 @@ related_terms:
   - vLLM
   - GPU
   - LLM
-status: drafting
+status: needs_review
 ---
 
 # バッチ推論

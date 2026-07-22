@@ -20,7 +20,7 @@ related_terms:
   - 生成UIとagent-native設計
   - 自律ループとガードレール
   - Sycophancy
-status: drafting
+status: needs_review
 ---
 
 # 人間の認知ボトルネック

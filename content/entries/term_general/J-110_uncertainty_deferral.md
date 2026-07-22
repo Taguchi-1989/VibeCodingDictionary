@@ -20,7 +20,7 @@ related_terms:
   - ループエンジニアリング
   - Hallucination
   - Subagent
-status: drafting
+status: needs_review
 ---
 
 # 不確実性デファーラル
