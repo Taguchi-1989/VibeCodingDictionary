@@ -111,8 +111,7 @@ specification gaming、reward hacking、操作化（operationalization）、構�
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
+- LLM とのやり取りの中で何度も出てきた言葉だったが、最初は意味がすぐに入ってこなかった。結局何だっけ、と。ただ「あまり良い意味の言葉ではない」というニュアンスだけは掴めていた。
 - 
 <!-- user-input:end key="stumble" -->
 
@@ -120,10 +119,10 @@ specification gaming、reward hacking、操作化（operationalization）、構�
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
+- 🙂 第一印象: 何かを定量化しようとすると、その定量化した指標自体が目標にすり替わってしまう。測ることの難しさをそこに感じた。
 - 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 👎 ダメな点: 「とは言え」感がある。指標を疑えと言うのは簡単だが、指標なしで何もしないと何も進められなくなるので、バランスを取るのが難しい。
+- 👥 誰向けか: 「AI で何でもできる」という楽観論に対するフィルターとして効く人向け。
 <!-- user-input:end key="my_comment" -->
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
