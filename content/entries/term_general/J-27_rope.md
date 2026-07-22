@@ -20,7 +20,7 @@ related_terms:
   - Context Window
   - MLA
   - LLM
-status: drafting
+status: needs_review
 ---
 
 # RoPE

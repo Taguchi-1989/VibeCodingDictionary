@@ -20,7 +20,7 @@ related_terms:
   - 自律ループとガードレール
   - Artifact
   - LLM
-status: drafting
+status: needs_review
 ---
 
 # 生成UIとagent-native設計

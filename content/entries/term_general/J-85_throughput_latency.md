@@ -20,7 +20,7 @@ related_terms:
   - vLLM
   - 投機的デコード
   - Token
-status: drafting
+status: needs_review
 ---
 
 # スループットとレイテンシ

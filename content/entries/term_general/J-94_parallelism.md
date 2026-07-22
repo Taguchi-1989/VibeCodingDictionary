@@ -20,7 +20,7 @@ related_terms:
   - MoE ルーティング
   - H100
   - GPU
-status: drafting
+status: needs_review
 ---
 
 # 並列化戦略

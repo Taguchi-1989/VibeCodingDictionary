@@ -20,7 +20,7 @@ related_terms:
   - ハーネスエンジニアリング
   - 自律ループとガードレール
   - Subagent（サブエージェント）
-status: drafting
+status: needs_review
 ---
 
 # ループエンジニアリング

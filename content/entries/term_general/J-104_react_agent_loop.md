@@ -20,7 +20,7 @@ related_terms:
   - Tool Use
   - Subagent
   - コンテキスト管理
-status: drafting
+status: needs_review
 ---
 
 # ReAct

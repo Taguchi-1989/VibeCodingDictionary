@@ -20,7 +20,7 @@ related_terms:
   - Transformer
   - MoE
   - DeepSeek V3
-status: drafting
+status: needs_review
 ---
 
 # MTP

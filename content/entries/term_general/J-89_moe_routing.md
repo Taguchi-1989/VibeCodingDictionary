@@ -20,7 +20,7 @@ related_terms:
   - LLM
   - DeepSeek V3
   - GLM
-status: drafting
+status: needs_review
 ---
 
 # MoE ルーティング

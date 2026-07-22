@@ -20,7 +20,7 @@ related_terms:
   - Auto-compact
   - Subagent
   - ループエンジニアリング
-status: drafting
+status: needs_review
 ---
 
 # コンテキスト管理

@@ -20,7 +20,7 @@ related_terms:
   - Transformer
   - H100
   - VRAM
-status: drafting
+status: needs_review
 ---
 
 # Flash Attention

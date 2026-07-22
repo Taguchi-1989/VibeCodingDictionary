@@ -20,7 +20,7 @@ related_terms:
   - RoPE
   - DeepSeek V3
   - Transformer
-status: drafting
+status: needs_review
 ---
 
 # MLA

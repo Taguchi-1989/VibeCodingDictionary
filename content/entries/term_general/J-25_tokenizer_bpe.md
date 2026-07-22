@@ -20,7 +20,7 @@ related_terms:
   - Transformer
   - パラメータ数の単位
   - Context Window
-status: drafting
+status: needs_review
 ---
 
 # Tokenizer・BPE

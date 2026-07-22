@@ -20,7 +20,7 @@ related_terms:
   - RAG
   - 拡散モデル
   - Transformer
-status: drafting
+status: needs_review
 ---
 
 # 潜在空間
