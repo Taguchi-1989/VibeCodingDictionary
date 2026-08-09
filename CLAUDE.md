@@ -10,15 +10,14 @@
 
 ## 2. 今やっていること
 
-letter A〜J 計 339 件の候補すべてに対して、現状は **スケルトン先行** で進めています（2026-04-28 切り替え）。
+**本書きはほぼ完走**（2026-08 時点: ready 252 / needs_review 103 / drafting 1 / archived 8、☆ 違反 0。スケルトンは残っていません）。フェーズは執筆から**品質仕上げ・刊行準備**に移っています。
 
-- 既存の本書きエントリ：14 件（A-1, A-2, B-1〜3, C-1〜2, D-11, D-12, E-1, F-50, G-1, H-53, I-1, J-14）
-- スケルトンのみ：約 318 件（[templates/skeleton_template.md](templates/skeleton_template.md) を [scripts/generate_skeleton.py](scripts/generate_skeleton.py) で流し込み）
-- 旧 3 桁 ID（status: sample）：6 件（参照用に凍結）
+- 現在の内訳と次の作業は [ledgers/revision_queue.md](ledgers/revision_queue.md) で確認（保存ごとに自動再生成）
+- 改善課題と追加語候補は [docs/design_improvement_proposal_2026-08.md](docs/design_improvement_proposal_2026-08.md) に集約（仕様同期・品質バグ・表紙・収録語の抜け監査）
+- 最終ポンチ絵は `assets/ponchi/final/` に 370 枚差し込み済み。前付け（`drafts/front_section/`）のイラスト 13 枠が残（[drafts/IMAGE_GEN_TODO.md](drafts/IMAGE_GEN_TODO.md)）
+- プレビューは `python3 scripts/preview_gen.py` → `drafts/prototypes/preview/`。Cloudflare Pages（`drafts/` を公開）にデプロイ
 
-スケルトンは「YAML フロントマター ＋ 必須節の見出し ＋ tagline 仮値（候補リストの一言）」だけが入った状態で、validator は `status: skeleton` を archived/sample と同様にスキップします。本書きでは status を `drafting` に上げ、`entry-writer` サブエージェントが中身を埋めます。
-
-新規エントリを後から追加するときも `python3 scripts/generate_skeleton.py B-99` のように単発で生成できます（既存ファイルは絶対に上書きしません）。
+新規エントリを追加するときは `python3 scripts/generate_skeleton.py B-99` のように単発で生成 →（status を `drafting` に上げて）entry-writer で本書き、の流れは従来どおりです（既存ファイルは絶対に上書きしません）。
 
 ## 3. 書くときに必ず守ること
 

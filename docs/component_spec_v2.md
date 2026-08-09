@@ -1,5 +1,13 @@
 # コンポーネント分解仕様 v2（iter 22 / 2026-04-25）
 
+> **⚠️ 実装前に必読（2026-08-09 追記）**: 本書のコンポーネント分解は iter 22 時点の `typescript_spread.html` を基にしており、その後レイアウトが 3 点進化しています。**実装の正は `scripts/preview_gen.py` の出力**（= `drafts/prototypes/preview/*.html`）で、差分は次のとおりです。
+>
+> 1. 左ページ: Before/After 図＋擬人化ポンチ絵の 2 枠 →「イメージ」**1 枠に統合**（`assets/ponchi/final/*.webp` を差し込み）
+> 2. **開発フローでの位置は右ページ → 左ページ下段へ移動**
+> 3. 右ページ下段: 4:6 の 2 カラム → つまずき／コメントの**全幅縦スタック**。関連用語 → **備考カード** → 参考 URL の順
+>
+> 最新の紙面構造は [v2_rules_summary.md](v2_rules_summary.md) §1（v2.29 で同期済み）を参照してください。本書の §0（スタック）・命名・データフローの方針は引き続き有効です。
+
 *実装担当（静的サイト生成器側）への引き渡し資料。現行の [typescript_spread.html](../drafts/prototypes/mockups/design_philosophy_v2/typescript_spread.html) と [overlay.css](../drafts/prototypes/mockups/design_philosophy_v2/overlay.css) を、どう**再利用可能なコンポーネント**に分解し、[entry_schema.yaml](entry_schema.yaml) と [entries.csv](../ledgers/entries.csv) から 335 エントリ分のスプレッドを自動生成するか、の仕様。*
 
 ---
