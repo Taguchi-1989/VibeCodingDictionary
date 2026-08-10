@@ -1,0 +1,159 @@
+---
+id: C-16
+title: DeepSeek
+title_reading: ディープシーク
+category: person_org
+subtype: company
+experience_level: research_only
+reader_level: 2-3
+importance: B
+figure_type: structure
+page_layout: spread_v1
+start_date: 2023
+end_date:
+version_status: active
+pricing_note: freemium
+evaluation_date: 2026-08-10
+related_terms:
+  - DeepSeek V3
+  - DeepSeek R1
+  - DeepSeek ショック
+  - Moonshot AI
+status: needs_review
+---
+
+# DeepSeek
+
+## tagline
+
+モデルの重みを公開する方針で知られる、中国・杭州発の AI 開発企業です。
+
+<!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
+
+## 何をしてくれるか
+
+LLM（大規模言語モデル）を開発する中国企業です。親会社は量的取引のヘッジファンド High-Flyer、創業者は梁文鋒（Liang Wenfeng）氏です。V3・R1 など重みを公開したモデルで知られています。
+
+## どこで出会うか
+
+API 価格の安さを伝えるニュースや、2025 年 1 月の市場の動揺（DeepSeek ショック）を振り返る記事で社名を目にします。オープンウェイトモデルの比較記事でも名前が挙がります。
+
+## メイン図
+
+### 図の狙い
+
+DeepSeek という会社と、そこが公開する V3・R1 というモデルの関係を示し、「重みを公開する企業」という立ち位置を掴んでもらいます。
+
+### B. 登場シーン（figure_type: structure）
+
+- シーン1: AI 業界ニュースで API 価格の安さや低コスト学習の主張を伝える場面
+- シーン2: オープンウェイトモデルを比較・選定する場面で V3・R1 が候補に挙がる場面
+- シーン3: DeepSeek ショックを振り返る歴史記事で企業名として言及される場面
+- 並べる基準: 読者が DeepSeek という社名に遭遇する入口の多様性
+
+## 会話での使い方例
+
+「DeepSeek は重み公開してるから、ローカルでも試せますよね。」
+
+<!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
+
+## この用語の見どころ
+
+### 1. 役割
+
+V3・R1 を開発し、重みを公開する中国企業です。
+
+### 2. うれしさ
+
+低価格の API で高性能モデルを試せます。
+
+### 3. 注意点
+
+中国企業のため、データの扱いに慎重な判断が要ります。
+
+### 4. どこで役立つか
+
+低コストなモデルを探すときの選択肢になります。
+
+### 5. はじめに
+
+V3・R1 が重みを公開している、と押さえれば十分です。
+
+### 6. 深掘り先
+
+DeepSeek V3、DeepSeek R1、DeepSeek ショック
+
+## 開発フローでの位置（必須）
+
+1. 情報収集 — API 価格や重み公開の方針をニュースで確認する
+2. モデル選定 — DeepSeek V3・R1 を候補として比較検討する
+3. 利用判断 — データの扱いや取引制限などのリスクを事前に確認する
+4. 導入・活用 — API か、公開されたモデルの重みを使って組み込む
+
+## 関連用語
+
+- DeepSeek V3
+- DeepSeek R1
+- DeepSeek ショック
+- Moonshot AI
+
+<!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
+
+<!-- AUTHOR: user_only / AI-ASSIST: no -->
+## 非エンジニアのつまずき
+
+<!-- user-input:start key="stumble" -->
+- 
+- 
+- 
+<!-- user-input:end key="stumble" -->
+
+<!-- AUTHOR: user_only / AI-ASSIST: no -->
+## 私のコメント
+
+<!-- user-input:start key="my_comment" -->
+- 🙂 第一印象: 
+- 👍 良い点: 
+- 👎 ダメな点: 
+- 👥 誰向けか: 
+<!-- user-input:end key="my_comment" -->
+
+<!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
+
+## 誌面ポンチ絵メモ
+
+### メイン図（左ページ中段 / figure_type: structure）
+
+- 描く内容: 中央に「DeepSeek」のロゴ風ラベル、下に V3・R1 の 2 モデルへ矢印。左に親会社 High-Flyer（ヘッジファンド）を小さく配置し、資本関係を示す
+- 登場人物: 開発者風の人物が API の価格表とベンチマーク表を見比べている
+- 吹き出し・心の声: 「安いのにこの性能？」
+- 中央に置くキーワード/ラベル: DeepSeek → V3 / R1
+
+### 6視点アイコン（右ページ上段）
+
+- 共通アイコン流用（個別演出が要るときだけ書き足す）
+
+### 開発フロー図（右ページ下段）
+
+- Step 1 のアイコン/絵柄: 虫眼鏡（情報収集）
+- Step 2 のアイコン/絵柄: 棒グラフ（モデル選定）
+- Step 3 のアイコン/絵柄: 盾（利用判断）
+- Step 4 のアイコン/絵柄: プラグ（導入・活用）
+- 矢印で示す流れの意図: 情報収集 → 選定 → リスク判断 → 導入の順
+
+## コミュニティ補完メモ
+
+- D-46 DeepSeek V3 / D-47 DeepSeek R1 との住み分け: 本エントリは企業としての DeepSeek に焦点を当て、モデル個別の性能・使い方は D-46 / D-47 に譲ります
+- H-64 DeepSeek ショックとの住み分け: 2025 年 1 月の市場の動揺（NVIDIA 株価急落など）の経緯は H-64 側で扱い、本エントリでは出来事名として触れるにとどめます
+- C-10 Moonshot AI / C-11 Z.ai との住み分け: いずれも中国 AI 企業で「六小虎」報道と並べて語られますが、本エントリは DeepSeek 固有の資本関係（High-Flyer）と重み公開方針に絞ります
+
+## 出典メモ
+
+- DeepSeek 公式サイト <https://www.deepseek.com/> — checked 2026-08-10
+- Wikipedia「DeepSeek」<https://en.wikipedia.org/wiki/DeepSeek> — checked 2026-08-10
+
+## 備考
+
+- 創業: 2023 年、中国・杭州。親会社は量的取引のヘッジファンド High-Flyer、創業者は梁文鋒（Liang Wenfeng）氏です
+- V4 など未確認の後継モデルの話は採用していません（まとめ記事にのみ出てくる情報のため、stage3_briefs_2026-08.md の注意書きに従い除外）
+- 株価への影響（DeepSeek ショック）の詳細な経緯・数字は H-64 に譲り、本エントリでは企業紹介に徹しています

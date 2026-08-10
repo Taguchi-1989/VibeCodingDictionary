@@ -43,8 +43,16 @@ B-30,,Amazon Bedrock,service,managed_ai,ready,,content/entries/service/B-30_amaz
 B-31,,Excalidraw,service,saas_design,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-31_excalidraw[済].md
 B-32,,Figma,service,saas_design,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-32_figma[済].md
 B-33,,Canva,service,saas_design,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-33_canva[済].md
+B-34,,NotebookLM,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-34_notebooklm[人書].md
+B-35,,Gemini CLI,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-35_gemini_cli[人書].md
+B-36,,Lovable,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-36_lovable[人書].md
+B-37,,Replit,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-37_replit[人書].md
+B-38,,Manus,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-38_manus[人書].md
+B-39,,Google AI Studio,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-39_google_ai_studio[人書].md
 B-40,,Reddit,service,info_source,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-40_reddit[済].md
 B-41,,arXiv,service,info_source,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-41_arxiv[済].md
+B-42,,Discord,service,info_source,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-42_discord[人書].md
+B-43,,n8n・Dify,service,automation,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-43_n8n_dify[人書].md
 B-50,,Claude の料金プラン,service,pricing,ready,時変情報 evaluation_date:2026-04-29,content/entries/service/B-50_claude_pricing[済].md
 B-51,,ChatGPT の料金プラン,service,pricing,ready,時変情報 evaluation_date:2026-04-29,content/entries/service/B-51_chatgpt_pricing[済].md
 B-52,,Gemini の料金プラン,service,pricing,ready,時変情報 evaluation_date:2026-04-29,content/entries/service/B-52_gemini_pricing[済].md
@@ -65,6 +73,8 @@ C-12,,TSMC,person_org,company,ready,半導体ファウンドリ v2テンプレ�
 C-13,,Groq,person_org,company,ready,AI推論チップ LPU v2テンプレ書き起こし済（2026-04-30）,content/entries/person/C-13_groq[済].md
 C-14,,AMD,person_org,company,ready,半導体,content/entries/person/C-14_amd[済].md
 C-15,,Intel,person_org,company,drafting,半導体IDM。EUV採用遅れ→18A復活途上,content/entries/person/C-15_intel.md
+C-16,,DeepSeek,person_org,company,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/person/C-16_deepseek[人書].md
+C-17,,Sakana AI,person_org,company,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/person/C-17_sakana_ai[人書].md
 C-50,,Sam Altman,person_org,person,needs_review,,content/entries/person/C-50_sam_altman[人書].md
 C-51,,Dario Amodei,person_org,person,ready,,content/entries/person/C-51_dario_amodei[済].md
 C-52,,Demis Hassabis,person_org,person,ready,,content/entries/person/C-52_demis_hassabis[済].md
@@ -115,7 +125,9 @@ D-55,,Nano Banana,model,image_video,ready,,content/entries/model/D-55_nano_banan
 D-56,,Seedance,model,video_generation,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-56_seedance[済].md
 D-57,,Flow,model,image_video,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-57_flow[済].md
 D-58,,Whisk,model,image_video,ready,,content/entries/model/D-58_whisk[済].md
+D-59,,Midjourney,model,image_video,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/model/D-59_midjourney[人書].md
 D-60,,AlphaGo,model,historical,ready,,content/entries/model/D-60_alphago[済].md
+D-61,,AlphaFold,model,historical,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/model/D-61_alphafold[人書].md
 D-70,,Amical,model,ai_solution,needs_review,情報限定的。公式確認が必要（2026-04-30）,content/entries/model/D-70_amical[人書].md
 D-71,,Whisper,model,voice_audio,ready,OpenAI のオープン音声認識モデル,content/entries/model/D-71_whisper[済].md
 E-1,,SWE-Bench,benchmark,coding,ready,,content/entries/benchmark/E-1_swe_bench[済].md
@@ -130,6 +142,7 @@ E-24,,MATH,benchmark,reasoning,ready,v2テンプレ書き起こし済（2026-04-
 E-25,,AIME,benchmark,reasoning,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-25_aime[済].md
 E-26,,Humanity's Last Exam,benchmark,reasoning,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-26_humanity_s_last_exam[済].md
 E-27,,IQ Bench,benchmark,reasoning,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-27_iq_bench[済].md
+E-28,,ARC-AGI,benchmark,reasoning,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/benchmark/E-28_arc_agi[人書].md
 E-30,,TAU-Bench,benchmark,agent,ready,,content/entries/benchmark/E-30_tau_bench[済].md
 E-31,,WebArena,benchmark,agent,needs_review,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-31_webarena[人書].md
 E-32,,GAIA,benchmark,agent,needs_review,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-32_gaia[人書].md
@@ -154,6 +167,7 @@ F-14,,three.js,term_tool,framework,ready,3Dライブラリ,content/entries/term_
 F-15,,shadcn/ui,term_tool,framework,needs_review,コピペ配布型 React コンポーネント集,content/entries/term_tool/F-15_shadcn_ui[人書].md
 F-16,,Tailwind CSS,term_tool,framework,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_tool/F-16_tailwind_css[済].md
 F-17,,Astro,term_tool,framework,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_tool/F-17_astro[済].md
+F-18,,フレームワーク／ライブラリ,term_tool,framework,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-18_framework_library[人書].md
 F-20,303,ESLint,term_tool,linter,ready,旧3桁ID連携・v2テンプレで書き直し済（2026-04-29）,content/entries/term_tool/F-20_eslint[済].md
 F-21,,Prettier,term_tool,formatter,ready,,content/entries/term_tool/F-21_prettier[済].md
 F-30,,VS Code,term_tool,editor,ready,,content/entries/term_tool/F-30_vs_code[済].md
@@ -165,8 +179,11 @@ F-38,,Markdown All in One,term_tool,editor_ext,ready,v2テンプレ書き起こ�
 F-40,,npm,term_tool,cli_build,ready,,content/entries/term_tool/F-40_npm[済].md
 F-41,,Vite,term_tool,cli_build,ready,,content/entries/term_tool/F-41_vite[済].md
 F-42,,ビルド,term_tool,cli_build,ready,v2テンプレ本書き済（2026-04-30）,content/entries/term_tool/F-42_build[済].md
-F-43,,テスト,term_tool,cli_build,archived,v2テンプレ本書き済（2026-04-30）,content/entries/term_tool/F-43_test[凍].md
+F-43,,テスト,term_tool,cli_build,ready,v2テンプレ本書き済（2026-04-30）。archived 凍結を解除し復活（2026-08-10、収録語の抜け監査 §4）,content/entries/term_tool/F-43_test[済].md
 F-44,,pnpm,term_tool,cli_build,ready,,content/entries/term_tool/F-44_pnpm[済].md
+F-45,,デプロイ,term_tool,cli_build,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-45_deploy[人書].md
+F-46,,デバッグ,term_tool,cli_build,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-46_debug[人書].md
+F-47,,フロントエンド／バックエンド,term_tool,architecture,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-47_frontend_backend[人書].md
 F-50,,git,term_tool,git,ready,,content/entries/term/F-50_git[済].md
 F-51,,git push,term_tool,git,ready,,content/entries/term_tool/F-51_git_push[済].md
 F-52,,git pull,term_tool,git,ready,,content/entries/term_tool/F-52_git_pull[済].md
@@ -223,6 +240,8 @@ F-200,,Rust,term_tool,language,needs_review,F-1〜9 言語サブが満杯のた�
 F-210,,JSON Schema,term_tool,schema,skeleton,型・スキーマ・API契約パック優先度A,
 F-211,,Zod,term_tool,schema_validation,skeleton,型・スキーマ・API契約パック優先度A,
 F-212,,OpenAPI,term_tool,api_contract,skeleton,型・スキーマ・API契約パック優先度A,
+F-213,,API,term_tool,api_contract,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-213_api[人書].md
+F-214,,API キー,term_tool,api_contract,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-214_api_key[人書].md
 G-1,,Context (コンテキスト),term_llm,basic,ready,,content/entries/term/G-1_context[済].md
 G-2,,Token,term_llm,basic,ready,,content/entries/term_llm/G-2_token[済].md
 G-3,,Dictation,term_llm,basic,ready,,content/entries/term_llm/G-3_dictation[済].md
@@ -246,6 +265,10 @@ G-20,,CLAUDE.md,tool_agent,config_file,ready,,content/entries/tool_agent/G-20_cl
 G-21,,AGENTS.md,tool_agent,config_file,ready,,content/entries/tool_agent/G-21_agents_md[済].md
 G-22,,SKILL.md,tool_agent,config_file,ready,,content/entries/tool_agent/G-22_skill_md[済].md
 G-23,,.claude/settings.json,tool_agent,config_file,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/tool_agent/G-23_claude_settings_json[済].md
+G-24,,Temperature,term_llm,basic,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-24_temperature[人書].md
+G-25,,AI のメモリ機能,term_llm,basic,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-25_memory[人書].md
+G-26,,Computer Use,term_llm,control,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-26_computer_use[人書].md
+G-27,,プロンプトインジェクション,term_llm,control,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-27_prompt_injection[人書].md
 G-30,,Tool Use,term_llm,control,ready,,content/entries/term_llm/G-30_tool_use[済].md
 G-31,,Hook,term_llm,control,ready,,content/entries/term_llm/G-31_hook[済].md
 G-32,,Slash Command,term_llm,control,ready,,content/entries/term_llm/G-32_slash_command[済].md
@@ -264,6 +287,7 @@ G-45,,段階的開示,term_llm,ops,needs_review,,
 G-46,,ナーフ（モデルの劣化体感）,term_llm,ops,ready,,content/entries/term_llm/G-46_narf[済].md
 G-47,,Auto-compact,term_llm,ops,ready,Claude Code の自動圧縮（文脈管理）,content/entries/term_llm/G-47_auto_compact[済].md
 G-48,,Structured Outputs,term_llm,control,skeleton,LLM構造化出力。JSON SchemaやFunction Callingと隣接,
+G-49,,AI エージェント,term_llm,ops,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-49_ai_agent[人書].md
 H-1,,TDD,workflow,methodology,ready,,content/entries/workflow/H-1_tdd[済].md
 H-2,,ペアプログラミング,workflow,methodology,drafting,v2テンプレ書き起こし済（2026-04-30）,
 H-3,,バイブコーディングの流儀,workflow,methodology,drafting,,
@@ -286,6 +310,7 @@ H-60,,Codex → GitHub Copilot の系譜,history,timeline,drafting,v2テンプ�
 H-61,,Preview 版という文化,history,culture,needs_review,,
 H-62,,Anthropic 創業の流れ,history,event,drafting,v2テンプレ本書き済（2026-04-30）,
 H-63,,Vibe Coding 命名,history,event,drafting,2025-02 Karpathy のツイートで広まった,
+H-64,,DeepSeek ショック,history,event,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/history/H-64_deepseek_shock[人書].md
 I-1,,MCP,mcp,protocol,ready,,content/entries/mcp/I-1_mcp[済].md
 I-2,,MCP Server,mcp,protocol,ready,,content/entries/mcp/I-2_mcp_server[済].md
 I-3,,MCP Client,mcp,protocol,ready,,content/entries/mcp/I-3_mcp_client[済].md
@@ -309,6 +334,7 @@ J-1,,AGI,term_general,ai_concept,ready,,content/entries/term_general/J-1_agi[済
 J-2,,強い AI／弱い AI,term_general,ai_concept,ready,v2テンプレ書き起こし済（2026-04-30）旧スケルトン archived,content/entries/term_general/J-2_strong_weak_ai[済].md
 J-3,,Singularity,term_general,ai_concept,ready,シンギュラリティ,content/entries/term_general/J-3_singularity[済].md
 J-4,,ASI,term_general,ai_concept,ready,,content/entries/term_general/J-4_asi[済].md
+J-5,,世界モデル,term_general,ai_concept,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-5_world_model[人書].md
 J-10,,Machine Learning,term_general,ml_basic,ready,,content/entries/term_general/J-10_machine_learning[済].md
 J-11,,Deep Learning,term_general,ml_basic,ready,,content/entries/term_general/J-11_deep_learning[済].md
 J-12,,Neural Network,term_general,ml_basic,ready,,content/entries/term_general/J-12_neural_network[済].md
@@ -333,6 +359,10 @@ J-30,,Flash Attention,term_general,inference,drafting,Lv6自己学習シェル�
 J-31,,第 5 世代コンピュータ,term_general,computing_history,ready,,content/entries/term_general/J-31_fifth_generation_computer[済].md
 J-32,,ノイマン型,term_general,computing_history,skeleton,,
 J-33,,量子コンピュータ,term_general,computing_history,ready,,content/entries/term_general/J-33_quantum-computer[済].md
+J-34,,マルチモーダル,term_general,ml_basic,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-34_multimodal[人書].md
+J-35,,スケーリング則,term_general,ml_basic,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-35_scaling_law[人書].md
+J-36,,蒸留,term_general,ml_basic,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-36_distillation[人書].md
+J-38,,ムーアの法則,term_general,computing_history,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-38_moores_law[人書].md
 J-40,,IoT,term_general,buzzword,ready,,content/entries/term_general/J-40_iot[済].md
 J-41,,DX,term_general,buzzword,ready,,content/entries/term_general/J-41_dx[済].md
 J-42,,Web3,term_general,buzzword,ready,,content/entries/term_general/J-42_web3[済].md
@@ -344,6 +374,7 @@ J-53,,著作権法 30 条の 4（日本）,term_general,ethics_law,ready,,conten
 J-54,,ISO/IEC 42001,term_general,ethics_law,ready,AIMS v2テンプレ書き起こし済（2026-04-29）,content/entries/term_general/J-54_iso_iec_42001[済].md
 J-55,,個人情報保護法,term_general,ethics_law,drafting,2026-04-30 entry-writer 執筆,
 J-56,,GDPR,term_general,ethics_law,ready,,content/entries/term_general/J-56_gdpr[済].md
+J-57,,RLHF・アラインメント,term_general,ethics_law,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-57_rlhf_alignment[人書].md
 J-62,,チューリングテスト,term_general,peripheral,drafting,2026-04-30 entry-writer 執筆,
 J-70,,VRAM,term_general,hardware,ready,2026-04-29 entry-writer 執筆,content/entries/term_general/J-70_vram[済].md
 J-71,,RAM,term_general,hardware,ready,2026-04-30 entry-writer 執筆,content/entries/term_general/J-71_ram[済].md
@@ -390,3 +421,6 @@ J-111,,人間の認知ボトルネック,term_general,human_cognition,skeleton,L
 J-112,,認知コストの定量化,term_general,human_cognition,skeleton,Lv6自己学習シェルフ（刊行外）。resolution velocity・UX心理監査,content/entries/term_general/J-112_cognitive_cost_quantification.md
 J-113,,生成UIとagent-native設計,term_general,human_cognition,drafting,Lv6自己学習シェルフ（刊行外）。GenUI・提案カード・post-SaaS,content/entries/term_general/J-113_generative_ui_agent_native.md
 J-114,,グッドハートの法則,term_general,human_cognition,drafting,Lv6自己学習シェルフ（刊行外）。測定基準が目標になると腐る・KPI設計・eval設計,content/entries/term_general/J-114_goodharts_law.md
+J-115,,NPU・AI PC,term_general,hardware,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-115_npu_ai_pc[人書].md
+J-116,,TPU,term_general,hardware,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-116_tpu[人書].md
+J-117,,データセンターと電力,term_general,hardware,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-117_datacenter_power[人書].md

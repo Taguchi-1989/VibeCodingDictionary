@@ -117,6 +117,26 @@ SLUG_OVERRIDES: dict[str, str] = {
     "D-2": "gemini25",
     "D-11": "claude35",
     "D-12": "claude4",
+    # 収録語の抜け監査 §4 の追加分（2026-08-10）
+    "G-49": "ai_agent",
+    "F-214": "api_key",
+    "F-45": "deploy",
+    "F-46": "debug",
+    "F-18": "framework_library",
+    "F-47": "frontend_backend",
+    "J-34": "multimodal",
+    "J-35": "scaling_law",
+    "G-37": "prompt_injection",
+    "B-43": "n8n_dify",
+    "G-25": "memory",
+    "J-36": "distillation",
+    "J-57": "rlhf_alignment",
+    "J-115": "npu_ai_pc",
+    "J-116": "tpu",
+    "J-117": "datacenter_power",
+    "J-5": "world_model",
+    "J-38": "moores_law",
+    "H-64": "deepseek_shock",
 }
 
 
@@ -226,7 +246,7 @@ def read_csv() -> tuple[list[str], list[dict]]:
 
 def write_csv(fieldnames: list[str], rows: list[dict]) -> None:
     with CSV_PATH.open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
