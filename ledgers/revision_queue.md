@@ -1,6 +1,6 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-08-10 04:03 / `scripts/update_review_queue.py`*
+*自動生成: 2026-08-10 05:19 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
@@ -226,7 +226,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-24 | Temperature | needs_review | — |
 | G-25 | AI のメモリ機能 | needs_review | — |
 | G-26 | Computer Use | needs_review | — |
-| G-37 | プロンプトインジェクション | needs_review | — |
+| G-27 | プロンプトインジェクション | needs_review | — |
 | G-4 | System Prompt | needs_review | — |
 | G-49 | AI エージェント | needs_review | — |
 | H-64 | DeepSeek ショック | needs_review | — |

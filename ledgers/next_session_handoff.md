@@ -8,7 +8,7 @@
 - 確定 ID と仮 ID からの変更理由：[ledgers/entry_candidates.md](entry_candidates.md) の「M 差分（2026-08-10）」
 - 新規 34 本はすべて `status: needs_review`（☆違反 0・警告 0）。**著者欄（非エンジニアのつまずき／私のコメント）の記入待ち**です
 - **F-43 テスト**：提案書は「欠番」としていましたが、実際には v2 テンプレで本書き済み・著者コメントまで入ったエントリが `status: archived` で凍結されていました。取りこぼしと判断して `ready` に戻しています（意図的な凍結だった場合は差し戻してください）
-- **G-37 プロンプトインジェクション**：G-37 は Cursor Composer を D-35 へ移した際の欠番でした。G-30 台に他の空きがないため再利用しています。番号を動かしたくない場合は著者判断で差し替えを
+- **G-27 プロンプトインジェクション**：当初 G-37（Cursor Composer 移設で空いた欠番）に置きましたが、著者判断で G-27 へ移動しました。G-37 は欠番のままです
 - `scripts/generate_skeleton.py` が `ledgers/entries.csv` を CRLF で書き戻していたのを修正（`lineterminator="\n"`。`sync_entries_csv.py` は元から LF 指定でした）
 
 ### 次にやること（このセッションで見つかった宿題）

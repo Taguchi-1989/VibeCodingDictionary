@@ -1,5 +1,5 @@
 ---
-id: G-37
+id: G-27
 title: プロンプトインジェクション
 title_reading:
 category: term_llm

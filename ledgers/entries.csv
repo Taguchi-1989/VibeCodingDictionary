@@ -268,6 +268,7 @@ G-23,,.claude/settings.json,tool_agent,config_file,ready,v2テンプレ書き起
 G-24,,Temperature,term_llm,basic,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-24_temperature[人書].md
 G-25,,AI のメモリ機能,term_llm,basic,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-25_memory[人書].md
 G-26,,Computer Use,term_llm,control,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-26_computer_use[人書].md
+G-27,,プロンプトインジェクション,term_llm,control,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-27_prompt_injection[人書].md
 G-30,,Tool Use,term_llm,control,ready,,content/entries/term_llm/G-30_tool_use[済].md
 G-31,,Hook,term_llm,control,ready,,content/entries/term_llm/G-31_hook[済].md
 G-32,,Slash Command,term_llm,control,ready,,content/entries/term_llm/G-32_slash_command[済].md
@@ -275,7 +276,6 @@ G-33,,Function Calling,term_llm,control,ready,,content/entries/term_llm/G-33_fun
 G-34,,Code Interpreter,term_llm,code_execution,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_llm/G-34_code_interpreter[済].md
 G-35,,Deep Research,term_llm,control,ready,,content/entries/term_llm/G-35_deep_research[済].md
 G-36,,Artifact,term_llm,control,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_llm/G-36_artifact[済].md
-G-37,,プロンプトインジェクション,term_llm,control,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-37_prompt_injection[人書].md
 G-38,,Plan Mode,term_llm,control,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_llm/G-38_plan_mode[済].md
 G-39,,Permission,term_llm,control,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_llm/G-39_permission[済].md
 G-40,,バイブコーディング,term_llm,ops,ready,,content/entries/term_llm/G-40_vibe_coding[済].md
