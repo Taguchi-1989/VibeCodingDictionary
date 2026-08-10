@@ -18,7 +18,7 @@ related_terms:
   - Playwright
   - ビルド
   - HumanEval
-status: archived
+status: ready
 ---
 
 # テスト

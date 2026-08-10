@@ -74,6 +74,8 @@ Astro + React の実装担当は `v2_rules_summary.md` と `component_spec_v2.md
 
 ## 4. 収録語の抜け監査 — 「この言葉がないのはおかしい」追加候補
 
+> **実施済み（2026-08-10）**：本節の ☆☆☆ 15 件・☆☆ 20 件をすべて執筆しました。確定 ID と提案時の仮 ID からの変更点は [ledgers/entry_candidates.md](../ledgers/entry_candidates.md) の「M 差分（2026-08-10）」、執筆に使った事実確認メモは [ledgers/stage3_briefs_2026-08.md](../ledgers/stage3_briefs_2026-08.md) にあります。なお F-43 テストは「欠番」ではなく、本書き済みのエントリが `archived` で凍結されていたため復活させました。
+
 現行 364 件の全タイトルを letter 横断で走査し、想定読者（非エンジニアで AI 開発の会話に入る人）が 2026 年時点で高頻度に踏む語と突き合わせました。以下は **`ledgers/entry_candidates.md` にも未収載**のものだけです（台帳に既にある語は挙げていません）。仮 ID は `docs/id_scheme.md` の空き番号への仮割当てで、確定は著者判断です。
 
 ### ☆☆☆ 明らかな抜け（優先追加を推奨・15 件）

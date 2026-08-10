@@ -1,4 +1,21 @@
-# 次セッションへの引き継ぎ（2026-05-23 v11 更新）
+# 次セッションへの引き継ぎ（2026-08-10 v12 更新）
+
+## 2026-08-10 セッション成果 — 収録語の抜け監査 34 本を本書き
+
+[docs/design_improvement_proposal_2026-08.md](../docs/design_improvement_proposal_2026-08.md) §4 の追加候補（☆☆☆ 15 件・☆☆ 20 件）を全部書きました。エントリ総数は 364 → 398 件です。
+
+- 事実確認メモ：[ledgers/stage3_briefs_2026-08.md](stage3_briefs_2026-08.md)（各語の「押さえる事実 ＋ 出典 URL ＋ 書かないこと」。すべて 2026-08-10 に web で確認）
+- 確定 ID と仮 ID からの変更理由：[ledgers/entry_candidates.md](entry_candidates.md) の「M 差分（2026-08-10）」
+- 新規 34 本はすべて `status: needs_review`（☆違反 0・警告 0）。**著者欄（非エンジニアのつまずき／私のコメント）の記入待ち**です
+- **F-43 テスト**：提案書は「欠番」としていましたが、実際には v2 テンプレで本書き済み・著者コメントまで入ったエントリが `status: archived` で凍結されていました。取りこぼしと判断して `ready` に戻しています（意図的な凍結だった場合は差し戻してください）
+- **G-37 プロンプトインジェクション**：G-37 は Cursor Composer を D-35 へ移した際の欠番でした。G-30 台に他の空きがないため再利用しています。番号を動かしたくない場合は著者判断で差し替えを
+- `scripts/generate_skeleton.py` が `ledgers/entries.csv` を CRLF で書き戻していたのを修正（`lineterminator="\n"`。`sync_entries_csv.py` は元から LF 指定でした）
+
+### 次にやること（このセッションで見つかった宿題）
+
+1. **著者欄の記入**：新規 34 本 ＋ 既存分。`cat ledgers/revision_queue.md` の「著者レビュー待ち」から
+2. **台帳にあるのにファイルが無い 35 件**：`ledgers/entries.csv` に行はあるのに `path` 列が空＝**一度も生成されていないエントリが 35 件**あります（`C-83 / D-3 / D-10 / D-13 / D-23 / F-34 / F-57 / F-150 / F-210 JSON Schema / F-211 Zod / F-212 OpenAPI / G-8 / G-9 / G-17 / G-45 / G-48 / H-2 / H-3 / H-4 / H-50 / H-51 / H-52 / H-57 / H-59 / H-60 / H-61 / H-62 / H-63 / I-80 / I-81 / J-22 / J-32 / J-50 / J-55 / J-62`）。notes に「v2テンプレ本書き済」と書かれている行も含まれますが、実ファイルは存在しません。今回追加した G-49 AI エージェントが H-59「AI エージェント元年」を、F-213 API が F-212 OpenAPI を参照できなかった原因もこれです。**次セッションの最有力候補**
+3. **CSV と実ファイルの status 乖離 47 件**：`ledgers/entries.csv` の status 列が実ファイルの YAML と食い違う行が 47 件あります（例：F-60 GitHub は CSV `needs_review` ／ ファイル `ready`）。`sync_entries_csv.py` は path 列しか同期しないため、status も同期するか、CSV 側を正とするかの方針決めが要ります
 
 ## 2026-05-23 セッション成果
 
