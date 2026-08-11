@@ -20,7 +20,7 @@ related_terms:
   - GitHub
   - Google AI Studio
   - Permission
-status: needs_review
+status: ready
 ---
 
 # API キー

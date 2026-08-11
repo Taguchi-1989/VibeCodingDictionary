@@ -20,7 +20,7 @@ related_terms:
   - ビルド
   - CI/CD
   - GitHub Actions
-status: needs_review
+status: ready
 ---
 
 # デプロイ

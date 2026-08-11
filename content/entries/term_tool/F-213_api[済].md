@@ -19,7 +19,7 @@ related_terms:
   - API キー
   - Function Calling
   - フロントエンド／バックエンド
-status: needs_review
+status: ready
 ---
 
 # API

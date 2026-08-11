@@ -137,6 +137,11 @@ SLUG_OVERRIDES: dict[str, str] = {
     "J-5": "world_model",
     "J-38": "moores_law",
     "H-64": "deepseek_shock",
+    # 台帳登録済み・未生成だった技術寄りの穴埋め（2026-08-10）
+    "G-8": "determinism",
+    "G-9": "effort_level",
+    "G-17": "vector_db",
+    "G-45": "progressive_disclosure",
 }
 
 
