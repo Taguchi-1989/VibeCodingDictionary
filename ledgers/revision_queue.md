@@ -1,16 +1,16 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-08-10 14:43 / `scripts/update_review_queue.py`*
+*自動生成: 2026-08-11 10:06 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 137 件
+- **needs_review**: 145 件
 - **ready**: 253 件
 - **archived**: 7 件
-- **合計**: 398 件
+- **合計**: 406 件
 
 - **自己学習シェルフ（reader_level 6・刊行外）**: 35 件（誌面には出ません。`scripts/preview_gen.py` が除外）
 
@@ -166,7 +166,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（105 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（113 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -213,6 +213,9 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-180 | OpenGL | needs_review | — |
 | F-181 | WebGL | needs_review | — |
 | F-190 | サブルーチン | needs_review | — |
+| F-210 | JSON Schema | needs_review | — |
+| F-211 | Zod | needs_review | — |
+| F-212 | OpenAPI | needs_review | — |
 | F-213 | API | needs_review | — |
 | F-214 | API キー | needs_review | — |
 | F-45 | デプロイ | needs_review | — |
@@ -223,12 +226,17 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-87 | sudo | needs_review | — |
 | F-90 | Docker | needs_review | — |
 | F-91 | .env | needs_review | — |
+| G-17 | ベクトル DB | needs_review | — |
 | G-24 | Temperature | needs_review | — |
 | G-25 | AI のメモリ機能 | needs_review | — |
 | G-26 | Computer Use | needs_review | — |
 | G-27 | プロンプトインジェクション | needs_review | — |
 | G-4 | System Prompt | needs_review | — |
+| G-45 | 段階的開示 | needs_review | — |
+| G-48 | Structured Outputs | needs_review | — |
 | G-49 | AI エージェント | needs_review | — |
+| G-8 | 決定論的／非決定論的 | needs_review | — |
+| G-9 | effort レベル | needs_review | — |
 | H-64 | DeepSeek ショック | needs_review | — |
 | J-101 | 半導体製造プロセス | needs_review | — |
 | J-102 | チップレットと3D積層 | needs_review | — |

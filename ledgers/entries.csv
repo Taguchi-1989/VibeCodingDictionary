@@ -237,9 +237,9 @@ F-180,,OpenGL,term_tool,graphics,needs_review,,content/entries/term_tool/F-180_o
 F-181,,WebGL,term_tool,graphics_api,needs_review,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_tool/F-181_webgl[人書].md
 F-190,,サブルーチン,term_tool,programming_basic,needs_review,古典的概念 / v2本書き済み 2026-04-30,content/entries/term_tool/F-190_subroutine[人書].md
 F-200,,Rust,term_tool,language,needs_review,F-1〜9 言語サブが満杯のため新サブ「追加言語」F-200〜209 を新設（2026-04-29）。v2 テンプレ書き起こし済（2026-04-30）,content/entries/term_tool/F-200_rust[人書].md
-F-210,,JSON Schema,term_tool,schema,skeleton,型・スキーマ・API契約パック優先度A,
-F-211,,Zod,term_tool,schema_validation,skeleton,型・スキーマ・API契約パック優先度A,
-F-212,,OpenAPI,term_tool,api_contract,skeleton,型・スキーマ・API契約パック優先度A,
+F-210,,JSON Schema,term_tool,schema,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10）,content/entries/term_tool/F-210_json_schema[人書].md
+F-211,,Zod,term_tool,schema_validation,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10）,content/entries/term_tool/F-211_zod[人書].md
+F-212,,OpenAPI,term_tool,api_contract,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10）,content/entries/term_tool/F-212_openapi[人書].md
 F-213,,API,term_tool,api_contract,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-213_api[人書].md
 F-214,,API キー,term_tool,api_contract,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-214_api_key[人書].md
 G-1,,Context (コンテキスト),term_llm,basic,ready,,content/entries/term/G-1_context[済].md
@@ -249,8 +249,8 @@ G-4,,System Prompt,term_llm,basic,needs_review,,content/entries/term_llm/G-4_sys
 G-5,,Context Window,term_llm,basic,ready,,content/entries/term_llm/G-5_context_window[済].md
 G-6,,One-shot,term_llm,basic,ready,,content/entries/term_llm/G-6_one_shot[済].md
 G-7,,指示追従性,term_llm,basic,ready,,content/entries/term_llm/G-7_instruction-following[済].md
-G-8,,決定論的／非決定論的,term_llm,basic,needs_review,v2テンプレ書き起こし済（2026-04-30）,
-G-9,,effort レベル,term_llm,basic,drafting,low/medium/high/xhigh,
+G-8,,決定論的／非決定論的,term_llm,basic,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10）,content/entries/term_llm/G-8_determinism[人書].md
+G-9,,effort レベル,term_llm,basic,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10）,content/entries/term_llm/G-9_effort_level[人書].md
 G-10,,Prompt Engineering,term_llm,technique,ready,,content/entries/term_llm/G-10_prompt_engineering[済].md
 G-11,,Context Engineering,term_llm,technique,ready,,content/entries/term_llm/G-11_context_engineering[済].md
 G-12,,Agent Design,term_llm,technique,needs_review,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_llm/G-12_agent_design[人書].md
@@ -258,7 +258,7 @@ G-13,,Few-shot Learning,term_llm,technique,ready,,content/entries/term_llm/G-13_
 G-14,,Thinking モデル,term_llm,technique,ready,新テンプレ書き起こし済（2026-04-29）。旧G-14.mdはarchived,content/entries/term_llm/G-14_thinking_model[済].md
 G-15,,RAG,term_llm,technique,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_llm/G-15_rag[済].md
 G-16,,Embedding,term_llm,technique,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_llm/G-16_embedding[済].md
-G-17,,ベクトル DB,term_llm,technique,drafting,v2テンプレ書き起こし済（2026-04-30）,
+G-17,,ベクトル DB,term_llm,technique,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10）,content/entries/term_llm/G-17_vector_db[人書].md
 G-18,,Chain of Thought,term_llm,technique,ready,CoT。v2テンプレ書き起こし済（2026-04-30）,content/entries/term_llm/G-18_chain_of_thought[済].md
 G-19,,Prompt Caching,term_llm,technique,ready,プロンプト断片を再利用してコスト・レイテンシを下げる仕組み,content/entries/term_llm/G-19_prompt_caching[済].md
 G-20,,CLAUDE.md,tool_agent,config_file,ready,,content/entries/tool_agent/G-20_claude_md[済].md
@@ -283,10 +283,10 @@ G-41,,Subagent,term_llm,ops,ready,,content/entries/term_llm/G-41_subagent[済].m
 G-42,,Worktree,term_llm,ops,ready,,content/entries/term_llm/G-42_worktree[済].md
 G-43,,オーケストレーション,term_llm,ops,ready,旧スケルトン G-43.md は archived,content/entries/term_llm/G-43_orchestration[済].md
 G-44,,マルチエージェント協調,term_llm,ops,ready,,content/entries/term_llm/G-44_multi_agent_coordination[済].md
-G-45,,段階的開示,term_llm,ops,needs_review,,
+G-45,,段階的開示,term_llm,ops,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10）,content/entries/term_llm/G-45_progressive_disclosure[人書].md
 G-46,,ナーフ（モデルの劣化体感）,term_llm,ops,ready,,content/entries/term_llm/G-46_narf[済].md
 G-47,,Auto-compact,term_llm,ops,ready,Claude Code の自動圧縮（文脈管理）,content/entries/term_llm/G-47_auto_compact[済].md
-G-48,,Structured Outputs,term_llm,control,skeleton,LLM構造化出力。JSON SchemaやFunction Callingと隣接,
+G-48,,Structured Outputs,term_llm,control,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10）,content/entries/term_llm/G-48_structured_outputs[人書].md
 G-49,,AI エージェント,term_llm,ops,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-49_ai_agent[人書].md
 H-1,,TDD,workflow,methodology,ready,,content/entries/workflow/H-1_tdd[済].md
 H-2,,ペアプログラミング,workflow,methodology,drafting,v2テンプレ書き起こし済（2026-04-30）,
