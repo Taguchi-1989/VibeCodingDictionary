@@ -19,7 +19,7 @@ related_terms:
   - Function Calling
   - Tool Use
   - JSON
-status: needs_review
+status: ready
 ---
 
 # Structured Outputs
@@ -96,19 +96,19 @@ JSON Schema、Function Calling、Tool Use。
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- そもそも名前を初めて聞く。ここが最初のつまずき。
+- 「JSON で返して」とお願いするのと何が違うのかが、言われないと分からない。
+- 自分で設定するものなのか、ツール側が中でやってくれているものなのかが見えない。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: 今回はじめて聞いた。決まった構造で出させるのがいいんだろうな、という感じ。
+- 👍 良い点: 具体的な形で返ってくるのはいい。エンジニアリングの中でプロが実装してくれているところなので、便利に使えばいいと思う。
+- 👎 ダメな点: 特にない、という感じ。
+- 👥 誰向けか: ハーネスの原理原則のところまで行くと必要になる人向け。
 <!-- user-input:end key="my_comment" -->
 
 

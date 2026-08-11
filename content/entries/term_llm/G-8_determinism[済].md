@@ -19,7 +19,7 @@ related_terms:
   - Temperature
   - Structured Outputs
   - Prompt Engineering
-status: needs_review
+status: ready
 ---
 
 # 決定論的／非決定論的

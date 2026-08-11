@@ -19,7 +19,7 @@ related_terms:
   - Embedding
   - PostgreSQL
   - Fine-tuning
-status: needs_review
+status: ready
 ---
 
 # ベクトル DB

@@ -19,7 +19,7 @@ related_terms:
   - Tool Use
   - Permission
   - Plan Mode
-status: needs_review
+status: ready
 ---
 
 # AI エージェント

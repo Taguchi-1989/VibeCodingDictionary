@@ -19,7 +19,7 @@ related_terms:
   - Claude Code
   - Thinking モデル
   - Temperature
-status: needs_review
+status: ready
 ---
 
 # effort レベル

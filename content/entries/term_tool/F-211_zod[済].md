@@ -19,7 +19,7 @@ related_terms:
   - JSON Schema
   - API
   - Structured Outputs
-status: needs_review
+status: ready
 ---
 
 # Zod

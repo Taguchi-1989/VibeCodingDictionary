@@ -20,7 +20,7 @@ related_terms:
   - Context
   - Context Window
   - Auto-compact
-status: needs_review
+status: ready
 ---
 
 # 段階的開示

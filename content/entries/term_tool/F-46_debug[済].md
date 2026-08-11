@@ -20,7 +20,7 @@ related_terms:
   - ChatGPT
   - Claude Code
   - GitHub Copilot
-status: needs_review
+status: ready
 ---
 
 # デバッグ

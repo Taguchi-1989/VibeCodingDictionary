@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-08-11 10:06 / `scripts/update_review_queue.py`*
+*自動生成: 2026-08-11 12:56 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 145 件
-- **ready**: 253 件
+- **needs_review**: 132 件
+- **ready**: 266 件
 - **archived**: 7 件
 - **合計**: 406 件
 
@@ -166,7 +166,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（113 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（100 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -213,30 +213,17 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-180 | OpenGL | needs_review | — |
 | F-181 | WebGL | needs_review | — |
 | F-190 | サブルーチン | needs_review | — |
-| F-210 | JSON Schema | needs_review | — |
-| F-211 | Zod | needs_review | — |
-| F-212 | OpenAPI | needs_review | — |
-| F-213 | API | needs_review | — |
-| F-214 | API キー | needs_review | — |
-| F-45 | デプロイ | needs_review | — |
-| F-46 | デバッグ | needs_review | — |
 | F-47 | フロントエンド／バックエンド | needs_review | — |
 | F-80 | Node.js | needs_review | — |
 | F-84 | Ghostty | needs_review | — |
 | F-87 | sudo | needs_review | — |
 | F-90 | Docker | needs_review | — |
 | F-91 | .env | needs_review | — |
-| G-17 | ベクトル DB | needs_review | — |
 | G-24 | Temperature | needs_review | — |
 | G-25 | AI のメモリ機能 | needs_review | — |
 | G-26 | Computer Use | needs_review | — |
 | G-27 | プロンプトインジェクション | needs_review | — |
 | G-4 | System Prompt | needs_review | — |
-| G-45 | 段階的開示 | needs_review | — |
-| G-48 | Structured Outputs | needs_review | — |
-| G-49 | AI エージェント | needs_review | — |
-| G-8 | 決定論的／非決定論的 | needs_review | — |
-| G-9 | effort レベル | needs_review | — |
 | H-64 | DeepSeek ショック | needs_review | — |
 | J-101 | 半導体製造プロセス | needs_review | — |
 | J-102 | チップレットと3D積層 | needs_review | — |
@@ -284,7 +271,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-98 | 重要鉱物の地政学 | needs_review | — |
 | J-99 | CoWoS | needs_review | — |
 
-## ✅ 完成（ready・全パス）（135 件）
+## ✅ 完成（ready・全パス）（148 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -333,6 +320,11 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-15 | shadcn/ui | ready | — |
 | F-17 | Astro | ready | — |
 | F-21 | Prettier | ready | — |
+| F-210 | JSON Schema | ready | — |
+| F-211 | Zod | ready | — |
+| F-212 | OpenAPI | ready | — |
+| F-213 | API | ready | — |
+| F-214 | API キー | ready | — |
 | F-35 | Markdown Preview Enhanced | ready | — |
 | F-36 | Git Graph | ready | — |
 | F-37 | Japanese Language Pack for VS Code | ready | — |
@@ -341,6 +333,8 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-42 | ビルド | ready | — |
 | F-43 | テスト | ready | — |
 | F-44 | pnpm | ready | — |
+| F-45 | デプロイ | ready | — |
+| F-46 | デバッグ | ready | — |
 | F-50 | git | ready | — |
 | F-51 | git push | ready | — |
 | F-52 | git pull | ready | — |
@@ -361,6 +355,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-14 | Thinking モデル | ready | — |
 | G-15 | RAG | ready | — |
 | G-16 | Embedding | ready | — |
+| G-17 | ベクトル DB | ready | — |
 | G-18 | Chain of Thought | ready | — |
 | G-19 | Prompt Caching | ready | — |
 | G-2 | Token | ready | — |
@@ -380,10 +375,15 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-41 | Subagent | ready | — |
 | G-42 | Worktree | ready | — |
 | G-44 | マルチエージェント協調 | ready | — |
+| G-45 | 段階的開示 | ready | — |
 | G-47 | Auto-compact | ready | — |
+| G-48 | Structured Outputs | ready | — |
+| G-49 | AI エージェント | ready | — |
 | G-5 | Context Window | ready | — |
 | G-6 | One-shot | ready | — |
 | G-7 | 指示追従性 | ready | — |
+| G-8 | 決定論的／非決定論的 | ready | — |
+| G-9 | effort レベル | ready | — |
 | H-1 | TDD | ready | — |
 | H-53 | ChatGPT 登場 | ready | — |
 | H-54 | GPT-4 リリース | ready | — |

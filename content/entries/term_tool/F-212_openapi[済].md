@@ -19,7 +19,7 @@ related_terms:
   - JSON Schema
   - YAML
   - Zod
-status: needs_review
+status: ready
 ---
 
 # OpenAPI
