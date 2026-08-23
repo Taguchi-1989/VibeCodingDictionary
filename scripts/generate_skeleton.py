@@ -142,6 +142,16 @@ SLUG_OVERRIDES: dict[str, str] = {
     "G-9": "effort_level",
     "G-17": "vector_db",
     "G-45": "progressive_disclosure",
+    # H 章の歴史・文化（2026-08-10）
+    "H-50": "bard_to_gemini",
+    "H-51": "preview_to_ga",
+    "H-52": "copilot_to_claude_code",
+    "H-57": "gemini_naming_history",
+    "H-59": "agent_year_one",
+    "H-60": "codex_to_copilot",
+    "H-61": "preview_culture",
+    "H-62": "anthropic_founding",
+    "H-63": "vibe_coding_naming",
 }
 
 

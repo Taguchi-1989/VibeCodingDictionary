@@ -296,20 +296,20 @@ H-5,,Scrum / Agile,workflow,methodology,ready,,content/entries/workflow/H-5_scru
 H-6,,Git Flow,workflow,methodology,ready,,content/entries/workflow/H-6_git_flow[済].md
 H-7,,CI/CD,workflow,methodology,ready,,content/entries/workflow/H-7_ci_cd[済].md
 H-8,,DevOps,workflow,methodology,ready,,content/entries/workflow/H-8_devops[済].md
-H-50,,Bard → Gemini,history,timeline,skeleton,,
-H-51,,Preview から正式版への流れ,history,culture,skeleton,,
-H-52,,Copilot から Claude Code までの流れ,history,timeline,skeleton,,
+H-50,,Bard → Gemini,history,timeline,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-50_bard_to_gemini[人書].md
+H-51,,Preview から正式版への流れ,history,process,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-51_preview_to_ga[人書].md
+H-52,,Copilot から Claude Code までの流れ,history,timeline,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-52_copilot_to_claude_code[人書].md
 H-53,,ChatGPT 登場,history,event,ready,2022-11,content/entries/history/H-53_chatgpt_launch[済].md
 H-54,,GPT-4 リリース,history,event,ready,,content/entries/history/H-54_gpt4_release[済].md
 H-55,,LLaMA のオープン化,history,event,ready,v2テンプレ本書き済（2026-04-30）,content/entries/history/H-55_llama_opensource[済].md
 H-56,,Claude のバージョン史,history,timeline,ready,v2テンプレ本書き済（2026-04-30）旧スケルトン H-56.md は archived,content/entries/history/H-56_claude_version_history[済].md
-H-57,,Gemini の命名史,history,timeline,needs_review,v2テンプレ本書き済（2026-04-30）,
+H-57,,Gemini の命名史,history,timeline,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-57_gemini_naming_history[人書].md
 H-58,,Transformer 論文,history,paper,ready,2017,content/entries/history/H-58_transformer_paper[済].md
-H-59,,AI エージェント元年,history,era,needs_review,2024頃,
-H-60,,Codex → GitHub Copilot の系譜,history,timeline,drafting,v2テンプレ本書き済（2026-04-30）,
-H-61,,Preview 版という文化,history,culture,needs_review,,
-H-62,,Anthropic 創業の流れ,history,event,drafting,v2テンプレ本書き済（2026-04-30）,
-H-63,,Vibe Coding 命名,history,event,drafting,2025-02 Karpathy のツイートで広まった,
+H-59,,AI エージェント元年,history,era,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-59_agent_year_one[人書].md
+H-60,,Codex → GitHub Copilot の系譜,history,timeline,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-60_codex_to_copilot[人書].md
+H-61,,Preview 版という文化,history,culture,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-61_preview_culture[人書].md
+H-62,,Anthropic 創業の流れ,history,event,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-62_anthropic_founding[人書].md
+H-63,,Vibe Coding 命名,history,event,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-63_vibe_coding_naming[人書].md
 H-64,,DeepSeek ショック,history,event,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/history/H-64_deepseek_shock[人書].md
 I-1,,MCP,mcp,protocol,ready,,content/entries/mcp/I-1_mcp[済].md
 I-2,,MCP Server,mcp,protocol,ready,,content/entries/mcp/I-2_mcp_server[済].md
