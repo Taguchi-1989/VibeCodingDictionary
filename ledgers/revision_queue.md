@@ -1,16 +1,16 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-08-23 21:24 / `scripts/update_review_queue.py`*
+*自動生成: 2026-08-23 21:57 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 141 件
+- **needs_review**: 145 件
 - **ready**: 266 件
 - **archived**: 7 件
-- **合計**: 415 件
+- **合計**: 419 件
 
 - **自己学習シェルフ（reader_level 6・刊行外）**: 35 件（誌面には出ません。`scripts/preview_gen.py` が除外）
 
@@ -166,7 +166,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（109 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（113 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -183,11 +183,15 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | C-16 | DeepSeek | needs_review | — |
 | C-17 | Sakana AI | needs_review | — |
 | D-1 | Gemini 2 系 | needs_review | — |
+| D-10 | Claude 3 系 | needs_review | — |
+| D-13 | Claude 4.5 系 | needs_review | — |
 | D-14 | Claude Mythos Preview | needs_review | — |
 | D-2 | Gemini 2.5 系 | needs_review | — |
 | D-21 | GPT-4 系 | needs_review | — |
 | D-22 | o1 系 | needs_review | — |
+| D-23 | o3 系 | needs_review | — |
 | D-24 | GPT-3 系 | needs_review | — |
+| D-3 | Gemini 3 系 | needs_review | — |
 | D-4 | Gemini 3.1 系 | needs_review | — |
 | D-59 | Midjourney | needs_review | — |
 | D-61 | AlphaFold | needs_review | — |

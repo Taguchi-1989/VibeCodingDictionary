@@ -152,6 +152,11 @@ SLUG_OVERRIDES: dict[str, str] = {
     "H-61": "preview_culture",
     "H-62": "anthropic_founding",
     "H-63": "vibe_coding_naming",
+    # D 系モデル系統（2026-08-23）
+    "D-3": "gemini3",
+    "D-10": "claude3",
+    "D-13": "claude45",
+    "D-23": "o3",
 }
 
 
