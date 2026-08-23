@@ -89,7 +89,7 @@ C-60,,Ray Kurzweil,person_org,person,ready,,content/entries/person/C-60_ray_kurz
 C-80,,AI大学,person_org,youtuber,ready,,content/entries/person/C-80_ai_daigaku[済].md
 C-81,,にゃんた,person_org,youtuber,ready,v2テンプレ書き起こし済（2026-04-30）。旧スケルトン C-81.md は archived,content/entries/person/C-81_nyanta[済].md
 C-82,,まさお,person_org,youtuber,ready,,content/entries/person/C-82_masao[済].md
-C-83,,AI の羅針盤,person_org,youtuber,drafting,,
+C-83,,AI時代の羅針盤,person_org,youtuber,drafting,台帳の「AI の羅針盤」から正式名称に修正（2026-08-23）,content/entries/person/C-83_ai_compass[人書].md
 D-1,,Gemini 2 系,model,google,needs_review,v2テンプレで D-1_gemini2.md に書き起こし済（2026-04-29）。旧D-1.md は archived,content/entries/model/D-1_gemini2[人書].md
 D-2,201,Gemini 2.5 系,model,google,needs_review,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-2_gemini25[人書].md
 D-3,,Gemini 3 系,model,google,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-3_gemini3[人書].md
@@ -171,7 +171,7 @@ F-18,,フレームワーク／ライブラリ,term_tool,framework,needs_review,�
 F-20,303,ESLint,term_tool,linter,ready,旧3桁ID連携・v2テンプレで書き直し済（2026-04-29）,content/entries/term_tool/F-20_eslint[済].md
 F-21,,Prettier,term_tool,formatter,ready,,content/entries/term_tool/F-21_prettier[済].md
 F-30,,VS Code,term_tool,editor,ready,,content/entries/term_tool/F-30_vs_code[済].md
-F-34,,VS Code 拡張機能,term_tool,editor,drafting,v2テンプレ本書き済（2026-04-30）,
+F-34,,VS Code 拡張機能,term_tool,editor_ext,needs_review,v2テンプレ本書き済（2026-08-23、F-30 と拡張別スコープ分担）,content/entries/term_tool/F-34_vscode_extensions[人書].md
 F-35,,Markdown Preview Enhanced,term_tool,editor_ext,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_tool/F-35_markdown_preview_enhanced[済].md
 F-36,,Git Graph,term_tool,editor_ext,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_tool/F-36_git_graph[済].md
 F-37,,Japanese Language Pack for VS Code,term_tool,editor_ext,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_tool/F-37_japanese_language_pack_for_vs_code[済].md
@@ -191,7 +191,7 @@ F-53,,branch,term_tool,git,ready,,content/entries/term_tool/F-53_branch[済].md
 F-54,,commit,term_tool,git,ready,,content/entries/term_tool/F-54_commit[済].md
 F-55,,merge,term_tool,git,ready,,content/entries/term_tool/F-55_merge[済].md
 F-56,,.gitignore,term_tool,git,ready,,content/entries/term_tool/F-56_gitignore[済].md
-F-57,,リポジトリ,term_tool,git,needs_review,v2テンプレ書き起こし済（2026-04-30）,
+F-57,,リポジトリ,term_tool,git,needs_review,Stage 7 本書き完了（2026-08-23）,content/entries/term_tool/F-57_repository[人書].md
 F-58,,git stash,term_tool,git,needs_review,,content/entries/term_tool/F-58_git_stash[済].md
 F-59,,README.md,term_tool,git,needs_review,,content/entries/term_tool/F-59_readme_md[人書].md
 F-60,,GitHub,term_tool,github,needs_review,,content/entries/term_tool/F-60_github[人書].md
@@ -222,7 +222,7 @@ F-123,,ORM,term_tool,orm,needs_review,,content/entries/term_tool/F-123_orm[人�
 F-130,,OAuth,term_tool,auth,needs_review,,content/entries/term_tool/F-130_oauth[人書].md
 F-140,,Mermaid,term_tool,diagram,needs_review,,content/entries/term_tool/F-140_mermaid[人書].md
 F-141,,PlantUML,term_tool,diagram,needs_review,,content/entries/term_tool/F-141_plantuml[人書].md
-F-150,,MIT ライセンス,term_tool,license,drafting,,
+F-150,,MIT ライセンス,term_tool,license,needs_review,,content/entries/term_tool/F-150_mit_license[人書].md
 F-151,,Apache 2.0,term_tool,license,needs_review,,content/entries/term_tool/F-151_apache_2_0[人書].md
 F-152,,GPL,term_tool,license,needs_review,,content/entries/term_tool/F-152_gpl[人書].md
 F-153,,Creative Commons,term_tool,license,needs_review,title を Creative Commons に修正（括弧除去）,content/entries/term_tool/F-153_creative_commons[人書].md
@@ -289,9 +289,9 @@ G-47,,Auto-compact,term_llm,ops,ready,Claude Code の自動圧縮（文脈管理
 G-48,,Structured Outputs,term_llm,control,ready,台帳登録済み・未生成だった分を本書き（2026-08-10）,content/entries/term_llm/G-48_structured_outputs[済].md
 G-49,,AI エージェント,term_llm,ops,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-49_ai_agent[済].md
 H-1,,TDD,workflow,methodology,ready,,content/entries/workflow/H-1_tdd[済].md
-H-2,,ペアプログラミング,workflow,methodology,drafting,v2テンプレ書き起こし済（2026-04-30）,
-H-3,,バイブコーディングの流儀,workflow,methodology,drafting,,
-H-4,,コードレビュー,workflow,methodology,drafting,v2テンプレ書き起こし済（2026-04-30）,
+H-2,,ペアプログラミング,workflow,methodology,needs_review,Stage 7 で本書き（2026-08-23）,content/entries/workflow/H-2_pair_programming[人書].md
+H-3,,バイブコーディングの流儀,workflow,methodology,needs_review,v2テンプレ本書き済（2026-08-23、entry-writer）,content/entries/workflow/H-3_vibe_coding_style[人書].md
+H-4,,コードレビュー,workflow,methodology,needs_review,Stage 7 本書き完了（2026-08-23）,content/entries/workflow/H-4_code_review[人書].md
 H-5,,Scrum / Agile,workflow,methodology,ready,,content/entries/workflow/H-5_scrum_agile[済].md
 H-6,,Git Flow,workflow,methodology,ready,,content/entries/workflow/H-6_git_flow[済].md
 H-7,,CI/CD,workflow,methodology,ready,,content/entries/workflow/H-7_ci_cd[済].md
@@ -328,8 +328,8 @@ I-24,,Context7 MCP,mcp,dev_automation,ready,,content/entries/mcp/I-24_context7_m
 I-30,,Notion MCP,mcp,collab,ready,,content/entries/mcp/I-30_notion_mcp[済].md
 I-41,,SQLite MCP,mcp,data,ready,,content/entries/mcp/I-41_sqlite_mcp[済].md
 I-50,,AWS MCP,mcp,cloud,ready,,content/entries/mcp/I-50_aws_mcp[済].md
-I-80,,自作 MCP のテンプレ,mcp,diy,needs_review,,
-I-81,,MCP の登録・設定,mcp,diy,drafting,,
+I-80,,自作 MCP のテンプレ,mcp,diy,needs_review,,content/entries/mcp/I-80_diy_mcp_template[人書].md
+I-81,,MCP の登録・設定,mcp,diy,needs_review,,content/entries/mcp/I-81_mcp_setup[人書].md
 J-1,,AGI,term_general,ai_concept,ready,,content/entries/term_general/J-1_agi[済].md
 J-2,,強い AI／弱い AI,term_general,ai_concept,ready,v2テンプレ書き起こし済（2026-04-30）旧スケルトン archived,content/entries/term_general/J-2_strong_weak_ai[済].md
 J-3,,Singularity,term_general,ai_concept,ready,シンギュラリティ,content/entries/term_general/J-3_singularity[済].md
@@ -347,7 +347,7 @@ J-18,,MoE,term_general,ml_basic,ready,,content/entries/term_general/J-18_moe[済
 J-19,,量子化,term_general,ml_basic,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_general/J-19_quantization[済].md
 J-20,,Big Data,term_general,data_learning,ready,,content/entries/term_general/J-20_big_data[済].md
 J-21,,LoRA,term_general,data_learning,ready,,content/entries/term_general/J-21_lora[済].md
-J-22,,パラメータ数の単位,term_general,data_learning,drafting,,
+J-22,,パラメータ数の単位,term_general,data_learning,needs_review,v2テンプレ本書き済（2026-08-23）,content/entries/term_general/J-22_parameter_units[人書].md
 J-23,,拡散モデル,term_general,data_learning,ready,画像・動画生成の主流アーキテクチャ,content/entries/term_general/J-23_diffusion_model[済].md
 J-24,,Encoder-Decoder,term_general,ml_basic,drafting,Lv6自己学習シェルフ（刊行外）,content/entries/term_general/J-24_encoder_decoder.md
 J-25,,Tokenizer・BPE,term_general,ml_basic,drafting,Lv6自己学習シェルフ（刊行外）,content/entries/term_general/J-25_tokenizer_bpe.md
@@ -357,7 +357,7 @@ J-28,,MLA,term_general,ml_basic,drafting,Lv6自己学習シェルフ（刊行外
 J-29,,KV Cache,term_general,inference,drafting,Lv6自己学習シェルフ（刊行外）,content/entries/term_general/J-29_kv_cache.md
 J-30,,Flash Attention,term_general,inference,drafting,Lv6自己学習シェルフ（刊行外）,content/entries/term_general/J-30_flash_attention.md
 J-31,,第 5 世代コンピュータ,term_general,computing_history,ready,,content/entries/term_general/J-31_fifth_generation_computer[済].md
-J-32,,ノイマン型,term_general,computing_history,skeleton,,
+J-32,,ノイマン型,term_general,computing_history,needs_review,,content/entries/term_general/J-32_von_neumann[人書].md
 J-33,,量子コンピュータ,term_general,computing_history,ready,,content/entries/term_general/J-33_quantum-computer[済].md
 J-34,,マルチモーダル,term_general,ml_basic,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-34_multimodal[人書].md
 J-35,,スケーリング則,term_general,ml_basic,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-35_scaling_law[人書].md
@@ -367,15 +367,15 @@ J-40,,IoT,term_general,buzzword,ready,,content/entries/term_general/J-40_iot[済
 J-41,,DX,term_general,buzzword,ready,,content/entries/term_general/J-41_dx[済].md
 J-42,,Web3,term_general,buzzword,ready,,content/entries/term_general/J-42_web3[済].md
 J-43,,SaaS,term_general,buzzword,needs_review,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_general/J-43_saas[人書].md
-J-50,,AI 倫理,term_general,ethics_law,skeleton,,
+J-50,,AI 倫理,term_general,ethics_law,needs_review,2026-08-23 entry-writer 本書き（stage7_briefs）,content/entries/term_general/J-50_ai_ethics[人書].md
 J-51,,Hallucination,term_general,ethics_law,ready,,content/entries/term_general/J-51_hallucination[済].md
 J-52,,Sycophancy,term_general,ethics_law,ready,,content/entries/term_general/J-52_sycophancy[済].md
 J-53,,著作権法 30 条の 4（日本）,term_general,ethics_law,ready,,content/entries/term_general/J-53_copyright_law_30_4[済].md
 J-54,,ISO/IEC 42001,term_general,ethics_law,ready,AIMS v2テンプレ書き起こし済（2026-04-29）,content/entries/term_general/J-54_iso_iec_42001[済].md
-J-55,,個人情報保護法,term_general,ethics_law,drafting,2026-04-30 entry-writer 執筆,
+J-55,,個人情報保護法,term_general,ethics_law,drafting,2026-04-30 entry-writer 執筆,content/entries/term_general/J-55_appi[人書].md
 J-56,,GDPR,term_general,ethics_law,ready,,content/entries/term_general/J-56_gdpr[済].md
 J-57,,RLHF・アラインメント,term_general,ethics_law,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-57_rlhf_alignment[人書].md
-J-62,,チューリングテスト,term_general,peripheral,drafting,2026-04-30 entry-writer 執筆,
+J-62,,チューリングテスト,term_general,peripheral,needs_review,2026-08-23 entry-writer 本書き（stage7_briefs_2026-08 準拠、☆違反0・警告0）,content/entries/term_general/J-62_turing_test[人書].md
 J-70,,VRAM,term_general,hardware,ready,2026-04-29 entry-writer 執筆,content/entries/term_general/J-70_vram[済].md
 J-71,,RAM,term_general,hardware,ready,2026-04-30 entry-writer 執筆,content/entries/term_general/J-71_ram[済].md
 J-72,,H100,term_general,hardware,ready,,content/entries/term_general/J-72_h100[済].md
