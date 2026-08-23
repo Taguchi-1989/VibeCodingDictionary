@@ -1,16 +1,16 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-08-11 12:56 / `scripts/update_review_queue.py`*
+*自動生成: 2026-08-23 21:24 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 132 件
+- **needs_review**: 141 件
 - **ready**: 266 件
 - **archived**: 7 件
-- **合計**: 406 件
+- **合計**: 415 件
 
 - **自己学習シェルフ（reader_level 6・刊行外）**: 35 件（誌面には出ません。`scripts/preview_gen.py` が除外）
 
@@ -166,7 +166,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（100 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（109 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -224,6 +224,15 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-26 | Computer Use | needs_review | — |
 | G-27 | プロンプトインジェクション | needs_review | — |
 | G-4 | System Prompt | needs_review | — |
+| H-50 | Bard → Gemini | needs_review | — |
+| H-51 | Preview から正式版への流れ | needs_review | — |
+| H-52 | Copilot から Claude Code までの流れ | needs_review | — |
+| H-57 | Gemini の命名史 | needs_review | — |
+| H-59 | AI エージェント元年 | needs_review | — |
+| H-60 | Codex → GitHub Copilot の系譜 | needs_review | — |
+| H-61 | Preview 版という文化 | needs_review | — |
+| H-62 | Anthropic 創業の流れ | needs_review | — |
+| H-63 | Vibe Coding 命名 | needs_review | — |
 | H-64 | DeepSeek ショック | needs_review | — |
 | J-101 | 半導体製造プロセス | needs_review | — |
 | J-102 | チップレットと3D積層 | needs_review | — |
