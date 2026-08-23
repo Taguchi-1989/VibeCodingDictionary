@@ -92,17 +92,17 @@ C-82,,まさお,person_org,youtuber,ready,,content/entries/person/C-82_masao[済
 C-83,,AI の羅針盤,person_org,youtuber,drafting,,
 D-1,,Gemini 2 系,model,google,needs_review,v2テンプレで D-1_gemini2.md に書き起こし済（2026-04-29）。旧D-1.md は archived,content/entries/model/D-1_gemini2[人書].md
 D-2,201,Gemini 2.5 系,model,google,needs_review,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-2_gemini25[人書].md
-D-3,,Gemini 3 系,model,google,drafting,v2テンプレ本書き済（2026-04-30）,
+D-3,,Gemini 3 系,model,google,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-3_gemini3[人書].md
 D-4,,Gemini 3.1 系,model,google,needs_review,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-4_gemini_3_1[人書].md
-D-10,,Claude 3 系,model,anthropic,skeleton,,
+D-10,,Claude 3 系,model,anthropic,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-10_claude3[人書].md
 D-11,,Claude 3.5 系,model,anthropic,ready,,content/entries/model/D-11_claude35[済].md
 D-12,,Claude 4 系,model,anthropic,ready,,content/entries/model/D-12_claude4[済].md
-D-13,,Claude 4.5 系,model,anthropic,skeleton,,
+D-13,,Claude 4.5 系,model,anthropic,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-13_claude45[人書].md
 D-14,,Claude Mythos Preview,model,frontier_model,needs_review,v2テンプレ書き起こし済（2026-04-30）。旧スケルトン D-14.md は archived,content/entries/model/D-14_claude_mythos_preview[人書].md
 D-20,,GPT-5 系,model,openai,needs_review,本書き済み（2026-04-29）。旧スケルトン D-20.md は archived,content/entries/model/D-20_gpt5[人書].md
 D-21,,GPT-4 系,model,openai,needs_review,本書き済み（2026-04-29）。旧スケルトン D-21.md は archived,content/entries/model/D-21_gpt4[人書].md
 D-22,,o1 系,model,openai,needs_review,本書き済み（2026-04-29）。旧スケルトン D-22.md は archived,content/entries/model/D-22_o1[人書].md
-D-23,,o3 系,model,openai,skeleton,,
+D-23,,o3 系,model,openai,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-23_o3[人書].md
 D-24,,GPT-3 系,model,openai,needs_review,,content/entries/model/D-24_gpt3[人書].md
 D-25,,GPT-1 / GPT-2 系,model,openai,ready,v2テンプレ書き起こし済（2026-04-30）スケルトン D-25.md は archived,content/entries/model/D-25_gpt1_gpt2[済].md
 D-26,,gpt-oss,model,openai,ready,OpenAI初の公式オープンウェイトモデル 2025-08,content/entries/model/D-26_gpt_oss[済].md

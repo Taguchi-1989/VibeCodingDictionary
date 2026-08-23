@@ -42,15 +42,24 @@
 ### 次にやること（このセッションで見つかった宿題）
 
 1. **著者欄の記入**：新規 34 本のうち残り 28 本（＋ F-18 の 3 項目）と既存分。`cat ledgers/revision_queue.md` の「著者レビュー待ち」から
-2. **台帳にあるのにファイルが無い 18 件**（当初 35 件 → 技術寄り 8 件と H 章 9 件を消化して 18 件）：`ledgers/entries.csv` に行はあるのに `path` 列が空＝**一度も生成されていないエントリ**です。notes に「v2テンプレ本書き済」と書かれている行も含まれますが、実ファイルは存在しません。
+2. **台帳にあるのにファイルが無い 14 件**（当初 35 件 → 技術寄り 8 件・H 章 9 件・D 系 4 件を消化して 14 件）：`ledgers/entries.csv` に行はあるのに `path` 列が空＝**一度も生成されていないエントリ**です。notes に「v2テンプレ本書き済」と書かれている行も含まれますが、実ファイルは存在しません。
 
    **2026-08-10 に消化した 8 件**（技術寄りの穴埋め、ブリーフは [ledgers/stage4_briefs_2026-08.md](stage4_briefs_2026-08.md)）：F-210 JSON Schema / F-211 Zod / F-212 OpenAPI / G-8 決定論的・非決定論的 / G-9 effort レベル / G-17 ベクトル DB / G-45 段階的開示 / G-48 Structured Outputs。これで F-213 API が参照したがっていた相手（F-210 / F-212）が埋まりました。
 
    **2026-08-10 に消化した H 章の歴史・文化 9 件**（ブリーフは [ledgers/stage5_briefs_2026-08.md](stage5_briefs_2026-08.md)）：H-50 Bard→Gemini / H-51 Preview から正式版へ / H-52 Copilot から Claude Code まで / H-57 Gemini の命名史 / H-59 AI エージェント元年 / H-60 Codex→GitHub Copilot の系譜 / H-61 Preview 版という文化 / H-62 Anthropic 創業の流れ / H-63 Vibe Coding 命名。用語カードではなく時系列の読み物として書き、G-49 AI エージェントが参照できなかった H-59 もこれで埋まりました。
 
-   **残り 18 件**：`C-83 / D-3 / D-10 / D-13 / D-23 / F-34 / F-57 / F-150 / H-2 / H-3 / H-4 / I-80 / I-81 / J-22 / J-32 / J-50 / J-55 / J-62`。まとまった束としては **D 系のモデル系統 4 本**（D-3 Gemini 3 系 / D-10 Claude 3 系 / D-13 Claude 4.5 系 / D-23 o3 系）、**H の進め方 3 本**（H-2 ペアプロ / H-3 バイブコーディングの流儀 / H-4 コードレビュー）、**J の社会・古典 5 本**（J-22 / J-32 / J-50 / J-55 / J-62）、**I の自作 MCP 2 本**（I-80 / I-81）に分かれます
+   **2026-08-23 に消化した D 系モデル系統 4 件**（ブリーフは [ledgers/stage6_briefs_2026-08.md](stage6_briefs_2026-08.md)）：D-3 Gemini 3 系 / D-10 Claude 3 系 / D-13 Claude 4.5 系 / D-23 o3 系。Claude 系は Anthropic 公式のモデル一覧・提供終了ページを一次情報にし、退役日まで確認して書きました。
+
+   **残り 14 件**：`C-83 / F-34 / F-57 / F-150 / H-2 / H-3 / H-4 / I-80 / I-81 / J-22 / J-32 / J-50 / J-55 / J-62`。束としては **H の進め方 3 本**（H-2 ペアプロ / H-3 バイブコーディングの流儀 / H-4 コードレビュー。著者の実務経験が直接乗る）、**J の社会・古典 5 本**（J-22 / J-32 / J-50 / J-55 / J-62）、**I の自作 MCP 2 本**（I-80 / I-81）、**単発 4 本**（C-83 AI の羅針盤 / F-34 VS Code 拡張機能 / F-57 リポジトリ / F-150 MIT ライセンス）
 
 3. **CSV と実ファイルの status 乖離 47 件**：`ledgers/entries.csv` の status 列が実ファイルの YAML と食い違う行が 47 件あります（例：F-60 GitHub は CSV `needs_review` ／ ファイル `ready`）。`sync_entries_csv.py` は path 列しか同期しないため、status も同期するか、CSV 側を正とするかの方針決めが要ります
+
+### モデル系統エントリを書くときのメモ（2026-08-23 に確立）
+
+- **一次情報は公式ドキュメント**。Claude 系は [Models overview](https://platform.claude.com/docs/en/about-claude/models/overview) と [Model deprecations](https://platform.claude.com/docs/en/about-claude/model-deprecations) に公開日・モデル ID・価格・**退役予定日**まで載っている。まとめ記事より先にここを見る
+- **「最新」「現行」と書かない**。書くなら「2026-08 時点では」と時点を添える
+- `reader_level` は**引用符を付けない**（`"2-3"` だと validator が警告を出す。`2-3` と書く）。entry-writer が引用符付きで書くことがあるので保存後に確認する
+- 提供終了した世代は `version_status: deprecated` ＋ `end_date` を入れ、歴史として書く（D-10 Claude 3 系がその形）
 
 ### 歴史エントリを書くときのメモ（2026-08-10 に確立）
 
