@@ -7,7 +7,7 @@ subtype: control
 experience_level: research_only
 reader_level: 3-4
 importance: C
-figure_type: flow
+figure_type: workflow
 page_layout: spread_v1
 start_date: 2024-10-22
 end_date:

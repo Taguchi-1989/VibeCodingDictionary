@@ -7,7 +7,7 @@ subtype: ethics_law
 experience_level: partial
 reader_level: 3-4
 importance: B
-figure_type: flow
+figure_type: workflow
 page_layout: spread_v1
 start_date: 2022-03
 end_date:
