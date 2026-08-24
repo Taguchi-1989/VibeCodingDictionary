@@ -5,7 +5,7 @@ title_reading: マイクロソフトアジュール
 category: service
 subtype: hosting_cloud
 experience_level: research_only
-reader_level: "2-4"
+reader_level: 2-3
 importance: B
 figure_type: structure
 page_layout: spread_v1

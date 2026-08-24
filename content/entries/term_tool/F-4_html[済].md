@@ -5,7 +5,7 @@ title_reading: エイチティーエムエル
 category: term_tool
 subtype: language
 experience_level: partial
-reader_level: "2"
+reader_level: 2
 importance: B
 figure_type: structure
 page_layout: spread_v1

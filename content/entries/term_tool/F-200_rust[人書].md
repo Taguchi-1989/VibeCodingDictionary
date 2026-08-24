@@ -5,7 +5,7 @@ title_reading: ラスト
 category: term_tool
 subtype: language
 experience_level: partial
-reader_level: 3-5
+reader_level: 3-4
 importance: D
 figure_type: structure
 page_layout: spread_v1

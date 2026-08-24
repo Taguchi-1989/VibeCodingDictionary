@@ -5,7 +5,7 @@ title_reading: アクア ボイス
 category: service
 subtype: voice_input_saas
 experience_level: hands_on
-reader_level: 2-4
+reader_level: 2-3
 importance: D
 figure_type: before_after
 page_layout: spread_v1

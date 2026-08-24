@@ -5,7 +5,7 @@ title_reading: ジーピーティー ゴ系
 category: model
 subtype: openai
 experience_level: partial
-reader_level: "2-3"
+reader_level: 2-3
 importance: C
 figure_type: timeline
 page_layout: spread_v1

@@ -5,7 +5,7 @@ title_reading: クロームデブツールズエムシーピー
 category: mcp
 subtype: dev_automation
 experience_level: hands_on
-reader_level: 3-5
+reader_level: 3-4
 importance: D
 figure_type: structure
 page_layout: spread_v1

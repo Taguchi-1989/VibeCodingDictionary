@@ -5,7 +5,7 @@ title_reading: エイチディーディー
 category: term_general
 subtype: hardware
 experience_level: hands_on
-reader_level: 1-3
+reader_level: 1-2
 importance: B
 figure_type: comparison
 page_layout: spread_v1

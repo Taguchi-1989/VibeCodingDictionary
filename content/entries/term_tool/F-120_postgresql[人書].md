@@ -5,7 +5,7 @@ title_reading: ポストグレスキューエル
 category: term_tool
 subtype: database
 experience_level: partial
-reader_level: 2-4
+reader_level: 2-3
 importance: D
 figure_type: structure
 page_layout: spread_v1

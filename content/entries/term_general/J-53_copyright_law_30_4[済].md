@@ -4,7 +4,7 @@ title: 著作権法 30 条の 4
 category: term_general
 subtype: ethics_law
 experience_level: research_only
-reader_level: 3-5
+reader_level: 3-4
 importance: C
 figure_type: structure
 page_layout: spread_v1

@@ -5,7 +5,7 @@ title_reading: アーカイヴ
 category: service
 subtype: info_source
 experience_level: research_only
-reader_level: 3-5
+reader_level: 3-4
 importance: D
 figure_type: structure
 page_layout: spread_v1

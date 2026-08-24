@@ -5,7 +5,7 @@ title_reading: オーオース
 category: term_tool
 subtype: auth
 experience_level: partial
-reader_level: 2-4
+reader_level: 2-3
 importance: D
 figure_type: workflow
 page_layout: spread_v1

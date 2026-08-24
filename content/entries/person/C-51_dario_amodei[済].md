@@ -5,7 +5,7 @@ title_reading: ダリオ アモデイ
 category: person_org
 subtype: person
 experience_level: research_only
-reader_level: "2-3"
+reader_level: 2-3
 importance: C
 figure_type: timeline
 page_layout: spread_v1

@@ -4,7 +4,7 @@ title: にゃんた
 category: person_org
 subtype: youtuber
 experience_level: research_only
-reader_level: 2-4
+reader_level: 2-3
 importance: E
 figure_type: structure
 page_layout: spread_v1

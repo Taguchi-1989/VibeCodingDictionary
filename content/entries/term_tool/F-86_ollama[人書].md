@@ -8,7 +8,7 @@ subtype: runtime
 
 # ── 読者・体験 ──
 experience_level: hands_on
-reader_level: 3-5
+reader_level: 3-4
 importance: C
 
 # ── 誌面形式 ──

@@ -5,7 +5,7 @@ title_reading: エムシーピーエスディーケー
 category: mcp
 subtype: protocol
 experience_level: hands_on
-reader_level: 3-5
+reader_level: 4-5
 importance: D
 figure_type: structure
 page_layout: spread_v1

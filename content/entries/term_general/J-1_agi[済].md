@@ -5,7 +5,7 @@ title_reading: アーティフィシャル ジェネラル インテリジェン
 category: term_general
 subtype: ai_concept
 experience_level: research_only
-reader_level: 2-4
+reader_level: 2-3
 importance: A
 figure_type: comparison
 page_layout: spread_v1

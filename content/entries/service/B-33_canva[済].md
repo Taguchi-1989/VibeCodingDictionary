@@ -5,7 +5,7 @@ title_reading: キャンバ
 category: service
 subtype: saas_design
 experience_level: hands_on
-reader_level: 1-3
+reader_level: 1-2
 importance: B
 figure_type: comparison
 page_layout: spread_v1

@@ -5,7 +5,7 @@ title_reading: ライトハウス
 category: term_tool
 subtype: quality
 experience_level: hands_on
-reader_level: 2-4
+reader_level: 2-3
 importance: D
 figure_type: structure
 page_layout: spread_v1

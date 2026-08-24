@@ -5,7 +5,7 @@ title_reading: ヴイエスコード
 category: term_tool
 subtype: editor
 experience_level: hands_on
-reader_level: "2-3"
+reader_level: 2-3
 importance: B
 figure_type: structure
 page_layout: spread_v1

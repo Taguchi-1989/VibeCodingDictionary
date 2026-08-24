@@ -5,7 +5,7 @@ title_reading: パイソン
 category: term_tool
 subtype: language
 experience_level: partial
-reader_level: "2-3"
+reader_level: 2-3
 importance: B
 figure_type: structure
 page_layout: spread_v1

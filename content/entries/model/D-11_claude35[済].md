@@ -5,7 +5,7 @@ title_reading: クロード サンテンゴ系
 category: model
 subtype: anthropic
 experience_level: hands_on
-reader_level: "2-3"
+reader_level: 2-3
 importance: B
 figure_type: timeline
 page_layout: spread_v1

@@ -5,7 +5,7 @@ title_reading: ウェブ スリー
 category: term_general
 subtype: buzzword
 experience_level: research_only
-reader_level: 2-4
+reader_level: 2-3
 importance: C
 figure_type: comparison
 page_layout: spread_v1

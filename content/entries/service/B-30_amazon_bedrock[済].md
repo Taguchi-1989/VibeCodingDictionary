@@ -5,7 +5,7 @@ title_reading: アマゾンベッドロック
 category: service
 subtype: managed_ai
 experience_level: research_only
-reader_level: "3-5"
+reader_level: 3-4
 importance: C
 figure_type: structure
 page_layout: spread_v1

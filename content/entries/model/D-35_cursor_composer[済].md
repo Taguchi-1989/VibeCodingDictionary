@@ -5,7 +5,7 @@ title_reading: カーソル コンポーザー
 category: model
 subtype: other_closed
 experience_level: hands_on
-reader_level: "2-3"
+reader_level: 2-3
 importance: C
 figure_type: before_after
 page_layout: spread_v1

@@ -5,7 +5,7 @@ title_reading: ウブントゥ
 category: term_general
 subtype: ui_os
 experience_level: hands_on
-reader_level: 2-4
+reader_level: 2-3
 importance: D
 figure_type: structure
 page_layout: spread_v1

@@ -5,7 +5,7 @@ title_reading: ムーンショットエーアイ
 category: person_org
 subtype: company
 experience_level: research_only
-reader_level: 2-4
+reader_level: 2-3
 importance: C
 figure_type: structure
 page_layout: spread_v1

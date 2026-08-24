@@ -5,7 +5,7 @@ title_reading: ミラ ムラティ
 category: person_org
 subtype: person
 experience_level: research_only
-reader_level: "2-3"
+reader_level: 2-3
 importance: D
 figure_type: timeline
 page_layout: spread_v1

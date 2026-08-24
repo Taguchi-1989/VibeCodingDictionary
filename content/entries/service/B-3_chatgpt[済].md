@@ -5,7 +5,7 @@ title_reading: チャットジーピーティー
 category: service
 subtype: ai_assistant
 experience_level: hands_on
-reader_level: "1-2"
+reader_level: 1-2
 importance: A
 figure_type: structure
 page_layout: spread_v1
