@@ -90,11 +90,11 @@ MCP Server（I-2）、MCP Client（I-3）、自作 MCP（I-80）
 
 ## 開発フローでの位置（必須）
 
-1. 概念把握 — MCP（I-1）でサーバ・クライアントの関係を理解します
-2. SDK 導入 — `npm i @modelcontextprotocol/sdk` または `pip install mcp` を実行します
-3. Tool 宣言 — register 関数やデコレータで呼び出し可能な関数を登録します
-4. 動作確認 — tools/list を叩いて Claude が関数を認識できているか確認します
-5. 接続テスト — MCP Client（I-3）から実際に tools/call を発行して通信を検証します
+1. 概念把握 — MCP（I-1）でサーバとクライアントの関係を理解します
+2. SDK 導入 — TypeScript か Python の SDK を入れます
+3. Tool 宣言 — 呼び出せる関数を登録します
+4. 動作確認 — tools/list でツールが認識されたか見ます
+5. 接続テスト — MCP Client（I-3）から tools/call を発行して確かめます
 
 
 ## 関連用語

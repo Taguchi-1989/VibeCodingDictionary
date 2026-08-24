@@ -57,7 +57,7 @@ LLM が古い書き方を返してくる場面で出会います。破壊的変�
 
 ## 会話での使い方例
 
-「`use context7` で Next 15 の app router を聞き直したらちゃんと動く書き方が返ってきました。」
+「`use context7` で app router を聞き直したら、動く書き方が返ってきました。」
 
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
@@ -90,10 +90,10 @@ MCP、MCP Server、Context Window
 
 ## 開発フローでの位置（必須）
 
-1. 環境に追加する — `npx -y @upstash/context7-mcp` で MCP Server を起動します
+1. 環境に追加する — Context7 の MCP Server を起動します
 2. AI エディタに登録する — Claude Code や Cursor の MCP 設定に追記します
 3. プロンプトに書く — 質問の末尾に `use context7` と加えます
-4. 公式 docs が注入される — Context7 がドキュメントを取得し、LLM の回答に反映します
+4. 公式 docs が渡る — Context7 が取得した文書が回答に反映されます
 5. 回答を受け取る — 公開中のドキュメントを根拠にした回答が返ってきます
 
 

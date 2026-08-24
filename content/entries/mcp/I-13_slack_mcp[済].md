@@ -84,11 +84,11 @@ MCP、MCP Server、Notion MCP
 
 ## 開発フローでの位置（必須）
 
-1. Slack App 作成 — Slack API サイトで Bot Token（xoxb-）を発行します
-2. スコープ設定 — `channels:history` など必要な OAuth スコープを付与します
-3. サーバー起動 — `npx @modelcontextprotocol/server-slack` を実行します
-4. Claude 設定 — 設定ファイルに `SLACK_BOT_TOKEN` を環境変数として登録します
-5. 動作確認 — まず閲覧スコープのみで要約を試し、投稿は後から追加します
+1. Slack App 作成 — Slack API サイトで Bot Token を発行します
+2. スコープ設定 — `channels:history` など必要な権限を付けます
+3. サーバー起動 — Slack 用の MCP Server を起動します
+4. Claude 設定 — 設定ファイルにトークンを環境変数として登録します
+5. 動作確認 — まず閲覧だけで試し、投稿は後から足します
 
 
 ## 関連用語

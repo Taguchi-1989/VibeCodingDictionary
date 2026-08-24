@@ -51,7 +51,7 @@ MCP Client ⇔ MCP Server ⇔ External Service の 3 層構造を見せ、Server
 
 ## 会話での使い方例
 
-「GitHub MCP は MCP Server の一種で、Client から呼び出すだけで PR 操作ができます。」
+「GitHub MCP も MCP Server の一種で、Client から呼ぶだけで PR 操作ができます。」
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -83,11 +83,11 @@ MCP Client、Filesystem MCP、GitHub MCP、MCP Transport
 
 ## 開発フローでの位置（必須）
 
-1. 連携したい外部サービスを決める — GitHub / Filesystem / Slack などを選ぶ
-2. 対応 MCP Server を探す — 公式・コミュニティのカタログから入手する
-3. 設定ファイルに登録する — `claude_desktop_config.json` 等に Server の起動方法を書く
-4. MCP Client から呼び出す — Claude Code が Server に Tool リクエストを送る
-5. 結果が LLM に返る — Server が処理結果を Client 経由で LLM に渡す
+1. 連携先を決める — GitHub や Slack など、つなぎたいサービスを選びます
+2. 対応する Server を探す — 公式やコミュニティのカタログで探します
+3. 設定ファイルに登録する — Server の起動方法を書きます
+4. Client から呼び出す — Client が Server に Tool 要求を送ります
+5. 結果が LLM に返る — 処理結果が Client 経由で LLM に渡ります
 
 ## 関連用語
 

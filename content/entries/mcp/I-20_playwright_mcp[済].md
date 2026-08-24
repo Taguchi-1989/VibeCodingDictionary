@@ -52,7 +52,7 @@ Claude Code → Playwright MCP → 実ブラウザ の 3 段構造を示し、�
 
 ## 会話での使い方例
 
-「Playwright MCP を使えば Claude Code からブラウザを直接動かせますね、E2E テストが楽になります。」
+「Playwright MCP を入れると Claude Code からブラウザを動かせて、E2E が楽です。」
 
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->

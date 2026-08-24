@@ -52,7 +52,7 @@ Claude Code などの MCP Client からの操作が Filesystem MCP を経由し�
 
 ## 会話での使い方例
 
-「Filesystem MCP を入れると MCP Client からローカルファイルを直接読み書きできるようになります。」
+「Filesystem MCP を入れると、Client からローカルのファイルを直接読み書きできます。」
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -84,11 +84,11 @@ MCP、MCP Server、GitHub MCP、Playwright MCP。
 
 ## 開発フローでの位置（必須）
 
-1. MCP Client を用意する — Claude Code や Cursor など対応クライアントを選ぶ
-2. Filesystem MCP をインストールする — npm または公式リポジトリから取得する
-3. 許可ディレクトリを設定する — 設定ファイルでアクセス可能なパスを指定する
-4. LLM から操作を呼び出す — read / write / list で目的のファイルを扱う
-5. 結果を確認する — 実際のディスク上のファイルに変更が反映されているか確かめる
+1. Client を用意する — Claude Code や Cursor などを選びます
+2. Filesystem MCP を入れる — npm や公式リポジトリから取得します
+3. 許可ディレクトリを設定する — 触れるパスを設定ファイルで指定します
+4. LLM から呼び出す — read / write / list でファイルを扱います
+5. 結果を確認する — 実際のファイルに反映されたか確かめます
 
 ## 関連用語
 

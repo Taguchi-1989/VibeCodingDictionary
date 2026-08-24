@@ -1,6 +1,6 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-08-24 03:41 / `scripts/update_review_queue.py`*
+*自動生成: 2026-08-24 03:44 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
@@ -18,25 +18,9 @@
 
 _なし_
 
-## ⚠️ 警告あり（軽微超過 / 著者か entry-writer で手当て）（15 件）
+## ⚠️ 警告あり（軽微超過 / 著者か entry-writer で手当て）（0 件）
 
-| ID | title | status | 概要 |
-| :-- | :-- | :-- | :-- |
-| I-10 | Filesystem MCP | ready | ⚠ 57 字（目安 25-50、+7 字超過）; ⚠ 198 字（目安 80-180、+18 字超過）; ⚠ 436 字（目安 220-430、+6 字超過） |
-| I-12 | Git MCP | ready | ⚠ 189 字（目安 80-180、+9 字超過） |
-| I-13 | Slack MCP | ready | ⚠ 220 字（目安 80-180、+40 字超過）; ⚠ 434 字（目安 220-430、+4 字超過） |
-| I-2 | MCP Server | ready | ⚠ 51 字（目安 25-50、+1 字超過）; ⚠ 218 字（目安 80-180、+38 字超過）; ⚠ 456 字（目安 220-430、+26 字超過） |
-| I-20 | Playwright MCP | ready | ⚠ 59 字（目安 25-50、+9 字超過） |
-| I-21 | Puppeteer MCP | ready | ⚠ 52 字（目安 25-50、+2 字超過）; ⚠ 185 字（目安 80-180、+5 字超過）; ⚠ 435 字（目安 220-430、+5 字超過） |
-| I-22 | Chrome DevTools MCP | ready | ⚠ 199 字（目安 80-180、+19 字超過）; ⚠ 452 字（目安 220-430、+22 字超過） |
-| I-23 | Serena MCP | ready | ⚠ 202 字（目安 80-180、+22 字超過） |
-| I-24 | Context7 MCP | ready | ⚠ 57 字（目安 25-50、+7 字超過）; ⚠ 204 字（目安 80-180、+24 字超過） |
-| I-3 | MCP Client | ready | ⚠ 55 字（目安 25-50、+5 字超過）; ⚠ 185 字（目安 80-180、+5 字超過） |
-| I-30 | Notion MCP | ready | ⚠ 226 字（目安 80-180、+46 字超過）; ⚠ 438 字（目安 220-430、+8 字超過） |
-| I-4 | MCP Transport | ready | ⚠ 188 字（目安 80-180、+8 字超過）; ⚠ 432 字（目安 220-430、+2 字超過）; ⚠ です・ます外れの疑いあり（(?<![すまりぞ])だ[。\s] のパターン、要目視確認） |
-| I-41 | SQLite MCP | ready | ⚠ 220 字（目安 80-180、+40 字超過） |
-| I-5 | MCP SDK | ready | ⚠ 223 字（目安 80-180、+43 字超過）; ⚠ 444 字（目安 220-430、+14 字超過） |
-| I-50 | AWS MCP | ready | ⚠ 238 字（目安 80-180、+58 字超過）; ⚠ 474 字（目安 220-430、+44 字超過） |
+_なし_
 
 ## ✍️ 書きかけ（drafting・全パス済み・自動昇格漏れ）（0 件）
 
@@ -195,7 +179,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-98 | 重要鉱物の地政学 | needs_review | — |
 | J-99 | CoWoS | needs_review | — |
 
-## ✅ 完成（ready・全パス）（251 件）
+## ✅ 完成（ready・全パス）（266 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -405,7 +389,22 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | H-7 | CI/CD | ready | — |
 | H-8 | DevOps | ready | — |
 | I-1 | MCP | ready | — |
+| I-10 | Filesystem MCP | ready | — |
 | I-11 | GitHub MCP | ready | — |
+| I-12 | Git MCP | ready | — |
+| I-13 | Slack MCP | ready | — |
+| I-2 | MCP Server | ready | — |
+| I-20 | Playwright MCP | ready | — |
+| I-21 | Puppeteer MCP | ready | — |
+| I-22 | Chrome DevTools MCP | ready | — |
+| I-23 | Serena MCP | ready | — |
+| I-24 | Context7 MCP | ready | — |
+| I-3 | MCP Client | ready | — |
+| I-30 | Notion MCP | ready | — |
+| I-4 | MCP Transport | ready | — |
+| I-41 | SQLite MCP | ready | — |
+| I-5 | MCP SDK | ready | — |
+| I-50 | AWS MCP | ready | — |
 | J-1 | AGI | ready | — |
 | J-10 | Machine Learning | ready | — |
 | J-100 | リテラシー | ready | — |
