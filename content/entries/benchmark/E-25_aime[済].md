@@ -5,7 +5,7 @@ title_reading: エーアイエムイー
 category: benchmark
 subtype: reasoning
 experience_level: research_only
-reader_level: 3-5
+reader_level: 3-4
 importance: D
 figure_type: comparison
 page_layout: spread_v1
@@ -36,7 +36,7 @@ American Invitational Mathematics Examination の略。競技数学級の推論�
 
 ## どこで出会うか
 
-最新世代モデルの性能比較で登場します。「AIME 2024 で何点か」という形で Thinking モデル（G-14）の実力指標として業界レポートや SNS に出てきます。
+新しい世代のモデルの性能比較で登場します。「AIME 2024 で何点か」という形で Thinking モデル（G-14）の実力指標として業界レポートや SNS に出てきます。
 
 ## メイン図
 

@@ -5,7 +5,7 @@ title_reading: ヴェオ
 category: model
 subtype: video_generation
 experience_level: research_only
-reader_level: 2-4
+reader_level: 2-3
 importance: D
 figure_type: comparison
 page_layout: spread_v1

@@ -5,7 +5,7 @@ title_reading: レイカーツワイル
 category: person_org
 subtype: person
 experience_level: research_only
-reader_level: 3-5
+reader_level: 3-4
 importance: D
 figure_type: timeline
 page_layout: spread_v1
@@ -79,11 +79,11 @@ AGI、Singularity、ASI
 
 ## 開発フローでの位置（必須）
 
-1. 概念把握 — AGI・ASI・シンギュラリティの定義を Kurzweil の整理で確認します
-2. 予測年の確認 — 2029 年 AGI 到達、2045 年シンギュラリティという数字を把握します
-3. 議論の参照 — 長期ビジョン記事や AI 企業のロードマップ議論で名前が登場します
+1. 概念把握 — AGI・ASI・シンギュラリティの定義を Kurzweil の整理で確認
+2. 予測年の確認 — 2029 年 AGI 到達、2045 年シンギュラリティという数字を把握
+3. 議論の参照 — 長期ビジョン記事やロードマップ議論で名前が登場します
 4. 続編との対照 — 2024 年版で生成 AI 時代を踏まえた改訂内容を確認します
-5. 近接概念との整理 — Geoffrey Hinton 等の別視点と合わせて多角的に理解します
+5. 近接概念との整理 — Hinton 等の別視点と合わせて多角的に理解します
 
 
 ## 関連用語

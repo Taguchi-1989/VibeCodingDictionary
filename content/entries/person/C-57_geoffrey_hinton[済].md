@@ -5,7 +5,7 @@ title_reading: ジェフリーヒントン
 category: person_org
 subtype: person
 experience_level: research_only
-reader_level: 2-4
+reader_level: 2-3
 importance: D
 figure_type: timeline
 page_layout: spread_v1
@@ -53,7 +53,7 @@ Hinton の研究が「神経回路の模倣」から「現代 AI」へとつな�
 
 ## 会話での使い方例
 
-「Hinton がまた AI リスクの警告を出していましたね。Deep Learning の父が言うと重みが違います。」
+「Hinton がまた AI リスクの警告を出していましたね。あの人が言うと重みが違います。」
 
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
@@ -87,10 +87,10 @@ Deep Learning、Ilya Sutskever、AI 倫理
 ## 開発フローでの位置（必須）
 
 1. 理論の誕生 — 1986 年、誤差逆伝播法の応用論文を共同発表
-2. 画像認識の転換 — 2012 年、AlexNet が ImageNet コンペで圧勝し CNN ブームが始まる
+2. 画像認識の転換 — 2012 年、AlexNet が ImageNet で圧勝し CNN ブームが始まる
 3. 学術的評価 — 2018 年、LeCun・Bengio とともに ACM チューリング賞を受賞
 4. 警鐘の時期 — 2023 年、AI リスクを自由に語るとして Google を退社
-5. 社会的認知 — 2024 年、ノーベル物理学賞（深層学習の基礎研究）を受賞
+5. 社会的認知 — 2024 年、ノーベル物理学賞を受賞
 
 
 ## 関連用語

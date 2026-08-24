@@ -85,11 +85,11 @@ MCP Server、JSON-RPC、SSE（Server-Sent Events）
 
 ## 開発フローでの位置（必須）
 
-1. MCP Server を選ぶ — stdio 専用か HTTP 対応かを確認する
-2. 設定ファイルに記入 — stdio なら `command`／`args`、HTTP なら `url` を書く
-3. クライアントが起動 — stdio はサーバをローカル子プロセスとして立ち上げる
-4. 通信開始 — JSON-RPC メッセージが選んだ Transport 経由で流れる
-5. トラブル時の確認 — Transport の種別ミスがないか設定を見直す
+1. Server を選ぶ — stdio 専用か HTTP 対応かを確認します
+2. 設定ファイルに書く — stdio なら `command`、HTTP なら `url` を書きます
+3. クライアントが起動する — stdio では子プロセスとして立ち上げます
+4. 通信が始まる — JSON-RPC が選んだ Transport を流れます
+5. つまずいたら確認する — 種別の取り違えがないか設定を見直します
 
 ## 関連用語
 

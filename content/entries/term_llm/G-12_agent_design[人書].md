@@ -5,7 +5,7 @@ title_reading: エージェント デザイン
 category: term_llm
 subtype: technique
 experience_level: research_only
-reader_level: 3-5
+reader_level: 4-5
 importance: D
 figure_type: structure
 page_layout: spread_v1

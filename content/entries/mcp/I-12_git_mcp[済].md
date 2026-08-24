@@ -101,7 +101,7 @@ MCP Server、GitHub MCP、git
 2. 接続確認 — Claude が git ツール一覧を認識しているか確認します
 3. 操作委任 — status・diff・log を Claude に呼ばせて動作を検証します
 4. commit 自動化 — add / commit を AI に任せて変更を記録します
-5. branch 運用 — branch 作成・切り替えまで委任して開発サイクルを回します
+5. branch 運用 — 作成・切り替えまで任せて開発を回します
 
 
 ## 関連用語

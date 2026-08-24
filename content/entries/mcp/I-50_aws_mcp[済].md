@@ -85,11 +85,11 @@ MCP、MCP Server、Amazon Bedrock
 
 ## 開発フローでの位置（必須）
 
-1. 認証準備 — `~/.aws/credentials` に IAM ロール（読み取り専用推奨）を設定します
-2. Server 起動 — `uvx awslabs.aws-cdk-mcp-server@latest` など用途別 Server を起動します
-3. MCP 登録 — MCP Client（Claude Code 等）の設定に Server エンドポイントを追加します
-4. AI で操作 — 「このスタックの差分を要約して」など自然言語で AWS リソースを扱います
-5. 確認・反映 — AI の出力を確認してから本番変更を適用し、事故を防ぎます
+1. 認証準備 — 読み取り専用の IAM ロールを認証情報に設定します
+2. Server 起動 — 用途別の AWS 用 MCP Server を起動します
+3. MCP 登録 — MCP Client の設定に接続先を追加します
+4. AI で操作 — 「このスタックの差分を要約して」と自然言語で頼みます
+5. 確認・反映 — 出力を確認してから本番に反映し、事故を防ぎます
 
 
 ## 関連用語

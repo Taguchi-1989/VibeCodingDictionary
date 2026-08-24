@@ -102,9 +102,14 @@ DEPRECATED_HEADINGS = [
 STRONG_ASSERTION_WORDS = ["最新", "最強", "完全に", "絶対に", "必ず"]
 
 # です・ます調から外れるパターン（語尾検出）
+# だ調・である調の検出。2026-08-24: 判定を「文末」に限定した。
+# 以前は `だ[。\s]` としていたため、連体形の直後に半角スペースが来るだけの
+# 「選んだ Transport」「読んだ 本」を、だ調と誤検出していた（日本語の本文では
+# 欧文の前に半角スペースを置くのが本書の表記なので、頻繁に踏む）。
+# 文末（`。` または行末）に限れば、だ調・である調だけを拾える。
 NON_DESU_MASU_PATTERNS = [
-    re.compile(r"である[。\s]"),
-    re.compile(r"(?<![すまりぞ])だ[。\s]"),  # "です"や"ます"に続く「だ」は除外
+    re.compile(r"である(?:。|$)", re.M),
+    re.compile(r"(?<![すまりぞ])だ(?:。|$)", re.M),  # "です"や"ます"に続く「だ」は除外
 ]
 
 
@@ -618,15 +623,33 @@ def check_char_counts(body: str, r: Report) -> None:
         r.warn(f"H. 右ページ合計: {right_total} 字（目安 {RIGHT_TOTAL_MIN}-{RIGHT_TOTAL_MAX}、{right_reason}）")
 
 
+def extract_printed_body(body: str) -> str:
+    """誌面に刷られる本文だけを返す（2026-08-24 追加）。
+
+    `## 非エンジニアのつまずき` 以降は「著者記入欄」と「裏台帳メモ」で、
+    - 著者記入欄（非エンジニアのつまずき／私のコメント）は**著者本人の一人称の声**。
+      AI は触らない決まりなので（CLAUDE.md §3）、トーン警告を出しても直せない
+    - 裏台帳メモ（誌面ポンチ絵メモ／コミュニティ補完メモ／出典メモ／備考）は
+      デザイン担当・次セッション向けの申し送りで、誌面には出ない
+    どちらもトーン規則（です・ます／強い断定語）の対象外とする。
+    """
+    m = re.search(r"\n## 非エンジニアのつまずき", body)
+    return body[: m.start()] if m else body
+
+
 def check_tone(body: str, r: Report) -> None:
     # 旧テンプレの残骸（v1 → v2 移行ヘルパ）。警告のみ（☆ にはしない）
+    # ここは構造の話なので全文を見る
     for pat, msg in DEPRECATED_HEADINGS:
         if pat in body:
             r.warn(f"F. v1 テンプレの名残: `{pat}` — {msg}")
 
+    # トーン規則は誌面本文にだけ適用する
+    printed = extract_printed_body(body)
+
     # である調／だ調の検出
     for rx in NON_DESU_MASU_PATTERNS:
-        matches = rx.findall(body)
+        matches = rx.findall(printed)
         if matches:
             # 誤検出しやすいのでサンプルだけ警告
             sample = str(rx.pattern)
@@ -635,7 +658,7 @@ def check_tone(body: str, r: Report) -> None:
 
     # 強い断定語
     for w in STRONG_ASSERTION_WORDS:
-        if re.search(rf"(?<![「『\w]){re.escape(w)}", body):
+        if re.search(rf"(?<![「『\w]){re.escape(w)}", printed):
             r.warn(f"F. トーン: 強い断定語「{w}」が入っている可能性（要確認）")
 
 

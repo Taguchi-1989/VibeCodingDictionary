@@ -5,7 +5,7 @@ title_reading: クロードのりょうきんプラン
 category: service
 subtype: pricing
 experience_level: hands_on
-reader_level: "2-3"
+reader_level: 2-3
 importance: B
 figure_type: comparison
 page_layout: spread_v1

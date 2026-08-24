@@ -5,7 +5,7 @@ title_reading: スーパーベース
 category: service
 subtype: baas
 experience_level: hands_on
-reader_level: 2-4
+reader_level: 2-3
 importance: C
 figure_type: structure
 page_layout: spread_v1

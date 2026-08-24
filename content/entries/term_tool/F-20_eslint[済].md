@@ -5,7 +5,7 @@ title_reading: イーエスリント
 category: term_tool
 subtype: linter
 experience_level: hands_on
-reader_level: 2-4
+reader_level: 2-3
 importance: D
 figure_type: before_after
 page_layout: spread_v1

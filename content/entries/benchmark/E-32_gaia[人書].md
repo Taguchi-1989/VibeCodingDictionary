@@ -5,7 +5,7 @@ title_reading: ガイア
 category: benchmark
 subtype: agent
 experience_level: research_only
-reader_level: 3-5
+reader_level: 3-4
 importance: E
 figure_type: comparison
 page_layout: spread_v1

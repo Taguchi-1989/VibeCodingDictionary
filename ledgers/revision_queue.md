@@ -1,6 +1,6 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-08-23 23:16 / `scripts/update_review_queue.py`*
+*自動生成: 2026-08-24 03:44 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
@@ -18,155 +18,15 @@
 
 _なし_
 
-## ⚠️ 警告あり（軽微超過 / 著者か entry-writer で手当て）（139 件）
+## ⚠️ 警告あり（軽微超過 / 著者か entry-writer で手当て）（0 件）
 
-| ID | title | status | 概要 |
-| :-- | :-- | :-- | :-- |
-| B-12 | Perplexity | ready | ⚠ 強い断定語「最新」が入っている可能性（要確認） |
-| B-13 | ElevenLabs | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| B-18 | Aqua Voice | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| B-19 | Claude Cowork | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| B-20 | Vercel | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| B-21 | Netlify | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| B-22 | Cloudflare | ready | ⚠ `reader_level` が `"2-4"` — `1`〜`6` の単一値か `2-3` 形式の |
-| B-23 | AWS | ready | ⚠ `reader_level` が `"2-4"` — `1`〜`6` の単一値か `2-3` 形式の |
-| B-24 | Google Cloud | ready | ⚠ `reader_level` が `"2-4"` — `1`〜`6` の単一値か `2-3` 形式の |
-| B-25 | Azure | ready | ⚠ `reader_level` が `"2-4"` — `1`〜`6` の単一値か `2-3` 形式の |
-| B-26 | Azure OpenAI | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| B-27 | Vertex AI | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| B-28 | Render | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| B-29 | Supabase | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| B-3 | ChatGPT | ready | ⚠ `reader_level` が `"1-2"` — `1`〜`6` の単一値か `2-3` 形式の |
-| B-30 | Amazon Bedrock | ready | ⚠ `reader_level` が `"3-5"` — `1`〜`6` の単一値か `2-3` 形式の |
-| B-31 | Excalidraw | ready | ⚠ `reader_level` の範囲幅が 2 段以上（1-3） — 幅は最大 1 段（例 `2-3` |
-| B-32 | Figma | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| B-33 | Canva | ready | ⚠ `reader_level` の範囲幅が 2 段以上（1-3） — 幅は最大 1 段（例 `2-3` |
-| B-4 | Cursor | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| B-40 | Reddit | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| B-41 | arXiv | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| B-5 | GitHub Copilot | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| B-50 | Claude の料金プラン | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| B-51 | ChatGPT の料金プラン | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| B-52 | Gemini の料金プラン | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| B-6 | Windsurf | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| B-60 | Suno | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| C-1 | OpenAI | ready | ⚠ `reader_level` が `"1-2"` — `1`〜`6` の単一値か `2-3` 形式の |
-| C-10 | Moonshot AI | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| C-12 | TSMC | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3`; ⚠ 75 字（目安 25-60、+15 字超過）; ⚠ 16 字（目安 20-50、-4 字不足） |
-| C-13 | Groq | ready | ⚠ 65 字（目安 25-60、+5 字超過） |
-| C-14 | AMD | ready | ⚠ 52 字（目安 25-50、+2 字超過）; ⚠ 16 字（目安 20-50、-4 字不足） |
-| C-3 | Google DeepMind | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| C-5 | xAI | ready | ⚠ 強い断定語「最新」が入っている可能性（要確認） |
-| C-50 | Sam Altman | needs_review | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| C-51 | Dario Amodei | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| C-52 | Demis Hassabis | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| C-53 | Andrej Karpathy | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の; ⚠ 強い断定語「最新」が入っている可能性（要確認） |
-| C-54 | Ilya Sutskever | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| C-55 | Mira Murati | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| C-56 | Yann LeCun | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| C-57 | Geoffrey Hinton | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3`; ⚠ 55 字（目安 25-50、+5 字超過）; ⚠ 185 字（目安 80-180、+5 字超過） |
-| C-58 | Elon Musk | ready | ⚠ 18 字（目安 20-50、-2 字不足） |
-| C-59 | Jensen Huang | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3`; ⚠ 194 字（目安 80-180、+14 字超過）; ⚠ 17 字（目安 20-50、-3 字不足） |
-| C-6 | Mistral AI | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| C-60 | Ray Kurzweil | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3`; ⚠ 198 字（目安 80-180、+18 字超過）; ⚠ 強い断定語「最新」が入っている可能性（要確認） |
-| C-7 | Hugging Face | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の; ⚠ 191 字（目安 80-180、+11 字超過） |
-| C-8 | Microsoft AI | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| C-81 | にゃんた | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| C-82 | まさお | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| C-9 | NVIDIA | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| D-11 | Claude 3.5 系 | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| D-20 | GPT-5 系 | needs_review | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| D-25 | GPT-1 / GPT-2 系 | ready | ⚠ 強い断定語「必ず」が入っている可能性（要確認） |
-| D-35 | Cursor Composer | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| D-45 | GLM | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| D-53 | Veo | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| D-55 | Nano Banana | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| D-56 | Seedance | ready | ⚠ 18 字（目安 20-50、-2 字不足）; ⚠ 258 字（目安 155-250、+8 字超過） |
-| D-60 | AlphaGo | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| D-70 | Amical | needs_review | ⚠ 59 字（目安 60-200、-1 字不足） |
-| E-20 | MMLU | ready | ⚠ 73 字（目安 25-60、+13 字超過） |
-| E-22 | GPQA | ready | ⚠ 62 字（目安 25-60、+2 字超過）; ⚠ 52 字（目安 25-50、+2 字超過）; ⚠ 257 字（目安 155-250、+7 字超過） |
-| E-23 | GSM8K | ready | ⚠ 61 字（目安 25-60、+1 字超過） |
-| E-24 | MATH | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| E-25 | AIME | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3`; ⚠ 強い断定語「最新」が入っている可能性（要確認） |
-| E-27 | IQ Bench | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| E-32 | GAIA | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| E-4 | HumanEval | ready | ⚠ 強い断定語「最新」が入っている可能性（要確認） |
-| E-50 | Chatbot Arena | ready | ⚠ 強い断定語「最新」が入っている可能性（要確認） |
-| E-51 | LMSYS Arena | needs_review | ⚠ 強い断定語「最新」が入っている可能性（要確認） |
-| F-1 | JavaScript | ready | ⚠ `reader_level` が `"2"` — `1`〜`6` の単一値か `2-3` 形式の範囲 |
-| F-110 | Lighthouse | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| F-111 | a11y | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| F-12 | Electron | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| F-120 | PostgreSQL | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| F-123 | ORM | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| F-130 | OAuth | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| F-140 | Mermaid | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| F-152 | GPL | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| F-153 | Creative Commons | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| F-16 | Tailwind CSS | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| F-161 | SSR | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| F-171 | S3 | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3`; ⚠ 58 字（目安 60-200、-2 字不足） |
-| F-2 | TypeScript | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| F-20 | ESLint | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| F-200 | Rust | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| F-3 | Python | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の; ⚠ 53 字（目安 60-200、-7 字不足） |
-| F-30 | VS Code | ready | ⚠ `reader_level` が `"2-3"` — `1`〜`6` の単一値か `2-3` 形式の |
-| F-38 | Markdown All in One | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| F-4 | HTML | ready | ⚠ `reader_level` が `"2"` — `1`〜`6` の単一値か `2-3` 形式の範囲 |
-| F-5 | CSS | ready | ⚠ `reader_level` が `"2"` — `1`〜`6` の単一値か `2-3` 形式の範囲 |
-| F-6 | Markdown | ready | ⚠ `reader_level` が `"2"` — `1`〜`6` の単一値か `2-3` 形式の範囲 |
-| F-61 | Pull Request | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| F-62 | GitHub Actions | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| F-7 | YAML | ready | ⚠ `reader_level` が `"2"` — `1`〜`6` の単一値か `2-3` 形式の範囲 |
-| F-8 | JSON | ready | ⚠ `reader_level` が `"2"` — `1`〜`6` の単一値か `2-3` 形式の範囲 |
-| F-83 | PowerShell | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| F-85 | SuperClaude Framework | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| F-86 | ollama | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| G-12 | Agent Design | needs_review | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| G-13 | Few-shot Learning | ready | ⚠ 48 字（目安 60-200、-12 字不足） |
-| G-34 | Code Interpreter | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| G-38 | Plan Mode | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| G-43 | オーケストレーション | ready | ⚠ 強い断定語「最強」が入っている可能性（要確認） |
-| G-46 | ナーフ | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| H-5 | Scrum / Agile | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| H-56 | Claude のバージョン史 | ready | ⚠ 54 字（目安 60-200、-6 字不足） |
-| H-8 | DevOps | ready | ⚠ 55 字（目安 60-200、-5 字不足） |
-| I-10 | Filesystem MCP | ready | ⚠ 57 字（目安 25-50、+7 字超過）; ⚠ 198 字（目安 80-180、+18 字超過）; ⚠ 436 字（目安 220-430、+6 字超過） |
-| I-12 | Git MCP | ready | ⚠ 189 字（目安 80-180、+9 字超過） |
-| I-13 | Slack MCP | ready | ⚠ 220 字（目安 80-180、+40 字超過）; ⚠ 434 字（目安 220-430、+4 字超過） |
-| I-2 | MCP Server | ready | ⚠ 51 字（目安 25-50、+1 字超過）; ⚠ 218 字（目安 80-180、+38 字超過）; ⚠ 456 字（目安 220-430、+26 字超過） |
-| I-20 | Playwright MCP | ready | ⚠ 59 字（目安 25-50、+9 字超過） |
-| I-21 | Puppeteer MCP | ready | ⚠ 52 字（目安 25-50、+2 字超過）; ⚠ 185 字（目安 80-180、+5 字超過）; ⚠ 435 字（目安 220-430、+5 字超過） |
-| I-22 | Chrome DevTools MCP | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3`; ⚠ 199 字（目安 80-180、+19 字超過）; ⚠ 452 字（目安 220-430、+22 字超過） |
-| I-23 | Serena MCP | ready | ⚠ 202 字（目安 80-180、+22 字超過） |
-| I-24 | Context7 MCP | ready | ⚠ 57 字（目安 25-50、+7 字超過）; ⚠ 204 字（目安 80-180、+24 字超過） |
-| I-3 | MCP Client | ready | ⚠ 55 字（目安 25-50、+5 字超過）; ⚠ 185 字（目安 80-180、+5 字超過） |
-| I-30 | Notion MCP | ready | ⚠ 226 字（目安 80-180、+46 字超過）; ⚠ 438 字（目安 220-430、+8 字超過） |
-| I-4 | MCP Transport | ready | ⚠ 188 字（目安 80-180、+8 字超過）; ⚠ 432 字（目安 220-430、+2 字超過）; ⚠ です・ます外れの疑いあり（(?<![すまりぞ])だ[。\s] のパターン、要目視確認） |
-| I-41 | SQLite MCP | ready | ⚠ 220 字（目安 80-180、+40 字超過） |
-| I-5 | MCP SDK | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3`; ⚠ 223 字（目安 80-180、+43 字超過）; ⚠ 444 字（目安 220-430、+14 字超過） |
-| I-50 | AWS MCP | ready | ⚠ 238 字（目安 80-180、+58 字超過）; ⚠ 474 字（目安 220-430、+44 字超過） |
-| J-1 | AGI | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| J-17 | Attention | ready | ⚠ 強い断定語「必ず」が入っている可能性（要確認） |
-| J-2 | 強い AI／弱い AI | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| J-21 | LoRA | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| J-3 | Singularity | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| J-4 | ASI | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| J-42 | Web3 | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
-| J-53 | 著作権法 30 条の 4 | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| J-54 | ISO/IEC 42001 | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| J-70 | VRAM | ready | ⚠ 59 字（目安 60-200、-1 字不足） |
-| J-72 | H100 | ready | ⚠ `reader_level` の範囲幅が 2 段以上（3-5） — 幅は最大 1 段（例 `2-3` |
-| J-73 | Blackwell | ready | ⚠ 強い断定語「最新」が入っている可能性（要確認） |
-| J-78 | HDD | ready | ⚠ `reader_level` の範囲幅が 2 段以上（1-3） — 幅は最大 1 段（例 `2-3` |
-| J-93 | Ubuntu | ready | ⚠ `reader_level` の範囲幅が 2 段以上（2-4） — 幅は最大 1 段（例 `2-3` |
+_なし_
 
 ## ✍️ 書きかけ（drafting・全パス済み・自動昇格漏れ）（0 件）
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（127 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（148 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -178,16 +38,20 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | B-39 | Google AI Studio | needs_review | — |
 | B-42 | Discord | needs_review | — |
 | B-43 | n8n・Dify | needs_review | — |
+| C-10 | Moonshot AI | needs_review | — |
 | C-11 | Z.ai | needs_review | — |
 | C-15 | Intel | needs_review | — |
 | C-16 | DeepSeek | needs_review | — |
 | C-17 | Sakana AI | needs_review | — |
+| C-50 | Sam Altman | needs_review | — |
+| C-6 | Mistral AI | needs_review | — |
 | C-83 | AI時代の羅針盤 | needs_review | — |
 | D-1 | Gemini 2 系 | needs_review | — |
 | D-10 | Claude 3 系 | needs_review | — |
 | D-13 | Claude 4.5 系 | needs_review | — |
 | D-14 | Claude Mythos Preview | needs_review | — |
 | D-2 | Gemini 2.5 系 | needs_review | — |
+| D-20 | GPT-5 系 | needs_review | — |
 | D-21 | GPT-4 系 | needs_review | — |
 | D-22 | o1 系 | needs_review | — |
 | D-23 | o3 系 | needs_review | — |
@@ -196,37 +60,54 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | D-4 | Gemini 3.1 系 | needs_review | — |
 | D-59 | Midjourney | needs_review | — |
 | D-61 | AlphaFold | needs_review | — |
+| D-70 | Amical | needs_review | — |
 | E-28 | ARC-AGI | needs_review | — |
 | E-31 | WebArena | needs_review | — |
+| E-32 | GAIA | needs_review | — |
 | E-33 | AgentBench | needs_review | — |
 | E-34 | OSWorld | needs_review | — |
+| E-51 | LMSYS Arena | needs_review | — |
 | F-100 | 拡張子早見表 | needs_review | — |
 | F-101 | .ico | needs_review | — |
 | F-102 | .mp4 | needs_review | — |
 | F-103 | .mp3 | needs_review | — |
 | F-104 | .webp | needs_review | — |
+| F-110 | Lighthouse | needs_review | — |
+| F-111 | a11y | needs_review | — |
+| F-120 | PostgreSQL | needs_review | — |
 | F-121 | SQLite | needs_review | — |
 | F-122 | Prisma | needs_review | — |
+| F-123 | ORM | needs_review | — |
+| F-130 | OAuth | needs_review | — |
+| F-140 | Mermaid | needs_review | — |
 | F-141 | PlantUML | needs_review | — |
 | F-150 | MIT ライセンス | needs_review | — |
 | F-151 | Apache 2.0 | needs_review | — |
+| F-152 | GPL | needs_review | — |
+| F-153 | Creative Commons | needs_review | — |
 | F-154 | OSS | needs_review | — |
 | F-160 | DOM | needs_review | — |
+| F-161 | SSR | needs_review | — |
 | F-162 | SSG | needs_review | — |
 | F-170 | EC2 | needs_review | — |
+| F-171 | S3 | needs_review | — |
 | F-172 | IAM | needs_review | — |
 | F-18 | フレームワーク／ライブラリ | needs_review | — |
 | F-180 | OpenGL | needs_review | — |
 | F-181 | WebGL | needs_review | — |
 | F-190 | サブルーチン | needs_review | — |
+| F-200 | Rust | needs_review | — |
 | F-34 | VS Code 拡張機能 | needs_review | — |
 | F-47 | フロントエンド／バックエンド | needs_review | — |
 | F-57 | リポジトリ | needs_review | — |
 | F-80 | Node.js | needs_review | — |
 | F-84 | Ghostty | needs_review | — |
+| F-85 | SuperClaude Framework | needs_review | — |
+| F-86 | ollama | needs_review | — |
 | F-87 | sudo | needs_review | — |
 | F-90 | Docker | needs_review | — |
 | F-91 | .env | needs_review | — |
+| G-12 | Agent Design | needs_review | — |
 | G-24 | Temperature | needs_review | — |
 | G-25 | AI のメモリ機能 | needs_review | — |
 | G-26 | Computer Use | needs_review | — |
@@ -298,63 +179,137 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-98 | 重要鉱物の地政学 | needs_review | — |
 | J-99 | CoWoS | needs_review | — |
 
-## ✅ 完成（ready・全パス）（148 件）
+## ✅ 完成（ready・全パス）（266 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
 | B-1 | Gemini | ready | — |
 | B-10 | Devin | ready | — |
 | B-11 | Bolt.new | ready | — |
+| B-12 | Perplexity | ready | — |
+| B-13 | ElevenLabs | ready | — |
 | B-14 | Genspark | ready | — |
 | B-15 | Microsoft Copilot | ready | — |
 | B-16 | Microsoft 365 Copilot | ready | — |
 | B-17 | Edge Copilot | ready | — |
+| B-18 | Aqua Voice | ready | — |
+| B-19 | Claude Cowork | ready | — |
 | B-2 | Claude | ready | — |
+| B-20 | Vercel | ready | — |
+| B-21 | Netlify | ready | — |
+| B-22 | Cloudflare | ready | — |
+| B-23 | AWS | ready | — |
+| B-24 | Google Cloud | ready | — |
+| B-25 | Azure | ready | — |
+| B-26 | Azure OpenAI | ready | — |
+| B-27 | Vertex AI | ready | — |
+| B-28 | Render | ready | — |
+| B-29 | Supabase | ready | — |
+| B-3 | ChatGPT | ready | — |
+| B-30 | Amazon Bedrock | ready | — |
+| B-31 | Excalidraw | ready | — |
+| B-32 | Figma | ready | — |
+| B-33 | Canva | ready | — |
+| B-4 | Cursor | ready | — |
+| B-40 | Reddit | ready | — |
+| B-41 | arXiv | ready | — |
+| B-5 | GitHub Copilot | ready | — |
+| B-50 | Claude の料金プラン | ready | — |
+| B-51 | ChatGPT の料金プラン | ready | — |
+| B-52 | Gemini の料金プラン | ready | — |
+| B-6 | Windsurf | ready | — |
+| B-60 | Suno | ready | — |
 | B-61 | ACE-Step 1.5 | ready | — |
 | B-7 | Claude Code | ready | — |
 | B-8 | Codex | ready | — |
 | B-9 | v0 | ready | — |
+| C-1 | OpenAI | ready | — |
+| C-12 | TSMC | ready | — |
+| C-13 | Groq | ready | — |
+| C-14 | AMD | ready | — |
 | C-2 | Anthropic | ready | — |
+| C-3 | Google DeepMind | ready | — |
 | C-4 | Meta AI | ready | — |
+| C-5 | xAI | ready | — |
+| C-51 | Dario Amodei | ready | — |
+| C-52 | Demis Hassabis | ready | — |
+| C-53 | Andrej Karpathy | ready | — |
+| C-54 | Ilya Sutskever | ready | — |
+| C-55 | Mira Murati | ready | — |
+| C-56 | Yann LeCun | ready | — |
+| C-57 | Geoffrey Hinton | ready | — |
+| C-58 | Elon Musk | ready | — |
+| C-59 | Jensen Huang | ready | — |
+| C-60 | Ray Kurzweil | ready | — |
+| C-7 | Hugging Face | ready | — |
+| C-8 | Microsoft AI | ready | — |
 | C-80 | AI大学 | ready | — |
+| C-81 | にゃんた | ready | — |
+| C-82 | まさお | ready | — |
+| C-9 | NVIDIA | ready | — |
+| D-11 | Claude 3.5 系 | ready | — |
 | D-12 | Claude 4 系 | ready | — |
+| D-25 | GPT-1 / GPT-2 系 | ready | — |
 | D-26 | gpt-oss | ready | — |
 | D-30 | Grok 系 | ready | — |
+| D-35 | Cursor Composer | ready | — |
 | D-40 | Llama 系 | ready | — |
 | D-41 | Mistral 系 | ready | — |
 | D-42 | Gemma 系 | ready | — |
 | D-43 | Qwen 系 | ready | — |
 | D-44 | Kimi | ready | — |
+| D-45 | GLM | ready | — |
 | D-46 | DeepSeek V3 | ready | — |
 | D-47 | DeepSeek R1 | ready | — |
 | D-50 | DALL-E | ready | — |
 | D-51 | Imagen | ready | — |
 | D-52 | Sora | ready | — |
+| D-53 | Veo | ready | — |
 | D-54 | Stable Diffusion | ready | — |
+| D-55 | Nano Banana | ready | — |
+| D-56 | Seedance | ready | — |
 | D-57 | Flow | ready | — |
 | D-58 | Whisk | ready | — |
+| D-60 | AlphaGo | ready | — |
 | D-71 | Whisper | ready | — |
 | E-1 | SWE-Bench | ready | — |
 | E-2 | SWE-Bench Verified | ready | — |
+| E-20 | MMLU | ready | — |
 | E-21 | MMLU-Pro | ready | — |
+| E-22 | GPQA | ready | — |
+| E-23 | GSM8K | ready | — |
+| E-24 | MATH | ready | — |
+| E-25 | AIME | ready | — |
 | E-26 | Humanity's Last Exam | ready | — |
+| E-27 | IQ Bench | ready | — |
 | E-3 | Terminal-Bench | ready | — |
 | E-30 | TAU-Bench | ready | — |
+| E-4 | HumanEval | ready | — |
+| E-50 | Chatbot Arena | ready | — |
+| F-1 | JavaScript | ready | — |
 | F-10 | React | ready | — |
 | F-11 | Next.js | ready | — |
+| F-12 | Electron | ready | — |
 | F-13 | Tauri | ready | — |
 | F-14 | three.js | ready | — |
 | F-15 | shadcn/ui | ready | — |
+| F-16 | Tailwind CSS | ready | — |
 | F-17 | Astro | ready | — |
+| F-2 | TypeScript | ready | — |
+| F-20 | ESLint | ready | — |
 | F-21 | Prettier | ready | — |
 | F-210 | JSON Schema | ready | — |
 | F-211 | Zod | ready | — |
 | F-212 | OpenAPI | ready | — |
 | F-213 | API | ready | — |
 | F-214 | API キー | ready | — |
+| F-3 | Python | ready | — |
+| F-30 | VS Code | ready | — |
 | F-35 | Markdown Preview Enhanced | ready | — |
 | F-36 | Git Graph | ready | — |
 | F-37 | Japanese Language Pack for VS Code | ready | — |
+| F-38 | Markdown All in One | ready | — |
+| F-4 | HTML | ready | — |
 | F-40 | npm | ready | — |
 | F-41 | Vite | ready | — |
 | F-42 | ビルド | ready | — |
@@ -362,6 +317,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-44 | pnpm | ready | — |
 | F-45 | デプロイ | ready | — |
 | F-46 | デバッグ | ready | — |
+| F-5 | CSS | ready | — |
 | F-50 | git | ready | — |
 | F-51 | git push | ready | — |
 | F-52 | git pull | ready | — |
@@ -371,14 +327,21 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-56 | .gitignore | ready | — |
 | F-58 | git stash | ready | — |
 | F-59 | README.md | ready | — |
+| F-6 | Markdown | ready | — |
 | F-60 | GitHub | ready | — |
+| F-61 | Pull Request | ready | — |
+| F-62 | GitHub Actions | ready | — |
+| F-7 | YAML | ready | — |
 | F-71 | ripgrep | ready | — |
+| F-8 | JSON | ready | — |
 | F-81 | bash | ready | — |
 | F-82 | WSL | ready | — |
+| F-83 | PowerShell | ready | — |
 | F-9 | SVG | ready | — |
 | G-1 | Context | ready | — |
 | G-10 | Prompt Engineering | ready | — |
 | G-11 | Context Engineering | ready | — |
+| G-13 | Few-shot Learning | ready | — |
 | G-14 | Thinking モデル | ready | — |
 | G-15 | RAG | ready | — |
 | G-16 | Embedding | ready | — |
@@ -395,14 +358,18 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-31 | Hook | ready | — |
 | G-32 | Slash Command | ready | — |
 | G-33 | Function Calling | ready | — |
+| G-34 | Code Interpreter | ready | — |
 | G-35 | Deep Research | ready | — |
 | G-36 | Artifact | ready | — |
+| G-38 | Plan Mode | ready | — |
 | G-39 | Permission | ready | — |
 | G-40 | バイブコーディング | ready | — |
 | G-41 | Subagent | ready | — |
 | G-42 | Worktree | ready | — |
+| G-43 | オーケストレーション | ready | — |
 | G-44 | マルチエージェント協調 | ready | — |
 | G-45 | 段階的開示 | ready | — |
+| G-46 | ナーフ | ready | — |
 | G-47 | Auto-compact | ready | — |
 | G-48 | Structured Outputs | ready | — |
 | G-49 | AI エージェント | ready | — |
@@ -412,14 +379,33 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-8 | 決定論的／非決定論的 | ready | — |
 | G-9 | effort レベル | ready | — |
 | H-1 | TDD | ready | — |
+| H-5 | Scrum / Agile | ready | — |
 | H-53 | ChatGPT 登場 | ready | — |
 | H-54 | GPT-4 リリース | ready | — |
 | H-55 | LLaMA のオープン化 | ready | — |
+| H-56 | Claude のバージョン史 | ready | — |
 | H-58 | Transformer 論文 | ready | — |
 | H-6 | Git Flow | ready | — |
 | H-7 | CI/CD | ready | — |
+| H-8 | DevOps | ready | — |
 | I-1 | MCP | ready | — |
+| I-10 | Filesystem MCP | ready | — |
 | I-11 | GitHub MCP | ready | — |
+| I-12 | Git MCP | ready | — |
+| I-13 | Slack MCP | ready | — |
+| I-2 | MCP Server | ready | — |
+| I-20 | Playwright MCP | ready | — |
+| I-21 | Puppeteer MCP | ready | — |
+| I-22 | Chrome DevTools MCP | ready | — |
+| I-23 | Serena MCP | ready | — |
+| I-24 | Context7 MCP | ready | — |
+| I-3 | MCP Client | ready | — |
+| I-30 | Notion MCP | ready | — |
+| I-4 | MCP Transport | ready | — |
+| I-41 | SQLite MCP | ready | — |
+| I-5 | MCP SDK | ready | — |
+| I-50 | AWS MCP | ready | — |
+| J-1 | AGI | ready | — |
 | J-10 | Machine Learning | ready | — |
 | J-100 | リテラシー | ready | — |
 | J-11 | Deep Learning | ready | — |
@@ -428,28 +414,41 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-14 | LLM | ready | — |
 | J-15 | VLM | ready | — |
 | J-16 | Fine-tuning | ready | — |
+| J-17 | Attention | ready | — |
 | J-18 | MoE | ready | — |
 | J-19 | 量子化 | ready | — |
+| J-2 | 強い AI／弱い AI | ready | — |
 | J-20 | Big Data | ready | — |
+| J-21 | LoRA | ready | — |
 | J-23 | 拡散モデル | ready | — |
+| J-3 | Singularity | ready | — |
 | J-31 | 第 5 世代コンピュータ | ready | — |
 | J-33 | 量子コンピュータ | ready | — |
+| J-4 | ASI | ready | — |
 | J-40 | IoT | ready | — |
 | J-41 | DX | ready | — |
+| J-42 | Web3 | ready | — |
 | J-51 | Hallucination | ready | — |
 | J-52 | Sycophancy | ready | — |
+| J-53 | 著作権法 30 条の 4 | ready | — |
+| J-54 | ISO/IEC 42001 | ready | — |
 | J-56 | GDPR | ready | — |
+| J-70 | VRAM | ready | — |
 | J-71 | RAM | ready | — |
+| J-72 | H100 | ready | — |
+| J-73 | Blackwell | ready | — |
 | J-74 | RTX シリーズ | ready | — |
 | J-75 | Tensor コア | ready | — |
 | J-76 | CPU | ready | — |
 | J-77 | GPU | ready | — |
+| J-78 | HDD | ready | — |
 | J-79 | SSD | ready | — |
 | J-80 | SATA | ready | — |
 | J-81 | M.2 | ready | — |
 | J-90 | GUI | ready | — |
 | J-91 | CLI | ready | — |
 | J-92 | Linux | ready | — |
+| J-93 | Ubuntu | ready | — |
 
 ## 📖 前付け（front_*・著者本人レビュー必須）（12 件）
 

@@ -5,7 +5,7 @@ title_reading: クロード コワーク
 category: service
 subtype: collaboration_service
 experience_level: partial
-reader_level: 2-4
+reader_level: 2-3
 importance: C
 figure_type: structure
 page_layout: spread_v1

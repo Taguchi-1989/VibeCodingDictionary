@@ -18,6 +18,7 @@ related_terms:
   - Grok
   - OpenAI
   - AI 安全性
+  - Sam Altman
 status: ready
 ---
 
@@ -101,6 +102,7 @@ xAI（C-5）、Grok（D-30）、OpenAI（C-1）
 - Grok
 - OpenAI
 - AI 安全性
+- Sam Altman
 
 
 <!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->

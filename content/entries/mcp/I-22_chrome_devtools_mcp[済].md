@@ -5,7 +5,7 @@ title_reading: クロームデブツールズエムシーピー
 category: mcp
 subtype: dev_automation
 experience_level: hands_on
-reader_level: 3-5
+reader_level: 3-4
 importance: D
 figure_type: structure
 page_layout: spread_v1
@@ -88,8 +88,8 @@ MCP Server、Playwright MCP、Chrome DevTools Protocol
 
 1. 環境準備 — `npx chrome-devtools-mcp@latest` でサーバーを起動します
 2. 接続確立 — 実行中の Chrome または自動起動した Chrome に CDP で接続します
-3. AI に指示 — コンソールログ取得・パフォーマンス計測などを AI エージェントへ依頼します
-4. 結果受け取り — トレースデータやスクリーンショットを確認して改善策を検討します
+3. AI に指示 — コンソールログ取得や性能計測を AI に依頼します
+4. 結果受け取り — トレースや画面を確認して改善策を考えます
 5. 修正と再計測 — コード修正後に同じ手順で再計測して効果を確かめます
 
 

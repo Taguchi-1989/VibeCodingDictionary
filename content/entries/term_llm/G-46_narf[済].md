@@ -4,7 +4,7 @@ title: ナーフ
 category: term_llm
 subtype: ops
 experience_level: partial
-reader_level: 2-4
+reader_level: 2-3
 importance: E
 figure_type: comparison
 page_layout: spread_v1

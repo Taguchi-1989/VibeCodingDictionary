@@ -84,10 +84,10 @@ MCP、MCP Server、Slack MCP
 
 ## 開発フローでの位置（必須）
 
-1. Integration 作成 — Notion の設定画面で Internal Integration Token を発行します
-2. ページに招待 — 対象ページ・データベースにその Integration を接続（招待）します
-3. サーバー起動 — `npx -y @notionhq/notion-mcp-server` を実行します
-4. Claude 設定 — 設定ファイルに `NOTION_API_KEY` を環境変数として登録します
+1. Integration 作成 — Notion の設定画面でトークンを発行します
+2. ページに招待 — 対象のページやデータベースに接続（招待）します
+3. サーバー起動 — Notion 公式の MCP Server を起動します
+4. Claude 設定 — 設定ファイルにトークンを環境変数として登録します
 5. 動作確認 — まず検索・取得のみ試し、書き込みは権限を確認してから使います
 
 

@@ -55,7 +55,7 @@ Playwright MCP・Chrome DevTools MCP との 3 者を並べ、「Chrome 特化の
 
 ## 会話での使い方例
 
-「Puppeteer MCP で Chrome を自動操作して、申請画面の PDF を 50 件まとめて出力しました。」
+「Puppeteer MCP で Chrome を動かして、申請画面の PDF を 50 件まとめて出力しました。」
 
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
@@ -90,7 +90,7 @@ Playwright MCP、Chrome DevTools MCP、MCP Server
 ## 開発フローでの位置（必須）
 
 1. MCP 設定 — `npx -y @modelcontextprotocol/server-puppeteer` を設定ファイルに追加します
-2. ブラウザ起動 — AI がツール呼び出しで Chrome / Chromium を headless 起動します
+2. ブラウザ起動 — AI がツール呼び出しで Chrome を headless 起動します
 3. 操作実行 — クリック・フォーム入力・スクリーンショットなどを逐次実行します
 4. 結果取得 — 画像や HTML・コンソールログを AI が受け取り、次の操作に使います
 

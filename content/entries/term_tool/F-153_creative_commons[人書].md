@@ -5,7 +5,7 @@ title_reading: クリエイティブ コモンズ
 category: term_tool
 subtype: license
 experience_level: research_only
-reader_level: 2-4
+reader_level: 2-3
 importance: C
 figure_type: comparison
 page_layout: spread_v1

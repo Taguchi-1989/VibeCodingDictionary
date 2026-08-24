@@ -5,7 +5,7 @@ title_reading: エレクトロン
 category: term_tool
 subtype: framework
 experience_level: partial
-reader_level: 2-4
+reader_level: 2-3
 importance: D
 figure_type: structure
 page_layout: spread_v1

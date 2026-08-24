@@ -5,7 +5,7 @@ title_reading: プルリクエスト
 category: term_tool
 subtype: git_workflow
 experience_level: hands_on
-reader_level: 2-4
+reader_level: 2-3
 importance: C
 figure_type: workflow
 page_layout: spread_v1

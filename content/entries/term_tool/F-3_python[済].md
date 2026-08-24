@@ -5,7 +5,7 @@ title_reading: パイソン
 category: term_tool
 subtype: language
 experience_level: partial
-reader_level: "2-3"
+reader_level: 2-3
 importance: B
 figure_type: structure
 page_layout: spread_v1
@@ -33,7 +33,7 @@ status: ready
 
 ## 何をしてくれるか
 
-データ分析・機械学習・自動化を短いコードで書けるプログラミング言語で、豊富なライブラリがそのまま使えます。
+データ分析・機械学習・自動化を短いコードで書けるプログラミング言語です。読みやすい文法と、そのまま使える豊富なライブラリが強みです。
 
 ## どこで出会うか
 

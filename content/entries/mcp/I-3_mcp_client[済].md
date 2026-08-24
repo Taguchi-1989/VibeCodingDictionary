@@ -51,7 +51,7 @@ Claude Code や Cursor など、AI を使うエディタやアプリが代表例
 
 ## 会話での使い方例
 
-「Claude Code は MCP Client なので、MCP Server を設定するだけで外部ツールと話せますね。」
+「Claude Code は MCP Client なので、Server を設定すれば外部ツールと話せます。」
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -83,11 +83,11 @@ MCP Server、MCP Transport、Tool Use。
 
 ## 開発フローでの位置（必須）
 
-1. LLM ホストアプリを選ぶ — Claude Code / Cursor / Claude Desktop など
-2. 使いたい MCP Server を探す — 公式カタログやコミュニティ一覧
-3. Client 側の設定ファイルに Server 情報を書く — JSON で接続先を追記
-4. Client が Server に接続・ツール一覧を取得 — 自動で認識が始まる
-5. LLM を通じて Server のツールを呼び出す — 会話の中でツールが動く
+1. ホストアプリを選ぶ — Claude Code や Cursor などを選びます
+2. 使いたい Server を探す — 公式カタログで探します
+3. 設定ファイルに書く — JSON で接続先を追記します
+4. Client が Server に接続する — ツール一覧が自動で認識されます
+5. LLM からツールを呼ぶ — 会話の中でツールが動きます
 
 ## 関連用語
 

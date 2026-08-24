@@ -5,7 +5,7 @@ title_reading: レンダー
 category: service
 subtype: hosting_cloud
 experience_level: partial
-reader_level: "2-3"
+reader_level: 2-3
 importance: D
 figure_type: structure
 page_layout: spread_v1

@@ -8,7 +8,7 @@ subtype: ci_cd
 
 # ── 読者・体験 ──
 experience_level: partial
-reader_level: 2-4
+reader_level: 2-3
 importance: C
 
 # ── 誌面形式 ──

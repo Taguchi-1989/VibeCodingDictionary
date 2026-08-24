@@ -5,7 +5,7 @@ title_reading: シンギュラリティ
 category: term_general
 subtype: ai_concept
 experience_level: research_only
-reader_level: 3-5
+reader_level: 3-4
 importance: C
 figure_type: timeline
 page_layout: spread_v1
