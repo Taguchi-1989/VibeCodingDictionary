@@ -25,7 +25,7 @@ status: ready
 
 ## tagline
 
-LPU（Language Processing Unit）を開発する AI 推論専用チップ企業です。LLM の推論速度を大幅に引き上げます。
+LPU（Language Processing Unit）を開発する AI 推論専用チップの企業です。LLM の応答を速くします。
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 

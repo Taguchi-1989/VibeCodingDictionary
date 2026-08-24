@@ -85,11 +85,11 @@ transformers、Llama、Mistral、Gradio。
 
 ## 開発フローでの位置（必須）
 
-1. モデルを探す — huggingface.co の Models でキーワード検索し候補を絞る
-2. ライセンス確認 — 商用利用可否を README と Model Card で確認する
-3. Spaces で試す — Gradio デモで動作を確認してから導入を判断する
-4. ローカルに取得 — transformers でモデルをダウンロードして推論を実行する
-5. データセット活用 — Datasets からファインチューニング用データを取得する
+1. モデルを探す — huggingface.co の Models で検索して候補を絞ります
+2. ライセンス確認 — 商用利用の可否を Model Card で確かめます
+3. Spaces で試す — デモで動作を見てから導入を判断します
+4. ローカルに取得 — transformers で取得して推論を試します
+5. データセット活用 — Datasets から学習用データを取得します
 
 ## 関連用語
 

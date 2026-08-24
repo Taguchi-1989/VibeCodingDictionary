@@ -1,6 +1,6 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-08-24 03:36 / `scripts/update_review_queue.py`*
+*自動生成: 2026-08-24 03:41 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
@@ -18,28 +18,10 @@
 
 _なし_
 
-## ⚠️ 警告あり（軽微超過 / 著者か entry-writer で手当て）（34 件）
+## ⚠️ 警告あり（軽微超過 / 著者か entry-writer で手当て）（15 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
-| C-12 | TSMC | ready | ⚠ 75 字（目安 25-60、+15 字超過）; ⚠ 16 字（目安 20-50、-4 字不足）; ⚠ 259 字（目安 155-250、+9 字超過） |
-| C-13 | Groq | ready | ⚠ 65 字（目安 25-60、+5 字超過） |
-| C-14 | AMD | ready | ⚠ 52 字（目安 25-50、+2 字超過）; ⚠ 16 字（目安 20-50、-4 字不足） |
-| C-57 | Geoffrey Hinton | ready | ⚠ 55 字（目安 25-50、+5 字超過）; ⚠ 185 字（目安 80-180、+5 字超過） |
-| C-58 | Elon Musk | ready | ⚠ 18 字（目安 20-50、-2 字不足） |
-| C-59 | Jensen Huang | ready | ⚠ 194 字（目安 80-180、+14 字超過）; ⚠ 17 字（目安 20-50、-3 字不足） |
-| C-60 | Ray Kurzweil | ready | ⚠ 198 字（目安 80-180、+18 字超過） |
-| C-7 | Hugging Face | ready | ⚠ 191 字（目安 80-180、+11 字超過） |
-| D-56 | Seedance | ready | ⚠ 18 字（目安 20-50、-2 字不足）; ⚠ 258 字（目安 155-250、+8 字超過） |
-| D-70 | Amical | needs_review | ⚠ 59 字（目安 60-200、-1 字不足） |
-| E-20 | MMLU | ready | ⚠ 73 字（目安 25-60、+13 字超過） |
-| E-22 | GPQA | ready | ⚠ 62 字（目安 25-60、+2 字超過）; ⚠ 52 字（目安 25-50、+2 字超過）; ⚠ 257 字（目安 155-250、+7 字超過） |
-| E-23 | GSM8K | ready | ⚠ 61 字（目安 25-60、+1 字超過） |
-| F-171 | S3 | needs_review | ⚠ 58 字（目安 60-200、-2 字不足） |
-| F-3 | Python | ready | ⚠ 53 字（目安 60-200、-7 字不足） |
-| G-13 | Few-shot Learning | ready | ⚠ 48 字（目安 60-200、-12 字不足） |
-| H-56 | Claude のバージョン史 | ready | ⚠ 54 字（目安 60-200、-6 字不足） |
-| H-8 | DevOps | ready | ⚠ 55 字（目安 60-200、-5 字不足） |
 | I-10 | Filesystem MCP | ready | ⚠ 57 字（目安 25-50、+7 字超過）; ⚠ 198 字（目安 80-180、+18 字超過）; ⚠ 436 字（目安 220-430、+6 字超過） |
 | I-12 | Git MCP | ready | ⚠ 189 字（目安 80-180、+9 字超過） |
 | I-13 | Slack MCP | ready | ⚠ 220 字（目安 80-180、+40 字超過）; ⚠ 434 字（目安 220-430、+4 字超過） |
@@ -55,13 +37,12 @@ _なし_
 | I-41 | SQLite MCP | ready | ⚠ 220 字（目安 80-180、+40 字超過） |
 | I-5 | MCP SDK | ready | ⚠ 223 字（目安 80-180、+43 字超過）; ⚠ 444 字（目安 220-430、+14 字超過） |
 | I-50 | AWS MCP | ready | ⚠ 238 字（目安 80-180、+58 字超過）; ⚠ 474 字（目安 220-430、+44 字超過） |
-| J-70 | VRAM | ready | ⚠ 59 字（目安 60-200、-1 字不足） |
 
 ## ✍️ 書きかけ（drafting・全パス済み・自動昇格漏れ）（0 件）
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（146 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（148 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -95,6 +76,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | D-4 | Gemini 3.1 系 | needs_review | — |
 | D-59 | Midjourney | needs_review | — |
 | D-61 | AlphaFold | needs_review | — |
+| D-70 | Amical | needs_review | — |
 | E-28 | ARC-AGI | needs_review | — |
 | E-31 | WebArena | needs_review | — |
 | E-32 | GAIA | needs_review | — |
@@ -124,6 +106,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-161 | SSR | needs_review | — |
 | F-162 | SSG | needs_review | — |
 | F-170 | EC2 | needs_review | — |
+| F-171 | S3 | needs_review | — |
 | F-172 | IAM | needs_review | — |
 | F-18 | フレームワーク／ライブラリ | needs_review | — |
 | F-180 | OpenGL | needs_review | — |
@@ -212,7 +195,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-98 | 重要鉱物の地政学 | needs_review | — |
 | J-99 | CoWoS | needs_review | — |
 
-## ✅ 完成（ready・全パス）（234 件）
+## ✅ 完成（ready・全パス）（251 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -257,6 +240,9 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | B-8 | Codex | ready | — |
 | B-9 | v0 | ready | — |
 | C-1 | OpenAI | ready | — |
+| C-12 | TSMC | ready | — |
+| C-13 | Groq | ready | — |
+| C-14 | AMD | ready | — |
 | C-2 | Anthropic | ready | — |
 | C-3 | Google DeepMind | ready | — |
 | C-4 | Meta AI | ready | — |
@@ -267,6 +253,11 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | C-54 | Ilya Sutskever | ready | — |
 | C-55 | Mira Murati | ready | — |
 | C-56 | Yann LeCun | ready | — |
+| C-57 | Geoffrey Hinton | ready | — |
+| C-58 | Elon Musk | ready | — |
+| C-59 | Jensen Huang | ready | — |
+| C-60 | Ray Kurzweil | ready | — |
+| C-7 | Hugging Face | ready | — |
 | C-8 | Microsoft AI | ready | — |
 | C-80 | AI大学 | ready | — |
 | C-81 | にゃんた | ready | — |
@@ -292,13 +283,17 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | D-53 | Veo | ready | — |
 | D-54 | Stable Diffusion | ready | — |
 | D-55 | Nano Banana | ready | — |
+| D-56 | Seedance | ready | — |
 | D-57 | Flow | ready | — |
 | D-58 | Whisk | ready | — |
 | D-60 | AlphaGo | ready | — |
 | D-71 | Whisper | ready | — |
 | E-1 | SWE-Bench | ready | — |
 | E-2 | SWE-Bench Verified | ready | — |
+| E-20 | MMLU | ready | — |
 | E-21 | MMLU-Pro | ready | — |
+| E-22 | GPQA | ready | — |
+| E-23 | GSM8K | ready | — |
 | E-24 | MATH | ready | — |
 | E-25 | AIME | ready | — |
 | E-26 | Humanity's Last Exam | ready | — |
@@ -324,6 +319,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-212 | OpenAPI | ready | — |
 | F-213 | API | ready | — |
 | F-214 | API キー | ready | — |
+| F-3 | Python | ready | — |
 | F-30 | VS Code | ready | — |
 | F-35 | Markdown Preview Enhanced | ready | — |
 | F-36 | Git Graph | ready | — |
@@ -361,6 +357,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-1 | Context | ready | — |
 | G-10 | Prompt Engineering | ready | — |
 | G-11 | Context Engineering | ready | — |
+| G-13 | Few-shot Learning | ready | — |
 | G-14 | Thinking モデル | ready | — |
 | G-15 | RAG | ready | — |
 | G-16 | Embedding | ready | — |
@@ -402,9 +399,11 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | H-53 | ChatGPT 登場 | ready | — |
 | H-54 | GPT-4 リリース | ready | — |
 | H-55 | LLaMA のオープン化 | ready | — |
+| H-56 | Claude のバージョン史 | ready | — |
 | H-58 | Transformer 論文 | ready | — |
 | H-6 | Git Flow | ready | — |
 | H-7 | CI/CD | ready | — |
+| H-8 | DevOps | ready | — |
 | I-1 | MCP | ready | — |
 | I-11 | GitHub MCP | ready | — |
 | J-1 | AGI | ready | — |
@@ -435,6 +434,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-53 | 著作権法 30 条の 4 | ready | — |
 | J-54 | ISO/IEC 42001 | ready | — |
 | J-56 | GDPR | ready | — |
+| J-70 | VRAM | ready | — |
 | J-71 | RAM | ready | — |
 | J-72 | H100 | ready | — |
 | J-73 | Blackwell | ready | — |

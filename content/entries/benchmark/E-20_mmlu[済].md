@@ -25,7 +25,7 @@ status: ready
 
 ## tagline
 
-Massive Multitask Language Understanding の略。57 分野の大学レベル知識で AI の汎用理解力を測るベンチマークです。
+Massive Multitask Language Understanding の略。57 分野の知識で AI の理解力を測ります。
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 

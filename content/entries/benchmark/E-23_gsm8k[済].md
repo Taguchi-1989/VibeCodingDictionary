@@ -25,7 +25,7 @@ status: ready
 
 ## tagline
 
-Grade School Math 8K の略。小学校〜中学校レベルの算数文章題を 8,500 問集めた LLM 評価用ベンチマークです。
+Grade School Math 8K の略。小学校レベルの算数文章題を 8,500 問集めた LLM 評価用ベンチマークです。
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 
