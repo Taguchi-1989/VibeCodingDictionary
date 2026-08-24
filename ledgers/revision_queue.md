@@ -1,16 +1,16 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-08-23 21:57 / `scripts/update_review_queue.py`*
+*自動生成: 2026-08-23 23:16 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 145 件
+- **needs_review**: 159 件
 - **ready**: 266 件
 - **archived**: 7 件
-- **合計**: 419 件
+- **合計**: 433 件
 
 - **自己学習シェルフ（reader_level 6・刊行外）**: 35 件（誌面には出ません。`scripts/preview_gen.py` が除外）
 
@@ -166,7 +166,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（113 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（127 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -182,6 +182,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | C-15 | Intel | needs_review | — |
 | C-16 | DeepSeek | needs_review | — |
 | C-17 | Sakana AI | needs_review | — |
+| C-83 | AI時代の羅針盤 | needs_review | — |
 | D-1 | Gemini 2 系 | needs_review | — |
 | D-10 | Claude 3 系 | needs_review | — |
 | D-13 | Claude 4.5 系 | needs_review | — |
@@ -207,6 +208,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-121 | SQLite | needs_review | — |
 | F-122 | Prisma | needs_review | — |
 | F-141 | PlantUML | needs_review | — |
+| F-150 | MIT ライセンス | needs_review | — |
 | F-151 | Apache 2.0 | needs_review | — |
 | F-154 | OSS | needs_review | — |
 | F-160 | DOM | needs_review | — |
@@ -217,7 +219,9 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-180 | OpenGL | needs_review | — |
 | F-181 | WebGL | needs_review | — |
 | F-190 | サブルーチン | needs_review | — |
+| F-34 | VS Code 拡張機能 | needs_review | — |
 | F-47 | フロントエンド／バックエンド | needs_review | — |
+| F-57 | リポジトリ | needs_review | — |
 | F-80 | Node.js | needs_review | — |
 | F-84 | Ghostty | needs_review | — |
 | F-87 | sudo | needs_review | — |
@@ -228,6 +232,9 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-26 | Computer Use | needs_review | — |
 | G-27 | プロンプトインジェクション | needs_review | — |
 | G-4 | System Prompt | needs_review | — |
+| H-2 | ペアプログラミング | needs_review | — |
+| H-3 | バイブコーディングの流儀 | needs_review | — |
+| H-4 | コードレビュー | needs_review | — |
 | H-50 | Bard → Gemini | needs_review | — |
 | H-51 | Preview から正式版への流れ | needs_review | — |
 | H-52 | Copilot から Claude Code までの流れ | needs_review | — |
@@ -238,6 +245,8 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | H-62 | Anthropic 創業の流れ | needs_review | — |
 | H-63 | Vibe Coding 命名 | needs_review | — |
 | H-64 | DeepSeek ショック | needs_review | — |
+| I-80 | 自作 MCP のテンプレ | needs_review | — |
+| I-81 | MCP の登録・設定 | needs_review | — |
 | J-101 | 半導体製造プロセス | needs_review | — |
 | J-102 | チップレットと3D積層 | needs_review | — |
 | J-103 | ループエンジニアリング | needs_review | — |
@@ -255,6 +264,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-115 | NPU・AI PC | needs_review | — |
 | J-116 | TPU | needs_review | — |
 | J-117 | データセンターと電力 | needs_review | — |
+| J-22 | パラメータ数の単位 | needs_review | — |
 | J-24 | Encoder-Decoder | needs_review | — |
 | J-25 | Tokenizer・BPE | needs_review | — |
 | J-26 | 潜在空間 | needs_review | — |
@@ -262,13 +272,17 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-28 | MLA | needs_review | — |
 | J-29 | KV Cache | needs_review | — |
 | J-30 | Flash Attention | needs_review | — |
+| J-32 | ノイマン型 | needs_review | — |
 | J-34 | マルチモーダル | needs_review | — |
 | J-35 | スケーリング則 | needs_review | — |
 | J-36 | 蒸留 | needs_review | — |
 | J-38 | ムーアの法則 | needs_review | — |
 | J-43 | SaaS | needs_review | — |
 | J-5 | 世界モデル | needs_review | — |
+| J-50 | AI 倫理 | needs_review | — |
+| J-55 | 個人情報保護法 | needs_review | — |
 | J-57 | RLHF・アラインメント | needs_review | — |
+| J-62 | チューリングテスト | needs_review | — |
 | J-82 | 投機的デコード | needs_review | — |
 | J-83 | vLLM | needs_review | — |
 | J-84 | バッチ推論 | needs_review | — |

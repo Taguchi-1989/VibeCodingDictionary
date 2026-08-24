@@ -68,6 +68,9 @@ MIHIDOKORO_SUBS = [
     "### 6. 深掘り先",
 ]
 
+# メイン図の型。docs/entry_schema.yaml の figure_type enum と同期させること
+FIGURE_TYPES = ("before_after", "structure", "comparison", "workflow", "timeline")
+
 # 前付け（A 章）レイアウト群。詳細は docs/front_section_layout.md §4
 # spread_v1 用の必須節・字数合計判定はスキップし、軽い YAML / トーンチェックだけ走らせる
 FRONT_LAYOUTS = {
@@ -294,6 +297,17 @@ def check_yaml(fm: dict, r: Report) -> None:
             r.warn(
                 f"A. YAML: `title_reading` が {n} 字（目安 2〜30、推奨 3〜15）"
             )
+
+    # 2026-08-23: figure_type の enum チェック
+    # docs/entry_schema.yaml §figure_type の 5 値。CSS class の割当先なので
+    # enum 外だと誌面側でスタイルが当たらない（component_spec_v2.md §2-6）
+    figure_type = str(fm.get("figure_type", "")).strip()
+    if figure_type and figure_type not in FIGURE_TYPES:
+        r.warn(
+            f"A. YAML: `figure_type` が enum 外（{figure_type}） — "
+            + " / ".join(FIGURE_TYPES)
+            + " のいずれかを指定してください"
+        )
 
     # 2026-04-30: importance（任意）の enum チェック A〜E
     # A=必須 / B=一般 / C=中級 / D=上級 / E=開発者向け

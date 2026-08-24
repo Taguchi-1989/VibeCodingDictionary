@@ -13,7 +13,7 @@ start_date:
 end_date:
 version_status: active
 pricing_note: none
-evaluation_date: 2026-08-10
+evaluation_date: 2026-08-23
 related_terms:
   - LLM
   - Context
@@ -153,7 +153,10 @@ Top-p、サンプリング、System Prompt
 
 - Anthropic API リファレンス（Messages, temperature パラメータ） <https://docs.anthropic.com/en/api/messages> — checked 2026-08-10
 - Gemini API ドキュメント（Text generation, temperature） <https://ai.google.dev/gemini-api/docs/text-generation> — checked 2026-08-10
+- Anthropic モデル非推奨情報（temperature / top_p / top_k の扱い） <https://platform.claude.com/docs/en/about-claude/model-deprecations> — checked 2026-08-23
 
 ## 備考
 
 サービスによって Temperature の取りうる範囲が 0〜1 や 0〜2 など異なります。数値の意味は「相対的に低い・高い」で捉えるのが安全です。
+
+また、設定できるかどうかもサービスやモデルによって変わります。Anthropic の Claude Opus 4.7 以降では temperature / top_p / top_k の指定が非推奨になり、既定以外の値を渡すとエラーになります（2026-08-23 時点）。ばらつきを抑えたいときは、値をいじるより出力の形を決めておく（Structured Outputs）ほうが確実な場面が増えています。

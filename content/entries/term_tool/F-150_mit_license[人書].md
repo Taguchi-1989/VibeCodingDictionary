@@ -1,0 +1,171 @@
+---
+id: F-150
+title: MIT ライセンス
+title_reading: エムアイティー ライセンス
+category: term_tool
+subtype: license
+experience_level: research_only
+reader_level: 2-3
+importance: C
+figure_type: structure
+page_layout: spread_v1
+start_date:
+end_date:
+version_status: active
+pricing_note: none
+evaluation_date: 2026-08-23
+related_terms:
+  - Apache 2.0
+  - GPL
+  - OSS
+  - Creative Commons
+  - GitHub
+status: needs_review
+---
+
+# MIT ライセンス
+
+## tagline
+
+Massachusetts Institute of Technology の略。条文が短く条件も緩い OSS ライセンスです。
+
+
+<!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
+
+## 何をしてくれるか
+
+条文がとても短く、商用利用・改変・再配布・組み込みを幅広く許可します。条件は実質ひとつで、著作権表示とライセンス文を残すことだけです。作者は保証も責任も負いません。
+
+
+## どこで出会うか
+
+GitHub 上の公開リポジトリで LICENSE ファイルとしてよく見かけます。AI に生成させたコードを公開する際の選択肢としても挙がります。
+
+
+## メイン図
+
+### 図の狙い
+
+条文の短さと、条件が「表示を残すだけ」という単純さを対比で掴んでもらいます。
+
+### C. 概念図（figure_type: structure）
+
+- 中心に置く概念: MIT ライセンス
+- 周辺の要素: 著作権表示・ライセンス文の同梱／商用利用 OK／改変 OK／再配布 OK／保証なし
+- 関係の描き方: 中心のライセンス名から、許可される行為とただひとつの条件を矢印で分けて配置する
+
+
+## 会話での使い方例
+
+「MIT なら著作権表示さえ残せば、商用でも自由に使えますよね。」
+
+
+<!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
+
+## この用語の見どころ
+
+### 1. 役割
+
+OSS ライセンスの一種で、利用条件を定める短い文書です。
+
+### 2. うれしさ
+
+条件が単純なので、迷わず安心して使い始められます。
+
+### 3. 注意点
+
+著作権表示とライセンス文を消すと条件違反になります。
+
+### 4. どこで役立つか
+
+AI に生成させたコードを公開するときの選択肢になります。
+
+### 5. はじめに
+
+LICENSE ファイルの中身をひと目見る習慣が入口です。
+
+### 6. 深掘り先
+
+Apache 2.0、GPL、Creative Commons
+
+
+## 開発フローでの位置（必須）
+
+1. ライセンス確認 — リポジトリの LICENSE ファイルで MIT かどうかを確かめます。
+2. コード利用 — 商用・改変・再配布を含めて自由にコードを使います。
+3. 表示を残す — 著作権表示とライセンス文をコピーの中に残します。
+4. 公開・配布 — 改変後の成果物やコードをそのまま公開・配布します。
+
+
+## 関連用語
+
+- Apache 2.0
+- GPL
+- OSS
+- Creative Commons
+- GitHub
+
+
+<!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
+
+<!-- AUTHOR: user_only / AI-ASSIST: no -->
+## 非エンジニアのつまずき
+
+<!-- user-input:start key="stumble" -->
+- 
+- 
+- 
+<!-- user-input:end key="stumble" -->
+
+<!-- AUTHOR: user_only / AI-ASSIST: no -->
+## 私のコメント
+
+<!-- user-input:start key="my_comment" -->
+- 🙂 第一印象: 
+- 👍 良い点: 
+- 👎 ダメな点: 
+- 👥 誰向けか: 
+<!-- user-input:end key="my_comment" -->
+
+
+<!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
+
+## 誌面ポンチ絵メモ
+
+### メイン図（左ページ中段 / figure_type: structure）
+
+- 描く内容: 中央に「MIT ライセンス」のラベルを置き、周りに「商用利用 OK」「改変 OK」「再配布 OK」の吹き出しを並べ、下に小さく「条件: 著作権表示とライセンス文を残すだけ」の一文を添える
+- 登場人物（いれば）: コードを公開しようとしている個人開発者（若い女性）
+- 吹き出し・心の声: 「え、条件これだけでいいの？」
+- 中央に置くキーワード/ラベル: MIT ライセンス
+
+### 6 視点アイコン（右ページ上段）
+
+- 共通アイコン流用（個別演出が要るときだけ書き足す）
+
+### 開発フロー図（右ページ下段）
+
+- Step 1 のアイコン/絵柄: 虫眼鏡で LICENSE ファイルを確認する人
+- Step 2 のアイコン/絵柄: コードを自由に使う矢印
+- Step 3 のアイコン/絵柄: 著作権表示をコピーに貼り付ける手
+- Step 4 のアイコン/絵柄: 公開ボタンを押す人
+
+
+## コミュニティ補完メモ
+
+- Apache 2.0（F-151）との住み分け：F-151 は特許条項の有無を中心にした比較を扱う。本エントリは MIT の条文の短さと条件の単純さを主眼にする
+- GPL（F-152）との住み分け：F-152 はコピーレフトの伝染を扱う。本エントリではコピーレフトなし・派生物の公開義務なしという対比に軽く触れる程度にとどめる
+- OSS（F-154）との住み分け：F-154 はオープンソースという概念全体を扱う。本エントリはその中の具体的な 1 ライセンスとして位置づける
+- 著作権法（J-53）との住み分け：J-53 は日本の著作権法そのもの（AI 学習と著作物の関係）を扱う。本エントリはソフトウェアライセンスという契約上の取り決めを扱い、法律解説には踏み込まない
+
+
+## 出典メモ
+
+- Open Source Initiative「The MIT License」<https://opensource.org/license/mit> — checked 2026-08-23
+- GitHub Docs「Licensing a repository」<https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository> — checked 2026-08-23
+
+
+## 備考
+
+- MIT ライセンスは 1980 年代にマサチューセッツ工科大学の X Window System 関連から生まれたとされるが、単一の公式原文があるわけではなく、GitHub や SPDX が示す定型文が広く使われている。誌面では起源の年代には踏み込まず、条文の短さと条件の単純さに絞って説明する
+- 「保証なし・免責」の一文（NO WARRANTY 条項）は MIT・Apache・GPL など主要な OSS ライセンスに共通する。本エントリでは MIT 特有の話として深入りせず、条件の単純さの一部として触れるにとどめる

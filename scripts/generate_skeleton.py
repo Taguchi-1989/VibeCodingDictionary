@@ -157,6 +157,21 @@ SLUG_OVERRIDES: dict[str, str] = {
     "D-10": "claude3",
     "D-13": "claude45",
     "D-23": "o3",
+    # 未生成の残り 14 件（2026-08-23）
+    "C-83": "ai_compass",
+    "F-34": "vscode_extensions",
+    "F-57": "repository",
+    "F-150": "mit_license",
+    "H-2": "pair_programming",
+    "H-3": "vibe_coding_style",
+    "H-4": "code_review",
+    "I-80": "diy_mcp_template",
+    "I-81": "mcp_setup",
+    "J-22": "parameter_units",
+    "J-32": "von_neumann",
+    "J-50": "ai_ethics",
+    "J-55": "appi",
+    "J-62": "turing_test",
 }
 
 
