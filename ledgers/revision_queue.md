@@ -1,18 +1,18 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-08-24 03:44 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-02 20:46 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 159 件
+- **needs_review**: 160 件
 - **ready**: 266 件
 - **archived**: 7 件
-- **合計**: 433 件
+- **合計**: 434 件
 
-- **自己学習シェルフ（reader_level 6・刊行外）**: 35 件（誌面には出ません。`scripts/preview_gen.py` が除外）
+- **自己学習シェルフ（reader_level 6・刊行外）**: 33 件（誌面には出ません。`scripts/preview_gen.py` が除外）
 
 ## ☆ 違反あり（最優先で直す）（0 件）
 
@@ -26,7 +26,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（148 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（149 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -145,6 +145,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-115 | NPU・AI PC | needs_review | — |
 | J-116 | TPU | needs_review | — |
 | J-117 | データセンターと電力 | needs_review | — |
+| J-118 | グラフエンジニアリング | needs_review | — |
 | J-22 | パラメータ数の単位 | needs_review | — |
 | J-24 | Encoder-Decoder | needs_review | — |
 | J-25 | Tokenizer・BPE | needs_review | — |
@@ -467,16 +468,14 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | A-9 | 索引 | needs_review | — |
 | front_concept | 扉 | drafting | — |
 
-## 📚 自己学習シェルフ（reader_level 6・今季は刊行しない）（35 件）
+## 📚 自己学習シェルフ（reader_level 6・今季は刊行しない）（33 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
 | J-101 | 半導体製造プロセス | needs_review | — |
 | J-102 | チップレットと3D積層 | needs_review | — |
-| J-103 | ループエンジニアリング | needs_review | — |
 | J-104 | ReAct | needs_review | — |
 | J-105 | コンテキスト管理 | needs_review | — |
-| J-106 | ハーネスエンジニアリング | needs_review | — |
 | J-107 | 自律ループとガードレール | needs_review | — |
 | J-108 | Ralph Loop | needs_review | — |
 | J-109 | モデルルーティング | needs_review | — |

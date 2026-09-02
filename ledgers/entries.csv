@@ -409,10 +409,10 @@ J-99,,CoWoS,term_general,hardware,needs_review,Lv6自己学習シェルフ（刊
 J-100,,識字（リテラシー）,term_general,concept,ready,タイトルを驚き屋から識字（リテラシー）に変更（2026-04-30）,content/entries/term_general/J-100_literacy[済].md
 J-101,,半導体製造プロセス,term_general,hardware,needs_review,Lv6自己学習シェルフ（刊行外）。微細化・FinFET→GAA・リーク電流・EUV,content/entries/term_general/J-101_semiconductor_process[人書].md
 J-102,,チップレットと3D積層,term_general,hardware,needs_review,Lv6自己学習シェルフ（刊行外）。More than Moore・V-Cache・CFET,content/entries/term_general/J-102_chiplet_3d_stacking[人書].md
-J-103,,ループエンジニアリング,term_general,agent_loop,needs_review,Lv6自己学習シェルフ（刊行外）。3工学の俯瞰・進化史ReAct→Ralph→/goal,content/entries/term_general/J-103_loop_engineering[人書].md
+J-103,,ループエンジニアリング,term_general,agent_loop,needs_review,2026-09-02 reader_level 6→5 で刊行スコープへ昇格。3工学の俯瞰・進化史ReAct→Ralph→/goal,content/entries/term_general/J-103_loop_engineering[人書].md
 J-104,,ReAct,term_general,agent_loop,needs_review,Lv6自己学習シェルフ（刊行外）。エージェントループの原型Thought-Action-Observation,content/entries/term_general/J-104_react_agent_loop[人書].md
 J-105,,コンテキスト管理,term_general,agent_loop,needs_review,Lv6自己学習シェルフ（刊行外）。圧縮・メモリ・退避。G-11の深掘り版,content/entries/term_general/J-105_context_management[人書].md
-J-106,,ハーネスエンジニアリング,term_general,agent_loop,needs_review,Lv6自己学習シェルフ（刊行外）。LLM as OS・器全体,content/entries/term_general/J-106_harness_engineering[人書].md
+J-106,,ハーネスエンジニアリング,term_general,agent_loop,needs_review,2026-09-02 reader_level 6→5 で刊行スコープへ昇格。LLM as OS・器全体・スコープ地図の親figure,content/entries/term_general/J-106_harness_engineering[人書].md
 J-107,,自律ループとガードレール,term_general,agent_loop,needs_review,Lv6自己学習シェルフ（刊行外）。ゴール→コマンド→停止条件。ralph/ultraworkの実体,content/entries/term_general/J-107_autonomous_loop_guardrails[人書].md
 J-108,,Ralph Loop,term_general,agent_loop,needs_review,Lv6自己学習シェルフ（刊行外）。状態をディスクに逃がすループ,content/entries/term_general/J-108_ralph_loop[人書].md
 J-109,,モデルルーティング,term_general,model_routing,needs_review,Lv6自己学習シェルフ（刊行外）。カスケード・ステップ別・スイッチングコスト,content/entries/term_general/J-109_model_routing[人書].md
@@ -424,3 +424,4 @@ J-114,,グッドハートの法則,term_general,human_cognition,needs_review,Lv6
 J-115,,NPU・AI PC,term_general,hardware,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-115_npu_ai_pc[人書].md
 J-116,,TPU,term_general,hardware,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-116_tpu[人書].md
 J-117,,データセンターと電力,term_general,hardware,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-117_datacenter_power[人書].md
+J-118,,グラフエンジニアリング,term_general,agent_architecture,needs_review,スコープ地図（docs/scope_map_figure_spec.md）で追加。ループ層の中の「配線」を担う工学,content/entries/term_general/J-118_graph_engineering[人書].md
