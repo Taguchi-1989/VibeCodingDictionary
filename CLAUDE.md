@@ -98,8 +98,10 @@
 
 - **自動昇格**：validator が「☆違反 0 ＋ 警告 0」と判定したエントリは、status が `drafting` なら自動で `needs_review` に上がります（[scripts/validate_entry.py](scripts/validate_entry.py) `promote_to_needs_review`）
 - **要直しキュー**：保存のたびに [scripts/update_review_queue.py](scripts/update_review_queue.py) が走り、[ledgers/revision_queue.md](ledgers/revision_queue.md) を再生成します。1 画面で「☆違反 / 警告 / 書きかけ / 著者レビュー待ち / 完成」の内訳と該当エントリが見えます
+- **著者記入欄キュー**：同じく保存のたびに [scripts/update_author_fill_queue.py](scripts/update_author_fill_queue.py) が走り、[ledgers/author_fill_queue.md](ledgers/author_fill_queue.md) を再生成します。「非エンジニアのつまずき」「私のコメント」が **完了 / 途中 / 手つかず** のどれなのかが 1 画面で見えます。「第一印象だけ書いて止まっている」ような書きかけを拾うのが目的です（2026-09-02 追加）
 - **使い方**：`cat ledgers/revision_queue.md` で次にやるべきことを確認 → 該当エントリを直す（手動 or entry-writer 呼び出し）→ 再保存で再評価＋キュー更新
 - 著者レビューが終わったら手で `status: needs_review → ready` に上げてください（自動昇格は drafting → needs_review のみ。著者欄記入の検出は人間判断）
+- **`needs_review → ready` の自動昇格は既定で無効**です。一括で上げたいときだけ明示的に有効化してください：`VCD_AUTOPROMOTE_READY=1 python3 scripts/update_review_queue.py`（2026-09-02 時点で 82 件が対象。[scripts/validate_entry.py](scripts/validate_entry.py) `ready_autopromote_enabled`）
 - 原則：[docs/quality_guidelines.md](docs/quality_guidelines.md)
 
 ### 外出先コメントを取り込む
