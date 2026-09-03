@@ -64,6 +64,7 @@ C-11,Z.ai,person_org,needs_review,content/entries/person/C-11_z_ai[人書].md,Fa
 C-12,TSMC,person_org,ready,content/entries/person/C-12_tsmc[済].md,False,True,done,final_image_without_svg
 C-13,Groq,person_org,ready,content/entries/person/C-13_groq[済].md,False,True,done,final_image_without_svg
 C-14,AMD,person_org,ready,content/entries/person/C-14_amd[済].md,False,True,done,final_image_without_svg
+C-15,Intel,person_org,drafting,content/entries/person/C-15_intel.md,False,True,done,final_image_without_svg
 C-50,Sam Altman,person_org,needs_review,content/entries/person/C-50_sam_altman[人書].md,False,True,done,final_image_without_svg
 C-51,Dario Amodei,person_org,ready,content/entries/person/C-51_dario_amodei[済].md,False,True,done,final_image_without_svg
 C-52,Demis Hassabis,person_org,ready,content/entries/person/C-52_demis_hassabis[済].md,False,True,done,final_image_without_svg
@@ -218,6 +219,9 @@ F-180,OpenGL,term_tool,needs_review,content/entries/term_tool/F-180_opengl[人�
 F-181,WebGL,term_tool,needs_review,content/entries/term_tool/F-181_webgl[人書].md,False,True,done,final_image_without_svg
 F-190,サブルーチン,term_tool,needs_review,content/entries/term_tool/F-190_subroutine[人書].md,False,True,done,final_image_without_svg
 F-200,Rust,term_tool,needs_review,content/entries/term_tool/F-200_rust[人書].md,False,True,done,final_image_without_svg
+F-210,JSON Schema,term_tool,skeleton,,False,True,done,final_image_without_svg
+F-211,Zod,term_tool,skeleton,,False,True,done,final_image_without_svg
+F-212,OpenAPI,term_tool,skeleton,,False,True,done,final_image_without_svg
 G-1,Context (コンテキスト),term_llm,ready,content/entries/term/G-1_context[済].md,True,True,done,complete
 G-2,Token,term_llm,ready,content/entries/term_llm/G-2_token[済].md,False,True,done,final_image_without_svg
 G-3,Dictation,term_llm,ready,content/entries/term_llm/G-3_dictation[済].md,False,True,done,final_image_without_svg
@@ -258,6 +262,7 @@ G-44,マルチエージェント協調,term_llm,ready,content/entries/term_llm/G
 G-45,段階的開示,term_llm,needs_review,,False,True,done,final_image_without_svg
 G-46,ナーフ（モデルの劣化体感）,term_llm,ready,content/entries/term_llm/G-46_narf[済].md,False,True,done,final_image_without_svg
 G-47,Auto-compact,term_llm,ready,content/entries/term_llm/G-47_auto_compact[済].md,False,True,done,final_image_without_svg
+G-48,Structured Outputs,term_llm,skeleton,,False,True,done,final_image_without_svg
 H-1,TDD,workflow,ready,content/entries/workflow/H-1_tdd[済].md,False,True,done,final_image_without_svg
 H-2,ペアプログラミング,workflow,drafting,,False,True,done,final_image_without_svg
 H-3,バイブコーディングの流儀,workflow,drafting,,False,True,done,final_image_without_svg
@@ -317,6 +322,13 @@ J-20,Big Data,term_general,ready,content/entries/term_general/J-20_big_data[済]
 J-21,LoRA,term_general,ready,content/entries/term_general/J-21_lora[済].md,False,True,done,final_image_without_svg
 J-22,パラメータ数の単位,term_general,drafting,,False,True,done,final_image_without_svg
 J-23,拡散モデル,term_general,ready,content/entries/term_general/J-23_diffusion_model[済].md,False,True,done,final_image_without_svg
+J-24,Encoder-Decoder,term_general,drafting,content/entries/term_general/J-24_encoder_decoder.md,False,True,done,final_image_without_svg
+J-25,Tokenizer・BPE,term_general,drafting,content/entries/term_general/J-25_tokenizer_bpe.md,False,True,done,final_image_without_svg
+J-26,潜在空間,term_general,drafting,content/entries/term_general/J-26_latent_space.md,False,True,done,final_image_without_svg
+J-27,RoPE,term_general,drafting,content/entries/term_general/J-27_rope.md,False,True,done,final_image_without_svg
+J-28,MLA,term_general,drafting,content/entries/term_general/J-28_mla.md,False,True,done,final_image_without_svg
+J-29,KV Cache,term_general,drafting,content/entries/term_general/J-29_kv_cache.md,False,True,done,final_image_without_svg
+J-30,Flash Attention,term_general,drafting,content/entries/term_general/J-30_flash_attention.md,False,True,done,final_image_without_svg
 J-31,第 5 世代コンピュータ,term_general,ready,content/entries/term_general/J-31_fifth_generation_computer[済].md,False,True,done,final_image_without_svg
 J-32,ノイマン型,term_general,skeleton,,False,True,done,final_image_without_svg
 J-33,量子コンピュータ,term_general,ready,content/entries/term_general/J-33_quantum-computer[済].md,False,True,done,final_image_without_svg
@@ -344,8 +356,36 @@ J-78,HDD,term_general,ready,content/entries/term_general/J-78_hdd[済].md,False,
 J-79,SSD,term_general,ready,content/entries/term_general/J-79_ssd[済].md,False,True,done,final_image_without_svg
 J-80,SATA,term_general,ready,content/entries/term_general/J-80_sata[済].md,False,True,done,final_image_without_svg
 J-81,M.2,term_general,ready,content/entries/term_general/J-81_m_2[済].md,False,True,done,final_image_without_svg
+J-82,投機的デコード,term_general,drafting,content/entries/term_general/J-82_speculative_decoding.md,False,True,done,final_image_without_svg
+J-83,vLLM,term_general,drafting,content/entries/term_general/J-83_vllm.md,False,True,done,final_image_without_svg
+J-84,バッチ推論,term_general,drafting,content/entries/term_general/J-84_batch_inference.md,False,True,done,final_image_without_svg
+J-85,スループットとレイテンシ,term_general,drafting,content/entries/term_general/J-85_throughput_latency.md,False,True,done,final_image_without_svg
+J-86,GQA,term_general,drafting,content/entries/term_general/J-86_gqa.md,False,True,done,final_image_without_svg
+J-87,QK-Norm,term_general,drafting,content/entries/term_general/J-87_qk_norm.md,False,True,done,final_image_without_svg
+J-88,MTP,term_general,drafting,content/entries/term_general/J-88_mtp.md,False,True,done,final_image_without_svg
+J-89,MoE ルーティング,term_general,drafting,content/entries/term_general/J-89_moe_routing.md,False,True,done,final_image_without_svg
 J-90,GUI,term_general,ready,content/entries/term_general/J-90_gui[済].md,False,True,done,final_image_without_svg
 J-91,CLI,term_general,ready,content/entries/term_general/J-91_cli[済].md,False,True,done,final_image_without_svg
 J-92,Linux,term_general,ready,content/entries/term_general/J-92_linux[済].md,False,True,done,final_image_without_svg
 J-93,Ubuntu,term_general,ready,content/entries/term_general/J-93_ubuntu[済].md,False,True,done,final_image_without_svg
+J-94,並列化戦略,term_general,drafting,content/entries/term_general/J-94_parallelism.md,False,True,done,final_image_without_svg
+J-95,半導体サプライチェーン,term_general,drafting,content/entries/term_general/J-95_semiconductor_supply_chain.md,False,True,done,final_image_without_svg
+J-96,半導体製造装置,term_general,drafting,content/entries/term_general/J-96_semiconductor_equipment.md,False,True,done,final_image_without_svg
+J-97,電子材料,term_general,drafting,content/entries/term_general/J-97_electronic_materials.md,False,True,done,final_image_without_svg
+J-98,重要鉱物の地政学,term_general,drafting,content/entries/term_general/J-98_critical_minerals_geopolitics.md,False,True,done,final_image_without_svg
+J-99,CoWoS,term_general,drafting,content/entries/term_general/J-99_cowos.md,False,True,done,final_image_without_svg
 J-100,識字（リテラシー）,term_general,ready,content/entries/term_general/J-100_literacy[済].md,False,True,done,final_image_without_svg
+J-101,半導体製造プロセス,term_general,drafting,content/entries/term_general/J-101_semiconductor_process.md,False,True,done,final_image_without_svg
+J-102,チップレットと3D積層,term_general,drafting,content/entries/term_general/J-102_chiplet_3d_stacking.md,False,True,done,final_image_without_svg
+J-103,ループエンジニアリング,term_general,drafting,content/entries/term_general/J-103_loop_engineering.md,False,True,done,final_image_without_svg
+J-104,ReAct,term_general,skeleton,content/entries/term_general/J-104_react_agent_loop.md,False,True,done,final_image_without_svg
+J-105,コンテキスト管理,term_general,skeleton,content/entries/term_general/J-105_context_management.md,False,True,done,final_image_without_svg
+J-106,ハーネスエンジニアリング,term_general,skeleton,content/entries/term_general/J-106_harness_engineering.md,False,True,done,final_image_without_svg
+J-107,自律ループとガードレール,term_general,skeleton,content/entries/term_general/J-107_autonomous_loop_guardrails.md,False,True,done,final_image_without_svg
+J-108,Ralph Loop,term_general,skeleton,content/entries/term_general/J-108_ralph_loop.md,False,True,done,final_image_without_svg
+J-109,モデルルーティング,term_general,drafting,content/entries/term_general/J-109_model_routing.md,False,True,done,final_image_without_svg
+J-110,不確実性デファーラル,term_general,skeleton,content/entries/term_general/J-110_uncertainty_deferral.md,False,True,done,final_image_without_svg
+J-111,人間の認知ボトルネック,term_general,skeleton,content/entries/term_general/J-111_human_cognition_bottleneck.md,False,True,done,final_image_without_svg
+J-112,認知コストの定量化,term_general,skeleton,content/entries/term_general/J-112_cognitive_cost_quantification.md,False,True,done,final_image_without_svg
+J-113,生成UIとagent-native設計,term_general,drafting,content/entries/term_general/J-113_generative_ui_agent_native.md,False,True,done,final_image_without_svg
+J-114,グッドハートの法則,term_general,drafting,content/entries/term_general/J-114_goodharts_law.md,False,True,done,final_image_without_svg
