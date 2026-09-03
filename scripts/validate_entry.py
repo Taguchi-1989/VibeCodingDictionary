@@ -23,6 +23,7 @@ Exit codes:
 
 import io
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -423,43 +424,77 @@ def check_yaml_front(fm: dict, r: Report) -> None:
             r.warn(f"A. YAML: `title_reading` が {n} 字（目安 2〜30）")
 
 
+AUTHOR_FIELD_KEYS = {
+    "非エンジニアのつまずき": "stumble",
+    "私のコメント": "my_comment",
+}
+
+
+def author_field_block(body: str, heading: str) -> str:
+    """著者記入欄の中身を切り出す。
+
+    全エントリには `<!-- user-input:start key="..." -->` 〜 `<!-- user-input:end ... -->`
+    のマーカーが埋め込まれている（scripts/add_user_input_markers.py）。RepoEdit が
+    スマホから編集する範囲もこのマーカーで、著者の記入は必ずこの内側に入る。
+
+    マーカーを優先して読み、無いファイル（旧形式・前付けなど）だけ見出し起点の
+    切り出しにフォールバックする。
+
+    注意: 以前は見出し起点の切り出しだけを使っていたが、終端の先読みが
+    `\\n<!--` を含むため **user-input マーカーそのもの**で止まり、切り出し結果が
+    常に空になっていた。マーカー導入以降、著者欄の判定が全件 False に倒れていた
+    （2026-09-02 修正）。
+    """
+    key = AUTHOR_FIELD_KEYS.get(heading)
+    if key:
+        m = re.search(
+            r'<!-- user-input:start key="%s" -->(.*?)<!-- user-input:end' % key,
+            body,
+            re.DOTALL,
+        )
+        if m:
+            return m.group(1)
+    m = re.search(rf"## {re.escape(heading)}\n(.*?)(?=\n## |\Z)", body, re.DOTALL)
+    return m.group(1) if m else ""
+
+
 def check_author_fields_empty(body: str, status: str, r: Report) -> None:
     """著者欄が空スケルトンのままか。
 
     - status が `drafting` のときは ☆ 違反（AI がまだ書いている段階なので空が正）
-    - status が `needs_review` 以降は情報表示のみ（著者が記入している可能性）
+    - status が `needs_review` 以降は**何も言わない**。著者が記入済みなのが正常な姿で、
+      そこに警告を出すと「正しく仕事が終わっている状態」がノイズになる
+      （2026-09-02: 記入検出のバグを直したところ 326 件が警告に化けたため整理）
     """
     is_strict = status in ("drafting", "candidate", "", None)
+    if not is_strict:
+        return
 
     # 非エンジニアのつまずき：`-` のみで、語句なしか
-    m = re.search(r"## 非エンジニアのつまずき\n(.*?)(?=\n## |\n<!--)", body, re.DOTALL)
-    if m:
-        block = m.group(1).strip()
+    block = author_field_block(body, "非エンジニアのつまずき")
+    if block:
         for line in block.split("\n"):
             line = line.strip()
             if line.startswith("-") and len(line) > 1 and line[1:].strip():
-                msg = f"D. 著者欄: 「非エンジニアのつまずき」に記入あり（{line[:40]}…）"
-                if is_strict:
-                    r.star(msg + " — drafting 中は空スケルトンのままに")
-                else:
-                    r.warn(msg + " — 著者の記入なら OK")
+                r.star(
+                    f"D. 著者欄: 「非エンジニアのつまずき」に記入あり（{line[:40]}…）"
+                    " — drafting 中は空スケルトンのままに"
+                )
                 break
 
     # 私のコメント：4 ラベル（🎯 / 👥 どちらも許容）
     label_keys = ["第一印象", "良い点", "ダメな点", "誰向けか"]
-    m = re.search(r"## 私のコメント\n(.*?)(?=\n## |\n<!--)", body, re.DOTALL)
-    if m:
-        block = m.group(1)
+    block = author_field_block(body, "私のコメント")
+    if block:
         for lbl in label_keys:
             for line in block.split("\n"):
                 if lbl in line and ":" in line:
                     after = line.split(":", 1)[-1].strip()
                     if after:
-                        msg = f"D. 著者欄: 「私のコメント」の {lbl} に記入あり（{after[:40]}）"
-                        if is_strict:
-                            r.star(msg + " — drafting 中は空ラベルのままに")
-                        else:
-                            r.warn(msg + " — 著者の記入なら OK")
+                        r.star(
+                            f"D. 著者欄: 「私のコメント」の {lbl} に記入あり（{after[:40]}）"
+                            " — drafting 中は空ラベルのままに"
+                        )
                         break
 
 
@@ -727,12 +762,33 @@ def promote_to_needs_review(path: Path) -> bool:
     return _replace_status(path, "drafting", "needs_review")
 
 
+def ready_autopromote_enabled() -> bool:
+    """needs_review → ready の自動昇格を有効にするか。
+
+    既定は **有効**（2026-09-03 著者判断）。著者欄（非エンジニアのつまずき ＋
+    私のコメント 4 ラベル）が全部埋まっていること自体が著者レビュー完了の signal
+    なので、そこから ready への昇格まで自動でよい、という運用に決めた。
+
+    経緯: 実装側にはもともと自動昇格が書かれていたが、著者欄の検出
+    （is_author_fields_filled）が user-input マーカー導入以降ずっと False に
+    倒れていたため一度も発火していなかった。2026-09-02 に検出を直し、
+    2026-09-03 に既定オンとして 82 件を一括昇格した。
+
+    止めたいときは環境変数で明示的に無効化する:
+        VCD_AUTOPROMOTE_READY=0 python3 scripts/update_review_queue.py
+    """
+    return os.environ.get("VCD_AUTOPROMOTE_READY", "1").strip() not in ("0", "false", "no")
+
+
 def promote_to_ready(path: Path) -> bool:
     """needs_review → ready に YAML を直接書き換える。
 
     - 著者欄が全項目埋まったエントリのみで呼ばれる
     - YAML frontmatter 内の `status: needs_review` だけを置換
+    - ready_autopromote_enabled() が False のときは何もしない
     """
+    if not ready_autopromote_enabled():
+        return False
     return _replace_status(path, "needs_review", "ready")
 
 
@@ -774,11 +830,8 @@ def is_author_fields_filled(body: str) -> bool:
 
     どちらか欠けていたら False。
     """
-    m = re.search(r"## 非エンジニアのつまずき\n(.*?)(?=\n## |\n<!--)", body, re.DOTALL)
-    if not m:
-        return False
     tsumazuki_filled = False
-    for line in m.group(1).split("\n"):
+    for line in author_field_block(body, "非エンジニアのつまずき").split("\n"):
         line = line.strip()
         if line.startswith("-") and len(line) > 1 and line[1:].strip():
             tsumazuki_filled = True
@@ -786,10 +839,9 @@ def is_author_fields_filled(body: str) -> bool:
     if not tsumazuki_filled:
         return False
 
-    m = re.search(r"## 私のコメント\n(.*?)(?=\n## |\n<!--)", body, re.DOTALL)
-    if not m:
+    block = author_field_block(body, "私のコメント")
+    if not block:
         return False
-    block = m.group(1)
     label_keys = ["第一印象", "良い点", "ダメな点", "誰向けか"]
     for lbl in label_keys:
         found = False

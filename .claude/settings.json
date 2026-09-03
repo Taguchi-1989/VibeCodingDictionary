@@ -11,6 +11,10 @@
           {
             "type": "command",
             "command": "python3 scripts/update_review_queue.py --quiet"
+          },
+          {
+            "type": "command",
+            "command": "python3 scripts/update_author_fill_queue.py --quiet"
           }
         ]
       }
