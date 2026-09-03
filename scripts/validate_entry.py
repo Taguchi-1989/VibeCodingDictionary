@@ -765,19 +765,19 @@ def promote_to_needs_review(path: Path) -> bool:
 def ready_autopromote_enabled() -> bool:
     """needs_review → ready の自動昇格を有効にするか。
 
-    既定は **無効**。CLAUDE.md の運用（「自動昇格は drafting → needs_review のみ。
-    著者レビューが終わったら手で ready に上げる」）に合わせている。
+    既定は **有効**（2026-09-03 著者判断）。著者欄（非エンジニアのつまずき ＋
+    私のコメント 4 ラベル）が全部埋まっていること自体が著者レビュー完了の signal
+    なので、そこから ready への昇格まで自動でよい、という運用に決めた。
 
     経緯: 実装側にはもともと自動昇格が書かれていたが、著者欄の検出
     （is_author_fields_filled）が user-input マーカー導入以降ずっと False に
-    倒れていたため一度も発火していなかった。2026-09-02 に検出を直したところ、
-    そのままだと 82 件が一斉に ready へ書き換わる状態だったので、
-    文書側の仕様に合わせて既定オフのフラグにした。
+    倒れていたため一度も発火していなかった。2026-09-02 に検出を直し、
+    2026-09-03 に既定オンとして 82 件を一括昇格した。
 
-    自動昇格させたいときは環境変数で明示的に有効化する:
-        VCD_AUTOPROMOTE_READY=1 python3 scripts/update_review_queue.py
+    止めたいときは環境変数で明示的に無効化する:
+        VCD_AUTOPROMOTE_READY=0 python3 scripts/update_review_queue.py
     """
-    return os.environ.get("VCD_AUTOPROMOTE_READY", "").strip() in ("1", "true", "yes")
+    return os.environ.get("VCD_AUTOPROMOTE_READY", "1").strip() not in ("0", "false", "no")
 
 
 def promote_to_ready(path: Path) -> bool:

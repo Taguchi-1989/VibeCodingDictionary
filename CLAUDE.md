@@ -10,7 +10,7 @@
 
 ## 2. 今やっていること
 
-**本書きはほぼ完走**（2026-08 時点: ready 252 / needs_review 103 / drafting 1 / archived 8、☆ 違反 0。スケルトンは残っていません）。フェーズは執筆から**品質仕上げ・刊行準備**に移っています。
+**本書きはほぼ完走**（2026-09-03 時点: ready 348 / needs_review 78 / drafting 1 / archived 7、☆ 違反 0・警告 0。スケルトンは残っていません）。フェーズは執筆から**品質仕上げ・刊行準備**に移っています。
 
 - 現在の内訳と次の作業は [ledgers/revision_queue.md](ledgers/revision_queue.md) で確認（保存ごとに自動再生成）
 - 改善課題と追加語候補は [docs/design_improvement_proposal_2026-08.md](docs/design_improvement_proposal_2026-08.md) に集約（仕様同期・品質バグ・表紙・収録語の抜け監査）
@@ -100,8 +100,8 @@
 - **要直しキュー**：保存のたびに [scripts/update_review_queue.py](scripts/update_review_queue.py) が走り、[ledgers/revision_queue.md](ledgers/revision_queue.md) を再生成します。1 画面で「☆違反 / 警告 / 書きかけ / 著者レビュー待ち / 完成」の内訳と該当エントリが見えます
 - **著者記入欄キュー**：同じく保存のたびに [scripts/update_author_fill_queue.py](scripts/update_author_fill_queue.py) が走り、[ledgers/author_fill_queue.md](ledgers/author_fill_queue.md) を再生成します。「非エンジニアのつまずき」「私のコメント」が **完了 / 途中 / 手つかず** のどれなのかが 1 画面で見えます。「第一印象だけ書いて止まっている」ような書きかけを拾うのが目的です（2026-09-02 追加）
 - **使い方**：`cat ledgers/revision_queue.md` で次にやるべきことを確認 → 該当エントリを直す（手動 or entry-writer 呼び出し）→ 再保存で再評価＋キュー更新
-- 著者レビューが終わったら手で `status: needs_review → ready` に上げてください（自動昇格は drafting → needs_review のみ。著者欄記入の検出は人間判断）
-- **`needs_review → ready` の自動昇格は既定で無効**です。一括で上げたいときだけ明示的に有効化してください：`VCD_AUTOPROMOTE_READY=1 python3 scripts/update_review_queue.py`（2026-09-02 時点で 82 件が対象。[scripts/validate_entry.py](scripts/validate_entry.py) `ready_autopromote_enabled`）
+- **`needs_review → ready` も自動昇格します**（2026-09-03 有効化）。著者欄（「非エンジニアのつまずき」＋「私のコメント」4 ラベル）が全部埋まっていること自体が著者レビュー完了の signal なので、そこから ready までは自動です。止めたいときは `VCD_AUTOPROMOTE_READY=0 python3 scripts/update_review_queue.py`（[scripts/validate_entry.py](scripts/validate_entry.py) `ready_autopromote_enabled`）
+- status が変わったらファイル名タグも揃えてください：`python3 scripts/apply_status_markers.py`（`[人書]`＝needs_review / `[済]`＝ready）→ `python3 scripts/sync_entries_csv.py`
 - 原則：[docs/quality_guidelines.md](docs/quality_guidelines.md)
 
 ### 外出先コメントを取り込む
