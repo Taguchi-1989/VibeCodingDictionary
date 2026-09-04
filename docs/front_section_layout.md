@@ -227,7 +227,7 @@ spread_position: left          # left / right / full （単独 layout は full �
 
 ## 7. スコープ外（別仕様で扱うもの）
 
-- **巻末索引（letter 順／五十音順の本物索引）**: 本書末尾の専用ページ。本仕様では扱わず、`docs/back_matter_layout.md`（未作成）で別途。A-9 spread の右ページにミニ索引を載せることで、本書前付けは自己完結します
+- **巻末索引（letter 順／五十音順の本物索引）**: 本書末尾の専用ページ。本仕様では扱わず、[docs/back_matter_layout.md](back_matter_layout.md)（2026-09-04 作成）で別途。A-9 spread の右ページにミニ索引を載せることで、本書前付けは自己完結します
 - **本編 `spread_v1`**: [docs/v2_rules_summary.md](v2_rules_summary.md) の管轄。前付け仕様は本編を一切変更しません
 
 ## 8. 開いておくべき関連ファイル
