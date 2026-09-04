@@ -106,7 +106,30 @@
 - **価格**: 各社の公式価格ページから取得可能。AI 側で対応できます
 - **順位**: 著者が Vals AI の表を参照して渡すか、貼り付ける
 
+**追記（2026-09-04 実測）**: vals.ai だけでなく、**試した公式ドメインすべてが遮断されています** — anthropic.com / openai.com / platform.openai.com / ai.google.dev / docs.cloud.google.com / api-docs.deepseek.com / docs.x.ai / z.ai / platform.moonshot.ai / wikipedia.org。動くのは WebSearch（検索結果の要約）だけで、これはまとめ記事由来なので §3-1 により使えません。**つまりリモートの Claude Code からは、価格も順位も一次情報として集められません。**
+
+取得は次のいずれかで行います。
+
+- 著者が公式価格ページと Vals AI の表を貼る
+- 著者のローカル環境（egress 制限のない Claude Code）で収集する
+
 過去の四半期については、当時の価格表・当時の順位ともに遡って取るのが難しくなります。**取れなかった項目は推測で埋めず、空欄のまま残してください。**
+
+### 3-3. データの置き場所
+
+[ledgers/model_snapshots.csv](../ledgers/model_snapshots.csv) を単一の元データにします。1 行 1 モデル 1 四半期。
+
+| 列 | 意味 |
+|---|---|
+| `quarter` | `2026Q3` の形式 |
+| `tier` | `frontier` / `middle` / `budget`。`output_usd_per_mtok` から機械的に決まる（>=15 / >=1 / <1） |
+| `model` / `vendor` | 誌面表記 |
+| `input_usd_per_mtok` / `output_usd_per_mtok` | 標準価格。キャッシュ・バッチ割引を含めない |
+| `vals_index_rank` | その四半期内の順位。無い四半期は空欄 |
+| `open_weights` | ◯ / ✕ |
+| `source` / `checked` | 一次情報の URL または文書名と、確認日 |
+
+**空欄は「未取得」を意味します。**推測で埋めないこと。
 
 ---
 
