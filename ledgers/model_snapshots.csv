@@ -1,0 +1,20 @@
+quarter,tier,model,vendor,input_usd_per_mtok,output_usd_per_mtok,vals_index_rank,open_weights,source,checked
+# 巻末付録 BK-3「モデル勢力図スナップショット」の元データ。仕様は docs/back_matter_layout.md
+# tier は output_usd_per_mtok から機械的に決まる: >=15 frontier / >=1 middle / <1 budget
+# 空欄は「未取得」。推測で埋めないこと（docs/back_matter_layout.md §3-2）
+# source には一次情報の URL か「誌名・文書名」を書く。checked は YYYY-MM-DD
+2026Q3,frontier,Claude Fable 5.1,Anthropic,10.00,50.00,,✕,claude-api skill 同梱モデル表（cached 2026-06-24）※公式価格ページで要再確認,2026-06-24
+2026Q3,frontier,Claude Fable 5,Anthropic,10.00,50.00,,✕,claude-api skill 同梱モデル表（cached 2026-06-24）※公式価格ページで要再確認,2026-06-24
+2026Q3,frontier,Claude Opus 5,Anthropic,5.00,25.00,,✕,claude-api skill 同梱モデル表（cached 2026-06-24）※公式価格ページで要再確認,2026-06-24
+2026Q3,frontier,Claude Opus 4.8,Anthropic,5.00,25.00,,✕,claude-api skill 同梱モデル表（cached 2026-06-24）※公式価格ページで要再確認,2026-06-24
+2026Q3,middle,Claude Sonnet 5,Anthropic,2.00,10.00,,✕,claude-api skill 同梱モデル表（cached 2026-06-24）※公式価格ページで要再確認,2026-06-24
+2026Q3,middle,Claude Haiku 4.5,Anthropic,1.00,5.00,,✕,claude-api skill 同梱モデル表（cached 2026-06-24）※公式価格ページで要再確認,2026-06-24
+2026Q3,,Gemini 3.1 Pro,Google,,,,✕,,
+2026Q3,,Gemini 3.8 Flash,Google,,,,✕,,
+2026Q3,,GPT-5.6,OpenAI,,,,✕,,
+2026Q3,,GPT-6 Astra,OpenAI,,,,✕,,
+2026Q3,,Grok 4.6,xAI,,,,✕,,
+2026Q3,,DeepSeek V4-Pro,DeepSeek,,,,◯,,
+2026Q3,,DeepSeek V4-Flash,DeepSeek,,,,◯,,
+2026Q3,,GLM-5.3,Z.ai,,,,◯,,
+2026Q3,,Kimi K3,Moonshot AI,,,,◯,,
