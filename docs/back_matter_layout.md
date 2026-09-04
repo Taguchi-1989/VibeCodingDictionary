@@ -99,14 +99,11 @@
 
 ### 3-2. 既知の制約
 
-**Claude Code の実行環境（リモート）から vals.ai へ到達できません。** WebFetch も curl も 403（プロキシのドメインポリシー）で弾かれます。2026-09-04 時点で確認済み。
+**リモートの Claude Code からは、価格も順位も一次情報として集められません。** 2026-09-04 に実測したところ、**試した公式ドメインがすべて 403 で遮断されていました**（プロキシのドメインポリシー。WebFetch・curl とも同じ）。
 
-そのため役割分担が要ります。
+遮断を確認したドメイン: `vals.ai` / `anthropic.com` / `openai.com` / `platform.openai.com` / `ai.google.dev` / `docs.cloud.google.com` / `api-docs.deepseek.com` / `docs.x.ai` / `z.ai` / `platform.moonshot.ai` / `wikipedia.org`。
 
-- **価格**: 各社の公式価格ページから取得可能。AI 側で対応できます
-- **順位**: 著者が Vals AI の表を参照して渡すか、貼り付ける
-
-**追記（2026-09-04 実測）**: vals.ai だけでなく、**試した公式ドメインすべてが遮断されています** — anthropic.com / openai.com / platform.openai.com / ai.google.dev / docs.cloud.google.com / api-docs.deepseek.com / docs.x.ai / z.ai / platform.moonshot.ai / wikipedia.org。動くのは WebSearch（検索結果の要約）だけで、これはまとめ記事由来なので §3-1 により使えません。**つまりリモートの Claude Code からは、価格も順位も一次情報として集められません。**
+動くのは WebSearch（検索結果の要約）だけですが、これはまとめ記事由来なので §3-1 により使えません。
 
 取得は次のいずれかで行います。
 
