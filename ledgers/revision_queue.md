@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-05 21:14 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-05 21:24 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 76 件
-- **ready**: 393 件
+- **needs_review**: 72 件
+- **ready**: 397 件
 - **archived**: 7 件
 - **合計**: 477 件
 
@@ -26,7 +26,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（65 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（61 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -76,10 +76,6 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-138 | 是正処置と不適合 | needs_review | — |
 | J-139 | 説明可能性 | needs_review | — |
 | J-146 | ゾーンとコンジット | needs_review | — |
-| J-147 | データ品質 | needs_review | — |
-| J-148 | PDCA | needs_review | — |
-| J-149 | 第三者認証と自己宣言 | needs_review | — |
-| J-150 | トレーサビリティ | needs_review | — |
 | J-22 | パラメータ数の単位 | needs_review | — |
 | J-32 | ノイマン型 | needs_review | — |
 | J-34 | マルチモーダル | needs_review | — |
@@ -96,7 +92,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-62 | チューリングテスト | needs_review | — |
 | J-7 | VLA | needs_review | — |
 
-## ✅ 完成（ready・全パス）（393 件）
+## ✅ 完成（ready・全パス）（397 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -434,7 +430,11 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-143 | モデルカード | ready | — |
 | J-144 | インシデント報告 | ready | — |
 | J-145 | 人間中心のAI社会原則 | ready | — |
+| J-147 | データ品質 | ready | — |
+| J-148 | PDCA | ready | — |
+| J-149 | 第三者認証と自己宣言 | ready | — |
 | J-15 | VLM | ready | — |
+| J-150 | トレーサビリティ | ready | — |
 | J-16 | Fine-tuning | ready | — |
 | J-17 | Attention | ready | — |
 | J-18 | MoE | ready | — |
