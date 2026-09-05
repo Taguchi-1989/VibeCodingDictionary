@@ -1,28 +1,25 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-09-05 14:12 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-09-05 14:17 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
 ## 内訳
 
-- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 360 件
-- **途中**（書きかけで止まっている）: 6 件
+- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 363 件
+- **途中**（書きかけで止まっている）: 3 件
 - **手つかず**（両方まるごと空）: 60 件
 - **合計**: 426 件
 
 ---
 
-## ✍️ 途中（あと少しで終わる。ここから手を付けるのが早い）（6 件）
+## ✍️ 途中（あと少しで終わる。ここから手を付けるのが早い）（3 件）
 
 | ID | title | つまずき | コメント | 空いている欄 | path |
 | :-- | :-- | --: | --: | :-- | :-- |
 | B-35 | Gemini CLI | 0 件 | 4/4 | （つまずきのみ） | `content/entries/service/B-35_gemini_cli[人書].md` |
 | B-36 | Lovable | 0 件 | 3/4 | 👥 誰向けか | `content/entries/service/B-36_lovable[人書].md` |
 | B-37 | Replit | 0 件 | 1/4 | 👍 良い点 / 👎 ダメな点 / 👥 誰向けか | `content/entries/service/B-37_replit[人書].md` |
-| B-38 | Manus | 1 件 | 3/4 | 👥 誰向けか | `content/entries/service/B-38_manus[人書].md` |
-| B-39 | Google AI Studio | 1 件 | 3/4 | 👥 誰向けか | `content/entries/service/B-39_google_ai_studio[人書].md` |
-| B-42 | Discord | 1 件 | 3/4 | 👎 ダメな点 | `content/entries/service/B-42_discord[人書].md` |
 
 ---
 

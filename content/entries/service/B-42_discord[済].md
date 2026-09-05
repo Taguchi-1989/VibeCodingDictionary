@@ -18,7 +18,7 @@ related_terms:
   - Midjourney
   - GitHub
   - Claude Code
-status: needs_review
+status: ready
 ---
 
 # Discord
@@ -113,7 +113,7 @@ Midjourney、Bot コマンド、コミュニティ運用
 <!-- user-input:start key="my_comment" -->
 - 🙂 第一印象: 名前はけっこう聞いていました。自分でサーバーを立てると聞くとすごく大変そうに思えますが、やってみるとそんなに大変ではありません。
 - 👍 良い点: 自分でコミュニティを作れますし、参加したいところに参加もできます。ミニコミュニティや掲示板のようなものが無料でけっこう作れるのがいいところです。
-- 👎 ダメな点: 
+- 👎 ダメな点: Twitter や Twitch と比べると、知名度がないところかなと思います。
 - 👥 誰向けか: mixi や Facebook をやっていたような人が、次に行く場所という感じがします。
 <!-- user-input:end key="my_comment" -->
 

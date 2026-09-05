@@ -47,11 +47,11 @@ B-34,,NotebookLM,service,ai_assistant,ready,収録語の抜け監査（提案書
 B-35,,Gemini CLI,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-35_gemini_cli[人書].md
 B-36,,Lovable,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-36_lovable[人書].md
 B-37,,Replit,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-37_replit[人書].md
-B-38,,Manus,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-38_manus[人書].md
-B-39,,Google AI Studio,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-39_google_ai_studio[人書].md
+B-38,,Manus,service,ai_assistant,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-38_manus[済].md
+B-39,,Google AI Studio,service,ai_assistant,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-39_google_ai_studio[済].md
 B-40,,Reddit,service,info_source,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-40_reddit[済].md
 B-41,,arXiv,service,info_source,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-41_arxiv[済].md
-B-42,,Discord,service,info_source,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-42_discord[人書].md
+B-42,,Discord,service,info_source,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-42_discord[済].md
 B-43,,n8n・Dify,service,automation,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-43_n8n_dify[人書].md
 B-50,,Claude の料金プラン,service,pricing,ready,時変情報 evaluation_date:2026-04-29,content/entries/service/B-50_claude_pricing[済].md
 B-51,,ChatGPT の料金プラン,service,pricing,ready,時変情報 evaluation_date:2026-04-29,content/entries/service/B-51_chatgpt_pricing[済].md

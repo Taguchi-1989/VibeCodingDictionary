@@ -19,7 +19,7 @@ related_terms:
   - Deep Research
   - Devin
   - Computer Use
-status: needs_review
+status: ready
 ---
 
 # Manus
@@ -113,7 +113,7 @@ AI エージェント、Deep Research、Devin
 - 🙂 第一印象: Genspark と同じような系統なのかな、と思いました。いろいろなことができて、触れるものが多いという印象です。
 - 👍 良い点: できることが多く、触れる範囲が広いところです。
 - 👎 ダメな点: 結局のところ、Claude Code や Codex に飲み込まれていくんだろうな、とすごく思います。
-- 👥 誰向けか:
+- 👥 誰向けか: あまり使いこなせない人向けだと思います。ただ私自身は、いまこれを使っていくメリットはないかなと感じています。
 <!-- user-input:end key="my_comment" -->
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
