@@ -1,6 +1,6 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-09-05 14:11 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-09-05 14:12 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
@@ -80,11 +80,11 @@ letter 別: D 5件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 31件
 | J-124 | ISO/IEC 27001 | needs_review | 3-4 | `content/entries/term_general/J-124_iso_iec_27001[人書].md` |
 | J-125 | 適用宣言書 | needs_review | 3-4 | `content/entries/term_general/J-125_statement_of_applicability[人書].md` |
 | J-126 | 内部監査とマネジメントレビュー | needs_review | 3-4 | `content/entries/term_general/J-126_internal_audit_review[人書].md` |
-| J-135 | 機能安全 | drafting | [] | `content/entries/term_general/J-135_functional_safety.md` |
-| J-136 | 3 ステップメソッド | drafting | [] | `content/entries/term_general/J-136_three_step_method.md` |
-| J-137 | ALARP | needs_review | 4 | `content/entries/term_general/J-137_alarp.md` |
-| J-138 | 是正処置と不適合 | drafting | [] | `content/entries/term_general/J-138_corrective_action.md` |
-| J-139 | 説明可能性 | drafting | [] | `content/entries/term_general/J-139_explainability.md` |
+| J-135 | 機能安全 | needs_review | 4 | `content/entries/term_general/J-135_functional_safety[人書].md` |
+| J-136 | 3 ステップメソッド | needs_review | 3-4 | `content/entries/term_general/J-136_three_step_method[人書].md` |
+| J-137 | ALARP | needs_review | 4 | `content/entries/term_general/J-137_alarp[人書].md` |
+| J-138 | 是正処置と不適合 | needs_review | 3 | `content/entries/term_general/J-138_corrective_action[人書].md` |
+| J-139 | 説明可能性 | needs_review | 3 | `content/entries/term_general/J-139_explainability[人書].md` |
 
 ---
 
