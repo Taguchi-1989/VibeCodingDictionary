@@ -1,14 +1,14 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-09-05 05:48 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-09-05 07:03 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
 ## 内訳
 
-- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 363 件
+- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 371 件
 - **途中**（書きかけで止まっている）: 0 件
-- **手つかず**（両方まるごと空）: 52 件
+- **手つかず**（両方まるごと空）: 44 件
 - **合計**: 415 件
 
 ---
@@ -19,20 +19,12 @@ _なし_
 
 ---
 
-## ⬜ 手つかず（両方まるごと空）（52 件）
+## ⬜ 手つかず（両方まるごと空）（44 件）
 
-letter 別: B 4件 / C 3件 / D 6件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 15件
+letter 別: D 5件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 15件
 
 | ID | title | status | reader_level | path |
 | :-- | :-- | :-- | :-- | :-- |
-| B-38 | Manus | needs_review | 2-3 | `content/entries/service/B-38_manus[人書].md` |
-| B-39 | Google AI Studio | needs_review | 2-3 | `content/entries/service/B-39_google_ai_studio[人書].md` |
-| B-42 | Discord | needs_review | 1-2 | `content/entries/service/B-42_discord[人書].md` |
-| B-43 | n8n・Dify | needs_review | 2-3 | `content/entries/service/B-43_n8n_dify[人書].md` |
-| C-16 | DeepSeek | needs_review | 2-3 | `content/entries/person/C-16_deepseek[人書].md` |
-| C-17 | Sakana AI | needs_review | 2-3 | `content/entries/person/C-17_sakana_ai[人書].md` |
-| C-83 | AI時代の羅針盤 | needs_review | 1-2 | `content/entries/person/C-83_ai_compass[人書].md` |
-| D-3 | Gemini 3 系 | needs_review | 2-3 | `content/entries/model/D-3_gemini3[人書].md` |
 | D-10 | Claude 3 系 | needs_review | 2-3 | `content/entries/model/D-10_claude3[人書].md` |
 | D-13 | Claude 4.5 系 | needs_review | 2-3 | `content/entries/model/D-13_claude45[人書].md` |
 | D-23 | o3 系 | needs_review | 2-3 | `content/entries/model/D-23_o3[人書].md` |

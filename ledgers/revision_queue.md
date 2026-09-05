@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-05 05:48 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-05 07:03 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 63 件
-- **ready**: 363 件
+- **needs_review**: 55 件
+- **ready**: 371 件
 - **archived**: 7 件
 - **合計**: 434 件
 
@@ -26,21 +26,13 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（52 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（44 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
-| B-38 | Manus | needs_review | — |
-| B-39 | Google AI Studio | needs_review | — |
-| B-42 | Discord | needs_review | — |
-| B-43 | n8n・Dify | needs_review | — |
-| C-16 | DeepSeek | needs_review | — |
-| C-17 | Sakana AI | needs_review | — |
-| C-83 | AI時代の羅針盤 | needs_review | — |
 | D-10 | Claude 3 系 | needs_review | — |
 | D-13 | Claude 4.5 系 | needs_review | — |
 | D-23 | o3 系 | needs_review | — |
-| D-3 | Gemini 3 系 | needs_review | — |
 | D-59 | Midjourney | needs_review | — |
 | D-61 | AlphaFold | needs_review | — |
 | E-28 | ARC-AGI | needs_review | — |
@@ -83,7 +75,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-57 | RLHF・アラインメント | needs_review | — |
 | J-62 | チューリングテスト | needs_review | — |
 
-## ✅ 完成（ready・全パス）（363 件）
+## ✅ 完成（ready・全パス）（371 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -118,9 +110,13 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | B-35 | Gemini CLI | ready | — |
 | B-36 | Lovable | ready | — |
 | B-37 | Replit | ready | — |
+| B-38 | Manus | ready | — |
+| B-39 | Google AI Studio | ready | — |
 | B-4 | Cursor | ready | — |
 | B-40 | Reddit | ready | — |
 | B-41 | arXiv | ready | — |
+| B-42 | Discord | ready | — |
+| B-43 | n8n・Dify | ready | — |
 | B-5 | GitHub Copilot | ready | — |
 | B-50 | Claude の料金プラン | ready | — |
 | B-51 | ChatGPT の料金プラン | ready | — |
@@ -138,6 +134,8 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | C-13 | Groq | ready | — |
 | C-14 | AMD | ready | — |
 | C-15 | Intel | ready | — |
+| C-16 | DeepSeek | ready | — |
+| C-17 | Sakana AI | ready | — |
 | C-2 | Anthropic | ready | — |
 | C-3 | Google DeepMind | ready | — |
 | C-4 | Meta AI | ready | — |
@@ -159,6 +157,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | C-80 | AI大学 | ready | — |
 | C-81 | にゃんた | ready | — |
 | C-82 | まさお | ready | — |
+| C-83 | AI時代の羅針盤 | ready | — |
 | C-9 | NVIDIA | ready | — |
 | D-1 | Gemini 2 系 | ready | — |
 | D-11 | Claude 3.5 系 | ready | — |
@@ -171,6 +170,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | D-24 | GPT-3 系 | ready | — |
 | D-25 | GPT-1 / GPT-2 系 | ready | — |
 | D-26 | gpt-oss | ready | — |
+| D-3 | Gemini 3 系 | ready | — |
 | D-30 | Grok 系 | ready | — |
 | D-35 | Cursor Composer | ready | — |
 | D-4 | Gemini 3.1 系 | ready | — |

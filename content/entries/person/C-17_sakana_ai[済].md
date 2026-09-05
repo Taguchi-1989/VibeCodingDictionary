@@ -17,7 +17,7 @@ related_terms:
   - Transformer
   - DeepSeek（企業）
   - OpenAI
-status: needs_review
+status: ready
 ---
 
 # Sakana AI
@@ -102,19 +102,17 @@ Sakana AI が「生物の進化・群れ」からどんな発想でモデル開�
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- 評価の高さの割に、何がすごいのかが自分には掴めませんでした。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: 日本発として期待が大きい割に、私はあまり良さを感じませんでした。独自のポジションなのだと思います。
+- 👍 良い点: 自分でモデルを作るのではなく、オーケストレーターやルーターの側に寄せているのは分かります。
+- 👎 ダメな点: そこは競争力の源泉ではないと思います。プラットフォーマーとしては中途半端に見えます。
+- 👥 誰向けか: 私には使いどころが思い浮かびません。Claude Code や Codex に寄せるほうがいいと思います。
 <!-- user-input:end key="my_comment" -->
 
 

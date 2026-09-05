@@ -19,7 +19,7 @@ related_terms:
   - DeepSeek R1
   - DeepSeek ショック
   - Moonshot AI
-status: needs_review
+status: ready
 ---
 
 # DeepSeek
@@ -103,19 +103,17 @@ DeepSeek V3、DeepSeek R1、DeepSeek ショック
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- OpenRouter などで使うとき、どこのサーバーにデータが行くのかが分からず不安でした。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: V3 と R1 が出てきたときは黒船のようでした。推論のモデルがとても安く使えると驚きました。
+- 👍 良い点: その後も着実にいいモデルを出し、激安の API で存在感を示しています。一定の賢さを保ったまま安いのがすごいです。
+- 👎 ダメな点: どこへ接続して、どこのサーバーにデータが行くのか、リージョンや保持期間を把握しないまま使うのは怖いです。
+- 👥 誰向けか: リテラシーがあって、激安モデルをきちんと使いたい企業の人向けです。知識のない人は手を出さないほうがいいと思います。
 <!-- user-input:end key="my_comment" -->
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->

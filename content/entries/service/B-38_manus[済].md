@@ -19,7 +19,7 @@ related_terms:
   - Deep Research
   - Devin
   - Computer Use
-status: needs_review
+status: ready
 ---
 
 # Manus
@@ -102,19 +102,17 @@ AI エージェント、Deep Research、Devin
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
--
--
--
+- 結局触らずじまいで、Codex や Claude Code とどう使い分けるのかが分かりませんでした。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象:
-- 👍 良い点:
-- 👎 ダメな点:
-- 👥 誰向けか:
+- 🙂 第一印象: 中華系のオールインワンなサービスで、Genspark と同じ手法だなと思いました。
+- 👍 良い点: エージェントという形に振り切って、市場が固まる前にポジションを取りに行ったのは価値があったと思います。
+- 👎 ダメな点: 結局は Codex や Claude Code に集約されていくので、位置づけが分かりません。宣伝ではなく中身を見ないと、使うかどうかを決められないのも難しいところです。
+- 👥 誰向けか: 単一のベンダーに縛られたくない人向けかもしれませんが、今は無理に使わなくてよいと思います。
 <!-- user-input:end key="my_comment" -->
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->

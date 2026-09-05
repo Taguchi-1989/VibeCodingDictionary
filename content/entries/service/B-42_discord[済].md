@@ -18,7 +18,7 @@ related_terms:
   - Midjourney
   - GitHub
   - Claude Code
-status: needs_review
+status: ready
 ---
 
 # Discord
@@ -103,19 +103,17 @@ Midjourney、Bot コマンド、コミュニティ運用
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- コミュニティをそこに作って立てる、という発想が最初はよく分かりませんでした。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: 自分でもサーバーを立てられると知って、面白いなと思いました。
+- 👍 良い点: エージェントから操作できるところもあり、規約を含めてコミュニティをどう運用するかを考えられるのがいいです。
+- 👎 ダメな点: あまりありません。無料で使えます。
+- 👥 誰向けか: コミュニティに参加したい人や、小規模でも自分で立ててみたい人向けです。
 <!-- user-input:end key="my_comment" -->
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->

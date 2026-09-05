@@ -44,15 +44,15 @@ B-31,,Excalidraw,service,saas_design,ready,v2テンプレ書き起こし済（20
 B-32,,Figma,service,saas_design,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-32_figma[済].md
 B-33,,Canva,service,saas_design,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-33_canva[済].md
 B-34,,NotebookLM,service,ai_assistant,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-34_notebooklm[済].md
-B-35,,Gemini CLI,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-35_gemini_cli[人書].md
-B-36,,Lovable,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-36_lovable[人書].md
-B-37,,Replit,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-37_replit[人書].md
-B-38,,Manus,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-38_manus[人書].md
-B-39,,Google AI Studio,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-39_google_ai_studio[人書].md
+B-35,,Gemini CLI,service,ai_assistant,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-35_gemini_cli[済].md
+B-36,,Lovable,service,ai_assistant,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-36_lovable[済].md
+B-37,,Replit,service,ai_assistant,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-37_replit[済].md
+B-38,,Manus,service,ai_assistant,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-38_manus[済].md
+B-39,,Google AI Studio,service,ai_assistant,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-39_google_ai_studio[済].md
 B-40,,Reddit,service,info_source,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-40_reddit[済].md
 B-41,,arXiv,service,info_source,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-41_arxiv[済].md
-B-42,,Discord,service,info_source,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-42_discord[人書].md
-B-43,,n8n・Dify,service,automation,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-43_n8n_dify[人書].md
+B-42,,Discord,service,info_source,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-42_discord[済].md
+B-43,,n8n・Dify,service,automation,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-43_n8n_dify[済].md
 B-50,,Claude の料金プラン,service,pricing,ready,時変情報 evaluation_date:2026-04-29,content/entries/service/B-50_claude_pricing[済].md
 B-51,,ChatGPT の料金プラン,service,pricing,ready,時変情報 evaluation_date:2026-04-29,content/entries/service/B-51_chatgpt_pricing[済].md
 B-52,,Gemini の料金プラン,service,pricing,ready,時変情報 evaluation_date:2026-04-29,content/entries/service/B-52_gemini_pricing[済].md
@@ -73,8 +73,8 @@ C-12,,TSMC,person_org,company,ready,半導体ファウンドリ v2テンプレ�
 C-13,,Groq,person_org,company,ready,AI推論チップ LPU v2テンプレ書き起こし済（2026-04-30）,content/entries/person/C-13_groq[済].md
 C-14,,AMD,person_org,company,ready,半導体,content/entries/person/C-14_amd[済].md
 C-15,,Intel,person_org,company,ready,半導体IDM。EUV採用遅れ→18A復活途上,content/entries/person/C-15_intel[済].md
-C-16,,DeepSeek,person_org,company,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/person/C-16_deepseek[人書].md
-C-17,,Sakana AI,person_org,company,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/person/C-17_sakana_ai[人書].md
+C-16,,DeepSeek,person_org,company,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/person/C-16_deepseek[済].md
+C-17,,Sakana AI,person_org,company,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/person/C-17_sakana_ai[済].md
 C-50,,Sam Altman,person_org,person,ready,,content/entries/person/C-50_sam_altman[済].md
 C-51,,Dario Amodei,person_org,person,ready,,content/entries/person/C-51_dario_amodei[済].md
 C-52,,Demis Hassabis,person_org,person,ready,,content/entries/person/C-52_demis_hassabis[済].md
@@ -89,10 +89,10 @@ C-60,,Ray Kurzweil,person_org,person,ready,,content/entries/person/C-60_ray_kurz
 C-80,,AI大学,person_org,youtuber,ready,,content/entries/person/C-80_ai_daigaku[済].md
 C-81,,にゃんた,person_org,youtuber,ready,v2テンプレ書き起こし済（2026-04-30）。旧スケルトン C-81.md は archived,content/entries/person/C-81_nyanta[済].md
 C-82,,まさお,person_org,youtuber,ready,,content/entries/person/C-82_masao[済].md
-C-83,,AI時代の羅針盤,person_org,youtuber,needs_review,台帳の「AI の羅針盤」から正式名称に修正（2026-08-23）,content/entries/person/C-83_ai_compass[人書].md
+C-83,,AI時代の羅針盤,person_org,youtuber,ready,台帳の「AI の羅針盤」から正式名称に修正（2026-08-23）,content/entries/person/C-83_ai_compass[済].md
 D-1,,Gemini 2 系,model,google,ready,v2テンプレで D-1_gemini2.md に書き起こし済（2026-04-29）。旧D-1.md は archived,content/entries/model/D-1_gemini2[済].md
 D-2,201,Gemini 2.5 系,model,google,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-2_gemini25[済].md
-D-3,,Gemini 3 系,model,google,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-3_gemini3[人書].md
+D-3,,Gemini 3 系,model,google,ready,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-3_gemini3[済].md
 D-4,,Gemini 3.1 系,model,google,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-4_gemini_3_1[済].md
 D-10,,Claude 3 系,model,anthropic,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-10_claude3[人書].md
 D-11,,Claude 3.5 系,model,anthropic,ready,,content/entries/model/D-11_claude35[済].md

@@ -19,7 +19,7 @@ related_terms:
   - API
   - API キー
   - Vertex AI
-status: needs_review
+status: ready
 ---
 
 # Google AI Studio
@@ -102,19 +102,17 @@ API キー、Vertex AI、Gemini。
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- どれが安定して使えるモデルなのかが分かりにくいところでつまずきました。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: いい AI がただで使える場所だ、という印象でした。実際そのとおりでした。
+- 👍 良い点: 2024 年ごろは特に、マテリアルインフォマティクスやビッグデータを扱う人にとって非常にいいプラットフォームでした。最先端のモデルを触れたのがよかったです。
+- 👎 ダメな点: 今考えると安定しません。安定版として使えるサービスにはなっていないところが難しいです。
+- 👥 誰向けか: 安く使いたい人向けです。私にとっては、性能の面で毎日使う場所ではなくなりました。
 <!-- user-input:end key="my_comment" -->
 
 
