@@ -290,8 +290,8 @@ G-48,,Structured Outputs,term_llm,control,ready,台帳登録済み・未生成�
 G-49,,AI エージェント,term_llm,ops,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-49_ai_agent[済].md
 G-50,,Evals,term_llm,evaluation,ready,Stage11。自分の仕事に合わせた評価をつくる。E章のベンチマークとの違いが軸,content/entries/term_llm/G-50_evals[済].md
 G-51,,LLM-as-a-judge,term_llm,evaluation,ready,Stage11。AIの出力をAIが採点する。ルーブリックと人ラベルとの一致率で審判を検証,content/entries/term_llm/G-51_llm_as_a_judge[済].md
-G-60,,GraphRAG,term_llm,retrieval,needs_review,Stage11。MS版はメンテナンスモード、考え方は後続へ。全体を見渡す質問に効く,content/entries/term_llm/G-60_graphrag[人書].md
-G-61,,ナレッジグラフ,term_llm,retrieval,needs_review,Stage11。知識の構造のグラフ。J-118（処理の配線のグラフ）と書き分ける,content/entries/term_llm/G-61_knowledge_graph[人書].md
+G-60,,GraphRAG,term_llm,retrieval,ready,Stage11。MS版はメンテナンスモード、考え方は後続へ。全体を見渡す質問に効く,content/entries/term_llm/G-60_graphrag[済].md
+G-61,,ナレッジグラフ,term_llm,retrieval,ready,Stage11。知識の構造のグラフ。J-118（処理の配線のグラフ）と書き分ける,content/entries/term_llm/G-61_knowledge_graph[済].md
 G-62,,チャンク分割,term_llm,retrieval,needs_review,Stage11。RAGの前処理。切り方が回答品質をほぼ決める,content/entries/term_llm/G-62_chunking[人書].md
 G-63,,ハイブリッド検索,term_llm,retrieval,needs_review,Stage11。BM25＋ベクトル、RRFで合成。型番・エラーコードはベクトルでは拾えない,content/entries/term_llm/G-63_hybrid_search[人書].md
 G-64,,リランキング,term_llm,retrieval,needs_review,Stage11。広く拾って並べ直して少し渡す。cross-encoderで上位のみ,content/entries/term_llm/G-64_reranking[人書].md
