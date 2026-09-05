@@ -75,7 +75,7 @@ Claude CodeやManus、ChatGPTのエージェント機能など、コーディン
 
 ### 6. 深掘り先
 
-Agent Design、Tool Use、Permission
+ワークフローとエージェント（J-128）、Tool Use、Permission
 
 
 ## 開発フローでの位置（必須）

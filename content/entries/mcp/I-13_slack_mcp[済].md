@@ -12,7 +12,7 @@ page_layout: spread_v1
 start_date: 2024-11
 version_status: active
 pricing_note: none
-evaluation_date: 2026-04-29
+evaluation_date: 2026-09-05
 related_terms:
   - MCP
   - MCP Server
@@ -25,7 +25,7 @@ status: ready
 
 ## tagline
 
-Slack ワークスペースを AI クライアントから操作できる、MCP の公式 reference server です。
+Slack ワークスペースを AI クライアントから操作できる MCP Server です。
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 
@@ -35,7 +35,7 @@ Slack ワークスペースを AI クライアントから操作できる、MCP 
 
 ## どこで出会うか
 
-社内のやりとりを AI に要約させたいとき、会議メモをチャンネルへ自動投稿したいときに登場します。Claude の設定ファイルに接続情報を追加することで使えます。
+社内のやりとりを AI に要約させたいとき、会議メモをチャンネルへ自動投稿したいときに登場します。ただし 2025 年 5 月に公式の保守対象から外れ、アーカイブ用のリポジトリへ移りました。
 
 ## メイン図
 
@@ -162,4 +162,8 @@ MCP、MCP Server、Notion MCP
 
 - Bot Token（xoxb-）は User Token（xoxp-）と異なり、ワークスペース全体の bot として動作する
 - 投稿スコープ（`chat:write`）は後から追加する運用が安全。閲覧確認が取れてから付与する
-- `@modelcontextprotocol/server-slack` は TypeScript 実装の公式 reference server（2024-11 公開）
+- `@modelcontextprotocol/server-slack` は TypeScript 実装の参照サーバー（2024-11 公開）。現在はアーカイブ済み
+
+- **2026-09-05 の当て直し**: この MCP は **2025 年 5 月に `modelcontextprotocol/servers-archived` へ移されました**。当時 14 本の参照サーバー（AWS KB Retrieval / Brave Search / EverArt / Git / GitHub / GitLab / Google Drive / Google Maps / PostgreSQL / Puppeteer / Redis / Sentry / Slack / SQLite）がまとめて保守対象から外れています。アーカイブ側のリポジトリには「**これらにセキュリティ上の保証はありません**」という警告が明記されており、セキュリティ修正もバグ修正も入りません
+- いま Anthropic が保守を続けている参照サーバーは **Everything / Fetch / Filesystem / Git / Memory / Sequential Thinking / Time の 7 本**です（Git は書き直された版が現役）
+- 出典: <https://github.com/modelcontextprotocol/servers-archived> ／ <https://github.com/modelcontextprotocol/servers> — checked 2026-09-05

@@ -25,23 +25,6 @@ status: needs_review
 
 # フロントエンド／バックエンド
 
-<!--
-バイブコーディング図鑑 スケルトン雛形 v1（2026-04-28 追加）
-- 構造だけ先に置いた状態。本文は status を `drafting` に上げた段階で entry-writer が埋める
-- validator は status: skeleton を archived/sample と同様にスキップする
-- tagline には entry_candidates.md の「一言」を仮で流し込んでいる（本書きで磨き直す）
-
-YAML 補足（本書きで埋める／見直す欄）:
-- subtype: candidate.csv の subtype 列を流し込み済み（後で見直す）
-- experience_level: hands_on / partial / research_only
-- reader_level: 1〜6
-- figure_type: before_after / structure / comparison / workflow / timeline（仮で structure を入れている）
-- version_status: active / preview / deprecated（時変なら埋める）
-- pricing_note: none / paid / freemium（時変なら埋める）
-- related_terms: 3〜5 個目安
-- status: skeleton → drafting → needs_review → ready
--->
-
 ## tagline
 
 <!-- 25〜60 字（推奨 30〜38、略称展開を含む場合 35〜50）。
@@ -49,7 +32,6 @@ YAML 補足（本書きで埋める／見直す欄）:
      例: `Model Context Protocol の略。LLM とツール・データをつなぐ標準規格です。` -->
 
 画面を作る役割と、データや処理を支える役割に分けた開発の呼び方です。
-
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 
@@ -67,11 +49,9 @@ AIに開発を頼むとき、フロントエンドの見た目の話かバック
 
 画面側と裏側が別の役割で、境界にAPIという窓口があることを一目で伝えます。
 
-
 ## 会話での使い方例
 
 「その機能はフロントエンドの見た目、それともバックエンドの処理ですか？」
-
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -81,31 +61,25 @@ AIに開発を頼むとき、フロントエンドの見た目の話かバック
 
 画面側の役割と、データを扱う裏側の役割を分けて呼ぶ言葉です。
 
-
 ### 2. うれしさ
 
 担当範囲がはっきりし、AIへの依頼も分担しやすくなります。
-
 
 ### 3. 注意点
 
 境界のAPI設計を誤ると、両者の連携がずれます。
 
-
 ### 4. どこで役立つか
 
 画面設計や機能実装をAIに相談するときに使います。
-
 
 ### 5. はじめに
 
 自分が触る画面はどちら側かを意識してみます。
 
-
 ### 6. 深掘り先
 
 API、フルスタック、Supabase
-
 
 ## 開発フローでの位置（必須）
 
@@ -114,7 +88,6 @@ API、フルスタック、Supabase
 3. バックエンド実装 — データの保存・計算・認証を用意します。
 4. API接続確認 — 画面と裏側のやり取りが動くか確かめます。
 
-
 ## 関連用語
 
 - API
@@ -122,7 +95,6 @@ API、フルスタック、Supabase
 - Next.js
 - Supabase
 - デプロイ
-
 
 <!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
 
@@ -144,7 +116,6 @@ API、フルスタック、Supabase
 - 👎 ダメな点: 
 - 👥 誰向けか: 
 <!-- user-input:end key="my_comment" -->
-
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
 
@@ -168,7 +139,6 @@ API、フルスタック、Supabase
 - Step 3 のアイコン/絵柄: サーバー・データベースのアイコン
 - Step 4 のアイコン/絵柄: 左右をつなぐ矢印と API のラベル
 
-
 ## コミュニティ補完メモ
 
 - F-213 API との住み分け：本エントリは境界としての API に触れるだけで、リクエスト/レスポンスの形式やエンドポイントの詳細は F-213 に譲る
@@ -179,7 +149,6 @@ API、フルスタック、Supabase
 
 - MDN「Web 標準の学習を始める」https://developer.mozilla.org/ja/docs/Learn_web_development/Getting_started/Web_standards — checked 2026-08-10
 - MDN「サーバーサイドの学習」https://developer.mozilla.org/ja/docs/Learn_web_development/Extensions/Server-side — checked 2026-08-10
-
 
 ## 備考
 

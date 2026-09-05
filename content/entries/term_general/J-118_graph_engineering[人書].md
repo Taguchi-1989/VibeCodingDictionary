@@ -24,23 +24,6 @@ status: needs_review
 
 # グラフエンジニアリング
 
-<!--
-バイブコーディング図鑑 スケルトン雛形 v1（2026-04-28 追加）
-- 構造だけ先に置いた状態。本文は status を `drafting` に上げた段階で entry-writer が埋める
-- validator は status: skeleton を archived/sample と同様にスキップする
-- tagline には entry_candidates.md の「一言」を仮で流し込んでいる（本書きで磨き直す）
-
-YAML 補足（本書きで埋める／見直す欄）:
-- subtype: candidate.csv の subtype 列を流し込み済み（後で見直す）
-- experience_level: hands_on / partial / research_only
-- reader_level: 1〜6
-- figure_type: before_after / structure / comparison / workflow / timeline（仮で structure を入れている）
-- version_status: active / preview / deprecated（時変なら埋める）
-- pricing_note: none / paid / freemium（時変なら埋める）
-- related_terms: 3〜5 個目安
-- status: skeleton → drafting → needs_review → ready
--->
-
 ## tagline
 
 <!-- 25〜60 字（推奨 30〜38、略称展開を含む場合 35〜50）。
@@ -48,7 +31,6 @@ YAML 補足（本書きで埋める／見直す欄）:
      例: `Model Context Protocol の略。LLM とツール・データをつなぐ標準規格です。` -->
 
 処理をノードとエッジで繋ぎ、分岐・合流・並列を持つワークフローを設計する工学です。
-
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 
@@ -69,7 +51,6 @@ LangGraph（状態を持つグラフとしてエージェントを組むフレ�
 ## 会話での使い方例
 
 「この分岐、ループじゃなくてグラフで組んだ方が扱いやすいですよね。」
-
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -97,7 +78,7 @@ LangGraph（状態を持つグラフとしてエージェントを組むフレ�
 
 ### 6. 深掘り先
 
-LangGraph、n8n、Dify、Orchestration
+LangGraph、n8n、Dify、ナレッジグラフ（G-61）
 
 ## 開発フローでの位置（必須）
 
@@ -113,7 +94,6 @@ LangGraph、n8n、Dify、Orchestration
 - ハーネスエンジニアリング
 - Orchestration
 - Subagent
-
 
 <!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
 
@@ -135,7 +115,6 @@ LangGraph、n8n、Dify、Orchestration
 - 👎 ダメな点: 
 - 👥 誰向けか: 
 <!-- user-input:end key="my_comment" -->
-
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
 
@@ -168,7 +147,6 @@ LangGraph、n8n、Dify、Orchestration
 - Step 3 のアイコン/絵柄: 分岐の先で別々に走る 2 つの矢印（並列・サブエージェント）
 - Step 4 のアイコン/絵柄: 2 本の矢印が 1 本に合流し、旗が立つ（合流と完了判定）
 
-
 ## コミュニティ補完メモ
 
 - 同じ「〜エンジニアリング」5 兄弟との住み分け（docs/scope_map_figure_spec.md 準拠）:
@@ -185,7 +163,6 @@ LangGraph、n8n、Dify、Orchestration
 
 - LangChain 公式ドキュメント「LangGraph」 https://www.langchain.com/langgraph — checked 2026-09-02（状態を持つグラフとしてエージェントを組む発想の一次出典）
 - ledgers/loop_engineering_landscape_2026.md「補遺: 足場の吸収・グッドハート・KPI設計」— checked 2026-09-02（凝った配線からシンプルなループへの揺り戻しの根拠）
-
 
 ## 備考
 

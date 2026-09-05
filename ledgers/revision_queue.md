@@ -1,6 +1,6 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-05 09:28 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-05 11:08 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
@@ -8,9 +8,9 @@
 
 - **drafting**: 1 件
 - **needs_review**: 66 件
-- **ready**: 373 件
+- **ready**: 387 件
 - **archived**: 7 件
-- **合計**: 447 件
+- **合計**: 461 件
 
 - **自己学習シェルフ（reader_level 6・刊行外）**: 33 件（誌面には出ません。`scripts/preview_gen.py` が除外）
 
@@ -86,7 +86,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-62 | チューリングテスト | needs_review | — |
 | J-7 | VLA | needs_review | — |
 
-## ✅ 完成（ready・全パス）（373 件）
+## ✅ 完成（ready・全パス）（387 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -350,7 +350,14 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-48 | Structured Outputs | ready | — |
 | G-49 | AI エージェント | ready | — |
 | G-5 | Context Window | ready | — |
+| G-50 | Evals | ready | — |
+| G-51 | LLM-as-a-judge | ready | — |
 | G-6 | One-shot | ready | — |
+| G-60 | GraphRAG | ready | — |
+| G-61 | ナレッジグラフ | ready | — |
+| G-62 | チャンク分割 | ready | — |
+| G-63 | ハイブリッド検索 | ready | — |
+| G-64 | リランキング | ready | — |
 | G-7 | 指示追従性 | ready | — |
 | G-8 | 決定論的／非決定論的 | ready | — |
 | G-9 | effort レベル | ready | — |
@@ -402,7 +409,14 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-12 | Neural Network | ready | — |
 | J-121 | AI システム影響評価 | ready | — |
 | J-127 | 決定論と非決定論 | ready | — |
+| J-128 | ワークフローとエージェント | ready | — |
+| J-129 | コンテキスト腐敗 | ready | — |
 | J-13 | Transformer | ready | — |
+| J-130 | 推論時スケーリング | ready | — |
+| J-131 | RLVR | ready | — |
+| J-132 | A2A | ready | — |
+| J-133 | オブザーバビリティ | ready | — |
+| J-134 | Human-in-the-loop | ready | — |
 | J-14 | LLM | ready | — |
 | J-15 | VLM | ready | — |
 | J-16 | Fine-tuning | ready | — |

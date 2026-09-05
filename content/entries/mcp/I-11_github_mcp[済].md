@@ -12,7 +12,7 @@ page_layout: spread_v1
 start_date: 2024-11
 version_status: active
 pricing_note: none
-evaluation_date: 2026-04-29
+evaluation_date: 2026-09-05
 related_terms:
   - MCP
   - MCP Server
@@ -36,7 +36,7 @@ MCP Client から GitHub の Issue 作成・PR 作成・コード検索・ブラ
 
 ## どこで出会うか
 
-「Issue を AI に作らせたい」と調べると出てきます。MCP 設定ファイルに追記するとエージェントが GitHub 操作を行えるようになります。
+「Issue を AI に作らせたい」と調べると出てきます。自分の環境で動かす形と、GitHub がホストする形の 2 通りがあり、設定ファイルに追記すればエージェントが GitHub を操作できます。
 
 ## メイン図
 
@@ -157,3 +157,5 @@ MCP Server、GitHub API、Tool Use。
 ## 備考
 
 GitHub MCP は GitHub 公式がメンテナンスしており、機能追加が活発です。evaluation_date を必ず持たせて時変情報として扱います。Token の権限スコープは操作内容に応じて最小権限を原則とします。
+
+**2026-09-05 の当て直し**: 現行は `github/github-mcp-server`（GitHub 公式）。Anthropic との協業で **Go に書き直された**もので、**ホスト型（リモート）とローカル（Docker / Go バイナリ）の 2 通り**の使い方があります。一方、MCP の参照サーバー側にあった旧 GitHub server は **2025 年 5 月にアーカイブへ移りました**（I-13 / I-21 / I-41 と同じ整理）。混同しやすいので、指す先は GitHub 公式の方です。出典: <https://github.com/github/github-mcp-server> ／ <https://github.blog/changelog/2025-04-04-github-mcp-server-public-preview/> — checked 2026-09-05

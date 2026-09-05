@@ -36,7 +36,7 @@ Google 製の Chrome 自動操作ライブラリ Puppeteer を MCP Server とし
 
 ## どこで出会うか
 
-MCP 公式 reference server として Claude Desktop / Code の設定画面で参照する場面に出てきます。Web 自動テストや PDF 量産の選択肢として紹介されます。
+かつては MCP 公式の参照サーバーの 1 つでしたが、2025 年 5 月に保守対象から外れ、アーカイブ用のリポジトリへ移りました。いまブラウザ操作を任せるなら Playwright MCP（I-20）が実質の後継です。
 
 
 ## メイン図
@@ -72,7 +72,7 @@ Chrome 自動操作を AI エージェントのツールとして提供します
 
 ### 3. 注意点
 
-Chrome / Chromium 専用で Firefox・Safari は非対応です。
+保守が止まっており、修正も更新も入りません。
 
 ### 4. どこで役立つか
 
@@ -162,6 +162,10 @@ Playwright MCP、Chrome DevTools MCP、MCP Server
 
 ## 備考
 
-- Puppeteer MCP は MCP 公式 reference server のひとつ（2024 年 11 月 MCP 公開時から収録）。
+- Puppeteer MCP は MCP 公開時（2024 年 11 月）からの参照サーバーの 1 つでしたが、現在はアーカイブ済みです。
 - headless モードで動作するため、サーバー環境でも利用可能。GUI が不要な自動化シナリオに向く。
 - 起動後は Chrome のユーザーデータを残さないクリーンセッションが基本。永続ログインが必要な場合は別途設定が必要。
+
+- **2026-09-05 の当て直し**: この MCP は **2025 年 5 月に `modelcontextprotocol/servers-archived` へ移されました**。当時 14 本の参照サーバー（AWS KB Retrieval / Brave Search / EverArt / Git / GitHub / GitLab / Google Drive / Google Maps / PostgreSQL / Puppeteer / Redis / Sentry / Slack / SQLite）がまとめて保守対象から外れています。アーカイブ側のリポジトリには「**これらにセキュリティ上の保証はありません**」という警告が明記されており、セキュリティ修正もバグ修正も入りません
+- いま Anthropic が保守を続けている参照サーバーは **Everything / Fetch / Filesystem / Git / Memory / Sequential Thinking / Time の 7 本**です（Git は書き直された版が現役）
+- 出典: <https://github.com/modelcontextprotocol/servers-archived> ／ <https://github.com/modelcontextprotocol/servers> — checked 2026-09-05

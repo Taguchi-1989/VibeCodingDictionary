@@ -83,7 +83,7 @@ Retrieval-Augmented Generation の略。回答前に外部文書を検索して�
 
 ### 6. 深掘り先
 
-Embedding（G-16）、ベクトル DB（G-17）、Fine-tuning（J-16）
+チャンク分割（G-62）、ハイブリッド検索（G-63）、GraphRAG（G-60）
 
 
 ## 開発フローでの位置（必須）

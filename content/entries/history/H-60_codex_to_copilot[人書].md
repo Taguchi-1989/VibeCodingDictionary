@@ -23,23 +23,6 @@ status: needs_review
 
 # Codex → GitHub Copilot の系譜
 
-<!--
-バイブコーディング図鑑 スケルトン雛形 v1（2026-04-28 追加）
-- 構造だけ先に置いた状態。本文は status を `drafting` に上げた段階で entry-writer が埋める
-- validator は status: skeleton を archived/sample と同様にスキップする
-- tagline には entry_candidates.md の「一言」を仮で流し込んでいる（本書きで磨き直す）
-
-YAML 補足（本書きで埋める／見直す欄）:
-- subtype: candidate.csv の subtype 列を流し込み済み（後で見直す）
-- experience_level: hands_on / partial / research_only
-- reader_level: 1〜6
-- figure_type: before_after / structure / comparison / workflow / timeline（仮で structure を入れている）
-- version_status: active / preview / deprecated（時変なら埋める）
-- pricing_note: none / paid / freemium（時変なら埋める）
-- related_terms: 3〜5 個目安
-- status: skeleton → drafting → needs_review → ready
--->
-
 ## tagline
 
 <!-- 25〜60 字（推奨 30〜38、略称展開を含む場合 35〜50）。
@@ -67,7 +50,6 @@ Codex という名前は 2021 年と 2025 年で 2 回登場しました。1 回
 ## 会話での使い方例
 
 「2021 年の Codex と今の Codex は別物として覚えるといいですよ。」
-
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -111,7 +93,6 @@ GitHub Copilot、AI エージェント、Claude Code
 - Claude Code
 - AI エージェント
 
-
 <!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
@@ -132,7 +113,6 @@ GitHub Copilot、AI エージェント、Claude Code
 - 👎 ダメな点: 
 - 👥 誰向けか: 
 <!-- user-input:end key="my_comment" -->
-
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
 

@@ -81,7 +81,7 @@ System Prompt・履歴・ファイルの 3 つが Context の主要構成要素�
 
 ### 6. 深掘り先
 
-Context（G-1）, System Prompt（G-4）, RAG
+Context（G-1）, コンテキスト腐敗（J-129）, RAG
 
 ## 開発フローでの位置（必須）
 

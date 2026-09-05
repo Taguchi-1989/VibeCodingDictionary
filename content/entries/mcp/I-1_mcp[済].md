@@ -11,7 +11,7 @@ figure_type: structure
 page_layout: spread_v1
 start_date: 2024-11
 version_status: active
-evaluation_date: 2026-04-23
+evaluation_date: 2026-09-05
 related_terms:
   - MCP Server
   - MCP Client
@@ -31,7 +31,7 @@ Model Context Protocol の略。LLM とツールをつなぐ「AI の USB-C」�
 
 ## 何をしてくれるか
 
-LLM とツールを共通方式で接続する規格で、2024 年に Anthropic が提案しました。Server／Client／Transport の 3 役で構成され、一度作れば対応 LLM から使えます。
+LLM とツールを共通方式で接続する規格です。2024 年に Anthropic が提案し、2025 年 12 月に Agentic AI Foundation へ寄贈されました。いまは 1 社が仕様を握らない形です。
 
 ## どこで出会うか
 
@@ -149,8 +149,15 @@ MCP SDK、各種 MCP（GitHub／Playwright／Notion）、自作 MCP のテンプ
 ## 出典メモ
 
 - Anthropic "Introducing the Model Context Protocol"（2024-11）— checked 2026-04-23
-- modelcontextprotocol.io — checked 2026-04-23
+- modelcontextprotocol.io — checked 2026-09-05
+- Anthropic "Donating the Model Context Protocol and establishing of the Agentic AI Foundation"（2025-12-09）— checked 2026-09-05
+- https://blog.modelcontextprotocol.io/posts/ — checked 2026-09-05
 
 ## 備考
 
-MCP の仕様・エコシステムは急成長中です。evaluation_date を必ず持たせて時変情報として扱います。
+MCP の仕様・エコシステムは動きが速いので、evaluation_date を必ず持たせて時変情報として扱います。
+
+2026-09-05 の当て直しで確認した点（2026-04-23 版からの差分）:
+
+- **統治が移りました**。2025-12-09 に Anthropic が MCP を **AAIF（Agentic AI Foundation、Linux Foundation 傘下の directed fund）** へ寄贈。Anthropic・Block・OpenAI が共同創設者で、AWS・Google・Microsoft・Cloudflare・Bloomberg などがプラチナメンバーです。**J-132 A2A も 2026-08 に同じ財団のホストプロジェクトになりました**（2 つのプロトコルが同じ傘の下に並んだ、というのが 2026 年の構図）
+- **仕様は 2026-07-28 版が最新**（プロトコル公開以来で最大の更新。プロトコル層のセッション管理を外して stateless 化したため、以前のサーバーとの後方互換が完全ではありません）。誌面ではバージョン番号までは出さず、「1 社が握らない形になった」ところまでに留めています

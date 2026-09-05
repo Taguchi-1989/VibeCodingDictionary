@@ -24,23 +24,6 @@ status: needs_review
 
 # RLHF・アラインメント
 
-<!--
-バイブコーディング図鑑 スケルトン雛形 v1（2026-04-28 追加）
-- 構造だけ先に置いた状態。本文は status を `drafting` に上げた段階で entry-writer が埋める
-- validator は status: skeleton を archived/sample と同様にスキップする
-- tagline には entry_candidates.md の「一言」を仮で流し込んでいる（本書きで磨き直す）
-
-YAML 補足（本書きで埋める／見直す欄）:
-- subtype: candidate.csv の subtype 列を流し込み済み（後で見直す）
-- experience_level: hands_on / partial / research_only
-- reader_level: 1〜6
-- figure_type: before_after / structure / comparison / workflow / timeline（仮で structure を入れている）
-- version_status: active / preview / deprecated（時変なら埋める）
-- pricing_note: none / paid / freemium（時変なら埋める）
-- related_terms: 3〜5 個目安
-- status: skeleton → drafting → needs_review → ready
--->
-
 ## tagline
 
 <!-- 25〜60 字（推奨 30〜38、略称展開を含む場合 35〜50）。
@@ -49,36 +32,25 @@ YAML 補足（本書きで埋める／見直す欄）:
 
 人間のフィードバックによる強化学習の略。人間の評価を報酬に AI の振る舞いを整える手法です。
 
-
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 
 ## 何をしてくれるか
-
-<!-- 60〜200 字（推奨 80〜150）。役割と仕組みを 2〜4 文で。本書きで埋める。 -->
 
 アラインメント（AI の振る舞いを人間の意図や価値観に合わせる取り組み）の代表的な手法です。人が複数の回答を比べて順位をつけ、その評価を報酬として学習させることで、望ましい応答に近づけます。
 
 ## どこで出会うか
 
-<!-- 60〜200 字（推奨 80〜150）。読者が遭遇する具体シーン。本書きで埋める。 -->
-
 2022 年の InstructGPT で効果が示され、ChatGPT のような対話 AI が実用的になった転機とされます。人の代わりに AI が評価する Constitutional AI や、手順を簡略化した DPO なども広く使われています。
-
 
 ## メイン図
 
 ### 図の狙い
 
-<!-- 1〜2 文。この図で読者に何を掴んでもらうか。本書きで埋める。 -->
-
 素直な受け答えが「人の評価を学習した結果」であることを、評価する人と学習後の AI の対比で示します。
 
 ## 会話での使い方例
 
-<!-- 25〜50 字（推奨 30〜40）、1 文。本書きで埋める。 -->
-
 「RLHF のおかげで ChatGPT は素直に指示へ従うようになったんですよね。」
-
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -86,44 +58,29 @@ YAML 補足（本書きで埋める／見直す欄）:
 
 ### 1. 役割
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
 AI の振る舞いを人間の意図に合わせる学習手法です。
 
 ### 2. うれしさ
-
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
 
 対話 AI が指示に素直に従いやすくなります。
 
 ### 3. 注意点
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
 評価者の偏りがそのまま挙動に反映されます。
 
 ### 4. どこで役立つか
-
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
 
 チャット AI の使い勝手や応答の質を左右します。
 
 ### 5. はじめに
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
 ChatGPT が急に使いやすくなった理由の一つと知ること。
 
 ### 6. 深掘り先
 
-<!-- 15〜50 字、1〜3 語をカンマ区切り。本書きで埋める。 -->
-
-Constitutional AI、DPO、RLAIF
-
+Constitutional AI、DPO、RLVR（J-131）
 
 ## 開発フローでの位置（必須）
-
-<!-- 4〜5 ステップ。本書きで埋める。 -->
 
 1. 事前学習 — 大量のテキストで基礎的な言語能力を身につけます。
 2. 教師ありファインチューニング — 手本となる回答例で受け答えの形を整えます。
@@ -131,16 +88,12 @@ Constitutional AI、DPO、RLAIF
 4. リリース後の観測 — 迎合や偏りが出ていないか継続的に確認します。
 5. 利用者の検証 — 出力を鵜呑みにせず自分でも確かめる習慣を持ちます。
 
-
 ## 関連用語
-
-<!-- 3〜5 個。本書きで埋める。YAML の related_terms と一致させる。 -->
 
 - LLM
 - Fine-tuning
 - Hallucination
 - Sycophancy
-
 
 <!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
 
@@ -162,7 +115,6 @@ Constitutional AI、DPO、RLAIF
 - 👎 ダメな点: 
 - 👥 誰向けか: 
 <!-- user-input:end key="my_comment" -->
-
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
 
@@ -187,7 +139,6 @@ Constitutional AI、DPO、RLAIF
 - Step 4 のアイコン/絵柄: 虫眼鏡＋グラフ（リリース後の観測）
 - Step 5 のアイコン/絵柄: チェックマークを持つ人物（利用者の検証）
 
-
 ## コミュニティ補完メモ
 
 - J-52 Sycophancy との住み分け：J-52 は RLHF が引き起こす副作用（迎合しすぎる挙動）の解説に特化。本エントリは RLHF・アラインメントという手法・目的そのものの説明に絞り、副作用の詳細は J-52 へ誘導する
@@ -201,7 +152,6 @@ Constitutional AI、DPO、RLAIF
 
 - Ouyang et al., "Training language models to follow instructions with human feedback" (InstructGPT), arXiv:2203.02155 — checked 2026-08-10
 - Anthropic「Constitutional AI: Harmlessness from AI Feedback」<https://www.anthropic.com/news/claudes-constitution> — checked 2026-08-10
-
 
 ## 備考
 
