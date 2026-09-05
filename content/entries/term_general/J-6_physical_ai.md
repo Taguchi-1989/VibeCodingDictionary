@@ -18,7 +18,7 @@ related_terms:
   - 世界モデル
   - VLA
   - VLM
-status: drafting
+status: needs_review
 ---
 
 # フィジカル AI
@@ -93,6 +93,8 @@ NVIDIA が Cosmos（世界モデル）・Isaac Sim（シミュレーション）
 - 世界モデル
 - VLA
 - VLM
+- IoT
+- マルチモーダル
 
 <!-- ━━━━━━━━ 著者記入欄（右ページ下段に印刷される／AI は触らない） ━━━━━━━━ -->
 

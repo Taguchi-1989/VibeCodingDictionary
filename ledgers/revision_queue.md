@@ -1,16 +1,16 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-05 07:21 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-05 07:22 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
-- **drafting**: 4 件
-- **needs_review**: 56 件
+- **drafting**: 1 件
+- **needs_review**: 60 件
 - **ready**: 371 件
 - **archived**: 7 件
-- **合計**: 438 件
+- **合計**: 439 件
 
 - **自己学習シェルフ（reader_level 6・刊行外）**: 33 件（誌面には出ません。`scripts/preview_gen.py` が除外）
 
@@ -18,19 +18,15 @@
 
 _なし_
 
-## ⚠️ 警告あり（軽微超過 / 著者か entry-writer で手当て）（3 件）
+## ⚠️ 警告あり（軽微超過 / 著者か entry-writer で手当て）（0 件）
 
-| ID | title | status | 概要 |
-| :-- | :-- | :-- | :-- |
-| J-119 | ISO/IEC 23894 | drafting | ⚠ `title_reading` が 34 字（目安 2〜30、推奨 3〜15） |
-| J-6 | フィジカル AI | drafting | ⚠ 11 字（目安 20-50、-9 字不足） |
-| J-7 | VLA | drafting | ⚠ 18 字（目安 20-50、-2 字不足） |
+_なし_
 
 ## ✍️ 書きかけ（drafting・全パス済み・自動昇格漏れ）（0 件）
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（45 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（49 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -67,6 +63,8 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-116 | TPU | needs_review | — |
 | J-117 | データセンターと電力 | needs_review | — |
 | J-118 | グラフエンジニアリング | needs_review | — |
+| J-119 | ISO/IEC 23894 | needs_review | — |
+| J-120 | NIST AI RMF | needs_review | — |
 | J-22 | パラメータ数の単位 | needs_review | — |
 | J-32 | ノイマン型 | needs_review | — |
 | J-34 | マルチモーダル | needs_review | — |
@@ -78,7 +76,9 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-55 | 個人情報保護法 | needs_review | — |
 | J-57 | RLHF・アラインメント | needs_review | — |
 | J-58 | EU AI Act | needs_review | — |
+| J-6 | フィジカル AI | needs_review | — |
 | J-62 | チューリングテスト | needs_review | — |
+| J-7 | VLA | needs_review | — |
 
 ## ✅ 完成（ready・全パス）（371 件）
 

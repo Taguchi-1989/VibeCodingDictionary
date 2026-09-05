@@ -19,7 +19,8 @@ related_terms:
   - 世界モデル
   - フィジカル AI
   - LLM
-status: drafting
+  - マルチモーダル
+status: needs_review
 ---
 
 # VLA
@@ -99,6 +100,7 @@ VLM、フィジカル AI、世界モデル
 - 世界モデル
 - フィジカル AI
 - LLM
+- マルチモーダル
 
 
 <!-- ━━━━━━━━ 著者記入欄（右ページ下段に印刷される／AI は触らない） ━━━━━━━━ -->

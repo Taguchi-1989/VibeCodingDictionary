@@ -335,7 +335,8 @@ J-2,,強い AI／弱い AI,term_general,ai_concept,ready,v2テンプレ書き起
 J-3,,Singularity,term_general,ai_concept,ready,シンギュラリティ,content/entries/term_general/J-3_singularity[済].md
 J-4,,ASI,term_general,ai_concept,ready,,content/entries/term_general/J-4_asi[済].md
 J-5,,世界モデル,term_general,ai_concept,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-5_world_model[人書].md
-J-7,,VLA,term_general,ai_concept,drafting,Stage 8 ブリーフ（2026-09-05）で追加、v2 テンプレ本書き済,content/entries/term_general/J-7_vla.md
+J-6,,フィジカル AI,term_general,ai_concept,drafting,Stage 8 ブリーフ（2026-09-05）で追加,content/entries/term_general/J-6_physical_ai.md
+J-7,,VLA,term_general,ai_concept,needs_review,Stage 8 ブリーフ（2026-09-05）で追加、v2 テンプレ本書き済（ファイル名タグは scripts/apply_status_markers.py 実行待ち）,content/entries/term_general/J-7_vla.md
 J-10,,Machine Learning,term_general,ml_basic,ready,,content/entries/term_general/J-10_machine_learning[済].md
 J-11,,Deep Learning,term_general,ml_basic,ready,,content/entries/term_general/J-11_deep_learning[済].md
 J-12,,Neural Network,term_general,ml_basic,ready,,content/entries/term_general/J-12_neural_network[済].md
@@ -426,3 +427,5 @@ J-115,,NPU・AI PC,term_general,hardware,needs_review,収録語の抜け監査�
 J-116,,TPU,term_general,hardware,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-116_tpu[人書].md
 J-117,,データセンターと電力,term_general,hardware,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-117_datacenter_power[人書].md
 J-118,,グラフエンジニアリング,term_general,agent_architecture,needs_review,スコープ地図（docs/scope_map_figure_spec.md）で追加。ループ層の中の「配線」を担う工学,content/entries/term_general/J-118_graph_engineering[人書].md
+J-119,,ISO/IEC 23894,term_general,ethics_law,drafting,Stage 8 ブリーフ（ledgers/stage8_briefs_2026-09.md）で追加。42001 と対になるリスクマネジメント手引き,content/entries/term_general/J-119_iso_iec_23894.md
+J-120,,NIST AI RMF,term_general,ethics_law,drafting,Stage 8 ブリーフ（ledgers/stage8_briefs_2026-09.md）で追加。GOVERN/MAP/MEASURE/MANAGE の 4 機能構造,content/entries/term_general/J-120_nist_ai_rmf.md
