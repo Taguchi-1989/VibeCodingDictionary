@@ -20,7 +20,7 @@ related_terms:
   - EU AI Act
   - ISO/IEC 42001
   - リテラシー
-status: needs_review
+status: ready
 ---
 
 # 人間中心のAI社会原則
@@ -106,19 +106,19 @@ AI 事業者ガイドライン、AI 倫理、EU AI Act
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
--
--
--
+- お題目に見えて、実務とどう繋がるのかが見えません
+- 2019 年の文書がいまも有効なのか、判断がつきません
+- 法律なのか指針なのかが、名前からは分かりません
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象:
-- 👍 良い点:
-- 👎 ダメな点:
-- 👥 誰向けか:
+- 🙂 第一印象: 2019 年にここまで書いていたのは、すごいです
+- 👍 良い点: 尊厳を正面に置いたことが、いま効いてきます
+- 👎 ダメな点: お題目として読み飛ばされやすい形です
+- 👥 誰向けか: AI を仕事に入れる判断をする人向けです
 <!-- user-input:end key="my_comment" -->
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
