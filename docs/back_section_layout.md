@@ -49,6 +49,23 @@
 | `back_standards_matrix` | [content/backmatter/01_standards_matrix.md](../content/backmatter/01_standards_matrix.md) | AI をめぐる規格・ガイドライン 6 つの比較 |
 | `back_iso_mapping` | [content/backmatter/02_iso_mapping.md](../content/backmatter/02_iso_mapping.md) | 従来の ISO（9001・27001）と ISO/IEC 42001 の対応。どこまで同じで、どこから AI 固有か |
 
+### 4-2. back_steps — 時間の順に並べる 1 枚
+
+| | 内容 |
+| :-- | :-- |
+| 左ページ | ステップ（横）× レーン（縦 2 本）の流れ図。上レーン＝従来からやること、下レーン＝それに足されること |
+| 右ページ | 記録と担い手の帯 2 段 ＋ 読み方の本文 200〜300 字 |
+| figure_type | 任意 |
+| related_terms | 任意。「本編への案内」節で ID を並べる |
+
+**上下のレーンは同じ太さで描きます。** 「全部作り直しではなく、隣に 1 本増えるだけ」という見え方自体がこのレイアウトの主張です。ステップは 6 段までに収めてください。
+
+現在の割り当て:
+
+| ID | ファイル | 中身 |
+| :-- | :-- | :-- |
+| `back_step_map` | [content/backmatter/03_step_map.md](../content/backmatter/03_step_map.md) | AI 導入の 6 ステップ × 「従来からやること／AI で足されること」の 2 レーン |
+
 ## 5. 追加するとき
 
 1. `content/backmatter/` に md を置く（連番プレフィクス + slug）

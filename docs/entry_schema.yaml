@@ -80,6 +80,7 @@ frontmatter:
         - front_swatch              # A-7 + A-8
         - front_log_glossary        # A-10 + A-11
         - back_matrix               # 巻末付録。規格・ガイドラインの比較一覧（2026-09-05 追加）
+        - back_steps                # 巻末付録。導入ステップ × レーンの流れ図（2026-09-05 追加）
       severity: error
       # 2026-05-13: 前付け 7 値を追加。front_* レイアウトのルールは
       # docs/front_section_layout.md §4 を参照。本ファイル末尾の
@@ -515,3 +516,10 @@ back_layouts:
       char_hint_left:  "比較表（縦 6 行 × 横 5 列）"
       char_hint_right: "2 軸マップ 1 点 + 読み方 150-250"
       note: "規格・ガイドラインを 1 枚で見渡す一覧。表と 2 軸図が主役で、本文は表の読み方に徹する"
+
+    - name: back_steps
+      assigned_ids: ["back_step_map"]
+      related_terms: optional
+      char_hint_left:  "ステップ 6 × レーン 2 の流れ図"
+      char_hint_right: "記録と監査の帯 2 段 + 本文 200-300"
+      note: "時間の順に並べる巻末ページ。従来からやること／AI で足されることを 2 レーンで対比する"

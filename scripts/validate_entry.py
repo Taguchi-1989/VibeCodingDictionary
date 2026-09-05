@@ -88,6 +88,7 @@ FRONT_LAYOUTS = {
 # front_* と同じ軽い検証ルートに流す（比較表が主役で spread_v1 の字数枠に収まらないため）
 BACK_LAYOUTS = {
     "back_matrix",
+    "back_steps",
 }
 
 # 前付け・巻末をまとめた「例外レイアウト」集合

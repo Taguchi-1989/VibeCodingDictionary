@@ -1,14 +1,14 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-09-05 08:02 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-09-05 08:23 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
 ## 内訳
 
-- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 371 件
+- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 372 件
 - **途中**（書きかけで止まっている）: 0 件
-- **手つかず**（両方まるごと空）: 56 件
+- **手つかず**（両方まるごと空）: 55 件
 - **合計**: 427 件
 
 ---
@@ -19,9 +19,9 @@ _なし_
 
 ---
 
-## ⬜ 手つかず（両方まるごと空）（56 件）
+## ⬜ 手つかず（両方まるごと空）（55 件）
 
-letter 別: D 5件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 27件
+letter 別: D 5件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 26件
 
 | ID | title | status | reader_level | path |
 | :-- | :-- | :-- | :-- | :-- |
@@ -75,7 +75,6 @@ letter 別: D 5件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 27件
 | J-118 | グラフエンジニアリング | needs_review | 5 | `content/entries/term_general/J-118_graph_engineering[人書].md` |
 | J-119 | ISO/IEC 23894 | needs_review | 3-4 | `content/entries/term_general/J-119_iso_iec_23894[人書].md` |
 | J-120 | NIST AI RMF | needs_review | 3-4 | `content/entries/term_general/J-120_nist_ai_rmf[人書].md` |
-| J-121 | AI システム影響評価 | needs_review | 3-4 | `content/entries/term_general/J-121_ai_impact_assessment[人書].md` |
 | J-122 | リスクアセスメント | needs_review | 3-4 | `content/entries/term_general/J-122_risk_assessment[人書].md` |
 | J-123 | マネジメントシステム共通構造 | needs_review | 3-4 | `content/entries/term_general/J-123_harmonized_structure[人書].md` |
 | J-124 | ISO/IEC 27001 | needs_review | 3-4 | `content/entries/term_general/J-124_iso_iec_27001[人書].md` |
