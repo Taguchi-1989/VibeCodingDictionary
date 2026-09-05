@@ -20,7 +20,7 @@ related_terms:
   - コンテキスト管理
   - サブエージェント
   - リランキング
-status: needs_review
+status: ready
 ---
 
 # コンテキスト腐敗
@@ -103,19 +103,19 @@ context rot（コンテキスト腐敗）は、入力が長くなるほど応答
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- lost in the middle と一緒に聞いて、違いが分かりませんでした
+- 圧縮を重ねるほどズレていく、という感覚が最初はありません
+- 同じスレッドを使い続けてよいのかどうか、迷います
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: lost in the middle と一緒に知った言葉です
+- 👍 良い点: フレッシュに保つ、関心事の分離が大事だと分かります
+- 👎 ダメな点: 知らずにずっと同じチャットで続ける人が多いです
+- 👥 誰向けか: 長い会話で AI を使う人全員向けです
 <!-- user-input:end key="my_comment" -->
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
