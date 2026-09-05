@@ -430,3 +430,4 @@ J-117,,データセンターと電力,term_general,hardware,needs_review,収録�
 J-118,,グラフエンジニアリング,term_general,agent_architecture,needs_review,スコープ地図（docs/scope_map_figure_spec.md）で追加。ループ層の中の「配線」を担う工学,content/entries/term_general/J-118_graph_engineering[人書].md
 J-119,,ISO/IEC 23894,term_general,ethics_law,needs_review,Stage 8 ブリーフ（ledgers/stage8_briefs_2026-09.md）で追加。42001 と対になるリスクマネジメント手引き,content/entries/term_general/J-119_iso_iec_23894[人書].md
 J-120,,NIST AI RMF,term_general,ethics_law,needs_review,Stage 8 ブリーフ（ledgers/stage8_briefs_2026-09.md）で追加。GOVERN/MAP/MEASURE/MANAGE の 4 機能構造,content/entries/term_general/J-120_nist_ai_rmf[人書].md
+J-122,,リスクアセスメント,term_general,ethics_law,needs_review,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。ISO 31000 由来の型は同じ、AI ではリスク源が変わる,content/entries/term_general/J-122_risk_assessment.md
