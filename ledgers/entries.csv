@@ -72,7 +72,7 @@ C-11,,Z.ai,person_org,company,ready,旧Zhipu AI→Z.ai リブランド 2025年,c
 C-12,,TSMC,person_org,company,ready,半導体ファウンドリ v2テンプレ書き起こし済（2026-04-30）,content/entries/person/C-12_tsmc[済].md
 C-13,,Groq,person_org,company,ready,AI推論チップ LPU v2テンプレ書き起こし済（2026-04-30）,content/entries/person/C-13_groq[済].md
 C-14,,AMD,person_org,company,ready,半導体,content/entries/person/C-14_amd[済].md
-C-15,,Intel,person_org,company,needs_review,半導体IDM。EUV採用遅れ→18A復活途上,content/entries/person/C-15_intel[人書].md
+C-15,,Intel,person_org,company,ready,半導体IDM。EUV採用遅れ→18A復活途上,content/entries/person/C-15_intel[済].md
 C-16,,DeepSeek,person_org,company,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/person/C-16_deepseek[人書].md
 C-17,,Sakana AI,person_org,company,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/person/C-17_sakana_ai[人書].md
 C-50,,Sam Altman,person_org,person,ready,,content/entries/person/C-50_sam_altman[済].md
@@ -401,13 +401,13 @@ J-91,,CLI,term_general,ui_os,ready,,content/entries/term_general/J-91_cli[済].m
 J-92,,Linux,term_general,ui_os,ready,,content/entries/term_general/J-92_linux[済].md
 J-93,,Ubuntu,term_general,ui_os,ready,,content/entries/term_general/J-93_ubuntu[済].md
 J-94,,並列化戦略,term_general,inference,ready,Lv6自己学習シェルフ（刊行外）。分散推論 TP/PP/EP/DP,content/entries/term_general/J-94_parallelism[済].md
-J-95,,半導体サプライチェーン,term_general,hardware,needs_review,Lv6自己学習シェルフ（刊行外）。4層入れ子の俯瞰,content/entries/term_general/J-95_semiconductor_supply_chain[人書].md
+J-95,,半導体サプライチェーン,term_general,hardware,ready,Lv6自己学習シェルフ（刊行外）。4層入れ子の俯瞰,content/entries/term_general/J-95_semiconductor_supply_chain[済].md
 J-96,,半導体製造装置,term_general,hardware,ready,Lv6自己学習シェルフ（刊行外）。ASML/DISCO/BESI/KLA,content/entries/term_general/J-96_semiconductor_equipment[済].md
-J-97,,電子材料,term_general,hardware,needs_review,Lv6自己学習シェルフ（刊行外）。味の素ABF/旭化成Pimel/EUVレジスト,content/entries/term_general/J-97_electronic_materials[人書].md
-J-98,,重要鉱物の地政学,term_general,hardware,needs_review,Lv6自己学習シェルフ（刊行外）。ガリウム等・中国の精錬支配,content/entries/term_general/J-98_critical_minerals_geopolitics[人書].md
-J-99,,CoWoS,term_general,hardware,needs_review,Lv6自己学習シェルフ（刊行外）。先端パッケージ,content/entries/term_general/J-99_cowos[人書].md
+J-97,,電子材料,term_general,hardware,ready,Lv6自己学習シェルフ（刊行外）。味の素ABF/旭化成Pimel/EUVレジスト,content/entries/term_general/J-97_electronic_materials[済].md
+J-98,,重要鉱物の地政学,term_general,hardware,ready,Lv6自己学習シェルフ（刊行外）。ガリウム等・中国の精錬支配,content/entries/term_general/J-98_critical_minerals_geopolitics[済].md
+J-99,,CoWoS,term_general,hardware,ready,Lv6自己学習シェルフ（刊行外）。先端パッケージ,content/entries/term_general/J-99_cowos[済].md
 J-100,,識字（リテラシー）,term_general,concept,ready,タイトルを驚き屋から識字（リテラシー）に変更（2026-04-30）,content/entries/term_general/J-100_literacy[済].md
-J-101,,半導体製造プロセス,term_general,hardware,needs_review,Lv6自己学習シェルフ（刊行外）。微細化・FinFET→GAA・リーク電流・EUV,content/entries/term_general/J-101_semiconductor_process[人書].md
+J-101,,半導体製造プロセス,term_general,hardware,ready,Lv6自己学習シェルフ（刊行外）。微細化・FinFET→GAA・リーク電流・EUV,content/entries/term_general/J-101_semiconductor_process[済].md
 J-102,,チップレットと3D積層,term_general,hardware,needs_review,Lv6自己学習シェルフ（刊行外）。More than Moore・V-Cache・CFET,content/entries/term_general/J-102_chiplet_3d_stacking[人書].md
 J-103,,ループエンジニアリング,term_general,agent_loop,ready,2026-09-02 reader_level 6→5 で刊行スコープへ昇格。3工学の俯瞰・進化史ReAct→Ralph→/goal,content/entries/term_general/J-103_loop_engineering[済].md
 J-104,,ReAct,term_general,agent_loop,ready,Lv6自己学習シェルフ（刊行外）。エージェントループの原型Thought-Action-Observation,content/entries/term_general/J-104_react_agent_loop[済].md
@@ -420,7 +420,7 @@ J-110,,不確実性デファーラル,term_general,model_routing,ready,Lv6自己
 J-111,,人間の認知ボトルネック,term_general,human_cognition,ready,Lv6自己学習シェルフ（刊行外）。監督負担・認知過負荷・自動化バイアス,content/entries/term_general/J-111_human_cognition_bottleneck[済].md
 J-112,,認知コストの定量化,term_general,human_cognition,ready,Lv6自己学習シェルフ（刊行外）。resolution velocity・UX心理監査,content/entries/term_general/J-112_cognitive_cost_quantification[済].md
 J-113,,生成UIとagent-native設計,term_general,human_cognition,ready,Lv6自己学習シェルフ（刊行外）。GenUI・提案カード・post-SaaS,content/entries/term_general/J-113_generative_ui_agent_native[済].md
-J-114,,グッドハートの法則,term_general,human_cognition,needs_review,Lv6自己学習シェルフ（刊行外）。測定基準が目標になると腐る・KPI設計・eval設計,content/entries/term_general/J-114_goodharts_law[人書].md
+J-114,,グッドハートの法則,term_general,human_cognition,ready,Lv6自己学習シェルフ（刊行外）。測定基準が目標になると腐る・KPI設計・eval設計,content/entries/term_general/J-114_goodharts_law[済].md
 J-115,,NPU・AI PC,term_general,hardware,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-115_npu_ai_pc[人書].md
 J-116,,TPU,term_general,hardware,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-116_tpu[人書].md
 J-117,,データセンターと電力,term_general,hardware,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-117_datacenter_power[人書].md

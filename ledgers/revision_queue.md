@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-05 11:45 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-05 12:46 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 78 件
-- **ready**: 348 件
+- **needs_review**: 71 件
+- **ready**: 355 件
 - **archived**: 7 件
 - **合計**: 434 件
 
@@ -26,7 +26,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（67 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（60 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -38,7 +38,6 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | B-39 | Google AI Studio | needs_review | — |
 | B-42 | Discord | needs_review | — |
 | B-43 | n8n・Dify | needs_review | — |
-| C-15 | Intel | needs_review | — |
 | C-16 | DeepSeek | needs_review | — |
 | C-17 | Sakana AI | needs_review | — |
 | C-83 | AI時代の羅針盤 | needs_review | — |
@@ -75,9 +74,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | H-64 | DeepSeek ショック | needs_review | — |
 | I-80 | 自作 MCP のテンプレ | needs_review | — |
 | I-81 | MCP の登録・設定 | needs_review | — |
-| J-101 | 半導体製造プロセス | needs_review | — |
 | J-102 | チップレットと3D積層 | needs_review | — |
-| J-114 | グッドハートの法則 | needs_review | — |
 | J-115 | NPU・AI PC | needs_review | — |
 | J-116 | TPU | needs_review | — |
 | J-117 | データセンターと電力 | needs_review | — |
@@ -93,12 +90,8 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-55 | 個人情報保護法 | needs_review | — |
 | J-57 | RLHF・アラインメント | needs_review | — |
 | J-62 | チューリングテスト | needs_review | — |
-| J-95 | 半導体サプライチェーン | needs_review | — |
-| J-97 | 電子材料 | needs_review | — |
-| J-98 | 重要鉱物の地政学 | needs_review | — |
-| J-99 | CoWoS | needs_review | — |
 
-## ✅ 完成（ready・全パス）（348 件）
+## ✅ 完成（ready・全パス）（355 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -148,6 +141,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | C-12 | TSMC | ready | — |
 | C-13 | Groq | ready | — |
 | C-14 | AMD | ready | — |
+| C-15 | Intel | ready | — |
 | C-2 | Anthropic | ready | — |
 | C-3 | Google DeepMind | ready | — |
 | C-4 | Meta AI | ready | — |
@@ -380,6 +374,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-1 | AGI | ready | — |
 | J-10 | Machine Learning | ready | — |
 | J-100 | リテラシー | ready | — |
+| J-101 | 半導体製造プロセス | ready | — |
 | J-103 | ループエンジニアリング | ready | — |
 | J-104 | ReAct | ready | — |
 | J-105 | コンテキスト管理 | ready | — |
@@ -392,6 +387,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-111 | 人間の認知ボトルネック | ready | — |
 | J-112 | 認知コストの定量化 | ready | — |
 | J-113 | 生成UIとagent-native設計 | ready | — |
+| J-114 | グッドハートの法則 | ready | — |
 | J-12 | Neural Network | ready | — |
 | J-13 | Transformer | ready | — |
 | J-14 | LLM | ready | — |
@@ -449,7 +445,11 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-92 | Linux | ready | — |
 | J-93 | Ubuntu | ready | — |
 | J-94 | 並列化戦略 | ready | — |
+| J-95 | 半導体サプライチェーン | ready | — |
 | J-96 | 半導体製造装置 | ready | — |
+| J-97 | 電子材料 | ready | — |
+| J-98 | 重要鉱物の地政学 | ready | — |
+| J-99 | CoWoS | ready | — |
 
 ## 📖 前付け（front_*・著者本人レビュー必須）（12 件）
 
@@ -472,7 +472,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
-| J-101 | 半導体製造プロセス | needs_review | — |
+| J-101 | 半導体製造プロセス | ready | — |
 | J-102 | チップレットと3D積層 | needs_review | — |
 | J-104 | ReAct | ready | — |
 | J-105 | コンテキスト管理 | ready | — |
@@ -483,7 +483,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-111 | 人間の認知ボトルネック | ready | — |
 | J-112 | 認知コストの定量化 | ready | — |
 | J-113 | 生成UIとagent-native設計 | ready | — |
-| J-114 | グッドハートの法則 | needs_review | — |
+| J-114 | グッドハートの法則 | ready | — |
 | J-24 | Encoder-Decoder | ready | — |
 | J-25 | Tokenizer・BPE | ready | — |
 | J-26 | 潜在空間 | ready | — |
@@ -500,11 +500,11 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-88 | MTP | ready | — |
 | J-89 | MoE ルーティング | ready | — |
 | J-94 | 並列化戦略 | ready | — |
-| J-95 | 半導体サプライチェーン | needs_review | — |
+| J-95 | 半導体サプライチェーン | ready | — |
 | J-96 | 半導体製造装置 | ready | — |
-| J-97 | 電子材料 | needs_review | — |
-| J-98 | 重要鉱物の地政学 | needs_review | — |
-| J-99 | CoWoS | needs_review | — |
+| J-97 | 電子材料 | ready | — |
+| J-98 | 重要鉱物の地政学 | ready | — |
+| J-99 | CoWoS | ready | — |
 
 ## 動線
 
