@@ -1,32 +1,41 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-05 09:28 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-05 09:46 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
-- **drafting**: 1 件
-- **needs_review**: 66 件
+- **drafting**: 8 件
+- **needs_review**: 73 件
 - **ready**: 373 件
 - **archived**: 7 件
-- **合計**: 447 件
+- **合計**: 461 件
 
 - **自己学習シェルフ（reader_level 6・刊行外）**: 33 件（誌面には出ません。`scripts/preview_gen.py` が除外）
 
-## ☆ 違反あり（最優先で直す）（0 件）
+## ☆ 違反あり（最優先で直す）（6 件）
 
-_なし_
+| ID | title | status | 概要 |
+| :-- | :-- | :-- | :-- |
+| G-51 | LLM-as-a-judge | drafting | ☆ `checked YYYY-MM-DD` 形式の記載が無い（時変情報を扱っているのに）; ⚠ `importance` が `[]` — A/B/C/D/E のいずれかを指定してください (A=; ⚠ `reader_level` が `[]` — `1`〜`6` の単一値か `2-3` 形式の範囲で |
+| G-62 | チャンク分割 | drafting | ☆ `checked YYYY-MM-DD` 形式の記載が無い（時変情報を扱っているのに）; ⚠ `importance` が `[]` — A/B/C/D/E のいずれかを指定してください (A=; ⚠ `reader_level` が `[]` — `1`〜`6` の単一値か `2-3` 形式の範囲で |
+| G-64 | リランキング | drafting | ☆ `checked YYYY-MM-DD` 形式の記載が無い（時変情報を扱っているのに）; ⚠ `importance` が `[]` — A/B/C/D/E のいずれかを指定してください (A=; ⚠ `reader_level` が `[]` — `1`〜`6` の単一値か `2-3` 形式の範囲で |
+| J-129 | コンテキスト腐敗 | drafting | ☆ `checked YYYY-MM-DD` 形式の記載が無い（時変情報を扱っているのに）; ⚠ 0 字（目安 80-180、-80 字不足）; ⚠ 12 字（目安 20-50、-8 字不足） |
+| J-131 | RLVR | drafting | ☆ `checked YYYY-MM-DD` 形式の記載が無い（時変情報を扱っているのに）; ⚠ `importance` が `[]` — A/B/C/D/E のいずれかを指定してください (A=; ⚠ `reader_level` が `[]` — `1`〜`6` の単一値か `2-3` 形式の範囲で |
+| J-134 | Human-in-the-loop | drafting | ☆ `checked YYYY-MM-DD` 形式の記載が無い（時変情報を扱っているのに）; ⚠ `importance` が `[]` — A/B/C/D/E のいずれかを指定してください (A=; ⚠ `reader_level` が `[]` — `1`〜`6` の単一値か `2-3` 形式の範囲で |
 
-## ⚠️ 警告あり（軽微超過 / 著者か entry-writer で手当て）（0 件）
+## ⚠️ 警告あり（軽微超過 / 著者か entry-writer で手当て）（1 件）
 
-_なし_
+| ID | title | status | 概要 |
+| :-- | :-- | :-- | :-- |
+| J-132 | A2A | drafting | ⚠ 298 字（目安 155-250、+48 字超過） |
 
 ## ✍️ 書きかけ（drafting・全パス済み・自動昇格漏れ）（0 件）
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（55 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（62 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -44,6 +53,10 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-25 | AI のメモリ機能 | needs_review | — |
 | G-26 | Computer Use | needs_review | — |
 | G-27 | プロンプトインジェクション | needs_review | — |
+| G-50 | Evals | needs_review | — |
+| G-60 | GraphRAG | needs_review | — |
+| G-61 | ナレッジグラフ | needs_review | — |
+| G-63 | ハイブリッド検索 | needs_review | — |
 | H-2 | ペアプログラミング | needs_review | — |
 | H-3 | バイブコーディングの流儀 | needs_review | — |
 | H-4 | コードレビュー | needs_review | — |
@@ -70,6 +83,9 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-124 | ISO/IEC 27001 | needs_review | — |
 | J-125 | 適用宣言書 | needs_review | — |
 | J-126 | 内部監査とマネジメントレビュー | needs_review | — |
+| J-128 | ワークフローとエージェント | needs_review | — |
+| J-130 | 推論時スケーリング | needs_review | — |
+| J-133 | オブザーバビリティ | needs_review | — |
 | J-22 | パラメータ数の単位 | needs_review | — |
 | J-32 | ノイマン型 | needs_review | — |
 | J-34 | マルチモーダル | needs_review | — |
