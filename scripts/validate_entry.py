@@ -89,6 +89,7 @@ FRONT_LAYOUTS = {
 BACK_LAYOUTS = {
     "back_matrix",
     "back_steps",
+    "back_checklist",
 }
 
 # 前付け・巻末をまとめた「例外レイアウト」集合

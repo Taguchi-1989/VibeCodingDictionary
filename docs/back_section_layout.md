@@ -23,7 +23,7 @@
 ## 3. 共通ルール
 
 - `id` は `^back_[a-z_]+$`。**letter ID は振りません**。本編の ID 体系（[docs/id_scheme.md](id_scheme.md)）は触らない、という原則を守るためです
-- `page_layout` は `back_*` のいずれか。現在は `back_matrix` の 1 値のみ
+- `page_layout` は `back_*` のいずれか。現在は `back_matrix` / `back_steps` / `back_checklist` の 3 値
 - `category: common` / `subtype: appendix`
 - **著者記入欄（非エンジニアのつまずき・私のコメント）は置きません**。著者キュー（[scripts/update_author_fill_queue.py](../scripts/update_author_fill_queue.py)）の対象外です
 - 本文は「表の読み方」に徹します。事実そのものは本編の各エントリ側に持たせ、付録は重複させません
@@ -71,3 +71,22 @@
 1. `content/backmatter/` に md を置く（連番プレフィクス + slug）
 2. 新しいレイアウトが要るなら、`docs/entry_schema.yaml` の `page_layout` enum と末尾の `back_layouts:` 節、`scripts/validate_entry.py` の `BACK_LAYOUTS` の 3 か所を揃えて足す
 3. 本節の「現在の割り当て」表に 1 行足す
+
+### 4-3. back_checklist — 既定の様式を点検する 1 枚（2026-09-05 追加）
+
+| | 内容 |
+| :-- | :-- |
+| 左ページ | 項目表（縦 9 行 × 横 3 列：**項目（原語）／中身／書かれ方の例**）。既定の様式の項目を、順番どおりに全部並べる |
+| 右ページ | 読む順を示す図 ＋ 読み方の本文 200〜300 字 |
+| figure_type | 任意 |
+| related_terms | 任意。代わりに「本編への案内」節で ID を並べる |
+
+**3 列目の「書かれ方の例」は省略しないでください。** 項目名と説明だけでは、実際に何が書いてあるのか読者が想像できないためです。項目名には**原語（英語）を併記**します（実物は英語であることが多く、日本語だけだと突き合わせられません）。
+
+**back_matrix の「5〜6 行に収める」制限は当てません。** back_matrix が「見比べる」ページなのに対し、back_checklist は**読者が実物と突き合わせる目次**なので、抜けがあると使えなくなるためです。その代わり、**強調する行を 3 つまでに絞る**ことで一覧性を保ちます。
+
+現在の割り当て:
+
+| ID | ファイル | 中身 |
+| :-- | :-- | :-- |
+| `back_model_card_items` | [content/backmatter/04_model_card_items.md](../content/backmatter/04_model_card_items.md) | モデルカードの 9 項目と、読む順（意図された用途 → 注意と推奨 → 定量分析） |
