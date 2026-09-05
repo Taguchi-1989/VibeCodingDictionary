@@ -288,13 +288,13 @@ G-46,,ナーフ（モデルの劣化体感）,term_llm,ops,ready,,content/entrie
 G-47,,Auto-compact,term_llm,ops,ready,Claude Code の自動圧縮（文脈管理）,content/entries/term_llm/G-47_auto_compact[済].md
 G-48,,Structured Outputs,term_llm,control,ready,台帳登録済み・未生成だった分を本書き（2026-08-10）,content/entries/term_llm/G-48_structured_outputs[済].md
 G-49,,AI エージェント,term_llm,ops,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-49_ai_agent[済].md
-G-50,,Evals,term_llm,evaluation,skeleton,Stage11。自分の仕事に合わせた評価をつくる。E章のベンチマークとの違いが軸,content/entries/term_llm/G-50_evals.md
-G-51,,LLM-as-a-judge,term_llm,evaluation,skeleton,Stage11。AIの出力をAIが採点する。ルーブリックと人ラベルとの一致率で審判を検証,content/entries/term_llm/G-51_llm_as_a_judge.md
-G-60,,GraphRAG,term_llm,retrieval,skeleton,Stage11。MS版はメンテナンスモード、考え方は後続へ。全体を見渡す質問に効く,content/entries/term_llm/G-60_graphrag.md
-G-61,,ナレッジグラフ,term_llm,retrieval,needs_review,Stage11。知識の構造のグラフ。J-118（処理の配線のグラフ）と書き分ける,content/entries/term_llm/G-61_knowledge_graph.md
-G-62,,チャンク分割,term_llm,retrieval,skeleton,Stage11。RAGの前処理。切り方が回答品質をほぼ決める,content/entries/term_llm/G-62_chunking.md
-G-63,,ハイブリッド検索,term_llm,retrieval,skeleton,Stage11。BM25＋ベクトル、RRFで合成。型番・エラーコードはベクトルでは拾えない,content/entries/term_llm/G-63_hybrid_search.md
-G-64,,リランキング,term_llm,retrieval,skeleton,Stage11。広く拾って並べ直して少し渡す。cross-encoderで上位のみ,content/entries/term_llm/G-64_reranking.md
+G-50,,Evals,term_llm,evaluation,needs_review,Stage11。自分の仕事に合わせた評価をつくる。E章のベンチマークとの違いが軸,content/entries/term_llm/G-50_evals[人書].md
+G-51,,LLM-as-a-judge,term_llm,evaluation,needs_review,Stage11。AIの出力をAIが採点する。ルーブリックと人ラベルとの一致率で審判を検証,content/entries/term_llm/G-51_llm_as_a_judge[人書].md
+G-60,,GraphRAG,term_llm,retrieval,needs_review,Stage11。MS版はメンテナンスモード、考え方は後続へ。全体を見渡す質問に効く,content/entries/term_llm/G-60_graphrag[人書].md
+G-61,,ナレッジグラフ,term_llm,retrieval,needs_review,Stage11。知識の構造のグラフ。J-118（処理の配線のグラフ）と書き分ける,content/entries/term_llm/G-61_knowledge_graph[人書].md
+G-62,,チャンク分割,term_llm,retrieval,needs_review,Stage11。RAGの前処理。切り方が回答品質をほぼ決める,content/entries/term_llm/G-62_chunking[人書].md
+G-63,,ハイブリッド検索,term_llm,retrieval,needs_review,Stage11。BM25＋ベクトル、RRFで合成。型番・エラーコードはベクトルでは拾えない,content/entries/term_llm/G-63_hybrid_search[人書].md
+G-64,,リランキング,term_llm,retrieval,needs_review,Stage11。広く拾って並べ直して少し渡す。cross-encoderで上位のみ,content/entries/term_llm/G-64_reranking[人書].md
 H-1,,TDD,workflow,methodology,ready,,content/entries/workflow/H-1_tdd[済].md
 H-2,,ペアプログラミング,workflow,methodology,needs_review,Stage 7 で本書き（2026-08-23）,content/entries/workflow/H-2_pair_programming[人書].md
 H-3,,バイブコーディングの流儀,workflow,methodology,needs_review,v2テンプレ本書き済（2026-08-23、entry-writer）,content/entries/workflow/H-3_vibe_coding_style[人書].md
@@ -444,10 +444,10 @@ J-124,,ISO/IEC 27001,term_general,ethics_law,needs_review,Stage 9 ブリーフ�
 J-125,,適用宣言書,term_general,ethics_law,needs_review,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。SoA。仕組みは 27001 と同じ、中身の管理策（42001 は 38）だけ違う。ファイル名の状態マーカーは scripts/apply_status_markers.py の実行待ち,content/entries/term_general/J-125_statement_of_applicability[人書].md
 J-126,,内部監査とマネジメントレビュー,term_general,ethics_law,needs_review,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。箇条 9 の要求事項。AI 版は見る対象に影響評価が加わる,content/entries/term_general/J-126_internal_audit_review[人書].md
 J-127,,決定論と非決定論,term_general,ethics_law,ready,Stage 10 ブリーフ（ledgers/stage10_briefs_2026-09.md）で追加。温度 0 でも非決定的という実測と Compiled AI の設計論を扱う。validator 自動昇格済み。ファイル名の [人書] マーカーは scripts/apply_status_markers.py の実行待ち,content/entries/term_general/J-127_determinism[済].md
-J-128,,ワークフローとエージェント,term_general,agent_design,needs_review,Stage11。そもそも自律させるかの分岐。Anthropic Building Effective Agents 由来,content/entries/term_general/J-128_workflow_vs_agent.md
-J-129,,コンテキスト腐敗,term_general,agent_loop,skeleton,Stage11。context rot / lost in the middle。台帳の敵②の実体,content/entries/term_general/J-129_context_rot.md
-J-130,,推論時スケーリング,term_general,ml_basic,skeleton,Stage11。答えるときに計算を使って伸ばす。G-14/G-9の裏側の原理,content/entries/term_general/J-130_inference_time_scaling.md
-J-131,,RLVR,term_general,ml_basic,skeleton,Stage11。検証可能な報酬で鍛える強化学習。J-57 RLHFとの教師の違いが軸,content/entries/term_general/J-131_rlvr.md
-J-132,,A2A,term_general,agent_protocol,skeleton,Stage11。エージェント間プロトコル。MCPと競合ではなく同じ財団の下に並ぶ,content/entries/term_general/J-132_a2a.md
-J-133,,オブザーバビリティ,term_general,agent_ops,skeleton,Stage11。OpenTelemetry GenAI規約に収束、ただしexperimental,content/entries/term_general/J-133_observability.md
-J-134,,Human-in-the-loop,term_general,agent_ops,skeleton,Stage11。承認ゲート3段階。自動化バイアスの注意込み,content/entries/term_general/J-134_human_in_the_loop.md
+J-128,,ワークフローとエージェント,term_general,agent_design,needs_review,Stage11。そもそも自律させるかの分岐。Anthropic Building Effective Agents 由来,content/entries/term_general/J-128_workflow_vs_agent[人書].md
+J-129,,コンテキスト腐敗,term_general,agent_loop,needs_review,Stage11。context rot / lost in the middle。台帳の敵②の実体,content/entries/term_general/J-129_context_rot[人書].md
+J-130,,推論時スケーリング,term_general,ml_basic,needs_review,Stage11。答えるときに計算を使って伸ばす。G-14/G-9の裏側の原理,content/entries/term_general/J-130_inference_time_scaling[人書].md
+J-131,,RLVR,term_general,ml_basic,needs_review,Stage11。検証可能な報酬で鍛える強化学習。J-57 RLHFとの教師の違いが軸,content/entries/term_general/J-131_rlvr[人書].md
+J-132,,A2A,term_general,agent_protocol,needs_review,Stage11。エージェント間プロトコル。MCPと競合ではなく同じ財団の下に並ぶ,content/entries/term_general/J-132_a2a[人書].md
+J-133,,オブザーバビリティ,term_general,agent_ops,needs_review,Stage11。OpenTelemetry GenAI規約に収束、ただしexperimental,content/entries/term_general/J-133_observability[人書].md
+J-134,,Human-in-the-loop,term_general,agent_ops,needs_review,Stage11。承認ゲート3段階。自動化バイアスの注意込み,content/entries/term_general/J-134_human_in_the_loop[人書].md
