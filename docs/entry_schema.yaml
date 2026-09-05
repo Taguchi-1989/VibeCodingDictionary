@@ -521,7 +521,7 @@ back_layouts:
     - name: back_checklist
       assigned_ids: ["back_model_card_items"]
       related_terms: optional
-      char_hint_left:  "項目表（縦 9 行 × 横 2 列）"
+      char_hint_left:  "項目表（縦 9 行 × 横 3 列：項目（原語）／中身／書かれ方の例）"
       char_hint_right: "読む順の指示 + 本文 200-300"
       note: "既定の様式を項目ごとに並べる巻末ページ。比較ではなく点検が目的なので、back_matrix の 5〜6 行制限は適用しない"
 
