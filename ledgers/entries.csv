@@ -167,7 +167,7 @@ F-14,,three.js,term_tool,framework,ready,3Dライブラリ,content/entries/term_
 F-15,,shadcn/ui,term_tool,framework,ready,コピペ配布型 React コンポーネント集,content/entries/term_tool/F-15_shadcn_ui[済].md
 F-16,,Tailwind CSS,term_tool,framework,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_tool/F-16_tailwind_css[済].md
 F-17,,Astro,term_tool,framework,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_tool/F-17_astro[済].md
-F-18,,フレームワーク／ライブラリ,term_tool,framework,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-18_framework_library[人書].md
+F-18,,フレームワーク／ライブラリ,term_tool,framework,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-18_framework_library[済].md
 F-20,303,ESLint,term_tool,linter,ready,旧3桁ID連携・v2テンプレで書き直し済（2026-04-29）,content/entries/term_tool/F-20_eslint[済].md
 F-21,,Prettier,term_tool,formatter,ready,,content/entries/term_tool/F-21_prettier[済].md
 F-30,,VS Code,term_tool,editor,ready,,content/entries/term_tool/F-30_vs_code[済].md
@@ -202,7 +202,7 @@ F-80,,Node.js,term_tool,runtime,ready,,content/entries/term_tool/F-80_node_js[�
 F-81,,bash,term_tool,shell,ready,,content/entries/term_tool/F-81_bash[済].md
 F-82,,WSL,term_tool,shell,ready,,content/entries/term_tool/F-82_wsl[済].md
 F-83,,PowerShell,term_tool,shell,ready,,content/entries/term_tool/F-83_powershell[済].md
-F-84,,Ghostty,term_tool,terminal,needs_review,,content/entries/term_tool/F-84_ghostty[人書].md
+F-84,,Ghostty,term_tool,terminal,ready,,content/entries/term_tool/F-84_ghostty[済].md
 F-85,,SuperClaude Framework,term_tool,framework,ready,Claude Code 拡張 OSS（Anthropic 非公式）v2テンプレ書き起こし済（2026-04-30）,content/entries/term_tool/F-85_superclaude_framework[済].md
 F-86,,ollama,term_tool,runtime,ready,ローカルLLM,content/entries/term_tool/F-86_ollama[済].md
 F-87,,sudo,term_tool,shell,ready,Substitute User do の略。2026-04-30 entry-writer で本書き,content/entries/term_tool/F-87_sudo[済].md
@@ -408,7 +408,7 @@ J-98,,重要鉱物の地政学,term_general,hardware,ready,Lv6自己学習シェ
 J-99,,CoWoS,term_general,hardware,ready,Lv6自己学習シェルフ（刊行外）。先端パッケージ,content/entries/term_general/J-99_cowos[済].md
 J-100,,識字（リテラシー）,term_general,concept,ready,タイトルを驚き屋から識字（リテラシー）に変更（2026-04-30）,content/entries/term_general/J-100_literacy[済].md
 J-101,,半導体製造プロセス,term_general,hardware,ready,Lv6自己学習シェルフ（刊行外）。微細化・FinFET→GAA・リーク電流・EUV,content/entries/term_general/J-101_semiconductor_process[済].md
-J-102,,チップレットと3D積層,term_general,hardware,needs_review,Lv6自己学習シェルフ（刊行外）。More than Moore・V-Cache・CFET,content/entries/term_general/J-102_chiplet_3d_stacking[人書].md
+J-102,,チップレットと3D積層,term_general,hardware,ready,Lv6自己学習シェルフ（刊行外）。More than Moore・V-Cache・CFET,content/entries/term_general/J-102_chiplet_3d_stacking[済].md
 J-103,,ループエンジニアリング,term_general,agent_loop,ready,2026-09-02 reader_level 6→5 で刊行スコープへ昇格。3工学の俯瞰・進化史ReAct→Ralph→/goal,content/entries/term_general/J-103_loop_engineering[済].md
 J-104,,ReAct,term_general,agent_loop,ready,Lv6自己学習シェルフ（刊行外）。エージェントループの原型Thought-Action-Observation,content/entries/term_general/J-104_react_agent_loop[済].md
 J-105,,コンテキスト管理,term_general,agent_loop,ready,Lv6自己学習シェルフ（刊行外）。圧縮・メモリ・退避。G-11の深掘り版,content/entries/term_general/J-105_context_management[済].md

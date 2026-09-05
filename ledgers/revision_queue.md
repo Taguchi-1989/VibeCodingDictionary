@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-05 12:59 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-05 13:17 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 70 件
-- **ready**: 356 件
+- **needs_review**: 67 件
+- **ready**: 359 件
 - **archived**: 7 件
 - **合計**: 434 件
 
@@ -26,7 +26,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（59 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（56 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -49,11 +49,9 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | D-61 | AlphaFold | needs_review | — |
 | E-28 | ARC-AGI | needs_review | — |
 | F-150 | MIT ライセンス | needs_review | — |
-| F-18 | フレームワーク／ライブラリ | needs_review | — |
 | F-34 | VS Code 拡張機能 | needs_review | — |
 | F-47 | フロントエンド／バックエンド | needs_review | — |
 | F-57 | リポジトリ | needs_review | — |
-| F-84 | Ghostty | needs_review | — |
 | G-24 | Temperature | needs_review | — |
 | G-25 | AI のメモリ機能 | needs_review | — |
 | G-26 | Computer Use | needs_review | — |
@@ -73,7 +71,6 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | H-64 | DeepSeek ショック | needs_review | — |
 | I-80 | 自作 MCP のテンプレ | needs_review | — |
 | I-81 | MCP の登録・設定 | needs_review | — |
-| J-102 | チップレットと3D積層 | needs_review | — |
 | J-115 | NPU・AI PC | needs_review | — |
 | J-116 | TPU | needs_review | — |
 | J-117 | データセンターと電力 | needs_review | — |
@@ -90,7 +87,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-57 | RLHF・アラインメント | needs_review | — |
 | J-62 | チューリングテスト | needs_review | — |
 
-## ✅ 完成（ready・全パス）（356 件）
+## ✅ 完成（ready・全パス）（359 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -249,6 +246,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-170 | EC2 | ready | — |
 | F-171 | S3 | ready | — |
 | F-172 | IAM | ready | — |
+| F-18 | フレームワーク／ライブラリ | ready | — |
 | F-180 | OpenGL | ready | — |
 | F-181 | WebGL | ready | — |
 | F-190 | サブルーチン | ready | — |
@@ -296,6 +294,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-81 | bash | ready | — |
 | F-82 | WSL | ready | — |
 | F-83 | PowerShell | ready | — |
+| F-84 | Ghostty | ready | — |
 | F-85 | SuperClaude Framework | ready | — |
 | F-86 | ollama | ready | — |
 | F-87 | sudo | ready | — |
@@ -375,6 +374,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-10 | Machine Learning | ready | — |
 | J-100 | リテラシー | ready | — |
 | J-101 | 半導体製造プロセス | ready | — |
+| J-102 | チップレットと3D積層 | ready | — |
 | J-103 | ループエンジニアリング | ready | — |
 | J-104 | ReAct | ready | — |
 | J-105 | コンテキスト管理 | ready | — |
@@ -473,7 +473,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
 | J-101 | 半導体製造プロセス | ready | — |
-| J-102 | チップレットと3D積層 | needs_review | — |
+| J-102 | チップレットと3D積層 | ready | — |
 | J-104 | ReAct | ready | — |
 | J-105 | コンテキスト管理 | ready | — |
 | J-107 | 自律ループとガードレール | ready | — |
