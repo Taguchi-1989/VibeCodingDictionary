@@ -19,7 +19,7 @@ related_terms:
   - RAG
   - コンテキスト腐敗
   - チャンク分割
-status: needs_review
+status: ready
 ---
 
 # リランキング
@@ -101,19 +101,19 @@ Cohere Rerank, BGE Reranker
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- 上位 100 件を並べ直す、という仕組み自体を知りませんでした
+- なぜ一度の検索で決められないのか、必要性が分かりませんでした
+- 並べ直した根拠が見えず、これで正しいのか確かめられません
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: 書類選考と面接、という分け方で腑に落ちました
+- 👍 良い点: 話題が近いと、答えになっているかを分けられます
+- 👎 ダメな点: 判定が情緒的に見え、モデル頼みな感じが残ります
+- 👥 誰向けか: 検索の精度で困っている人向けです
 <!-- user-input:end key="my_comment" -->
 
 

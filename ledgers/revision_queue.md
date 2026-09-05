@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-05 10:49 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-05 10:59 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 70 件
-- **ready**: 383 件
+- **needs_review**: 68 件
+- **ready**: 385 件
 - **archived**: 7 件
 - **合計**: 461 件
 
@@ -26,7 +26,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（59 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（57 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -46,7 +46,6 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-27 | プロンプトインジェクション | needs_review | — |
 | G-62 | チャンク分割 | needs_review | — |
 | G-63 | ハイブリッド検索 | needs_review | — |
-| G-64 | リランキング | needs_review | — |
 | H-2 | ペアプログラミング | needs_review | — |
 | H-3 | バイブコーディングの流儀 | needs_review | — |
 | H-4 | コードレビュー | needs_review | — |
@@ -73,7 +72,6 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-124 | ISO/IEC 27001 | needs_review | — |
 | J-125 | 適用宣言書 | needs_review | — |
 | J-126 | 内部監査とマネジメントレビュー | needs_review | — |
-| J-131 | RLVR | needs_review | — |
 | J-22 | パラメータ数の単位 | needs_review | — |
 | J-32 | ノイマン型 | needs_review | — |
 | J-34 | マルチモーダル | needs_review | — |
@@ -90,7 +88,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-62 | チューリングテスト | needs_review | — |
 | J-7 | VLA | needs_review | — |
 
-## ✅ 完成（ready・全パス）（383 件）
+## ✅ 完成（ready・全パス）（385 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -359,6 +357,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-6 | One-shot | ready | — |
 | G-60 | GraphRAG | ready | — |
 | G-61 | ナレッジグラフ | ready | — |
+| G-64 | リランキング | ready | — |
 | G-7 | 指示追従性 | ready | — |
 | G-8 | 決定論的／非決定論的 | ready | — |
 | G-9 | effort レベル | ready | — |
@@ -414,6 +413,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-129 | コンテキスト腐敗 | ready | — |
 | J-13 | Transformer | ready | — |
 | J-130 | 推論時スケーリング | ready | — |
+| J-131 | RLVR | ready | — |
 | J-132 | A2A | ready | — |
 | J-133 | オブザーバビリティ | ready | — |
 | J-134 | Human-in-the-loop | ready | — |

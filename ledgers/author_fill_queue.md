@@ -1,14 +1,14 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-09-05 10:49 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-09-05 10:59 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
 ## 内訳
 
-- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 383 件
+- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 385 件
 - **途中**（書きかけで止まっている）: 0 件
-- **手つかず**（両方まるごと空）: 59 件
+- **手つかず**（両方まるごと空）: 57 件
 - **合計**: 442 件
 
 ---
@@ -19,9 +19,9 @@ _なし_
 
 ---
 
-## ⬜ 手つかず（両方まるごと空）（59 件）
+## ⬜ 手つかず（両方まるごと空）（57 件）
 
-letter 別: D 5件 / E 1件 / F 4件 / G 7件 / H 13件 / I 2件 / J 27件
+letter 別: D 5件 / E 1件 / F 4件 / G 6件 / H 13件 / I 2件 / J 26件
 
 | ID | title | status | reader_level | path |
 | :-- | :-- | :-- | :-- | :-- |
@@ -41,7 +41,6 @@ letter 別: D 5件 / E 1件 / F 4件 / G 7件 / H 13件 / I 2件 / J 27件
 | G-27 | プロンプトインジェクション | needs_review | 2-3 | `content/entries/term_llm/G-27_prompt_injection[人書].md` |
 | G-62 | チャンク分割 | needs_review | 3 | `content/entries/term_llm/G-62_chunking[人書].md` |
 | G-63 | ハイブリッド検索 | needs_review | 3-4 | `content/entries/term_llm/G-63_hybrid_search[人書].md` |
-| G-64 | リランキング | needs_review | 4 | `content/entries/term_llm/G-64_reranking[人書].md` |
 | H-2 | ペアプログラミング | needs_review | 1-2 | `content/entries/workflow/H-2_pair_programming[人書].md` |
 | H-3 | バイブコーディングの流儀 | needs_review | 1-2 | `content/entries/workflow/H-3_vibe_coding_style[人書].md` |
 | H-4 | コードレビュー | needs_review | 2-3 | `content/entries/workflow/H-4_code_review[人書].md` |
@@ -83,7 +82,6 @@ letter 別: D 5件 / E 1件 / F 4件 / G 7件 / H 13件 / I 2件 / J 27件
 | J-124 | ISO/IEC 27001 | needs_review | 3-4 | `content/entries/term_general/J-124_iso_iec_27001[人書].md` |
 | J-125 | 適用宣言書 | needs_review | 3-4 | `content/entries/term_general/J-125_statement_of_applicability[人書].md` |
 | J-126 | 内部監査とマネジメントレビュー | needs_review | 3-4 | `content/entries/term_general/J-126_internal_audit_review[人書].md` |
-| J-131 | RLVR | needs_review | 5 | `content/entries/term_general/J-131_rlvr[人書].md` |
 
 ---
 
