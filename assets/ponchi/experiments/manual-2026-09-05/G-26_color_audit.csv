@@ -1,0 +1,2 @@
+batch_id,entry_id,title,candidate_file,audited_file,audit_source_type,candidate_status,source_type,size,inspected_pixels,disallowed_pixels,disallowed_ratio,disallowed_bbox,dominant_disallowed,status,notes
+manual-2026-09-05,G-26_computer-use_v1_1254x627,,assets/ponchi/experiments/manual-2026-09-05/G-26_computer-use_v1_1254x627.png,assets/ponchi/experiments/manual-2026-09-05/G-26_computer-use_v1_1254x627.png,direct_image,,,1254x627,786258,7658,0.009740,"64,18,969,596",blue:4821;dark:2769;neutral:58;cyan_teal:10,pass,

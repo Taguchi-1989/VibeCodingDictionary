@@ -1,0 +1,2 @@
+file,entry_id,size,size_ok,bbox_coverage,density_ok,clearspace_required,clearspace_ink_ratio,clearspace_ok,status
+assets\ponchi\experiments\manual-2026-09-05\G-27_prompt-injection_v1_1254x627.png,G-27_prompt-injection_v1_1254x627,1254x627,true,0.756,true,true,0.0000,true,pass

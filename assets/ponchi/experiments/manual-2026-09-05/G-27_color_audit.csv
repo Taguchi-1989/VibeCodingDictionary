@@ -1,0 +1,2 @@
+batch_id,entry_id,title,candidate_file,audited_file,audit_source_type,candidate_status,source_type,size,inspected_pixels,disallowed_pixels,disallowed_ratio,disallowed_bbox,dominant_disallowed,status,notes
+manual-2026-09-05,G-27_prompt-injection_v1_1254x627,,assets/ponchi/experiments/manual-2026-09-05/G-27_prompt-injection_v1_1254x627.png,assets/ponchi/experiments/manual-2026-09-05/G-27_prompt-injection_v1_1254x627.png,direct_image,,,1254x627,786258,7172,0.009122,"21,46,1188,492",blue:4492;dark:2074;purple:445;neutral:157;cyan_teal:4,pass,

@@ -1,0 +1,2 @@
+file,entry_id,size,size_ok,bbox_coverage,density_ok,clearspace_required,clearspace_ink_ratio,clearspace_ok,status
+assets\ponchi\experiments\manual-2026-09-05\F-214_api-key_v1_1254x627_palette.png,F-214_api-key_v1_1254x627_palette,1254x627,true,0.649,true,true,0.0751,true,pass
