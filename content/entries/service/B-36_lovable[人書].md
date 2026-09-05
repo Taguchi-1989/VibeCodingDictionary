@@ -18,7 +18,7 @@ related_terms:
   - v0
   - React
   - Prompt Engineering
-status: needs_review
+status: ready
 ---
 
 # Lovable
@@ -104,9 +104,7 @@ Supabase、Bolt.new、v0
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
--
--
--
+- 触っていないので、どこでつまずくのかは分かりません。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->

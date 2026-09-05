@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-05 05:37 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-05 05:48 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 65 件
-- **ready**: 361 件
+- **needs_review**: 63 件
+- **ready**: 363 件
 - **archived**: 7 件
 - **合計**: 434 件
 
@@ -26,12 +26,10 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（54 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（52 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
-| B-36 | Lovable | needs_review | — |
-| B-37 | Replit | needs_review | — |
 | B-38 | Manus | needs_review | — |
 | B-39 | Google AI Studio | needs_review | — |
 | B-42 | Discord | needs_review | — |
@@ -85,7 +83,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-57 | RLHF・アラインメント | needs_review | — |
 | J-62 | チューリングテスト | needs_review | — |
 
-## ✅ 完成（ready・全パス）（361 件）
+## ✅ 完成（ready・全パス）（363 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -118,6 +116,8 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | B-33 | Canva | ready | — |
 | B-34 | NotebookLM | ready | — |
 | B-35 | Gemini CLI | ready | — |
+| B-36 | Lovable | ready | — |
+| B-37 | Replit | ready | — |
 | B-4 | Cursor | ready | — |
 | B-40 | Reddit | ready | — |
 | B-41 | arXiv | ready | — |
