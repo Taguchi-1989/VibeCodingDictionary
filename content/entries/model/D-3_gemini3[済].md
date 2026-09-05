@@ -105,7 +105,8 @@ Deep Think、Gemini 2.5 系、Gemini 3.1 系。
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- Pro と Flash のどちらを使えばいいのかが分かりにくいところでつまずきました。
+- NotebookLM との連携や、どのバージョンを使っているのかが分かりにくいところでつまずきました。
+- Flash と Pro のどちらが既定なのかが分からず、Pro で使いたいのに Flash だった、ということがあります。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->

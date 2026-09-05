@@ -102,7 +102,7 @@ API キー、Vertex AI、Gemini。
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- どれが安定して使えるモデルなのかが分かりにくいところでつまずきました。
+- 最初に触るまでの課金体系のところで、少しつまずきました。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->

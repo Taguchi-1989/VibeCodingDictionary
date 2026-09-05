@@ -108,7 +108,7 @@ RAG、AI エージェント、API
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 名前はよく聞くのに、今から自分で触る意味があるのかが分かりませんでした。
+- まだ使っていないので、どこでつまずくのかは分かりません。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->

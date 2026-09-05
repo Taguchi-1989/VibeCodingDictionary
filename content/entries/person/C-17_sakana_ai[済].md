@@ -102,7 +102,7 @@ Sakana AI が「生物の進化・群れ」からどんな発想でモデル開�
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 評価の高さの割に、何がすごいのかが自分には掴めませんでした。
+- 使っていないので、どこでつまずくのかは分かりません。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->

@@ -107,7 +107,7 @@ AI大学、にゃんた、まさお、arXiv
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 解説を追うのに、前提として知っておくべき言葉が多いところでつまずきました。
+- 出てくる言葉そのものが難しく、解説を追いかけるのに苦労します。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
