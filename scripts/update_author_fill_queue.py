@@ -15,6 +15,10 @@ Usage:
       「第一印象だけ書いて止まっている」ような書きかけを拾えなかった。ここを分ける
     - 「途中」＝どちらかの欄に手が入っているのに、4 ラベルのどれかが空／つまずきが空
     - archived / skeleton / sample はスキップ
+    - 前付けレイアウト（page_layout: front_*）もスキップ。A-1〜A-11 は誌面に著者欄を
+      置かない仕様（各 md の冒頭に明記、validate_entry.py も front_* を別ルートで検証）で、
+      user-input マーカー自体が無い。ここに並べると「著者が 11 件書き残している」ように
+      見えてしまうため、対象から外す
 """
 
 import argparse
@@ -75,6 +79,9 @@ def collect() -> list[dict]:
         fm, body = parse_frontmatter(text)
         status = str(fm.get("status", "")).strip()
         if status in SKIP_STATUSES:
+            continue
+        # 前付け（front_*）・巻末付録（back_*）は著者欄を持たないレイアウトなので数えない
+        if str(fm.get("page_layout", "")).strip().startswith(("front_", "back_")):
             continue
         filled = comment_filled(body)
         sn = stumble_count(body)

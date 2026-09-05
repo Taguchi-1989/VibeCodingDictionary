@@ -20,7 +20,7 @@ related_terms:
   - API
   - LLM
   - MCP
-status: needs_review
+status: ready
 ---
 
 # n8n・Dify
@@ -108,19 +108,17 @@ RAG、AI エージェント、API
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
--
--
--
+- まだ使っていないので、どこでつまずくのかは分かりません。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象:
-- 👍 良い点:
-- 👎 ダメな点:
-- 👥 誰向けか:
+- 🙂 第一印象: 名前をよく聞くな、というところでした。
+- 👍 良い点: LLM の黎明期にグラフエンジニアリングの発想を持っていたのは、先見の明があったと思います。
+- 👎 ダメな点: 少し早すぎました。GUI を強化していく方向は、Claude Code や Codex から扱うほうが強いので意味を感じません。これで組んだ人がすぐ陳腐化してしまうのも気の毒です。
+- 👥 誰向けか: 業務をつなぐツールとして使う人向けですが、今は時代遅れになりつつあると感じます。
 <!-- user-input:end key="my_comment" -->
 
 

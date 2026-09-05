@@ -44,15 +44,15 @@ B-31,,Excalidraw,service,saas_design,ready,v2テンプレ書き起こし済（20
 B-32,,Figma,service,saas_design,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-32_figma[済].md
 B-33,,Canva,service,saas_design,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-33_canva[済].md
 B-34,,NotebookLM,service,ai_assistant,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-34_notebooklm[済].md
-B-35,,Gemini CLI,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-35_gemini_cli[人書].md
-B-36,,Lovable,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-36_lovable[人書].md
-B-37,,Replit,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-37_replit[人書].md
-B-38,,Manus,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-38_manus[人書].md
-B-39,,Google AI Studio,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-39_google_ai_studio[人書].md
+B-35,,Gemini CLI,service,ai_assistant,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-35_gemini_cli[済].md
+B-36,,Lovable,service,ai_assistant,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-36_lovable[済].md
+B-37,,Replit,service,ai_assistant,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-37_replit[済].md
+B-38,,Manus,service,ai_assistant,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-38_manus[済].md
+B-39,,Google AI Studio,service,ai_assistant,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-39_google_ai_studio[済].md
 B-40,,Reddit,service,info_source,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-40_reddit[済].md
 B-41,,arXiv,service,info_source,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-41_arxiv[済].md
-B-42,,Discord,service,info_source,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-42_discord[人書].md
-B-43,,n8n・Dify,service,automation,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-43_n8n_dify[人書].md
+B-42,,Discord,service,info_source,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-42_discord[済].md
+B-43,,n8n・Dify,service,automation,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-43_n8n_dify[済].md
 B-50,,Claude の料金プラン,service,pricing,ready,時変情報 evaluation_date:2026-04-29,content/entries/service/B-50_claude_pricing[済].md
 B-51,,ChatGPT の料金プラン,service,pricing,ready,時変情報 evaluation_date:2026-04-29,content/entries/service/B-51_chatgpt_pricing[済].md
 B-52,,Gemini の料金プラン,service,pricing,ready,時変情報 evaluation_date:2026-04-29,content/entries/service/B-52_gemini_pricing[済].md
@@ -73,8 +73,8 @@ C-12,,TSMC,person_org,company,ready,半導体ファウンドリ v2テンプレ�
 C-13,,Groq,person_org,company,ready,AI推論チップ LPU v2テンプレ書き起こし済（2026-04-30）,content/entries/person/C-13_groq[済].md
 C-14,,AMD,person_org,company,ready,半導体,content/entries/person/C-14_amd[済].md
 C-15,,Intel,person_org,company,ready,半導体IDM。EUV採用遅れ→18A復活途上,content/entries/person/C-15_intel[済].md
-C-16,,DeepSeek,person_org,company,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/person/C-16_deepseek[人書].md
-C-17,,Sakana AI,person_org,company,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/person/C-17_sakana_ai[人書].md
+C-16,,DeepSeek,person_org,company,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/person/C-16_deepseek[済].md
+C-17,,Sakana AI,person_org,company,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/person/C-17_sakana_ai[済].md
 C-50,,Sam Altman,person_org,person,ready,,content/entries/person/C-50_sam_altman[済].md
 C-51,,Dario Amodei,person_org,person,ready,,content/entries/person/C-51_dario_amodei[済].md
 C-52,,Demis Hassabis,person_org,person,ready,,content/entries/person/C-52_demis_hassabis[済].md
@@ -89,10 +89,10 @@ C-60,,Ray Kurzweil,person_org,person,ready,,content/entries/person/C-60_ray_kurz
 C-80,,AI大学,person_org,youtuber,ready,,content/entries/person/C-80_ai_daigaku[済].md
 C-81,,にゃんた,person_org,youtuber,ready,v2テンプレ書き起こし済（2026-04-30）。旧スケルトン C-81.md は archived,content/entries/person/C-81_nyanta[済].md
 C-82,,まさお,person_org,youtuber,ready,,content/entries/person/C-82_masao[済].md
-C-83,,AI時代の羅針盤,person_org,youtuber,needs_review,台帳の「AI の羅針盤」から正式名称に修正（2026-08-23）,content/entries/person/C-83_ai_compass[人書].md
+C-83,,AI時代の羅針盤,person_org,youtuber,ready,台帳の「AI の羅針盤」から正式名称に修正（2026-08-23）,content/entries/person/C-83_ai_compass[済].md
 D-1,,Gemini 2 系,model,google,ready,v2テンプレで D-1_gemini2.md に書き起こし済（2026-04-29）。旧D-1.md は archived,content/entries/model/D-1_gemini2[済].md
 D-2,201,Gemini 2.5 系,model,google,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-2_gemini25[済].md
-D-3,,Gemini 3 系,model,google,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-3_gemini3[人書].md
+D-3,,Gemini 3 系,model,google,ready,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-3_gemini3[済].md
 D-4,,Gemini 3.1 系,model,google,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-4_gemini_3_1[済].md
 D-10,,Claude 3 系,model,anthropic,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-10_claude3[人書].md
 D-11,,Claude 3.5 系,model,anthropic,ready,,content/entries/model/D-11_claude35[済].md
@@ -335,6 +335,8 @@ J-2,,強い AI／弱い AI,term_general,ai_concept,ready,v2テンプレ書き起
 J-3,,Singularity,term_general,ai_concept,ready,シンギュラリティ,content/entries/term_general/J-3_singularity[済].md
 J-4,,ASI,term_general,ai_concept,ready,,content/entries/term_general/J-4_asi[済].md
 J-5,,世界モデル,term_general,ai_concept,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-5_world_model[人書].md
+J-6,,フィジカル AI,term_general,ai_concept,needs_review,Stage 8 ブリーフ（2026-09-05）で追加,content/entries/term_general/J-6_physical_ai[人書].md
+J-7,,VLA,term_general,ai_concept,needs_review,Stage 8 ブリーフ（2026-09-05）で追加、v2 テンプレ本書き済（ファイル名タグは scripts/apply_status_markers.py 実行待ち）,content/entries/term_general/J-7_vla[人書].md
 J-10,,Machine Learning,term_general,ml_basic,ready,,content/entries/term_general/J-10_machine_learning[済].md
 J-11,,Deep Learning,term_general,ml_basic,ready,,content/entries/term_general/J-11_deep_learning[済].md
 J-12,,Neural Network,term_general,ml_basic,ready,,content/entries/term_general/J-12_neural_network[済].md
@@ -373,6 +375,7 @@ J-52,,Sycophancy,term_general,ethics_law,ready,,content/entries/term_general/J-5
 J-53,,著作権法 30 条の 4（日本）,term_general,ethics_law,ready,,content/entries/term_general/J-53_copyright_law_30_4[済].md
 J-54,,ISO/IEC 42001,term_general,ethics_law,ready,AIMS v2テンプレ書き起こし済（2026-04-29）,content/entries/term_general/J-54_iso_iec_42001[済].md
 J-55,,個人情報保護法,term_general,ethics_law,needs_review,2026-04-30 entry-writer 執筆,content/entries/term_general/J-55_appi[人書].md
+J-59,,AI 事業者ガイドライン,term_general,ethics_law,needs_review,2026-09-05 entry-writer 本書き（stage8_briefs）,content/entries/term_general/J-59_ai_business_guideline[人書].md
 J-56,,GDPR,term_general,ethics_law,ready,,content/entries/term_general/J-56_gdpr[済].md
 J-57,,RLHF・アラインメント,term_general,ethics_law,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-57_rlhf_alignment[人書].md
 J-62,,チューリングテスト,term_general,peripheral,needs_review,2026-08-23 entry-writer 本書き（stage7_briefs_2026-08 準拠、☆違反0・警告0）,content/entries/term_general/J-62_turing_test[人書].md
@@ -425,3 +428,12 @@ J-115,,NPU・AI PC,term_general,hardware,needs_review,収録語の抜け監査�
 J-116,,TPU,term_general,hardware,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-116_tpu[人書].md
 J-117,,データセンターと電力,term_general,hardware,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-117_datacenter_power[人書].md
 J-118,,グラフエンジニアリング,term_general,agent_architecture,needs_review,スコープ地図（docs/scope_map_figure_spec.md）で追加。ループ層の中の「配線」を担う工学,content/entries/term_general/J-118_graph_engineering[人書].md
+J-119,,ISO/IEC 23894,term_general,ethics_law,needs_review,Stage 8 ブリーフ（ledgers/stage8_briefs_2026-09.md）で追加。42001 と対になるリスクマネジメント手引き,content/entries/term_general/J-119_iso_iec_23894[人書].md
+J-120,,NIST AI RMF,term_general,ethics_law,needs_review,Stage 8 ブリーフ（ledgers/stage8_briefs_2026-09.md）で追加。GOVERN/MAP/MEASURE/MANAGE の 4 機能構造,content/entries/term_general/J-120_nist_ai_rmf[人書].md
+J-121,,AI システム影響評価,term_general,ethics_law,ready,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。AI 固有の新しい要求（ISO/IEC 42005 が手引き）。ファイル名の [人書] マーカーは scripts/apply_status_markers.py の実行待ち,content/entries/term_general/J-121_ai_impact_assessment[済].md
+J-122,,リスクアセスメント,term_general,ethics_law,needs_review,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。ISO 31000 由来の型は同じ、AI ではリスク源が変わる,content/entries/term_general/J-122_risk_assessment[人書].md
+J-123,,マネジメントシステム共通構造,term_general,ethics_law,needs_review,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。Harmonized Structure（旧 Annex SL）の箇条 4〜10 骨格,content/entries/term_general/J-123_harmonized_structure[人書].md
+J-124,,ISO/IEC 27001,term_general,ethics_law,needs_review,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。42001 の下敷き。附属書 A 93 の管理策,content/entries/term_general/J-124_iso_iec_27001[人書].md
+J-125,,適用宣言書,term_general,ethics_law,needs_review,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。SoA。仕組みは 27001 と同じ、中身の管理策（42001 は 38）だけ違う。ファイル名の状態マーカーは scripts/apply_status_markers.py の実行待ち,content/entries/term_general/J-125_statement_of_applicability[人書].md
+J-126,,内部監査とマネジメントレビュー,term_general,ethics_law,needs_review,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。箇条 9 の要求事項。AI 版は見る対象に影響評価が加わる,content/entries/term_general/J-126_internal_audit_review[人書].md
+J-127,,決定論と非決定論,term_general,ethics_law,ready,Stage 10 ブリーフ（ledgers/stage10_briefs_2026-09.md）で追加。温度 0 でも非決定的という実測と Compiled AI の設計論を扱う。validator 自動昇格済み。ファイル名の [人書] マーカーは scripts/apply_status_markers.py の実行待ち,content/entries/term_general/J-127_determinism[済].md

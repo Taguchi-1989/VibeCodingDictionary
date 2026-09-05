@@ -20,7 +20,7 @@ related_terms:
   - Codex
   - MCP
   - CLI
-status: needs_review
+status: ready
 ---
 
 # Gemini CLI
@@ -112,9 +112,7 @@ Claude Code（B-7）、Codex（B-8）、MCP（I-1）
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- 最初につなぐとき、VS Code の拡張機能から入る道筋が分からずつまずきました。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->

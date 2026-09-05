@@ -20,7 +20,7 @@ related_terms:
   - Lovable
   - デプロイ
   - AI エージェント
-status: needs_review
+status: ready
 ---
 
 # Replit
@@ -107,9 +107,7 @@ Replit Agent、デプロイ、AI エージェント
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- 触っていないので、どこでつまずくのかは分かりません。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
@@ -117,9 +115,9 @@ Replit Agent、デプロイ、AI エージェント
 
 <!-- user-input:start key="my_comment" -->
 - 🙂 第一印象: 今回初めて聞きました。触ったことがありません。
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 👍 良い点: 触っていないので分かりません。
+- 👎 ダメな点: 触っていないので分かりません。
+- 👥 誰向けか: 触っていないので分かりません。
 <!-- user-input:end key="my_comment" -->
 
 

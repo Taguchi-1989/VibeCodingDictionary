@@ -18,7 +18,7 @@ related_terms:
   - Gemini 3.1 系
   - Google DeepMind
   - Thinking モデル
-status: needs_review
+status: ready
 ---
 
 # Gemini 3 系
@@ -105,19 +105,18 @@ Deep Think、Gemini 2.5 系、Gemini 3.1 系。
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- NotebookLM との連携や、どのバージョンを使っているのかが分かりにくいところでつまずきました。
+- Flash と Pro のどちらが既定なのかが分からず、Pro で使いたいのに Flash だった、ということがあります。
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: Gemini 3 Pro が出たときは革命的でした。ベンチマークも強かったです。
+- 👍 良い点: 画像生成の Nano Banana でダントツ一位になった時期があり、一時代を築いたと思います。
+- 👎 ダメな点: 2026 年 9 月の今では、Pro が他社の最新モデルに全然かないません。アーキテクチャが限界に来ていると感じます。
+- 👥 誰向けか: Flash の速さを活かしたい人向けです。
 <!-- user-input:end key="my_comment" -->
 
 

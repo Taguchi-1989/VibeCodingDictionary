@@ -1,6 +1,6 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-05 13:54 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-05 09:28 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
@@ -8,9 +8,9 @@
 
 - **drafting**: 1 件
 - **needs_review**: 66 件
-- **ready**: 360 件
+- **ready**: 373 件
 - **archived**: 7 件
-- **合計**: 434 件
+- **合計**: 447 件
 
 - **自己学習シェルフ（reader_level 6・刊行外）**: 33 件（誌面には出ません。`scripts/preview_gen.py` が除外）
 
@@ -30,20 +30,9 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
-| B-35 | Gemini CLI | needs_review | — |
-| B-36 | Lovable | needs_review | — |
-| B-37 | Replit | needs_review | — |
-| B-38 | Manus | needs_review | — |
-| B-39 | Google AI Studio | needs_review | — |
-| B-42 | Discord | needs_review | — |
-| B-43 | n8n・Dify | needs_review | — |
-| C-16 | DeepSeek | needs_review | — |
-| C-17 | Sakana AI | needs_review | — |
-| C-83 | AI時代の羅針盤 | needs_review | — |
 | D-10 | Claude 3 系 | needs_review | — |
 | D-13 | Claude 4.5 系 | needs_review | — |
 | D-23 | o3 系 | needs_review | — |
-| D-3 | Gemini 3 系 | needs_review | — |
 | D-59 | Midjourney | needs_review | — |
 | D-61 | AlphaFold | needs_review | — |
 | E-28 | ARC-AGI | needs_review | — |
@@ -74,6 +63,13 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-116 | TPU | needs_review | — |
 | J-117 | データセンターと電力 | needs_review | — |
 | J-118 | グラフエンジニアリング | needs_review | — |
+| J-119 | ISO/IEC 23894 | needs_review | — |
+| J-120 | NIST AI RMF | needs_review | — |
+| J-122 | リスクアセスメント | needs_review | — |
+| J-123 | マネジメントシステム共通構造 | needs_review | — |
+| J-124 | ISO/IEC 27001 | needs_review | — |
+| J-125 | 適用宣言書 | needs_review | — |
+| J-126 | 内部監査とマネジメントレビュー | needs_review | — |
 | J-22 | パラメータ数の単位 | needs_review | — |
 | J-32 | ノイマン型 | needs_review | — |
 | J-34 | マルチモーダル | needs_review | — |
@@ -84,9 +80,13 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-50 | AI 倫理 | needs_review | — |
 | J-55 | 個人情報保護法 | needs_review | — |
 | J-57 | RLHF・アラインメント | needs_review | — |
+| J-58 | EU AI Act | needs_review | — |
+| J-59 | AI 事業者ガイドライン | needs_review | — |
+| J-6 | フィジカル AI | needs_review | — |
 | J-62 | チューリングテスト | needs_review | — |
+| J-7 | VLA | needs_review | — |
 
-## ✅ 完成（ready・全パス）（360 件）
+## ✅ 完成（ready・全パス）（373 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -118,9 +118,16 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | B-32 | Figma | ready | — |
 | B-33 | Canva | ready | — |
 | B-34 | NotebookLM | ready | — |
+| B-35 | Gemini CLI | ready | — |
+| B-36 | Lovable | ready | — |
+| B-37 | Replit | ready | — |
+| B-38 | Manus | ready | — |
+| B-39 | Google AI Studio | ready | — |
 | B-4 | Cursor | ready | — |
 | B-40 | Reddit | ready | — |
 | B-41 | arXiv | ready | — |
+| B-42 | Discord | ready | — |
+| B-43 | n8n・Dify | ready | — |
 | B-5 | GitHub Copilot | ready | — |
 | B-50 | Claude の料金プラン | ready | — |
 | B-51 | ChatGPT の料金プラン | ready | — |
@@ -138,6 +145,8 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | C-13 | Groq | ready | — |
 | C-14 | AMD | ready | — |
 | C-15 | Intel | ready | — |
+| C-16 | DeepSeek | ready | — |
+| C-17 | Sakana AI | ready | — |
 | C-2 | Anthropic | ready | — |
 | C-3 | Google DeepMind | ready | — |
 | C-4 | Meta AI | ready | — |
@@ -159,6 +168,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | C-80 | AI大学 | ready | — |
 | C-81 | にゃんた | ready | — |
 | C-82 | まさお | ready | — |
+| C-83 | AI時代の羅針盤 | ready | — |
 | C-9 | NVIDIA | ready | — |
 | D-1 | Gemini 2 系 | ready | — |
 | D-11 | Claude 3.5 系 | ready | — |
@@ -171,6 +181,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | D-24 | GPT-3 系 | ready | — |
 | D-25 | GPT-1 / GPT-2 系 | ready | — |
 | D-26 | gpt-oss | ready | — |
+| D-3 | Gemini 3 系 | ready | — |
 | D-30 | Grok 系 | ready | — |
 | D-35 | Cursor Composer | ready | — |
 | D-4 | Gemini 3.1 系 | ready | — |
@@ -389,6 +400,8 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-113 | 生成UIとagent-native設計 | ready | — |
 | J-114 | グッドハートの法則 | ready | — |
 | J-12 | Neural Network | ready | — |
+| J-121 | AI システム影響評価 | ready | — |
+| J-127 | 決定論と非決定論 | ready | — |
 | J-13 | Transformer | ready | — |
 | J-14 | LLM | ready | — |
 | J-15 | VLM | ready | — |
