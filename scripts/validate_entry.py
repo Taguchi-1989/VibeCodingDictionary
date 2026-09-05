@@ -84,6 +84,15 @@ FRONT_LAYOUTS = {
     "front_log_glossary",
 }
 
+# 巻末付録レイアウト群。詳細は docs/back_section_layout.md
+# front_* と同じ軽い検証ルートに流す（比較表が主役で spread_v1 の字数枠に収まらないため）
+BACK_LAYOUTS = {
+    "back_matrix",
+}
+
+# 前付け・巻末をまとめた「例外レイアウト」集合
+SPECIAL_LAYOUTS = FRONT_LAYOUTS | BACK_LAYOUTS
+
 # layout 別の related_terms 必須個数（3〜5）。掲載外は任意（空でも警告しない）
 FRONT_REQUIRES_RELATED_TERMS = {
     "front_map_index",
@@ -378,9 +387,9 @@ def check_yaml_front(fm: dict, r: Report) -> None:
     entry_id = str(fm.get("id", "")).strip()
     if not entry_id:
         r.star("A. YAML: 必須キー `id` が欠落")
-    elif not re.match(r"^([A-J]-\d{1,2}|front_[a-z_]+)$", entry_id):
+    elif not re.match(r"^([A-J]-\d{1,3}|front_[a-z_]+|back_[a-z_]+)$", entry_id):
         r.warn(
-            f"A. YAML: `id` が letter ID でも `^front_` 接頭辞でもない（{entry_id}）"
+            f"A. YAML: `id` が letter ID でも `^front_` / `^back_` 接頭辞でもない（{entry_id}）"
         )
 
     for key in ("title", "category", "page_layout", "evaluation_date", "status"):
@@ -388,10 +397,11 @@ def check_yaml_front(fm: dict, r: Report) -> None:
             r.star(f"A. YAML: 必須キー `{key}` が欠落")
 
     layout = str(fm.get("page_layout", "")).strip()
-    if layout and layout not in FRONT_LAYOUTS:
+    if layout and layout not in SPECIAL_LAYOUTS:
         r.warn(
-            f"A. YAML: `page_layout` が front_* enum 外（{layout}） — "
-            "docs/front_section_layout.md §4-1 の 7 値から選んでください"
+            f"A. YAML: `page_layout` が front_* / back_* enum 外（{layout}） — "
+            "docs/front_section_layout.md §4-1 の 7 値か "
+            "docs/back_section_layout.md の巻末レイアウトから選んでください"
         )
 
     # evaluation_date 書式
@@ -739,16 +749,18 @@ def resolve_path_from_stdin_or_argv() -> Path | None:
 
 
 def should_validate(path: Path) -> bool:
-    """content/entries/**/*.md または content/frontmatter/*.md を対象に。
+    """content/entries/**/*.md、content/frontmatter/*.md、content/backmatter/*.md を対象に。
 
-    common/（A 章）と frontmatter/（扉）の分岐は main() 側で page_layout を見て決める:
-      - page_layout が front_* → 前付け用ルールセット（軽い YAML / トーンのみ）
+    common/（A 章）と frontmatter/（扉）・backmatter/（巻末付録）の分岐は
+    main() 側で page_layout を見て決める:
+      - page_layout が front_* / back_* → 例外レイアウト用ルールセット（軽い YAML / トーンのみ）
       - それ以外で common/ → 当面スキップ（spread_v1 から front_* への移行中）
       - それ以外 → 既存の spread_v1 検証
     """
     posix = path.as_posix()
-    if "/content/frontmatter/" in posix or posix.startswith("content/frontmatter/"):
-        return True
+    for special_dir in ("content/frontmatter/", "content/backmatter/"):
+        if f"/{special_dir}" in posix or posix.startswith(special_dir):
+            return True
     return bool(re.search(r"(^|/)content/entries/[^/]+/[^/]+\.md$", posix))
 
 
@@ -890,11 +902,11 @@ def main() -> int:
     if status in ("archived", "sample", "skeleton"):
         return 0
 
-    # 前付けレイアウト（front_*）: 軽い検証ルートに分岐
+    # 前付け（front_*）・巻末付録（back_*）レイアウト: 軽い検証ルートに分岐
     # 必須節・字数合計の検査はスキップ。自動昇格も無効（著者本人レビュー必須）
-    # 未知の front_xxx も同じ経路に流す（check_yaml_front が enum 外 warn を出す）
+    # 未知の front_xxx / back_xxx も同じ経路に流す（check_yaml_front が enum 外 warn を出す）
     layout = str(fm.get("page_layout", "")).strip()
-    if layout.startswith("front_"):
+    if layout.startswith(("front_", "back_")):
         r = Report(path)
         check_yaml_front(fm, r)
         check_tone(body, r)

@@ -80,8 +80,8 @@ def collect() -> list[dict]:
         status = str(fm.get("status", "")).strip()
         if status in SKIP_STATUSES:
             continue
-        # 前付け（front_*）は著者欄を持たないレイアウトなので数えない
-        if str(fm.get("page_layout", "")).strip().startswith("front_"):
+        # 前付け（front_*）・巻末付録（back_*）は著者欄を持たないレイアウトなので数えない
+        if str(fm.get("page_layout", "")).strip().startswith(("front_", "back_")):
             continue
         filled = comment_filled(body)
         sn = stumble_count(body)

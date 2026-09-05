@@ -1,16 +1,16 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-05 07:22 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-05 07:27 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 60 件
+- **needs_review**: 61 件
 - **ready**: 371 件
 - **archived**: 7 件
-- **合計**: 439 件
+- **合計**: 440 件
 
 - **自己学習シェルフ（reader_level 6・刊行外）**: 33 件（誌面には出ません。`scripts/preview_gen.py` が除外）
 
@@ -26,7 +26,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（49 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（50 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -76,6 +76,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-55 | 個人情報保護法 | needs_review | — |
 | J-57 | RLHF・アラインメント | needs_review | — |
 | J-58 | EU AI Act | needs_review | — |
+| J-59 | AI 事業者ガイドライン | needs_review | — |
 | J-6 | フィジカル AI | needs_review | — |
 | J-62 | チューリングテスト | needs_review | — |
 | J-7 | VLA | needs_review | — |
