@@ -43,7 +43,7 @@ B-30,,Amazon Bedrock,service,managed_ai,ready,,content/entries/service/B-30_amaz
 B-31,,Excalidraw,service,saas_design,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-31_excalidraw[済].md
 B-32,,Figma,service,saas_design,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-32_figma[済].md
 B-33,,Canva,service,saas_design,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/service/B-33_canva[済].md
-B-34,,NotebookLM,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-34_notebooklm[人書].md
+B-34,,NotebookLM,service,ai_assistant,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-34_notebooklm[済].md
 B-35,,Gemini CLI,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-35_gemini_cli[人書].md
 B-36,,Lovable,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-36_lovable[人書].md
 B-37,,Replit,service,ai_assistant,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/service/B-37_replit[人書].md

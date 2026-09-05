@@ -1,27 +1,31 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-09-05 13:28 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-09-05 13:54 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
 ## 内訳
 
-- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 359 件
-- **途中**（書きかけで止まっている）: 0 件
-- **手つかず**（両方まるごと空）: 67 件
+- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 360 件
+- **途中**（書きかけで止まっている）: 3 件
+- **手つかず**（両方まるごと空）: 63 件
 - **合計**: 426 件
 
 ---
 
-## ✍️ 途中（あと少しで終わる。ここから手を付けるのが早い）（0 件）
+## ✍️ 途中（あと少しで終わる。ここから手を付けるのが早い）（3 件）
 
-_なし_
+| ID | title | つまずき | コメント | 空いている欄 | path |
+| :-- | :-- | --: | --: | :-- | :-- |
+| B-35 | Gemini CLI | 0 件 | 4/4 | （つまずきのみ） | `content/entries/service/B-35_gemini_cli[人書].md` |
+| B-36 | Lovable | 0 件 | 3/4 | 👥 誰向けか | `content/entries/service/B-36_lovable[人書].md` |
+| B-37 | Replit | 0 件 | 1/4 | 👍 良い点 / 👎 ダメな点 / 👥 誰向けか | `content/entries/service/B-37_replit[人書].md` |
 
 ---
 
-## ⬜ 手つかず（両方まるごと空）（67 件）
+## ⬜ 手つかず（両方まるごと空）（63 件）
 
-letter 別: A 11件 / B 8件 / C 3件 / D 6件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 15件
+letter 別: A 11件 / B 4件 / C 3件 / D 6件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 15件
 
 | ID | title | status | reader_level | path |
 | :-- | :-- | :-- | :-- | :-- |
@@ -36,10 +40,6 @@ letter 別: A 11件 / B 8件 / C 3件 / D 6件 / E 1件 / F 4件 / G 4件 / H 13
 | A-9 | 索引 | needs_review | 1 | `content/entries/common/A-9_index[人書].md` |
 | A-10 | 更新履歴と更新方針 | needs_review | 1 | `content/entries/common/A-10_changelog[人書].md` |
 | A-11 | 略称表記 | needs_review | 1 | `content/entries/common/A-11_abbreviations[人書].md` |
-| B-34 | NotebookLM | needs_review | 1-2 | `content/entries/service/B-34_notebooklm[人書].md` |
-| B-35 | Gemini CLI | needs_review | 2-3 | `content/entries/service/B-35_gemini_cli[人書].md` |
-| B-36 | Lovable | needs_review | 2-3 | `content/entries/service/B-36_lovable[人書].md` |
-| B-37 | Replit | needs_review | 2-3 | `content/entries/service/B-37_replit[人書].md` |
 | B-38 | Manus | needs_review | 2-3 | `content/entries/service/B-38_manus[人書].md` |
 | B-39 | Google AI Studio | needs_review | 2-3 | `content/entries/service/B-39_google_ai_studio[人書].md` |
 | B-42 | Discord | needs_review | 1-2 | `content/entries/service/B-42_discord[人書].md` |
