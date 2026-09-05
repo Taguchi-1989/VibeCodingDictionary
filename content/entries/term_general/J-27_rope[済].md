@@ -25,23 +25,6 @@ status: ready
 
 # RoPE
 
-<!--
-バイブコーディング図鑑 スケルトン雛形 v1（2026-04-28 追加）
-- 構造だけ先に置いた状態。本文は status を `drafting` に上げた段階で entry-writer が埋める
-- validator は status: skeleton を archived/sample と同様にスキップする
-- tagline には entry_candidates.md の「一言」を仮で流し込んでいる（本書きで磨き直す）
-
-YAML 補足（本書きで埋める／見直す欄）:
-- subtype: candidate.csv の subtype 列を流し込み済み（後で見直す）
-- experience_level: hands_on / partial / research_only
-- reader_level: 1〜6
-- figure_type: before_after / structure / comparison / workflow / timeline（仮で structure を入れている）
-- version_status: active / preview / deprecated（時変なら埋める）
-- pricing_note: none / paid / freemium（時変なら埋める）
-- related_terms: 3〜5 個目安
-- status: skeleton → drafting → needs_review → ready
--->
-
 ## tagline
 
 <!-- 25〜60 字（推奨 30〜38、略称展開を含む場合 35〜50）。
@@ -49,7 +32,6 @@ YAML 補足（本書きで埋める／見直す欄）:
      例: `Model Context Protocol の略。LLM とツール・データをつなぐ標準規格です。` -->
 
 Rotary Position Embedding の略。Query と Key を位置に応じて「回転」させ、相対位置を Attention に埋め込む位置エンコーディング方式です。
-
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 
@@ -69,13 +51,11 @@ RoPE はまったく違うアプローチを取ります。位置ベクトルを
 
 足し算ではなく回転なのでベクトルの長さ（ノルム）が変わらず、トークンの「意味」の大きさを保ったまま位置だけを乗せられる点も、絶対位置エンコーディングに対する利点です。
 
-
 ## どこで出会うか
 
 オープンな大規模言語モデル（LLM, J-14）の構造を読むと、ほぼ必ず出てきます。Llama 系、Qwen 系、Mistral 系、DeepSeek 系など、近年の主要オープンモデルは位置エンコーディングに RoPE を採用しています。モデルカードや config.json に `rope_theta`（回転の基準周波数。10000 や 1000000 など）や `rope_scaling` といった項目が並んでいるのを見たら、それが RoPE のパラメータです。
 
 長文脈化（Context Window, G-5 の拡張）の話題でも頻出します。「学習は 4K トークンでしたが 32K まで使えます」といった context length extension は、RoPE が相対位置ベースで外挿しやすい性質を土台にしています。回転の周波数をスケールして長距離に対応させる NTK-aware スケーリングや、周波数帯ごとに扱いを変える YaRN は、いずれも RoPE の角度設計をいじる手法です。これらの名前を追っていくと、必ず RoPE の理解が前提になります。
-
 
 ## メイン図
 
@@ -83,11 +63,9 @@ RoPE はまったく違うアプローチを取ります。位置ベクトルを
 
 「絶対位置を足す」旧方式と「Query / Key を位置の角度だけ回す」RoPE を左右に並べ、回転後の内積が位置の差 (n − m) だけで決まる——つまり相対位置が自然に出る——という核心を一目で掴んでもらう図です。
 
-
 ## 会話での使い方例
 
 「RoPE は位置を足さず Query と Key を回すので、相対位置で効いて外挿しやすいんですよね。」
-
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -117,7 +95,6 @@ Attention に語順を教える位置エンコーディング。位置を足さ�
 
 NTK-aware スケーリング, YaRN, ALiBi（別系統の相対位置手法）
 
-
 ## 開発フローでの位置（必須）
 
 1. 動機を確認 — Attention は集合扱いで語順を区別できない、と腹に落とす
@@ -126,7 +103,6 @@ NTK-aware スケーリング, YaRN, ALiBi（別系統の相対位置手法）
 4. 数理を確認 — R(mθ)ᵀR(nθ)=R((n−m)θ で絶対位置が打ち消える、を式で追う
 5. 長文脈化へ展開 — rope_theta / rope_scaling を調整し NTK・YaRN へ進む
 
-
 ## 関連用語
 
 - Attention
@@ -134,7 +110,6 @@ NTK-aware スケーリング, YaRN, ALiBi（別系統の相対位置手法）
 - Context Window
 - MLA
 - LLM
-
 
 <!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
 
@@ -156,7 +131,6 @@ NTK-aware スケーリング, YaRN, ALiBi（別系統の相対位置手法）
 - 👎 ダメな点: YaRN など長文脈拡張との繋がりは説明なしには出てこない。
 - 👥 誰向けか: 行列・ベクトルの基礎知識がある人が「なぜ今の LLM は長文に強いのか」を掘るのに良い。
 <!-- user-input:end key="my_comment" -->
-
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
 
@@ -180,7 +154,6 @@ NTK-aware スケーリング, YaRN, ALiBi（別系統の相対位置手法）
 - Step 3 のアイコン/絵柄: くるりと回る回転矢印
 - Step 4 のアイコン/絵柄: R(mθ)ᵀR(nθ)=R((n−m)θ の式札
 - Step 5 のアイコン/絵柄: 長い帯（長文脈）と rope_scaling のつまみ
-
 
 ## 画像生成プロンプト
 
@@ -206,7 +179,6 @@ Hand-drawn editorial line illustration; monochrome plus blue palette only (#1A1A
 - Context Window（G-5）: 「長文脈をなぜ扱えるか」の読者向け説明は G-5。RoPE は外挿の技術的土台として参照される側。
 - ALiBi など別系統の相対位置手法は本文では深掘りせず「深掘り先」に名前出しのみ。
 
-
 ## 出典メモ
 
 <!-- 形式: URL または誌名 — checked YYYY-MM-DD -->
@@ -214,7 +186,6 @@ Hand-drawn editorial line illustration; monochrome plus blue palette only (#1A1A
 - Su et al., "RoFormer: Enhanced Transformer with Rotary Position Embedding" (arXiv:2104.09864) — checked 2026-06-22
 - bloc97, "NTK-Aware Scaled RoPE" (Reddit / GitHub gist で公開された context extension 手法) — checked 2026-06-22
 - Peng et al., "YaRN: Efficient Context Window Extension of Large Language Models" (arXiv:2309.00071) — checked 2026-06-22
-
 
 ## 備考
 

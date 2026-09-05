@@ -13,7 +13,7 @@ start_date:
 end_date:
 version_status: active
 pricing_note: none
-evaluation_date: 2026-04-29
+evaluation_date: 2026-09-05
 related_terms:
   - MCP
   - MCP Server
@@ -174,5 +174,6 @@ MCP Server、GitHub MCP、git
 ## 備考
 
 - `mcp-server-git` は Python 製。`uvx` コマンド（uv ツール）で手軽にインストールできます
-- transport は stdio のみ（2026-04-29 時点）
+- transport は stdio のみ（2026-09-05 時点）
 - Claude Code はデフォルトで Bash 経由の git 操作が可能なため、Git MCP が必要になるのは「Bash 許可を絞り込んだ環境」に限られます。一般的なバイブコーディング環境では Claude Code の Bash ツールで十分なケースが多いです
+- **2026-09-05 の当て直し**: 2025 年 5 月に参照サーバー 14 本がアーカイブへ移された際、Git は書き直された版が現役の保守対象として残りました。**いま Anthropic が保守している参照サーバーは Everything / Fetch / Filesystem / Git / Memory / Sequential Thinking / Time の 7 本**です。本エントリの「公式 reference server」という説明は 2026-09-05 時点でも有効です。出典: <https://github.com/modelcontextprotocol/servers> — checked 2026-09-05

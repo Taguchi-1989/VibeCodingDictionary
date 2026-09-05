@@ -13,7 +13,7 @@ start_date:
 end_date:
 version_status: active
 pricing_note: none
-evaluation_date: 2026-04-29
+evaluation_date: 2026-09-05
 related_terms:
   - MCP
   - MCP Server
@@ -32,7 +32,7 @@ AI クライアントと MCP Server をつなぐ通信路の規格。stdio と H
 
 ## 何をしてくれるか
 
-MCP（Model Context Protocol）でクライアントとサーバがメッセージをやり取りする経路を定めた仕組みです。ローカルには stdio、リモートには HTTP/SSE を使います。
+クライアントとサーバがメッセージをやり取りする経路を定めた仕組みです。ローカルには stdio、リモートには Streamable HTTP を使います。旧来の HTTP+SSE は非推奨になりました。
 
 ## どこで出会うか
 
@@ -47,7 +47,7 @@ stdio（ローカル子プロセス起動）と HTTP（リモート接続）の 
 ### B. 登場シーン（figure_type: comparison）
 
 - シーン1: ローカル MCP — `node` や `uvx` でプロセスを起動、stdio で JSON-RPC をやり取り
-- シーン2: リモート MCP — クラウドサービスが提供する URL に HTTP（SSE）で接続
+- シーン2: リモート MCP — クラウドサービスが提供する URL に Streamable HTTP で接続
 - 並べる基準: ローカル vs リモートの Transport 選択軸
 
 ## 会話での使い方例
@@ -81,7 +81,7 @@ stdio＝ローカル起動、HTTP＝リモート URL 接続の 2 区分が要点
 
 ### 6. 深掘り先
 
-MCP Server、JSON-RPC、SSE（Server-Sent Events）
+MCP Server、JSON-RPC、Streamable HTTP
 
 ## 開発フローでの位置（必須）
 
@@ -126,7 +126,7 @@ MCP Server、JSON-RPC、SSE（Server-Sent Events）
 
 ### メイン図（左ページ中段 / figure_type: comparison）
 
-- 描く内容: 左列に stdio（ローカル）、右列に HTTP/SSE（リモート）の 2 系統を並べた比較図
+- 描く内容: 左列に stdio（ローカル）、右列に Streamable HTTP（リモート）の 2 系統を並べた比較図
 - 登場人物: 開発者が設定ファイルを見ながら「どっちで動くんだ？」と首をかしげている
 - 吹き出し・心の声: 左「node で起動 → stdio 接続」、右「URL 貼るだけ → HTTP 接続」
 - 中央に置くキーワード/ラベル: Transport
@@ -152,10 +152,11 @@ MCP Server、JSON-RPC、SSE（Server-Sent Events）
 
 ## 出典メモ
 
-- <https://modelcontextprotocol.io/docs/concepts/transports> — checked 2026-04-29
+- <https://modelcontextprotocol.io/docs/concepts/transports> — checked 2026-09-05
 - <https://docs.anthropic.com/en/docs/claude-code/mcp> — checked 2026-04-29
 
 ## 備考
 
-- streamable HTTP は SSE の後継として策定が進んでいる方式。2026-04-29 時点では両方に対応するクライアントが増えつつある
+- **2026-09-05 の当て直し**: Streamable HTTP は「策定が進んでいる後継」ではなく、**すでに現行の標準**です。旧 HTTP+SSE は **2025-03-26 の仕様で非推奨**になり、後方互換のための猶予も **2026-06-30 で終了**しました。新規に HTTP+SSE のサーバーを作る理由はもうありません
+- 2026-07-28 の仕様更新でプロトコル層のセッション管理が外れ、stateless 化しました。誌面では細部に踏み込まず「ローカルは stdio、リモートは Streamable HTTP」の 2 択に絞っています
 - stdio 専用サーバと HTTP 対応サーバを混在させた設定は可能（設定ファイル内で複数エントリを持てる）

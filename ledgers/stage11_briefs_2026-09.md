@@ -331,3 +331,49 @@
 - **強い断定語（最新・最強・完全に・絶対に・必ず）は誌面本文で使わない**でください
 - 関連用語は 3〜5 個、**実在するエントリ名**を使ってください（本 Stage で同時に作る 14 件も相互に参照可）
 - 誌面ポンチ絵メモには、デザイン担当への**指示書**として「何を描きたいか」を残します
+
+---
+
+# 追補（2026-09-05）— エージェント系の「当て直し」
+
+*著者の指示で、エージェントまわりの既存エントリを現在の事実に当て直しました。ここには**書き直しが必要だったもの**のブリーフを残します。事実はすべて 2026-09-05 に web で確認しています。*
+
+## B-19 Claude Cowork — 全面的に書き直し
+
+### 何が間違っていたか
+
+既存エントリ（evaluation_date: 2026-04-30）は Cowork を「**Claude.ai のチーム協働機能。Workspace と Project で組織内の Claude を共有できる**」と説明していました。**これは別物です。** Team プランの Workspaces / Projects の説明になっており、Claude Cowork という製品の説明になっていません。
+
+### 押さえる事実
+
+- **Claude Cowork は、非エンジニアの知識労働者向けの「コンピュータエージェント」**です。デスクトップ作業を自動化するもので、**2026 年 1 月 12 日に Anthropic がリサーチプレビューとして発表**しました
+- **Claude デスクトップアプリの中のタブ**として現れます（Chat・Code と並ぶ 3 つ目のタブ）
+- **技術的な土台は Claude Code と同じ**です。違うのは対象で、Claude Code がソフトウェアエンジニア向けなのに対し、**Cowork はコマンドラインを使わない職種**に向けています
+- **ターン制のチャットから離れた設計**です。バックグラウンドで動き続け、**複数のタスクを積んで並列に実行**できます。利用者は待たずに別の作業ができます
+- **2026 年 1 月 30 日にエージェント的なプラグインに対応**（TechCrunch）
+- **2026 年 4 月 9 日に一般提供（GA）**へ移行し、企業向け機能が 6 つ追加されました。同じ日に Managed Agents も発表されています
+- 出典: https://www.anthropic.com/product/claude-cowork ／ https://techcrunch.com/2026/01/30/anthropic-brings-agentic-plugins-to-cowork/ ／ https://pasqualepillitteri.it/en/news/755/anthropic-managed-agents-cowork-ga-april-9-2026 ／ https://aragonresearch.com/anthropic-claude-cowork/
+
+### 書き方の指示
+
+- **本書の読者そのものに向いた製品**です。「AI を仕事で使いたいが、プログラミングで生計を立てているわけではない人」向けに作られたエージェントなので、そこを軸に書いてください
+- **B-7 Claude Code との対比が最良の説明**になります。土台は同じ、届け先が違う
+- 「ターン制のチャットではなく、積んで並列に走らせる」という**使い勝手の変化**を、非エンジニア読者に分かる言葉で書いてください
+- **プラン別の提供条件は書かないでください。** 動きが速く、確認しきれていません。GA になった事実（2026-04-09）までに留めます
+- `figure_type: comparison` で、**チャット（1 往復ずつ待つ）と Cowork（積んで並列に走らせる）**の対比が素直です
+- **書かないこと**：Workspaces / Projects の説明（別物）／価格・プラン条件／他社製品との優劣
+
+## そのほかの当て直し（書き直しまでは不要だったもの）
+
+| ID | 直したこと |
+| :-- | :-- |
+| I-1 MCP | 2025-12-09 に **AAIF（Linux Foundation 傘下）へ寄贈**され、1 社が仕様を握らない形になった点を追記。仕様は 2026-07-28 版が最新（誌面ではバージョン番号は出さない） |
+| I-4 MCP Transport | **HTTP+SSE は 2025-03-26 の仕様で非推奨**、後方互換の猶予も **2026-06-30 で終了**。現行は Streamable HTTP。「策定が進んでいる後継」という記述を現状に合わせた |
+| I-13 Slack MCP | **2025 年 5 月に servers-archived へ移管**。tagline の「公式 reference server」を削除 |
+| I-21 Puppeteer MCP | 同上。「MCP 公式 reference server として設定画面で参照する」という記述が誤りになっていた。後継は I-20 Playwright MCP |
+| I-41 SQLite MCP | 同上。「MCP 公式ドキュメントで紹介されています」が誤りになっていた |
+| I-11 GitHub MCP | 現行は GitHub 公式の `github/github-mcp-server`（Go で書き直し、ホスト型とローカルの 2 通り）。MCP 側にあった旧 GitHub server はアーカイブ済み、という区別を追記 |
+| I-12 Git MCP | アーカイブ移管を **免れた側**（現役の参照サーバー 7 本の 1 つ）。記述は有効なままだと確認して評価日のみ更新 |
+| B-7 Claude Code | CLI 専用ではなくなった点（デスクトップアプリ・ブラウザ・IDE 拡張）を追記 |
+
+**アーカイブされた 14 本**（2025 年 5 月）: AWS KB Retrieval / Brave Search / EverArt / Git / GitHub / GitLab / Google Drive / Google Maps / PostgreSQL / Puppeteer / Redis / Sentry / Slack / SQLite。アーカイブ側には「**セキュリティ上の保証はありません**」の警告が明記されています。**現役の参照サーバーは Everything / Fetch / Filesystem / Git / Memory / Sequential Thinking / Time の 7 本**です。

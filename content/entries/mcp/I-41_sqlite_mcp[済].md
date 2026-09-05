@@ -12,7 +12,7 @@ page_layout: spread_v1
 start_date: 2024-11
 version_status: active
 pricing_note: none
-evaluation_date: 2026-04-29
+evaluation_date: 2026-09-05
 related_terms:
   - MCP
   - MCP Server
@@ -35,7 +35,7 @@ SQLite データベースを AI クライアントから自然言語で操作で
 
 ## どこで出会うか
 
-「Claude に DB を集計させたい」と思ったとき MCP 公式ドキュメントで紹介されています。`uvx mcp-server-sqlite` の 1 行で使い始められます。
+「Claude に DB を集計させたい」と思ったときの入門例として紹介されてきました。ただし 2025 年 5 月に公式の保守対象から外れ、アーカイブ用のリポジトリへ移っています。
 
 ## メイン図
 
@@ -68,7 +68,7 @@ AI クライアントが SQLite MCP を経由してローカル `.db` ファイ�
 
 ### 3. 注意点
 
-書き込み操作はバックアップ必須で、read-only モードが安全です。
+保守が止まっているので、業務で使うかは慎重に決めます。
 
 ### 4. どこで役立つか
 
@@ -164,3 +164,7 @@ MCP Server、MCP、Filesystem MCP
 - read-only モードはブリーフ記載の安心材料。起動オプションでの制御なので、正確なフラグ名は公式 README で要確認（時変情報）
 - SQLite は Python 標準ライブラリに含まれるため、`mcp-server-sqlite` の Python 実装との相性が自然
 - PostgreSQL・MySQL 向けには別 MCP server が存在するが、本エントリのスコープはローカル SQLite のみ
+
+- **2026-09-05 の当て直し**: この MCP は **2025 年 5 月に `modelcontextprotocol/servers-archived` へ移されました**。当時 14 本の参照サーバー（AWS KB Retrieval / Brave Search / EverArt / Git / GitHub / GitLab / Google Drive / Google Maps / PostgreSQL / Puppeteer / Redis / Sentry / Slack / SQLite）がまとめて保守対象から外れています。アーカイブ側のリポジトリには「**これらにセキュリティ上の保証はありません**」という警告が明記されており、セキュリティ修正もバグ修正も入りません
+- いま Anthropic が保守を続けている参照サーバーは **Everything / Fetch / Filesystem / Git / Memory / Sequential Thinking / Time の 7 本**です（Git は書き直された版が現役）
+- 出典: <https://github.com/modelcontextprotocol/servers-archived> ／ <https://github.com/modelcontextprotocol/servers> — checked 2026-09-05

@@ -25,23 +25,6 @@ status: needs_review
 
 # ワークフローとエージェント
 
-<!--
-バイブコーディング図鑑 スケルトン雛形 v1（2026-04-28 追加）
-- 構造だけ先に置いた状態。本文は status を `drafting` に上げた段階で entry-writer が埋める
-- validator は status: skeleton を archived/sample と同様にスキップする
-- tagline には entry_candidates.md の「一言」を仮で流し込んでいる（本書きで磨き直す）
-
-YAML 補足（本書きで埋める／見直す欄）:
-- subtype: candidate.csv の subtype 列を流し込み済み（後で見直す）
-- experience_level: hands_on / partial / research_only
-- reader_level: 1〜6
-- figure_type: before_after / structure / comparison / workflow / timeline（仮で structure を入れている）
-- version_status: active / preview / deprecated（時変なら埋める）
-- pricing_note: none / paid / freemium（時変なら埋める）
-- related_terms: 3〜5 個目安
-- status: skeleton → drafting → needs_review → ready
--->
-
 ## tagline
 
 <!-- 25〜60 字（推奨 30〜38、略称展開を含む場合 35〜50）。
@@ -49,7 +32,6 @@ YAML 補足（本書きで埋める／見直す欄）:
      例: `Model Context Protocol の略。LLM とツール・データをつなぐ標準規格です。` -->
 
 手順を人がコードで決めるか、AI 自身が選ぶかの違いです。
-
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 
@@ -71,7 +53,6 @@ n8n・Dify でワークフローを組む場面や、AI エージェントを設
 
 「ここはワークフローで十分で、エージェント化はまだ早いと思います。」
 
-
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
 ## この用語の見どころ
@@ -80,31 +61,25 @@ n8n・Dify でワークフローを組む場面や、AI エージェントを設
 
 手順を人が決めるか、AI に委ねるかを分ける考え方です。
 
-
 ### 2. うれしさ
 
 単純な仕事を複雑にせず、必要な時だけ自律化を選べます。
-
 
 ### 3. 注意点
 
 エージェント化は速さと費用を差し出す取引でもあります。
 
-
 ### 4. どこで役立つか
 
 自動化ツールやエージェント設計を選ぶ判断の入口になります。
-
 
 ### 5. はじめに
 
 まず一番単純なワークフローで試すことから始めます。
 
-
 ### 6. 深掘り先
 
 Building Effective Agents, ループ工学, ガードレール
-
 
 ## 開発フローでの位置（必須）
 
@@ -114,7 +89,6 @@ Building Effective Agents, ループ工学, ガードレール
 4. ガードレール設定 — 自律させる場合はゴールと制約を先に決めておきます。
 5. 運用と見直し — 費用と速度を見ながら構成を調整していきます。
 
-
 ## 関連用語
 
 - AI エージェント
@@ -122,7 +96,6 @@ Building Effective Agents, ループ工学, ガードレール
 - ループ工学
 - ガードレール
 - n8n・Dify
-
 
 <!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
 
@@ -144,7 +117,6 @@ Building Effective Agents, ループ工学, ガードレール
 - 👎 ダメな点: 
 - 👥 誰向けか: 
 <!-- user-input:end key="my_comment" -->
-
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
 
@@ -168,7 +140,6 @@ Building Effective Agents, ループ工学, ガードレール
 - Step 3 のアイコン/絵柄: 
 - Step 4 のアイコン/絵柄: 
 
-
 ## コミュニティ補完メモ
 
 - J-103 ループエンジニアリングとの分担: J-128 は「そもそも自律させるか」の入口の分岐、J-103 は「自律させると決めた後の回し方」を扱う
@@ -182,7 +153,6 @@ Building Effective Agents, ループ工学, ガードレール
 - Anthropic「Building Effective Agents」https://www.anthropic.com/research/building-effective-agents — checked 2026-09-05
 - Simon Willison「Building effective agents」https://simonwillison.net/2024/Dec/20/building-effective-agents/ — checked 2026-09-05
 - mer.vin「When Not to Build AI Agents: Anthropic's Workflow vs Agent Playbook」https://mer.vin/2026/05/when-not-to-build-ai-agents-anthropics-workflow-vs-agent-playbook/ — checked 2026-09-05
-
 
 ## 備考
 
