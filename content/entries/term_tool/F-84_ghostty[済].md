@@ -18,7 +18,7 @@ related_terms:
   - Claude Code
   - WSL
   - Warp
-status: needs_review
+status: ready
 ---
 
 # Ghostty
@@ -118,9 +118,9 @@ bash、WSL、Warp
 
 <!-- user-input:start key="my_comment" -->
 - 🙂 第一印象: なんかかっこいい感じはします
-- 👍 良い点:
-- 👎 ダメな点:
-- 👥 誰向けか:
+- 👍 良い点: 触っていると、なんとなくエンジニアっぽい感じがします。
+- 👎 ダメな点: 正直、いまは Codex や Claude Code のアプリがとても充実しているので、使う必要がなくなってしまった気がします。道具としての陳腐化が、それだけ早く進んでしまいました。
+- 👥 誰向けか: 相当マニアックなところまで行っている人です。いまなら Codex や Claude Code を使えば終わる話なので、正直、レガシーだと思っています。
 <!-- user-input:end key="my_comment" -->
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->

@@ -13,14 +13,14 @@ start_date:
 end_date:
 version_status: active
 pricing_note: none
-evaluation_date: 2026-06-23
+evaluation_date: 2026-09-05
 related_terms:
   - 半導体製造プロセス
   - CoWoS
   - HBM
   - 半導体製造装置
   - GPU
-status: needs_review
+status: ready
 ---
 
 # チップレットと3D積層
@@ -50,6 +50,22 @@ CPU/GPU の性能向上は、長らく「微細化」（トランジスタを横
 AMD の CPU/GPU 製品ニュースで「Chiplet（チップレット）構成」「3D V-Cache（スリーディブイキャッシュ）」という語が登場します。2026 年 4 月発売の Ryzen 9 9950X3D2 では両 CCD（Core Complex Die）に 3D V-Cache が積まれ、CPU ダイの上に SRAM（Static RAM、高速キャッシュ用メモリ）のダイを TSV（Through Silicon Via、シリコン貫通電極）＋ハイブリッドボンディング（はんだを使わず銅を直接接合する技術）で直接積み上げています。帯域は従来比約 10 倍と言われます。
 
 HBM（High Bandwidth Memory、高帯域メモリ）の縦積みも 3D 積層の同類です。GPU と HBM を 1 枚のパッケージに統合する CoWoS（チップ・オン・ウェハ・オン・サブストレート）は、3D 積層の恩恵を GPU 推論の土台として支えています。
+
+### 提供元ごとに、どこまでできるか
+
+同じ「3D 積層」でも、できることは提供元によってかなり違います。2026 年 9 月時点で各社が公表している範囲は次のとおりです。
+
+| 提供元 | 横に並べる（2.5D） | 縦に積む（3D） | 公表されている到達点 |
+|:--|:--|:--|:--|
+| TSMC | CoWoS-S / -R / -L、InFO | TSMC-SoIC | CoWoS-S のシリコンインターポーザはレチクル 3.3 倍（約 2,700mm²）まで。それを超える場合は -R / -L。SoIC の接合ピッチは 10µm 未満から始まり、3nm のチップ積層が 2025 年に量産入り。次世代の SoIC Gen-2 は N2 以降に対応 |
+| Intel | EMIB 2.5D（-M / -T）、Foveros-S / -R | Foveros Direct、EMIB 3.5D | EMIB は 2017 年から、Foveros-S は 2019 年から量産。Foveros-S のシリコンインターポーザはレチクル 4 倍。Foveros Direct は銅と銅の直接接合（ハイブリッドボンディング）。Foveros-R は 2027 年に量産準備 |
+| Samsung | 2.5D Cube-S、2.3D Cube-E / -R | 3D Cube-T / -H | Cube-S はレチクル 3.3 倍のインターポーザに HBM 8 個までが量産認定済み。それ以上を載せる大型インターポーザも提供。インターポーザのウェハは Samsung Foundry が自社で作る |
+
+**インターポーザの大きさが、そのまま「1 パッケージに何を載せられるか」の上限になります。**レチクル 3.3 倍というのが 2026 年時点の量産ラインで、TSMC も Samsung もここが標準です。Intel の Foveros-S は 4 倍と公表していますが、こちらはクライアント向けの位置づけです。
+
+縦に積むメモリ側では、SK hynix が HBM4 を 24〜48GB・11.0Gbps 以上（2.8TB/s 以上）・8/12/16 段で、Micron が HBM4 36GB の 12 段を量産しています。**§B で触れた「DRAM を 8〜16 層」というのは、2026 年時点で実際に出荷されている段数です。**
+
+なお Intel は「2030 年までに 1 パッケージ 1 兆トランジスタ」を目標として掲げています。すでに Data Center GPU Max では、5 種類のプロセスで作った 47 個のタイルを 1 パッケージに収め、1,000 億トランジスタを超えたと公表しています。
 
 次世代技術として CFET（Complementary FET、コンプリメンタリー FET）があります。トランジスタそのものを縦積みし、NMOS（n 型）の上に PMOS（p 型）を重ねる手法で、GAA（Gate-All-Around）の次を担うとして TSMC が研究中です。電源配線を裏面に回す BSPDN（Backside Power Delivery Network、裏面給電）も注目技術で、表面を信号専用にして混雑と抵抗損失を減らします。Intel の PowerVia が先行実装（18A プロセスの目玉）し、TSMC も追っています。
 
@@ -138,8 +154,8 @@ TSV、ハイブリッドボンディング、CoWoS、HBM、CFET、BSPDN、More t
 <!-- user-input:start key="my_comment" -->
 - 🙂 第一印象: HBM が実用化されているのはこの 3D 積層あってこそだと分かった。
 - 👍 良い点: 技術的には難しくなった一方で、この積層があるからこそレイテンシが短縮され、LLM 推論速度が実用レベルに乗ってきた。今の高速な推論（1 秒間に何百トークンも生成できる速度）はこの恩恵を受けている、と実感できる。
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 👎 ダメな点: 技術的には難しいはずですが、それでも実用化されているところがいいと思っています。
+- 👥 誰向けか: 生成 AI の需要の話ばかりではなく、技術そのものをちゃんと見たい人です。原理原則を押さえたい人に向いています。
 <!-- user-input:end key="my_comment" -->
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
@@ -179,12 +195,18 @@ TSV、ハイブリッドボンディング、CoWoS、HBM、CFET、BSPDN、More t
 - CMOS 2.0 arXiv:2510.04535 https://arxiv.org/abs/2510.04535 — checked 2026-06-23（More than Moore / CMOS 2.0 の概念的枠組み）
 - Tom's Hardware, "AMD's 2nd-Gen 3D V-Cache Details" https://www.tomshardware.com/pc-components/cpus/amd-second-gen-3d-v-cache — checked 2026-06-23（Ryzen 9 9950X3D2 の両 CCD 積層、TSV＋ハイブリッドボンディング、帯域従来比 10 倍）
 - PatSnap, "Advanced Packaging 2026" https://www.patsnap.com/reports/advanced-packaging-2026 — checked 2026-06-23（チップレット・先端パッケージング全般の動向）
+- TSMC 3DFabric / CoWoS / TSMC-SoIC 公式ページ https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/3DFabric.htm — checked 2026-09-05（CoWoS-S のレチクル 3.3 倍・約 2,700mm²、SoIC の接合ピッチ 10µm 未満・3nm 積層 2025 年量産、SoIC Gen-2）
+- Intel Foundry「Advanced Packaging」公式ページ https://www.intel.com/content/www/us/en/foundry/packaging.html — checked 2026-09-05（EMIB 2017 年量産・EMIB-M / -T、Foveros-S のレチクル 4 倍・2019 年量産、Foveros-R は 2027 年、Foveros Direct の Cu-Cu 接合、EMIB 3.5D と Data Center GPU Max の 47 タイル・5 プロセス・1,000 億トランジスタ超、2030 年 1 兆トランジスタ目標）
+- Samsung Foundry「Advanced Heterogeneous Integration」公式ページ https://semiconductor.samsung.com/foundry/advanced-package/advanced-heterogeneous-integration/ — checked 2026-09-05（2.5D Cube-S のレチクル 3.3 倍・HBM 8 個まで量産認定、2.3D Cube-E / -R、3D Cube-T / -H、インターポーザ内製）
+- SK hynix HBM 製品ページ https://product.skhynix.com/products/dram/hbm.go — checked 2026-09-05（HBM4 は 24〜48GB・11.0Gbps 以上／2.8TB/s 以上・8/12/16 段）
+- Micron HBM 製品ページ https://www.micron.com/products/memory/hbm — checked 2026-09-05（HBM4 36GB 12 段を量産中）
 - ledgers/inference_hardware_landscape_2026.md §17（微細化から3D積層へ・More than Moore）— checked 2026-06-23（本エントリの一次素材）
 
 ## 備考
 
 - reader_level: 6（自己学習シェルフ／刊行スコープ外）。今季の本には載せず、著者の勉強ノートとして育てる。docs/level_policy.md §2-6 準拠。
 - 自動昇格しない設定（reader_level 6 ルート）。status は著者本人が管理する。
-- 時変情報: 製品世代（Ryzen 9 9950X3D2、AMD Gorgon Halo 等）・プロセスノードの動向は 2026 年 6 月時点の情報。書籍化前に TSMC N2 量産状況・AMD 次世代チップレット展開を一次情報で再確認すること。
+- 2026-09-05 追記: 著者の依頼で「どのメーカーがどこまでできるか」を各社の公式ページから調べ、「どこで出会うか」に提供元別の対応表を足した。TSMC / Intel / Samsung / SK hynix / Micron の 5 社ぶん。数値はすべて提供元の公表値で、まとめ記事は使っていない。
+- 時変情報: 提供元別の対応表（インターポーザのレチクル倍率、量産開始年、HBM の段数）はどれも動く数字。特に Foveros-R の 2027 年量産、SoIC Gen-2 の N2 対応は予定なので、書籍化前に再確認すること。製品世代（Ryzen 9 9950X3D2、AMD Gorgon Halo 等）・プロセスノードの動向は 2026 年 6 月時点の情報。書籍化前に TSMC N2 量産状況・AMD 次世代チップレット展開を一次情報で再確認すること。
 - スコープ境界: チップレットの「分割設計の動機と歩留まり効果」および「3D 積層の種類・接合技術・具体製品（AMD 3D V-Cache・HBM）」まで担う。CFET・BSPDN の詳細設計・パワー解析は将来の個別エントリに譲る。
 - RDNA 3（AMD の消費者 GPU 向けチップレット化第 1 世代）も §17 で言及されているが、本文では AMD の先行事例として触れる程度にとどめ、GPU アーキ詳細は C-14 AMD エントリに譲る。

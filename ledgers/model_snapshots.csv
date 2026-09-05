@@ -2,19 +2,105 @@ quarter,tier,model,vendor,input_usd_per_mtok,output_usd_per_mtok,vals_index_rank
 # 巻末付録 BK-3「モデル勢力図スナップショット」の元データ。仕様は docs/back_matter_layout.md
 # tier は output_usd_per_mtok から機械的に決まる: >=15 frontier / >=1 middle / <1 budget
 # 空欄は「未取得」。推測で埋めないこと（docs/back_matter_layout.md §3-2）
-# source には一次情報の URL か「誌名・文書名」を書く。checked は YYYY-MM-DD
-2026Q3,frontier,Claude Fable 5.1,Anthropic,10.00,50.00,,✕,claude-api skill 同梱モデル表（cached 2026-06-24）※公式価格ページで要再確認,2026-06-24
-2026Q3,frontier,Claude Fable 5,Anthropic,10.00,50.00,,✕,claude-api skill 同梱モデル表（cached 2026-06-24）※公式価格ページで要再確認,2026-06-24
-2026Q3,frontier,Claude Opus 5,Anthropic,5.00,25.00,,✕,claude-api skill 同梱モデル表（cached 2026-06-24）※公式価格ページで要再確認,2026-06-24
-2026Q3,frontier,Claude Opus 4.8,Anthropic,5.00,25.00,,✕,claude-api skill 同梱モデル表（cached 2026-06-24）※公式価格ページで要再確認,2026-06-24
-2026Q3,middle,Claude Sonnet 5,Anthropic,2.00,10.00,,✕,claude-api skill 同梱モデル表（cached 2026-06-24）※公式価格ページで要再確認,2026-06-24
-2026Q3,middle,Claude Haiku 4.5,Anthropic,1.00,5.00,,✕,claude-api skill 同梱モデル表（cached 2026-06-24）※公式価格ページで要再確認,2026-06-24
-2026Q3,,Gemini 3.1 Pro,Google,,,,✕,,
-2026Q3,,Gemini 3.8 Flash,Google,,,,✕,,
-2026Q3,,GPT-5.6,OpenAI,,,,✕,,
-2026Q3,,GPT-6 Astra,OpenAI,,,,✕,,
-2026Q3,,Grok 4.6,xAI,,,,✕,,
-2026Q3,,DeepSeek V4-Pro,DeepSeek,,,,◯,,
-2026Q3,,DeepSeek V4-Flash,DeepSeek,,,,◯,,
-2026Q3,,GLM-5.3,Z.ai,,,,◯,,
-2026Q3,,Kimi K3,Moonshot AI,,,,◯,,
+# 価格はその四半期に実際に適用されていた標準価格。キャッシュ・バッチ・オフピークの条件付き割引は含めない（§2-4）
+# 過去の四半期は提供元の公式ページの Wayback Machine スナップショットから。source に取得日を併記
+# vals_index_rank はその四半期に現行だった Vals Index の版の表における順位（§2-5b）
+#   2026Q3=Version 2 ／ 2026Q2=Version 1.2 ／ 2026Q1・2025Q4=Version 1 ／ 2025Q3 以前は Vals Index 自体が存在しない
+#   その版の表に載っていないモデルは空欄。番号は飛ぶことがある
+2024Q1,frontier,GPT-4,OpenAI,30.00,60.00,,✕,https://openai.com/pricing（Wayback 2024-03-30）,2026-09-05
+2024Q1,frontier,GPT-4 Turbo,OpenAI,10.00,30.00,,✕,https://openai.com/pricing（Wayback 2024-03-30）,2026-09-05
+2024Q1,frontier,Claude 3 Opus,Anthropic,15.00,75.00,,✕,https://docs.anthropic.com/claude/docs/models-overview（Wayback 2024-03-24）,2026-09-05
+2024Q1,frontier,Claude 3 Sonnet,Anthropic,3.00,15.00,,✕,https://docs.anthropic.com/claude/docs/models-overview（Wayback 2024-03-24）,2026-09-05
+2024Q1,middle,GPT-3.5 Turbo,OpenAI,0.50,1.50,,✕,https://openai.com/pricing（Wayback 2024-03-30） ※gpt-3.5-turbo-0125,2026-09-05
+2024Q1,middle,Claude 3 Haiku,Anthropic,0.25,1.25,,✕,https://docs.anthropic.com/claude/docs/models-overview（Wayback 2024-03-24）,2026-09-05
+2024Q1,,Gemini 1.0 Pro,Google,,,,✕,https://ai.google.dev/pricing（Wayback 2024-03-25） ※当時は文字単価（入力 $0.000125/1K文字・出力 $0.000375/1K文字）。トークン単価への換算には文字あたりトークン数の仮定が要るため空欄のままとする,2026-09-05
+2024Q3,frontier,o1-preview,OpenAI,15.00,60.00,,✕,https://openai.com/api/pricing/（Wayback 2024-09-30）,2026-09-05
+2024Q3,frontier,Claude 3 Opus,Anthropic,15.00,75.00,,✕,https://www.anthropic.com/pricing（Wayback 2024-09-27）,2026-09-05
+2024Q3,frontier,Claude 3.5 Sonnet,Anthropic,3.00,15.00,,✕,https://www.anthropic.com/pricing（Wayback 2024-09-27）,2026-09-05
+2024Q3,middle,o1-mini,OpenAI,3.00,12.00,,✕,https://openai.com/api/pricing/（Wayback 2024-09-30）,2026-09-05
+2024Q3,middle,Gemini 1.5 Pro,Google,3.50,10.50,,✕,https://ai.google.dev/pricing（Wayback 2024-09-29） ※同ページに 2024-10-01 から $1.25/$5.00 へ値下げと明記,2026-09-05
+2024Q3,middle,GPT-4o,OpenAI,2.50,10.00,,✕,https://openai.com/api/pricing/（Wayback 2024-09-30） ※gpt-4o-2024-08-06。別名 gpt-4o はこの時点ではまだ $5/$15,2026-09-05
+2024Q3,middle,Claude 3 Haiku,Anthropic,0.25,1.25,,✕,https://www.anthropic.com/pricing（Wayback 2024-09-27）,2026-09-05
+2024Q3,budget,GPT-4o mini,OpenAI,0.15,0.60,,✕,https://openai.com/api/pricing/（Wayback 2024-09-30）,2026-09-05
+2024Q3,budget,Gemini 1.5 Flash,Google,0.075,0.30,,✕,https://ai.google.dev/pricing（Wayback 2024-09-29）,2026-09-05
+2025Q1,frontier,GPT-4.5,OpenAI,75.00,150.00,,✕,https://openai.com/api/pricing/（Wayback 2025-03-31） ※research preview,2026-09-05
+2025Q1,frontier,OpenAI o1,OpenAI,15.00,60.00,,✕,https://openai.com/api/pricing/（Wayback 2025-03-31）,2026-09-05
+2025Q1,frontier,Claude 3 Opus,Anthropic,15.00,75.00,,✕,https://www.anthropic.com/pricing（Wayback 2025-03-30）,2026-09-05
+2025Q1,frontier,Claude 3.7 Sonnet,Anthropic,3.00,15.00,,✕,https://www.anthropic.com/pricing（Wayback 2025-03-30）,2026-09-05
+2025Q1,middle,GPT-4o,OpenAI,2.50,10.00,,✕,https://openai.com/api/pricing/（Wayback 2025-03-31）,2026-09-05
+2025Q1,middle,Grok 2,xAI,2.00,10.00,,✕,https://x.ai/api（Wayback 2025-03-23） ※grok-2-1212,2026-09-05
+2025Q1,middle,Gemini 1.5 Pro,Google,1.25,5.00,,✕,https://ai.google.dev/gemini-api/docs/pricing（Wayback 2025-03-31）,2026-09-05
+2025Q1,middle,o3-mini,OpenAI,1.10,4.40,,✕,https://openai.com/api/pricing/（Wayback 2025-03-31）,2026-09-05
+2025Q1,middle,Claude 3.5 Haiku,Anthropic,0.80,4.00,,✕,https://www.anthropic.com/pricing（Wayback 2025-03-30）,2026-09-05
+2025Q1,budget,GPT-4o mini,OpenAI,0.15,0.60,,✕,https://openai.com/api/pricing/（Wayback 2025-03-31）,2026-09-05
+2025Q1,budget,Gemini 2.0 Flash,Google,0.10,0.40,,✕,https://ai.google.dev/gemini-api/docs/pricing（Wayback 2025-03-31）,2026-09-05
+2025Q1,budget,Gemini 2.0 Flash-Lite,Google,0.075,0.30,,✕,https://ai.google.dev/gemini-api/docs/pricing（Wayback 2025-03-31）,2026-09-05
+2025Q3,frontier,Claude Opus 4.1,Anthropic,15.00,75.00,,✕,https://www.anthropic.com/pricing（Wayback 2025-09-16）,2026-09-05
+2025Q3,frontier,Claude Sonnet 4,Anthropic,3.00,15.00,,✕,https://www.anthropic.com/pricing（Wayback 2025-09-16） ※200K トークン以下,2026-09-05
+2025Q3,frontier,Grok 4,xAI,3.00,15.00,,✕,https://x.ai/api（Wayback 2025-09-16）,2026-09-05
+2025Q3,middle,GPT-5,OpenAI,1.25,10.00,,✕,https://openai.com/api/pricing/（Wayback 2025-09-20）,2026-09-05
+2025Q3,middle,Gemini 2.5 Pro,Google,1.25,10.00,,✕,https://ai.google.dev/gemini-api/docs/pricing（Wayback 2025-09-29）,2026-09-05
+2025Q3,middle,Gemini 2.5 Flash,Google,0.30,2.50,,✕,https://ai.google.dev/gemini-api/docs/pricing（Wayback 2025-09-29）,2026-09-05
+2025Q3,middle,GPT-5 mini,OpenAI,0.25,2.00,,✕,https://openai.com/api/pricing/（Wayback 2025-09-20）,2026-09-05
+2025Q3,middle,grok-code-fast-1,xAI,0.20,1.50,,✕,https://x.ai/api（Wayback 2025-09-16）,2026-09-05
+2025Q3,middle,Claude Haiku 3.5,Anthropic,0.80,4.00,,✕,https://www.anthropic.com/pricing（Wayback 2025-09-16）,2026-09-05
+2025Q3,budget,Grok 3 mini,xAI,0.30,0.50,,✕,https://x.ai/api（Wayback 2025-09-16）,2026-09-05
+2025Q3,budget,GPT-5 nano,OpenAI,0.05,0.40,,✕,https://openai.com/api/pricing/（Wayback 2025-09-20）,2026-09-05
+2025Q3,budget,DeepSeek V3.2-Exp,DeepSeek,0.28,0.42,,◯,https://api-docs.deepseek.com/quick_start/pricing（Wayback 2025-09-29） ※キャッシュミス時,2026-09-05
+2025Q4,frontier,Claude Sonnet 4,Anthropic,3.00,15.00,,✕,https://claude.com/pricing（Wayback 2025-12-30）,2026-09-05
+2025Q4,frontier,Grok 4,xAI,3.00,15.00,,✕,https://x.ai/api（Wayback 2025-12-29）,2026-09-05
+2025Q4,frontier,Claude Opus 4.5,Anthropic,5.00,25.00,14,✕,https://claude.com/pricing（Wayback 2025-12-30）,2026-09-05
+2025Q4,middle,Gemini 3 Pro Preview,Google,2.00,12.00,20,✕,https://ai.google.dev/gemini-api/docs/pricing（Wayback 2025-12-31）,2026-09-05
+2025Q4,middle,GPT-5.2,OpenAI,1.75,14.00,6,✕,https://platform.openai.com/docs/pricing（Wayback 2025-12-31） ※Standard,2026-09-05
+2025Q4,middle,GPT-5.1,OpenAI,1.25,10.00,15,✕,https://platform.openai.com/docs/pricing（Wayback 2025-12-31） ※Standard,2026-09-05
+2025Q4,middle,Gemini 3 Flash Preview,Google,0.50,3.00,18,✕,https://ai.google.dev/gemini-api/docs/pricing（Wayback 2025-12-31）,2026-09-05
+2025Q4,middle,GLM-4.7,Z.ai,0.60,2.20,,◯,https://docs.z.ai/guides/overview/pricing（Wayback 2025-12-23）,2026-09-05
+2025Q4,middle,Claude Haiku 4.5,Anthropic,1.00,5.00,27,✕,https://claude.com/pricing（Wayback 2025-12-30）,2026-09-05
+2025Q4,budget,Grok 4.1 Fast,xAI,0.20,0.50,31,✕,https://x.ai/api（Wayback 2025-12-29）,2026-09-05
+2025Q4,budget,DeepSeek V3.2,DeepSeek,0.28,0.42,35,◯,https://api-docs.deepseek.com/quick_start/pricing（Wayback 2025-12-30） ※キャッシュミス時,2026-09-05
+2025Q4,budget,GPT-5 nano,OpenAI,0.05,0.40,,✕,https://platform.openai.com/docs/pricing（Wayback 2025-12-31） ※Standard,2026-09-05
+2026Q1,frontier,Claude Opus 4.6,Anthropic,5.00,25.00,4,✕,https://claude.com/pricing（Wayback 2026-03-31）,2026-09-05
+2026Q1,frontier,Claude Sonnet 4.6,Anthropic,3.00,15.00,5,✕,https://claude.com/pricing（Wayback 2026-03-31）,2026-09-05
+2026Q1,frontier,GPT-5.4,OpenAI,2.50,15.00,3,✕,https://openai.com/api/pricing/（Wayback 2026-03-26）,2026-09-05
+2026Q1,middle,Gemini 3.1 Pro Preview,Google,2.00,12.00,9,✕,https://ai.google.dev/gemini-api/docs/pricing（Wayback 2026-03-29） ※200K トークン以下。超過時は $4/$18,2026-09-05
+2026Q1,middle,Grok 4.20,xAI,2.00,6.00,28,✕,https://x.ai/api（Wayback 2026-03-28）,2026-09-05
+2026Q1,middle,GLM-5,Z.ai,1.00,3.20,13,◯,https://docs.z.ai/guides/overview/pricing（Wayback 2026-03-28）,2026-09-05
+2026Q1,middle,Claude Haiku 4.5,Anthropic,1.00,5.00,27,✕,https://claude.com/pricing（Wayback 2026-03-31）,2026-09-05
+2026Q1,middle,GPT-5.4 mini,OpenAI,0.75,4.50,12,✕,https://openai.com/api/pricing/（Wayback 2026-03-26）,2026-09-05
+2026Q1,middle,Gemini 3.1 Flash-Lite Preview,Google,0.25,1.50,32,✕,https://ai.google.dev/gemini-api/docs/pricing（Wayback 2026-03-29）,2026-09-05
+2026Q1,middle,GPT-5.4 nano,OpenAI,0.20,1.25,21,✕,https://openai.com/api/pricing/（Wayback 2026-03-26）,2026-09-05
+2026Q1,budget,GLM-4.7-FlashX,Z.ai,0.07,0.40,,◯,https://docs.z.ai/guides/overview/pricing（Wayback 2026-03-28）,2026-09-05
+2026Q1,budget,DeepSeek V3.2,DeepSeek,0.28,0.42,35,◯,https://api-docs.deepseek.com/quick_start/pricing（Wayback 2026-03-29） ※キャッシュミス時,2026-09-05
+2026Q2,frontier,Claude Fable 5,Anthropic,10.00,50.00,1,✕,https://claude.com/pricing（Wayback 2026-06-30）,2026-09-05
+2026Q2,frontier,GPT-5.5,OpenAI,5.00,30.00,10,✕,https://openai.com/api/pricing/（Wayback 2026-06-16）,2026-09-05
+2026Q2,frontier,Claude Opus 4.8,Anthropic,5.00,25.00,6,✕,https://claude.com/pricing（Wayback 2026-06-30）,2026-09-05
+2026Q2,frontier,Claude Sonnet 4.6,Anthropic,3.00,15.00,19,✕,https://claude.com/pricing（Wayback 2026-06-30）,2026-09-05
+2026Q2,frontier,GPT-5.4,OpenAI,2.50,15.00,,✕,https://openai.com/api/pricing/（Wayback 2026-06-16）,2026-09-05
+2026Q2,,Kimi K3,Moonshot AI,,,3,◯,※価格は一次情報未取得（提供元ページの当時のスナップショットが Wayback に無い）。Vals v1.2 の表示は $3/$15,
+2026Q2,middle,Gemini 3.1 Pro Preview,Google,2.00,12.00,24,✕,https://ai.google.dev/gemini-api/docs/pricing（Wayback 2026-06-30） ※200K トークン以下,2026-09-05
+2026Q2,middle,Gemini 3.5 Flash,Google,1.50,9.00,18,✕,https://ai.google.dev/gemini-api/docs/pricing（Wayback 2026-06-30）,2026-09-05
+2026Q2,middle,GLM-5.2,Z.ai,1.40,4.40,15,◯,https://docs.z.ai/guides/overview/pricing（Wayback 2026-06-29）,2026-09-05
+2026Q2,middle,Grok 4.3,xAI,1.25,2.50,36,✕,https://x.ai/api（Wayback 2026-06-28）,2026-09-05
+2026Q2,middle,Claude Haiku 4.5,Anthropic,1.00,5.00,39,✕,https://claude.com/pricing（Wayback 2026-06-30）,2026-09-05
+2026Q2,budget,DeepSeek V4-Pro,DeepSeek,0.435,0.87,,◯,https://api-docs.deepseek.com/quick_start/pricing（Wayback 2026-06-24） ※キャッシュミス時,2026-09-05
+2026Q2,budget,DeepSeek V4-Flash,DeepSeek,0.14,0.28,17,◯,https://api-docs.deepseek.com/quick_start/pricing（Wayback 2026-06-24） ※キャッシュミス時,2026-09-05
+2026Q2,budget,GLM-4.7-FlashX,Z.ai,0.07,0.40,,◯,https://docs.z.ai/guides/overview/pricing（Wayback 2026-06-29）,2026-09-05
+2026Q3,frontier,Claude Fable 5.1,Anthropic,10.00,50.00,1,✕,https://www.anthropic.com/pricing,2026-09-05
+2026Q3,frontier,Claude Opus 5,Anthropic,5.00,25.00,2,✕,https://www.anthropic.com/pricing,2026-09-05
+2026Q3,frontier,GPT-6 Astra,OpenAI,10.00,50.00,3,✕,https://platform.openai.com/docs/pricing,2026-09-05
+2026Q3,frontier,Claude Fable 5,Anthropic,10.00,50.00,4,✕,https://www.anthropic.com/pricing,2026-09-05
+2026Q3,frontier,GPT-5.6 Sol,OpenAI,4.00,20.00,5,✕,https://platform.openai.com/docs/pricing ※販促価格。同ページ注記により 2026-11-21 までは継続。定価は $5/$30,2026-09-05
+2026Q3,frontier,Claude Opus 4.8,Anthropic,5.00,25.00,7,✕,https://www.anthropic.com/pricing,2026-09-05
+2026Q3,frontier,Kimi K3,Moonshot AI,3.00,15.00,14,◯,https://platform.moonshot.ai/docs/pricing/chat-k3 ／ 重み公開 https://huggingface.co/moonshotai/Kimi-K3,2026-09-05
+2026Q3,middle,Gemini 3.8 Flash,Google,0.75,3.75,6,✕,https://ai.google.dev/gemini-api/docs/pricing ※2026-12-31 までの価格。2027-01-01 から $1.50/$7.50,2026-09-05
+2026Q3,,Muse Spark 1.3,Meta,,,8,,※価格は一次情報未取得（提供元の公式価格ページが見つからない）。Vals v2 の表示は $1.25/$4.25,
+2026Q3,middle,GPT-5.6 Luna,OpenAI,0.20,1.20,9,✕,https://platform.openai.com/docs/pricing,2026-09-05
+2026Q3,middle,Claude Sonnet 5,Anthropic,2.00,10.00,10,✕,https://www.anthropic.com/pricing ※Vals の表は $3/$15 と表示しており不一致。公式ページを正とした（§3-4）,2026-09-05
+2026Q3,middle,GPT-5.6 Terra,OpenAI,2.00,12.00,11,✕,https://platform.openai.com/docs/pricing,2026-09-05
+2026Q3,middle,Grok 4.6,xAI,2.00,6.00,13,✕,https://docs.x.ai/docs/models,2026-09-05
+2026Q3,middle,GLM-5.3,Z.ai,1.40,4.40,17,◯,https://docs.z.ai/guides/overview/pricing ／ 重み公開 https://huggingface.co/zai-org/GLM-5.3,2026-09-05
+2026Q3,middle,DeepSeek V4-Flash,DeepSeek,0.44,1.32,21,◯,https://api-docs.deepseek.com/quick_start/pricing ※ピーク時・キャッシュミス。オフピークは半額 ／ 重み公開 https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731,2026-09-05
+2026Q3,middle,DeepSeek V4-Pro,DeepSeek,1.32,3.96,24,◯,https://api-docs.deepseek.com/quick_start/pricing ※ピーク時・キャッシュミス。オフピークは半額 ／ 重み公開 https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813,2026-09-05
+2026Q3,middle,Gemini 3.1 Pro,Google,2.00,12.00,34,✕,https://ai.google.dev/gemini-api/docs/pricing ※200K トークン以下。超過時は $4/$18。表記は gemini-3.1-pro-preview,2026-09-05
+2026Q3,middle,Claude Haiku 4.5,Anthropic,1.00,5.00,49,✕,https://www.anthropic.com/pricing ※Vals の測定は Thinking モード,2026-09-05
+2026Q3,budget,GLM-5.3-Flash,Z.ai,0.075,0.25,29,◯,https://docs.z.ai/guides/overview/pricing ※50%引きの販促価格（2026-09-09 まで）。定価は $0.15/$0.50 ／ 重み公開 https://huggingface.co/zai-org/GLM-5.3-Flash,2026-09-05

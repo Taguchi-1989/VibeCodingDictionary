@@ -138,6 +138,7 @@ def build_html(items: list[tuple[Path, str]]) -> str:
     <a class=\"hero-card\" href=\"/front_section/0_concept_spread.html\"><span class=\"step\">1</span><strong>扉から読み始める</strong><span class=\"desc\">前付け 7 見開き（A 群）。上部ナビで順にめくれます</span></a>
     <a class=\"hero-card\" href=\"/book/index.html\"><span class=\"step\">2</span><strong>本編を読む（B〜J）</strong><span class=\"desc\">もくじ付きリーダーで全エントリを本のように</span></a>
     <a class=\"hero-card\" href=\"/back_section/afterword.html\"><span class=\"step\">3</span><strong>あとがき</strong><span class=\"desc\">この本ができるまで</span></a>
+    <a class=\"hero-card\" href=\"/back_section/bk3_model_snapshot.html\"><span class=\"step\">4</span><strong>巻末付録 BK-3</strong><span class=\"desc\">モデル勢力図スナップショット（2024Q1–2026Q3）</span></a>
     <a class=\"hero-card\" href=\"/search/index.html\"><span class=\"step\">🔍</span><strong>検索</strong><span class=\"desc\">用語名・本文からエントリを探す</span></a>
   </div>
   <div class=\"filter\"><input id=\"q\" type=\"search\" placeholder=\"絞り込み（ID やタイトルで検索）...\" autofocus></div>

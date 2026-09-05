@@ -1,41 +1,31 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-09-04 22:46 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-09-05 13:54 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
 ## 内訳
 
-- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 346 件
-- **途中**（書きかけで止まっている）: 13 件
-- **手つかず**（両方まるごと空）: 67 件
+- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 360 件
+- **途中**（書きかけで止まっている）: 3 件
+- **手つかず**（両方まるごと空）: 63 件
 - **合計**: 426 件
 
 ---
 
-## ✍️ 途中（あと少しで終わる。ここから手を付けるのが早い）（13 件）
+## ✍️ 途中（あと少しで終わる。ここから手を付けるのが早い）（3 件）
 
 | ID | title | つまずき | コメント | 空いている欄 | path |
 | :-- | :-- | --: | --: | :-- | :-- |
-| C-15 | Intel | 1 件 | 3/4 | 👥 誰向けか | `content/entries/person/C-15_intel[人書].md` |
-| F-7 | YAML | 2 件 | 3/4 | 👥 誰向けか | `content/entries/term_tool/F-7_yaml[済].md` |
-| F-15 | shadcn/ui | 1 件 | 3/4 | 👎 ダメな点 | `content/entries/term_tool/F-15_shadcn_ui[済].md` |
-| F-18 | フレームワーク／ライブラリ | 3 件 | 1/4 | 👍 良い点 / 👎 ダメな点 / 👥 誰向けか | `content/entries/term_tool/F-18_framework_library[人書].md` |
-| F-84 | Ghostty | 2 件 | 1/4 | 👍 良い点 / 👎 ダメな点 / 👥 誰向けか | `content/entries/term_tool/F-84_ghostty[人書].md` |
-| G-12 | Agent Design | 3 件 | 3/4 | 👥 誰向けか | `content/entries/term_llm/G-12_agent_design[人書].md` |
-| J-95 | 半導体サプライチェーン | 1 件 | 3/4 | 👎 ダメな点 | `content/entries/term_general/J-95_semiconductor_supply_chain[人書].md` |
-| J-97 | 電子材料 | 1 件 | 3/4 | 👥 誰向けか | `content/entries/term_general/J-97_electronic_materials[人書].md` |
-| J-98 | 重要鉱物の地政学 | 1 件 | 3/4 | 👎 ダメな点 | `content/entries/term_general/J-98_critical_minerals_geopolitics[人書].md` |
-| J-99 | CoWoS | 1 件 | 3/4 | 👥 誰向けか | `content/entries/term_general/J-99_cowos[人書].md` |
-| J-101 | 半導体製造プロセス | 1 件 | 3/4 | 👥 誰向けか | `content/entries/term_general/J-101_semiconductor_process[人書].md` |
-| J-102 | チップレットと3D積層 | 1 件 | 2/4 | 👎 ダメな点 / 👥 誰向けか | `content/entries/term_general/J-102_chiplet_3d_stacking[人書].md` |
-| J-114 | グッドハートの法則 | 1 件 | 3/4 | 👍 良い点 | `content/entries/term_general/J-114_goodharts_law[人書].md` |
+| B-35 | Gemini CLI | 0 件 | 4/4 | （つまずきのみ） | `content/entries/service/B-35_gemini_cli[人書].md` |
+| B-36 | Lovable | 0 件 | 3/4 | 👥 誰向けか | `content/entries/service/B-36_lovable[人書].md` |
+| B-37 | Replit | 0 件 | 1/4 | 👍 良い点 / 👎 ダメな点 / 👥 誰向けか | `content/entries/service/B-37_replit[人書].md` |
 
 ---
 
-## ⬜ 手つかず（両方まるごと空）（67 件）
+## ⬜ 手つかず（両方まるごと空）（63 件）
 
-letter 別: A 11件 / B 8件 / C 3件 / D 6件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 15件
+letter 別: A 11件 / B 4件 / C 3件 / D 6件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 15件
 
 | ID | title | status | reader_level | path |
 | :-- | :-- | :-- | :-- | :-- |
@@ -50,10 +40,6 @@ letter 別: A 11件 / B 8件 / C 3件 / D 6件 / E 1件 / F 4件 / G 4件 / H 13
 | A-9 | 索引 | needs_review | 1 | `content/entries/common/A-9_index[人書].md` |
 | A-10 | 更新履歴と更新方針 | needs_review | 1 | `content/entries/common/A-10_changelog[人書].md` |
 | A-11 | 略称表記 | needs_review | 1 | `content/entries/common/A-11_abbreviations[人書].md` |
-| B-34 | NotebookLM | needs_review | 1-2 | `content/entries/service/B-34_notebooklm[人書].md` |
-| B-35 | Gemini CLI | needs_review | 2-3 | `content/entries/service/B-35_gemini_cli[人書].md` |
-| B-36 | Lovable | needs_review | 2-3 | `content/entries/service/B-36_lovable[人書].md` |
-| B-37 | Replit | needs_review | 2-3 | `content/entries/service/B-37_replit[人書].md` |
 | B-38 | Manus | needs_review | 2-3 | `content/entries/service/B-38_manus[人書].md` |
 | B-39 | Google AI Studio | needs_review | 2-3 | `content/entries/service/B-39_google_ai_studio[人書].md` |
 | B-42 | Discord | needs_review | 1-2 | `content/entries/service/B-42_discord[人書].md` |
