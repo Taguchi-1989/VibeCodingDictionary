@@ -102,18 +102,17 @@ AI エージェント、Deep Research、Devin
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
--
--
--
+- できることが多いぶん、どこから触ればいいのかが分かりにくいところです。
+
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象:
-- 👍 良い点:
-- 👎 ダメな点:
+- 🙂 第一印象: Genspark と同じような系統なのかな、と思いました。いろいろなことができて、触れるものが多いという印象です。
+- 👍 良い点: できることが多く、触れる範囲が広いところです。
+- 👎 ダメな点: 結局のところ、Claude Code や Codex に飲み込まれていくんだろうな、とすごく思います。
 - 👥 誰向けか:
 <!-- user-input:end key="my_comment" -->
 
