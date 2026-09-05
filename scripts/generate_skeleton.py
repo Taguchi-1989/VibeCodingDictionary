@@ -70,6 +70,11 @@ CATEGORY_DIR_MAP = {
 # 日本語タイトル → 英語スラグ（手動マップ）
 # 必要に応じて書き足す。マップに無い日本語タイトルは ID のみのファイル名にする。
 SLUG_OVERRIDES: dict[str, str] = {
+    # Stage 12（安全工学とマネジメント、2026-09-05）
+    "J-135": "functional_safety",
+    "J-136": "three_step_method",
+    "J-138": "corrective_action",
+    "J-139": "explainability",
     # Stage 11（LLM 活用の最前線、2026-09-05）
     "G-61": "knowledge_graph",
     "G-62": "chunking",

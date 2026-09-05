@@ -451,3 +451,8 @@ J-131,,RLVR,term_general,ml_basic,ready,Stage11。検証可能な報酬で鍛え
 J-132,,A2A,term_general,agent_protocol,ready,Stage11。エージェント間プロトコル。MCPと競合ではなく同じ財団の下に並ぶ,content/entries/term_general/J-132_a2a[済].md
 J-133,,オブザーバビリティ,term_general,agent_ops,ready,Stage11。OpenTelemetry GenAI規約に収束、ただしexperimental,content/entries/term_general/J-133_observability[済].md
 J-134,,Human-in-the-loop,term_general,agent_ops,ready,Stage11。承認ゲート3段階。自動化バイアスの注意込み,content/entries/term_general/J-134_human_in_the_loop[済].md
+J-135,,機能安全,term_general,safety_standard,skeleton,Stage12。IEC 61508。SIL 1〜4。安全を0か1でなく段階と確率で語る伝統。J-122の「昔からのISO」の受け皿,content/entries/term_general/J-135_functional_safety.md
+J-136,,3 ステップメソッド,term_general,safety_standard,skeleton,Stage12。ISO 12100。本質安全設計→安全防護→使用上の情報。注意喚起で済ませるのが最下策,content/entries/term_general/J-136_three_step_method.md
+J-137,,ALARP,term_general,safety_standard,skeleton,Stage12。合理的に実行可能な限り低く。不釣り合いを示す責任がこちら側にある,content/entries/term_general/J-137_alarp.md
+J-138,,是正処置と不適合,term_general,management_system,skeleton,Stage12。箇条10 改善。修正と是正処置は別物。AIの失敗を仕組みに戻す経路,content/entries/term_general/J-138_corrective_action.md
+J-139,,説明可能性,term_general,ai_governance,skeleton,Stage12。XAI。モデルが述べる理由が本当の理由とは限らない。外側で担保する設計,content/entries/term_general/J-139_explainability.md
