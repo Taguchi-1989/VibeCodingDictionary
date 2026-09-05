@@ -79,7 +79,7 @@ n8n・Dify でワークフローを組む場面や、AI エージェントを設
 
 ### 6. 深掘り先
 
-Building Effective Agents, ループ工学, ガードレール
+Building Effective Agents、ループ工学、ガードレール
 
 ## 開発フローでの位置（必須）
 

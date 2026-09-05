@@ -1,7 +1,7 @@
 ---
 id: J-131
 title: RLVR
-title_reading:
+title_reading: アールエルブイアール
 category: term_general
 subtype: ml_basic
 experience_level: research_only
@@ -31,9 +31,9 @@ status: ready
 
 ## tagline
 
-検証可能な報酬で鍛える強化学習の略。正誤を機械判定できる課題で学習に使う手法です。
+Reinforcement Learning with Verifiable Rewards の略。正誤を自動採点して鍛えます。
 
-<!-- 字数確認: 41字 -->
+<!-- 字数確認: 59字 -->
 
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
@@ -54,7 +54,7 @@ status: ready
 
 ### 図の狙い
 
-「人が好みを教える RLHF」と「機械が正解を判定する RLVR」という、教師役の違いを対比で見せる。
+「人が好みを教える RLHF」と「機械が正解を判定する RLVR」という、教師役の違いを対比で見せます。
 
 ### A. 対比（figure_type: structure）
 
