@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-05 10:14 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-05 10:30 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 80 件
-- **ready**: 373 件
+- **needs_review**: 74 件
+- **ready**: 379 件
 - **archived**: 7 件
 - **合計**: 461 件
 
@@ -26,7 +26,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（69 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（63 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -45,7 +45,6 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-26 | Computer Use | needs_review | — |
 | G-27 | プロンプトインジェクション | needs_review | — |
 | G-50 | Evals | needs_review | — |
-| G-51 | LLM-as-a-judge | needs_review | — |
 | G-60 | GraphRAG | needs_review | — |
 | G-61 | ナレッジグラフ | needs_review | — |
 | G-62 | チャンク分割 | needs_review | — |
@@ -77,13 +76,8 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-124 | ISO/IEC 27001 | needs_review | — |
 | J-125 | 適用宣言書 | needs_review | — |
 | J-126 | 内部監査とマネジメントレビュー | needs_review | — |
-| J-128 | ワークフローとエージェント | needs_review | — |
 | J-129 | コンテキスト腐敗 | needs_review | — |
-| J-130 | 推論時スケーリング | needs_review | — |
 | J-131 | RLVR | needs_review | — |
-| J-132 | A2A | needs_review | — |
-| J-133 | オブザーバビリティ | needs_review | — |
-| J-134 | Human-in-the-loop | needs_review | — |
 | J-22 | パラメータ数の単位 | needs_review | — |
 | J-32 | ノイマン型 | needs_review | — |
 | J-34 | マルチモーダル | needs_review | — |
@@ -100,7 +94,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-62 | チューリングテスト | needs_review | — |
 | J-7 | VLA | needs_review | — |
 
-## ✅ 完成（ready・全パス）（373 件）
+## ✅ 完成（ready・全パス）（379 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -364,6 +358,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-48 | Structured Outputs | ready | — |
 | G-49 | AI エージェント | ready | — |
 | G-5 | Context Window | ready | — |
+| G-51 | LLM-as-a-judge | ready | — |
 | G-6 | One-shot | ready | — |
 | G-7 | 指示追従性 | ready | — |
 | G-8 | 決定論的／非決定論的 | ready | — |
@@ -416,7 +411,12 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-12 | Neural Network | ready | — |
 | J-121 | AI システム影響評価 | ready | — |
 | J-127 | 決定論と非決定論 | ready | — |
+| J-128 | ワークフローとエージェント | ready | — |
 | J-13 | Transformer | ready | — |
+| J-130 | 推論時スケーリング | ready | — |
+| J-132 | A2A | ready | — |
+| J-133 | オブザーバビリティ | ready | — |
+| J-134 | Human-in-the-loop | ready | — |
 | J-14 | LLM | ready | — |
 | J-15 | VLM | ready | — |
 | J-16 | Fine-tuning | ready | — |

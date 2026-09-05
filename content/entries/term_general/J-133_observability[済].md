@@ -20,7 +20,7 @@ related_terms:
   - Tool Use
   - デバッグ
   - モデルルーティング
-status: needs_review
+status: ready
 ---
 
 # オブザーバビリティ
@@ -98,19 +98,19 @@ OpenTelemetry、GenAI セマンティック規約、トレース
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- ログを取るという話と何が違うのかが分かりません
+- 後から振り返れないと困る、という実感が湧きにくいです
+- 見る負荷そのものが増えるのではないかと感じます
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: 監査可能性の話だと理解しました
+- 👍 良い点: 何をやったか分からなくなる怖さを減らせます
+- 👎 ダメな点: 見る側の認知負荷が高く、飛ばされがちです
+- 👥 誰向けか: 責任を問われる立場の人に要る仕組みです
 <!-- user-input:end key="my_comment" -->
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->

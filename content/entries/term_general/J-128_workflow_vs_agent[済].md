@@ -20,7 +20,7 @@ related_terms:
   - ループ工学
   - ガードレール
   - n8n・Dify
-status: needs_review
+status: ready
 ---
 
 # ワークフローとエージェント
@@ -103,19 +103,19 @@ Building Effective Agents, ループ工学, ガードレール
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- どちらを選ぶかの基準を、自分の仕事に当てはめられません
+- 2024 年の整理がいまも当てはまるのか、判断がつきません
+- ガードレールを誰がどこまで作るのかが見えません
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: 二年で前提がかなり変わった領域だと思います
+- 👍 良い点: 自律させるかどうかを、先に決められます
+- 👎 ダメな点: ループ工学とセットで考えないと片手落ちです
+- 👥 誰向けか: ハーネスを設計する側に立つ人向けです
 <!-- user-input:end key="my_comment" -->
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
