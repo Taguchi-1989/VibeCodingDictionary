@@ -1,76 +1,52 @@
 ---
 id: J-134
 title: Human-in-the-loop
-title_reading:
+title_reading: ヒューマンインザループ
 category: term_general
 subtype: agent_ops
-experience_level:
-reader_level:
-importance:
-figure_type: structure
+experience_level: hands_on
+reader_level: 3
+importance: B
+figure_type: workflow
 page_layout: spread_v1
 start_date:
 end_date:
-version_status:
-pricing_note:
+version_status: active
+pricing_note: none
 evaluation_date: 2026-09-05
-related_terms: []
-status: drafting
+related_terms:
+  - 権限
+  - ガードレール
+  - AI エージェント
+  - プランモード
+status: needs_review
 ---
 
 # Human-in-the-loop
 
-<!--
-バイブコーディング図鑑 スケルトン雛形 v1（2026-04-28 追加）
-- 構造だけ先に置いた状態。本文は status を `drafting` に上げた段階で entry-writer が埋める
-- validator は status: skeleton を archived/sample と同様にスキップする
-- tagline には entry_candidates.md の「一言」を仮で流し込んでいる（本書きで磨き直す）
-
-YAML 補足（本書きで埋める／見直す欄）:
-- subtype: candidate.csv の subtype 列を流し込み済み（後で見直す）
-- experience_level: hands_on / partial / research_only
-- reader_level: 1〜6
-- figure_type: before_after / structure / comparison / workflow / timeline（仮で structure を入れている）
-- version_status: active / preview / deprecated（時変なら埋める）
-- pricing_note: none / paid / freemium（時変なら埋める）
-- related_terms: 3〜5 個目安
-- status: skeleton → drafting → needs_review → ready
--->
-
 ## tagline
 
-<!-- 25〜60 字（推奨 30〜38、略称展開を含む場合 35〜50）。
-     タイトルが略称・ヌメロニム（MCP / a11y / LLM 等）なら冒頭に「{展開} の略。」を入れる（2026-04-28 追加）。
-     例: `Model Context Protocol の略。LLM とツール・データをつなぐ標準規格です。` -->
-
-Human-in-the-loop
-
+AI の提案を人が承認・修正してから動かす設計です。略称は HITL です。
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 
 ## 何をしてくれるか
 
-<!-- 60〜200 字（推奨 80〜150）。役割と仕組みを 2〜4 文で。本書きで埋める。 -->
-
+エージェントの行動を危険度に応じて自動承認・通知・停止の3段階に振り分け、取り消せない操作の直前で人の承認を挟む仕組みです。
 
 ## どこで出会うか
 
-<!-- 60〜200 字（推奨 80〜150）。読者が遭遇する具体シーン。本書きで埋める。 -->
-
+コーディングエージェントがファイル削除やデプロイなど取り消しづらい操作をする直前、確認ダイアログとして現れます。Claude Code の権限設定はこの考え方を具体化した機能の一つです。
 
 ## メイン図
 
 ### 図の狙い
 
-<!-- 1〜2 文。この図で読者に何を掴んでもらうか。本書きで埋める。 -->
-
+操作の重さによって自動承認・通知・停止の関門に振り分けられる流れを掴んでもらいます。
 
 ## 会話での使い方例
 
-<!-- 25〜50 字（推奨 30〜40）、1 文。本書きで埋める。 -->
-
-「」
-
+「重い操作はガードレールで止めて、Human-in-the-loop で人が承認します。」
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -78,52 +54,41 @@ Human-in-the-loop
 
 ### 1. 役割
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+AI の提案実行前に人の承認を挟む仕組みです。
 
 ### 2. うれしさ
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+取り消せない操作を実行前に止められます。
 
 ### 3. 注意点
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+人を挟んでも自動化バイアスで見落とすことがあります。
 
 ### 4. どこで役立つか
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+削除・デプロイなど取り消しにくい操作の直前です。
 
 ### 5. はじめに
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+まず承認が必要な操作の種類を決めます。
 
 ### 6. 深掘り先
 
-<!-- 15〜50 字、1〜3 語をカンマ区切り。本書きで埋める。 -->
-
+権限設定、承認ゲート、自動化バイアス
 
 ## 開発フローでの位置（必須）
 
-<!-- 4〜5 ステップ。本書きで埋める。 -->
-
-1. 
-2. 
-3. 
-4. 
-
+1. 危険度の分類 — 操作を自動承認・通知・停止の3段階に分けます。
+2. ゲート設置 — 取り消せない操作の直前に承認ステップを置きます。
+3. 承認・却下 — 人が内容を確認し、実行するか差し戻します。
+4. 実行と記録 — 承認後に操作を実行し、判断の経緯を残します。
 
 ## 関連用語
 
-<!-- 3〜5 個。本書きで埋める。YAML の related_terms と一致させる。 -->
-
-- 用語A —
-- 用語B —
-- 用語C —
-
+- 権限
+- ガードレール
+- AI エージェント
+- プランモード
 
 <!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
 
@@ -131,32 +96,31 @@ Human-in-the-loop
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+-
+-
+-
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象:
+- 👍 良い点:
+- 👎 ダメな点:
+- 👥 誰向けか:
 <!-- user-input:end key="my_comment" -->
-
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
 
 ## 誌面ポンチ絵メモ
 
-### メイン図（左ページ中段 / figure_type: structure）
+### メイン図（左ページ中段 / figure_type: workflow）
 
-- 描く内容: 
-- 登場人物（いれば）: 
-- 吹き出し・心の声: 
-- 中央に置くキーワード/ラベル: 
+- 描く内容: エージェントが提案してきた操作が、危険度に応じて「自動承認」「通知」「停止（要承認）」の3つの関門に振り分けられるフロー図
+- 登場人物（いれば）: 開発者（人物シルエット）が停止ゲートの前で承認ボタンを押す場面
+- 吹き出し・心の声: エージェント「このファイルを削除していいですか？」→ 開発者（心の声）「これは取り消せないから、ちゃんと中身を見てから押そう」
+- 中央に置くキーワード/ラベル: `自動承認 / 通知 / 停止（要承認）` の3分岐ボックス
 
 ### 6 視点アイコン（右ページ上段）
 
@@ -164,20 +128,24 @@ Human-in-the-loop
 
 ### 開発フロー図（右ページ下段）
 
-- Step 1 のアイコン/絵柄: 
-- Step 2 のアイコン/絵柄: 
-- Step 3 のアイコン/絵柄: 
-- Step 4 のアイコン/絵柄: 
-
+- Step 1 のアイコン/絵柄: 操作を色分けする仕分けトレイ
+- Step 2 のアイコン/絵柄: 通行止めゲートのアイコン
+- Step 3 のアイコン/絵柄: 承認・却下の二択ボタン
+- Step 4 のアイコン/絵柄: 実行後にログが残るメモ帳
 
 ## コミュニティ補完メモ
 
+- G-39 権限（Permission）との住み分け：G-39 は Claude Code の `allow / deny / ask` という具体的な実装仕様を扱う。本エントリは「人が判断の輪に残る」という設計思想そのものを扱い、G-39 はその実装例の一つとして扱う。
+- J-107 ガードレールとの住み分け：J-107 は自律ループ全体の逸脱防止策（検証可能な完了条件など）を広く扱う。本エントリは「実行前に人の承認を挟む」という一点に絞る。
+- G-49 AI エージェントとの住み分け：エージェント一般の定義は G-49 に譲り、本エントリはエージェントの行動をどう制御するかの一手法として扱う。
+- G-38 プランモードとの住み分け：Plan Mode は計画そのものを事前提示する仕組み、本エントリは操作実行の直前に承認を挟む仕組み。レイヤーが異なる多段防御として並べる。
 
 ## 出典メモ
 
-<!-- 形式: URL または誌名 — checked YYYY-MM-DD -->
-
-- 
-
+- https://www.stackai.com/insights/human-in-the-loop-ai-agents-how-to-design-approval-workflows-for-safe-and-scalable-automation — checked 2026-09-05
+- https://www.avepoint.com/blog/strategy-blog/human-in-the-loop-ai — checked 2026-09-05
+- https://www.strata.io/blog/agentic-identity/practicing-the-human-in-the-loop/ — checked 2026-09-05
 
 ## 備考
+
+AvePoint の State of AI 2026 レポートでは、エージェント関連のセキュリティ事故のあと 95.5% の組織が対策を取り、その中で最も多かったのが human-in-the-loop の導入だったと報告されています（同レポートの数値として扱う）。
