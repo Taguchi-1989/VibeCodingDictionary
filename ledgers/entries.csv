@@ -432,3 +432,5 @@ J-119,,ISO/IEC 23894,term_general,ethics_law,needs_review,Stage 8 ブリーフ�
 J-120,,NIST AI RMF,term_general,ethics_law,needs_review,Stage 8 ブリーフ（ledgers/stage8_briefs_2026-09.md）で追加。GOVERN/MAP/MEASURE/MANAGE の 4 機能構造,content/entries/term_general/J-120_nist_ai_rmf[人書].md
 J-122,,リスクアセスメント,term_general,ethics_law,needs_review,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。ISO 31000 由来の型は同じ、AI ではリスク源が変わる,content/entries/term_general/J-122_risk_assessment.md
 J-123,,マネジメントシステム共通構造,term_general,ethics_law,drafting,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。Harmonized Structure（旧 Annex SL）の箇条 4〜10 骨格,content/entries/term_general/J-123_harmonized_structure.md
+J-124,,ISO/IEC 27001,term_general,ethics_law,needs_review,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。42001 の下敷き。附属書 A 93 の管理策,content/entries/term_general/J-124_iso_iec_27001.md
+J-126,,内部監査とマネジメントレビュー,term_general,ethics_law,needs_review,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。箇条 9 の要求事項。AI 版は見る対象に影響評価が加わる,content/entries/term_general/J-126_internal_audit_review.md

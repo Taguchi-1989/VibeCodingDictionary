@@ -19,7 +19,7 @@ related_terms:
   - ISO/IEC 27001
   - 適用宣言書
   - リスクアセスメント
-status: drafting
+status: needs_review
 ---
 
 # マネジメントシステム共通構造
@@ -28,7 +28,7 @@ status: drafting
 
 ## tagline
 
-正式には Harmonized Structure（旧称 Annex SL）の略。ISO のマネジメントシステム規格が共通で使う箇条の骨格です。
+ISO のマネジメントシステム規格が共通で使う、箇条の骨格です。9001 も 27001 も同じ並びです。
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 

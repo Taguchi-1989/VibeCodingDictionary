@@ -6,11 +6,11 @@
 
 ## status 内訳
 
-- **drafting**: 3 件
-- **needs_review**: 63 件
+- **drafting**: 1 件
+- **needs_review**: 67 件
 - **ready**: 371 件
 - **archived**: 7 件
-- **合計**: 444 件
+- **合計**: 446 件
 
 - **自己学習シェルフ（reader_level 6・刊行外）**: 33 件（誌面には出ません。`scripts/preview_gen.py` が除外）
 
@@ -18,18 +18,15 @@
 
 _なし_
 
-## ⚠️ 警告あり（軽微超過 / 著者か entry-writer で手当て）（2 件）
+## ⚠️ 警告あり（軽微超過 / 著者か entry-writer で手当て）（0 件）
 
-| ID | title | status | 概要 |
-| :-- | :-- | :-- | :-- |
-| J-123 | マネジメントシステム共通構造 | drafting | ⚠ 67 字（目安 25-60、+7 字超過） |
-| J-125 | 適用宣言書 | drafting | ⚠ 57 字（目安 60-200、-3 字不足） |
+_なし_
 
 ## ✍️ 書きかけ（drafting・全パス済み・自動昇格漏れ）（0 件）
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（52 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（56 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -68,8 +65,12 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-118 | グラフエンジニアリング | needs_review | — |
 | J-119 | ISO/IEC 23894 | needs_review | — |
 | J-120 | NIST AI RMF | needs_review | — |
+| J-121 | AI システム影響評価 | needs_review | — |
 | J-122 | リスクアセスメント | needs_review | — |
+| J-123 | マネジメントシステム共通構造 | needs_review | — |
 | J-124 | ISO/IEC 27001 | needs_review | — |
+| J-125 | 適用宣言書 | needs_review | — |
+| J-126 | 内部監査とマネジメントレビュー | needs_review | — |
 | J-22 | パラメータ数の単位 | needs_review | — |
 | J-32 | ノイマン型 | needs_review | — |
 | J-34 | マルチモーダル | needs_review | — |
