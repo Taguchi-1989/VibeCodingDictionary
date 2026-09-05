@@ -253,7 +253,7 @@ G-8,,決定論的／非決定論的,term_llm,basic,ready,台帳登録済み・�
 G-9,,effort レベル,term_llm,basic,ready,台帳登録済み・未生成だった分を本書き（2026-08-10）,content/entries/term_llm/G-9_effort_level[済].md
 G-10,,Prompt Engineering,term_llm,technique,ready,,content/entries/term_llm/G-10_prompt_engineering[済].md
 G-11,,Context Engineering,term_llm,technique,ready,,content/entries/term_llm/G-11_context_engineering[済].md
-G-12,,Agent Design,term_llm,technique,needs_review,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_llm/G-12_agent_design[人書].md
+G-12,,Agent Design,term_llm,technique,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_llm/G-12_agent_design[済].md
 G-13,,Few-shot Learning,term_llm,technique,ready,,content/entries/term_llm/G-13_few_shot_learning[済].md
 G-14,,Thinking モデル,term_llm,technique,ready,新テンプレ書き起こし済（2026-04-29）。旧G-14.mdはarchived,content/entries/term_llm/G-14_thinking_model[済].md
 G-15,,RAG,term_llm,technique,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_llm/G-15_rag[済].md

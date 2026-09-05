@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-05 12:46 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-05 12:59 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 71 件
-- **ready**: 355 件
+- **needs_review**: 70 件
+- **ready**: 356 件
 - **archived**: 7 件
 - **合計**: 434 件
 
@@ -26,7 +26,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（60 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（59 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -54,7 +54,6 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-47 | フロントエンド／バックエンド | needs_review | — |
 | F-57 | リポジトリ | needs_review | — |
 | F-84 | Ghostty | needs_review | — |
-| G-12 | Agent Design | needs_review | — |
 | G-24 | Temperature | needs_review | — |
 | G-25 | AI のメモリ機能 | needs_review | — |
 | G-26 | Computer Use | needs_review | — |
@@ -91,7 +90,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-57 | RLHF・アラインメント | needs_review | — |
 | J-62 | チューリングテスト | needs_review | — |
 
-## ✅ 完成（ready・全パス）（355 件）
+## ✅ 完成（ready・全パス）（356 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -306,6 +305,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-1 | Context | ready | — |
 | G-10 | Prompt Engineering | ready | — |
 | G-11 | Context Engineering | ready | — |
+| G-12 | Agent Design | ready | — |
 | G-13 | Few-shot Learning | ready | — |
 | G-14 | Thinking モデル | ready | — |
 | G-15 | RAG | ready | — |
