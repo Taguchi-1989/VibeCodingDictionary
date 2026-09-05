@@ -292,8 +292,8 @@ G-50,,Evals,term_llm,evaluation,ready,Stage11。自分の仕事に合わせた�
 G-51,,LLM-as-a-judge,term_llm,evaluation,ready,Stage11。AIの出力をAIが採点する。ルーブリックと人ラベルとの一致率で審判を検証,content/entries/term_llm/G-51_llm_as_a_judge[済].md
 G-60,,GraphRAG,term_llm,retrieval,ready,Stage11。MS版はメンテナンスモード、考え方は後続へ。全体を見渡す質問に効く,content/entries/term_llm/G-60_graphrag[済].md
 G-61,,ナレッジグラフ,term_llm,retrieval,ready,Stage11。知識の構造のグラフ。J-118（処理の配線のグラフ）と書き分ける,content/entries/term_llm/G-61_knowledge_graph[済].md
-G-62,,チャンク分割,term_llm,retrieval,needs_review,Stage11。RAGの前処理。切り方が回答品質をほぼ決める,content/entries/term_llm/G-62_chunking[人書].md
-G-63,,ハイブリッド検索,term_llm,retrieval,needs_review,Stage11。BM25＋ベクトル、RRFで合成。型番・エラーコードはベクトルでは拾えない,content/entries/term_llm/G-63_hybrid_search[人書].md
+G-62,,チャンク分割,term_llm,retrieval,ready,Stage11。RAGの前処理。切り方が回答品質をほぼ決める,content/entries/term_llm/G-62_chunking[済].md
+G-63,,ハイブリッド検索,term_llm,retrieval,ready,Stage11。BM25＋ベクトル、RRFで合成。型番・エラーコードはベクトルでは拾えない,content/entries/term_llm/G-63_hybrid_search[済].md
 G-64,,リランキング,term_llm,retrieval,ready,Stage11。広く拾って並べ直して少し渡す。cross-encoderで上位のみ,content/entries/term_llm/G-64_reranking[済].md
 H-1,,TDD,workflow,methodology,ready,,content/entries/workflow/H-1_tdd[済].md
 H-2,,ペアプログラミング,workflow,methodology,needs_review,Stage 7 で本書き（2026-08-23）,content/entries/workflow/H-2_pair_programming[人書].md

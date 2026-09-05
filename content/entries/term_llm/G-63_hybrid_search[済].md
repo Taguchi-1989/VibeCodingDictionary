@@ -15,7 +15,7 @@ version_status: active
 pricing_note: none
 evaluation_date: 2026-09-05
 related_terms: [RAG, Embedding, リランキング, チャンク分割]
-status: needs_review
+status: ready
 ---
 
 # ハイブリッド検索
@@ -101,19 +101,19 @@ RRF、リランキング、チャンク分割
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- 意味で探すだけでは型番が拾えない、と気づけません
+- 2 つの検索をどう混ぜているのかが想像できません
+- 自分で用意するのか、既定で入っているのかが分かりません
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: 実利に沿う仕組みで、BM25 が今も生きているのが面白いです
+- 👍 良い点: 賢くなった恩恵を、そのまま受け取れます
+- 👎 ダメな点: これといった不満は思いつきません
+- 👥 誰向けか: 型番や品番を扱う仕事の人向けです
 <!-- user-input:end key="my_comment" -->
 
 

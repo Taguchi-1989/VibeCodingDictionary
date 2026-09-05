@@ -1,14 +1,14 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-09-05 10:59 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-09-05 11:08 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
 ## 内訳
 
-- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 385 件
+- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 387 件
 - **途中**（書きかけで止まっている）: 0 件
-- **手つかず**（両方まるごと空）: 57 件
+- **手つかず**（両方まるごと空）: 55 件
 - **合計**: 442 件
 
 ---
@@ -19,9 +19,9 @@ _なし_
 
 ---
 
-## ⬜ 手つかず（両方まるごと空）（57 件）
+## ⬜ 手つかず（両方まるごと空）（55 件）
 
-letter 別: D 5件 / E 1件 / F 4件 / G 6件 / H 13件 / I 2件 / J 26件
+letter 別: D 5件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 26件
 
 | ID | title | status | reader_level | path |
 | :-- | :-- | :-- | :-- | :-- |
@@ -39,8 +39,6 @@ letter 別: D 5件 / E 1件 / F 4件 / G 6件 / H 13件 / I 2件 / J 26件
 | G-25 | AI のメモリ機能 | needs_review | 1-2 | `content/entries/term_llm/G-25_memory[人書].md` |
 | G-26 | Computer Use | needs_review | 3-4 | `content/entries/term_llm/G-26_computer_use[人書].md` |
 | G-27 | プロンプトインジェクション | needs_review | 2-3 | `content/entries/term_llm/G-27_prompt_injection[人書].md` |
-| G-62 | チャンク分割 | needs_review | 3 | `content/entries/term_llm/G-62_chunking[人書].md` |
-| G-63 | ハイブリッド検索 | needs_review | 3-4 | `content/entries/term_llm/G-63_hybrid_search[人書].md` |
 | H-2 | ペアプログラミング | needs_review | 1-2 | `content/entries/workflow/H-2_pair_programming[人書].md` |
 | H-3 | バイブコーディングの流儀 | needs_review | 1-2 | `content/entries/workflow/H-3_vibe_coding_style[人書].md` |
 | H-4 | コードレビュー | needs_review | 2-3 | `content/entries/workflow/H-4_code_review[人書].md` |

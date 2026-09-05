@@ -19,7 +19,7 @@ related_terms:
   - Embedding
   - ベクトル DB
   - ハイブリッド検索
-status: needs_review
+status: ready
 ---
 
 # チャンク分割
@@ -101,19 +101,19 @@ status: needs_review
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- 意味の切れ目で切るという方法があること自体、知りませんでした
+- 文書の種類ごとに切り方を変える、という発想がありませんでした
+- 自分の資料をどう切ればよいのか、決め方が分かりません
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: そんな切り方まであるのか、と面白く読みました
+- 👍 良い点: 回答がちぐはぐな原因を、ここまで遡れます
+- 👎 ダメな点: 決め方が難しく、正解が文書ごとに変わります
+- 👥 誰向けか: 社内資料を AI に読ませたい人向けです
 <!-- user-input:end key="my_comment" -->
 
 
