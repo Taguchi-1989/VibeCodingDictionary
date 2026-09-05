@@ -14,12 +14,27 @@
     --band-ink:#123E82; --bound-line:#8A94A6; --grid:#E4EAF3;
   }
 
-  .snap-lead {
-    border-left: 3px solid var(--ink-blue);
-    padding-left: var(--sp-4);
-    font-size: 14px;
-    line-height: 1.8;
+  /* 本編の h1.title-hero / .tagline-bar に合わせる */
+  .vbcd h1.snap-title {
+    font-family: var(--font-jp);
+    font-weight: 900;
+    font-size: 42px;
+    color: var(--ink-blue-900);
+    letter-spacing: -0.01em;
+    line-height: 1.12;
+    margin: 0 0 14px 0;
+  }
+  .snap-bar {
+    display: inline-block;
+    padding: 12px 18px;
+    background: var(--ink-blue-100);
     color: var(--ink);
+    border-radius: var(--radius-lg);
+    font-family: var(--font-jp);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.55;
+    letter-spacing: 0.02em;
     margin: 0 0 var(--sp-4) 0;
   }
 
@@ -150,21 +165,15 @@
   .q-band .none { font-family: var(--font-mono); font-size: 9.5px; color: #B4442F; }
   .ow { font-size: 8.5px; color: var(--ink-3); }
 
-  .rules-box {
+  .rules-line {
     border-top: 1px solid var(--rule);
     padding-top: var(--sp-3);
-    margin-top: var(--sp-3);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 18px;
+    margin: var(--sp-3) 0 0 0;
+    font-size: 10.5px;
+    line-height: 1.7;
+    color: var(--ink-2);
   }
-  .rules-box h4 {
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--ink-blue-900);
-    margin: 0 0 3px 0;
-  }
-  .rules-box p { font-size: 10.5px; line-height: 1.7; color: var(--ink-2); margin: 0; }
+  .rules-line strong { color: var(--ink-blue-900); }
 </style>
 </head>
 <body class="vbcd">
@@ -186,11 +195,9 @@
   <section class="page left">
     <div class="section-label">BACK · BK-3 · MODEL SNAPSHOT</div>
 
-    <h1 class="front-title-sm">モデル勢力図<br>スナップショット</h1>
+    <h1 class="snap-title">モデル勢力図<br>スナップショット</h1>
 
-    <p class="snap-lead">
-      出力トークンの単価で価格帯を 3 つに固定し、2024 Q1 から 2026 Q3 までの 8 四半期を、そのままの姿で並べました。境界は全四半期で動かしていません。<strong>帯の中身が入れ替わっていく</strong>ところを見るための付録で、買い物ガイドではありません。
-    </p>
+    <p class="snap-bar">価格帯を固定して 8 四半期を並べ、帯の中身の入れ替わりを見る。</p>
 
     <dl class="snap-meta">
       <div><dt>Period</dt><dd>2024Q1–2026Q3</dd></div>
@@ -205,9 +212,7 @@
       <canvas id="chart" role="img" aria-label="2024 Q1 から 2026 Q3 までの 8 四半期について、各モデルの出力トークン単価を対数軸に並べた散布図。横の破線が $15 と $1 の帯境界を示す。色は提供元、三角はオープンウェイト。">2024 Q1 の激安帯は空。2026 Q3 の激安帯は Z.ai の GLM-5.3-Flash のみ。</canvas>
     </div>
 
-    <p class="caption-note">
-      縦軸は出力 $/Mtok の対数目盛り。横の破線が帯の境界です。<strong>激安帯は 2024 Q1 には存在しません。</strong>この四半期の最安は GPT-3.5 Turbo の出力 $1.50 でした。
-    </p>
+    <p class="caption-note">縦軸は出力 $/Mtok の対数。破線が帯の境界。<strong>激安帯は 2024 Q1 には無い。</strong></p>
 
     <div class="page-foot">
       <span class="left-meta">VIBE CODING ZUKAN</span>
@@ -222,16 +227,7 @@
 
     <div class="q-grid" id="qgrid"></div>
 
-    <div class="rules-box">
-      <div>
-        <h4>比べてよいのは価格だけです</h4>
-        <p>$/Mtok は年をまたいでも同じ物差しですが、性能はそうではありません。ベンチマークは飽和して差し替えられます。このページに性能は描いていません。</p>
-      </div>
-      <div>
-        <h4>価格に含めたもの</h4>
-        <p>その四半期に実際に適用されていた公表価格です。キャッシュ割引・バッチ割引・オフピーク料金のような、使い方次第で効く割引は含めていません。</p>
-      </div>
-    </div>
+    <p class="rules-line"><strong>四半期をまたいで比べてよいのは価格だけ。</strong>価格はその時点の公表価格で、キャッシュ・バッチ・オフピークの割引は含めない。</p>
 
     <div class="page-foot">
       <span class="left-meta">△ = OPEN WEIGHTS</span>
