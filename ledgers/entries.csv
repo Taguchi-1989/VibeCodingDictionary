@@ -459,6 +459,11 @@ J-139,,説明可能性,term_general,ai_governance,needs_review,Stage12。XAI。�
 J-140,,IEC 62443,term_general,safety_standard,ready,Stage13。産業制御セキュリティ。SL1〜4は「守る相手の本気度」。機能安全は壊れ方、62443は攻める人から守る,content/entries/term_general/J-140_iec_62443[済].md
 J-141,,サーベイランス審査,term_general,management_system,ready,Stage13。ISO認証は3年サイクル。取るより維持が長い。AIは時変性が高く維持の負荷が効く,content/entries/term_general/J-141_surveillance_audit[済].md
 J-142,,文書化した情報と力量,term_general,management_system,ready,Stage13。箇条7 支援。AI運用ではCLAUDE.md・チェックリストが文書化した情報にあたる,content/entries/term_general/J-142_documented_information[済].md
-J-143,,モデルカード,term_general,ai_governance,needs_review,Stage13。Mitchell 2019。9項目。EU AI Actで事実上の要求へ。何をさせてはいけないかを読む,content/entries/term_general/J-143_model_card[人書].md
+J-143,,モデルカード,term_general,ai_governance,ready,Stage13。Mitchell 2019。9項目。EU AI Actで事実上の要求へ。何をさせてはいけないかを読む,content/entries/term_general/J-143_model_card[済].md
 J-144,,インシデント報告,term_general,ai_governance,ready,Stage13。EU AI Act 73条。2日/10日/15日。不完全な初回報告が明示的に認められている,content/entries/term_general/J-144_incident_reporting[済].md
 J-145,,人間中心のAI社会原則,term_general,ai_governance,ready,Stage13。内閣府2019。3つの価値と7原則。J-59 AI事業者ガイドラインの親,content/entries/term_general/J-145_human_centric_ai_principles[済].md
+J-146,,ゾーンとコンジット,term_general,safety_standard,needs_review,Stage14。IEC 62443-3-2。箱と管で区切り被害を封じ込める。G-39 権限設計と同じ発想,content/entries/term_general/J-146_zones_and_conduits[人書].md
+J-147,,データ品質,term_general,management_system,needs_review,Stage14。42001 附属書 A.7.4。品質要求を定義し文書化し検証する。ISO/IEC 5259 系列,content/entries/term_general/J-147_data_quality[人書].md
+J-148,,PDCA,term_general,management_system,needs_review,Stage14。著者の指示で登録。ISO 共通構造の骨格。Check=内部監査、Act=是正処置,content/entries/term_general/J-148_pdca[人書].md
+J-149,,第三者認証と自己宣言,term_general,management_system,needs_review,Stage14。誰が適合を言うか。JIS Q 17050 供給者適合宣言。EU AI Act は適合宣言書と CE マーキング。本書き済み・validator ☆違反/警告 0 で自動昇格（2026-09-05）,content/entries/term_general/J-149_certification_vs_self_declaration[人書].md
+J-150,,トレーサビリティ,term_general,management_system,needs_review,Stage14。後から辿れるように残す。J-133 は動いているものを見る話で目的が違う,content/entries/term_general/J-150_traceability[人書].md

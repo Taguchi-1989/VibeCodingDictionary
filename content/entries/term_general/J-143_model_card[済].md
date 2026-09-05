@@ -15,7 +15,7 @@ version_status: active
 pricing_note: none
 evaluation_date: 2026-09-05
 related_terms: [説明可能性, EU AI Act, Hugging Face, Evals, Llama]
-status: needs_review
+status: ready
 ---
 
 # モデルカード
@@ -93,19 +93,19 @@ Datasheets for Datasets、EU AI Act 技術文書
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- 性能表は見ても、限界や用途の欄を読む発想がありませんでした
+- こうしたメタ情報が要るという考え自体がありませんでした
+- 9 項目のどこから読めばよいのかが分かりません
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: 感想ではなく、こう書かねばという様式だと感じます
+- 👍 良い点: できることより、できないことを確認できます
+- 👎 ダメな点: 書く側の負担は増え、形だけになる懸念もあります
+- 👥 誰向けか: モデルを選ぶ立場の人に要ります
 <!-- user-input:end key="my_comment" -->
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
@@ -145,3 +145,4 @@ Datasheets for Datasets、EU AI Act 技術文書
 ## 備考
 
 EU AI Act のもとでの高リスク AI 技術文書の義務は段階施行中であり、適用時期は断定していません（evaluation_date: 2026-09-05 時点の整理）。実装形式としては Hugging Face のモデルカード metadata 仕様が広く使われているとされています。
+- **著者の指摘（2026-09-05）**: 「**学習させればオッケー、ではない。どういう条件で、どこまでが限界なのかを示さないと駄目だ**というところで 2026 年に位置づけが変わった」という読みが出ました。あわせて「**9 項目の表は本に入れておきたい、これは必要な情報だ**」という指示があり、見開きに 9 行の表は入らないため、**巻末付録 04（`back_model_card_items`）として独立**させています

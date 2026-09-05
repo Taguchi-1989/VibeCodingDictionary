@@ -70,6 +70,11 @@ CATEGORY_DIR_MAP = {
 # 日本語タイトル → 英語スラグ（手動マップ）
 # 必要に応じて書き足す。マップに無い日本語タイトルは ID のみのファイル名にする。
 SLUG_OVERRIDES: dict[str, str] = {
+    # Stage 14（規格帯の残り、2026-09-05）
+    "J-146": "zones_and_conduits",
+    "J-147": "data_quality",
+    "J-149": "certification_vs_self_declaration",
+    "J-150": "traceability",
     # Stage 13（規格を運用する側、2026-09-05）
     "J-141": "surveillance_audit",
     "J-142": "documented_information",
