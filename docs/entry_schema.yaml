@@ -510,7 +510,7 @@ back_layouts:
 
   layouts:
     - name: back_matrix
-      assigned_ids: ["back_standards_matrix"]
+      assigned_ids: ["back_standards_matrix", "back_iso_mapping"]
       related_terms: optional
       char_hint_left:  "比較表（縦 6 行 × 横 5 列）"
       char_hint_right: "2 軸マップ 1 点 + 読み方 150-250"
