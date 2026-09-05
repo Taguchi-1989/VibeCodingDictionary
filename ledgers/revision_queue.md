@@ -1,6 +1,6 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-05 08:45 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-05 08:48 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
@@ -8,9 +8,9 @@
 
 - **drafting**: 1 件
 - **needs_review**: 66 件
-- **ready**: 372 件
+- **ready**: 373 件
 - **archived**: 7 件
-- **合計**: 446 件
+- **合計**: 447 件
 
 - **自己学習シェルフ（reader_level 6・刊行外）**: 33 件（誌面には出ません。`scripts/preview_gen.py` が除外）
 
@@ -86,7 +86,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-62 | チューリングテスト | needs_review | — |
 | J-7 | VLA | needs_review | — |
 
-## ✅ 完成（ready・全パス）（372 件）
+## ✅ 完成（ready・全パス）（373 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -401,6 +401,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-114 | グッドハートの法則 | ready | — |
 | J-12 | Neural Network | ready | — |
 | J-121 | AI システム影響評価 | ready | — |
+| J-127 | 決定論と非決定論 | ready | — |
 | J-13 | Transformer | ready | — |
 | J-14 | LLM | ready | — |
 | J-15 | VLM | ready | — |
