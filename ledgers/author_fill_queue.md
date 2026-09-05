@@ -1,45 +1,33 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-09-05 13:54 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-09-05 05:37 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
 ## 内訳
 
-- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 360 件
-- **途中**（書きかけで止まっている）: 3 件
-- **手つかず**（両方まるごと空）: 63 件
-- **合計**: 426 件
+- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 361 件
+- **途中**（書きかけで止まっている）: 2 件
+- **手つかず**（両方まるごと空）: 52 件
+- **合計**: 415 件
 
 ---
 
-## ✍️ 途中（あと少しで終わる。ここから手を付けるのが早い）（3 件）
+## ✍️ 途中（あと少しで終わる。ここから手を付けるのが早い）（2 件）
 
 | ID | title | つまずき | コメント | 空いている欄 | path |
 | :-- | :-- | --: | --: | :-- | :-- |
-| B-35 | Gemini CLI | 0 件 | 4/4 | （つまずきのみ） | `content/entries/service/B-35_gemini_cli[人書].md` |
-| B-36 | Lovable | 0 件 | 3/4 | 👥 誰向けか | `content/entries/service/B-36_lovable[人書].md` |
+| B-36 | Lovable | 0 件 | 4/4 | （つまずきのみ） | `content/entries/service/B-36_lovable[人書].md` |
 | B-37 | Replit | 0 件 | 1/4 | 👍 良い点 / 👎 ダメな点 / 👥 誰向けか | `content/entries/service/B-37_replit[人書].md` |
 
 ---
 
-## ⬜ 手つかず（両方まるごと空）（63 件）
+## ⬜ 手つかず（両方まるごと空）（52 件）
 
-letter 別: A 11件 / B 4件 / C 3件 / D 6件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 15件
+letter 別: B 4件 / C 3件 / D 6件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 15件
 
 | ID | title | status | reader_level | path |
 | :-- | :-- | :-- | :-- | :-- |
-| A-1 | まえがき | needs_review | 1 | `content/entries/common/A-1_preface[人書].md` |
-| A-2 | この本の読み方 | needs_review | 1 | `content/entries/common/A-2_reading_guide[人書].md` |
-| A-3 | 図鑑の歩き方 | needs_review | 1 | `content/entries/common/A-3_walking_guide[人書].md` |
-| A-4 | 体験区分の凡例 | needs_review | 1 | `content/entries/common/A-4_experience_legend[人書].md` |
-| A-5 | 読者レベルの凡例 | needs_review | 1 | `content/entries/common/A-5_reader_level_legend[人書].md` |
-| A-6 | 評価日・時変情報の見方 | needs_review | 1-2 | `content/entries/common/A-6_evaluation_date_legend[人書].md` |
-| A-7 | 図のタイプ | needs_review | 1 | `content/entries/common/A-7_figure_types_legend[人書].md` |
-| A-8 | 色・記号の凡例 | needs_review | 1 | `content/entries/common/A-8_color_symbol_legend[人書].md` |
-| A-9 | 索引 | needs_review | 1 | `content/entries/common/A-9_index[人書].md` |
-| A-10 | 更新履歴と更新方針 | needs_review | 1 | `content/entries/common/A-10_changelog[人書].md` |
-| A-11 | 略称表記 | needs_review | 1 | `content/entries/common/A-11_abbreviations[人書].md` |
 | B-38 | Manus | needs_review | 2-3 | `content/entries/service/B-38_manus[人書].md` |
 | B-39 | Google AI Studio | needs_review | 2-3 | `content/entries/service/B-39_google_ai_studio[人書].md` |
 | B-42 | Discord | needs_review | 1-2 | `content/entries/service/B-42_discord[人書].md` |
