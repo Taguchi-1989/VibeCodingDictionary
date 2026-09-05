@@ -221,19 +221,53 @@
     <div class="page-num">BK-3 / 1</div>
   </section>
 
-  <!-- 右ページ: 帯の中身の一覧 -->
+  <!-- 右ページ: 帯の中身の一覧（直近の年から） -->
   <section class="page right">
-    <div class="section-label">BAND CONTENTS · 2024Q1 → 2026Q3</div>
+    <div class="section-label">BAND CONTENTS · 2026（最新）</div>
 
-    <div class="q-grid" id="qgrid"></div>
+    <div class="q-grid" id="qgrid-2026"></div>
 
-    <p class="rules-line"><strong>四半期をまたいで比べてよいのは価格だけ。</strong>価格はその時点の公表価格で、キャッシュ・バッチ・オフピークの割引は含めない。</p>
+    <p class="rules-line"><strong>新しい四半期から先に並べている。</strong>価格はその時点の公表価格で、キャッシュ・バッチ・オフピークの割引は含めない。</p>
 
     <div class="page-foot">
       <span class="left-meta">△ = OPEN WEIGHTS</span>
       <span class="right-meta">SOURCE: 各提供元の公式価格ページ</span>
     </div>
     <div class="page-num">BK-3 / 2</div>
+  </section>
+
+</div>
+
+<div class="spread">
+
+  <!-- 左ページ: 2025 年 -->
+  <section class="page left">
+    <div class="section-label">BAND CONTENTS · 2025</div>
+
+    <div class="q-grid" id="qgrid-2025"></div>
+
+    <p class="rules-line"><strong>四半期をまたいで比べてよいのは価格だけ。</strong>同じ名前でも中身は入れ替わっている。</p>
+
+    <div class="page-foot">
+      <span class="left-meta">△ = OPEN WEIGHTS</span>
+      <span class="right-meta">SOURCE: 各提供元の公式価格ページ</span>
+    </div>
+    <div class="page-num">BK-3 / 3</div>
+  </section>
+
+  <!-- 右ページ: 2024 年 -->
+  <section class="page right">
+    <div class="section-label">BAND CONTENTS · 2024（最初）</div>
+
+    <div class="q-grid" id="qgrid-2024"></div>
+
+    <p class="rules-line"><strong>2024 Q1 には激安帯が無い。</strong>いちばん安い層が生まれたのは、この表の途中からになる。</p>
+
+    <div class="page-foot">
+      <span class="left-meta">△ = OPEN WEIGHTS</span>
+      <span class="right-meta">SOURCE: 各提供元の公式価格ページ</span>
+    </div>
+    <div class="page-num">BK-3 / 4</div>
   </section>
 
 </div>
@@ -296,10 +330,10 @@ new Chart(document.getElementById('chart'),{type:'scatter',data:{datasets:sets},
 
 const bandOf=y=>y===null?3:(y>=15?0:(y>=1?1:2));
 const BL=[['フロンティア','b1'],['ミドル','b2'],['激安','b3'],['帯に置けず','b4']];
-let out='';
-QS.forEach(function(q,qi){
+// 一覧は「新しい四半期が先」。年ごとにページを分ける（2026 / 2025 / 2024）
+function blockFor(qi){
   const all=D.filter(d=>d[0]===qi);
-  out+='<div class="q-block"><div class="q-head"><span class="qn">'+q+'</span><span class="qc">'+all.length+' 件</span></div>';
+  let out='<div class="q-block"><div class="q-head"><span class="qn">'+QS[qi]+'</span><span class="qc">'+all.length+' 件</span></div>';
   BL.forEach(function(bl,bi){
     const list=all.filter(d=>bandOf(d[1])===bi).sort((a,b)=>(b[1]||0)-(a[1]||0));
     if(!list.length){
@@ -311,9 +345,16 @@ QS.forEach(function(q,qi){
         +(d[4]?' <span class="ow">△</span>':'')+'</span><span class="pr">'
         +(d[1]===null?'—':'$'+d[1].toFixed(2))+'</span></li>';}).join('')+'</ul></div>';
   });
-  out+='</div>';
+  return out+'</div>';
+}
+
+['2026','2025','2024'].forEach(function(year){
+  const el=document.getElementById('qgrid-'+year);
+  if(!el) return;
+  // 同じ年のなかでも新しい四半期から
+  const idx=QS.map((q,i)=>i).filter(i=>QS[i].startsWith(year)).reverse();
+  el.innerHTML=idx.map(blockFor).join('');
 });
-document.getElementById('qgrid').innerHTML=out;
 </script>
 </body>
 </html>
