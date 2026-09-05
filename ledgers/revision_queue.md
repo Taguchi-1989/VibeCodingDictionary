@@ -1,22 +1,26 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-05 14:12 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-05 14:20 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
-- **drafting**: 1 件
-- **needs_review**: 71 件
+- **drafting**: 4 件
+- **needs_review**: 74 件
 - **ready**: 387 件
 - **archived**: 7 件
-- **合計**: 466 件
+- **合計**: 472 件
 
 - **自己学習シェルフ（reader_level 6・刊行外）**: 33 件（誌面には出ません。`scripts/preview_gen.py` が除外）
 
-## ☆ 違反あり（最優先で直す）（0 件）
+## ☆ 違反あり（最優先で直す）（3 件）
 
-_なし_
+| ID | title | status | 概要 |
+| :-- | :-- | :-- | :-- |
+| J-142 | 文書化した情報と力量 | drafting | ☆ `checked YYYY-MM-DD` 形式の記載が無い（時変情報を扱っているのに）; ⚠ 0 字（目安 120-240、-120 字不足）; ⚠ 0 字（目安 80-180、-80 字不足） |
+| J-144 | インシデント報告 | drafting | ☆ `checked YYYY-MM-DD` 形式の記載が無い（時変情報を扱っているのに）; ⚠ `importance` が `[]` — A/B/C/D/E のいずれかを指定してください (A=; ⚠ `reader_level` が `[]` — `1`〜`6` の単一値か `2-3` 形式の範囲で |
+| J-145 | 人間中心のAI社会原則 | drafting | ☆ `checked YYYY-MM-DD` 形式の記載が無い（時変情報を扱っているのに）; ⚠ `importance` が `[]` — A/B/C/D/E のいずれかを指定してください (A=; ⚠ `reader_level` が `[]` — `1`〜`6` の単一値か `2-3` 形式の範囲で |
 
 ## ⚠️ 警告あり（軽微超過 / 著者か entry-writer で手当て）（0 件）
 
@@ -26,7 +30,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（60 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（63 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -75,6 +79,9 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-137 | ALARP | needs_review | — |
 | J-138 | 是正処置と不適合 | needs_review | — |
 | J-139 | 説明可能性 | needs_review | — |
+| J-140 | IEC 62443 | needs_review | — |
+| J-141 | サーベイランス審査 | needs_review | — |
+| J-143 | モデルカード | needs_review | — |
 | J-22 | パラメータ数の単位 | needs_review | — |
 | J-32 | ノイマン型 | needs_review | — |
 | J-34 | マルチモーダル | needs_review | — |

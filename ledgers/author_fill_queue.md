@@ -1,6 +1,6 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-09-05 14:12 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-09-05 14:20 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
@@ -8,8 +8,8 @@
 
 - **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 387 件
 - **途中**（書きかけで止まっている）: 0 件
-- **手つかず**（両方まるごと空）: 60 件
-- **合計**: 447 件
+- **手つかず**（両方まるごと空）: 66 件
+- **合計**: 453 件
 
 ---
 
@@ -19,9 +19,9 @@ _なし_
 
 ---
 
-## ⬜ 手つかず（両方まるごと空）（60 件）
+## ⬜ 手つかず（両方まるごと空）（66 件）
 
-letter 別: D 5件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 31件
+letter 別: D 5件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 37件
 
 | ID | title | status | reader_level | path |
 | :-- | :-- | :-- | :-- | :-- |
@@ -85,6 +85,12 @@ letter 別: D 5件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 31件
 | J-137 | ALARP | needs_review | 4 | `content/entries/term_general/J-137_alarp[人書].md` |
 | J-138 | 是正処置と不適合 | needs_review | 3 | `content/entries/term_general/J-138_corrective_action[人書].md` |
 | J-139 | 説明可能性 | needs_review | 3 | `content/entries/term_general/J-139_explainability[人書].md` |
+| J-140 | IEC 62443 | needs_review | 4 | `content/entries/term_general/J-140_iec_62443.md` |
+| J-141 | サーベイランス審査 | needs_review | 3 | `content/entries/term_general/J-141_surveillance_audit.md` |
+| J-142 | 文書化した情報と力量 | drafting | 3 | `content/entries/term_general/J-142_documented_information.md` |
+| J-143 | モデルカード | needs_review | 3 | `content/entries/term_general/J-143_model_card.md` |
+| J-144 | インシデント報告 | drafting | [] | `content/entries/term_general/J-144_incident_reporting.md` |
+| J-145 | 人間中心のAI社会原則 | drafting | [] | `content/entries/term_general/J-145_human_centric_ai_principles.md` |
 
 ---
 

@@ -456,3 +456,9 @@ J-136,,3 ステップメソッド,term_general,safety_standard,needs_review,Stag
 J-137,,ALARP,term_general,safety_standard,needs_review,Stage12。合理的に実行可能な限り低く。不釣り合いを示す責任がこちら側にある。本書き完了2026-09-05,content/entries/term_general/J-137_alarp[人書].md
 J-138,,是正処置と不適合,term_general,management_system,needs_review,Stage12。箇条10 改善。修正と是正処置は別物。AIの失敗を仕組みに戻す経路,content/entries/term_general/J-138_corrective_action[人書].md
 J-139,,説明可能性,term_general,ai_governance,needs_review,Stage12。XAI。モデルが述べる理由が本当の理由とは限らない。外側で担保する設計,content/entries/term_general/J-139_explainability[人書].md
+J-140,,IEC 62443,term_general,safety_standard,needs_review,Stage13。産業制御セキュリティ。SL1〜4は「守る相手の本気度」。機能安全は壊れ方、62443は攻める人から守る,content/entries/term_general/J-140_iec_62443.md
+J-141,,サーベイランス審査,term_general,management_system,skeleton,Stage13。ISO認証は3年サイクル。取るより維持が長い。AIは時変性が高く維持の負荷が効く,content/entries/term_general/J-141_surveillance_audit.md
+J-142,,文書化した情報と力量,term_general,management_system,skeleton,Stage13。箇条7 支援。AI運用ではCLAUDE.md・チェックリストが文書化した情報にあたる,content/entries/term_general/J-142_documented_information.md
+J-143,,モデルカード,term_general,ai_governance,skeleton,Stage13。Mitchell 2019。9項目。EU AI Actで事実上の要求へ。何をさせてはいけないかを読む,content/entries/term_general/J-143_model_card.md
+J-144,,インシデント報告,term_general,ai_governance,skeleton,Stage13。EU AI Act 73条。2日/10日/15日。不完全な初回報告が明示的に認められている,content/entries/term_general/J-144_incident_reporting.md
+J-145,,人間中心のAI社会原則,term_general,ai_governance,skeleton,Stage13。内閣府2019。3つの価値と7原則。J-59 AI事業者ガイドラインの親,content/entries/term_general/J-145_human_centric_ai_principles.md
