@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-06 06:19 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-06 06:27 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 39 件
-- **ready**: 430 件
+- **needs_review**: 33 件
+- **ready**: 436 件
 - **archived**: 7 件
 - **合計**: 477 件
 
@@ -26,7 +26,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（28 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（22 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -36,12 +36,6 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-25 | AI のメモリ機能 | needs_review | — |
 | G-26 | Computer Use | needs_review | — |
 | G-27 | プロンプトインジェクション | needs_review | — |
-| H-2 | ペアプログラミング | needs_review | — |
-| H-3 | バイブコーディングの流儀 | needs_review | — |
-| H-4 | コードレビュー | needs_review | — |
-| H-50 | Bard → Gemini | needs_review | — |
-| H-51 | Preview から正式版への流れ | needs_review | — |
-| H-52 | Copilot から Claude Code までの流れ | needs_review | — |
 | H-57 | Gemini の命名史 | needs_review | — |
 | H-59 | AI エージェント元年 | needs_review | — |
 | H-60 | Codex → GitHub Copilot の系譜 | needs_review | — |
@@ -59,7 +53,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-138 | 是正処置と不適合 | needs_review | — |
 | J-139 | 説明可能性 | needs_review | — |
 
-## ✅ 完成（ready・全パス）（430 件）
+## ✅ 完成（ready・全パス）（436 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -343,7 +337,13 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-8 | 決定論的／非決定論的 | ready | — |
 | G-9 | effort レベル | ready | — |
 | H-1 | TDD | ready | — |
+| H-2 | ペアプログラミング | ready | — |
+| H-3 | バイブコーディングの流儀 | ready | — |
+| H-4 | コードレビュー | ready | — |
 | H-5 | Scrum / Agile | ready | — |
+| H-50 | Bard → Gemini | ready | — |
+| H-51 | Preview から正式版への流れ | ready | — |
+| H-52 | Copilot から Claude Code までの流れ | ready | — |
 | H-53 | ChatGPT 登場 | ready | — |
 | H-54 | GPT-4 リリース | ready | — |
 | H-55 | LLaMA のオープン化 | ready | — |

@@ -192,3 +192,22 @@ ARC Prize、ARC-AGI-2、Humanity's Last Exam
 **2026 年が ARC-AGI-2 トラックの最終年**とされ、以降は 3 が主戦場になります。誌面では数値を断定せず、**「1 は解かれ、2 は追い上げ中、3 で断層がある」という構図**を書くのが、時変情報に強い形です。
 
 - 出典: <https://arcprize.org/guide/1>（checked 2026-09-06）、<https://arcprize.org/media/ARC_AGI_3_Technical_Report.pdf>（checked 2026-09-06）、<https://arxiv.org/pdf/2603.24621>（checked 2026-09-06）
+
+### ARC-AGI-3 の最新（2026-09-06 時点）—— 数字が 2 つある
+
+著者の依頼で GPT-6 Astra まわりを確認したところ、**同じモデルの同じベンチマークで、2 つの数字が並立していました。**ここが今回いちばんの発見です。
+
+| 評価環境（harness） | GPT-6 Astra のスコア |
+|---|---|
+| Provider Adapter（OpenAI 側の仕組みを使う） | **99.9%** |
+| Standard（提供元に依存しない共通インターフェース） | **62.7%** |
+
+- 差は **37 ポイント**。**モデルは同じで、評価の足回りだけが違います**
+- Provider Adapter は、リクエスト間で**推論の内部状態を保持**し、長い対話には圧縮をかけます。Standard はそれを使いません
+- ARC Prize 側もこの差そのものを中心的な発見として扱っており、**見出しの数字をどう読むべきかが変わる**としています
+- Standard での順位は GPT-6 Astra 62.7%、**Claude Opus 5 が 30.2%**、GPT-5.6 Sol が 7.8%（2026-09-04 時点）
+- コストも桁が大きく、Standard での評価に 2.6 万ドル規模
+
+**誌面での扱い方**: この一件は「ベンチマークの数字は、何で測ったかとセットでないと意味がない」という主張の**格好の実例**です。J-133 のトレーサビリティや G-50 Evals の話と直結します。数値そのものは時変情報なので、**「同じモデルが 99.9% とも 62.7% とも言える」という構図**を残すのが誌面向きです。
+
+- 出典: <https://arcprize.org/blog/astra>（checked 2026-09-06）、<https://benchlm.ai/benchmarks/arcagi3>（checked 2026-09-06）、<https://superpowerdaily.com/posts/gpt-6-astra-hits-99-9-on-arc-agi-3-but-scores-62-7-in-a-shared-test>（checked 2026-09-06）

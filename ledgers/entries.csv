@@ -296,16 +296,16 @@ G-62,,チャンク分割,term_llm,retrieval,ready,Stage11。RAGの前処理。�
 G-63,,ハイブリッド検索,term_llm,retrieval,ready,Stage11。BM25＋ベクトル、RRFで合成。型番・エラーコードはベクトルでは拾えない,content/entries/term_llm/G-63_hybrid_search[済].md
 G-64,,リランキング,term_llm,retrieval,ready,Stage11。広く拾って並べ直して少し渡す。cross-encoderで上位のみ,content/entries/term_llm/G-64_reranking[済].md
 H-1,,TDD,workflow,methodology,ready,,content/entries/workflow/H-1_tdd[済].md
-H-2,,ペアプログラミング,workflow,methodology,needs_review,Stage 7 で本書き（2026-08-23）,content/entries/workflow/H-2_pair_programming[人書].md
-H-3,,バイブコーディングの流儀,workflow,methodology,needs_review,v2テンプレ本書き済（2026-08-23、entry-writer）,content/entries/workflow/H-3_vibe_coding_style[人書].md
-H-4,,コードレビュー,workflow,methodology,needs_review,Stage 7 本書き完了（2026-08-23）,content/entries/workflow/H-4_code_review[人書].md
+H-2,,ペアプログラミング,workflow,methodology,ready,Stage 7 で本書き（2026-08-23）,content/entries/workflow/H-2_pair_programming[済].md
+H-3,,バイブコーディングの流儀,workflow,methodology,ready,v2テンプレ本書き済（2026-08-23、entry-writer）,content/entries/workflow/H-3_vibe_coding_style[済].md
+H-4,,コードレビュー,workflow,methodology,ready,Stage 7 本書き完了（2026-08-23）,content/entries/workflow/H-4_code_review[済].md
 H-5,,Scrum / Agile,workflow,methodology,ready,,content/entries/workflow/H-5_scrum_agile[済].md
 H-6,,Git Flow,workflow,methodology,ready,,content/entries/workflow/H-6_git_flow[済].md
 H-7,,CI/CD,workflow,methodology,ready,,content/entries/workflow/H-7_ci_cd[済].md
 H-8,,DevOps,workflow,methodology,ready,,content/entries/workflow/H-8_devops[済].md
-H-50,,Bard → Gemini,history,timeline,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-50_bard_to_gemini[人書].md
-H-51,,Preview から正式版への流れ,history,process,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-51_preview_to_ga[人書].md
-H-52,,Copilot から Claude Code までの流れ,history,timeline,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-52_copilot_to_claude_code[人書].md
+H-50,,Bard → Gemini,history,timeline,ready,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-50_bard_to_gemini[済].md
+H-51,,Preview から正式版への流れ,history,process,ready,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-51_preview_to_ga[済].md
+H-52,,Copilot から Claude Code までの流れ,history,timeline,ready,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-52_copilot_to_claude_code[済].md
 H-53,,ChatGPT 登場,history,event,ready,2022-11,content/entries/history/H-53_chatgpt_launch[済].md
 H-54,,GPT-4 リリース,history,event,ready,,content/entries/history/H-54_gpt4_release[済].md
 H-55,,LLaMA のオープン化,history,event,ready,v2テンプレ本書き済（2026-04-30）,content/entries/history/H-55_llama_opensource[済].md

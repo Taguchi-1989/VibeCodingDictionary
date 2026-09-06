@@ -1,14 +1,14 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-09-06 06:19 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-09-06 06:27 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
 ## 内訳
 
-- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 430 件
+- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 436 件
 - **途中**（書きかけで止まっている）: 0 件
-- **手つかず**（両方まるごと空）: 28 件
+- **手つかず**（両方まるごと空）: 22 件
 - **合計**: 458 件
 
 ---
@@ -19,9 +19,9 @@ _なし_
 
 ---
 
-## ⬜ 手つかず（両方まるごと空）（28 件）
+## ⬜ 手つかず（両方まるごと空）（22 件）
 
-letter 別: F 2件 / G 4件 / H 13件 / I 2件 / J 7件
+letter 別: F 2件 / G 4件 / H 7件 / I 2件 / J 7件
 
 | ID | title | status | reader_level | path |
 | :-- | :-- | :-- | :-- | :-- |
@@ -31,12 +31,6 @@ letter 別: F 2件 / G 4件 / H 13件 / I 2件 / J 7件
 | G-25 | AI のメモリ機能 | needs_review | 1-2 | `content/entries/term_llm/G-25_memory[人書].md` |
 | G-26 | Computer Use | needs_review | 3-4 | `content/entries/term_llm/G-26_computer_use[人書].md` |
 | G-27 | プロンプトインジェクション | needs_review | 2-3 | `content/entries/term_llm/G-27_prompt_injection[人書].md` |
-| H-2 | ペアプログラミング | needs_review | 1-2 | `content/entries/workflow/H-2_pair_programming[人書].md` |
-| H-3 | バイブコーディングの流儀 | needs_review | 1-2 | `content/entries/workflow/H-3_vibe_coding_style[人書].md` |
-| H-4 | コードレビュー | needs_review | 2-3 | `content/entries/workflow/H-4_code_review[人書].md` |
-| H-50 | Bard → Gemini | needs_review | 1-2 | `content/entries/history/H-50_bard_to_gemini[人書].md` |
-| H-51 | Preview から正式版への流れ | needs_review | 2-3 | `content/entries/history/H-51_preview_to_ga[人書].md` |
-| H-52 | Copilot から Claude Code までの流れ | needs_review | 2-3 | `content/entries/history/H-52_copilot_to_claude_code[人書].md` |
 | H-57 | Gemini の命名史 | needs_review | 2-3 | `content/entries/history/H-57_gemini_naming_history[人書].md` |
 | H-59 | AI エージェント元年 | needs_review | 2-3 | `content/entries/history/H-59_agent_year_one[人書].md` |
 | H-60 | Codex → GitHub Copilot の系譜 | needs_review | 2-3 | `content/entries/history/H-60_codex_to_copilot[人書].md` |
