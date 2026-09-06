@@ -19,7 +19,7 @@ related_terms:
   - GitHub Copilot
   - Claude Code
   - Git Graph
-status: needs_review
+status: ready
 ---
 
 # VS Code 拡張機能
@@ -105,19 +105,19 @@ GitHub Copilot、Git Graph、Markdown All in One
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- 拡張機能をどこから探せばよいか分かりません
+- 入れすぎると重くなるのか、加減が分かりません
+- ターミナル版との使い分けが見えません
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: 画面があるぶん、非エンジニアには入りやすいです
+- 👍 良い点: エコシステムが充実しているのが強みです
+- 👎 ダメな点: いまは出番がかなり減りました
+- 👥 誰向けか: 最初の一歩を踏み出す人向けです
 <!-- user-input:end key="my_comment" -->
 
 
@@ -157,3 +157,5 @@ GitHub Copilot、Git Graph、Markdown All in One
 ## 備考
 
 - 拡張機能ごとに価格・提供状況は異なります（無料のものが多い一方、GitHub Copilot のように有料プランが必要なものもあります）。個別の料金は各拡張のエントリを参照してください。
+
+**著者の指摘（2026-09-06）**: **非エンジニアにとっての入りやすさが最大の価値**。画面があり、拡張機能とエコシステムが充実していて、製品も揃っている。とくに**横からエージェントを呼び出せる形は、始めたばかりの人にはやりやすかった**。一方で、コーディング自体は Codex や Claude Code の使い勝手が良すぎるため、**あえて使う場面はかなり減った**というのが現在の実感。メモ帳的な使い方が残る程度。

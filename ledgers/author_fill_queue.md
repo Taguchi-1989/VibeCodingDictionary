@@ -1,14 +1,14 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-09-06 03:38 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-09-06 06:14 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
 ## 内訳
 
-- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 422 件
+- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 430 件
 - **途中**（書きかけで止まっている）: 0 件
-- **手つかず**（両方まるごと空）: 36 件
+- **手つかず**（両方まるごと空）: 28 件
 - **合計**: 458 件
 
 ---
@@ -19,20 +19,12 @@ _なし_
 
 ---
 
-## ⬜ 手つかず（両方まるごと空）（36 件）
+## ⬜ 手つかず（両方まるごと空）（28 件）
 
-letter 別: D 5件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 7件
+letter 別: F 2件 / G 4件 / H 13件 / I 2件 / J 7件
 
 | ID | title | status | reader_level | path |
 | :-- | :-- | :-- | :-- | :-- |
-| D-10 | Claude 3 系 | needs_review | 2-3 | `content/entries/model/D-10_claude3[人書].md` |
-| D-13 | Claude 4.5 系 | needs_review | 2-3 | `content/entries/model/D-13_claude45[人書].md` |
-| D-23 | o3 系 | needs_review | 2-3 | `content/entries/model/D-23_o3[人書].md` |
-| D-59 | Midjourney | needs_review | 2 | `content/entries/model/D-59_midjourney[人書].md` |
-| D-61 | AlphaFold | needs_review | 2-3 | `content/entries/model/D-61_alphafold[人書].md` |
-| E-28 | ARC-AGI | needs_review | 3-4 | `content/entries/benchmark/E-28_arc_agi[人書].md` |
-| F-34 | VS Code 拡張機能 | needs_review | 1-2 | `content/entries/term_tool/F-34_vscode_extensions[人書].md` |
-| F-47 | フロントエンド／バックエンド | needs_review | 1-2 | `content/entries/term_tool/F-47_frontend_backend[人書].md` |
 | F-57 | リポジトリ | needs_review | 1-2 | `content/entries/term_tool/F-57_repository[人書].md` |
 | F-150 | MIT ライセンス | needs_review | 2-3 | `content/entries/term_tool/F-150_mit_license[人書].md` |
 | G-24 | Temperature | needs_review | 2-3 | `content/entries/term_llm/G-24_temperature[人書].md` |

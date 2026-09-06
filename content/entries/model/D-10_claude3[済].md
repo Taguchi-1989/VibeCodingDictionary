@@ -20,7 +20,7 @@ related_terms:
   - Claude Code
   - Claude 3.5 系
   - Claude 4 系
-status: needs_review
+status: ready
 ---
 
 # Claude 3 系
@@ -109,19 +109,19 @@ Claude 3.5系、Claude 4系、Claudeのバージョン史
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
--
--
--
+- 3 と 3.5 が別物なのか、続きなのか分かりません
+- Opus・Sonnet・Haiku の違いが名前から想像できません
+- いま使えるのはどれなのか、記事の日付で判断が要ります
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象:
-- 👍 良い点:
-- 👎 ダメな点:
-- 👥 誰向けか:
+- 🙂 第一印象: いまとなっては昔、という感覚です
+- 👍 良い点: Sonnet の評判の良さは実感がありました
+- 👎 ダメな点: Opus は高くて手が出ませんでした
+- 👥 誰向けか: 当時を振り返りたい人向けです
 <!-- user-input:end key="my_comment" -->
 
 
@@ -166,3 +166,5 @@ Claude 3.5系、Claude 4系、Claudeのバージョン史
 - モデルID: `claude-3-opus-20240229` / `claude-3-sonnet-20240229` / `claude-3-haiku-20240307`（2026-08-23時点、いずれも提供終了）。
 - 退役日: Sonnet3が2025-07-21、Opus3が2026-01-05、Haiku3が2026-04-20。2026-08時点で3系は公式のモデル一覧に残っていません。
 - 発表当時、最上位のOpus3はGPT-4と並ぶ水準として受け止められ、Anthropicが主要ベンダーとして広く認識される節目になりました（評価は当時の受け止めであり、2026-08時点の性能比較ではありません）。
+
+**著者の指摘（2026-09-06）**: Sonnet 3.5 の評判はよかったが、当時の Anthropic は**一部のコーダーに評価されている**段階で、まだ一般向けではなかった。著者が最初に触ったのは Sonnet で、Opus は価格が高くて手が出なかった。他社サービス経由で触れる場が入口になっていた。**「今は昔」という距離感**が、この系のエントリの読ませどころ。

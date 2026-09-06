@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-06 03:38 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-06 06:14 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 47 件
-- **ready**: 422 件
+- **needs_review**: 39 件
+- **ready**: 430 件
 - **archived**: 7 件
 - **合計**: 477 件
 
@@ -26,19 +26,11 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（36 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（28 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
-| D-10 | Claude 3 系 | needs_review | — |
-| D-13 | Claude 4.5 系 | needs_review | — |
-| D-23 | o3 系 | needs_review | — |
-| D-59 | Midjourney | needs_review | — |
-| D-61 | AlphaFold | needs_review | — |
-| E-28 | ARC-AGI | needs_review | — |
 | F-150 | MIT ライセンス | needs_review | — |
-| F-34 | VS Code 拡張機能 | needs_review | — |
-| F-47 | フロントエンド／バックエンド | needs_review | — |
 | F-57 | リポジトリ | needs_review | — |
 | G-24 | Temperature | needs_review | — |
 | G-25 | AI のメモリ機能 | needs_review | — |
@@ -67,7 +59,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-138 | 是正処置と不適合 | needs_review | — |
 | J-139 | 説明可能性 | needs_review | — |
 
-## ✅ 完成（ready・全パス）（422 件）
+## ✅ 完成（ready・全パス）（430 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -152,13 +144,16 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | C-83 | AI時代の羅針盤 | ready | — |
 | C-9 | NVIDIA | ready | — |
 | D-1 | Gemini 2 系 | ready | — |
+| D-10 | Claude 3 系 | ready | — |
 | D-11 | Claude 3.5 系 | ready | — |
 | D-12 | Claude 4 系 | ready | — |
+| D-13 | Claude 4.5 系 | ready | — |
 | D-14 | Claude Mythos Preview | ready | — |
 | D-2 | Gemini 2.5 系 | ready | — |
 | D-20 | GPT-5 系 | ready | — |
 | D-21 | GPT-4 系 | ready | — |
 | D-22 | o1 系 | ready | — |
+| D-23 | o3 系 | ready | — |
 | D-24 | GPT-3 系 | ready | — |
 | D-25 | GPT-1 / GPT-2 系 | ready | — |
 | D-26 | gpt-oss | ready | — |
@@ -183,7 +178,9 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | D-56 | Seedance | ready | — |
 | D-57 | Flow | ready | — |
 | D-58 | Whisk | ready | — |
+| D-59 | Midjourney | ready | — |
 | D-60 | AlphaGo | ready | — |
+| D-61 | AlphaFold | ready | — |
 | D-70 | Amical | ready | — |
 | D-71 | Whisper | ready | — |
 | E-1 | SWE-Bench | ready | — |
@@ -196,6 +193,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | E-25 | AIME | ready | — |
 | E-26 | Humanity's Last Exam | ready | — |
 | E-27 | IQ Bench | ready | — |
+| E-28 | ARC-AGI | ready | — |
 | E-3 | Terminal-Bench | ready | — |
 | E-30 | TAU-Bench | ready | — |
 | E-31 | WebArena | ready | — |
@@ -253,6 +251,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-214 | API キー | ready | — |
 | F-3 | Python | ready | — |
 | F-30 | VS Code | ready | — |
+| F-34 | VS Code 拡張機能 | ready | — |
 | F-35 | Markdown Preview Enhanced | ready | — |
 | F-36 | Git Graph | ready | — |
 | F-37 | Japanese Language Pack for VS Code | ready | — |
@@ -265,6 +264,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-44 | pnpm | ready | — |
 | F-45 | デプロイ | ready | — |
 | F-46 | デバッグ | ready | — |
+| F-47 | フロントエンド／バックエンド | ready | — |
 | F-5 | CSS | ready | — |
 | F-50 | git | ready | — |
 | F-51 | git push | ready | — |

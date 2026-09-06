@@ -94,15 +94,15 @@ D-1,,Gemini 2 系,model,google,ready,v2テンプレで D-1_gemini2.md に書き�
 D-2,201,Gemini 2.5 系,model,google,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-2_gemini25[済].md
 D-3,,Gemini 3 系,model,google,ready,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-3_gemini3[済].md
 D-4,,Gemini 3.1 系,model,google,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-4_gemini_3_1[済].md
-D-10,,Claude 3 系,model,anthropic,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-10_claude3[人書].md
+D-10,,Claude 3 系,model,anthropic,ready,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-10_claude3[済].md
 D-11,,Claude 3.5 系,model,anthropic,ready,,content/entries/model/D-11_claude35[済].md
 D-12,,Claude 4 系,model,anthropic,ready,,content/entries/model/D-12_claude4[済].md
-D-13,,Claude 4.5 系,model,anthropic,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-13_claude45[人書].md
+D-13,,Claude 4.5 系,model,anthropic,ready,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-13_claude45[済].md
 D-14,,Claude Mythos Preview,model,frontier_model,ready,v2テンプレ書き起こし済（2026-04-30）。旧スケルトン D-14.md は archived,content/entries/model/D-14_claude_mythos_preview[済].md
 D-20,,GPT-5 系,model,openai,ready,本書き済み（2026-04-29）。旧スケルトン D-20.md は archived,content/entries/model/D-20_gpt5[済].md
 D-21,,GPT-4 系,model,openai,ready,本書き済み（2026-04-29）。旧スケルトン D-21.md は archived,content/entries/model/D-21_gpt4[済].md
 D-22,,o1 系,model,openai,ready,本書き済み（2026-04-29）。旧スケルトン D-22.md は archived,content/entries/model/D-22_o1[済].md
-D-23,,o3 系,model,openai,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-23_o3[人書].md
+D-23,,o3 系,model,openai,ready,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-23_o3[済].md
 D-24,,GPT-3 系,model,openai,ready,,content/entries/model/D-24_gpt3[済].md
 D-25,,GPT-1 / GPT-2 系,model,openai,ready,v2テンプレ書き起こし済（2026-04-30）スケルトン D-25.md は archived,content/entries/model/D-25_gpt1_gpt2[済].md
 D-26,,gpt-oss,model,openai,ready,OpenAI初の公式オープンウェイトモデル 2025-08,content/entries/model/D-26_gpt_oss[済].md
@@ -125,9 +125,9 @@ D-55,,Nano Banana,model,image_video,ready,,content/entries/model/D-55_nano_banan
 D-56,,Seedance,model,video_generation,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-56_seedance[済].md
 D-57,,Flow,model,image_video,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-57_flow[済].md
 D-58,,Whisk,model,image_video,ready,,content/entries/model/D-58_whisk[済].md
-D-59,,Midjourney,model,image_video,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/model/D-59_midjourney[人書].md
+D-59,,Midjourney,model,image_video,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/model/D-59_midjourney[済].md
 D-60,,AlphaGo,model,historical,ready,,content/entries/model/D-60_alphago[済].md
-D-61,,AlphaFold,model,historical,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/model/D-61_alphafold[人書].md
+D-61,,AlphaFold,model,historical,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/model/D-61_alphafold[済].md
 D-70,,Amical,model,ai_solution,ready,情報限定的。公式確認が必要（2026-04-30）,content/entries/model/D-70_amical[済].md
 D-71,,Whisper,model,voice_audio,ready,OpenAI のオープン音声認識モデル,content/entries/model/D-71_whisper[済].md
 E-1,,SWE-Bench,benchmark,coding,ready,,content/entries/benchmark/E-1_swe_bench[済].md
@@ -142,7 +142,7 @@ E-24,,MATH,benchmark,reasoning,ready,v2テンプレ書き起こし済（2026-04-
 E-25,,AIME,benchmark,reasoning,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-25_aime[済].md
 E-26,,Humanity's Last Exam,benchmark,reasoning,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-26_humanity_s_last_exam[済].md
 E-27,,IQ Bench,benchmark,reasoning,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-27_iq_bench[済].md
-E-28,,ARC-AGI,benchmark,reasoning,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/benchmark/E-28_arc_agi[人書].md
+E-28,,ARC-AGI,benchmark,reasoning,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/benchmark/E-28_arc_agi[済].md
 E-30,,TAU-Bench,benchmark,agent,ready,,content/entries/benchmark/E-30_tau_bench[済].md
 E-31,,WebArena,benchmark,agent,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-31_webarena[済].md
 E-32,,GAIA,benchmark,agent,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-32_gaia[済].md
@@ -171,7 +171,7 @@ F-18,,フレームワーク／ライブラリ,term_tool,framework,ready,収録�
 F-20,303,ESLint,term_tool,linter,ready,旧3桁ID連携・v2テンプレで書き直し済（2026-04-29）,content/entries/term_tool/F-20_eslint[済].md
 F-21,,Prettier,term_tool,formatter,ready,,content/entries/term_tool/F-21_prettier[済].md
 F-30,,VS Code,term_tool,editor,ready,,content/entries/term_tool/F-30_vs_code[済].md
-F-34,,VS Code 拡張機能,term_tool,editor_ext,needs_review,v2テンプレ本書き済（2026-08-23、F-30 と拡張別スコープ分担）,content/entries/term_tool/F-34_vscode_extensions[人書].md
+F-34,,VS Code 拡張機能,term_tool,editor_ext,ready,v2テンプレ本書き済（2026-08-23、F-30 と拡張別スコープ分担）,content/entries/term_tool/F-34_vscode_extensions[済].md
 F-35,,Markdown Preview Enhanced,term_tool,editor_ext,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_tool/F-35_markdown_preview_enhanced[済].md
 F-36,,Git Graph,term_tool,editor_ext,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_tool/F-36_git_graph[済].md
 F-37,,Japanese Language Pack for VS Code,term_tool,editor_ext,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_tool/F-37_japanese_language_pack_for_vs_code[済].md
@@ -183,7 +183,7 @@ F-43,,テスト,term_tool,cli_build,ready,v2テンプレ本書き済（2026-04-3
 F-44,,pnpm,term_tool,cli_build,ready,,content/entries/term_tool/F-44_pnpm[済].md
 F-45,,デプロイ,term_tool,cli_build,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-45_deploy[済].md
 F-46,,デバッグ,term_tool,cli_build,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-46_debug[済].md
-F-47,,フロントエンド／バックエンド,term_tool,architecture,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-47_frontend_backend[人書].md
+F-47,,フロントエンド／バックエンド,term_tool,architecture,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-47_frontend_backend[済].md
 F-50,,git,term_tool,git,ready,,content/entries/term/F-50_git[済].md
 F-51,,git push,term_tool,git,ready,,content/entries/term_tool/F-51_git_push[済].md
 F-52,,git pull,term_tool,git,ready,,content/entries/term_tool/F-52_git_pull[済].md

@@ -18,7 +18,7 @@ related_terms:
   - Humanity's Last Exam
   - IQ Bench
   - AGI
-status: needs_review
+status: ready
 ---
 
 # ARC-AGI
@@ -102,19 +102,19 @@ ARC Prize、ARC-AGI-2、Humanity's Last Exam
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
--
--
--
+- 何を測っているのか、名前からは分かりません
+- スコアが低いのは AI が弱いからなのか判断できません
+- 人間なら解けるのか、比較の基準が見えません
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象:
-- 👍 良い点:
-- 👎 ダメな点:
-- 👥 誰向けか:
+- 🙂 第一印象: 長らく難しいと言われてきた問題です
+- 👍 良い点: いまは軒並み解けるようになりました
+- 👎 ダメな点: できないことの指標としては役目を終えつつあります
+- 👥 誰向けか: AI の限界を測りたい人向けです
 <!-- user-input:end key="my_comment" -->
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
@@ -155,3 +155,19 @@ ARC Prize、ARC-AGI-2、Humanity's Last Exam
 
 - 2019 年に François Chollet が提案。2025 年に難度を上げた ARC-AGI-2 が公開され、ARC Prize というコンペが併走している
 - スコアは時変情報。2026-08 時点では上位モデルが人間平均（約 66%）を超える報告が出ている段階で、特定モデル名・小数点つきスコアは本文に書かない方針とする
+
+**著者の指摘（2026-09-06）**: 長らく「AI には難しい」と言われてきたが、**いまは越えられてしまっている**。全然できなかったものが超えられていくところが面白い。
+
+### 現況の調べ物（2026-09-06 時点）
+
+| モデル | ARC-AGI-2 |
+|---|---|
+| GPT-5.6 Sol（max reasoning） | **92.5%**（検証済みの最高値） |
+| **Claude Opus 5** | **85%** |
+| Gemini 3.7 Flash | 84.6%（1 問 0.25 ドル） |
+
+- **2026 年を通じて大きく伸びました。**以前は多くのモデルが 50% を切っていたのが、いまは過半を解くモデルが複数あります
+- 総合的な知能指標では **Claude Opus 5 が首位**（Artificial Analysis Intelligence Index 63）とされる一方、**ARC-AGI-2 の検証済み最高値は GPT-5.6 Sol**。**ベンチマークごとに順位が入れ替わる**ことそのものが、いまの読みどころです
+- すでに **ARC-AGI-3** が「エージェント知能向けの新しい挑戦」として出ています。飽和したら次を作る、という循環に入っています
+- 誌面に数値を載せるなら時変情報として扱い、**「かつて解けなかったものが数年で解けるようになった」という動きのほう**を主役にするのが安全です
+- 出典: <https://arcprize.org/leaderboard>（checked 2026-09-06）、<https://benchmarklist.com/benchmarks/arc_agi_2/>（checked 2026-09-06）、<https://arxiv.org/pdf/2603.24621>（ARC-AGI-3、checked 2026-09-06）
