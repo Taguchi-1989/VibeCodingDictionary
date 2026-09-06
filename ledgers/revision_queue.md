@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-06 06:27 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-06 06:39 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 33 件
-- **ready**: 436 件
+- **needs_review**: 32 件
+- **ready**: 437 件
 - **archived**: 7 件
 - **合計**: 477 件
 
@@ -26,7 +26,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（22 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（21 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -37,7 +37,6 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-26 | Computer Use | needs_review | — |
 | G-27 | プロンプトインジェクション | needs_review | — |
 | H-57 | Gemini の命名史 | needs_review | — |
-| H-59 | AI エージェント元年 | needs_review | — |
 | H-60 | Codex → GitHub Copilot の系譜 | needs_review | — |
 | H-61 | Preview 版という文化 | needs_review | — |
 | H-62 | Anthropic 創業の流れ | needs_review | — |
@@ -53,7 +52,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-138 | 是正処置と不適合 | needs_review | — |
 | J-139 | 説明可能性 | needs_review | — |
 
-## ✅ 完成（ready・全パス）（436 件）
+## ✅ 完成（ready・全パス）（437 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -349,6 +348,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | H-55 | LLaMA のオープン化 | ready | — |
 | H-56 | Claude のバージョン史 | ready | — |
 | H-58 | Transformer 論文 | ready | — |
+| H-59 | AI エージェント元年 | ready | — |
 | H-6 | Git Flow | ready | — |
 | H-7 | CI/CD | ready | — |
 | H-8 | DevOps | ready | — |
