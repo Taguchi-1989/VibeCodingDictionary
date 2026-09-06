@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-06 02:26 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-06 02:56 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 55 件
-- **ready**: 414 件
+- **needs_review**: 47 件
+- **ready**: 422 件
 - **archived**: 7 件
 - **合計**: 477 件
 
@@ -26,7 +26,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（44 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（36 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -59,14 +59,6 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | H-64 | DeepSeek ショック | needs_review | — |
 | I-80 | 自作 MCP のテンプレ | needs_review | — |
 | I-81 | MCP の登録・設定 | needs_review | — |
-| J-116 | TPU | needs_review | — |
-| J-117 | データセンターと電力 | needs_review | — |
-| J-118 | グラフエンジニアリング | needs_review | — |
-| J-119 | ISO/IEC 23894 | needs_review | — |
-| J-120 | NIST AI RMF | needs_review | — |
-| J-122 | リスクアセスメント | needs_review | — |
-| J-123 | マネジメントシステム共通構造 | needs_review | — |
-| J-124 | ISO/IEC 27001 | needs_review | — |
 | J-125 | 適用宣言書 | needs_review | — |
 | J-126 | 内部監査とマネジメントレビュー | needs_review | — |
 | J-135 | 機能安全 | needs_review | — |
@@ -75,7 +67,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-138 | 是正処置と不適合 | needs_review | — |
 | J-139 | 説明可能性 | needs_review | — |
 
-## ✅ 完成（ready・全パス）（414 件）
+## ✅ 完成（ready・全パス）（422 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -396,8 +388,16 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-113 | 生成UIとagent-native設計 | ready | — |
 | J-114 | グッドハートの法則 | ready | — |
 | J-115 | NPU・AI PC | ready | — |
+| J-116 | TPU | ready | — |
+| J-117 | データセンターと電力 | ready | — |
+| J-118 | グラフエンジニアリング | ready | — |
+| J-119 | ISO/IEC 23894 | ready | — |
 | J-12 | Neural Network | ready | — |
+| J-120 | NIST AI RMF | ready | — |
 | J-121 | AI システム影響評価 | ready | — |
+| J-122 | リスクアセスメント | ready | — |
+| J-123 | マネジメントシステム共通構造 | ready | — |
+| J-124 | ISO/IEC 27001 | ready | — |
 | J-127 | 決定論と非決定論 | ready | — |
 | J-128 | ワークフローとエージェント | ready | — |
 | J-129 | コンテキスト腐敗 | ready | — |
