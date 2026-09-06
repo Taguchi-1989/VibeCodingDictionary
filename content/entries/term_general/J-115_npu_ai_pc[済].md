@@ -13,14 +13,14 @@ start_date: 2024-05
 end_date:
 version_status: active
 pricing_note: none
-evaluation_date: 2026-08-10
+evaluation_date: 2026-09-06
 related_terms:
   - CPU
   - GPU
   - VRAM
   - 量子化
   - Neural Network
-status: needs_review
+status: ready
 ---
 
 # NPU・AI PC
@@ -108,19 +108,19 @@ GPU、VRAM、量子化
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- 自分の PC に載っているのかどうか、確かめ方が分かりません
+- TOPS の数字が大きいことの、実感が湧きません
+- CPU・GPU と何が違い、どれが使われるのか分かりません
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: どこまで積まれているのか掴めません
+- 👍 良い点: 電池を食わずに AI 機能が動きます
+- 👎 ダメな点: 対応チップの範囲が見えにくいです
+- 👥 誰向けか: 次に PC を買う人向けです
 <!-- user-input:end key="my_comment" -->
 
 
@@ -165,3 +165,21 @@ GPU、VRAM、量子化
 
 - Copilot+ PC の条件（NPU 40 TOPS 以上・メモリ 16GB 以上など）は時変情報のため、具体的な数値は evaluation_date 時点の目安として扱います。数値そのものは本文では固定値として断定しません。
 - Apple の M シリーズや Qualcomm Snapdragon など、メーカーごとに NPU の呼び方（Neural Engine 等）が異なりますが、本エントリでは総称としての NPU・AI PC を扱います。
+
+**著者の指摘（2026-09-06）**: 「Intel や AMD のどのチップに、どこまで NPU が載っているのか」が見えにくいのが最大の引っかかり。代表的なチップ世代と TOPS の目安が一覧できると価値が上がる（→ 下記「対応チップの現況」に整理）。
+
+### 対応チップの現況（2026-09-06 時点の目安）
+
+著者の「どのチップにどこまで載っているのか」という問いに対する調べ物のメモです。誌面に数値をそのまま載せるかは判断が要ります（時変情報のため）。
+
+| 世代 | NPU 性能の目安 | Copilot+ PC（40 TOPS 以上）の線 |
+|---|---|---|
+| Intel Core Ultra 第 1 世代（Meteor Lake） | 約 11 TOPS | 届かない |
+| Intel Core Ultra 200V（Lunar Lake） | 40〜48 TOPS | 満たす |
+| AMD Ryzen AI 7040 | 約 10 TOPS | 届かない |
+| AMD Ryzen AI 8040 | 約 16 TOPS | 届かない |
+| AMD Ryzen AI 300（XDNA 2 / HX 370） | 約 50 TOPS | 満たす |
+
+- **要点は「NPU が載っている＝Copilot+ PC ではない」**こと。同じ Core Ultra でも第 1 世代は基準の 4 分の 1 ほどで、世代で大きく段差があります。読者のつまずき「自分の PC に載っているか分からない」に対する実質的な答えは、**世代名まで見ないと分からない**、になります
+- Copilot+ PC の要件は NPU 40 TOPS 以上 ＋ メモリ 16GB 以上（Microsoft の要件）。2026 年時点では Intel Core Ultra 200V / 300、AMD Ryzen AI 300 / 400、Qualcomm Snapdragon X / X2 が該当します
+- 出典: <https://learn.microsoft.com/en-us/windows/ai/npu-devices/>（checked 2026-09-06）、<https://www.microsoft.com/en-us/windows/learning-center/copilot-plus-pcs-windows-pcs-differences>（checked 2026-09-06）

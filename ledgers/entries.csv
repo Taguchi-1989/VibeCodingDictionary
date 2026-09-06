@@ -371,21 +371,22 @@ J-33,,量子コンピュータ,term_general,computing_history,ready,,content/ent
 J-34,,マルチモーダル,term_general,ml_basic,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-34_multimodal[済].md
 J-35,,スケーリング則,term_general,ml_basic,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-35_scaling_law[済].md
 J-36,,蒸留,term_general,ml_basic,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-36_distillation[済].md
-J-38,,ムーアの法則,term_general,computing_history,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-38_moores_law[人書].md
+J-38,,ムーアの法則,term_general,computing_history,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-38_moores_law[済].md
 J-40,,IoT,term_general,buzzword,ready,,content/entries/term_general/J-40_iot[済].md
 J-41,,DX,term_general,buzzword,ready,,content/entries/term_general/J-41_dx[済].md
 J-42,,Web3,term_general,buzzword,ready,,content/entries/term_general/J-42_web3[済].md
 J-43,,SaaS,term_general,buzzword,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_general/J-43_saas[済].md
-J-50,,AI 倫理,term_general,ethics_law,needs_review,2026-08-23 entry-writer 本書き（stage7_briefs）,content/entries/term_general/J-50_ai_ethics[人書].md
+J-50,,AI 倫理,term_general,ethics_law,ready,2026-08-23 entry-writer 本書き（stage7_briefs）,content/entries/term_general/J-50_ai_ethics[済].md
 J-51,,Hallucination,term_general,ethics_law,ready,,content/entries/term_general/J-51_hallucination[済].md
 J-52,,Sycophancy,term_general,ethics_law,ready,,content/entries/term_general/J-52_sycophancy[済].md
 J-53,,著作権法 30 条の 4（日本）,term_general,ethics_law,ready,,content/entries/term_general/J-53_copyright_law_30_4[済].md
 J-54,,ISO/IEC 42001,term_general,ethics_law,ready,AIMS v2テンプレ書き起こし済（2026-04-29）,content/entries/term_general/J-54_iso_iec_42001[済].md
-J-55,,個人情報保護法,term_general,ethics_law,needs_review,2026-04-30 entry-writer 執筆,content/entries/term_general/J-55_appi[人書].md
-J-59,,AI 事業者ガイドライン,term_general,ethics_law,needs_review,2026-09-05 entry-writer 本書き（stage8_briefs）,content/entries/term_general/J-59_ai_business_guideline[人書].md
+J-55,,個人情報保護法,term_general,ethics_law,ready,2026-04-30 entry-writer 執筆,content/entries/term_general/J-55_appi[済].md
+J-59,,AI 事業者ガイドライン,term_general,ethics_law,ready,2026-09-05 entry-writer 本書き（stage8_briefs）,content/entries/term_general/J-59_ai_business_guideline[済].md
 J-56,,GDPR,term_general,ethics_law,ready,,content/entries/term_general/J-56_gdpr[済].md
-J-57,,RLHF・アラインメント,term_general,ethics_law,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-57_rlhf_alignment[人書].md
-J-62,,チューリングテスト,term_general,peripheral,needs_review,2026-08-23 entry-writer 本書き（stage7_briefs_2026-08 準拠、☆違反0・警告0）,content/entries/term_general/J-62_turing_test[人書].md
+J-57,,RLHF・アラインメント,term_general,ethics_law,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-57_rlhf_alignment[済].md
+J-58,,EU AI Act,term_general,ethics_law,ready,台帳から欠落していたため 2026-09-06 に追加（ファイルは以前から存在）,content/entries/term_general/J-58_eu_ai_act[済].md
+J-62,,チューリングテスト,term_general,peripheral,ready,2026-08-23 entry-writer 本書き（stage7_briefs_2026-08 準拠、☆違反0・警告0）,content/entries/term_general/J-62_turing_test[済].md
 J-70,,VRAM,term_general,hardware,ready,2026-04-29 entry-writer 執筆,content/entries/term_general/J-70_vram[済].md
 J-71,,RAM,term_general,hardware,ready,2026-04-30 entry-writer 執筆,content/entries/term_general/J-71_ram[済].md
 J-72,,H100,term_general,hardware,ready,,content/entries/term_general/J-72_h100[済].md
@@ -431,7 +432,7 @@ J-111,,人間の認知ボトルネック,term_general,human_cognition,ready,Lv6�
 J-112,,認知コストの定量化,term_general,human_cognition,ready,Lv6自己学習シェルフ（刊行外）。resolution velocity・UX心理監査,content/entries/term_general/J-112_cognitive_cost_quantification[済].md
 J-113,,生成UIとagent-native設計,term_general,human_cognition,ready,Lv6自己学習シェルフ（刊行外）。GenUI・提案カード・post-SaaS,content/entries/term_general/J-113_generative_ui_agent_native[済].md
 J-114,,グッドハートの法則,term_general,human_cognition,ready,Lv6自己学習シェルフ（刊行外）。測定基準が目標になると腐る・KPI設計・eval設計,content/entries/term_general/J-114_goodharts_law[済].md
-J-115,,NPU・AI PC,term_general,hardware,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-115_npu_ai_pc[人書].md
+J-115,,NPU・AI PC,term_general,hardware,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-115_npu_ai_pc[済].md
 J-116,,TPU,term_general,hardware,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-116_tpu[人書].md
 J-117,,データセンターと電力,term_general,hardware,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-117_datacenter_power[人書].md
 J-118,,グラフエンジニアリング,term_general,agent_architecture,needs_review,スコープ地図（docs/scope_map_figure_spec.md）で追加。ループ層の中の「配線」を担う工学,content/entries/term_general/J-118_graph_engineering[人書].md
