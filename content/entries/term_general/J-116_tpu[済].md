@@ -19,7 +19,7 @@ related_terms:
   - H100
   - Google Cloud
   - Vertex AI
-status: needs_review
+status: ready
 ---
 
 # TPU
@@ -103,19 +103,19 @@ GPU、H100、Vertex AI
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- Google 以外でも使えるのか、名前だけでは分かりません
+- GPU とどちらが良いのか、比べ方が分かりません
+- 自分が使う AI がどちらで動いているか見えません
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: Google 系という以上のことが掴めません
+- 👍 良い点: 用途を絞った分、電力あたりで効きます
+- 👎 ダメな点: 実際どこまで使われているか見えません
+- 👥 誰向けか: AI の裏側の勢力図を知りたい人向けです
 <!-- user-input:end key="my_comment" -->
 
 
@@ -160,3 +160,13 @@ GPU、H100、Vertex AI
 
 - 2026-08 時点で最新世代は第 7 世代の Ironwood で、一般提供が進んでいる段階です。世代名・世代数は今後も更新される時変情報のため、本文では固有の世代名を断定せず evaluation_date 時点の情報として扱っています。
 - 市場全体では NVIDIA の GPU が大きなシェアを占め、TPU は「自社で作る」路線の代表例という位置づけです。
+
+**著者の指摘（2026-09-06）**: 「GPU に比べて良い」と聞くが、最近どこまで来ているのかが分からない。Google 一人勝ちというストーリーの中に置かれていたが、Google 自体の話をあまり聞かないので、量産性や実際の採用がどこまで進んでいるのか、それともコンセプト先行なのかを知りたい。
+
+### 現況の調べ物（2026-09-06 時点）
+
+- **コンセプト先行ではなく、外販が動いています**。Anthropic が第 7 世代 Ironwood を最大 100 万チップ規模で調達する契約を結び、2026 年に 1 ギガワット超の容量を確保。第 1 フェーズだけで 40 万チップ規模（Broadcom がラックとして直接販売）
+- Google は自社データセンターでの提供にとどまらず、**顧客の施設に置く形での外販**にも踏み込んでおり、NVIDIA に対する実質的な対抗軸になりつつあります
+- 出荷見込みは 2026 年に数百万チップ規模とされ、量産段階に入っています
+- 誌面に数値をそのまま載せるかは要判断（時変情報）。**「Google 社内専用の実験チップではなく、外に売る商品になった」**という一段だけを書ければ十分です
+- 出典: <https://www.anthropic.com/news/google-broadcom-partnership-compute>（checked 2026-09-06）、<https://newsletter.semianalysis.com/p/tpuv7-google-takes-a-swing-at-the>（checked 2026-09-06）、<https://www.datacenterdynamics.com/en/news/google-offers-its-tpus-to-ai-cloud-providers-report/>（checked 2026-09-06）

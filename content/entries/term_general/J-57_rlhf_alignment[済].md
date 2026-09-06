@@ -19,7 +19,7 @@ related_terms:
   - Fine-tuning
   - Hallucination
   - Sycophancy
-status: needs_review
+status: ready
 ---
 
 # RLHF・アラインメント
@@ -101,19 +101,19 @@ Constitutional AI、DPO、RLVR（J-131）
 ## 非エンジニアのつまずき
 
 <!-- user-input:start key="stumble" -->
-- 
-- 
-- 
+- 人が順位をつけるだけで賢くなるのが、直感に反します
+- 誰の価値観に合わせているのか、外からは見えません
+- アラインメントと RLHF の関係が分かりにくいです
 <!-- user-input:end key="stumble" -->
 
 <!-- AUTHOR: user_only / AI-ASSIST: no -->
 ## 私のコメント
 
 <!-- user-input:start key="my_comment" -->
-- 🙂 第一印象: 
-- 👍 良い点: 
-- 👎 ダメな点: 
-- 👥 誰向けか: 
+- 🙂 第一印象: それらしい回答が返る仕掛けだと分かります
+- 👍 良い点: 破綻しない受け答えになります
+- 👎 ダメな点: あの AI 臭さの原因でもある気がします
+- 👥 誰向けか: 出力の癖を疑いたい人向けです
 <!-- user-input:end key="my_comment" -->
 
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
@@ -158,3 +158,5 @@ Constitutional AI、DPO、RLVR（J-131）
 - InstructGPT の論文提出は 2022 年 3 月。ChatGPT（2022 年 11 月公開、H-53）の直接の前身にあたる研究として start_date に採用した
 - DPO（Direct Preference Optimization）・RLAIF（AI フィードバックによる強化学習）は「深掘り先」止まりとし、手法の詳細解説は別エントリの候補として残す
 - Sycophancy（迎合、J-52）の原因説明は RLHF 側でも軽く触れているが、詳しい現象解説は J-52 に委ねてスコープの重複を避けた
+
+**著者の指摘（2026-09-06）**: 「半分は正解、半分は違います」のような当たり障りのない答え方の原因にもなっている気がしている。それらしい回答は返ってくるが、最近はこの方向のままでよいのか疑問に思うところがある。

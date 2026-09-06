@@ -1,14 +1,14 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-09-05 21:48 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-09-06 03:38 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
 ## 内訳
 
-- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 398 件
+- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 422 件
 - **途中**（書きかけで止まっている）: 0 件
-- **手つかず**（両方まるごと空）: 60 件
+- **手つかず**（両方まるごと空）: 36 件
 - **合計**: 458 件
 
 ---
@@ -19,9 +19,9 @@ _なし_
 
 ---
 
-## ⬜ 手つかず（両方まるごと空）（60 件）
+## ⬜ 手つかず（両方まるごと空）（36 件）
 
-letter 別: D 5件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 31件
+letter 別: D 5件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 7件
 
 | ID | title | status | reader_level | path |
 | :-- | :-- | :-- | :-- | :-- |
@@ -54,30 +54,6 @@ letter 別: D 5件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 31件
 | H-64 | DeepSeek ショック | needs_review | 2-3 | `content/entries/history/H-64_deepseek_shock[人書].md` |
 | I-80 | 自作 MCP のテンプレ | needs_review | 3-4 | `content/entries/mcp/I-80_diy_mcp_template[人書].md` |
 | I-81 | MCP の登録・設定 | needs_review | 2-3 | `content/entries/mcp/I-81_mcp_setup[人書].md` |
-| J-5 | 世界モデル | needs_review | 3-4 | `content/entries/term_general/J-5_world_model[人書].md` |
-| J-6 | フィジカル AI | needs_review | 3-4 | `content/entries/term_general/J-6_physical_ai[人書].md` |
-| J-7 | VLA | needs_review | 4-5 | `content/entries/term_general/J-7_vla[人書].md` |
-| J-22 | パラメータ数の単位 | needs_review | 2-3 | `content/entries/term_general/J-22_parameter_units[人書].md` |
-| J-32 | ノイマン型 | needs_review | 2-3 | `content/entries/term_general/J-32_von_neumann[人書].md` |
-| J-34 | マルチモーダル | needs_review | 1-2 | `content/entries/term_general/J-34_multimodal[人書].md` |
-| J-35 | スケーリング則 | needs_review | 3-4 | `content/entries/term_general/J-35_scaling_law[人書].md` |
-| J-36 | 蒸留 | needs_review | 3-4 | `content/entries/term_general/J-36_distillation[人書].md` |
-| J-38 | ムーアの法則 | needs_review | 2-3 | `content/entries/term_general/J-38_moores_law[人書].md` |
-| J-50 | AI 倫理 | needs_review | 2-3 | `content/entries/term_general/J-50_ai_ethics[人書].md` |
-| J-55 | 個人情報保護法 | needs_review | 2-3 | `content/entries/term_general/J-55_appi[人書].md` |
-| J-57 | RLHF・アラインメント | needs_review | 3-4 | `content/entries/term_general/J-57_rlhf_alignment[人書].md` |
-| J-58 | EU AI Act | needs_review | 3-4 | `content/entries/term_general/J-58_eu_ai_act[人書].md` |
-| J-59 | AI 事業者ガイドライン | needs_review | 2-3 | `content/entries/term_general/J-59_ai_business_guideline[人書].md` |
-| J-62 | チューリングテスト | needs_review | 1-2 | `content/entries/term_general/J-62_turing_test[人書].md` |
-| J-115 | NPU・AI PC | needs_review | 2-3 | `content/entries/term_general/J-115_npu_ai_pc[人書].md` |
-| J-116 | TPU | needs_review | 3-4 | `content/entries/term_general/J-116_tpu[人書].md` |
-| J-117 | データセンターと電力 | needs_review | 2-3 | `content/entries/term_general/J-117_datacenter_power[人書].md` |
-| J-118 | グラフエンジニアリング | needs_review | 5 | `content/entries/term_general/J-118_graph_engineering[人書].md` |
-| J-119 | ISO/IEC 23894 | needs_review | 3-4 | `content/entries/term_general/J-119_iso_iec_23894[人書].md` |
-| J-120 | NIST AI RMF | needs_review | 3-4 | `content/entries/term_general/J-120_nist_ai_rmf[人書].md` |
-| J-122 | リスクアセスメント | needs_review | 3-4 | `content/entries/term_general/J-122_risk_assessment[人書].md` |
-| J-123 | マネジメントシステム共通構造 | needs_review | 3-4 | `content/entries/term_general/J-123_harmonized_structure[人書].md` |
-| J-124 | ISO/IEC 27001 | needs_review | 3-4 | `content/entries/term_general/J-124_iso_iec_27001[人書].md` |
 | J-125 | 適用宣言書 | needs_review | 3-4 | `content/entries/term_general/J-125_statement_of_applicability[人書].md` |
 | J-126 | 内部監査とマネジメントレビュー | needs_review | 3-4 | `content/entries/term_general/J-126_internal_audit_review[人書].md` |
 | J-135 | 機能安全 | needs_review | 4 | `content/entries/term_general/J-135_functional_safety[人書].md` |

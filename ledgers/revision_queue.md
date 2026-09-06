@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-05 21:48 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-06 03:38 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 71 件
-- **ready**: 398 件
+- **needs_review**: 47 件
+- **ready**: 422 件
 - **archived**: 7 件
 - **合計**: 477 件
 
@@ -26,7 +26,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（60 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（36 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -59,15 +59,6 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | H-64 | DeepSeek ショック | needs_review | — |
 | I-80 | 自作 MCP のテンプレ | needs_review | — |
 | I-81 | MCP の登録・設定 | needs_review | — |
-| J-115 | NPU・AI PC | needs_review | — |
-| J-116 | TPU | needs_review | — |
-| J-117 | データセンターと電力 | needs_review | — |
-| J-118 | グラフエンジニアリング | needs_review | — |
-| J-119 | ISO/IEC 23894 | needs_review | — |
-| J-120 | NIST AI RMF | needs_review | — |
-| J-122 | リスクアセスメント | needs_review | — |
-| J-123 | マネジメントシステム共通構造 | needs_review | — |
-| J-124 | ISO/IEC 27001 | needs_review | — |
 | J-125 | 適用宣言書 | needs_review | — |
 | J-126 | 内部監査とマネジメントレビュー | needs_review | — |
 | J-135 | 機能安全 | needs_review | — |
@@ -75,23 +66,8 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-137 | ALARP | needs_review | — |
 | J-138 | 是正処置と不適合 | needs_review | — |
 | J-139 | 説明可能性 | needs_review | — |
-| J-22 | パラメータ数の単位 | needs_review | — |
-| J-32 | ノイマン型 | needs_review | — |
-| J-34 | マルチモーダル | needs_review | — |
-| J-35 | スケーリング則 | needs_review | — |
-| J-36 | 蒸留 | needs_review | — |
-| J-38 | ムーアの法則 | needs_review | — |
-| J-5 | 世界モデル | needs_review | — |
-| J-50 | AI 倫理 | needs_review | — |
-| J-55 | 個人情報保護法 | needs_review | — |
-| J-57 | RLHF・アラインメント | needs_review | — |
-| J-58 | EU AI Act | needs_review | — |
-| J-59 | AI 事業者ガイドライン | needs_review | — |
-| J-6 | フィジカル AI | needs_review | — |
-| J-62 | チューリングテスト | needs_review | — |
-| J-7 | VLA | needs_review | — |
 
-## ✅ 完成（ready・全パス）（398 件）
+## ✅ 完成（ready・全パス）（422 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -411,8 +387,17 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-112 | 認知コストの定量化 | ready | — |
 | J-113 | 生成UIとagent-native設計 | ready | — |
 | J-114 | グッドハートの法則 | ready | — |
+| J-115 | NPU・AI PC | ready | — |
+| J-116 | TPU | ready | — |
+| J-117 | データセンターと電力 | ready | — |
+| J-118 | グラフエンジニアリング | ready | — |
+| J-119 | ISO/IEC 23894 | ready | — |
 | J-12 | Neural Network | ready | — |
+| J-120 | NIST AI RMF | ready | — |
 | J-121 | AI システム影響評価 | ready | — |
+| J-122 | リスクアセスメント | ready | — |
+| J-123 | マネジメントシステム共通構造 | ready | — |
+| J-124 | ISO/IEC 27001 | ready | — |
 | J-127 | 決定論と非決定論 | ready | — |
 | J-128 | ワークフローとエージェント | ready | — |
 | J-129 | コンテキスト腐敗 | ready | — |
@@ -442,6 +427,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-2 | 強い AI／弱い AI | ready | — |
 | J-20 | Big Data | ready | — |
 | J-21 | LoRA | ready | — |
+| J-22 | パラメータ数の単位 | ready | — |
 | J-23 | 拡散モデル | ready | — |
 | J-24 | Encoder-Decoder | ready | — |
 | J-25 | Tokenizer・BPE | ready | — |
@@ -452,17 +438,31 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-3 | Singularity | ready | — |
 | J-30 | Flash Attention | ready | — |
 | J-31 | 第 5 世代コンピュータ | ready | — |
+| J-32 | ノイマン型 | ready | — |
 | J-33 | 量子コンピュータ | ready | — |
+| J-34 | マルチモーダル | ready | — |
+| J-35 | スケーリング則 | ready | — |
+| J-36 | 蒸留 | ready | — |
+| J-38 | ムーアの法則 | ready | — |
 | J-4 | ASI | ready | — |
 | J-40 | IoT | ready | — |
 | J-41 | DX | ready | — |
 | J-42 | Web3 | ready | — |
 | J-43 | SaaS | ready | — |
+| J-5 | 世界モデル | ready | — |
+| J-50 | AI 倫理 | ready | — |
 | J-51 | Hallucination | ready | — |
 | J-52 | Sycophancy | ready | — |
 | J-53 | 著作権法 30 条の 4 | ready | — |
 | J-54 | ISO/IEC 42001 | ready | — |
+| J-55 | 個人情報保護法 | ready | — |
 | J-56 | GDPR | ready | — |
+| J-57 | RLHF・アラインメント | ready | — |
+| J-58 | EU AI Act | ready | — |
+| J-59 | AI 事業者ガイドライン | ready | — |
+| J-6 | フィジカル AI | ready | — |
+| J-62 | チューリングテスト | ready | — |
+| J-7 | VLA | ready | — |
 | J-70 | VRAM | ready | — |
 | J-71 | RAM | ready | — |
 | J-72 | H100 | ready | — |
