@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-06 06:39 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-06 06:51 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 32 件
-- **ready**: 437 件
+- **needs_review**: 25 件
+- **ready**: 444 件
 - **archived**: 7 件
 - **合計**: 477 件
 
@@ -26,7 +26,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（21 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（14 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -44,15 +44,8 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | H-64 | DeepSeek ショック | needs_review | — |
 | I-80 | 自作 MCP のテンプレ | needs_review | — |
 | I-81 | MCP の登録・設定 | needs_review | — |
-| J-125 | 適用宣言書 | needs_review | — |
-| J-126 | 内部監査とマネジメントレビュー | needs_review | — |
-| J-135 | 機能安全 | needs_review | — |
-| J-136 | 3 ステップメソッド | needs_review | — |
-| J-137 | ALARP | needs_review | — |
-| J-138 | 是正処置と不適合 | needs_review | — |
-| J-139 | 説明可能性 | needs_review | — |
 
-## ✅ 完成（ready・全パス）（437 件）
+## ✅ 完成（ready・全パス）（444 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -398,6 +391,8 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-122 | リスクアセスメント | ready | — |
 | J-123 | マネジメントシステム共通構造 | ready | — |
 | J-124 | ISO/IEC 27001 | ready | — |
+| J-125 | 適用宣言書 | ready | — |
+| J-126 | 内部監査とマネジメントレビュー | ready | — |
 | J-127 | 決定論と非決定論 | ready | — |
 | J-128 | ワークフローとエージェント | ready | — |
 | J-129 | コンテキスト腐敗 | ready | — |
@@ -407,6 +402,11 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-132 | A2A | ready | — |
 | J-133 | オブザーバビリティ | ready | — |
 | J-134 | Human-in-the-loop | ready | — |
+| J-135 | 機能安全 | ready | — |
+| J-136 | 3 ステップメソッド | ready | — |
+| J-137 | ALARP | ready | — |
+| J-138 | 是正処置と不適合 | ready | — |
+| J-139 | 説明可能性 | ready | — |
 | J-14 | LLM | ready | — |
 | J-140 | IEC 62443 | ready | — |
 | J-141 | サーベイランス審査 | ready | — |

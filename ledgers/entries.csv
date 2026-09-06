@@ -442,8 +442,8 @@ J-121,,AI システム影響評価,term_general,ethics_law,ready,Stage 9 ブリ�
 J-122,,リスクアセスメント,term_general,ethics_law,ready,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。ISO 31000 由来の型は同じ、AI ではリスク源が変わる,content/entries/term_general/J-122_risk_assessment[済].md
 J-123,,マネジメントシステム共通構造,term_general,ethics_law,ready,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。Harmonized Structure（旧 Annex SL）の箇条 4〜10 骨格,content/entries/term_general/J-123_harmonized_structure[済].md
 J-124,,ISO/IEC 27001,term_general,ethics_law,ready,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。42001 の下敷き。附属書 A 93 の管理策,content/entries/term_general/J-124_iso_iec_27001[済].md
-J-125,,適用宣言書,term_general,ethics_law,needs_review,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。SoA。仕組みは 27001 と同じ、中身の管理策（42001 は 38）だけ違う。ファイル名の状態マーカーは scripts/apply_status_markers.py の実行待ち,content/entries/term_general/J-125_statement_of_applicability[人書].md
-J-126,,内部監査とマネジメントレビュー,term_general,ethics_law,needs_review,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。箇条 9 の要求事項。AI 版は見る対象に影響評価が加わる,content/entries/term_general/J-126_internal_audit_review[人書].md
+J-125,,適用宣言書,term_general,ethics_law,ready,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。SoA。仕組みは 27001 と同じ、中身の管理策（42001 は 38）だけ違う。ファイル名の状態マーカーは scripts/apply_status_markers.py の実行待ち,content/entries/term_general/J-125_statement_of_applicability[済].md
+J-126,,内部監査とマネジメントレビュー,term_general,ethics_law,ready,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。箇条 9 の要求事項。AI 版は見る対象に影響評価が加わる,content/entries/term_general/J-126_internal_audit_review[済].md
 J-127,,決定論と非決定論,term_general,ethics_law,ready,Stage 10 ブリーフ（ledgers/stage10_briefs_2026-09.md）で追加。温度 0 でも非決定的という実測と Compiled AI の設計論を扱う。validator 自動昇格済み。ファイル名の [人書] マーカーは scripts/apply_status_markers.py の実行待ち,content/entries/term_general/J-127_determinism[済].md
 J-128,,ワークフローとエージェント,term_general,agent_design,ready,Stage11。そもそも自律させるかの分岐。Anthropic Building Effective Agents 由来,content/entries/term_general/J-128_workflow_vs_agent[済].md
 J-129,,コンテキスト腐敗,term_general,agent_loop,ready,Stage11。context rot / lost in the middle。台帳の敵②の実体,content/entries/term_general/J-129_context_rot[済].md
@@ -452,11 +452,11 @@ J-131,,RLVR,term_general,ml_basic,ready,Stage11。検証可能な報酬で鍛え
 J-132,,A2A,term_general,agent_protocol,ready,Stage11。エージェント間プロトコル。MCPと競合ではなく同じ財団の下に並ぶ,content/entries/term_general/J-132_a2a[済].md
 J-133,,オブザーバビリティ,term_general,agent_ops,ready,Stage11。OpenTelemetry GenAI規約に収束、ただしexperimental,content/entries/term_general/J-133_observability[済].md
 J-134,,Human-in-the-loop,term_general,agent_ops,ready,Stage11。承認ゲート3段階。自動化バイアスの注意込み,content/entries/term_general/J-134_human_in_the_loop[済].md
-J-135,,機能安全,term_general,safety_standard,needs_review,Stage12。IEC 61508。SIL 1〜4。安全を0か1でなく段階と確率で語る伝統。J-122の「昔からのISO」の受け皿,content/entries/term_general/J-135_functional_safety[人書].md
-J-136,,3 ステップメソッド,term_general,safety_standard,needs_review,Stage12。ISO 12100。本質安全設計→安全防護→使用上の情報。注意喚起で済ませるのが最下策,content/entries/term_general/J-136_three_step_method[人書].md
-J-137,,ALARP,term_general,safety_standard,needs_review,Stage12。合理的に実行可能な限り低く。不釣り合いを示す責任がこちら側にある。本書き完了2026-09-05,content/entries/term_general/J-137_alarp[人書].md
-J-138,,是正処置と不適合,term_general,management_system,needs_review,Stage12。箇条10 改善。修正と是正処置は別物。AIの失敗を仕組みに戻す経路,content/entries/term_general/J-138_corrective_action[人書].md
-J-139,,説明可能性,term_general,ai_governance,needs_review,Stage12。XAI。モデルが述べる理由が本当の理由とは限らない。外側で担保する設計,content/entries/term_general/J-139_explainability[人書].md
+J-135,,機能安全,term_general,safety_standard,ready,Stage12。IEC 61508。SIL 1〜4。安全を0か1でなく段階と確率で語る伝統。J-122の「昔からのISO」の受け皿,content/entries/term_general/J-135_functional_safety[済].md
+J-136,,3 ステップメソッド,term_general,safety_standard,ready,Stage12。ISO 12100。本質安全設計→安全防護→使用上の情報。注意喚起で済ませるのが最下策,content/entries/term_general/J-136_three_step_method[済].md
+J-137,,ALARP,term_general,safety_standard,ready,Stage12。合理的に実行可能な限り低く。不釣り合いを示す責任がこちら側にある。本書き完了2026-09-05,content/entries/term_general/J-137_alarp[済].md
+J-138,,是正処置と不適合,term_general,management_system,ready,Stage12。箇条10 改善。修正と是正処置は別物。AIの失敗を仕組みに戻す経路,content/entries/term_general/J-138_corrective_action[済].md
+J-139,,説明可能性,term_general,ai_governance,ready,Stage12。XAI。モデルが述べる理由が本当の理由とは限らない。外側で担保する設計,content/entries/term_general/J-139_explainability[済].md
 J-140,,IEC 62443,term_general,safety_standard,ready,Stage13。産業制御セキュリティ。SL1〜4は「守る相手の本気度」。機能安全は壊れ方、62443は攻める人から守る,content/entries/term_general/J-140_iec_62443[済].md
 J-141,,サーベイランス審査,term_general,management_system,ready,Stage13。ISO認証は3年サイクル。取るより維持が長い。AIは時変性が高く維持の負荷が効く,content/entries/term_general/J-141_surveillance_audit[済].md
 J-142,,文書化した情報と力量,term_general,management_system,ready,Stage13。箇条7 支援。AI運用ではCLAUDE.md・チェックリストが文書化した情報にあたる,content/entries/term_general/J-142_documented_information[済].md

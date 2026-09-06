@@ -1,14 +1,14 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-09-06 06:39 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-09-06 06:51 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
 ## 内訳
 
-- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 437 件
+- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 444 件
 - **途中**（書きかけで止まっている）: 0 件
-- **手つかず**（両方まるごと空）: 21 件
+- **手つかず**（両方まるごと空）: 14 件
 - **合計**: 458 件
 
 ---
@@ -19,9 +19,9 @@ _なし_
 
 ---
 
-## ⬜ 手つかず（両方まるごと空）（21 件）
+## ⬜ 手つかず（両方まるごと空）（14 件）
 
-letter 別: F 2件 / G 4件 / H 6件 / I 2件 / J 7件
+letter 別: F 2件 / G 4件 / H 6件 / I 2件
 
 | ID | title | status | reader_level | path |
 | :-- | :-- | :-- | :-- | :-- |
@@ -39,13 +39,6 @@ letter 別: F 2件 / G 4件 / H 6件 / I 2件 / J 7件
 | H-64 | DeepSeek ショック | needs_review | 2-3 | `content/entries/history/H-64_deepseek_shock[人書].md` |
 | I-80 | 自作 MCP のテンプレ | needs_review | 3-4 | `content/entries/mcp/I-80_diy_mcp_template[人書].md` |
 | I-81 | MCP の登録・設定 | needs_review | 2-3 | `content/entries/mcp/I-81_mcp_setup[人書].md` |
-| J-125 | 適用宣言書 | needs_review | 3-4 | `content/entries/term_general/J-125_statement_of_applicability[人書].md` |
-| J-126 | 内部監査とマネジメントレビュー | needs_review | 3-4 | `content/entries/term_general/J-126_internal_audit_review[人書].md` |
-| J-135 | 機能安全 | needs_review | 4 | `content/entries/term_general/J-135_functional_safety[人書].md` |
-| J-136 | 3 ステップメソッド | needs_review | 3-4 | `content/entries/term_general/J-136_three_step_method[人書].md` |
-| J-137 | ALARP | needs_review | 4 | `content/entries/term_general/J-137_alarp[人書].md` |
-| J-138 | 是正処置と不適合 | needs_review | 3 | `content/entries/term_general/J-138_corrective_action[人書].md` |
-| J-139 | 説明可能性 | needs_review | 3 | `content/entries/term_general/J-139_explainability[人書].md` |
 
 ---
 
