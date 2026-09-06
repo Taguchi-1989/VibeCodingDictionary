@@ -94,15 +94,15 @@ D-1,,Gemini 2 系,model,google,ready,v2テンプレで D-1_gemini2.md に書き�
 D-2,201,Gemini 2.5 系,model,google,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-2_gemini25[済].md
 D-3,,Gemini 3 系,model,google,ready,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-3_gemini3[済].md
 D-4,,Gemini 3.1 系,model,google,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-4_gemini_3_1[済].md
-D-10,,Claude 3 系,model,anthropic,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-10_claude3[人書].md
+D-10,,Claude 3 系,model,anthropic,ready,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-10_claude3[済].md
 D-11,,Claude 3.5 系,model,anthropic,ready,,content/entries/model/D-11_claude35[済].md
 D-12,,Claude 4 系,model,anthropic,ready,,content/entries/model/D-12_claude4[済].md
-D-13,,Claude 4.5 系,model,anthropic,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-13_claude45[人書].md
+D-13,,Claude 4.5 系,model,anthropic,ready,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-13_claude45[済].md
 D-14,,Claude Mythos Preview,model,frontier_model,ready,v2テンプレ書き起こし済（2026-04-30）。旧スケルトン D-14.md は archived,content/entries/model/D-14_claude_mythos_preview[済].md
 D-20,,GPT-5 系,model,openai,ready,本書き済み（2026-04-29）。旧スケルトン D-20.md は archived,content/entries/model/D-20_gpt5[済].md
 D-21,,GPT-4 系,model,openai,ready,本書き済み（2026-04-29）。旧スケルトン D-21.md は archived,content/entries/model/D-21_gpt4[済].md
 D-22,,o1 系,model,openai,ready,本書き済み（2026-04-29）。旧スケルトン D-22.md は archived,content/entries/model/D-22_o1[済].md
-D-23,,o3 系,model,openai,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-23_o3[人書].md
+D-23,,o3 系,model,openai,ready,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-23_o3[済].md
 D-24,,GPT-3 系,model,openai,ready,,content/entries/model/D-24_gpt3[済].md
 D-25,,GPT-1 / GPT-2 系,model,openai,ready,v2テンプレ書き起こし済（2026-04-30）スケルトン D-25.md は archived,content/entries/model/D-25_gpt1_gpt2[済].md
 D-26,,gpt-oss,model,openai,ready,OpenAI初の公式オープンウェイトモデル 2025-08,content/entries/model/D-26_gpt_oss[済].md
@@ -125,9 +125,9 @@ D-55,,Nano Banana,model,image_video,ready,,content/entries/model/D-55_nano_banan
 D-56,,Seedance,model,video_generation,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-56_seedance[済].md
 D-57,,Flow,model,image_video,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-57_flow[済].md
 D-58,,Whisk,model,image_video,ready,,content/entries/model/D-58_whisk[済].md
-D-59,,Midjourney,model,image_video,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/model/D-59_midjourney[人書].md
+D-59,,Midjourney,model,image_video,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/model/D-59_midjourney[済].md
 D-60,,AlphaGo,model,historical,ready,,content/entries/model/D-60_alphago[済].md
-D-61,,AlphaFold,model,historical,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/model/D-61_alphafold[人書].md
+D-61,,AlphaFold,model,historical,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/model/D-61_alphafold[済].md
 D-70,,Amical,model,ai_solution,ready,情報限定的。公式確認が必要（2026-04-30）,content/entries/model/D-70_amical[済].md
 D-71,,Whisper,model,voice_audio,ready,OpenAI のオープン音声認識モデル,content/entries/model/D-71_whisper[済].md
 E-1,,SWE-Bench,benchmark,coding,ready,,content/entries/benchmark/E-1_swe_bench[済].md
@@ -142,7 +142,7 @@ E-24,,MATH,benchmark,reasoning,ready,v2テンプレ書き起こし済（2026-04-
 E-25,,AIME,benchmark,reasoning,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-25_aime[済].md
 E-26,,Humanity's Last Exam,benchmark,reasoning,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-26_humanity_s_last_exam[済].md
 E-27,,IQ Bench,benchmark,reasoning,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-27_iq_bench[済].md
-E-28,,ARC-AGI,benchmark,reasoning,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/benchmark/E-28_arc_agi[人書].md
+E-28,,ARC-AGI,benchmark,reasoning,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/benchmark/E-28_arc_agi[済].md
 E-30,,TAU-Bench,benchmark,agent,ready,,content/entries/benchmark/E-30_tau_bench[済].md
 E-31,,WebArena,benchmark,agent,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-31_webarena[済].md
 E-32,,GAIA,benchmark,agent,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-32_gaia[済].md
@@ -171,7 +171,7 @@ F-18,,フレームワーク／ライブラリ,term_tool,framework,ready,収録�
 F-20,303,ESLint,term_tool,linter,ready,旧3桁ID連携・v2テンプレで書き直し済（2026-04-29）,content/entries/term_tool/F-20_eslint[済].md
 F-21,,Prettier,term_tool,formatter,ready,,content/entries/term_tool/F-21_prettier[済].md
 F-30,,VS Code,term_tool,editor,ready,,content/entries/term_tool/F-30_vs_code[済].md
-F-34,,VS Code 拡張機能,term_tool,editor_ext,needs_review,v2テンプレ本書き済（2026-08-23、F-30 と拡張別スコープ分担）,content/entries/term_tool/F-34_vscode_extensions[人書].md
+F-34,,VS Code 拡張機能,term_tool,editor_ext,ready,v2テンプレ本書き済（2026-08-23、F-30 と拡張別スコープ分担）,content/entries/term_tool/F-34_vscode_extensions[済].md
 F-35,,Markdown Preview Enhanced,term_tool,editor_ext,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_tool/F-35_markdown_preview_enhanced[済].md
 F-36,,Git Graph,term_tool,editor_ext,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_tool/F-36_git_graph[済].md
 F-37,,Japanese Language Pack for VS Code,term_tool,editor_ext,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_tool/F-37_japanese_language_pack_for_vs_code[済].md
@@ -183,7 +183,7 @@ F-43,,テスト,term_tool,cli_build,ready,v2テンプレ本書き済（2026-04-3
 F-44,,pnpm,term_tool,cli_build,ready,,content/entries/term_tool/F-44_pnpm[済].md
 F-45,,デプロイ,term_tool,cli_build,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-45_deploy[済].md
 F-46,,デバッグ,term_tool,cli_build,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-46_debug[済].md
-F-47,,フロントエンド／バックエンド,term_tool,architecture,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-47_frontend_backend[人書].md
+F-47,,フロントエンド／バックエンド,term_tool,architecture,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_tool/F-47_frontend_backend[済].md
 F-50,,git,term_tool,git,ready,,content/entries/term/F-50_git[済].md
 F-51,,git push,term_tool,git,ready,,content/entries/term_tool/F-51_git_push[済].md
 F-52,,git pull,term_tool,git,ready,,content/entries/term_tool/F-52_git_pull[済].md
@@ -191,7 +191,7 @@ F-53,,branch,term_tool,git,ready,,content/entries/term_tool/F-53_branch[済].md
 F-54,,commit,term_tool,git,ready,,content/entries/term_tool/F-54_commit[済].md
 F-55,,merge,term_tool,git,ready,,content/entries/term_tool/F-55_merge[済].md
 F-56,,.gitignore,term_tool,git,ready,,content/entries/term_tool/F-56_gitignore[済].md
-F-57,,リポジトリ,term_tool,git,needs_review,Stage 7 本書き完了（2026-08-23）,content/entries/term_tool/F-57_repository[人書].md
+F-57,,リポジトリ,term_tool,git,ready,Stage 7 本書き完了（2026-08-23）,content/entries/term_tool/F-57_repository[済].md
 F-58,,git stash,term_tool,git,ready,,content/entries/term_tool/F-58_git_stash[済].md
 F-59,,README.md,term_tool,git,ready,,content/entries/term_tool/F-59_readme_md[済].md
 F-60,,GitHub,term_tool,github,ready,,content/entries/term_tool/F-60_github[済].md
@@ -222,7 +222,7 @@ F-123,,ORM,term_tool,orm,ready,,content/entries/term_tool/F-123_orm[済].md
 F-130,,OAuth,term_tool,auth,ready,,content/entries/term_tool/F-130_oauth[済].md
 F-140,,Mermaid,term_tool,diagram,ready,,content/entries/term_tool/F-140_mermaid[済].md
 F-141,,PlantUML,term_tool,diagram,ready,,content/entries/term_tool/F-141_plantuml[済].md
-F-150,,MIT ライセンス,term_tool,license,needs_review,,content/entries/term_tool/F-150_mit_license[人書].md
+F-150,,MIT ライセンス,term_tool,license,ready,,content/entries/term_tool/F-150_mit_license[済].md
 F-151,,Apache 2.0,term_tool,license,ready,,content/entries/term_tool/F-151_apache_2_0[済].md
 F-152,,GPL,term_tool,license,ready,,content/entries/term_tool/F-152_gpl[済].md
 F-153,,Creative Commons,term_tool,license,ready,title を Creative Commons に修正（括弧除去）,content/entries/term_tool/F-153_creative_commons[済].md
@@ -265,10 +265,10 @@ G-20,,CLAUDE.md,tool_agent,config_file,ready,,content/entries/tool_agent/G-20_cl
 G-21,,AGENTS.md,tool_agent,config_file,ready,,content/entries/tool_agent/G-21_agents_md[済].md
 G-22,,SKILL.md,tool_agent,config_file,ready,,content/entries/tool_agent/G-22_skill_md[済].md
 G-23,,.claude/settings.json,tool_agent,config_file,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/tool_agent/G-23_claude_settings_json[済].md
-G-24,,Temperature,term_llm,basic,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-24_temperature[人書].md
-G-25,,AI のメモリ機能,term_llm,basic,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-25_memory[人書].md
-G-26,,Computer Use,term_llm,control,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-26_computer_use[人書].md
-G-27,,プロンプトインジェクション,term_llm,control,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-27_prompt_injection[人書].md
+G-24,,Temperature,term_llm,basic,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-24_temperature[済].md
+G-25,,AI のメモリ機能,term_llm,basic,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-25_memory[済].md
+G-26,,Computer Use,term_llm,control,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-26_computer_use[済].md
+G-27,,プロンプトインジェクション,term_llm,control,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-27_prompt_injection[済].md
 G-30,,Tool Use,term_llm,control,ready,,content/entries/term_llm/G-30_tool_use[済].md
 G-31,,Hook,term_llm,control,ready,,content/entries/term_llm/G-31_hook[済].md
 G-32,,Slash Command,term_llm,control,ready,,content/entries/term_llm/G-32_slash_command[済].md
@@ -296,23 +296,23 @@ G-62,,チャンク分割,term_llm,retrieval,ready,Stage11。RAGの前処理。�
 G-63,,ハイブリッド検索,term_llm,retrieval,ready,Stage11。BM25＋ベクトル、RRFで合成。型番・エラーコードはベクトルでは拾えない,content/entries/term_llm/G-63_hybrid_search[済].md
 G-64,,リランキング,term_llm,retrieval,ready,Stage11。広く拾って並べ直して少し渡す。cross-encoderで上位のみ,content/entries/term_llm/G-64_reranking[済].md
 H-1,,TDD,workflow,methodology,ready,,content/entries/workflow/H-1_tdd[済].md
-H-2,,ペアプログラミング,workflow,methodology,needs_review,Stage 7 で本書き（2026-08-23）,content/entries/workflow/H-2_pair_programming[人書].md
-H-3,,バイブコーディングの流儀,workflow,methodology,needs_review,v2テンプレ本書き済（2026-08-23、entry-writer）,content/entries/workflow/H-3_vibe_coding_style[人書].md
-H-4,,コードレビュー,workflow,methodology,needs_review,Stage 7 本書き完了（2026-08-23）,content/entries/workflow/H-4_code_review[人書].md
+H-2,,ペアプログラミング,workflow,methodology,ready,Stage 7 で本書き（2026-08-23）,content/entries/workflow/H-2_pair_programming[済].md
+H-3,,バイブコーディングの流儀,workflow,methodology,ready,v2テンプレ本書き済（2026-08-23、entry-writer）,content/entries/workflow/H-3_vibe_coding_style[済].md
+H-4,,コードレビュー,workflow,methodology,ready,Stage 7 本書き完了（2026-08-23）,content/entries/workflow/H-4_code_review[済].md
 H-5,,Scrum / Agile,workflow,methodology,ready,,content/entries/workflow/H-5_scrum_agile[済].md
 H-6,,Git Flow,workflow,methodology,ready,,content/entries/workflow/H-6_git_flow[済].md
 H-7,,CI/CD,workflow,methodology,ready,,content/entries/workflow/H-7_ci_cd[済].md
 H-8,,DevOps,workflow,methodology,ready,,content/entries/workflow/H-8_devops[済].md
-H-50,,Bard → Gemini,history,timeline,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-50_bard_to_gemini[人書].md
-H-51,,Preview から正式版への流れ,history,process,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-51_preview_to_ga[人書].md
-H-52,,Copilot から Claude Code までの流れ,history,timeline,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-52_copilot_to_claude_code[人書].md
+H-50,,Bard → Gemini,history,timeline,ready,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-50_bard_to_gemini[済].md
+H-51,,Preview から正式版への流れ,history,process,ready,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-51_preview_to_ga[済].md
+H-52,,Copilot から Claude Code までの流れ,history,timeline,ready,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-52_copilot_to_claude_code[済].md
 H-53,,ChatGPT 登場,history,event,ready,2022-11,content/entries/history/H-53_chatgpt_launch[済].md
 H-54,,GPT-4 リリース,history,event,ready,,content/entries/history/H-54_gpt4_release[済].md
 H-55,,LLaMA のオープン化,history,event,ready,v2テンプレ本書き済（2026-04-30）,content/entries/history/H-55_llama_opensource[済].md
 H-56,,Claude のバージョン史,history,timeline,ready,v2テンプレ本書き済（2026-04-30）旧スケルトン H-56.md は archived,content/entries/history/H-56_claude_version_history[済].md
 H-57,,Gemini の命名史,history,timeline,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-57_gemini_naming_history[人書].md
 H-58,,Transformer 論文,history,paper,ready,2017,content/entries/history/H-58_transformer_paper[済].md
-H-59,,AI エージェント元年,history,era,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-59_agent_year_one[人書].md
+H-59,,AI エージェント元年,history,era,ready,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-59_agent_year_one[済].md
 H-60,,Codex → GitHub Copilot の系譜,history,timeline,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-60_codex_to_copilot[人書].md
 H-61,,Preview 版という文化,history,culture,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-61_preview_culture[人書].md
 H-62,,Anthropic 創業の流れ,history,event,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-62_anthropic_founding[人書].md
@@ -335,8 +335,8 @@ I-24,,Context7 MCP,mcp,dev_automation,ready,,content/entries/mcp/I-24_context7_m
 I-30,,Notion MCP,mcp,collab,ready,,content/entries/mcp/I-30_notion_mcp[済].md
 I-41,,SQLite MCP,mcp,data,ready,,content/entries/mcp/I-41_sqlite_mcp[済].md
 I-50,,AWS MCP,mcp,cloud,ready,,content/entries/mcp/I-50_aws_mcp[済].md
-I-80,,自作 MCP のテンプレ,mcp,diy,needs_review,,content/entries/mcp/I-80_diy_mcp_template[人書].md
-I-81,,MCP の登録・設定,mcp,diy,needs_review,,content/entries/mcp/I-81_mcp_setup[人書].md
+I-80,,自作 MCP のテンプレ,mcp,diy,ready,,content/entries/mcp/I-80_diy_mcp_template[済].md
+I-81,,MCP の登録・設定,mcp,diy,ready,,content/entries/mcp/I-81_mcp_setup[済].md
 J-1,,AGI,term_general,ai_concept,ready,,content/entries/term_general/J-1_agi[済].md
 J-2,,強い AI／弱い AI,term_general,ai_concept,ready,v2テンプレ書き起こし済（2026-04-30）旧スケルトン archived,content/entries/term_general/J-2_strong_weak_ai[済].md
 J-3,,Singularity,term_general,ai_concept,ready,シンギュラリティ,content/entries/term_general/J-3_singularity[済].md
@@ -442,8 +442,8 @@ J-121,,AI システム影響評価,term_general,ethics_law,ready,Stage 9 ブリ�
 J-122,,リスクアセスメント,term_general,ethics_law,ready,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。ISO 31000 由来の型は同じ、AI ではリスク源が変わる,content/entries/term_general/J-122_risk_assessment[済].md
 J-123,,マネジメントシステム共通構造,term_general,ethics_law,ready,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。Harmonized Structure（旧 Annex SL）の箇条 4〜10 骨格,content/entries/term_general/J-123_harmonized_structure[済].md
 J-124,,ISO/IEC 27001,term_general,ethics_law,ready,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。42001 の下敷き。附属書 A 93 の管理策,content/entries/term_general/J-124_iso_iec_27001[済].md
-J-125,,適用宣言書,term_general,ethics_law,needs_review,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。SoA。仕組みは 27001 と同じ、中身の管理策（42001 は 38）だけ違う。ファイル名の状態マーカーは scripts/apply_status_markers.py の実行待ち,content/entries/term_general/J-125_statement_of_applicability[人書].md
-J-126,,内部監査とマネジメントレビュー,term_general,ethics_law,needs_review,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。箇条 9 の要求事項。AI 版は見る対象に影響評価が加わる,content/entries/term_general/J-126_internal_audit_review[人書].md
+J-125,,適用宣言書,term_general,ethics_law,ready,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。SoA。仕組みは 27001 と同じ、中身の管理策（42001 は 38）だけ違う。ファイル名の状態マーカーは scripts/apply_status_markers.py の実行待ち,content/entries/term_general/J-125_statement_of_applicability[済].md
+J-126,,内部監査とマネジメントレビュー,term_general,ethics_law,ready,Stage 9 ブリーフ（ledgers/stage9_briefs_2026-09.md）で追加。箇条 9 の要求事項。AI 版は見る対象に影響評価が加わる,content/entries/term_general/J-126_internal_audit_review[済].md
 J-127,,決定論と非決定論,term_general,ethics_law,ready,Stage 10 ブリーフ（ledgers/stage10_briefs_2026-09.md）で追加。温度 0 でも非決定的という実測と Compiled AI の設計論を扱う。validator 自動昇格済み。ファイル名の [人書] マーカーは scripts/apply_status_markers.py の実行待ち,content/entries/term_general/J-127_determinism[済].md
 J-128,,ワークフローとエージェント,term_general,agent_design,ready,Stage11。そもそも自律させるかの分岐。Anthropic Building Effective Agents 由来,content/entries/term_general/J-128_workflow_vs_agent[済].md
 J-129,,コンテキスト腐敗,term_general,agent_loop,ready,Stage11。context rot / lost in the middle。台帳の敵②の実体,content/entries/term_general/J-129_context_rot[済].md
@@ -452,11 +452,11 @@ J-131,,RLVR,term_general,ml_basic,ready,Stage11。検証可能な報酬で鍛え
 J-132,,A2A,term_general,agent_protocol,ready,Stage11。エージェント間プロトコル。MCPと競合ではなく同じ財団の下に並ぶ,content/entries/term_general/J-132_a2a[済].md
 J-133,,オブザーバビリティ,term_general,agent_ops,ready,Stage11。OpenTelemetry GenAI規約に収束、ただしexperimental,content/entries/term_general/J-133_observability[済].md
 J-134,,Human-in-the-loop,term_general,agent_ops,ready,Stage11。承認ゲート3段階。自動化バイアスの注意込み,content/entries/term_general/J-134_human_in_the_loop[済].md
-J-135,,機能安全,term_general,safety_standard,needs_review,Stage12。IEC 61508。SIL 1〜4。安全を0か1でなく段階と確率で語る伝統。J-122の「昔からのISO」の受け皿,content/entries/term_general/J-135_functional_safety[人書].md
-J-136,,3 ステップメソッド,term_general,safety_standard,needs_review,Stage12。ISO 12100。本質安全設計→安全防護→使用上の情報。注意喚起で済ませるのが最下策,content/entries/term_general/J-136_three_step_method[人書].md
-J-137,,ALARP,term_general,safety_standard,needs_review,Stage12。合理的に実行可能な限り低く。不釣り合いを示す責任がこちら側にある。本書き完了2026-09-05,content/entries/term_general/J-137_alarp[人書].md
-J-138,,是正処置と不適合,term_general,management_system,needs_review,Stage12。箇条10 改善。修正と是正処置は別物。AIの失敗を仕組みに戻す経路,content/entries/term_general/J-138_corrective_action[人書].md
-J-139,,説明可能性,term_general,ai_governance,needs_review,Stage12。XAI。モデルが述べる理由が本当の理由とは限らない。外側で担保する設計,content/entries/term_general/J-139_explainability[人書].md
+J-135,,機能安全,term_general,safety_standard,ready,Stage12。IEC 61508。SIL 1〜4。安全を0か1でなく段階と確率で語る伝統。J-122の「昔からのISO」の受け皿,content/entries/term_general/J-135_functional_safety[済].md
+J-136,,3 ステップメソッド,term_general,safety_standard,ready,Stage12。ISO 12100。本質安全設計→安全防護→使用上の情報。注意喚起で済ませるのが最下策,content/entries/term_general/J-136_three_step_method[済].md
+J-137,,ALARP,term_general,safety_standard,ready,Stage12。合理的に実行可能な限り低く。不釣り合いを示す責任がこちら側にある。本書き完了2026-09-05,content/entries/term_general/J-137_alarp[済].md
+J-138,,是正処置と不適合,term_general,management_system,ready,Stage12。箇条10 改善。修正と是正処置は別物。AIの失敗を仕組みに戻す経路,content/entries/term_general/J-138_corrective_action[済].md
+J-139,,説明可能性,term_general,ai_governance,ready,Stage12。XAI。モデルが述べる理由が本当の理由とは限らない。外側で担保する設計,content/entries/term_general/J-139_explainability[済].md
 J-140,,IEC 62443,term_general,safety_standard,ready,Stage13。産業制御セキュリティ。SL1〜4は「守る相手の本気度」。機能安全は壊れ方、62443は攻める人から守る,content/entries/term_general/J-140_iec_62443[済].md
 J-141,,サーベイランス審査,term_general,management_system,ready,Stage13。ISO認証は3年サイクル。取るより維持が長い。AIは時変性が高く維持の負荷が効く,content/entries/term_general/J-141_surveillance_audit[済].md
 J-142,,文書化した情報と力量,term_general,management_system,ready,Stage13。箇条7 支援。AI運用ではCLAUDE.md・チェックリストが文書化した情報にあたる,content/entries/term_general/J-142_documented_information[済].md

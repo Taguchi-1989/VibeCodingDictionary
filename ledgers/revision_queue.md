@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-06 03:38 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-06 11:18 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 47 件
-- **ready**: 422 件
+- **needs_review**: 17 件
+- **ready**: 452 件
 - **archived**: 7 件
 - **合計**: 477 件
 
@@ -26,48 +26,18 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（36 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（6 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
-| D-10 | Claude 3 系 | needs_review | — |
-| D-13 | Claude 4.5 系 | needs_review | — |
-| D-23 | o3 系 | needs_review | — |
-| D-59 | Midjourney | needs_review | — |
-| D-61 | AlphaFold | needs_review | — |
-| E-28 | ARC-AGI | needs_review | — |
-| F-150 | MIT ライセンス | needs_review | — |
-| F-34 | VS Code 拡張機能 | needs_review | — |
-| F-47 | フロントエンド／バックエンド | needs_review | — |
-| F-57 | リポジトリ | needs_review | — |
-| G-24 | Temperature | needs_review | — |
-| G-25 | AI のメモリ機能 | needs_review | — |
-| G-26 | Computer Use | needs_review | — |
-| G-27 | プロンプトインジェクション | needs_review | — |
-| H-2 | ペアプログラミング | needs_review | — |
-| H-3 | バイブコーディングの流儀 | needs_review | — |
-| H-4 | コードレビュー | needs_review | — |
-| H-50 | Bard → Gemini | needs_review | — |
-| H-51 | Preview から正式版への流れ | needs_review | — |
-| H-52 | Copilot から Claude Code までの流れ | needs_review | — |
 | H-57 | Gemini の命名史 | needs_review | — |
-| H-59 | AI エージェント元年 | needs_review | — |
 | H-60 | Codex → GitHub Copilot の系譜 | needs_review | — |
 | H-61 | Preview 版という文化 | needs_review | — |
 | H-62 | Anthropic 創業の流れ | needs_review | — |
 | H-63 | Vibe Coding 命名 | needs_review | — |
 | H-64 | DeepSeek ショック | needs_review | — |
-| I-80 | 自作 MCP のテンプレ | needs_review | — |
-| I-81 | MCP の登録・設定 | needs_review | — |
-| J-125 | 適用宣言書 | needs_review | — |
-| J-126 | 内部監査とマネジメントレビュー | needs_review | — |
-| J-135 | 機能安全 | needs_review | — |
-| J-136 | 3 ステップメソッド | needs_review | — |
-| J-137 | ALARP | needs_review | — |
-| J-138 | 是正処置と不適合 | needs_review | — |
-| J-139 | 説明可能性 | needs_review | — |
 
-## ✅ 完成（ready・全パス）（422 件）
+## ✅ 完成（ready・全パス）（452 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -152,13 +122,16 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | C-83 | AI時代の羅針盤 | ready | — |
 | C-9 | NVIDIA | ready | — |
 | D-1 | Gemini 2 系 | ready | — |
+| D-10 | Claude 3 系 | ready | — |
 | D-11 | Claude 3.5 系 | ready | — |
 | D-12 | Claude 4 系 | ready | — |
+| D-13 | Claude 4.5 系 | ready | — |
 | D-14 | Claude Mythos Preview | ready | — |
 | D-2 | Gemini 2.5 系 | ready | — |
 | D-20 | GPT-5 系 | ready | — |
 | D-21 | GPT-4 系 | ready | — |
 | D-22 | o1 系 | ready | — |
+| D-23 | o3 系 | ready | — |
 | D-24 | GPT-3 系 | ready | — |
 | D-25 | GPT-1 / GPT-2 系 | ready | — |
 | D-26 | gpt-oss | ready | — |
@@ -183,7 +156,9 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | D-56 | Seedance | ready | — |
 | D-57 | Flow | ready | — |
 | D-58 | Whisk | ready | — |
+| D-59 | Midjourney | ready | — |
 | D-60 | AlphaGo | ready | — |
+| D-61 | AlphaFold | ready | — |
 | D-70 | Amical | ready | — |
 | D-71 | Whisper | ready | — |
 | E-1 | SWE-Bench | ready | — |
@@ -196,6 +171,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | E-25 | AIME | ready | — |
 | E-26 | Humanity's Last Exam | ready | — |
 | E-27 | IQ Bench | ready | — |
+| E-28 | ARC-AGI | ready | — |
 | E-3 | Terminal-Bench | ready | — |
 | E-30 | TAU-Bench | ready | — |
 | E-31 | WebArena | ready | — |
@@ -226,6 +202,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-140 | Mermaid | ready | — |
 | F-141 | PlantUML | ready | — |
 | F-15 | shadcn/ui | ready | — |
+| F-150 | MIT ライセンス | ready | — |
 | F-151 | Apache 2.0 | ready | — |
 | F-152 | GPL | ready | — |
 | F-153 | Creative Commons | ready | — |
@@ -253,6 +230,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-214 | API キー | ready | — |
 | F-3 | Python | ready | — |
 | F-30 | VS Code | ready | — |
+| F-34 | VS Code 拡張機能 | ready | — |
 | F-35 | Markdown Preview Enhanced | ready | — |
 | F-36 | Git Graph | ready | — |
 | F-37 | Japanese Language Pack for VS Code | ready | — |
@@ -265,6 +243,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-44 | pnpm | ready | — |
 | F-45 | デプロイ | ready | — |
 | F-46 | デバッグ | ready | — |
+| F-47 | フロントエンド／バックエンド | ready | — |
 | F-5 | CSS | ready | — |
 | F-50 | git | ready | — |
 | F-51 | git push | ready | — |
@@ -273,6 +252,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-54 | commit | ready | — |
 | F-55 | merge | ready | — |
 | F-56 | .gitignore | ready | — |
+| F-57 | リポジトリ | ready | — |
 | F-58 | git stash | ready | — |
 | F-59 | README.md | ready | — |
 | F-6 | Markdown | ready | — |
@@ -309,6 +289,10 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-21 | AGENTS.md | ready | — |
 | G-22 | SKILL.md | ready | — |
 | G-23 | .claude/settings.json | ready | — |
+| G-24 | Temperature | ready | — |
+| G-25 | AI のメモリ機能 | ready | — |
+| G-26 | Computer Use | ready | — |
+| G-27 | プロンプトインジェクション | ready | — |
 | G-3 | Dictation | ready | — |
 | G-30 | Tool Use | ready | — |
 | G-31 | Hook | ready | — |
@@ -343,12 +327,19 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-8 | 決定論的／非決定論的 | ready | — |
 | G-9 | effort レベル | ready | — |
 | H-1 | TDD | ready | — |
+| H-2 | ペアプログラミング | ready | — |
+| H-3 | バイブコーディングの流儀 | ready | — |
+| H-4 | コードレビュー | ready | — |
 | H-5 | Scrum / Agile | ready | — |
+| H-50 | Bard → Gemini | ready | — |
+| H-51 | Preview から正式版への流れ | ready | — |
+| H-52 | Copilot から Claude Code までの流れ | ready | — |
 | H-53 | ChatGPT 登場 | ready | — |
 | H-54 | GPT-4 リリース | ready | — |
 | H-55 | LLaMA のオープン化 | ready | — |
 | H-56 | Claude のバージョン史 | ready | — |
 | H-58 | Transformer 論文 | ready | — |
+| H-59 | AI エージェント元年 | ready | — |
 | H-6 | Git Flow | ready | — |
 | H-7 | CI/CD | ready | — |
 | H-8 | DevOps | ready | — |
@@ -369,6 +360,8 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | I-41 | SQLite MCP | ready | — |
 | I-5 | MCP SDK | ready | — |
 | I-50 | AWS MCP | ready | — |
+| I-80 | 自作 MCP のテンプレ | ready | — |
+| I-81 | MCP の登録・設定 | ready | — |
 | J-1 | AGI | ready | — |
 | J-10 | Machine Learning | ready | — |
 | J-100 | リテラシー | ready | — |
@@ -398,6 +391,8 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-122 | リスクアセスメント | ready | — |
 | J-123 | マネジメントシステム共通構造 | ready | — |
 | J-124 | ISO/IEC 27001 | ready | — |
+| J-125 | 適用宣言書 | ready | — |
+| J-126 | 内部監査とマネジメントレビュー | ready | — |
 | J-127 | 決定論と非決定論 | ready | — |
 | J-128 | ワークフローとエージェント | ready | — |
 | J-129 | コンテキスト腐敗 | ready | — |
@@ -407,6 +402,11 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | J-132 | A2A | ready | — |
 | J-133 | オブザーバビリティ | ready | — |
 | J-134 | Human-in-the-loop | ready | — |
+| J-135 | 機能安全 | ready | — |
+| J-136 | 3 ステップメソッド | ready | — |
+| J-137 | ALARP | ready | — |
+| J-138 | 是正処置と不適合 | ready | — |
+| J-139 | 説明可能性 | ready | — |
 | J-14 | LLM | ready | — |
 | J-140 | IEC 62443 | ready | — |
 | J-141 | サーベイランス審査 | ready | — |
