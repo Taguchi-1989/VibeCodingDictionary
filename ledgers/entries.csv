@@ -341,9 +341,9 @@ J-1,,AGI,term_general,ai_concept,ready,,content/entries/term_general/J-1_agi[済
 J-2,,強い AI／弱い AI,term_general,ai_concept,ready,v2テンプレ書き起こし済（2026-04-30）旧スケルトン archived,content/entries/term_general/J-2_strong_weak_ai[済].md
 J-3,,Singularity,term_general,ai_concept,ready,シンギュラリティ,content/entries/term_general/J-3_singularity[済].md
 J-4,,ASI,term_general,ai_concept,ready,,content/entries/term_general/J-4_asi[済].md
-J-5,,世界モデル,term_general,ai_concept,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-5_world_model[人書].md
-J-6,,フィジカル AI,term_general,ai_concept,needs_review,Stage 8 ブリーフ（2026-09-05）で追加,content/entries/term_general/J-6_physical_ai[人書].md
-J-7,,VLA,term_general,ai_concept,needs_review,Stage 8 ブリーフ（2026-09-05）で追加、v2 テンプレ本書き済（ファイル名タグは scripts/apply_status_markers.py 実行待ち）,content/entries/term_general/J-7_vla[人書].md
+J-5,,世界モデル,term_general,ai_concept,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-5_world_model[済].md
+J-6,,フィジカル AI,term_general,ai_concept,ready,Stage 8 ブリーフ（2026-09-05）で追加,content/entries/term_general/J-6_physical_ai[済].md
+J-7,,VLA,term_general,ai_concept,ready,Stage 8 ブリーフ（2026-09-05）で追加、v2 テンプレ本書き済（ファイル名タグは scripts/apply_status_markers.py 実行待ち）,content/entries/term_general/J-7_vla[済].md
 J-10,,Machine Learning,term_general,ml_basic,ready,,content/entries/term_general/J-10_machine_learning[済].md
 J-11,,Deep Learning,term_general,ml_basic,ready,,content/entries/term_general/J-11_deep_learning[済].md
 J-12,,Neural Network,term_general,ml_basic,ready,,content/entries/term_general/J-12_neural_network[済].md
@@ -356,7 +356,7 @@ J-18,,MoE,term_general,ml_basic,ready,,content/entries/term_general/J-18_moe[済
 J-19,,量子化,term_general,ml_basic,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/term_general/J-19_quantization[済].md
 J-20,,Big Data,term_general,data_learning,ready,,content/entries/term_general/J-20_big_data[済].md
 J-21,,LoRA,term_general,data_learning,ready,,content/entries/term_general/J-21_lora[済].md
-J-22,,パラメータ数の単位,term_general,data_learning,needs_review,v2テンプレ本書き済（2026-08-23）,content/entries/term_general/J-22_parameter_units[人書].md
+J-22,,パラメータ数の単位,term_general,data_learning,ready,v2テンプレ本書き済（2026-08-23）,content/entries/term_general/J-22_parameter_units[済].md
 J-23,,拡散モデル,term_general,data_learning,ready,画像・動画生成の主流アーキテクチャ,content/entries/term_general/J-23_diffusion_model[済].md
 J-24,,Encoder-Decoder,term_general,ml_basic,ready,Lv6自己学習シェルフ（刊行外）,content/entries/term_general/J-24_encoder_decoder[済].md
 J-25,,Tokenizer・BPE,term_general,ml_basic,ready,Lv6自己学習シェルフ（刊行外）,content/entries/term_general/J-25_tokenizer_bpe[済].md
@@ -366,11 +366,11 @@ J-28,,MLA,term_general,ml_basic,ready,Lv6自己学習シェルフ（刊行外）
 J-29,,KV Cache,term_general,inference,ready,Lv6自己学習シェルフ（刊行外）,content/entries/term_general/J-29_kv_cache[済].md
 J-30,,Flash Attention,term_general,inference,ready,Lv6自己学習シェルフ（刊行外）,content/entries/term_general/J-30_flash_attention[済].md
 J-31,,第 5 世代コンピュータ,term_general,computing_history,ready,,content/entries/term_general/J-31_fifth_generation_computer[済].md
-J-32,,ノイマン型,term_general,computing_history,needs_review,,content/entries/term_general/J-32_von_neumann[人書].md
+J-32,,ノイマン型,term_general,computing_history,ready,,content/entries/term_general/J-32_von_neumann[済].md
 J-33,,量子コンピュータ,term_general,computing_history,ready,,content/entries/term_general/J-33_quantum-computer[済].md
-J-34,,マルチモーダル,term_general,ml_basic,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-34_multimodal[人書].md
-J-35,,スケーリング則,term_general,ml_basic,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-35_scaling_law[人書].md
-J-36,,蒸留,term_general,ml_basic,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-36_distillation[人書].md
+J-34,,マルチモーダル,term_general,ml_basic,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-34_multimodal[済].md
+J-35,,スケーリング則,term_general,ml_basic,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-35_scaling_law[済].md
+J-36,,蒸留,term_general,ml_basic,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-36_distillation[済].md
 J-38,,ムーアの法則,term_general,computing_history,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-38_moores_law[人書].md
 J-40,,IoT,term_general,buzzword,ready,,content/entries/term_general/J-40_iot[済].md
 J-41,,DX,term_general,buzzword,ready,,content/entries/term_general/J-41_dx[済].md

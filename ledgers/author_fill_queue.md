@@ -1,14 +1,14 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-09-05 23:34 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-09-06 00:13 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
 ## 内訳
 
-- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 398 件
+- **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 406 件
 - **途中**（書きかけで止まっている）: 0 件
-- **手つかず**（両方まるごと空）: 60 件
+- **手つかず**（両方まるごと空）: 52 件
 - **合計**: 458 件
 
 ---
@@ -19,9 +19,9 @@ _なし_
 
 ---
 
-## ⬜ 手つかず（両方まるごと空）（60 件）
+## ⬜ 手つかず（両方まるごと空）（52 件）
 
-letter 別: D 5件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 31件
+letter 別: D 5件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 23件
 
 | ID | title | status | reader_level | path |
 | :-- | :-- | :-- | :-- | :-- |
@@ -54,14 +54,6 @@ letter 別: D 5件 / E 1件 / F 4件 / G 4件 / H 13件 / I 2件 / J 31件
 | H-64 | DeepSeek ショック | needs_review | 2-3 | `content/entries/history/H-64_deepseek_shock[人書].md` |
 | I-80 | 自作 MCP のテンプレ | needs_review | 3-4 | `content/entries/mcp/I-80_diy_mcp_template[人書].md` |
 | I-81 | MCP の登録・設定 | needs_review | 2-3 | `content/entries/mcp/I-81_mcp_setup[人書].md` |
-| J-5 | 世界モデル | needs_review | 3-4 | `content/entries/term_general/J-5_world_model[人書].md` |
-| J-6 | フィジカル AI | needs_review | 3-4 | `content/entries/term_general/J-6_physical_ai[人書].md` |
-| J-7 | VLA | needs_review | 4-5 | `content/entries/term_general/J-7_vla[人書].md` |
-| J-22 | パラメータ数の単位 | needs_review | 2-3 | `content/entries/term_general/J-22_parameter_units[人書].md` |
-| J-32 | ノイマン型 | needs_review | 2-3 | `content/entries/term_general/J-32_von_neumann[人書].md` |
-| J-34 | マルチモーダル | needs_review | 1-2 | `content/entries/term_general/J-34_multimodal[人書].md` |
-| J-35 | スケーリング則 | needs_review | 3-4 | `content/entries/term_general/J-35_scaling_law[人書].md` |
-| J-36 | 蒸留 | needs_review | 3-4 | `content/entries/term_general/J-36_distillation[人書].md` |
 | J-38 | ムーアの法則 | needs_review | 2-3 | `content/entries/term_general/J-38_moores_law[人書].md` |
 | J-50 | AI 倫理 | needs_review | 2-3 | `content/entries/term_general/J-50_ai_ethics[人書].md` |
 | J-55 | 個人情報保護法 | needs_review | 2-3 | `content/entries/term_general/J-55_appi[人書].md` |
