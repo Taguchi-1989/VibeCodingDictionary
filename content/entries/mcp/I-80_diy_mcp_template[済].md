@@ -1,7 +1,7 @@
 ---
 id: I-80
 title: 自作 MCP のテンプレ
-title_reading:
+title_reading: 自作エムシーピーのテンプレ
 category: mcp
 subtype: diy
 experience_level: hands_on

@@ -1,7 +1,7 @@
 ---
 id: H-60
 title: Codex → GitHub Copilot の系譜
-title_reading:
+title_reading: コーデックスからギットハブコパイロットの系譜
 category: history
 subtype: timeline
 experience_level: research_only

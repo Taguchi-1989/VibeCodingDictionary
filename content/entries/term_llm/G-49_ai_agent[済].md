@@ -1,7 +1,7 @@
 ---
 id: G-49
 title: AI エージェント
-title_reading:
+title_reading: エーアイエージェント
 category: term_llm
 subtype: ops
 experience_level: hands_on

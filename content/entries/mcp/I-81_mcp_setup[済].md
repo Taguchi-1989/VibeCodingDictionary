@@ -1,7 +1,7 @@
 ---
 id: I-81
 title: MCP の登録・設定
-title_reading:
+title_reading: エムシーピーの登録・設定
 category: mcp
 subtype: diy
 experience_level: hands_on

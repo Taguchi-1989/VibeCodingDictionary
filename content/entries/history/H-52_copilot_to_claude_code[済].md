@@ -1,7 +1,7 @@
 ---
 id: H-52
 title: Copilot から Claude Code までの流れ
-title_reading:
+title_reading: コパイロットからクロードコードまでの流れ
 category: history
 subtype: timeline
 experience_level: research_only
