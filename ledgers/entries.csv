@@ -191,7 +191,7 @@ F-53,,branch,term_tool,git,ready,,content/entries/term_tool/F-53_branch[済].md
 F-54,,commit,term_tool,git,ready,,content/entries/term_tool/F-54_commit[済].md
 F-55,,merge,term_tool,git,ready,,content/entries/term_tool/F-55_merge[済].md
 F-56,,.gitignore,term_tool,git,ready,,content/entries/term_tool/F-56_gitignore[済].md
-F-57,,リポジトリ,term_tool,git,needs_review,Stage 7 本書き完了（2026-08-23）,content/entries/term_tool/F-57_repository[人書].md
+F-57,,リポジトリ,term_tool,git,ready,Stage 7 本書き完了（2026-08-23）,content/entries/term_tool/F-57_repository[済].md
 F-58,,git stash,term_tool,git,ready,,content/entries/term_tool/F-58_git_stash[済].md
 F-59,,README.md,term_tool,git,ready,,content/entries/term_tool/F-59_readme_md[済].md
 F-60,,GitHub,term_tool,github,ready,,content/entries/term_tool/F-60_github[済].md
@@ -222,7 +222,7 @@ F-123,,ORM,term_tool,orm,ready,,content/entries/term_tool/F-123_orm[済].md
 F-130,,OAuth,term_tool,auth,ready,,content/entries/term_tool/F-130_oauth[済].md
 F-140,,Mermaid,term_tool,diagram,ready,,content/entries/term_tool/F-140_mermaid[済].md
 F-141,,PlantUML,term_tool,diagram,ready,,content/entries/term_tool/F-141_plantuml[済].md
-F-150,,MIT ライセンス,term_tool,license,needs_review,,content/entries/term_tool/F-150_mit_license[人書].md
+F-150,,MIT ライセンス,term_tool,license,ready,,content/entries/term_tool/F-150_mit_license[済].md
 F-151,,Apache 2.0,term_tool,license,ready,,content/entries/term_tool/F-151_apache_2_0[済].md
 F-152,,GPL,term_tool,license,ready,,content/entries/term_tool/F-152_gpl[済].md
 F-153,,Creative Commons,term_tool,license,ready,title を Creative Commons に修正（括弧除去）,content/entries/term_tool/F-153_creative_commons[済].md
@@ -265,10 +265,10 @@ G-20,,CLAUDE.md,tool_agent,config_file,ready,,content/entries/tool_agent/G-20_cl
 G-21,,AGENTS.md,tool_agent,config_file,ready,,content/entries/tool_agent/G-21_agents_md[済].md
 G-22,,SKILL.md,tool_agent,config_file,ready,,content/entries/tool_agent/G-22_skill_md[済].md
 G-23,,.claude/settings.json,tool_agent,config_file,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/tool_agent/G-23_claude_settings_json[済].md
-G-24,,Temperature,term_llm,basic,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-24_temperature[人書].md
-G-25,,AI のメモリ機能,term_llm,basic,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-25_memory[人書].md
-G-26,,Computer Use,term_llm,control,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-26_computer_use[人書].md
-G-27,,プロンプトインジェクション,term_llm,control,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-27_prompt_injection[人書].md
+G-24,,Temperature,term_llm,basic,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-24_temperature[済].md
+G-25,,AI のメモリ機能,term_llm,basic,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-25_memory[済].md
+G-26,,Computer Use,term_llm,control,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-26_computer_use[済].md
+G-27,,プロンプトインジェクション,term_llm,control,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-27_prompt_injection[済].md
 G-30,,Tool Use,term_llm,control,ready,,content/entries/term_llm/G-30_tool_use[済].md
 G-31,,Hook,term_llm,control,ready,,content/entries/term_llm/G-31_hook[済].md
 G-32,,Slash Command,term_llm,control,ready,,content/entries/term_llm/G-32_slash_command[済].md
@@ -335,8 +335,8 @@ I-24,,Context7 MCP,mcp,dev_automation,ready,,content/entries/mcp/I-24_context7_m
 I-30,,Notion MCP,mcp,collab,ready,,content/entries/mcp/I-30_notion_mcp[済].md
 I-41,,SQLite MCP,mcp,data,ready,,content/entries/mcp/I-41_sqlite_mcp[済].md
 I-50,,AWS MCP,mcp,cloud,ready,,content/entries/mcp/I-50_aws_mcp[済].md
-I-80,,自作 MCP のテンプレ,mcp,diy,needs_review,,content/entries/mcp/I-80_diy_mcp_template[人書].md
-I-81,,MCP の登録・設定,mcp,diy,needs_review,,content/entries/mcp/I-81_mcp_setup[人書].md
+I-80,,自作 MCP のテンプレ,mcp,diy,ready,,content/entries/mcp/I-80_diy_mcp_template[済].md
+I-81,,MCP の登録・設定,mcp,diy,ready,,content/entries/mcp/I-81_mcp_setup[済].md
 J-1,,AGI,term_general,ai_concept,ready,,content/entries/term_general/J-1_agi[済].md
 J-2,,強い AI／弱い AI,term_general,ai_concept,ready,v2テンプレ書き起こし済（2026-04-30）旧スケルトン archived,content/entries/term_general/J-2_strong_weak_ai[済].md
 J-3,,Singularity,term_general,ai_concept,ready,シンギュラリティ,content/entries/term_general/J-3_singularity[済].md

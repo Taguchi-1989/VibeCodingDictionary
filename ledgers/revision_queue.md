@@ -1,14 +1,14 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-09-06 06:58 / `scripts/update_review_queue.py`*
+*自動生成: 2026-09-06 10:54 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 25 件
-- **ready**: 444 件
+- **needs_review**: 17 件
+- **ready**: 452 件
 - **archived**: 7 件
 - **合計**: 477 件
 
@@ -26,26 +26,18 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（14 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（6 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
-| F-150 | MIT ライセンス | needs_review | — |
-| F-57 | リポジトリ | needs_review | — |
-| G-24 | Temperature | needs_review | — |
-| G-25 | AI のメモリ機能 | needs_review | — |
-| G-26 | Computer Use | needs_review | — |
-| G-27 | プロンプトインジェクション | needs_review | — |
 | H-57 | Gemini の命名史 | needs_review | — |
 | H-60 | Codex → GitHub Copilot の系譜 | needs_review | — |
 | H-61 | Preview 版という文化 | needs_review | — |
 | H-62 | Anthropic 創業の流れ | needs_review | — |
 | H-63 | Vibe Coding 命名 | needs_review | — |
 | H-64 | DeepSeek ショック | needs_review | — |
-| I-80 | 自作 MCP のテンプレ | needs_review | — |
-| I-81 | MCP の登録・設定 | needs_review | — |
 
-## ✅ 完成（ready・全パス）（444 件）
+## ✅ 完成（ready・全パス）（452 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -210,6 +202,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-140 | Mermaid | ready | — |
 | F-141 | PlantUML | ready | — |
 | F-15 | shadcn/ui | ready | — |
+| F-150 | MIT ライセンス | ready | — |
 | F-151 | Apache 2.0 | ready | — |
 | F-152 | GPL | ready | — |
 | F-153 | Creative Commons | ready | — |
@@ -259,6 +252,7 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | F-54 | commit | ready | — |
 | F-55 | merge | ready | — |
 | F-56 | .gitignore | ready | — |
+| F-57 | リポジトリ | ready | — |
 | F-58 | git stash | ready | — |
 | F-59 | README.md | ready | — |
 | F-6 | Markdown | ready | — |
@@ -295,6 +289,10 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | G-21 | AGENTS.md | ready | — |
 | G-22 | SKILL.md | ready | — |
 | G-23 | .claude/settings.json | ready | — |
+| G-24 | Temperature | ready | — |
+| G-25 | AI のメモリ機能 | ready | — |
+| G-26 | Computer Use | ready | — |
+| G-27 | プロンプトインジェクション | ready | — |
 | G-3 | Dictation | ready | — |
 | G-30 | Tool Use | ready | — |
 | G-31 | Hook | ready | — |
@@ -362,6 +360,8 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | I-41 | SQLite MCP | ready | — |
 | I-5 | MCP SDK | ready | — |
 | I-50 | AWS MCP | ready | — |
+| I-80 | 自作 MCP のテンプレ | ready | — |
+| I-81 | MCP の登録・設定 | ready | — |
 | J-1 | AGI | ready | — |
 | J-10 | Machine Learning | ready | — |
 | J-100 | リテラシー | ready | — |
