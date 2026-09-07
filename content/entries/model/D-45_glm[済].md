@@ -153,8 +153,8 @@ DeepSeek V3、Qwen、CodeGeeX
 
 ## 出典メモ
 
-- <https://huggingface.co/THUDM> — GLM モデル一覧 checked 2026-04-30
-- <https://zhipuai.cn> — Z.ai 公式（旧 Zhipu AI） checked 2026-04-30
+- <https://huggingface.co/THUDM>（GLM モデル一覧）— checked 2026-04-30
+- <https://zhipuai.cn>（Z.ai 公式、旧 Zhipu AI）— checked 2026-04-30
 
 
 ## 備考

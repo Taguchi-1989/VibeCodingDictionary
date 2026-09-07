@@ -359,7 +359,7 @@ def extract_reference_url(body: str) -> tuple[str | None, str | None]:
     """## 出典メモ の先頭行から URL と checked 日付を抽出"""
     section = extract_section(body, "出典メモ")
     for line in section.splitlines():
-        m = re.match(r"^\s*-\s+(\S+)\s*(?:—|-)\s*checked\s+(\d{4}-\d{2}-\d{2})", line)
+        m = re.match(r"^\s*-\s+(.+?)\s*(?:—|-)\s*checked\s+(\d{4}-\d{2}-\d{2})", line)
         if m:
             return m.group(1), m.group(2)
     return None, None

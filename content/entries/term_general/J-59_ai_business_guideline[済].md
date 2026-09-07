@@ -1,7 +1,7 @@
 ---
 id: J-59
 title: AI 事業者ガイドライン
-title_reading:
+title_reading: エーアイ事業者ガイドライン
 category: term_general
 subtype: ethics_law
 experience_level: research_only

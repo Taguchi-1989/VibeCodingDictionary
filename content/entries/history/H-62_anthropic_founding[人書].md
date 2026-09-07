@@ -1,7 +1,7 @@
 ---
 id: H-62
 title: Anthropic 創業の流れ
-title_reading:
+title_reading: アンソロピック創業の流れ
 category: history
 subtype: event
 experience_level: research_only

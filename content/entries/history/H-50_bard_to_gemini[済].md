@@ -1,7 +1,7 @@
 ---
 id: H-50
 title: Bard → Gemini
-title_reading:
+title_reading: バードからジェミニへ
 category: history
 subtype: timeline
 experience_level: partial

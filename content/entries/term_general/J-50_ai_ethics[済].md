@@ -1,7 +1,7 @@
 ---
 id: J-50
 title: AI 倫理
-title_reading:
+title_reading: エーアイ倫理
 category: term_general
 subtype: ethics_law
 experience_level: research_only

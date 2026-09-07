@@ -1,7 +1,7 @@
 ---
 id: G-25
 title: AI のメモリ機能
-title_reading:
+title_reading: エーアイのメモリ機能
 category: term_llm
 subtype: basic
 experience_level: hands_on
