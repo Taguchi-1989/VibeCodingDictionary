@@ -104,6 +104,32 @@
 - status が変わったらファイル名タグも揃えてください：`python3 scripts/apply_status_markers.py`（`[人書]`＝needs_review / `[済]`＝ready）→ `python3 scripts/sync_entries_csv.py`
 - 原則：[docs/quality_guidelines.md](docs/quality_guidelines.md)
 
+### 鮮度監査（陳腐化チェック・2026-09-19 追加）
+
+最新モデル名・料金・提供状況のように、**こちらが何もしなくても外の世界が動いて古くなる情報**を棚卸しする仕組みです。文章を直す [ledgers/revision_queue.md](ledgers/revision_queue.md) とは作業種別が違うので、台帳を分けています。
+
+- **鮮度キュー**：保存のたびに [scripts/audit_freshness.py](scripts/audit_freshness.py) が走り、[ledgers/freshness_queue.md](ledgers/freshness_queue.md) を再生成します
+- **経過日数だけで測りません**。frontmatter から「陳腐化しやすさ」を Tier に導出し、Tier ごとに期限を変えます
+  - **Tier S（90 日）**：category が model / service / benchmark / mcp / tool_agent、または `version_status: preview|deprecated`、または `pricing_note: paid|freemium`
+  - **Tier A（180 日）**：category が term_tool / person_org / workflow、または本文の時変シグナルが 3 種以上
+  - **Tier B（365 日）**：それ以外（一般用語・歴史・概念）。実質監査対象外
+  - 自動導出が実態と合わないときだけ、frontmatter に `volatility: high | mid | low` を足して上書きします
+- **確認日は `last_audited`**（任意フィールド、2026-09-19 新設）。`evaluation_date` は**執筆・評価した時点の記録として凍結**し、動かしません。「一次情報を見に行ったが変更は無かった」は `last_audited` を更新するだけで完了します（＝これが鮮度の signal）。未記入のエントリは `evaluation_date` にフォールバックします
+- **本文の時変シグナルを行単位で拾います**（モデル名／バージョン／価格／時点表現／提供状況）。キューの §4 に該当行が出るので、エントリを開く前に「どこを見ればいいか」が分かります
+- **☆ 違反にはしません**。鮮度は刊行ブロックではなく棚卸しの優先順位付けなので、validator 側は `last_audited` / `volatility` の書式警告だけです
+
+回し方：
+
+```bash
+python3 scripts/audit_freshness.py --list --tier S --category model --details
+#  → 一次情報（公式ドキュメント・料金ページ）を確認
+#  → 変更なし: frontmatter の last_audited を確認日に更新するだけ
+#  → 変更あり: 本文を直し、出典メモの checked YYYY-MM-DD も揃え、last_audited を更新
+#  → 監査した範囲を ledgers/freshness_audit_log.md に 1 行追記
+```
+
+監査履歴は [ledgers/freshness_audit_log.md](ledgers/freshness_audit_log.md)（手書き）に残します。刊行前に「この本の事実はいつ時点のものか」を説明する根拠になります。
+
 ### 外出先コメントを取り込む
 
 - **新方式（推奨）**：[docs/mobile_repoedit_setup.md](docs/mobile_repoedit_setup.md) — [Taguchi-1989/RepoEdit](https://github.com/Taguchi-1989/RepoEdit)（PWA + Cloudflare Worker）で、エントリ内の `user-input` ブロック（「非エンジニアのつまずき」「私のコメント」）をスマホから直接編集。書き戻し先は `mobile-drafts` ブランチ。マーカーは全エントリに埋め込み済み（[scripts/add_user_input_markers.py](scripts/add_user_input_markers.py)）

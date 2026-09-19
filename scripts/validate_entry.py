@@ -296,6 +296,18 @@ def check_yaml(fm: dict, r: Report) -> None:
     if eval_date and not re.match(r"^\d{4}-\d{2}-\d{2}$", eval_date):
         r.warn(f"A. YAML: `evaluation_date` が YYYY-MM-DD 形式でない（{eval_date}）")
 
+    # 鮮度監査まわりの任意フィールド（2026-09-19 追加、schema v2.31.0）
+    # 経過日数そのものは ☆ にも ⚠️ にもしない。刊行ブロックではなく棚卸しの
+    # 優先順位付けなので、判定は scripts/audit_freshness.py と
+    # ledgers/freshness_queue.md に任せ、ここでは書式だけ見る
+    last_audited = str(fm.get("last_audited", "")).strip()
+    if last_audited and not re.match(r"^\d{4}-\d{2}-\d{2}$", last_audited):
+        r.warn(f"A. YAML: `last_audited` が YYYY-MM-DD 形式でない（{last_audited}）")
+
+    volatility = str(fm.get("volatility", "")).strip()
+    if volatility and volatility not in {"high", "mid", "low"}:
+        r.warn(f"A. YAML: `volatility` が enum 外（{volatility}）— high / mid / low のいずれか")
+
     # 2026-04-28: title 末尾の括弧書き読み・展開を禁止
     # タイトルは純粋名のみ。読み・日本語訳は title_reading スロットに分離する
     title = str(fm.get("title", "")).strip()
