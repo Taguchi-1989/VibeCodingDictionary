@@ -13,6 +13,7 @@ start_date: 2025-11
 version_status: active
 pricing_note: freemium
 evaluation_date: 2026-08-23
+last_audited: 2026-09-19
 related_terms:
   - Gemini 2.5 系
   - Gemini 3.1 系

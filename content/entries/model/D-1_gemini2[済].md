@@ -13,6 +13,7 @@ start_date: 2025
 version_status: active
 pricing_note: freemium
 evaluation_date: 2026-04-29
+last_audited: 2026-09-19
 related_terms:
   - Gemini
   - Google DeepMind

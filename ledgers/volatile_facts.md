@@ -10,10 +10,10 @@
 
 | 事実ID | 事実 | 種別 | 最終確認 | 期限 | 影響エントリ |
 | :-- | :-- | :-- | :-- | :-- | --: |
-| `F-model-anthropic` | Anthropic の最新モデル世代 | モデル世代 | ⏰ **未確認** | 90 日 | 8 |
-| `F-model-openai` | OpenAI の最新モデル世代（GPT 系） | モデル世代 | ⏰ **未確認** | 90 日 | 22 |
-| `F-model-openai-reasoning` | OpenAI の推論モデル系列（o シリーズ） | モデル世代 | ⏰ **未確認** | 90 日 | 10 |
-| `F-model-google` | Google の最新モデル世代（Gemini 系） | モデル世代 | ⏰ **未確認** | 90 日 | 11 |
+| `F-model-anthropic` | Anthropic の最新モデル世代 | モデル世代 | 2026-09-19（0 日前） | 90 日 | 8 |
+| `F-model-openai` | OpenAI の最新モデル世代（GPT 系） | モデル世代 | 2026-09-19（0 日前） | 90 日 | 22 |
+| `F-model-openai-reasoning` | OpenAI の推論モデル系列（o シリーズ） | モデル世代 | 2026-09-19（0 日前） | 90 日 | 10 |
+| `F-model-google` | Google の最新モデル世代（Gemini 系） | モデル世代 | 2026-09-19（0 日前） | 90 日 | 11 |
 | `F-model-meta` | Meta のオープンウェイトモデル（Llama 系） | モデル世代 | ⏰ **未確認** | 180 日 | 6 |
 | `F-spec-context-length` | 主要モデルのコンテキスト長 | 仕様 | ⏰ **未確認** | 90 日 | 6 |
 | `F-price-chatgpt` | ChatGPT の料金プラン | 料金 | ⏰ **未確認** | 90 日 | 2 |
@@ -26,7 +26,7 @@
 | `F-availability-preview` | ベータ・プレビュー表記 | 提供状況 | ⏰ **未確認** | 90 日 | 16 |
 | `F-availability-deprecated` | 提供終了・非推奨の表記 | 提供状況 | ⏰ **未確認** | 180 日 | 11 |
 
-⏰ = 再確認の期限を過ぎているもの（**15 / 15 件**）。
+⏰ = 再確認の期限を過ぎているもの（**11 / 15 件**）。
 
 ---
 
@@ -35,9 +35,9 @@
 ### `F-model-anthropic` Anthropic の最新モデル世代
 
 - **本書の記述**: D-13「Claude 4.5 系」を現行の主力、D-14「Claude Mythos Preview」を先行版として扱う
-- **最後に確認した実際の値**: _未確認_
-- **最終確認**: **未確認**（期限 90 日）
-- **確認先**: Anthropic 公式ドキュメント（モデル一覧） — https://docs.claude.com/en/docs/about-claude/models
+- **最後に確認した実際の値**: Claude 5 世代が現行。Opus 5（1M 文脈）／Sonnet 5／Fable 5.1／Mythos 5.1。Opus 4.8 は 2026-05-28 公開。本書が現行とする 4.5〜4.7 は既に過去世代
+- **最終確認**: 2026-09-19（0 日前）（期限 90 日）
+- **確認先**: Anthropic 公式ドキュメント（モデル一覧） — https://docs.anthropic.com/en/docs/about-claude/models/overview
 - **注意**: 世代が増えたら D 章に新エントリが要る。旧世代の deprecated 化も同時に確認する
 - **影響エントリ**: 8 件
 
@@ -46,9 +46,9 @@
 ### `F-model-openai` OpenAI の最新モデル世代（GPT 系）
 
 - **本書の記述**: D-20「GPT-5 系」を現行、D-21「GPT-4 系」以前を過去世代として扱う
-- **最後に確認した実際の値**: _未確認_
-- **最終確認**: **未確認**（期限 90 日）
-- **確認先**: OpenAI 公式ドキュメント（Models） — https://platform.openai.com/docs/models
+- **最後に確認した実際の値**: GPT-6 Astra がフラッグシップ。GPT-5.6 系は Sol／Terra／Luna の 3 構成、ほかに GPT-5.3-Codex・GPT-5.4／5.5 系。本書が現行とする GPT-5 系は過去世代
+- **最終確認**: 2026-09-19（0 日前）（期限 90 日）
+- **確認先**: OpenAI 公式ドキュメント（Models） — https://developers.openai.com/api/docs/models
 - **注意**: 本書では 26 件が GPT の世代名に触れている。世代交代時の影響が最も大きい
 - **影響エントリ**: 22 件
 
@@ -57,9 +57,9 @@
 ### `F-model-openai-reasoning` OpenAI の推論モデル系列（o シリーズ）
 
 - **本書の記述**: D-22「o1 系」・D-23「o3 系」を収録。o3 系が最新として書かれている
-- **最後に確認した実際の値**: _未確認_
-- **最終確認**: **未確認**（期限 90 日）
-- **確認先**: OpenAI 公式ドキュメント（Models） — https://platform.openai.com/docs/models
+- **最後に確認した実際の値**: o1-preview は 2025-07-28、o1-mini は 2025-10-27 に API から削除済み。o3 は 2026-08-26 に ChatGPT から引退、API 側も 2026-12-11 削除予定。推論は GPT-5 以降の本流モデルに統合された
+- **最終確認**: 2026-09-19（0 日前）（期限 90 日）
+- **確認先**: OpenAI 公式ドキュメント（Models） — https://developers.openai.com/api/docs/deprecations
 - **注意**: 通常モデルへの推論機能統合が進むと、系列そのものの位置づけが変わる
 - **影響エントリ**: 10 件
 
@@ -68,8 +68,8 @@
 ### `F-model-google` Google の最新モデル世代（Gemini 系）
 
 - **本書の記述**: D-4「Gemini 3.1 系」を現行、D-1〜D-3 を過去世代として扱う
-- **最後に確認した実際の値**: _未確認_
-- **最終確認**: **未確認**（期限 90 日）
+- **最後に確認した実際の値**: Gemini 3.8 Flash まで到達。3.5 Flash／3.5 Flash-Lite／3.6 Flash／3.7 Flash が GA。本書の最新収録は D-4 Gemini 3.1 系で、3.5 以降が未収録
+- **最終確認**: 2026-09-19（0 日前）（期限 90 日）
 - **確認先**: Google AI 公式ドキュメント（Gemini models） — https://ai.google.dev/gemini-api/docs/models
 - **注意**: 旧 3 桁 ID の残骸（201 番）も Gemini 2.5 を扱っているので併せて確認する
 - **影響エントリ**: 11 件

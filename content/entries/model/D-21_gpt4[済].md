@@ -13,6 +13,7 @@ start_date: 2023
 version_status: active
 pricing_note: paid
 evaluation_date: 2026-04-29
+last_audited: 2026-09-19
 related_terms:
   - ChatGPT
   - GPT-5 系

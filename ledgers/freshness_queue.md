@@ -9,12 +9,12 @@
 ## 1. 全体像
 
 - 監査対象: **458 件**（skeleton / sample / archived と前付け・巻末は対象外）
-- 期限超過: **131 件**
+- 期限超過: **124 件**
 - 確認日が読めない: 0 件
 
 | Tier | 意味 | 再確認の期限 | 件数 | 期限超過 |
 | :-- | :-- | --: | --: | --: |
-| S（高） | モデル・サービス・ベンチマーク・MCP・有料/フリーミアム・preview/deprecated | 90 日 | 162 | 131 |
+| S（高） | モデル・サービス・ベンチマーク・MCP・有料/フリーミアム・preview/deprecated | 90 日 | 162 | 124 |
 | A（中） | ツール用語・人物組織・ワークフロー、または本文に時変シグナル 3 種以上 | 180 日 | 122 | 0 |
 | B（低） | 一般用語・歴史・概念など、外の世界が動いても古くならないもの | 365 日 | 174 | 0 |
 
@@ -22,8 +22,8 @@
 
 | 経過 | 件数 |
 | :-- | --: |
-| 90 日以内 | 157 |
-| 91〜180 日 | 301 |
+| 90 日以内 | 164 |
+| 91〜180 日 | 294 |
 
 ---
 
@@ -34,7 +34,7 @@
 | category | 期限超過 | 主な確認ポイント |
 | :-- | --: | :-- |
 | service | 38 | 料金プラン・無料枠・提供地域・名称変更 |
-| model | 34 | 後継モデルの有無・提供終了・コンテキスト長 |
+| model | 27 | 後継モデルの有無・提供終了・コンテキスト長 |
 | benchmark | 19 | スコアの更新・上位モデルの入れ替わり |
 | mcp | 11 | 公式／コミュニティの別・配布場所・対応クライアント |
 | person_org | 7 | 所属・役職・社名の変更 |
@@ -48,7 +48,7 @@
 
 ## 3. 期限超過エントリ
 
-### Tier S（高） — 131 件（期限 90 日）
+### Tier S（高） — 124 件（期限 90 日）
 
 | ID | 用語 | category | 最終確認 | 経過 | 時変シグナル | path |
 | :-- | :-- | :-- | :-- | --: | :-- | :-- |
@@ -79,11 +79,7 @@
 | C-7 | Hugging Face | person_org | 2026-04-29※ | 143 日 | モデル名／時点表現 | `content/entries/person/C-7_hugging_face[済].md` |
 | C-8 | Microsoft AI | person_org | 2026-04-29※ | 143 日 | — | `content/entries/person/C-8_microsoft_ai[済].md` |
 | C-10 | Moonshot AI | person_org | 2026-04-29※ | 143 日 | モデル名／時点表現 | `content/entries/person/C-10_moonshot_ai[済].md` |
-| D-1 | Gemini 2 系 | model | 2026-04-29※ | 143 日 | モデル名／バージョン／時点表現 | `content/entries/model/D-1_gemini2[済].md` |
 | D-20 | GPT-5 系 | model | 2026-04-29※ | 143 日 | モデル名／時点表現 | `content/entries/model/D-20_gpt5[済].md` |
-| D-21 | GPT-4 系 | model | 2026-04-29※ | 143 日 | モデル名／バージョン／時点表現 | `content/entries/model/D-21_gpt4[済].md` |
-| D-22 | o1 系 | model | 2026-04-29※ | 143 日 | モデル名 | `content/entries/model/D-22_o1[済].md` |
-| D-24 | GPT-3 系 | model | 2026-04-29※ | 143 日 | モデル名／バージョン／時点表現／提供状況 | `content/entries/model/D-24_gpt3[済].md` |
 | D-26 | gpt-oss | model | 2026-04-29※ | 143 日 | モデル名／バージョン | `content/entries/model/D-26_gpt_oss[済].md` |
 | D-30 | Grok 系 | model | 2026-04-29※ | 143 日 | — | `content/entries/model/D-30_grok[済].md` |
 | D-40 | Llama 系 | model | 2026-04-29※ | 143 日 | モデル名／時点表現 | `content/entries/model/D-40_llama[済].md` |
@@ -146,10 +142,7 @@
 | B-61 | ACE-Step 1.5 | service | 2026-04-30※ | 142 日 | バージョン | `content/entries/service/B-61_ace_step_1_5[済].md` |
 | C-11 | Z.ai | person_org | 2026-04-30※ | 142 日 | バージョン／時点表現 | `content/entries/person/C-11_z_ai[済].md` |
 | C-13 | Groq | person_org | 2026-04-30※ | 142 日 | 価格 | `content/entries/person/C-13_groq[済].md` |
-| D-2 | Gemini 2.5 系 | model | 2026-04-30※ | 142 日 | モデル名／バージョン／時点表現 | `content/entries/model/D-2_gemini25[済].md` |
-| D-4 | Gemini 3.1 系 | model | 2026-04-30※ | 142 日 | モデル名／バージョン | `content/entries/model/D-4_gemini_3_1[済].md` |
 | D-14 | Claude Mythos Preview | model | 2026-04-30※ | 142 日 | モデル名／提供状況 | `content/entries/model/D-14_claude_mythos_preview[済].md` |
-| D-25 | GPT-1 / GPT-2 系 | model | 2026-04-30※ | 142 日 | モデル名／時点表現／提供状況 | `content/entries/model/D-25_gpt1_gpt2[済].md` |
 | D-35 | Cursor Composer | model | 2026-04-30※ | 142 日 | — | `content/entries/model/D-35_cursor_composer[済].md` |
 | D-45 | GLM | model | 2026-04-30※ | 142 日 | モデル名／バージョン | `content/entries/model/D-45_glm[済].md` |
 | D-53 | Veo | model | 2026-04-30※ | 142 日 | 時点表現 | `content/entries/model/D-53_veo[済].md` |
@@ -281,31 +274,10 @@ _なし_
 - `モデル名` 「Moonshot の Kimi K2、オープンウェイトで DeepSeek 系と並ぶ評価らしいですよね。」
 - `時点表現` 2023 年創業の中国 AI 企業。長文処理に強い LLM「Kimi」シリーズを開発しています。
 
-**D-1 Gemini 2 系**（143 日経過）
-
-- `モデル名` Gemini 2.0 の主要モデルを時系列に並べ、Flash・Pro の役割と登場順を 1 枚で掴んでもらいます。
-- `時点表現` Gemini アプリや Google AI Studio で試せるほか、API 経由で開発に組み込まれます。2025 年初めに Flash が登場し、Gemini というサービスの…
-
 **D-20 GPT-5 系**（143 日経過）
 
 - `モデル名` テキスト生成・画像理解・コード生成を担うモデル系統です。GPT-4 系からの進化として、推論能力の向上とマルチモーダル（複数の入力形式への対応）強化が主な特徴とされます。
 - `時点表現` OpenAI の 2025 年フラッグシップ世代です。ChatGPT と API の両方を通じて使えます。
-
-**D-21 GPT-4 系**（143 日経過）
-
-- `モデル名` ChatGPT を一気に実用へ押し上げた世代です。GPT-4o がマルチモーダル化の起点です。
-- `バージョン` GPT-4 → GPT-4 Turbo → GPT-4o → GPT-4.1 の系譜を 1 本の矢印で示し、各版の主な特徴と位置づけを添えます。
-- `時点表現` テキスト・コード生成と画像理解を担うモデル系統です。2023 年に登場して ChatGPT の実用水準を引き上げ、GPT-4o でマルチモーダル対応が広がりました。
-
-**D-22 o1 系**（143 日経過）
-
-- `モデル名` 回答の前に内部で段階的な推論（Reasoning）を重ねるモデル系です。数学・論理・コード最適化など一発で答えが出にくい問題に向きます。o1・o1-mini・o1-pro の各バリ…
-
-**D-24 GPT-3 系**（143 日経過）
-
-- `モデル名` GPT-3（2020）→ GPT-3.5（2022-11）→ ChatGPT 公開 の 3 点を時系列で示し、「歴史的起点」としての位置を伝えます。
-- `時点表現` テキスト生成・翻訳・要約・コード生成を担ったモデル系統です。2020 年に 175B パラメータで登場し ChatGPT の土台になりました。
-- `提供状況` 主に AI 史の文脈で名前が出ます。ChatGPT の初期ベースとして AI 元年（2022 年 11 月）の話題で挙がりますが、新規開発は後継世代が推奨されます。
 
 **D-26 gpt-oss**（143 日経過）
 
@@ -438,24 +410,10 @@ _なし_
 
 - `価格` 2. API 選定 — GroqCloud の無料枠で速度・料金を OpenAI 互換 API と比較します
 
-**D-2 Gemini 2.5 系**（142 日経過）
-
-- `モデル名` 2025 年 3 月公開の Gemini 2.5 世代です。Pro／Flash／Flash-Lite の 3 ティアがあります。
-
-**D-4 Gemini 3.1 系**（142 日経過）
-
-- `モデル名` Gemini 3 系のマイナー更新版で、コーディング精度と長文処理の改善が中心とされています。
-- `バージョン` Google AI Studio や Gemini アプリで「Gemini 3.1 Pro」として現れます。SWE-Bench（コード評価指標）の比較記事でも見かけます。
-
 **D-14 Claude Mythos Preview**（142 日経過）
 
 - `モデル名` Claude 4 系、Anthropic、B-2 Claude
 - `提供状況` サイバーセキュリティ特化の限定プレビューモデルとされます。
-
-**D-25 GPT-1 / GPT-2 系**（142 日経過）
-
-- `モデル名` GPT-1（2018年）は「事前学習＋微調整」という現在の主流パラダイムを確立しました。GPT-2（2019年）はゼロショット学習を示し、規模が増すほど性能が伸びることを実証してい…
-- `提供状況` 廃止済みで実用では使いません。歴史知識として扱います。
 
 **D-45 GLM**（142 日経過）
 

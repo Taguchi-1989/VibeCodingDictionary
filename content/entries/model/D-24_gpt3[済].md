@@ -13,6 +13,7 @@ start_date: 2020
 version_status: deprecated
 pricing_note: paid
 evaluation_date: 2026-04-29
+last_audited: 2026-09-19
 related_terms:
   - ChatGPT
   - GPT-4 系

@@ -36,11 +36,11 @@ facts:
     label: Anthropic の最新モデル世代
     kind: model
     book_says: "D-13「Claude 4.5 系」を現行の主力、D-14「Claude Mythos Preview」を先行版として扱う"
-    current_value: ""
-    last_checked: ""
+    current_value: "Claude 5 世代が現行。Opus 5（1M 文脈）／Sonnet 5／Fable 5.1／Mythos 5.1。Opus 4.8 は 2026-05-28 公開。本書が現行とする 4.5〜4.7 は既に過去世代"
+    last_checked: 2026-09-19
     recheck_days: 90
     source: Anthropic 公式ドキュメント（モデル一覧）
-    url: https://docs.claude.com/en/docs/about-claude/models
+    url: https://docs.anthropic.com/en/docs/about-claude/models/overview
     pattern: 'Claude\s*(Opus|Sonnet|Haiku)?\s*\d(\.\d)?'
     exclude_categories: [history]
     note: 世代が増えたら D 章に新エントリが要る。旧世代の deprecated 化も同時に確認する
@@ -49,11 +49,11 @@ facts:
     label: OpenAI の最新モデル世代（GPT 系）
     kind: model
     book_says: "D-20「GPT-5 系」を現行、D-21「GPT-4 系」以前を過去世代として扱う"
-    current_value: ""
-    last_checked: ""
+    current_value: "GPT-6 Astra がフラッグシップ。GPT-5.6 系は Sol／Terra／Luna の 3 構成、ほかに GPT-5.3-Codex・GPT-5.4／5.5 系。本書が現行とする GPT-5 系は過去世代"
+    last_checked: 2026-09-19
     recheck_days: 90
     source: OpenAI 公式ドキュメント（Models）
-    url: https://platform.openai.com/docs/models
+    url: https://developers.openai.com/api/docs/models
     pattern: 'GPT-?\d(\.\d)?'
     exclude_categories: [history]
     note: 本書では 26 件が GPT の世代名に触れている。世代交代時の影響が最も大きい
@@ -62,11 +62,11 @@ facts:
     label: OpenAI の推論モデル系列（o シリーズ）
     kind: model
     book_says: "D-22「o1 系」・D-23「o3 系」を収録。o3 系が最新として書かれている"
-    current_value: ""
-    last_checked: ""
+    current_value: "o1-preview は 2025-07-28、o1-mini は 2025-10-27 に API から削除済み。o3 は 2026-08-26 に ChatGPT から引退、API 側も 2026-12-11 削除予定。推論は GPT-5 以降の本流モデルに統合された"
+    last_checked: 2026-09-19
     recheck_days: 90
     source: OpenAI 公式ドキュメント（Models）
-    url: https://platform.openai.com/docs/models
+    url: https://developers.openai.com/api/docs/deprecations
     pattern: '(?<![A-Za-z])o\d(?![A-Za-z0-9])'
     exclude_categories: [history]
     note: 通常モデルへの推論機能統合が進むと、系列そのものの位置づけが変わる
@@ -75,8 +75,8 @@ facts:
     label: Google の最新モデル世代（Gemini 系）
     kind: model
     book_says: "D-4「Gemini 3.1 系」を現行、D-1〜D-3 を過去世代として扱う"
-    current_value: ""
-    last_checked: ""
+    current_value: "Gemini 3.8 Flash まで到達。3.5 Flash／3.5 Flash-Lite／3.6 Flash／3.7 Flash が GA。本書の最新収録は D-4 Gemini 3.1 系で、3.5 以降が未収録"
+    last_checked: 2026-09-19
     recheck_days: 90
     source: Google AI 公式ドキュメント（Gemini models）
     url: https://ai.google.dev/gemini-api/docs/models

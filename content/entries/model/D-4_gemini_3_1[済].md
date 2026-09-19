@@ -14,6 +14,7 @@ end_date:
 version_status: active
 pricing_note: paid
 evaluation_date: 2026-04-30
+last_audited: 2026-09-19
 related_terms:
   - Gemini
   - Gemini 3 系
