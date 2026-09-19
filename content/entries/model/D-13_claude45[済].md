@@ -14,6 +14,7 @@ end_date:
 version_status: active
 pricing_note: paid
 evaluation_date: 2026-08-23
+last_audited: 2026-09-19
 related_terms:
   - Claude
   - Anthropic
@@ -37,7 +38,7 @@ Sonnet 4.5・Haiku 4.5・Opus 4.5 の 3 モデルで、賢さと速さと価格�
 
 ## どこで出会うか
 
-Claude Code や Claude.ai、API 経由で日常的に触れる主力モデル帯です。2026-08 時点では Sonnet 4.5 が中心、軽い作業は Haiku 4.5、重い作業は Opus 4.5 と使い分けます。
+Claude Code や Claude.ai、API 経由で日常的に触れた主力モデル帯です。2025 年秋からの一時期は、軽い作業は Haiku 4.5、中心は Sonnet 4.5、重い作業は Opus 4.5 と使い分けました。
 
 ## メイン図
 
@@ -47,14 +48,14 @@ Claude Code や Claude.ai、API 経由で日常的に触れる主力モデル帯
 
 ### B. 登場シーン（figure_type: comparison）
 
-- シーン1: Sonnet 4.5（2025-09-29 公開）— 中心的な主力ティア
+- シーン1: Sonnet 4.5（2025-09-29 公開）— 当時の中心的な主力ティア
 - シーン2: Haiku 4.5（2025-10-01 公開）— 速さと価格を優先するティア
 - シーン3: Opus 4.5（2025-11-01 公開）— 最も重い仕事向けのティア
 - 並べる基準: 公開日順。文脈 20 万トークン・出力上限 6.4 万トークンは 3 モデル共通
 
 ## 会話での使い方例
 
-「Sonnet 4.5 が主力ですが、重い設計は Opus 4.5 に振っています。」
+「4.5 世代では Sonnet が主力で、重い設計は Opus に振っていました。」
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -152,11 +153,11 @@ Claude 4 系、Claude Code、Claude のバージョン史
 
 ## 出典メモ
 
-- Anthropic「Models overview」https://platform.claude.com/docs/en/about-claude/models/overview — checked 2026-08-23
+- Anthropic「Models overview」https://platform.claude.com/docs/en/about-claude/models/overview — checked 2026-09-19
 - Anthropic「Model deprecations」https://platform.claude.com/docs/en/about-claude/model-deprecations — checked 2026-08-23
 
 ## 備考
 
-モデル名・価格・提供状況は時変情報です。2026-08 時点では Sonnet 4.5・Haiku 4.5・Opus 4.5 の 3 モデルとも提供中で、公式は退役予定日を「Sonnet 4.5 は 2026-09-29 より前にはしない」「Haiku 4.5 は 2026-10-15 より前にはしない」「Opus 4.5 は 2026-11-24 より前にはしない」と案内しています。本番判断の前に公式ページを再確認してください。
+モデル名・価格・提供状況は時変情報です。2026-08 時点では Sonnet 4.5・Haiku 4.5・Opus 4.5 の 3 モデルとも提供中で、公式は退役予定日を「Sonnet 4.5 は 2026-09-29 より前にはしない」「Haiku 4.5 は 2026-10-15 より前にはしない」「Opus 4.5 は 2026-11-24 より前にはしない」と案内しています。本番判断の前に公式ページを再確認してください。2026-09-19 の鮮度監査時点では、4 系は 4.8（2026-05）まで進み、さらに後継の Claude 5 世代が出ています。
 
 **著者の指摘（2026-09-06）**: **バイブコーディングをエージェンティックにぐるぐる回せる可能性を見たのが Opus 4.5** だった、というのが著者の実感。Sonnet 4.5 が出て、Opus 4.5 で「確変した」。**それ以前は未来が見えていなかった**という線引きが本人の中にある。系譜のエントリとしては、ここを転換点として書けると強い。

@@ -11,6 +11,7 @@ figure_type: timeline
 page_layout: spread_v1
 version_status: deprecated
 evaluation_date: 2026-04-25
+last_audited: 2026-09-19
 related_terms:
   - Claude 4 系
   - Anthropic
@@ -34,7 +35,7 @@ status: ready
 
 ## どこで出会うか
 
-現在は 4 系が主力のため、過去の記事で「Sonnet 3.5 で試した」という記述を見かける場面が出会いの入口です。どの版・ティアか把握すると 4 系への移行比較に役立ちます。
+現在は後続世代が主力のため、過去の記事で「Sonnet 3.5 で試した」という記述を見かける場面が出会いの入口です。どの版・ティアか把握すると後続世代との比較に役立ちます。
 
 ## メイン図
 
@@ -86,7 +87,7 @@ Artifacts、Computer use、Claude 4 系。
 
 ## 開発フローでの位置（必須）
 
-1. モデル世代を把握する — 4 系（現行）か 3.5 系（過去）かを記事・設定で確認
+1. モデル世代を把握する — 後続世代か 3.5 系（過去）かを記事・設定で確認
 2. 版・ティアを確認する — Sonnet（中間）か Haiku（軽量）か、また初代か v2 か
 3. コードや指示を実行する — Claude.ai / API / Claude Code 経由
 4. 結果を評価して移行判断 — 4 系で同等以上が期待できるなら乗り換えを検討
@@ -159,9 +160,10 @@ Artifacts、Computer use、Claude 4 系。
 - https://www.anthropic.com/news/claude-3-5-sonnet — checked 2026-04-25
 - https://www.anthropic.com/news/claude-3-5-haiku — checked 2026-04-25
 - https://www.anthropic.com/news/claude-3-7-sonnet — checked 2026-04-25
-- https://docs.anthropic.com/en/docs/about-claude/models/overview — checked 2026-04-25
+- https://docs.anthropic.com/en/docs/about-claude/models/overview — checked 2026-09-19
 
 ## 備考
 
 - 3.7 Sonnet は番号こそ 3.7 ですが、Anthropic は 3.5 系からの継続発展として位置づけており、本エントリにまとめています。4 系とは別世代です。
 - モデルの API 提供継続状況・価格は時変情報です。本番運用前に公式ページで最新状況を確認してください（evaluation_date: 2026-04-25）。
+- 2026-09-19 の鮮度監査で、4 系も過去世代になったことを確認し、「4 系が現行」という書き方を「後続世代」に改めました。

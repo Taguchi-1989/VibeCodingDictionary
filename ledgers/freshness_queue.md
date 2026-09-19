@@ -9,12 +9,12 @@
 ## 1. 全体像
 
 - 監査対象: **458 件**（skeleton / sample / archived と前付け・巻末は対象外）
-- 期限超過: **124 件**
+- 期限超過: **121 件**
 - 確認日が読めない: 0 件
 
 | Tier | 意味 | 再確認の期限 | 件数 | 期限超過 |
 | :-- | :-- | --: | --: | --: |
-| S（高） | モデル・サービス・ベンチマーク・MCP・有料/フリーミアム・preview/deprecated | 90 日 | 162 | 124 |
+| S（高） | モデル・サービス・ベンチマーク・MCP・有料/フリーミアム・preview/deprecated | 90 日 | 162 | 121 |
 | A（中） | ツール用語・人物組織・ワークフロー、または本文に時変シグナル 3 種以上 | 180 日 | 122 | 0 |
 | B（低） | 一般用語・歴史・概念など、外の世界が動いても古くならないもの | 365 日 | 174 | 0 |
 
@@ -22,8 +22,8 @@
 
 | 経過 | 件数 |
 | :-- | --: |
-| 90 日以内 | 164 |
-| 91〜180 日 | 294 |
+| 90 日以内 | 167 |
+| 91〜180 日 | 291 |
 
 ---
 
@@ -34,7 +34,7 @@
 | category | 期限超過 | 主な確認ポイント |
 | :-- | --: | :-- |
 | service | 38 | 料金プラン・無料枠・提供地域・名称変更 |
-| model | 27 | 後継モデルの有無・提供終了・コンテキスト長 |
+| model | 24 | 後継モデルの有無・提供終了・コンテキスト長 |
 | benchmark | 19 | スコアの更新・上位モデルの入れ替わり |
 | mcp | 11 | 公式／コミュニティの別・配布場所・対応クライアント |
 | person_org | 7 | 所属・役職・社名の変更 |
@@ -48,16 +48,14 @@
 
 ## 3. 期限超過エントリ
 
-### Tier S（高） — 124 件（期限 90 日）
+### Tier S（高） — 121 件（期限 90 日）
 
 | ID | 用語 | category | 最終確認 | 経過 | 時変シグナル | path |
 | :-- | :-- | :-- | :-- | --: | :-- | :-- |
 | B-2 | Claude | service | 2026-04-23※ | 149 日 | — | `content/entries/service/B-2_claude[済].md` |
-| D-12 | Claude 4 系 | model | 2026-04-23※ | 149 日 | モデル名／バージョン | `content/entries/model/D-12_claude4[済].md` |
 | E-1 | SWE-Bench | benchmark | 2026-04-23※ | 149 日 | — | `content/entries/benchmark/E-1_swe_bench[済].md` |
 | B-1 | Gemini | service | 2026-04-24※ | 148 日 | モデル名／バージョン／時点表現 | `content/entries/service/B-1_gemini[済].md` |
 | B-3 | ChatGPT | service | 2026-04-25※ | 147 日 | モデル名 | `content/entries/service/B-3_chatgpt[済].md` |
-| D-11 | Claude 3.5 系 | model | 2026-04-25※ | 147 日 | モデル名／バージョン／時点表現／提供状況 | `content/entries/model/D-11_claude35[済].md` |
 | B-4 | Cursor | service | 2026-04-29※ | 143 日 | 価格 | `content/entries/service/B-4_cursor[済].md` |
 | B-5 | GitHub Copilot | service | 2026-04-29※ | 143 日 | 価格 | `content/entries/service/B-5_github_copilot[済].md` |
 | B-9 | v0 | service | 2026-04-29※ | 143 日 | 提供状況 | `content/entries/service/B-9_v0[済].md` |
@@ -79,7 +77,6 @@
 | C-7 | Hugging Face | person_org | 2026-04-29※ | 143 日 | モデル名／時点表現 | `content/entries/person/C-7_hugging_face[済].md` |
 | C-8 | Microsoft AI | person_org | 2026-04-29※ | 143 日 | — | `content/entries/person/C-8_microsoft_ai[済].md` |
 | C-10 | Moonshot AI | person_org | 2026-04-29※ | 143 日 | モデル名／時点表現 | `content/entries/person/C-10_moonshot_ai[済].md` |
-| D-20 | GPT-5 系 | model | 2026-04-29※ | 143 日 | モデル名／時点表現 | `content/entries/model/D-20_gpt5[済].md` |
 | D-26 | gpt-oss | model | 2026-04-29※ | 143 日 | モデル名／バージョン | `content/entries/model/D-26_gpt_oss[済].md` |
 | D-30 | Grok 系 | model | 2026-04-29※ | 143 日 | — | `content/entries/model/D-30_grok[済].md` |
 | D-40 | Llama 系 | model | 2026-04-29※ | 143 日 | モデル名／時点表現 | `content/entries/model/D-40_llama[済].md` |
@@ -193,11 +190,6 @@ _なし_
 
 エントリを開かなくても「どこを見ればいいか」が分かるように、時変シグナルに当たった行を 1 種類につき 1 行だけ抜いています。
 
-**D-12 Claude 4 系**（149 日経過）
-
-- `モデル名` - Before（4 系登場前）: Claude 3.5 Sonnet でコーディング適性が跳ねた世代
-- `バージョン` Claude 第 4 世代。Opus・Sonnet・Haiku の 3 段階で 4.7 が現行の主力です。
-
 **B-1 Gemini**（148 日経過）
 
 - `モデル名` Gemini 2.5 系、Vertex AI、AI Studio、Workspace 個別機能。
@@ -206,13 +198,6 @@ _なし_
 **B-3 ChatGPT**（147 日経過）
 
 - `モデル名` ChatGPT というブランドの下に、アプリ・カスタム GPT・API という 3 つの入口があることと、それを支えるモデル（GPT-5 系）の関係を 1 枚で示します。
-
-**D-11 Claude 3.5 系**（147 日経過）
-
-- `モデル名` Artifacts、Computer use、Claude 4 系。
-- `バージョン` バイブコーディング普及前夜の主力。Sonnet 3.5 でコード適性が跳ねた世代です。
-- `時点表現` 現在は 4 系が主力のため、過去の記事で「Sonnet 3.5 で試した」という記述を見かける場面が出会いの入口です。どの版・ティアか把握すると 4 系への移行比較に役立ちます。
-- `提供状況` 現在は deprecated 扱い。API 提供は要確認です。
 
 **B-4 Cursor**（143 日経過）
 
@@ -273,11 +258,6 @@ _なし_
 
 - `モデル名` 「Moonshot の Kimi K2、オープンウェイトで DeepSeek 系と並ぶ評価らしいですよね。」
 - `時点表現` 2023 年創業の中国 AI 企業。長文処理に強い LLM「Kimi」シリーズを開発しています。
-
-**D-20 GPT-5 系**（143 日経過）
-
-- `モデル名` テキスト生成・画像理解・コード生成を担うモデル系統です。GPT-4 系からの進化として、推論能力の向上とマルチモーダル（複数の入力形式への対応）強化が主な特徴とされます。
-- `時点表現` OpenAI の 2025 年フラッグシップ世代です。ChatGPT と API の両方を通じて使えます。
 
 **D-26 gpt-oss**（143 日経過）
 

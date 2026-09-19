@@ -13,6 +13,7 @@ start_date: 2025
 version_status: active
 pricing_note: paid
 evaluation_date: 2026-04-29
+last_audited: 2026-09-19
 related_terms:
   - ChatGPT
   - GPT-4
@@ -48,7 +49,7 @@ GPT-3 系から GPT-4 系、GPT-5 系への世代の流れを 1 本の矢印で�
 
 - GPT-3 系（2020〜）: 対話 AI の実用期への入口
 - GPT-4 系（2023〜）: マルチモーダルと高度な長文処理が定着
-- GPT-5 系（2025〜）: 推論能力・速度・マルチモーダルをさらに押し上げた現行フラッグシップ
+- GPT-5 系（2025〜）: 推論能力・速度・マルチモーダルをさらに押し上げた世代。5.6 まで版を重ねます
 - reasoning 系（o1 / o3）: GPT-5 系とは別系統。段階的思考に特化した派生ライン
 
 ## 会話での使い方例
@@ -61,7 +62,7 @@ GPT-3 系から GPT-4 系、GPT-5 系への世代の流れを 1 本の矢印で�
 
 ### 1. 役割
 
-OpenAI の主力モデル系統で、ChatGPT と API の中心を担います。
+OpenAI の主力モデル系統で、2025 年から 5.6 まで ChatGPT と API の中心を担いました。
 
 ### 2. うれしさ
 
@@ -154,8 +155,8 @@ GPT-4 系、o1 / o3 系、OpenAI API
 ## 出典メモ
 
 - https://openai.com/index/gpt-5 — checked 2026-04-29
-- https://platform.openai.com/docs — checked 2026-04-29
+- https://developers.openai.com/api/docs/models — checked 2026-09-19
 
 ## 備考
 
-モデル名・料金・提供状況は時変情報です。evaluation_date: 2026-04-29 時点の情報をもとにしています。本番判断の前に公式ページを再確認します。reasoning 系（o1 / o3）は GPT-5 系とは別系統ですが、OpenAI の API 上は同じプラットフォームから利用できます。
+モデル名・料金・提供状況は時変情報です。evaluation_date: 2026-04-29 時点の情報をもとにしています。本番判断の前に公式ページを再確認します。reasoning 系（o1 / o3）は GPT-5 系とは別系統ですが、OpenAI の API 上は同じプラットフォームから利用できます。2026-09-19 の鮮度監査で、GPT-5 系は 5.6（Sol / Terra / Luna）まで続き、その上に後継の GPT-6 Astra が登場していることを確認し、「現行フラッグシップ」という書き方を改めました。
