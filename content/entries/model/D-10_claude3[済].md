@@ -14,6 +14,7 @@ end_date: 2026-04-20
 version_status: deprecated
 pricing_note: none
 evaluation_date: 2026-08-23
+last_audited: 2026-09-19
 related_terms:
   - Anthropic
   - Claude

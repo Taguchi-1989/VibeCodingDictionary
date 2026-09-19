@@ -104,6 +104,49 @@
 - status が変わったらファイル名タグも揃えてください：`python3 scripts/apply_status_markers.py`（`[人書]`＝needs_review / `[済]`＝ready）→ `python3 scripts/sync_entries_csv.py`
 - 原則：[docs/quality_guidelines.md](docs/quality_guidelines.md)
 
+### 鮮度監査（陳腐化チェック・2026-09-19 追加）
+
+最新モデル名・料金・提供状況のように、**こちらが何もしなくても外の世界が動いて古くなる情報**を棚卸しする仕組みです。文章を直す [ledgers/revision_queue.md](ledgers/revision_queue.md) とは作業種別が違うので、台帳を分けています。
+
+- **鮮度キュー**：保存のたびに [scripts/audit_freshness.py](scripts/audit_freshness.py) が走り、[ledgers/freshness_queue.md](ledgers/freshness_queue.md) を再生成します
+- **経過日数だけで測りません**。frontmatter から「陳腐化しやすさ」を Tier に導出し、Tier ごとに期限を変えます
+  - **Tier S（90 日）**：category が model / service / benchmark / mcp / tool_agent、または `version_status: preview|deprecated`、または `pricing_note: paid|freemium`
+  - **Tier A（180 日）**：category が term_tool / person_org / workflow、または本文の時変シグナルが 3 種以上
+  - **Tier B（365 日）**：それ以外（一般用語・歴史・概念）。実質監査対象外
+  - 自動導出が実態と合わないときだけ、frontmatter に `volatility: high | mid | low` を足して上書きします
+- **確認日は `last_audited`**（任意フィールド、2026-09-19 新設）。`evaluation_date` は**執筆・評価した時点の記録として凍結**し、動かしません。「一次情報を見に行ったが変更は無かった」は `last_audited` を更新するだけで完了します（＝これが鮮度の signal）。未記入のエントリは `evaluation_date` にフォールバックします
+- **本文の時変シグナルを行単位で拾います**（モデル名／バージョン／価格／時点表現／提供状況）。キューの §4 に該当行が出るので、エントリを開く前に「どこを見ればいいか」が分かります
+- **☆ 違反にはしません**。鮮度は刊行ブロックではなく棚卸しの優先順位付けなので、validator 側は `last_audited` / `volatility` の書式警告だけです
+
+### 時変ファクト watchlist（事実の 1 箇所管理・2026-09-19 追加）
+
+「最新の Claude は何か」「ChatGPT の月額はいくらか」のような事実は、**1 つ変わるだけで複数エントリが同時に古くなります**。GPT の世代名は 22 件、MCP の仕様は 19 件、料金の記述は 24 件に散っているので、エントリ側から 1 件ずつ巡回する方式では取りこぼします。そこで**事実の側を主語にした台帳**を用意しました。
+
+- **定義（手で書く）**：[ledgers/volatile_facts.yaml](ledgers/volatile_facts.yaml) に事実を 1 ブロックずつ書きます。何の事実か／本書はどう書いているか／どこで確認するか／どの正規表現で影響エントリを拾うか
+- **台帳（自動生成）**：保存のたびに [scripts/update_volatile_facts.py](scripts/update_volatile_facts.py) が走り、[ledgers/volatile_facts.md](ledgers/volatile_facts.md) を再生成します。影響エントリの一覧は `pattern` から機械が集めるので、手で書く必要はありません
+- `include_categories` / `exclude_categories` / `exclude_ids` で絞れます（例：モデル世代の事実は `exclude_categories: [history]`。歴史エントリは世代交代では古くならないため）
+- 本文に 1 件も当たらなくなった事実は「⚠️ 定義の見直しが要るもの」に出ます。本文の書き方が変わったか、定義が腐ったサインです
+
+### 回し方
+
+```bash
+# A. 事実側から（推奨。同じ一次情報で束を片付けられる）
+cat ledgers/volatile_facts.md               # ⏰ が付いている事実を選ぶ
+python3 scripts/update_volatile_facts.py --fact F-model-openai   # 影響エントリを引く
+#  → 一次情報を確認 → volatile_facts.yaml の current_value / last_checked を更新
+#  → 記述が変わっていれば影響エントリをまとめて直す
+python3 scripts/touch_last_audited.py --fact F-model-openai      # 確認済みを一括押印
+
+# B. エントリ側から
+python3 scripts/audit_freshness.py --list --tier S --category model --details
+python3 scripts/touch_last_audited.py --category model --dry-run  # まず対象を確認
+python3 scripts/touch_last_audited.py --category model            # 押印
+```
+
+[scripts/touch_last_audited.py](scripts/touch_last_audited.py) は `last_audited` だけを書き換えます（`evaluation_date` は触りません）。`--fact` / `--ids` / `--category` / `--letter` で対象を指定でき、**対象指定なしの全件押印はできません**（確認していないものまで「確認済み」にしないため）。
+
+監査履歴は [ledgers/freshness_audit_log.md](ledgers/freshness_audit_log.md)（手書き）に残します。刊行前に「この本の事実はいつ時点のものか」を説明する根拠になります。
+
 ### 外出先コメントを取り込む
 
 - **新方式（推奨）**：[docs/mobile_repoedit_setup.md](docs/mobile_repoedit_setup.md) — [Taguchi-1989/RepoEdit](https://github.com/Taguchi-1989/RepoEdit)（PWA + Cloudflare Worker）で、エントリ内の `user-input` ブロック（「非エンジニアのつまずき」「私のコメント」）をスマホから直接編集。書き戻し先は `mobile-drafts` ブランチ。マーカーは全エントリに埋め込み済み（[scripts/add_user_input_markers.py](scripts/add_user_input_markers.py)）

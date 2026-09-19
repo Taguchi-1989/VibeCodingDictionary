@@ -10,11 +10,17 @@
 # の順で更新し、双方向で整合を取る。本ファイルと v2_rules_summary に差があれば、
 # **本ファイル（schema）を正**とする。
 
-schema_version: "v2.30.0"
-updated_at: "2026-05-13"
+schema_version: "v2.31.0"
+updated_at: "2026-09-19"
 canonical_doc: "docs/v2_rules_summary.md"
 
 # 変更履歴
+# - v2.31.0 (2026-09-19): 鮮度監査を追加。任意フィールド `last_audited`（最後に事実を
+#   確認した日）と `volatility`（陳腐化しやすさの手動上書き）を新設し、末尾に
+#   `freshness_audit:` 節（Tier 判定と時変シグナルの定義）を追加した。
+#   `evaluation_date` は執筆・評価時点の記録として据え置き、鮮度は `last_audited` で
+#   測る。scripts/audit_freshness.py が読み、ledgers/freshness_queue.md を生成する。
+#   誌面ルール・字数・必須節は無変更。
 # - v2.30.0 (2026-05-13): 前付け（A 章）用に `page_layout` enum を 7 値拡張し、
 #   front_* レイアウト群を新設。詳細は docs/front_section_layout.md（前付け仕様）。
 #   spread_v1 の本編ルールは無変更。`page_layout` が front_* のときは
@@ -144,6 +150,33 @@ frontmatter:
       severity: warn
       since: "2026-04-30"
 
+    - key: last_audited
+      description: |
+        **最後に事実を確認した日**（YYYY-MM-DD）。2026-09-19 追加。
+        `evaluation_date` が「執筆・評価した時点」の記録として凍結されるのに対し、
+        こちらは鮮度監査の基準日として動かす。記述に変更が無くても、一次情報を
+        見に行って「今も正しい」と確認したら更新する（それが鮮度の signal になる）。
+        未記入なら `evaluation_date` にフォールバックして経過日数を測る。
+        scripts/audit_freshness.py が読み、ledgers/freshness_queue.md を生成する。
+      format: regex
+      pattern: "^\\d{4}-\\d{2}-\\d{2}$"
+      severity: warn
+      since: "2026-09-19"
+
+    - key: volatility
+      description: |
+        **陳腐化しやすさ**の手動指定。2026-09-19 追加。
+        通常は category / version_status / pricing_note から Tier を自動導出するので
+        記入不要。自動導出が実態と合わないエントリだけ書いて上書きする。
+        high → Tier S（90 日で再確認）
+        mid  → Tier A（180 日）
+        low  → Tier B（365 日。実質監査対象外）
+        例: category が history でも現行サービスの話を含むなら high、
+            category が model でも歴史的記述しかないなら low。
+      enum: [high, mid, low]
+      severity: warn
+      since: "2026-09-19"
+
   time_varying_required:  # version_status または pricing_note がある場合、出典メモに checked 日付必須
     - key: version_status
       enum: [active, preview, deprecated]
@@ -151,6 +184,49 @@ frontmatter:
     - key: pricing_note
       enum: [none, paid, freemium]
       severity: warn
+
+# ────────────────────────────────────────
+# 鮮度監査（scripts/audit_freshness.py の単一入力）
+# 2026-09-19 追加。「事実の再確認」を優先順位付けするためのルール。
+# 字数・構造の ☆ 違反とは別系統で、刊行ブロックにはしない。
+# ────────────────────────────────────────
+freshness_audit:
+  checked_date_source: [last_audited, evaluation_date]   # 先に見つかった方を使う
+  skip_statuses: [skeleton, sample, archived]
+  skip_layout_prefixes: [front_, back_]
+
+  tiers:
+    - tier: S
+      limit_days: 90
+      label: 高
+      match_any:
+        category: [model, service, benchmark, mcp, tool_agent]
+        version_status: [preview, deprecated]
+        pricing_note: [paid, freemium]
+    - tier: A
+      limit_days: 180
+      label: 中
+      match_any:
+        category: [term_tool, person_org, workflow]
+        signal_count_gte: 3   # 本文の時変シグナルが 3 種以上
+    - tier: B
+      limit_days: 365
+      label: 低
+      match: default
+
+  # 本文（誌面に刷られる節のみ）から拾う時変シグナル。
+  # 行単位で当てて「どこを見ればいいか」を示すのが目的で、判定の厳密さは求めない。
+  signals:
+    - label: モデル名
+      hint: 後継モデルが出ていないか
+    - label: バージョン
+      hint: バージョン番号が現行か
+    - label: 価格
+      hint: 料金・無料枠が変わっていないか
+    - label: 時点表現
+      hint: 「現在」「最新」が今も成り立つか
+    - label: 提供状況
+      hint: 提供状況（ベータ／終了）が現状と合うか
 
 # ────────────────────────────────────────
 # 左ページの節（markdown 節 → 誌面配置）

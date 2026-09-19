@@ -13,6 +13,7 @@ start_date: 2018
 version_status: deprecated
 pricing_note: none
 evaluation_date: 2026-04-30
+last_audited: 2026-09-19
 related_terms:
   - GPT-3 系
   - OpenAI

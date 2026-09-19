@@ -15,6 +15,14 @@
           {
             "type": "command",
             "command": "python3 scripts/update_author_fill_queue.py --quiet"
+          },
+          {
+            "type": "command",
+            "command": "python3 scripts/audit_freshness.py --quiet"
+          },
+          {
+            "type": "command",
+            "command": "python3 scripts/update_volatile_facts.py --quiet"
           }
         ]
       }
