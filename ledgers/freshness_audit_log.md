@@ -11,7 +11,7 @@
 | 日付 | 範囲 | 件数 | 見た一次情報 | 結果 | 記入者 |
 | :-- | :-- | --: | :-- | :-- | :-- |
 
-- **範囲**: `D 章 model 全件` / `B-1〜B-12` / `volatile_facts F-model-anthropic の影響エントリ` のように、後から再現できる粒度で
+- **範囲**: `D 章 model 全件` / `B-1〜B-12` / `F-model-anthropic の影響エントリ`（[volatile_facts.md](volatile_facts.md) の事実 ID）のように、後から再現できる粒度で
 - **見た一次情報**: 公式ドキュメント・料金ページ・リリースノートなど。URL は代表 1 本で構いません
 - **結果**: `変更なし（last_audited のみ更新）` / `n 件改訂（内容）` のように、直したか直していないかが分かるように
 - 確認したエントリは frontmatter の `last_audited` を確認日に更新してください。`evaluation_date` は執筆時点の記録なので動かしません
@@ -23,6 +23,7 @@
 | 日付 | 範囲 | 件数 | 見た一次情報 | 結果 | 記入者 |
 | :-- | :-- | --: | :-- | :-- | :-- |
 | 2026-09-19 | 仕組み導入（監査はまだ未実施） | — | — | `last_audited` / `volatility` を schema v2.31.0 に追加し、`scripts/audit_freshness.py` と `freshness_queue.md` を新設。初回走査で Tier S の期限超過 131 件（service 38 / model 34 / benchmark 19 / mcp 11 / その他 29）を検出 | Claude Code |
+| 2026-09-19 | 時変ファクト watchlist を新設（監査はまだ未実施） | — | — | `volatile_facts.yaml` に事実 15 件を定義し、`update_volatile_facts.py` が影響エントリを自動収集する形に。`touch_last_audited.py` で確認済みの一括押印も可能に。15 件すべて `last_checked` 未記入＝未確認の状態 | Claude Code |
 
 ---
 

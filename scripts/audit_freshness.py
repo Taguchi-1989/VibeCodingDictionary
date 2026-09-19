@@ -399,6 +399,11 @@ def render(rows: list[dict], as_of: date) -> str:
         "`last_audited` を更新します。本文の改訂は entry-writer サブエージェントに渡せます",
         "5. 監査した範囲と結果は [freshness_audit_log.md](freshness_audit_log.md) に 1 行追記してください",
         "",
+        "「最新モデル名」「ChatGPT の月額」のように、**1 つ変わると複数エントリが同時に古くなる事実**は、"
+        "エントリ側から巡回すると取りこぼします。"
+        "[volatile_facts.md](volatile_facts.md) に事実側の台帳があるので、"
+        "そちらから影響エントリを引いて束で直す方が速いです。",
+        "",
         "Tier の判定が実態と合わないときは、frontmatter に "
         "`volatility: high | mid | low` を足すと上書きできます"
         "（[docs/entry_schema.yaml](../docs/entry_schema.yaml) 参照）。",

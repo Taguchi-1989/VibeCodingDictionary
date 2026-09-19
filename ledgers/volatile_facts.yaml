@@ -1,0 +1,223 @@
+# 時変ファクト watchlist（手で編集する定義ファイル）
+#
+# 「最新の Claude は何か」「ChatGPT の月額はいくらか」のような事実は、
+# 1 つ変わるだけで複数のエントリが同時に古くなります。GPT 系の記述は 26 件、
+# Gemini 系は 12 件、価格の記述は 18 件に散っていて、エントリを 1 件ずつ
+# 巡回する方式では取りこぼします。
+#
+# そこで **事実の側を台帳の主語にします**。ここに事実を 1 行で定義しておけば、
+# scripts/update_volatile_facts.py が本文を走査して「その事実に依存している
+# エントリ」を自動で集め、ledgers/volatile_facts.md に一覧を書き出します。
+# 事実が 1 つ動いたら、影響範囲が即座に引けます。
+#
+# 編集するのはこのファイルだけです（.md は自動生成なので手で触らないこと）。
+#
+# 各フィールド:
+#   id            … F-<種別>-<対象> の形。台帳と監査ログから参照する識別子
+#   label         … 人が読む名前
+#   kind          … model / pricing / benchmark / spec / availability
+#   book_says     … **本書が現在どう書いているか**。事実そのものではなく本書の主張を書く
+#   current_value … 最後の確認で分かった実際の値。未確認なら空のまま
+#   last_checked  … 最後に一次情報を見た日（YYYY-MM-DD）。空＝未確認
+#   recheck_days  … 再確認の間隔の目安
+#   source        … 確認先（名前）
+#   url           … 確認先 URL。初回監査で実在を確かめて直すこと（未検証のまま置いています）
+#   pattern       … 本文からこの事実に依存するエントリを拾う正規表現（Python re）
+#   include_categories … 指定すると、この category のエントリだけに絞る（任意）
+#   exclude_categories … この category を除く（任意）。例: 歴史エントリは世代交代で古くならない
+#   exclude_ids   … 個別に除くエントリ ID（任意）
+#   note          … 確認するときの注意
+#
+# 2026-09-19 新設。
+
+facts:
+  # ─── モデル世代 ─────────────────────────────────
+  - id: F-model-anthropic
+    label: Anthropic の最新モデル世代
+    kind: model
+    book_says: "D-13「Claude 4.5 系」を現行の主力、D-14「Claude Mythos Preview」を先行版として扱う"
+    current_value: ""
+    last_checked: ""
+    recheck_days: 90
+    source: Anthropic 公式ドキュメント（モデル一覧）
+    url: https://docs.claude.com/en/docs/about-claude/models
+    pattern: 'Claude\s*(Opus|Sonnet|Haiku)?\s*\d(\.\d)?'
+    exclude_categories: [history]
+    note: 世代が増えたら D 章に新エントリが要る。旧世代の deprecated 化も同時に確認する
+
+  - id: F-model-openai
+    label: OpenAI の最新モデル世代（GPT 系）
+    kind: model
+    book_says: "D-20「GPT-5 系」を現行、D-21「GPT-4 系」以前を過去世代として扱う"
+    current_value: ""
+    last_checked: ""
+    recheck_days: 90
+    source: OpenAI 公式ドキュメント（Models）
+    url: https://platform.openai.com/docs/models
+    pattern: 'GPT-?\d(\.\d)?'
+    exclude_categories: [history]
+    note: 本書では 26 件が GPT の世代名に触れている。世代交代時の影響が最も大きい
+
+  - id: F-model-openai-reasoning
+    label: OpenAI の推論モデル系列（o シリーズ）
+    kind: model
+    book_says: "D-22「o1 系」・D-23「o3 系」を収録。o3 系が最新として書かれている"
+    current_value: ""
+    last_checked: ""
+    recheck_days: 90
+    source: OpenAI 公式ドキュメント（Models）
+    url: https://platform.openai.com/docs/models
+    pattern: '(?<![A-Za-z])o\d(?![A-Za-z0-9])'
+    exclude_categories: [history]
+    note: 通常モデルへの推論機能統合が進むと、系列そのものの位置づけが変わる
+
+  - id: F-model-google
+    label: Google の最新モデル世代（Gemini 系）
+    kind: model
+    book_says: "D-4「Gemini 3.1 系」を現行、D-1〜D-3 を過去世代として扱う"
+    current_value: ""
+    last_checked: ""
+    recheck_days: 90
+    source: Google AI 公式ドキュメント（Gemini models）
+    url: https://ai.google.dev/gemini-api/docs/models
+    pattern: 'Gemini\s*\d(\.\d)?'
+    exclude_categories: [history]
+    note: 旧 3 桁 ID の残骸（201 番）も Gemini 2.5 を扱っているので併せて確認する
+
+  - id: F-model-meta
+    label: Meta のオープンウェイトモデル（Llama 系）
+    kind: model
+    book_says: "D-40「Llama 系」で Llama 1〜4 の系譜を扱う"
+    current_value: ""
+    last_checked: ""
+    recheck_days: 180
+    source: Meta Llama 公式サイト
+    url: https://www.llama.com/
+    pattern: 'Llama\s*\d'
+    exclude_categories: [history]
+    note: ライセンス条項の変更もここで拾う（商用利用の条件は本書の説明に効く）
+
+  - id: F-spec-context-length
+    label: 主要モデルのコンテキスト長
+    kind: spec
+    book_says: "「◯万トークン」「◯K トークン」の具体数値が複数エントリに入っている"
+    current_value: ""
+    last_checked: ""
+    recheck_days: 90
+    source: 各社のモデル一覧ページ
+    url: ""
+    pattern: '\d+\s*(万|[kK]|M)\s*トークン'
+    note: 数値そのものが入っているので、世代交代のたびに実数がずれる
+
+  # ─── 料金 ───────────────────────────────────────
+  - id: F-price-chatgpt
+    label: ChatGPT の料金プラン
+    kind: pricing
+    book_says: "B-51「ChatGPT 料金」が本体。金額そのものは B-51 に集約されている"
+    current_value: ""
+    last_checked: ""
+    recheck_days: 90
+    source: OpenAI 公式料金ページ
+    url: https://openai.com/chatgpt/pricing/
+    pattern: '(ChatGPT|OpenAI)[\s\S]{0,120}(月額|無料枠|無料プラン|\$\s?\d|従量課金)'
+    note: プラン名の改称（Plus / Pro / Team 等）も記述に効く
+
+  - id: F-price-claude
+    label: Claude の料金プラン
+    kind: pricing
+    book_says: "B-50「Claude 料金」が本体。B-7 Claude Code は「時変情報のため本文への記載は最小限」として金額を書かない方針"
+    current_value: ""
+    last_checked: ""
+    recheck_days: 90
+    source: Anthropic 公式料金ページ
+    url: https://www.anthropic.com/pricing
+    pattern: 'Claude[\s\S]{0,120}(月額|無料枠|無料プラン|\$\s?\d|従量課金|利用上限)'
+    note: Claude Code の利用上限は変動が激しい。B-50 に集約し、他エントリへ金額を散らさない方針を保つ
+
+  - id: F-price-gemini
+    label: Gemini の料金プラン・無料枠
+    kind: pricing
+    book_says: "B-52「Gemini 料金」が本体。B-35 Gemini CLI の無料枠記述が連動する"
+    current_value: ""
+    last_checked: ""
+    recheck_days: 90
+    source: Google AI 公式料金ページ
+    url: https://ai.google.dev/pricing
+    pattern: '(Gemini)[\s\S]{0,120}(月額|無料枠|無料プラン|\$\s?\d|従量課金)'
+    note: 無料枠の上限とフォールバック先はエントリ本文でも「分かりにくい」と書いている箇所
+
+  - id: F-price-dev-tools
+    label: 開発ツールの料金（Cursor / Copilot / ホスティング等）
+    kind: pricing
+    book_says: "B 章の各サービスエントリに月額・無料枠の記述が散在している"
+    current_value: ""
+    last_checked: ""
+    recheck_days: 90
+    source: 各サービスの公式料金ページ
+    url: ""
+    pattern: '(月額|無料枠|無料プラン|従量課金|\$\s?\d+)'
+    note: 件数が多いので、まず金額が具体的に書かれているエントリだけ拾うと速い
+
+  # ─── ベンチマーク ───────────────────────────────
+  - id: F-bench-swebench
+    label: SWE-Bench 系のスコア水準
+    kind: benchmark
+    book_says: "E-1 / E-2 でベンチマークの位置づけとスコア水準に触れる"
+    current_value: ""
+    last_checked: ""
+    recheck_days: 90
+    source: SWE-bench 公式リーダーボード
+    url: https://www.swebench.com/
+    pattern: 'SWE-?[Bb]ench'
+    note: 上位スコアはモデル更新のたびに動く。「◯% 程度」と幅で書いてあれば直す頻度は下がる
+
+  - id: F-bench-leaderboard
+    label: ベンチマークのスコア・順位（数値を書いている箇所）
+    kind: benchmark
+    book_says: "E 章を中心に、具体的なパーセンテージが本文に入っている"
+    current_value: ""
+    last_checked: ""
+    recheck_days: 90
+    source: 各ベンチマークの公式リーダーボード
+    url: https://lmarena.ai/
+    pattern: '\d+(\.\d+)?\s*%'
+    include_categories: [benchmark]
+    note: 数値を残すか「水準」の表現に逃がすかは編集判断。刊行物としては幅表現が安全
+
+  # ─── 仕様・提供状況 ─────────────────────────────
+  - id: F-spec-mcp
+    label: MCP の仕様と公式サーバーの顔ぶれ
+    kind: spec
+    book_says: "I 章全体（19 件）が MCP の仕様・公式/コミュニティ別・配布場所を前提にしている"
+    current_value: ""
+    last_checked: ""
+    recheck_days: 90
+    source: Model Context Protocol 公式サイト
+    url: https://modelcontextprotocol.io/
+    pattern: '(MCP|Model Context Protocol)'
+    include_categories: [mcp]
+    note: 「公式サーバー」の一覧は入れ替わる。I-10 以降の個別サーバーの現存確認も要る
+
+  - id: F-availability-preview
+    label: ベータ・プレビュー表記
+    kind: availability
+    book_says: "16 件が「ベータ」「プレビュー」として紹介している"
+    current_value: ""
+    last_checked: ""
+    recheck_days: 90
+    source: 各サービスの公式アナウンス
+    url: ""
+    pattern: '(ベータ|β版|プレビュー)'
+    note: 一般提供（GA）に移ると記述が古くなる。version_status の preview も併せて直す
+
+  - id: F-availability-deprecated
+    label: 提供終了・非推奨の表記
+    kind: availability
+    book_says: "11 件が deprecated・提供終了・後継ありとして書かれている"
+    current_value: ""
+    last_checked: ""
+    recheck_days: 180
+    source: 各サービスの公式アナウンス
+    url: ""
+    pattern: '(deprecated|非推奨|提供終了|サポート終了|廃止)'
+    note: "完全終了すると「まだ使える」前提の記述が崩れる。version_status: deprecated と揃える"

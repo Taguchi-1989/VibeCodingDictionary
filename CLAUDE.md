@@ -118,15 +118,32 @@
 - **本文の時変シグナルを行単位で拾います**（モデル名／バージョン／価格／時点表現／提供状況）。キューの §4 に該当行が出るので、エントリを開く前に「どこを見ればいいか」が分かります
 - **☆ 違反にはしません**。鮮度は刊行ブロックではなく棚卸しの優先順位付けなので、validator 側は `last_audited` / `volatility` の書式警告だけです
 
-回し方：
+### 時変ファクト watchlist（事実の 1 箇所管理・2026-09-19 追加）
+
+「最新の Claude は何か」「ChatGPT の月額はいくらか」のような事実は、**1 つ変わるだけで複数エントリが同時に古くなります**。GPT の世代名は 22 件、MCP の仕様は 19 件、料金の記述は 24 件に散っているので、エントリ側から 1 件ずつ巡回する方式では取りこぼします。そこで**事実の側を主語にした台帳**を用意しました。
+
+- **定義（手で書く）**：[ledgers/volatile_facts.yaml](ledgers/volatile_facts.yaml) に事実を 1 ブロックずつ書きます。何の事実か／本書はどう書いているか／どこで確認するか／どの正規表現で影響エントリを拾うか
+- **台帳（自動生成）**：保存のたびに [scripts/update_volatile_facts.py](scripts/update_volatile_facts.py) が走り、[ledgers/volatile_facts.md](ledgers/volatile_facts.md) を再生成します。影響エントリの一覧は `pattern` から機械が集めるので、手で書く必要はありません
+- `include_categories` / `exclude_categories` / `exclude_ids` で絞れます（例：モデル世代の事実は `exclude_categories: [history]`。歴史エントリは世代交代では古くならないため）
+- 本文に 1 件も当たらなくなった事実は「⚠️ 定義の見直しが要るもの」に出ます。本文の書き方が変わったか、定義が腐ったサインです
+
+### 回し方
 
 ```bash
+# A. 事実側から（推奨。同じ一次情報で束を片付けられる）
+cat ledgers/volatile_facts.md               # ⏰ が付いている事実を選ぶ
+python3 scripts/update_volatile_facts.py --fact F-model-openai   # 影響エントリを引く
+#  → 一次情報を確認 → volatile_facts.yaml の current_value / last_checked を更新
+#  → 記述が変わっていれば影響エントリをまとめて直す
+python3 scripts/touch_last_audited.py --fact F-model-openai      # 確認済みを一括押印
+
+# B. エントリ側から
 python3 scripts/audit_freshness.py --list --tier S --category model --details
-#  → 一次情報（公式ドキュメント・料金ページ）を確認
-#  → 変更なし: frontmatter の last_audited を確認日に更新するだけ
-#  → 変更あり: 本文を直し、出典メモの checked YYYY-MM-DD も揃え、last_audited を更新
-#  → 監査した範囲を ledgers/freshness_audit_log.md に 1 行追記
+python3 scripts/touch_last_audited.py --category model --dry-run  # まず対象を確認
+python3 scripts/touch_last_audited.py --category model            # 押印
 ```
+
+[scripts/touch_last_audited.py](scripts/touch_last_audited.py) は `last_audited` だけを書き換えます（`evaluation_date` は触りません）。`--fact` / `--ids` / `--category` / `--letter` で対象を指定でき、**対象指定なしの全件押印はできません**（確認していないものまで「確認済み」にしないため）。
 
 監査履歴は [ledgers/freshness_audit_log.md](ledgers/freshness_audit_log.md)（手書き）に残します。刊行前に「この本の事実はいつ時点のものか」を説明する根拠になります。
 
