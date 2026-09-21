@@ -279,9 +279,20 @@ Output: exactly one image, 2:1 horizontal, 1254x627, white background, no text, 
 | `timeline_scale` | `Structure: one horizontal baseline with 3 marks that grow in size left to right, each at least twice the previous. No tick clutter.` |
 | `tool_loop` | `Structure: one closed loop with exactly 3 nodes and 3 arrows in a single direction. The loop silhouette must be recognizable as a loop at 200px.` |
 | `collaboration_hub` | `Structure: one shared object in the center and exactly 2 actors reaching it. Do not draw a team, a crowd, or an office.` |
-| `brand_clearspace` | `Structure: the left two thirds hold the simplified diagram (at most 4 shapes); the right third is clean white clearspace reserved for a later official logo overlay. Do not draw anything, including faint marks, borders, or placeholders, inside the clearspace.` |
+| `brand_clearspace` | `Structure: the simplified diagram (at most 4 shapes) uses the whole canvas as usual. Reserve clean white clearspace for a later official logo overlay in the TOP-RIGHT CORNER ONLY: about 520-580px wide and 150-220px tall on a 1254x627 canvas, well under a quarter of the image. Everything below and left of that corner, including the lower right, is filled by the diagram. Do not draw anything, including faint marks, borders, or placeholders, inside the corner clearspace, and do not leave the whole right side or the whole top of the canvas empty.` |
 
 ブランド枠だけは、旧ルール（[docs/ponchi_image_generation_rules.md](ponchi_image_generation_rules.md) の「2:1 とロゴ余白」）の**余白位置と合成ルールをそのまま踏襲**します。変わるのは、余白の外側に詰め込む図解の密度だけです。
+
+**ロゴ余白は「右上の隅」であって「右 1/3」ではありません。** 旧ルールが「余白を広く取りすぎて右半分や上半分が未使用に見える画像は不採用」「全面の 1/4 を超える白地をロゴのためだけに残さない」と定めているとおりです。隅だけを空ければ、その下は図解で埋まるので**外接矩形はキャンバス全体に届き、span 帯（0.78〜0.90）はそのまま適用できます**。
+
+実測でも確認しています（`logo_need: required` の 133 枚 対 `not_needed` の 211 枚）。
+
+| | span median | 帯内率 |
+| :-- | --: | --: |
+| ロゴ後合成あり（133 枚） | **0.831** | **79%** |
+| ロゴなし（211 枚） | 0.788 | 45% |
+
+ロゴ余白のある絵のほうが span は**高い**ので、ブランド枠用に帯を緩める必要はありません。帯から外れる 18 枚は素直に「小さすぎ」です。
 
 ---
 
