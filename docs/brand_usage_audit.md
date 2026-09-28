@@ -1,4 +1,4 @@
-# Brand usage audit for ponchi regeneration
+﻿# Brand usage audit for ponchi regeneration
 
 This audit records only confirmed sources that can be used for deterministic
 brand asset overlays. It is not permission advice; it is a working ledger for
@@ -386,10 +386,12 @@ substitutes.
   references are badges and external service marks; the repository tree did
   not expose a SuperClaude-specific logo, icon, or lockup asset.
 - Working rule:
-  - Treat F-85 as a confirmed logo-less base candidate in `color_audit`.
-    Official source review did not find a SuperClaude-specific logo, icon, or
-    lockup, so use the normalized non-brand workflow diagram rather than
-    waiting indefinitely for an overlay.
+  - The repository review did not find a SuperClaude-specific logo, icon, or
+    lockup. The logo requirement matrix still classifies F-85 as brand-required
+    with official-usage review pending. A generic, logo-free internal base may
+    be considered separately, but do not describe the entry as cleared for a
+    logo-free publication image or overlay until the matrix and use conditions
+    are reconciled.
   - Do not use Claude / Anthropic marks because the entry explicitly describes
     SuperClaude as a community OSS framework and Anthropic-unofficial.
   - Do not synthesize a "SuperClaude" wordmark or use GitHub/SuperClaude org
@@ -426,9 +428,9 @@ substitutes.
     - `assets/logos/ai-compass/youtube-channel-page.html`
     - `assets/logos/ai-compass/youtube-channel-avatar.jpg`
 - Local status: official channel pages and unchanged 900x900 YouTube avatar
-  images were saved for C-80, C-81, C-82, and C-83. C-83 has a naming mismatch:
-  the ledger/prompt title is `AI の羅針盤`, while the source page displays
-  `AI時代の羅針盤`; keep this as a review note before final promotion.
+  images were saved for C-80, C-81, C-82, and C-83. C-83's canonical title is
+  `AI時代の羅針盤` in the current entry and matrix. The legacy Batch 004 prompt
+  still uses `AI の羅針盤` and must be corrected before any reuse.
 - Working rule:
   - Use the saved YouTube `og:image` avatar only as a deterministic official
     channel-icon overlay.
@@ -1177,3 +1179,10 @@ assets, primarily by `scripts/composite_official_logo.py`; AMD uses an
 equivalent ImageMagick composite so the official white logo remains visible on
 the white ponchi canvas. They are staged under
 `assets/ponchi/final_candidates/` and do not overwrite `assets/ponchi/final/`.
+
+- `ponchi-simplification-rollout-007`: H-57 Gemini の命名史 uses the same
+  unchanged official Gemini sparkle at `assets/logos/gemini/gemini_sparkle_4g_512_lt.png`
+  verified from `https://gemini.google.com/`; source and 2026-06-03 retrieval are
+  recorded above for B-1/B-52/D-1-D-4. Add the verified asset SHA to the sidecar.
+  Historical-generation timeline use conditions remain pending, so no overlay,
+  adoption, or publication; an eligible simplified base remains logo-free.

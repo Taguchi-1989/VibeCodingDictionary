@@ -1,0 +1,5 @@
+file,entry_id,size,size_ok,bbox_coverage,density_ok,clearspace_required,clearspace_ink_ratio,clearspace_ok,status
+assets\ponchi\experiments\batches\ponchi-simplification-pilot-001\revisions\v4_flat\C-9_base_1254x627.png,C-9,1254x627,true,0.500,true,false,0.0062,true,pass
+assets\ponchi\experiments\batches\ponchi-simplification-pilot-001\revisions\v4_flat\D-12_base_1254x627.png,D-12,1254x627,true,0.661,true,false,0.2267,true,pass
+assets\ponchi\experiments\batches\ponchi-simplification-pilot-001\revisions\v4_flat\H-1_base_1254x627.png,H-1,1254x627,true,0.556,true,false,0.0136,true,pass
+assets\ponchi\experiments\batches\ponchi-simplification-pilot-001\revisions\v4_flat\I-2_base_1254x627.png,I-2,1254x627,true,0.691,true,false,0.0922,true,pass

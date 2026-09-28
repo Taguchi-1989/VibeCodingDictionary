@@ -1,0 +1,12 @@
+Use case: infographic-diagram
+Asset type: one internal simplification candidate for a Japanese technical-book illustration; not approved for production.
+Primary request: Edit only the exact logo-free source image attached as Image 1. Simplify it to the host-side Client connecting to multiple Servers.
+Input images: Image 1 is the exact source image to edit. Preserve the one existing developer and its current design/role.
+Scene/backdrop: pure white #FFFFFF.
+Subject: a neutral LLM node on the left, one clearly central Client bridge, and multiple distinct generic Server blocks on the right. Solid arrows show requests traveling from Client to Servers; return arrows show results coming back to Client. Keep any external-service endpoints only where the source already shows them.
+Style/medium: minimalist editorial line illustration matching the source's technical-book style.
+Composition/framing: exact 2:1 horizontal canvas. Keep the developer at the host side; clear left-to-right LLM → Client → multiple Server arrangement.
+Color palette: only white #FFFFFF, deep navy #123E82, near-black #1A1A1A, pale blue #EAF1FB, and neutral areas already present on the fixed character.
+Materials/textures: clean flat fills and uniform linework. No grain, texture, shadow, glow, gradients, or decorative background.
+Text (verbatim): none.
+Constraints: Keep the distinct LLM, Client, and Server roles; the central Client position; multiple separate Server endpoints; request and return directions; and one existing developer. Remove pseudo-UI text bars, product-like controls, duplicate server details, redundant connectors, and repeated miniature lists. Do not merge distinct endpoints. Draw no words, letters, numbers, product icons, brand marks, code, fake text, pseudo-document lines, or recognizable editor UI. Exact 2:1 canvas; one clean PNG at the highest supported native resolution. Internal candidate only; do not overwrite or imply approval of the production image.

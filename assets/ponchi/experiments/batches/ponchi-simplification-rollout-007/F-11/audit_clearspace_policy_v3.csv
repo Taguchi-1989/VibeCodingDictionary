@@ -1,0 +1,2 @@
+candidate,sha256,reserved_roi,exact_white_pixels,nonwhite_pixels,total_pixels,roi_entirely_exact_white
+F-11_candidate_v3.png,50610e8d765e1ee998a5c7af35a43f169a21d22cd640ef25592f809676080c29,"[970,0,1707,255)",22383,165552,187935,False

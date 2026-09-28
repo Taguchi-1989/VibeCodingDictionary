@@ -1,0 +1,2 @@
+file,entry_id,size,size_ok,bbox_coverage,density_ok,clearspace_required,clearspace_ink_ratio,clearspace_ok,status
+assets\ponchi\experiments\batches\ponchi-simplification-rollout-007\D-40\D-40_candidate_v1.png,D-40_candidate_v1,1774x887,false,0.640,true,true,0.0000,true,review

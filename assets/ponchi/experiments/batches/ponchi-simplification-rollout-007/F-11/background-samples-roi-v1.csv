@@ -1,0 +1,14 @@
+kind,name,x,y,rgb_or_extent,exact_white_or_empty,foreground_proxy_pixels,foreground_bounds
+sample,top_left,0,0,"(254, 253, 255)",False,,
+sample,top_right,1773,0,"(255, 254, 254)",False,,
+sample,bottom_left,0,886,"(254, 253, 254)",False,,
+sample,bottom_right,1773,886,"(253, 253, 253)",False,,
+sample,p1,71,35,"(253, 253, 253)",False,,
+sample,p2,532,35,"(255, 254, 254)",False,,
+sample,p3,1242,35,"(254, 253, 254)",False,,
+sample,p4,1703,35,"(254, 254, 254)",False,,
+sample,p5,71,852,"(255, 255, 255)",True,,
+sample,p6,532,852,"(253, 253, 253)",False,,
+sample,p7,1242,852,"(255, 255, 255)",True,,
+sample,p8,1703,852,"(255, 255, 255)",True,,
+roi,logo_clearspace,970,0,1706x255,False,13980,"(970, 236, 1705, 254)"

@@ -1,0 +1,13 @@
+﻿sample_type,sample_id,normalized_xy,x,y,r,g,b,exact_white
+corner,tl,,0,0,254,255,255,false
+corner,tr,,1773,0,254,255,254,false
+corner,bl,,0,886,254,253,253,false
+corner,br,,1773,886,254,253,254,false
+registered,1,"0.04,0.04",71,35,253,253,253,false
+registered,2,"0.3,0.04",532,35,255,254,255,false
+registered,3,"0.7,0.04",1241,35,254,254,254,false
+registered,4,"0.96,0.04",1702,35,254,254,254,false
+registered,5,"0.04,0.96",71,851,255,255,255,true
+registered,6,"0.3,0.96",532,851,255,254,255,false
+registered,7,"0.7,0.96",1241,851,254,254,254,false
+registered,8,"0.96,0.96",1702,851,254,254,254,false

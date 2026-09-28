@@ -1,0 +1,2 @@
+candidate,sha256,dimensions,mode,corners_exact,points_exact,perimeter_exact,perimeter_total,mask_status,verdict
+J-62_candidate_v3.png,b5d403c1861e39e8b7241af6748548c82b4fea23304f071c0e2e4a7924d0feea,1774x887,RGB,1/4,4/12,42572,184094,not_created_fail_fast,HOLD_fail_fast

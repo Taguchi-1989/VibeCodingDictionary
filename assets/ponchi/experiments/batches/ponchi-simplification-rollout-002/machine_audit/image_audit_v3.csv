@@ -1,0 +1,5 @@
+file,entry_id,size,size_ok,bbox_coverage,density_ok,clearspace_required,clearspace_ink_ratio,clearspace_ok,status
+assets\ponchi\experiments\batches\ponchi-simplification-rollout-002\E-31\E-31_candidate_v3.png,E-31_candidate_v3,1774x887,true,1.000,true,false,0.9936,true,pass
+assets\ponchi\experiments\batches\ponchi-simplification-rollout-002\G-14\G-14_candidate_v3.png,G-14_candidate_v3,1774x887,true,0.791,true,false,0.0265,true,pass
+assets\ponchi\experiments\batches\ponchi-simplification-rollout-002\I-5\I-5_candidate_v3.png,I-5_candidate_v3,1774x887,true,0.538,true,false,0.0257,true,pass
+assets\ponchi\experiments\batches\ponchi-simplification-rollout-002\J-71\J-71_candidate_v3.png,J-71_candidate_v3,1774x887,true,0.855,true,false,0.0676,true,pass

@@ -1,0 +1,12 @@
+Use case: infographic-diagram
+Asset type: one internal simplification candidate for a Japanese technical-book illustration; not approved for production.
+Primary request: Edit only the exact logo-free source image attached as Image 1. Reduce it to the authored three-role, left-to-right handoff.
+Input images: Image 1 is the exact source image to edit. Preserve exactly the three existing people and their designs.
+Scene/backdrop: pure white #FFFFFF.
+Subject: three distinct human stations in order: planning, execution, review. The figure brief specifies a plan sheet/hat for planning, a laptop for execution, and a magnifier for review. Show one simple blank handoff artifact between each adjacent role and one final deliverable after review.
+Style/medium: minimalist editorial line illustration matching the source's technical-book style.
+Composition/framing: exact 2:1 horizontal canvas. Three clear stations arranged left to right. Simple arrows and artifact cards connect adjacent stations in one forward direction only.
+Color palette: only white #FFFFFF, deep navy #123E82, near-black #1A1A1A, pale blue #EAF1FB, and neutral areas already present on the fixed people.
+Materials/textures: clean flat fills and uniform linework. No grain, texture, shadow, glow, gradients, or decorative background.
+Text (verbatim): none.
+Constraints: Keep exactly three roles and three existing people in their authored order. Use only the brief-specified role cues. Remove redundant dashboards, duplicate artifact cards/checklists/charts, the bottom return loops, dialogue, labels, captions, and pseudo-document writing. Show no role names, framework names, metrics, words, letters, numbers, logos, branded symbols, fake text, or pseudo-document lines. Do not add a loop, reverse flow, or relationship not in the source brief. Exact 2:1 canvas; one clean PNG at the highest supported native resolution. Internal candidate only; do not overwrite or imply approval of the production image.

@@ -1,0 +1,14 @@
+check,x,y,width,height,rgb,exact_white,nonwhite_pixels,total_pixels
+top_left_corner,0,0,,,"254,255,255",false,,
+top_right_corner,1773,0,,,"255,255,254",false,,
+bottom_left_corner,0,886,,,"254,253,254",false,,
+bottom_right_corner,1773,886,,,"254,253,254",false,,
+registered_1,71,35,,,"253,253,253",false,,
+registered_2,532,35,,,"255,254,255",false,,
+registered_3,1242,35,,,"254,254,254",false,,
+registered_4,1703,35,,,"254,254,254",false,,
+registered_5,71,852,,,"255,255,254",false,,
+registered_6,532,852,,,"254,253,254",false,,
+registered_7,1242,852,,,"255,255,255",true,,
+registered_8,1703,852,,,"255,255,254",false,,
+mapped_logo_clearspace_roi,970,0,736,311,,false,192951,228896

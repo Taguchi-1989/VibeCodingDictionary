@@ -1,0 +1,2 @@
+file,entry_id,size,size_ok,bbox_coverage,density_ok,clearspace_required,clearspace_ink_ratio,clearspace_ok,status
+assets\ponchi\experiments\batches\ponchi-simplification-pilot-001\revisions\v6_simplified\C-9_base_1254x627.png,C-9,1254x627,true,0.480,false,false,0.0101,true,review

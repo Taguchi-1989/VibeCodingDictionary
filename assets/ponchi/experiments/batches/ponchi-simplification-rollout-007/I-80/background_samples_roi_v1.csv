@@ -1,0 +1,19 @@
+﻿check,normalized_xy,x_px,y_px,rgb,exact_white,requirement,status
+corner_tl,,0,0,"253,255,255",false,required,fail
+corner_tr,,1773,0,"254,254,254",false,required,fail
+corner_bl,,0,886,"253,253,253",false,required,fail
+corner_br,,1773,886,"253,253,253",false,required,fail
+sidecar_p1,"0.015,0.015",27,13,"254,254,254",false,required,fail
+sidecar_p2,"0.250,0.015",443,13,"255,255,255",true,required,pass
+sidecar_p3,"0.015,0.250",27,222,"255,254,255",false,required,fail
+sidecar_p4,"0.750,0.015",1330,13,"254,254,254",false,required,fail
+sidecar_p5,"0.985,0.015",1746,13,"255,254,255",false,required,fail
+sidecar_p6,"0.985,0.250",1746,222,"255,255,255",true,required,pass
+sidecar_p7,"0.015,0.750",27,664,"254,254,254",false,required,fail
+sidecar_p8,"0.250,0.985",443,873,"254,254,254",false,required,fail
+sidecar_p9,"0.015,0.985",27,873,"254,254,254",false,required,fail
+sidecar_p10,"0.985,0.750",1746,664,"254,254,254",false,required,fail
+sidecar_p11,"0.750,0.985",1330,873,"254,254,254",false,required,fail
+sidecar_p12,"0.985,0.985",1746,873,"254,255,255",false,required,fail
+logo_roi,,,,,not_applicable,none: sidecar LOGO_RECT and LOGO_CLEARSPACE_RECT are none,not_required
+canvas_exact_white_fraction,,,,,0.134212,exact #FFFFFF pixels / all pixels,fail

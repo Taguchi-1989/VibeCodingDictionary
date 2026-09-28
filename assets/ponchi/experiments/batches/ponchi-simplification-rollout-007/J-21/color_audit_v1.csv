@@ -1,0 +1,2 @@
+batch_id,entry_id,title,candidate_file,audited_file,audit_source_type,candidate_status,source_type,size,inspected_pixels,disallowed_pixels,disallowed_ratio,disallowed_bbox,dominant_disallowed,status,notes
+J-21,J-21_candidate_v1,,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/J-21/J-21_candidate_v1.png,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/J-21/J-21_candidate_v1.png,direct_image,,,1774x887,1573538,4308,0.002738,"49,39,1679,642",dark:2566;blue:1711;neutral:27;purple:4,pass,

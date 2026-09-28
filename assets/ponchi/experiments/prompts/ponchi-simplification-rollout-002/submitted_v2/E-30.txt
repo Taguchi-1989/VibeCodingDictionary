@@ -1,0 +1,5 @@
+Use case: precise-object-edit
+Asset type: internal candidate revision for a Japanese technical-book illustration.
+Input images: Image 1 is the original source, reference only for the customer and agent robot designs/roles. Image 2 is candidate v1 and is the only image to edit.
+Primary request: Simplify only the constraint band above the robot. Remove the shield, scales, document icon, and all pseudo-writing lines. Replace them with one plain pale-blue band with a simple navy outline and no symbols.
+Constraints: Preserve Image 2's one customer → agent → tools → completion flow, both paired tool arrows, one completion check, exact 2:1 canvas, white background, four-stage order, characters, and their roles. The completion check means a task is done, not a score. Do not change anything outside the constraint-band area. Do not add text, symbols, logos, pseudo-text, pseudo-document lines, textures, gradients, shadows, or decorations. Return one PNG internal candidate; no production approval.

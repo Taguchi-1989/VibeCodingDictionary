@@ -1,0 +1,12 @@
+Use case: infographic-diagram
+Asset type: one internal simplification candidate for a Japanese technical-book illustration; not approved for production.
+Primary request: Edit only the exact logo-free source image attached as Image 1. Simplify its left/right Git workflow comparison.
+Input images: Image 1 is the exact source image to edit. Preserve the same existing developer figure in each side, with identity and design unchanged.
+Scene/backdrop: pure white #FFFFFF.
+Subject: a comparison of five branch lanes on the left and two branch lanes on the right, preserving only the source's branch, divergence, and merge relationships. Keep the single center transition arrow.
+Style/medium: minimalist editorial line illustration matching the source's technical-book style.
+Composition/framing: exact 2:1 horizontal canvas. Preserve the source's left-versus-right comparison and the same developer in both states. Give both branch structures enough spacing to read at thumbnail size.
+Color palette: only white #FFFFFF, deep navy #123E82, near-black #1A1A1A, pale blue #EAF1FB, and neutral areas already present on the fixed person.
+Materials/textures: clean flat fills and uniform linework. No grain, texture, shadow, glow, gradients, or decorative background.
+Text (verbatim): none.
+Constraints: Keep five left lanes, two right lanes, their branch/merge paths, and the same developer on both sides. Remove duplicate miniature workflow, redundant tag shapes, labels, and extra decoration. Do not add or change branch meanings, paths, nodes, or workflow facts. Draw no readable words, letters, numbers, Git/GitHub logos, fake text, or pseudo-document lines. Exact 2:1 canvas; one clean PNG at the highest supported native resolution. Internal candidate only; do not overwrite or imply approval of the production image.

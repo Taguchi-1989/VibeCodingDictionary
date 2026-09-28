@@ -1,0 +1,12 @@
+Use case: infographic-diagram
+Asset type: one internal simplification candidate for a Japanese technical-book illustration; not approved for production.
+Primary request: Edit only the exact logo-free source image attached as Image 1. Replace its five-panel, cluttered evaluation scenario with one clear four-stage horizontal flow.
+Input images: Image 1 is the exact source image to edit. Preserve its one customer figure and one agent robot, including their designs and roles.
+Scene/backdrop: pure white #FFFFFF.
+Subject: customer/user → AI agent → a small group of unbranded tool shapes → completed task. A plain rule-constraint band sits above the agent. The agent/tool interaction shows one request arrow and one return arrow.
+Style/medium: minimalist editorial line illustration matching the source's technical-book style.
+Composition/framing: exact 2:1 horizontal canvas. One single left-to-right line with four distinct stages; keep the constraint band above the agent; preserve the customer figure on the left and robot agent in its source role. Keep open spacing.
+Color palette: only white #FFFFFF, deep navy #123E82, near-black #1A1A1A, pale blue #EAF1FB, and neutral areas already present on fixed characters.
+Materials/textures: clean flat fills, uniform linework. No grain, texture, shadow, glow, gradients, or decorative background.
+Text (verbatim): none.
+Constraints: Preserve exactly one customer figure and one agent robot with their current designs and roles. Keep the constraint and tool-use relation. Remove repeated scenario screens, duplicate checklists and score displays, fake UI controls, dialogue, labels, and miniature charts. The final check means one task is complete; it is not a score. Draw no words, letters, numbers, logos, branded symbols, pseudo-text, or pseudo-document lines. Do not invent scores or new stages. Do not add/remove characters. Exact 2:1 canvas; one clean PNG at the highest supported native resolution. Internal candidate only; do not overwrite or imply approval of the production image.

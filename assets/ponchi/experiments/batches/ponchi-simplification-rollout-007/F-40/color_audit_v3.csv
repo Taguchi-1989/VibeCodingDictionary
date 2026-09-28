@@ -1,0 +1,2 @@
+batch_id,entry_id,title,candidate_file,audited_file,audit_source_type,candidate_status,source_type,size,inspected_pixels,disallowed_pixels,disallowed_ratio,disallowed_bbox,dominant_disallowed,status,notes
+F-40,F-40_candidate_v3,,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/F-40/F-40_candidate_v3.png,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/F-40/F-40_candidate_v3.png,direct_image,,,1774x887,1573538,22295,0.014169,"40,280,1696,300",blue:21218;dark:1055;purple:12;neutral:9;cyan_teal:1,review,

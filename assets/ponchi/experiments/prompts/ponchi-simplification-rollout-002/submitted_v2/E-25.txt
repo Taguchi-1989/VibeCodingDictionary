@@ -1,0 +1,5 @@
+Use case: precise-object-edit
+Asset type: internal candidate revision for a Japanese technical-book illustration.
+Input images: Image 1 is the original source, reference only for the existing researcher and pet robot identity/design/positions. Image 2 is candidate v1 and is the only image to edit.
+Primary request: Remove only the thought bubble beside the researcher, including the tiny duplicate pyramid inside it. Leave that area clean white.
+Constraints: Preserve Image 2's centered three-tier difficulty pyramid, tier order, size, colors, exact 2:1 canvas, white background, researcher, pet robot, and all their current poses, identities, designs, and positions unchanged. Do not change anything else. Do not add objects, text, numerals, formulas, logos, fake text, shadows, textures, or decorations. Return one PNG internal candidate; no production approval.

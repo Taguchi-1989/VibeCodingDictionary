@@ -1,0 +1,17 @@
+﻿sample_type,sample_id,normalized_xy,x,y,r,g,b,exact_white
+corner,tl,,0,0,255,255,255,true
+corner,tr,,1773,0,254,255,254,false
+corner,bl,,0,886,253,253,253,false
+corner,br,,1773,886,254,253,254,false
+registered,1,"0.015,0.015",27,13,254,254,254,false
+registered,2,"0.25,0.015",443,13,255,255,255,true
+registered,3,"0.015,0.25",27,222,255,254,255,false
+registered,4,"0.75,0.015",1330,13,254,254,254,false
+registered,5,"0.985,0.015",1746,13,255,255,255,true
+registered,6,"0.985,0.25",1746,222,255,255,255,true
+registered,7,"0.015,0.75",27,664,254,254,254,false
+registered,8,"0.25,0.985",443,873,254,254,254,false
+registered,9,"0.015,0.985",27,873,254,254,254,false
+registered,10,"0.985,0.75",1746,664,254,254,254,false
+registered,11,"0.75,0.985",1330,873,254,254,254,false
+registered,12,"0.985,0.985",1746,873,254,255,254,false

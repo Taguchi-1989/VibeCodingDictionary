@@ -1,0 +1,12 @@
+Use case: infographic-diagram
+Asset type: one internal simplification candidate for a Japanese technical-book illustration; not approved for production.
+Primary request: Edit only the exact logo-free source image attached as Image 1. Simplify the AIME benchmark illustration into one clear, text-free three-tier difficulty pyramid.
+Input images: Image 1 is the exact source image to edit; preserve the two existing characters from it.
+Scene/backdrop: pure white #FFFFFF, flat and uncluttered.
+Subject: one three-tier mathematical-difficulty pyramid. The tiers rise from lower to higher difficulty, with AIME represented only by the highest tier; keep the benchmark-name mapping in article prose.
+Style/medium: minimalist editorial line illustration, consistent with the source's established technical-book style.
+Composition/framing: exact 2:1 horizontal canvas. Keep the existing researcher at the left and the existing pet robot at the lower right, with their current identities, designs, clothing, poses, and relative positions unchanged. The three-tier pyramid is the single main diagram group. Use tier height and bottom-to-top placement alone to show the authored progression.
+Color palette: only white #FFFFFF, deep navy #123E82, near-black #1A1A1A, pale blue #EAF1FB, and source-existing character neutral areas; no other hues.
+Materials/textures: clean flat fills and uniform linework; no grain, texture, gradients, shadows, glow, or decoration.
+Text (verbatim): none.
+Constraints: Keep exactly three ordered difficulty tiers. Preserve the source's researcher and pet robot designs and positions. Remove the tiny problem/example cards, duplicate score displays, extra charts/panels, and duplicate process strip. Make the three-tier progression legible at thumbnail size without labels, formulas, axes, symbols, or numbers. Do not invent a quantitative scale or extra relationship. Do not introduce company logos, service icons, fake text, or pseudo-document lines. Do not add or remove characters. Keep the exact 2:1 canvas and white background. Produce one clean PNG candidate at the highest supported native resolution; do not overwrite or imply approval of the production image.

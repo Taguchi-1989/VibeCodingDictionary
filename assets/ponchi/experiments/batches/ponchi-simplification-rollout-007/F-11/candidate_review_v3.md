@@ -1,0 +1,26 @@
+# F-11 candidate v3 independent review
+
+- **Verdict:** HOLD (strict-white fail-fast; reserved ROI is not empty; image-audit geometry is inconsistent with the item prompt)
+- **Reviewer:** `/root/review_j17_v3`
+- **Date:** 2026-09-28
+- **Candidate:** `assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/F-11/F-11_candidate_v3.png`, 1774×887 RGB
+- **Candidate SHA-256:** `50610e8d765e1ee998a5c7af35a43f169a21d22cd640ef25592f809676080c29`
+- **Current prompt sidecar SHA-256:** `5495fc04ad640dd314b0e725f97ce226ba0b85625313ba84eb301cfe05abb141`
+- **Exact v3 prompt-body SHA-256:** `54de2a53b1eb41839283ba708c2e408f04fe6f2a180319c5c09eab73a639cd4d`; matches the body in `prompt_review_v3.md`, independently reviewed PASS.
+- **Human brief:** `content/entries/term_tool/F-11_next_js[済].md`.
+
+## Findings
+
+- **Meaning and four concepts — PASS.** At 200×100 px, the one canopy and four distinct concepts remain identifiable and follow a left-to-right flow: (1) a generic component window with three blank panes, (2) a three-node, two-branch route map, (3) one 3D server box rather than a rack, and (4) a generic deployment/settings slider panel. All are inside the framework boundary. The arrows do not depict an external host or provider.
+- **Character — PASS.** Exactly one Character A appears outside the framework boundary. Her dark hair, dark jacket, white blouse, chair, and laptop follow the approved reference. She faces toward the diagram; her gaze is subtle at 200px. No robot or second person appears.
+- **Brand, logo, and pseudo-text — PASS with internal-only constraint.** No Next.js, React, or Vercel mark/wordmark, branded screen, readable or pseudo-text, code, cloud, or external-hosting symbol is visible. The component pane is generic rather than a React mark. Sidecar `LOGO_MODE=internal_base_only` remains controlling: official logo conditions are unverified, so this candidate supports no logo composite, adoption, or publication.
+- **Simplification — MEDIUM observation.** The v3 artwork removes v2's repeated server rows, component header dots, and server indicators. The deployment panel still contains three slider tracks/knobs, and the server face has two short vent-like strokes. They remain legible and do not form pseudo-text, but are extra UI detail relative to the prompt's singular generic slider control and “only its main form” direction. For future similar prompts, specify one blank slider track/knob and a featureless server face. Do not generate another F-11 candidate: v3 is revision 2/2.
+- **Style and geometry — PARTIAL.** The navy/pale-blue/dark line art is coherent with the series. The item image audit reports `bbox_coverage=0.641` and `density_ok=true`, meeting the v3 target. However, the canopy arc/fill enters the reserved top-right rectangle `[970,0,1707,255)`; the visible arc occupies approximately y=224–254 within that ROI, contradicting the prompt's explicit ban on canopy or canopy border in the reservation.
+- **Reserved ROI audit conflict — HIGH.** `audit_clearspace_policy_v3.csv` binds to the actual candidate SHA and reports the reserved ROI is not entirely exact white (`22,383/187,935` exact-white pixels; `roi_entirely_exact_white=False`). My read-only pixel check found 2,383 strong-ink pixels (at least one RGB channel below 220) inside the prompt-mapped ROI, with bounds x=970–1313, y=224–254. Yet `image_audit_v3.csv` reports `clearspace_ink_ratio=0.0000` and `clearspace_ok=true`. The audit script defaults to a different size (1254×627) and a different generic top-right region (x≥60%, y<25%); those defaults do not cover this item's mapped ROI. The reported clearspace PASS therefore does not establish the F-11 ROI gate. Re-audit using this item's 1774×887 size and mapped rectangle before relying on that metric.
+- **Size audit — REVIEW.** The image audit row reports `size_ok=false` for 1774×887, although those dimensions are exact 2:1 and meet the prompt's long-edge target. The script default expected size is 1254×627, so the status appears to reflect a mismatched audit invocation/configuration rather than a visual aspect-ratio defect; keep the image-audit status at REVIEW until its run configuration is reconciled.
+- **Palette — PASS.** `color_audit_v3.csv` passes with 11,024/1,573,538 disallowed pixels (`0.007006`); dominant traces are blue and dark antialiasing. The visual palette remains consistent.
+- **Exact-white background — FAIL.** `background_samples_v3.md/csv` is hash-bound to this candidate and reports corners `0/4`, registered points `0/8`, exact-white 3% perimeter `27,798/184,094`, and exact-white reserved ROI `22,383/187,935`. The mask is `not_created_fail_fast`; no post-processing is recorded.
+
+## Gate
+
+Keep F-11 v3 internal and on HOLD. The four concepts, reading order, character, generic-brand treatment, density, and tolerant palette audit pass. The strict-white fail-fast and actual reserved-ROI intrusion fail mandatory gates; the generic image-audit clearspace value is not scoped to F-11's mapped rectangle. Since this is corrective revision 2/2 and the prompt directs stopping on any mandatory failure, close F-11 without another generation, mask, post-processing, logo overlay, or production adoption.

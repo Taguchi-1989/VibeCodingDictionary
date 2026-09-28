@@ -1,0 +1,2 @@
+candidate,sha256,dimensions,mode,corners_exact,points_exact,perimeter_exact,perimeter_total,mask_status,verdict
+G-47_candidate_v3.png,88a3567405f6e7fe9737f4b7b7bc592e56040237c07b92dc01536dad1afd15d5,1774x887,RGB,1/4,1/8,50036,184094,not_created_fail_fast,HOLD_fail_fast

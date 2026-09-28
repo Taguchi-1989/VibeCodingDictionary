@@ -1,0 +1,14 @@
+check,x,y,rgb,exact_white,pixels,nonwhite_pixels
+top_left,0,0,"253,255,255",False,1,1
+top_right,1773,0,"254,255,254",False,1,1
+bottom_left,0,886,"253,253,254",False,1,1
+bottom_right,1773,886,"253,253,253",False,1,1
+"registered_1_(0.02,0.02)",35,18,"253,253,253",False,1,1
+"registered_2_(0.20,0.02)",355,18,"255,254,255",False,1,1
+"registered_3_(0.80,0.02)",1419,18,"254,254,254",False,1,1
+"registered_4_(0.98,0.02)",1739,18,"254,254,254",False,1,1
+"registered_5_(0.02,0.98)",35,869,"254,254,254",False,1,1
+"registered_6_(0.20,0.98)",355,869,"254,253,254",False,1,1
+"registered_7_(0.80,0.98)",1419,869,"253,253,253",False,1,1
+"registered_8_(0.98,0.98)",1739,869,"254,254,254",False,1,1
+"logo_clearspace_roi_mapped_[966,16,240,240]",1366,22,"ROI=[1366,22,341,341]",False,116281,98605

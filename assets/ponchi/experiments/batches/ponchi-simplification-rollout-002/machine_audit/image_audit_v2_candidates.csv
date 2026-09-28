@@ -1,0 +1,3 @@
+file,entry_id,size,size_ok,bbox_coverage,density_ok,clearspace_required,clearspace_ink_ratio,clearspace_ok,status
+assets\ponchi\experiments\batches\ponchi-simplification-rollout-002\E-30_candidate_v2.png,E-30_candidate_v2,1774x887,false,0.511,true,true,0.0000,true,review
+assets\ponchi\experiments\batches\ponchi-simplification-rollout-002\I-3_candidate_v2.png,I-3_candidate_v2,1774x887,false,0.768,true,true,0.1079,false,review
