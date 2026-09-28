@@ -1,0 +1,11 @@
+batch_id,entry_id,canonical_entry_id,logo_need,logo_status,sidecar_path
+ponchi-simplification-rollout-007,F-40_candidate_v3,F-40,reserve_official_asset,internal_base_only,assets/ponchi/experiments/prompts/ponchi-simplification-rollout-007/F-40.md
+ponchi-simplification-rollout-007,F-11_candidate_v3,F-11,reserve_official_asset,internal_base_only,assets/ponchi/experiments/prompts/ponchi-simplification-rollout-007/F-11.md
+ponchi-simplification-rollout-007,G-47_candidate_v3,G-47,not_needed,not_required,assets/ponchi/experiments/prompts/ponchi-simplification-rollout-007/G-47.md
+ponchi-simplification-rollout-007,H-57_candidate_v3,H-57,reserve_official_asset,internal_base_only,assets/ponchi/experiments/prompts/ponchi-simplification-rollout-007/H-57.md
+ponchi-simplification-rollout-007,I-80_candidate_v3,I-80,not_needed,not_required,assets/ponchi/experiments/prompts/ponchi-simplification-rollout-007/I-80.md
+ponchi-simplification-rollout-007,J-1_candidate_v3,J-1,not_needed,not_required,assets/ponchi/experiments/prompts/ponchi-simplification-rollout-007/J-1.md
+ponchi-simplification-rollout-007,J-15_candidate_v3,J-15,not_needed,not_required,assets/ponchi/experiments/prompts/ponchi-simplification-rollout-007/J-15.md
+ponchi-simplification-rollout-007,J-17_candidate_v3,J-17,not_needed,not_required,assets/ponchi/experiments/prompts/ponchi-simplification-rollout-007/J-17.md
+ponchi-simplification-rollout-007,J-21_candidate_v3,J-21,not_needed,not_required,assets/ponchi/experiments/prompts/ponchi-simplification-rollout-007/J-21.md
+ponchi-simplification-rollout-007,J-62_candidate_v3,J-62,not_needed,not_required,assets/ponchi/experiments/prompts/ponchi-simplification-rollout-007/J-62.md

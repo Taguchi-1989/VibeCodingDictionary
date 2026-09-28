@@ -1,0 +1,2 @@
+file,entry_id,size,size_ok,bbox_coverage,density_ok,clearspace_required,clearspace_ink_ratio,clearspace_ok,status
+assets\ponchi\experiments\batches\ponchi-simplification-rollout-007\J-1\J-1_candidate_v2.png,J-1_candidate_v2,1774x887,true,0.664,true,false,0.0029,true,pass

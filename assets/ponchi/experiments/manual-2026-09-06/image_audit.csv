@@ -1,0 +1,16 @@
+file,entry_id,size,size_ok,bbox_coverage,density_ok,clearspace_required,clearspace_ink_ratio,clearspace_ok,status
+D:\dev\VibeCodingDictionary\assets\ponchi\experiments\manual-2026-09-06\G-50_evals.webp,G-50_evals,1254x627,true,0.564,true,true,0.0000,true,pass
+D:\dev\VibeCodingDictionary\assets\ponchi\experiments\manual-2026-09-06\G-51_llm_as_a_judge.webp,G-51_llm_as_a_judge,1254x627,true,0.532,true,true,0.0112,true,pass
+D:\dev\VibeCodingDictionary\assets\ponchi\experiments\manual-2026-09-06\G-60_graphrag.webp,G-60_graphrag,1254x627,true,0.758,true,true,0.0304,false,review
+D:\dev\VibeCodingDictionary\assets\ponchi\experiments\manual-2026-09-06\G-61_knowledge_graph.webp,G-61_knowledge_graph,1254x627,true,0.590,true,true,0.0106,true,pass
+D:\dev\VibeCodingDictionary\assets\ponchi\experiments\manual-2026-09-06\G-62_chunking.webp,G-62_chunking,1254x627,true,0.798,true,true,0.1408,false,review
+D:\dev\VibeCodingDictionary\assets\ponchi\experiments\manual-2026-09-06\G-63_hybrid_search.webp,G-63_hybrid_search,1254x627,true,0.571,true,true,0.0177,false,review
+D:\dev\VibeCodingDictionary\assets\ponchi\experiments\manual-2026-09-06\G-64_reranking.webp,G-64_reranking,1254x627,true,0.610,true,true,0.0000,true,pass
+D:\dev\VibeCodingDictionary\assets\ponchi\experiments\manual-2026-09-06\J-127_determinism.webp,J-127_determinism,1254x627,true,0.843,true,true,0.0223,false,review
+D:\dev\VibeCodingDictionary\assets\ponchi\experiments\manual-2026-09-06\J-128_workflow_vs_agent.webp,J-128_workflow_vs_agent,1254x627,true,0.670,true,true,0.0000,true,pass
+D:\dev\VibeCodingDictionary\assets\ponchi\experiments\manual-2026-09-06\J-129_context_rot.webp,J-129_context_rot,1254x627,true,0.791,true,true,0.0201,false,review
+D:\dev\VibeCodingDictionary\assets\ponchi\experiments\manual-2026-09-06\J-130_inference_time_scaling.webp,J-130_inference_time_scaling,1254x627,true,0.784,true,true,0.0183,false,review
+D:\dev\VibeCodingDictionary\assets\ponchi\experiments\manual-2026-09-06\J-131_rlvr.webp,J-131_rlvr,1254x627,true,0.565,true,true,0.0000,true,pass
+D:\dev\VibeCodingDictionary\assets\ponchi\experiments\manual-2026-09-06\J-132_a2a.webp,J-132_a2a,1254x627,true,0.636,true,true,0.0172,false,review
+D:\dev\VibeCodingDictionary\assets\ponchi\experiments\manual-2026-09-06\J-133_observability.webp,J-133_observability,1254x627,true,0.688,true,true,0.0165,false,review
+D:\dev\VibeCodingDictionary\assets\ponchi\experiments\manual-2026-09-06\J-134_human_in_the_loop.webp,J-134_human_in_the_loop,1254x627,true,0.711,true,true,0.0666,false,review

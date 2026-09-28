@@ -1,0 +1,2 @@
+batch_id,entry_id,title,candidate_file,audited_file,audit_source_type,candidate_status,source_type,size,inspected_pixels,disallowed_pixels,disallowed_ratio,disallowed_bbox,dominant_disallowed,status,notes
+v6_simplified,C-9,,assets/ponchi/experiments/batches/ponchi-simplification-pilot-001/revisions/v6_simplified/C-9_base_1254x627.png,assets/ponchi/experiments/batches/ponchi-simplification-pilot-001/revisions/v6_simplified/C-9_base_1254x627.png,direct_image,,,1254x627,786258,5240,0.006664,"27,136,1200,312",blue:5240,pass,

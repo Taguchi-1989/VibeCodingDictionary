@@ -1,0 +1,2 @@
+batch_id,entry_id,title,candidate_file,audited_file,audit_source_type,candidate_status,source_type,size,inspected_pixels,disallowed_pixels,disallowed_ratio,disallowed_bbox,dominant_disallowed,status,notes
+I-80,I-80_candidate_v2,,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/I-80/I-80_candidate_v2.png,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/I-80/I-80_candidate_v2.png,direct_image,,,1774x887,1573538,14627,0.009296,"15,105,1728,614",blue:7736;dark:6659;neutral:170;cyan_teal:61;purple:1,pass,

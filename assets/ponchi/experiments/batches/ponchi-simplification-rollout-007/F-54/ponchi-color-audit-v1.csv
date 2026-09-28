@@ -1,0 +1,2 @@
+batch_id,entry_id,title,candidate_file,audited_file,audit_source_type,candidate_status,source_type,size,inspected_pixels,disallowed_pixels,disallowed_ratio,disallowed_bbox,dominant_disallowed,status,notes
+F-54,F-54_candidate_v1,,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/F-54/F-54_candidate_v1.png,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/F-54/F-54_candidate_v1.png,direct_image,,,1774x887,1573538,3848,0.002445,"67,196,1675,530",dark:3426;blue:419;neutral:3,pass,

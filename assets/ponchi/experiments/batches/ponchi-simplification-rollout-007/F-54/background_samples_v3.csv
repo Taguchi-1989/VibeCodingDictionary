@@ -1,0 +1,13 @@
+check,x,y,rgb,exact_white
+corner_top_left,0,0,"254,255,255",False
+corner_top_right,1773,0,"254,254,254",False
+corner_bottom_left,0,886,"254,253,253",False
+corner_bottom_right,1773,886,"254,253,254",False
+registered_1,71,35,"253,253,253",False
+registered_2,532,35,"255,255,255",True
+registered_3,1242,35,"254,254,254",False
+registered_4,1703,35,"254,254,254",False
+registered_5,71,852,"255,255,255",True
+registered_6,532,852,"254,253,254",False
+registered_7,1242,852,"255,255,255",True
+registered_8,1703,852,"255,255,255",True

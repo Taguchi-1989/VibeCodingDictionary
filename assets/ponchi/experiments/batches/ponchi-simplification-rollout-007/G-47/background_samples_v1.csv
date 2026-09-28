@@ -1,0 +1,13 @@
+﻿sample_type,sample_id,normalized_xy,x,y,r,g,b,exact_white
+corner,top_left,,0,0,253,255,255,false
+corner,top_right,,1773,0,254,255,254,false
+corner,bottom_left,,0,886,253,253,253,false
+corner,bottom_right,,1773,886,253,253,253,false
+registered,1,"0.02,0.02",35,18,253,253,253,false
+registered,2,"0.2,0.02",355,18,255,255,255,true
+registered,3,"0.8,0.02",1418,18,254,254,254,false
+registered,4,"0.98,0.02",1738,18,254,254,254,false
+registered,5,"0.02,0.98",35,868,254,254,254,false
+registered,6,"0.2,0.98",355,868,254,254,254,false
+registered,7,"0.8,0.98",1418,868,253,253,253,false
+registered,8,"0.98,0.98",1738,868,254,254,254,false

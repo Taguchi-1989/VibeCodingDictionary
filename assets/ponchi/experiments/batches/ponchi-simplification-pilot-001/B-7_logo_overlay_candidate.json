@@ -1,0 +1,19 @@
+{
+  "base_image": "assets\\ponchi\\experiments\\batches\\ponchi-simplification-pilot-001\\B-7_base_1254x627.png",
+  "official_asset": "assets\\logos\\anthropic\\anthropic-media-resources\\Anthropic media resources\\Anthropic logos\\Claude logos\\2 Claude Code logo\\PNG\\Claude Code logo - Slate.png",
+  "output_image": "assets\\ponchi\\experiments\\batches\\ponchi-simplification-pilot-001\\B-7_logo_overlay_candidate.png",
+  "overlay_rect": {
+    "x": 686,
+    "y": 36,
+    "width": 520,
+    "height": 71
+  },
+  "note": "Only this rectangle may contain official-asset color exceptions.",
+  "official_asset_sha256": "80dd500873626abb6a71b5ca6722060ffa3cfb03005b6f5fc967ec7d7a1a9c39",
+  "official_source_url": "https://www.anthropic.com/press-kit",
+  "source_page_checked_date": "2026-09-27",
+  "asset_retrieval_date": "not_recorded",
+  "publication_use_condition": "unverified_for_publication",
+  "review_note": "Official mark kept unaltered; visual placement verified. Public use for this glossary is not established by the source page check.",
+  "source_page_notes": "Official newsroom exposes a download press kit link. Detailed mark usage terms could not be confirmed from the press-kit page."
+}

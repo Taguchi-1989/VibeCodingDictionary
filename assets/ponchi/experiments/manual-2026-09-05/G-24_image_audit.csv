@@ -1,0 +1,2 @@
+file,entry_id,size,size_ok,bbox_coverage,density_ok,clearspace_required,clearspace_ink_ratio,clearspace_ok,status
+assets\ponchi\experiments\manual-2026-09-05\G-24_temperature_v2_1254x627.png,G-24_temperature_v2_1254x627,1254x627,true,0.765,true,true,0.1096,true,pass

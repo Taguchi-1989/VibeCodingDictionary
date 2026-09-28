@@ -1,0 +1,19 @@
+{
+  "base_image": "assets\\ponchi\\experiments\\batches\\ponchi-simplification-pilot-001\\B-4_base_1254x627.png",
+  "official_asset": "assets\\logos\\cursor\\cursor-brand-assets\\General Logos\\Lockup Horizontal\\PNG\\LOCKUP_HORIZONTAL_2D_LIGHT.png",
+  "output_image": "assets\\ponchi\\experiments\\batches\\ponchi-simplification-pilot-001\\B-4_logo_overlay_candidate.png",
+  "overlay_rect": {
+    "x": 686,
+    "y": 36,
+    "width": 520,
+    "height": 124
+  },
+  "note": "Only this rectangle may contain official-asset color exceptions.",
+  "official_asset_sha256": "5b3ea43ff38738235f73b452a40030a4343e09c9f4428e890b9484da4ae9940a",
+  "official_source_url": "https://cursor.com/brand",
+  "source_page_checked_date": "2026-09-27",
+  "asset_retrieval_date": "not_recorded",
+  "publication_use_condition": "unverified_for_publication",
+  "review_note": "Official mark kept unaltered; visual placement verified. Public use for this glossary is not established by the source page check.",
+  "source_page_notes": "2D logo is default and horizontal lockup is preferred; brand page asks users to refer to the product as Cursor. Permission for this glossary context is not stated on the checked page."
+}

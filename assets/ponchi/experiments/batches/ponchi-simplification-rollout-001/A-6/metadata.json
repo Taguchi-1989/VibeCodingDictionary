@@ -1,0 +1,52 @@
+{
+  "batch_id": "ponchi-simplification-rollout-001",
+  "entry_id": "A-6",
+  "entry_title": "評価日・時変情報の見方",
+  "template_version": "ponchi-simplification-v1",
+  "status": "candidate_v2_reviewed_pending_human_decision",
+  "source_image_path": "assets/ponchi/final/A-6.webp",
+  "source_image_sha256": "8a809bfc3ff8df00fe6582ed4f71273ac7e0a956f83a1799810c5f702c78b2e5",
+  "source_image_version": "current final inventoried 2026-09-27",
+  "intended_meaning": "Each entry describes information as of its evaluation date. Optional version_status and pricing_note fields describe time-varying facts; when either is present, its source note must also record a checked date.",
+  "must_keep": [
+    "exactly three distinct groups: required evaluation_date, optional version_status, optional pricing_note",
+    "one calendar-and-clock pictogram as the evaluation_date group itself",
+    "one shared checked-date cue for the two optional groups without a duplicate calendar",
+    "unselected abstract status dots and an unbranded pricing-tag outline; imply no specific value"
+  ],
+  "remove": [
+    "incidental people and pet robot not required by the A-6 brief",
+    "books, plant, mug, laptop, desks, and scene props",
+    "duplicate dashboards, repeated timelines, charts, miniature card stacks, unrelated connector arrows",
+    "gray dashboard fills and unapproved hues",
+    "pseudo-text, labels, dates, numbers, currency marks, and watermarks"
+  ],
+  "brand_audit_record": "ledgers/ponchi_generation_batches.csv row A-6: logo_avoid; generic non-brand legend",
+  "logo_mode": "not_required",
+  "logo_rect": null,
+  "logo_clearspace_rect": null,
+  "character_policy": "No character required; remove incidental characters in source.",
+  "prompt_path": "assets/ponchi/experiments/batches/ponchi-simplification-rollout-001/A-6/prompt_v1.md",
+  "planned_output_path": "assets/ponchi/experiments/batches/ponchi-simplification-rollout-001/A-6/A-6_candidate_v1.png",
+  "generation_tool": "built-in image_gen",
+  "model_id": null,
+  "model_id_note": "The built-in image_gen tool did not expose a model identifier.",
+  "generated_at_utc": "2026-09-27T07:11:13Z",
+  "actual_dimensions": "1774x887",
+  "candidate_v1_sha256": "7b5771e8df772ab4f4b8b3440622a2bcae41f4a392371670481876cff2377558",
+  "candidate_v1_review": "partial; revise visual required/optional distinction and reduce check cue prominence",
+  "candidate_v2_path": "assets/ponchi/experiments/batches/ponchi-simplification-rollout-001/A-6/A-6_candidate_v2.png",
+  "candidate_v2_sha256": "ec58197b8d642078984369b113e51f57c21a11d879d888ff997a3cb237ba58af",
+  "candidate_v2_generated_at_utc": "2026-09-27T07:15:25Z",
+  "candidate_v2_dimensions": "1774x887",
+  "candidate_v2_review": {
+    "semantic": "pass",
+    "visual_style": "pass",
+    "source_layout_deviation": "human-authored memo specifies calendar-clock above three vertically stacked flags; candidate uses a left-to-right triptych",
+    "decision": "pending human decision"
+  },
+  "revisions_used": 1,
+  "human_decision": "pending",
+  "human_adoption": "not_authorized",
+  "final_adoption": "not_authorized"
+}

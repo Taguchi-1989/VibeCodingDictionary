@@ -1,0 +1,11 @@
+﻿entry_id,candidate_path,dimensions,mode,opaque,corners_exact_white,registered_points_exact_white,3pct_perimeter_exact_white,roi_rect_px,roi_nonwhite_pixels,roi_total_pixels,roi_exact_white_ratio,background_mask_status,status
+F-40,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/F-40/F-40_candidate_v2.png,1774x887,RGB,True,0/4,2/8,38888/184094,"[970,0,1707,312)",194047,229944,0.156112,not_created_fail_fast,HOLD_fail_fast
+F-11,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/F-11/F-11_candidate_v2.png,1774x887,RGB,True,0/4,0/8,28242/184094,"[970,0,1707,255)",165211,187935,0.120914,not_created_fail_fast,HOLD_fail_fast
+J-1,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/J-1/J-1_candidate_v2.png,1774x887,RGB,True,1/4,2/12,34142/184094,not_required,,,,not_created_fail_fast,HOLD_fail_fast
+J-62,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/J-62/J-62_candidate_v2.png,1774x887,RGB,True,0/4,2/12,32181/184094,not_required,,,,not_created_fail_fast,HOLD_fail_fast
+G-47,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/G-47/G-47_candidate_v2.png,1774x887,RGB,True,0/4,1/8,48913/184094,not_required,,,,not_created_fail_fast,HOLD_fail_fast
+H-57,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/H-57/H-57_candidate_v2.png,1774x887,RGB,True,1/4,1/8,51617/184094,"[1366,22,1707,363)",92081,116281,0.208117,not_created_fail_fast,HOLD_fail_fast
+I-80,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/I-80/I-80_candidate_v2.png,1774x887,RGB,True,0/4,2/12,34352/184094,not_required,,,,not_created_fail_fast,HOLD_fail_fast
+J-17,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/J-17/J-17_candidate_v2.png,1774x887,RGB,True,0/4,1/8,34136/184094,not_required,,,,not_created_fail_fast,HOLD_fail_fast
+J-15,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/J-15/J-15_candidate_v2.png,1774x887,RGB,True,0/4,3/12,39059/184094,not_required,,,,not_created_fail_fast,HOLD_fail_fast
+J-21,assets/ponchi/experiments/batches/ponchi-simplification-rollout-007/J-21/J-21_candidate_v2.png,1774x887,RGB,True,0/4,2/12,37495/184094,not_required,,,,not_created_fail_fast,HOLD_fail_fast
