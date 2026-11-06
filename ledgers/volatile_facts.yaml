@@ -110,6 +110,19 @@ facts:
     exclude_categories: [history]
     note: Grok 5 が出たら D-30 の改訂か新エントリが要る
 
+  - id: F-org-anthropic-ipo
+    label: Anthropic の株式上場（IPO）
+    kind: availability
+    book_says: "C-2 本文で「2026 年 10 月に株式上場（IPO）を申請しました」。備考に Nasdaq・銘柄コード ANT"
+    current_value: "2026-10-26 に S-1 公開提出（草案は 06-01 に非公開提出）、11-02 に修正版。上場日・価格帯は未定。11 月中の上場目標と報道（検索経由）"
+    last_checked: 2026-11-06
+    recheck_days: 14
+    source: Anthropic 公式ニュース
+    url: https://www.anthropic.com/news/s1-sec
+    pattern: '(IPO|上場)'
+    include_categories: [person_org]
+    note: 上場したら C-2 の「申請しました」を「上場しました」に、メイン図の節目の帯も差し替える
+
   - id: F-spec-context-length
     label: 主要モデルのコンテキスト長
     kind: spec
