@@ -132,6 +132,8 @@
 - **D-2 Gemini 2.5 系** — Pro／Flash／Flash-Lite の 3 ティア構成が定着した世代
 - **D-3 Gemini 3 系** — 次世代の深掘り版
 - **D-4 Gemini 3.1 系** — 3 系のマイナー更新
+- **D-5 Gemini 3.5〜3.8 系** — 2026-05〜09 にほぼ月 1 回改版された Flash 系列。Cyber 版は Fairwind 限定（Stage15、2026-11-06）
+- **D-6 Gemini 4 系** — Argon（2026-10 GA）と Carbon（2026-10-28、限定提供）。元素名で役割を分ける（Stage15）
 
 ### Anthropic 系（D-10〜19）
 
@@ -140,6 +142,9 @@
 - **D-12 Claude 4 系** — Opus／Sonnet／Haiku の次世代
 - **D-13 Claude 4.5 系** — 4 系のマイナー更新（Claude Code 主力帯）
 - **D-14 Claude Mythos（Preview）** — Anthropic が 2026-04-07 に発表した最先端モデル。サイバーセキュリティ特化。限定公開プログラム "Project Glasswing"（Apple／Google／Microsoft／Cisco／Amazon 等）経由で、一般提供はなし。2026-04-21 に不正アクセス事案が報じられた（checked 2026-04-24）
+- **D-15 Claude 5 系** — Sonnet 5（2026-06-30）／Opus 5（2026-07-24）。文脈 100 万トークンが標準に（Stage15）
+- **D-16 Claude Fable / Mythos** — 同じモデルに別の安全装置をかけた 2 つの版（5 は 2026-06、5.1 は 2026-09）。D-14 の後継（Stage15）
+- **D-17 Claude 5.5 系** — Opus 5.5（09-22）／Sonnet 5.5（09-28）／Haiku 5.5（10-07）（Stage15）
 
 ### OpenAI 系（D-20〜29）
 
@@ -150,6 +155,7 @@
 - **D-24 GPT-3 系** — ChatGPT の前身世代（2020）。大型化で衝撃を与えた
 - **D-25 GPT-1 / GPT-2 系** — OpenAI 初期の言語モデル（2018-2019）
 - **D-26 gpt-oss（OpenAI オープンモデル）** — 2025-08 に公開された gpt-oss-20b／120b。OpenAI 初の公式オープンウェイトモデル
+- **D-27 GPT-6 系** — Astra／Sol／Terra／Luna と 6.1。数字＝世代、名前＝段（Stage15、2026-11-06）
 
 ### xAI 系（D-30〜34）
 
@@ -169,6 +175,7 @@
 - **D-45 GLM** — Z.ai のモデル
 - **D-46 DeepSeek V3** — DeepSeek の大規模言語モデル（V3 世代、オープン公開）
 - **D-47 DeepSeek R1** — DeepSeek の推論特化モデル。思考過程を出す Reasoning 系
+- **D-48 DeepSeek V4** — 2026-04 公開の第 4 世代。MIT、Pro 1.6T／Flash 284B の MoE（Stage15）
 
 ### 画像・動画・マルチモーダル（モデル＋ツール）（D-50〜59）
 
@@ -223,6 +230,7 @@
 
 - **E-50 Chatbot Arena** — 人間投票の対戦ベンチ（モデル vs モデル）
 - **E-51 LMSYS Arena** — Chatbot Arena の旧名／運営団体
+- **E-52 Artificial Analysis Intelligence Index** — 複数ベンチの合成スコア。v5（2026-10-27）は約 6 割が非公開テスト（Stage15）
 
 ## F — 従来コーディングの言葉・道具
 
@@ -749,6 +757,7 @@
 
 - **G-50 Evals** — 自分の仕事に合わせた評価をつくり、繰り返し測るしくみ。著者の「チェックボックス検収」構想の着地点
 - **G-51 LLM-as-a-judge** — AI の出力を別の AI に採点させるやり方。審判自体を人のラベルと突き合わせて検証する
+- **G-52 Fast mode** — 同じモデルを高い単価で速く回す設定。effort とは別のつまみ（Stage15、2026-11-06）
 
 #### 検索・知識連携（G-60〜64）
 
@@ -775,3 +784,8 @@ grep で実在確認した結果、追加前は以下がいずれも本編に **
 `LLM-as-a-judge` / `GraphRAG` / `ナレッジグラフ` / `リランキング` / `ハイブリッド検索` / `オブザーバビリティ` / `context rot` / `A2A` / `RLVR` / `推論時スケーリング` / `human-in-the-loop` / `DAG` / `ステートマシン`
 
 このうち DAG・ステートマシンは J-118 グラフエンジニアリング・J-104 ReAct ループで実質的に説明されているため、今回は立てていません。
+
+### Stage 15（2026-11-06）— 2026 年秋の安全・提供方式
+
+- **J-151 トラステッドアクセス** — 最上位の能力を、身元と目的を検証した組織にだけ開く提供方式。Anthropic の CVP／OpenAI の Daybreak／Google の Fairwind
+- **J-152 蒸留攻撃** — 他社モデルの能力を無断で大量に写し取る行為。preserved thinking・推論の要約・分類器などの対策。J-36 蒸留（正当な技術）と対

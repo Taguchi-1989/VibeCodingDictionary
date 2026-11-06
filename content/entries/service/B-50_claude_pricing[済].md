@@ -14,6 +14,7 @@ end_date:
 version_status: active
 pricing_note: paid
 evaluation_date: 2026-04-29
+last_audited: 2026-11-06
 related_terms:
   - Claude
   - Pro
@@ -29,7 +30,7 @@ status: ready
 
 ## tagline
 
-個人 4 段（Free〜Max）と法人 2 段（Team・Enterprise）からなる Claude の利用プランです。
+個人 4 段（Free〜Ultra）と法人 2 段（Team・Enterprise）からなる Claude の利用プランです。
 
 ## 何をしてくれるか
 
@@ -49,7 +50,7 @@ claude.com の料金ページで 6 段階のプランが並んでいます。Cla
 
 - シーン1: 無料で試したいユーザー — Free プランで Claude.ai の基本機能を使う
 - シーン2: 日常的に活用する個人ユーザー — Pro プランで上限緩和と優先アクセスを得る
-- シーン3: Claude Code を長時間動かすユーザー — Max プランで大量の操作に耐える
+- シーン3: Claude Code を長時間動かすユーザー — Max／Ultra プランで大量の操作に耐える
 - 並べる基準: 利用量・用途別（軽め / 普通 / ヘビー / 法人）
 
 ## 会話での使い方例
@@ -89,7 +90,7 @@ Claude、Claude Code、API、Anthropic。
 
 1. 試用 — Free で基本機能を確認する
 2. 個人活用 — Pro で上限を緩め、日常の文章・コード作業に使う
-3. 重い開発 — Max で Claude Code の長時間稼働に対応する
+3. 重い開発 — Max／Ultra で Claude Code の長時間稼働に対応する
 4. 法人展開 — Team / Enterprise でチーム管理や個別契約を整える
 
 
@@ -133,7 +134,7 @@ Claude、Claude Code、API、Anthropic。
 - 描く内容: 6 プランを縦に並べた比較表。左列にプラン名、右列に相対的な使用量イメージ（棒グラフ風）を配置
 - 登場人物: 左側に「普通の使い方をしている人」と「CC を長時間回している人」の 2 人のキャラクターを置く
 - 吹き出し・心の声: 普通ユーザー「Pro で十分かな」、ヘビーユーザー「Max じゃないと止まる…」
-- 中央に置くキーワード/ラベル: Free / Pro / Max 5x / Max 20x / Team / Enterprise の 6 段ラベル
+- 中央に置くキーワード/ラベル: Free / Pro / Max / Ultra / Team / Enterprise の 6 段ラベル（2026-11-06 時点。旧版の Max 5x / Max 20x から変更）
 
 ### 6 視点アイコン（右ページ上段）
 
@@ -158,7 +159,7 @@ Claude、Claude Code、API、Anthropic。
 
 ## 出典メモ
 
-- claude.com/pricing — checked 2026-04-29
+- claude.com/pricing — checked 2026-11-06
 - claude.com/pricing/max — checked 2026-04-29
 
 
@@ -166,5 +167,8 @@ Claude、Claude Code、API、Anthropic。
 
 - 料金・上限の具体数値（月額・メッセージ上限等）は時変性が高いため本文には入れない。誌面の比較図キャプションに数値を載せ、evaluation_date で管理する
 - Max プランは「5x」と「20x」の 2 段あり、それぞれ Pro 比 5 倍・20 倍の利用量を目安として設定されている（checked 2026-04-29）
+- **2026-11-06 鮮度監査で改訂**: 個人プランは **Free（$0）／Pro（月 $20、年払いで月 $17 相当）／Max（月 $100、Pro 比 5 倍、API クレジット $100 つき）／Ultra（月 $200、検証済みアカウントは 5 時間枠の制限なし・週の利用量は Pro 比 10 倍、API クレジット $200 つき）** の 4 段に変わっていた。旧来の「Max 20x」に当たる月 $200 の段が **Ultra** という別名のプランになった形。tagline・メイン図・開発フロー・ポンチ絵ラベルを「Free〜Ultra」に揃えた。Ultra の導入日は未確認
+- 法人は Team（標準席 月 $25／年払い $20、プレミアム席 月 $125／年払い $100、2〜150 席）と Enterprise（年払いで 1 席 $20、20 席から、加えて API 料金での従量課金。SSO・SCIM・監査ログ）。Enterprise の「公開料金なし」は、基本料金が公開された点で古くなっている（checked 2026-11-06）
+- Claude Code の Fast mode（G-52）は、どのプランでもプランの利用枠ではなく「利用クレジット」から引かれる
 - Team プランは 1 席あたりの月額固定で、組織単位のデータ保護や管理機能が付く
 - Enterprise は個別契約のため公開料金なし

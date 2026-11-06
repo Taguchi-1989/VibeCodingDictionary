@@ -12,6 +12,7 @@ page_layout: spread_v1
 start_date: 2021
 version_status: active
 evaluation_date: 2026-04-23
+last_audited: 2026-11-06
 related_terms:
   - Claude
   - Dario Amodei
@@ -152,3 +153,5 @@ Constitutional AI、RSP、Interpretability の論文。
 ## 備考
 
 会社の規模・資金調達・投資家構成などは時変情報なので、本文では断定せず `evaluation_date` つきで扱います。
+
+**2026-11-06 鮮度監査（Anthropic 公式ニュースで確認）**: 2026-10-26 に**新規株式公開（IPO）に向けた S-1（米国証券取引委員会への登録届出書）を提出**しました（上場の実施日・規模は未確定）。モデルでは 2026 年 6〜10 月に Claude 5 世代と 5.5 世代が出ています（D-15 / D-16 / D-17）。2026-10-06 には最上位の能力を検証済み組織に開く Cyber Verification Program を 3 段に再編し（J-151）、2026-10-12 には蒸留攻撃への対策を公表しました（J-152）。2026-10-22 には Agent Skills の標準を、MCP と同じ Agentic AI Foundation（Linux Foundation 傘下）に寄贈しています（G-22）。

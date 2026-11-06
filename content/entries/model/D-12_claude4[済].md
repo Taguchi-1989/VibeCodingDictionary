@@ -12,7 +12,7 @@ page_layout: spread_v1
 start_date: 2025
 version_status: active
 evaluation_date: 2026-04-23
-last_audited: 2026-09-19
+last_audited: 2026-11-06
 related_terms:
   - Claude
   - Anthropic
@@ -164,3 +164,5 @@ Extended Thinking、Claude 4.5 系の詳細、Claude Code での自動選択。
 ## 備考
 
 モデル名・価格・提供状況は時変情報です。本番判断の前に公式ページを再確認します。2026-09-19 の鮮度監査で、4 系は 4.8（2026-05）まで版を重ね、後継の Claude 5 世代が出ていることを確認し、「現行」表記を年基準の書き方に改めました。
+
+**2026-11-06 鮮度監査（提供状況）**: Anthropic の公式非推奨一覧で、Claude Opus 4 / Sonnet 4 は **2026-06-15 に退役**、Opus 4.1 は **2026-08-05 に退役**済み。Sonnet 4.5 は 2026-09-30 に非推奨となり **2026-11-30 に退役予定**。Opus 4.5〜4.8 と Sonnet 4.6・Haiku 4.5 は提供が続いています。後続世代は D-15 Claude 5 系・D-16 Claude Fable / Mythos・D-17 Claude 5.5 系で扱います。

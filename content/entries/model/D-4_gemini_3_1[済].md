@@ -14,7 +14,7 @@ end_date:
 version_status: active
 pricing_note: paid
 evaluation_date: 2026-04-30
-last_audited: 2026-09-19
+last_audited: 2026-11-06
 related_terms:
   - Gemini
   - Gemini 3 系
@@ -162,3 +162,4 @@ Gemini 3 系、SWE-Bench、Google DeepMind
 - 発表内容・スコア数値は公式発表に基づくが、詳細数値は変動する可能性があるため「とされています」「と発表されています」の形で断定を避けた
 - 料金体系の具体的な数値は時変情報のため記載せず、pricing_note: paid のみ記録
 - 2026-04-30 時点での情報。今後マイナーアップデートがさらに続く可能性がある
+- **2026-11-06 鮮度監査**: 予想どおり改版が続き、2026-05〜09 に Gemini 3.5 / 3.6 / 3.7 / 3.8 Flash が出た（D-5）。さらに 2026-09-30 発表の Gemini 4 Argon、2026-10-28 発表の Gemini 4 Carbon で次の世代に入った（D-6）。2026-10 時点の Gemini アプリでは、4 Argon が 3.1 Pro を置き換えずに選べるモデルとして追加されたと報じられている（Google の公式ページは環境の制限で直接確認できず、検索経由）

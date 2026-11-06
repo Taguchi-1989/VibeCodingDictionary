@@ -14,6 +14,7 @@ end_date:
 version_status: active
 pricing_note:
 evaluation_date: 2026-04-29
+last_audited: 2026-11-06
 related_terms:
   - o1 系
   - Extended Thinking
@@ -163,3 +164,5 @@ o1 系、o3 系、推論時スケーリング（J-130）
 ## 備考
 
 本書では「Thinking モデル」に統一。各社の呼称は reasoning model（OpenAI）、extended thinking（Anthropic）、Deep Think（Google）など異なります。応答速度と料金は時変情報です。evaluation_date: 2026-04-29 時点の情報をもとにしています。
+
+**2026-11-06 の鮮度監査で追記**: Anthropic では、思考の量を人が「予算（budget_tokens）」で決める extended thinking から、**モデル自身が考える量を決め、人は effort（G-9）で強弱だけを指示する Adaptive thinking（適応的思考）** に移りました。手動の予算指定は Claude Opus 4.6 / Sonnet 4.6 で非推奨、それより後のモデルでは受け付けません。Claude Opus 5.5・Fable 5.1 では**思考が常時オンで無効化できません**。つまり「Thinking モデルかどうか」で選ぶ時代から、「**どのモデルも考える。どれだけ考えさせるかを選ぶ**」時代に移っています。OpenAI でも o シリーズの推論は GPT-5 以降の本流モデルに統合済みです（D-22 / D-23）。思考の中身が要約で返ってくる背景には、蒸留攻撃（J-152）への対策もあります。

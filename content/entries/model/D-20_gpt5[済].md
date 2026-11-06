@@ -13,7 +13,7 @@ start_date: 2025
 version_status: active
 pricing_note: paid
 evaluation_date: 2026-04-29
-last_audited: 2026-09-19
+last_audited: 2026-11-06
 related_terms:
   - ChatGPT
   - GPT-4
@@ -160,3 +160,5 @@ GPT-4 系、o1 / o3 系、OpenAI API
 ## 備考
 
 モデル名・料金・提供状況は時変情報です。evaluation_date: 2026-04-29 時点の情報をもとにしています。本番判断の前に公式ページを再確認します。reasoning 系（o1 / o3）は GPT-5 系とは別系統ですが、OpenAI の API 上は同じプラットフォームから利用できます。2026-09-19 の鮮度監査で、GPT-5 系は 5.6（Sol / Terra / Luna）まで続き、その上に後継の GPT-6 Astra が登場していることを確認し、「現行フラッグシップ」という書き方を改めました。
+
+**2026-11-06 鮮度監査**: GPT-5.6 で導入された「数字＝世代、Sol / Terra / Luna＝能力の段」という命名（2026-06-26 限定プレビュー、07-09 一般提供）は、後続の GPT-6 世代にそのまま引き継がれました（D-27 GPT-6 系）。**GPT-5.5 は 2026-10-14 に ChatGPT から引退**しています（OpenAI ヘルプセンターのリリースノートとして報じられたもの。OpenAI の公式ページは環境の制限で直接確認できず、検索経由）。

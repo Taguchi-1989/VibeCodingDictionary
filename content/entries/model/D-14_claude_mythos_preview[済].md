@@ -11,9 +11,10 @@ figure_type: structure
 page_layout: spread_v1
 start_date: 2026-04-07
 end_date:
-version_status: preview
+version_status: deprecated
 pricing_note: none
 evaluation_date: 2026-04-30
+last_audited: 2026-11-06
 related_terms:
   - Claude
   - Anthropic
@@ -31,7 +32,7 @@ status: ready
 
 ## 何をしてくれるか
 
-"Project Glasswing" と呼ばれる限定公開プログラムを通じ、Apple・Google・Microsoft 等の大手と連携して提供されていると報じられています。一般 API や claude.ai では使えません。
+"Project Glasswing" と呼ばれる限定公開プログラムを通じ、Apple・Google・Microsoft 等の大手と連携して提供されました。一般 API や claude.ai では使えず、2026-06 に非推奨です。
 
 ## どこで出会うか
 
@@ -87,7 +88,7 @@ Claude 4 系、Anthropic、B-2 Claude
 1. ニュース確認 — 技術メディアや Anthropic 公式ブログで発表を知る
 2. 位置づけ把握 — Claude シリーズ内での特殊な立場（限定・特化）を理解する
 3. 公開範囲確認 — Project Glasswing 経由のみで、一般利用不可と認識する
-4. 近接モデルへ — 実際に利用するなら Claude 4 系や D-12 を参照する
+4. 後継へ — 後継の Claude Fable / Mythos（D-16）を参照する
 
 ## 関連用語
 
@@ -138,7 +139,7 @@ Claude 4 系、Anthropic、B-2 Claude
 - Step 1 のアイコン/絵柄: ニュースサイト・ブログのアイコン
 - Step 2 のアイコン/絵柄: 地図・位置づけ矢印
 - Step 3 のアイコン/絵柄: 鍵アイコン（限定公開）
-- Step 4 のアイコン/絵柄: Claude 4 系へ向かう矢印
+- Step 4 のアイコン/絵柄: 後継の Fable / Mythos（D-16）へ向かう矢印
 
 ## コミュニティ補完メモ
 
@@ -152,11 +153,16 @@ Claude 4 系、Anthropic、B-2 Claude
 
 - Anthropic 公式ブログ — checked 2026-04-24
 - 不正アクセス報道（2026-04-21 報道各社） — checked 2026-04-24
+- Anthropic「Model deprecations」 https://platform.claude.com/docs/en/about-claude/model-deprecations — checked 2026-11-06
+- Anthropic「Expanding the Cyber Verification Program」（2026-10-06） https://www.anthropic.com/news/cyber-verification-program — checked 2026-11-06
 
 ## 備考
 
-- 時変情報多数。version_status: preview、pricing_note: none（一般販売・課金なし）
+- 時変情報多数。version_status: deprecated（2026-11-06 に preview から変更）、pricing_note: none（一般販売・課金なし）
 - evaluation_date: 2026-04-30 時点では Preview かつ限定公開の状態。正式リリースや一般公開の可能性に注意
 - 不正アクセス事案の詳細は出典調査時に更新すること
 - "Project Glasswing" は Anthropic 公式の呼称とされるが、一次ソース確認が必要
 - D-14 の旧スケルトンでは title が「Claude Mitos モデル」となっていたが、正式名称「Claude Mythos Preview」に修正済み（2026-04-30）
+- **2026-11-06 鮮度監査**: Anthropic の公式非推奨一覧で `claude-mythos-preview` は **2026-06-09 に非推奨（退役日は未定）**。同日、後継の Claude Fable 5 / Claude Mythos 5 が公開され、2026-09 には 5.1 版が出ている（D-16 で扱う）。`version_status` を `preview` → `deprecated` に変更し、開発フロー Step 4 の参照先を D-16 に改めた
+- 「Project Glasswing は一次ソース確認が必要」としていた件は解消。Anthropic 公式（2026-10-06）で実在を確認。**同日 Glasswing は Cyber Verification Program（CVP）に統合**され、参加組織は CVP の Specialized Access に移行。Glasswing 参加組織は 2026-04〜07 に検証済み脆弱性 12 万 9,000 件以上（うち重大・高 3 万 3,000 件超）を報告している。限定提供という仕組みそのものは J-151 トラステッドアクセスで扱う
+- 著者記入欄の「ベンチマークでナンバー 1」「一般には触れない」は 2026-04 時点の印象として残す（AI は触らない）

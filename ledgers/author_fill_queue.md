@@ -1,6 +1,6 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-09-21 00:57 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-11-06 22:51 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
@@ -8,8 +8,8 @@
 
 - **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 452 件
 - **途中**（書きかけで止まっている）: 0 件
-- **手つかず**（両方まるごと空）: 6 件
-- **合計**: 458 件
+- **手つかず**（両方まるごと空）: 17 件
+- **合計**: 469 件
 
 ---
 
@@ -19,18 +19,29 @@ _なし_
 
 ---
 
-## ⬜ 手つかず（両方まるごと空）（6 件）
+## ⬜ 手つかず（両方まるごと空）（17 件）
 
-letter 別: H 6件
+letter 別: D 7件 / E 1件 / G 1件 / H 6件 / J 2件
 
 | ID | title | status | reader_level | path |
 | :-- | :-- | :-- | :-- | :-- |
+| D-5 | Gemini 3.5〜3.8 系 | needs_review | 2-3 | `content/entries/model/D-5_gemini_35_38[人書].md` |
+| D-6 | Gemini 4 系 | needs_review | 2-3 | `content/entries/model/D-6_gemini4[人書].md` |
+| D-15 | Claude 5 系 | needs_review | 2-3 | `content/entries/model/D-15_claude5[人書].md` |
+| D-16 | Claude Fable / Mythos | needs_review | 3 | `content/entries/model/D-16_claude_fable_mythos[人書].md` |
+| D-17 | Claude 5.5 系 | needs_review | 2-3 | `content/entries/model/D-17_claude55[人書].md` |
+| D-27 | GPT-6 系 | needs_review | 2-3 | `content/entries/model/D-27_gpt6[人書].md` |
+| D-48 | DeepSeek V4 | needs_review | 3 | `content/entries/model/D-48_deepseek_v4[人書].md` |
+| E-52 | Artificial Analysis Intelligence Index | needs_review | 3 | `content/entries/benchmark/E-52_artificial_analysis_index[人書].md` |
+| G-52 | Fast mode | needs_review | 2-3 | `content/entries/term_llm/G-52_fast_mode[人書].md` |
 | H-57 | Gemini の命名史 | needs_review | 2-3 | `content/entries/history/H-57_gemini_naming_history[人書].md` |
 | H-60 | Codex → GitHub Copilot の系譜 | needs_review | 2-3 | `content/entries/history/H-60_codex_to_copilot[人書].md` |
 | H-61 | Preview 版という文化 | needs_review | 2 | `content/entries/history/H-61_preview_culture[人書].md` |
 | H-62 | Anthropic 創業の流れ | needs_review | 2-3 | `content/entries/history/H-62_anthropic_founding[人書].md` |
 | H-63 | Vibe Coding 命名 | needs_review | 1-2 | `content/entries/history/H-63_vibe_coding_naming[人書].md` |
 | H-64 | DeepSeek ショック | needs_review | 2-3 | `content/entries/history/H-64_deepseek_shock[人書].md` |
+| J-151 | トラステッドアクセス | needs_review | 3 | `content/entries/term_general/J-151_trusted_access[人書].md` |
+| J-152 | 蒸留攻撃 | needs_review | 3 | `content/entries/term_general/J-152_distillation_attacks[人書].md` |
 
 ---
 

@@ -14,6 +14,7 @@ end_date:
 version_status: active
 pricing_note: none
 evaluation_date: 2026-04-29
+last_audited: 2026-11-06
 related_terms:
   - CLAUDE.md
   - Claude Code
@@ -158,5 +159,6 @@ CLAUDE.md、Slash Command、AGENTS.md
 ## 備考
 
 - Skills 機能は Claude Code の比較的新しい機能で、仕様が変わる可能性がある。evaluation_date で鮮度を管理する。
+- **2026-11-06 鮮度監査（Anthropic 公式で確認）**: Agent Skills は 2025-10 に登場し、2025-12 にオープン標準として公開された。**2026-10-22、Anthropic は Agent Skills の標準（名称・ロゴ・GitHub 組織・agentskills.io ドメイン）を Agentic AI Foundation（AAIF、Linux Foundation 傘下）に寄贈**した。MCP（I-1）・A2A（J-132）と同じ財団の下に並んだことになる。Anthropic・Google・OpenAI などの技術者が個人の立場で保守し、版管理・提案プロセス・セキュリティ指針を整える予定。SKILL.md は特定の 1 社の機能ではなく、業界共通の形式に向かっている
 - `.claude/skills/<skill-name>/SKILL.md` の配置ルールは、ディレクトリ名がスキルの識別子になる点に注意。
 - 本書プロジェクトの `skills/` ディレクトリ（`skills/write-entry.md` 等）は Claude Code の Skills 機能そのものではなく、人間と Claude が参照する手順書として機能している。混同を避けるためコミュニティ補完メモに記載。

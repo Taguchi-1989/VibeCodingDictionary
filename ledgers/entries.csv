@@ -94,11 +94,16 @@ D-1,,Gemini 2 系,model,google,ready,v2テンプレで D-1_gemini2.md に書き�
 D-2,201,Gemini 2.5 系,model,google,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-2_gemini25[済].md
 D-3,,Gemini 3 系,model,google,ready,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-3_gemini3[済].md
 D-4,,Gemini 3.1 系,model,google,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-4_gemini_3_1[済].md
+D-5,,Gemini 3.5〜3.8 系,model,google,needs_review,Stage15。3.5〜3.8 Flash（2026-05〜09）。Cyber 版は Fairwind 限定,content/entries/model/D-5_gemini_35_38[人書].md
+D-6,,Gemini 4 系,model,google,needs_review,Stage15。Argon（2026-10 GA）／Carbon（2026-10-28、限定提供）,content/entries/model/D-6_gemini4[人書].md
 D-10,,Claude 3 系,model,anthropic,ready,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-10_claude3[済].md
 D-11,,Claude 3.5 系,model,anthropic,ready,,content/entries/model/D-11_claude35[済].md
 D-12,,Claude 4 系,model,anthropic,ready,,content/entries/model/D-12_claude4[済].md
 D-13,,Claude 4.5 系,model,anthropic,ready,台帳登録済み・未生成だった分を本書き（2026-08-23、D 系モデル系統）,content/entries/model/D-13_claude45[済].md
 D-14,,Claude Mythos Preview,model,frontier_model,ready,v2テンプレ書き起こし済（2026-04-30）。旧スケルトン D-14.md は archived,content/entries/model/D-14_claude_mythos_preview[済].md
+D-15,,Claude 5 系,model,anthropic,needs_review,Stage15。Sonnet 5（2026-06-30）／Opus 5（2026-07-24）。文脈 100 万トークンが標準に,content/entries/model/D-15_claude5[人書].md
+D-16,,Claude Fable / Mythos,model,anthropic,needs_review,Stage15。同じモデルに別の安全装置。5（2026-06）／5.1（2026-09）。D-14 の後継,content/entries/model/D-16_claude_fable_mythos[人書].md
+D-17,,Claude 5.5 系,model,anthropic,needs_review,Stage15。Opus 5.5（09-22）／Sonnet 5.5（09-28）／Haiku 5.5（10-07）,content/entries/model/D-17_claude55[人書].md
 D-20,,GPT-5 系,model,openai,ready,本書き済み（2026-04-29）。旧スケルトン D-20.md は archived,content/entries/model/D-20_gpt5[済].md
 D-21,,GPT-4 系,model,openai,ready,本書き済み（2026-04-29）。旧スケルトン D-21.md は archived,content/entries/model/D-21_gpt4[済].md
 D-22,,o1 系,model,openai,ready,本書き済み（2026-04-29）。旧スケルトン D-22.md は archived,content/entries/model/D-22_o1[済].md
@@ -106,6 +111,7 @@ D-23,,o3 系,model,openai,ready,台帳登録済み・未生成だった分を本
 D-24,,GPT-3 系,model,openai,ready,,content/entries/model/D-24_gpt3[済].md
 D-25,,GPT-1 / GPT-2 系,model,openai,ready,v2テンプレ書き起こし済（2026-04-30）スケルトン D-25.md は archived,content/entries/model/D-25_gpt1_gpt2[済].md
 D-26,,gpt-oss,model,openai,ready,OpenAI初の公式オープンウェイトモデル 2025-08,content/entries/model/D-26_gpt_oss[済].md
+D-27,,GPT-6 系,model,openai,needs_review,Stage15。Astra／Sol／Terra／Luna と 6.1。数字＝世代、名前＝段,content/entries/model/D-27_gpt6[人書].md
 D-30,,Grok 系,model,xai,ready,,content/entries/model/D-30_grok[済].md
 D-35,,Cursor Composer,model,other_closed,ready,title を Cursor Composer に更新（2026-04-30）,content/entries/model/D-35_cursor_composer[済].md
 D-40,,Llama 系,model,open,ready,,content/entries/model/D-40_llama[済].md
@@ -116,6 +122,7 @@ D-44,,Kimi,model,open,ready,,content/entries/model/D-44_kimi[済].md
 D-45,,GLM,model,open_weight_llm,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/model/D-45_glm[済].md
 D-46,,DeepSeek V3,model,open,ready,,content/entries/model/D-46_deepseek_v3[済].md
 D-47,,DeepSeek R1,model,open,ready,推論特化,content/entries/model/D-47_deepseek_r1[済].md
+D-48,,DeepSeek V4,model,open,needs_review,Stage15。2026-04 公開、MIT、Pro 1.6T／Flash 284B の MoE,content/entries/model/D-48_deepseek_v4[人書].md
 D-50,,DALL-E,model,image_video,ready,,content/entries/model/D-50_dall_e[済].md
 D-51,,Imagen,model,image_video,ready,,content/entries/model/D-51_imagen[済].md
 D-52,,Sora,model,image_video,ready,,content/entries/model/D-52_sora[済].md
@@ -150,6 +157,7 @@ E-33,,AgentBench,benchmark,agent_benchmark,ready,v2テンプレ書き起こし�
 E-34,,OSWorld,benchmark,agent,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-34_osworld[済].md
 E-50,,Chatbot Arena,benchmark,general,ready,,content/entries/benchmark/E-50_chatbot_arena[済].md
 E-51,,LMSYS Arena,benchmark,general,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-51_lmsys_arena[済].md
+E-52,,Artificial Analysis Intelligence Index,benchmark,general,needs_review,Stage15。複数ベンチの合成スコア。v5（2026-10-27）は 6 割が非公開テスト,content/entries/benchmark/E-52_artificial_analysis_index[人書].md
 F-1,301,JavaScript,term_tool,language,ready,旧3桁ID連携→F-1に取り込み済み,content/entries/term_tool/F-1_javascript[済].md
 F-2,302,TypeScript,term_tool,language,ready,旧3桁ID連携 / v2テンプレ書き起こし済（2026-04-29）,content/entries/term_tool/F-2_typescript[済].md
 F-3,,Python,term_tool,language,ready,,content/entries/term_tool/F-3_python[済].md
@@ -290,6 +298,7 @@ G-48,,Structured Outputs,term_llm,control,ready,台帳登録済み・未生成�
 G-49,,AI エージェント,term_llm,ops,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_llm/G-49_ai_agent[済].md
 G-50,,Evals,term_llm,evaluation,ready,Stage11。自分の仕事に合わせた評価をつくる。E章のベンチマークとの違いが軸,content/entries/term_llm/G-50_evals[済].md
 G-51,,LLM-as-a-judge,term_llm,evaluation,ready,Stage11。AIの出力をAIが採点する。ルーブリックと人ラベルとの一致率で審判を検証,content/entries/term_llm/G-51_llm_as_a_judge[済].md
+G-52,,Fast mode,term_llm,control,needs_review,Stage15。同じモデルを高い単価で速く回す。effort とは別軸,content/entries/term_llm/G-52_fast_mode[人書].md
 G-60,,GraphRAG,term_llm,retrieval,ready,Stage11。MS版はメンテナンスモード、考え方は後続へ。全体を見渡す質問に効く,content/entries/term_llm/G-60_graphrag[済].md
 G-61,,ナレッジグラフ,term_llm,retrieval,ready,Stage11。知識の構造のグラフ。J-118（処理の配線のグラフ）と書き分ける,content/entries/term_llm/G-61_knowledge_graph[済].md
 G-62,,チャンク分割,term_llm,retrieval,ready,Stage11。RAGの前処理。切り方が回答品質をほぼ決める,content/entries/term_llm/G-62_chunking[済].md
@@ -382,10 +391,10 @@ J-52,,Sycophancy,term_general,ethics_law,ready,,content/entries/term_general/J-5
 J-53,,著作権法 30 条の 4（日本）,term_general,ethics_law,ready,,content/entries/term_general/J-53_copyright_law_30_4[済].md
 J-54,,ISO/IEC 42001,term_general,ethics_law,ready,AIMS v2テンプレ書き起こし済（2026-04-29）,content/entries/term_general/J-54_iso_iec_42001[済].md
 J-55,,個人情報保護法,term_general,ethics_law,ready,2026-04-30 entry-writer 執筆,content/entries/term_general/J-55_appi[済].md
-J-59,,AI 事業者ガイドライン,term_general,ethics_law,ready,2026-09-05 entry-writer 本書き（stage8_briefs）,content/entries/term_general/J-59_ai_business_guideline[済].md
 J-56,,GDPR,term_general,ethics_law,ready,,content/entries/term_general/J-56_gdpr[済].md
 J-57,,RLHF・アラインメント,term_general,ethics_law,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/term_general/J-57_rlhf_alignment[済].md
 J-58,,EU AI Act,term_general,ethics_law,ready,台帳から欠落していたため 2026-09-06 に追加（ファイルは以前から存在）,content/entries/term_general/J-58_eu_ai_act[済].md
+J-59,,AI 事業者ガイドライン,term_general,ethics_law,ready,2026-09-05 entry-writer 本書き（stage8_briefs）,content/entries/term_general/J-59_ai_business_guideline[済].md
 J-62,,チューリングテスト,term_general,peripheral,ready,2026-08-23 entry-writer 本書き（stage7_briefs_2026-08 準拠、☆違反0・警告0）,content/entries/term_general/J-62_turing_test[済].md
 J-70,,VRAM,term_general,hardware,ready,2026-04-29 entry-writer 執筆,content/entries/term_general/J-70_vram[済].md
 J-71,,RAM,term_general,hardware,ready,2026-04-30 entry-writer 執筆,content/entries/term_general/J-71_ram[済].md
@@ -468,3 +477,5 @@ J-147,,データ品質,term_general,management_system,ready,Stage14。42001 附�
 J-148,,PDCA,term_general,management_system,ready,Stage14。著者の指示で登録。ISO 共通構造の骨格。Check=内部監査、Act=是正処置,content/entries/term_general/J-148_pdca[済].md
 J-149,,第三者認証と自己宣言,term_general,management_system,ready,Stage14。誰が適合を言うか。JIS Q 17050 供給者適合宣言。EU AI Act は適合宣言書と CE マーキング。本書き済み・validator ☆違反/警告 0 で自動昇格（2026-09-05）,content/entries/term_general/J-149_certification_vs_self_declaration[済].md
 J-150,,トレーサビリティ,term_general,management_system,ready,Stage14。後から辿れるように残す。J-133 は動いているものを見る話で目的が違う,content/entries/term_general/J-150_traceability[済].md
+J-151,,トラステッドアクセス,term_general,ai_safety,needs_review,Stage15。最強能力を検証済み組織だけに開く。CVP／Daybreak／Fairwind,content/entries/term_general/J-151_trusted_access[人書].md
+J-152,,蒸留攻撃,term_general,ai_safety,needs_review,Stage15。他社モデルの能力を無断で写し取る。preserved thinking などの対策,content/entries/term_general/J-152_distillation_attacks[人書].md
