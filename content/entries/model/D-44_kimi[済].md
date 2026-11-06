@@ -13,6 +13,7 @@ start_date: 2023
 version_status: active
 pricing_note: freemium
 evaluation_date: 2026-04-29
+last_audited: 2026-11-06
 related_terms:
   - Moonshot AI
   - オープンウェイト
@@ -161,3 +162,5 @@ DeepSeek、Qwen、Moonshot AI
 ## 備考
 
 モデル名・ライセンス条件・公開範囲は時変情報です。K2 の modified MIT ライセンスは evaluation_date 2026-04-29 時点の情報であり、商用利用前に公式リポジトリを再確認します。kimi.com のチャットサービスは中国語が主軸ですが、英語インターフェースも提供されています。「200 万 tokens」はモデルによって上限が異なる可能性があるため、利用時は公式ドキュメントで確認が必要です。
+
+**2026-11-06 鮮度監査（検索経由・一次未確認）**: 後継の **Kimi K3** が出ています。API は 2026-07-16、重みの公開は 2026-07-26〜27（報道で 1 日ずれ）。総パラメータ 2.8 兆、1 トークンあたりに動くのは 1,040 億の MoE で、配布サイズは約 1.5 TB と、個人の環境で動かせる大きさではありません。**ライセンスは K2 の modified MIT から独自の「Kimi K3 License」に変わり**、一定以上の売上がある商用推論や、モデルを API として提供する事業（MaaS）に別契約を求める条件がついたと報じられています。2026 年秋の各種比較記事ではオープンウェイトの上位候補に挙がる一方、Artificial Analysis の総合指標 v5（E-52）では、オープンウェイト勢と全体首位の差が広がったとされます。商用利用の前に Hugging Face（moonshotai/Kimi-K3）の LICENSE を必ず確認してください。

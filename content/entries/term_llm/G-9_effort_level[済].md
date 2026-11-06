@@ -14,6 +14,7 @@ end_date:
 version_status: active
 pricing_note: none
 evaluation_date: 2026-08-10
+last_audited: 2026-11-06
 related_terms:
   - LLM
   - Claude Code
@@ -30,13 +31,13 @@ status: ready
 
 ## tagline
 
-応答の粘り強さを 5 段階で切り替える設定で、既定は high です。
+応答の粘り強さを 5 段階で切り替える設定です。既定値はモデルで違います。
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 
 ## 何をしてくれるか
 
-low / medium / high / xhigh / max の 5 段階があり、既定は high です。トークン予算ではなく、思考の深さや説明の丁寧さなど応答全体の振る舞いを示す signal（合図）です。
+low / medium / high / xhigh / max の 5 段階があり、既定値はモデルごとに決まっています（多くは high、一部は medium）。トークン予算ではなく、思考の深さや説明の丁寧さなど応答全体の振る舞いを示す signal（合図）です。
 
 ## どこで出会うか
 
@@ -56,7 +57,7 @@ Claude Code の設定や Anthropic API のリクエストで effort として指
 
 ## 会話での使い方例
 
-「effort は既定の high のままで様子を見て、必要なら上げます。」
+「effort はまず既定のままで様子を見て、必要なら上げます。」
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -80,7 +81,7 @@ Claude Code の設定や Anthropic API のリクエストで effort として指
 
 ### 5. はじめに
 
-既定の high から試し、必要なら段階を変えます。
+まず既定値で試し、必要なら段階を変えます。
 
 ### 6. 深掘り先
 
@@ -152,8 +153,10 @@ Thinking モデル、トークン予算、プロンプトキャッシュ
 
 ## 出典メモ
 
-- Anthropic 公式「Effort」 <https://platform.claude.com/docs/en/build-with-claude/effort> — checked 2026-08-10
+- Anthropic 公式「Effort」 <https://platform.claude.com/docs/en/build-with-claude/effort> — checked 2026-11-06
 
 ## 備考
 
 特定モデルごとの推奨値は変動が速いため本文には書きません。会話の途中で effort の値を変えると、プロンプトキャッシュが効かなくなることがあります。
+
+**2026-11-06 の鮮度監査で更新**: tagline と本文の「既定は high」を「既定値はモデルで違う」に改めました。Anthropic の公式ドキュメントでは、多くのモデルの既定は high のままですが、**Claude Opus 5.5（2026-09-22）と Claude Haiku 5.5（2026-10-07）は既定が medium** です。effort を省略したリクエストは、Opus 5 のときより 1 段低い設定で動くことになります。Opus 5.5 では思考を無効にできず（`thinking: disabled` は 400 エラー）、effort が思考量と費用を決める主なつまみになりました。Haiku 5.5 は Haiku 系で初めて effort に対応したモデルです。また、Opus 5.5 では会話の途中で effort をメッセージ単位で変えても**プロンプトキャッシュを保てる**仕組み（per-message effort、ベータ）が入りました。上の「キャッシュが効かなくなる」は、この仕組みを使わない場合の話です。Artificial Analysis の総合指標（E-52）では、同じモデルでも effort の違いで点数が大きく動くことが示されています。速さを上げる別のつまみとして Fast mode（G-52）があります（質は同じで単価が上がる）。

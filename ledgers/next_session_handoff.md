@@ -1,4 +1,45 @@
-# 次セッションへの引き継ぎ（2026-09-06 v19 更新）
+# 次セッションへの引き継ぎ（2026-11-06 v20 更新）
+
+## 2026-11-06 セッション成果 — 2 か月ぶんのモデル世代交代と新概念を反映
+
+著者の指示「2 か月ほど更新していないので、直近 1〜3 か月の話題のモデル・Artificial Analysis に出てくる主要モデルを追い、最新ページを更新日付つきで直す。新しい概念は追加。印象欄は残しておいてよい」に沿った回です。ブリーフは [stage15_briefs_2026-11.md](stage15_briefs_2026-11.md)、監査の記録は [freshness_audit_log.md](freshness_audit_log.md) の 2026-11-06 行。
+
+### 新規 11 件（すべて needs_review。**著者記入欄は空のまま**）
+
+| 帯 | ID |
+| :-- | :-- |
+| Anthropic | D-15 Claude 5 系 ／ D-16 Claude Fable / Mythos ／ D-17 Claude 5.5 系 |
+| OpenAI | D-27 GPT-6 系 |
+| Google | D-5 Gemini 3.5〜3.8 系 ／ D-6 Gemini 4 系 |
+| オープン | D-48 DeepSeek V4 |
+| ベンチマーク | **E-52 Artificial Analysis Intelligence Index**（著者が主要モデル一覧として見ているもの） |
+| 概念 | G-52 Fast mode ／ J-151 トラステッドアクセス ／ J-152 蒸留攻撃 |
+
+### 改訂 14 件（`last_audited: 2026-11-06`）
+
+- **誤りの訂正**: G-9（「既定は high」→ モデルで違う）、B-50（個人 4 段は Free〜Ultra。旧 Max 20x → Ultra）、D-14（`deprecated` に）、G-24（API 版 2026-10-21 で temperature 削除）
+- **追記**: D-4 / D-12 / D-13 / D-20 / D-30 / D-44 / D-46 / G-14 / C-2 / G-22
+
+### 2026-11 初旬の勢力図（E-52 より、検索経由）
+
+Artificial Analysis Intelligence Index v5 の首位は **Gemini 4 Carbon（60）**、2 位 **Claude Opus 5.5（59）**。ただし Carbon は検証済みのサイバー防御組織にしか出ておらず、**「1 位のモデルを一般の人は使えない」**のが 2026 年秋の構図です（J-151）。
+
+### 著者にお願いしたいこと
+
+1. **新規 11 件の著者記入欄**（非エンジニアのつまずき／私のコメント）。とくに **D-17 Claude 5.5 系**（日常で触っている世代）と **E-52**（ふだん見ているリーダーボード）は、著者の実感が入ると強い
+2. **D-16 の書き方**: 「Fable と Mythos は同じモデルに別の安全装置」という整理で誌面に出してよいか
+3. **D-14 の著者コメント**（「ベンチマークでナンバー 1」）は 2026-04 時点の印象として残してあります。非推奨になった今、言い直すか
+
+### 次にやること
+
+- OpenAI・Google・Artificial Analysis の一次情報の確認（環境の許可ホストに無く、今回は検索経由。D-5 / D-6 / D-27 / E-52 の備考に「一次未確認」）
+- 未監査のモデル: D-26 / D-40〜D-43 / D-45 / D-55 ほか（`python3 scripts/audit_freshness.py --list --tier S --category model`）
+- `model_snapshots.csv` の 2026Q4 行は四半期末に
+- B 章の料金（ChatGPT / Gemini）は未確認のまま（`F-price-chatgpt` / `F-price-gemini`）
+
+---
+
+## 2026-09-06 v19 の記録
 
 ## 2026-09-06 セッション成果（後半）— 著者記入欄が残り 6 件まで来た
 

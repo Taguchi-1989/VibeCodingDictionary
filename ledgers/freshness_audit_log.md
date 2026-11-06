@@ -27,6 +27,7 @@
 | 2026-09-19 | `F-model-anthropic` / `F-model-openai` / `F-model-openai-reasoning` / `F-model-google` の 4 事実（D 章モデルエントリ中心） | 15 | Anthropic モデル一覧・OpenAI Models / Deprecations・Google Gemini models（いずれも検索経由。環境のネットワークポリシーで公式ページの直接取得は不可） | **世代が 1〜2 段ずれていることを確認**。D-22 / D-23 の `version_status` を実態に合わせて `deprecated` に修正（D-23 は値が空欄だったデータの穴も解消）。10 件は記述が今も正しいと確認して `last_audited` を押印。4 件（D-11 / D-12 / D-13 / D-20）は記述が古く**要改訂として押印を見送り**。2 件（D-14 / D-26）は未確認 | Claude Code |
 | 2026-09-19 | 上記で要改訂とした D-11 / D-12 / D-13 / D-20 の本文改訂 | 4 | Anthropic news「Introducing Claude Opus 4.8」（2026-05-28 公開）・OpenAI「GPT-6 Astra」（いずれも検索経由） | **4 件とも改訂して `last_audited` を押印**。「現行」「主力」という書き方を年基準に改め、D-12 には欠落していた Opus 4.8 を版の流れに追加。validator は 4 件とも全チェック通過。期限超過 124 → 121 件 | Claude Code |
 | 2026-09-19 | 上記改訂の取りこぼし修正（PR #60 のレビュー指摘より） | 3 | エントリ内の退役予定日との突き合わせ | **裏台帳メモの直し忘れ 2 件**（D-20 の誌面ポンチ絵メモとコミュニティ補完メモ、D-11 のコミュニティ補完メモに「現行フラッグシップ」「現行主力の 4 系」が残存）と、**D-13 の公開日の誤り 2 件**（Haiku 4.5 を 2025-10-01 → 2025-10-15、Opus 4.5 を 2025-11-01 → 2025-11-24）を修正 | Claude Code |
+| 2026-11-06 | `F-model-anthropic` / `F-model-openai` / `F-model-google` / `F-model-xai`（新設）/ `F-price-claude` / `F-bench-aa-index`（新設）の影響範囲＋ D 章の世代交代 | 25 | **Anthropic は公式を直接確認**（platform.claude.com の Models overview・Model deprecations・Effort、anthropic.com の各モデル発表・CVP・蒸留対策、claude.com/pricing、code.claude.com の Fast mode）。**OpenAI・Google・xAI・Artificial Analysis・Wikipedia は環境のネットワーク制限で直接取得できず検索経由** | **新規 11 件**（D-5 / D-6 / D-15 / D-16 / D-17 / D-27 / D-48 / E-52 / G-52 / J-151 / J-152、いずれも needs_review）。**改訂 14 件**: D-14 を `deprecated` に（2026-06-09 非推奨、後継 D-16）、G-9 の tagline の誤り「既定は high」を訂正（Opus 5.5 / Haiku 5.5 は medium）、G-24 に Claude API 版 2026-10-21 での temperature 削除、B-50 を個人 4 段 Free〜Ultra に訂正（旧 Max 20x → Ultra）、D-12 / D-13 に退役・非推奨日、D-4 / D-20 / D-30 / D-44 / D-46 / G-14 / C-2 / G-22 に後継・提供状況を追記。いずれも `last_audited: 2026-11-06` | Claude Code |
 
 ---
 
@@ -82,3 +83,27 @@ D-14 Claude Mythos Preview（Mythos 5.1 が公開されており位置づけの�
 | 5 | その他（person_org 7 / term_tool 6 / term_general 6 / term_llm 5 / tool_agent 4 / history 1） | 29 | Tier 判定が実態と合わないものは `volatility: low` で落とす |
 
 最新の内訳は `python3 scripts/audit_freshness.py` を走らせて [freshness_queue.md](freshness_queue.md) を見てください。
+
+
+---
+
+## 2026-11-06 監査のメモ
+
+### 見つかった誤り（AI が書いた本文が、外の世界の変化で誤りになったもの）
+
+| ID | 何が誤りになっていたか | どう直したか |
+| :-- | :-- | :-- |
+| G-9 effort レベル | tagline・本文・会話例が「既定は high」。Claude Opus 5.5（2026-09-22）と Haiku 5.5（10-07）で既定が medium に変わった | 「既定値はモデルで違う」に。見どころ 5 も「まず既定値で」に |
+| B-50 Claude の料金プラン | 「個人 4 段（Free〜Max）」「Max 5x / 20x」。月 $200 の段が Ultra という別プランになっていた | 「Free〜Ultra」に。備考に 2026-11-06 時点の全プラン価格 |
+| D-14 Claude Mythos Preview | `version_status: preview`、「提供されている」。2026-06-09 に非推奨 | `deprecated` に。開発フロー Step 4 を後継 D-16 へ |
+| G-24 Temperature | 「非推奨・既定以外はエラー」まで。2026-10-21 の API 版でパラメータ自体が削除 | 備考を更新 |
+
+**教訓（2026-09-19 の学びの再確認）**: 誤りになったのは今回も「既定は high」「4 段（Free〜Max）」のように**その時点の値を一般論の形で書いた箇所**でした。tagline に既定値・段数を入れると、1 モデルの追加でそのまま誤りになります。
+
+### 確認できなかったもの（次回）
+
+- OpenAI・Google・xAI・Artificial Analysis の一次情報（環境の許可ホストに `openai.com` / `developers.openai.com` / `blog.google` / `ai.google.dev` / `docs.x.ai` / `artificialanalysis.ai` が無い）。D-5 / D-6 / D-27 / E-52 の数字は二次情報で、各エントリの備考に「一次未確認」と明記済み
+- D-27 の GPT-6.1 Terra の価格（$1/$5 と $6/$18 で報道が食い違い）、GPT-6 Astra の一般提供の時期
+- D-16 Fable 5.1 / Mythos 5.1 の公開日（退役予定日からは 2026-09-01、Anthropic のニュース一覧では 2026-09-15）。本文は「2026 年 9 月」で止めた
+- 未着手のモデルエントリ: D-26 gpt-oss / D-40 Llama / D-41 Mistral / D-42 Gemma / D-43 Qwen（3.8 系が出ている）/ D-45 GLM（5.2・5.3 が出ている）/ D-55 Nano Banana（2.1 が 2026-10 に GA と報道）ほか画像・動画系
+- `model_snapshots.csv` の 2026Q4 行（四半期末に取る。候補: Opus 5.5 $4/$20、Sonnet 5.5 $2/$10、Haiku 5.5 $0.10/$0.50、Fable 5.1 $10/$50、Gemini 4 Argon、GPT-6.1 Sol、Grok 4.7）

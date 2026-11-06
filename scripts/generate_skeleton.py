@@ -70,6 +70,18 @@ CATEGORY_DIR_MAP = {
 # 日本語タイトル → 英語スラグ（手動マップ）
 # 必要に応じて書き足す。マップに無い日本語タイトルは ID のみのファイル名にする。
 SLUG_OVERRIDES: dict[str, str] = {
+    # Stage 15（2026 年夏〜秋のモデル世代交代と新概念、2026-11-06）
+    "D-5": "gemini_35_38",
+    "D-6": "gemini4",
+    "D-15": "claude5",
+    "D-16": "claude_fable_mythos",
+    "D-17": "claude55",
+    "D-27": "gpt6",
+    "D-48": "deepseek_v4",
+    "E-52": "artificial_analysis_index",
+    "G-52": "fast_mode",
+    "J-151": "trusted_access",
+    "J-152": "distillation_attacks",
     # Stage 14（規格帯の残り、2026-09-05）
     "J-146": "zones_and_conduits",
     "J-147": "data_quality",
