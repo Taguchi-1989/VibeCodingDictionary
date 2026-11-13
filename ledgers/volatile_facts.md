@@ -23,11 +23,11 @@
 | `F-price-gemini` | Gemini の料金プラン・無料枠 | 料金 | ⏰ **未確認** | 90 日 | 2 |
 | `F-price-dev-tools` | 開発ツールの料金（Cursor / Copilot / ホスティング等） | 料金 | ⏰ **未確認** | 90 日 | 27 |
 | `F-bench-swebench` | SWE-Bench 系のスコア水準 | ベンチマーク | ⏰ **未確認** | 90 日 | 16 |
-| `F-bench-aa-index` | Artificial Analysis Intelligence Index の版と上位 | ベンチマーク | 2026-11-13（0 日前） | 60 日 | 6 |
+| `F-bench-aa-index` | Artificial Analysis Intelligence Index の版と上位 | ベンチマーク | 2026-11-13（0 日前） | 60 日 | 8 |
 | `F-bench-leaderboard` | ベンチマークのスコア・順位（数値を書いている箇所） | ベンチマーク | ⏰ **未確認** | 90 日 | 12 |
 | `F-spec-mcp` | MCP の仕様と公式サーバーの顔ぶれ | 仕様 | ⏰ **未確認** | 90 日 | 19 |
 | `F-availability-preview` | ベータ・プレビュー表記 | 提供状況 | ⏰ **未確認** | 90 日 | 17 |
-| `F-availability-deprecated` | 提供終了・非推奨の表記 | 提供状況 | ⏰ **未確認** | 180 日 | 15 |
+| `F-availability-deprecated` | 提供終了・非推奨の表記 | 提供状況 | ⏰ **未確認** | 180 日 | 16 |
 
 ⏰ = 再確認の期限を過ぎているもの（**9 / 18 件**）。
 
@@ -185,9 +185,9 @@
 - **最終確認**: 2026-11-13（0 日前）（期限 60 日）
 - **確認先**: Artificial Analysis リーダーボード — https://artificialanalysis.ai/leaderboards/models
 - **注意**: 版が変わるとスコアの意味が変わる（v5 は v4 と直接比較不可）。版番号も一緒に確認する
-- **影響エントリ**: 6 件
+- **影響エントリ**: 8 件
 
-  C-18 Alibaba、C-19 MiniMax、C-20 Xiaomi、D-80 MiniMax M 系、D-82 Inkling、E-52 Artificial Analysis Intelligence Index
+  C-18 Alibaba、C-19 MiniMax、C-20 Xiaomi、C-29 Upstage、D-80 MiniMax M 系、D-82 Inkling、D-89 Solar 系、E-52 Artificial Analysis Intelligence Index
 
 ### `F-bench-leaderboard` ベンチマークのスコア・順位（数値を書いている箇所）
 
@@ -229,9 +229,9 @@
 - **最終確認**: **未確認**（期限 180 日）
 - **確認先**: 各サービスの公式アナウンス（URL 未設定）
 - **注意**: 完全終了すると「まだ使える」前提の記述が崩れる。version_status: deprecated と揃える
-- **影響エントリ**: 15 件
+- **影響エントリ**: 16 件
 
-  C-23 Amazon、D-5 Gemini 3.5〜3.8 系、D-10 Claude 3 系、D-11 Claude 3.5 系、D-14 Claude Mythos Preview、D-24 GPT-3 系、D-25 GPT-1 / GPT-2 系、D-83 Amazon Nova、F-104 .webp、F-153 Creative Commons、H-51 Preview から正式版への流れ、I-4 MCP Transport、J-93 Ubuntu、J-142 文書化した情報と力量、J-149 第三者認証と自己宣言
+  C-23 Amazon、D-5 Gemini 3.5〜3.8 系、D-10 Claude 3 系、D-11 Claude 3.5 系、D-14 Claude Mythos Preview、D-24 GPT-3 系、D-25 GPT-1 / GPT-2 系、D-83 Amazon Nova、D-89 Solar 系、F-104 .webp、F-153 Creative Commons、H-51 Preview から正式版への流れ、I-4 MCP Transport、J-93 Ubuntu、J-142 文書化した情報と力量、J-149 第三者認証と自己宣言
 
 ---
 

@@ -211,6 +211,8 @@
 - **D-86 Hunyuan 系** — Tencent のモデル。Hy3 を重み公開（Stage16 追補 3）
 - **D-87 Command 系** — Cohere の企業向けモデル。A+ を Apache 2.0 で公開（Stage16 追補 3）
 - **D-88 LFM 系** — Liquid AI の端末向け小型モデル（Stage16 追補 3）
+- **D-89 Solar 系** — Upstage のモデル。韓国語に強い小さめの系統（Stage16 追補 4）
+- **D-90 Granite 系** — IBM の企業向け小型モデル。Apache 2.0（Stage16 追補 4）
 
 ## E — ベンチマーク・評価指標
 
@@ -727,6 +729,8 @@
 - **C-26 Tencent** — WeChat の会社。Hunyuan と Yuanbao（Stage16 追補 3）
 - **C-27 Cohere** — 企業向け専業。Command と North（Stage16 追補 3）
 - **C-28 Liquid AI** — MIT 発。端末で動く小さなモデル LFM（Stage16 追補 3）
+- **C-29 Upstage** — 韓国、2020 年創業。Solar と書類読み取り（Stage16 追補 4）
+- **C-30 IBM** — 1911 年創業。watsonx と Granite（Stage16 追補 4）
 - **D-61 AlphaFold** — タンパク質の立体構造を予測しノーベル賞につながったモデル
 - **G-24 Temperature** — 出力のばらつきを決める設定値
 - **G-25 AI のメモリ機能** — 過去の会話から好みや前提を覚えておく仕組み

@@ -1,6 +1,6 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-11-13 20:53 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-11-13 21:05 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
@@ -8,8 +8,8 @@
 
 - **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 452 件
 - **途中**（書きかけで止まっている）: 0 件
-- **手つかず**（両方まるごと空）: 43 件
-- **合計**: 495 件
+- **手つかず**（両方まるごと空）: 47 件
+- **合計**: 499 件
 
 ---
 
@@ -19,9 +19,9 @@ _なし_
 
 ---
 
-## ⬜ 手つかず（両方まるごと空）（43 件）
+## ⬜ 手つかず（両方まるごと空）（47 件）
 
-letter 別: C 11件 / D 18件 / E 4件 / G 1件 / H 7件 / J 2件
+letter 別: C 13件 / D 20件 / E 4件 / G 1件 / H 7件 / J 2件
 
 | ID | title | status | reader_level | path |
 | :-- | :-- | :-- | :-- | :-- |
@@ -36,6 +36,8 @@ letter 別: C 11件 / D 18件 / E 4件 / G 1件 / H 7件 / J 2件
 | C-26 | Tencent | needs_review | 3 | `content/entries/person/C-26_tencent[人書].md` |
 | C-27 | Cohere | needs_review | 3 | `content/entries/person/C-27_cohere[人書].md` |
 | C-28 | Liquid AI | needs_review | 3 | `content/entries/person/C-28_liquid_ai[人書].md` |
+| C-29 | Upstage | needs_review | 3 | `content/entries/person/C-29_upstage[人書].md` |
+| C-30 | IBM | needs_review | 3 | `content/entries/person/C-30_ibm[人書].md` |
 | D-5 | Gemini 3.5〜3.8 系 | needs_review | 2-3 | `content/entries/model/D-5_gemini_35_38[人書].md` |
 | D-6 | Gemini 4 系 | needs_review | 2-3 | `content/entries/model/D-6_gemini4[人書].md` |
 | D-15 | Claude 5 系 | needs_review | 2-3 | `content/entries/model/D-15_claude5[人書].md` |
@@ -54,6 +56,8 @@ letter 別: C 11件 / D 18件 / E 4件 / G 1件 / H 7件 / J 2件
 | D-86 | Hunyuan 系 | needs_review | 3 | `content/entries/model/D-86_hunyuan[人書].md` |
 | D-87 | Command 系 | needs_review | 3 | `content/entries/model/D-87_command[人書].md` |
 | D-88 | LFM 系 | needs_review | 3 | `content/entries/model/D-88_lfm[人書].md` |
+| D-89 | Solar 系 | needs_review | 3 | `content/entries/model/D-89_solar[人書].md` |
+| D-90 | Granite 系 | needs_review | 3 | `content/entries/model/D-90_granite[人書].md` |
 | E-35 | RoboDojo | needs_review | 3 | `content/entries/benchmark/E-35_robodojo[人書].md` |
 | E-52 | Artificial Analysis Intelligence Index | needs_review | 3 | `content/entries/benchmark/E-52_artificial_analysis_index[人書].md` |
 | E-53 | 評価ハーネス | needs_review | 3 | `content/entries/benchmark/E-53_eval_harness[人書].md` |

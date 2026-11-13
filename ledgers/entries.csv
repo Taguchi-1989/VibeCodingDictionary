@@ -86,6 +86,8 @@ C-25,,Baidu,person_org,company,needs_review,Stage16 追補 3。中国の検索�
 C-26,,Tencent,person_org,company,needs_review,Stage16 追補 3。WeChat の会社。Hunyuan と Yuanbao,content/entries/person/C-26_tencent[人書].md
 C-27,,Cohere,person_org,company,needs_review,Stage16 追補 3。企業向け専業。Command と North,content/entries/person/C-27_cohere[人書].md
 C-28,,Liquid AI,person_org,company,needs_review,Stage16 追補 3。MIT 発。端末で動く小さなモデル LFM,content/entries/person/C-28_liquid_ai[人書].md
+C-29,,Upstage,person_org,company,needs_review,Stage16 追補 4。韓国、2020 年創業。Solar と書類読み取り,content/entries/person/C-29_upstage[人書].md
+C-30,,IBM,person_org,company,needs_review,Stage16 追補 4。1911 年創業。watsonx と Granite,content/entries/person/C-30_ibm[人書].md
 C-50,,Sam Altman,person_org,person,ready,,content/entries/person/C-50_sam_altman[済].md
 C-51,,Dario Amodei,person_org,person,ready,,content/entries/person/C-51_dario_amodei[済].md
 C-52,,Demis Hassabis,person_org,person,ready,,content/entries/person/C-52_demis_hassabis[済].md
@@ -159,6 +161,8 @@ D-85,,ERNIE 系,model,open,needs_review,Stage16 追補 3。Baidu のモデル。
 D-86,,Hunyuan 系,model,open,needs_review,Stage16 追補 3。Tencent のモデル。Hy3 を重み公開,content/entries/model/D-86_hunyuan[人書].md
 D-87,,Command 系,model,open,needs_review,Stage16 追補 3。Cohere の企業向けモデル。A+ を Apache 2.0 で公開,content/entries/model/D-87_command[人書].md
 D-88,,LFM 系,model,open,needs_review,Stage16 追補 3。Liquid AI の端末向け小型モデル,content/entries/model/D-88_lfm[人書].md
+D-89,,Solar 系,model,open,needs_review,Stage16 追補 4。Upstage のモデル。韓国語に強い小さめの系統,content/entries/model/D-89_solar[人書].md
+D-90,,Granite 系,model,open,needs_review,Stage16 追補 4。IBM の企業向け小型モデル。Apache 2.0,content/entries/model/D-90_granite[人書].md
 E-1,,SWE-Bench,benchmark,coding,ready,,content/entries/benchmark/E-1_swe_bench[済].md
 E-2,,SWE-Bench Verified,benchmark,coding,ready,,content/entries/benchmark/E-2_swe_bench_verified[済].md
 E-3,,Terminal-Bench,benchmark,coding,ready,,content/entries/benchmark/E-3_terminal_bench[済].md
