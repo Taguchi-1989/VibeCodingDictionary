@@ -165,6 +165,7 @@
 
 - **D-35 Cursor Composer（モデル）** — Cursor 独自の大規模モデル。マルチファイル編集エージェント Composer を駆動する
 - **D-36 Muse 系** — Meta の Llama 後継モデル群（Stage16）
+- **D-37 Jev** — TypeSafe AI の判断特化モデル。文章を書かず、型と確率で答える（Stage16 追補）
 
 ### オープンモデル（D-40〜49）
 

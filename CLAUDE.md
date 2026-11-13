@@ -10,7 +10,7 @@
 
 ## 2. 今やっていること
 
-**本書きはほぼ完走**（2026-11-13 時点: ready 452 / needs_review 34 / drafting 1 / archived 7、☆ 違反 0・警告 0。2026-11-13 に Stage 16 の新規 6 件を追加）。フェーズは執筆から**品質仕上げ・刊行準備**に移っています。
+**本書きはほぼ完走**（2026-11-13 時点: ready 452 / needs_review 35 / drafting 1 / archived 7、☆ 違反 0・警告 0。2026-11-13 に Stage 16 の新規 7 件を追加）。フェーズは執筆から**品質仕上げ・刊行準備**に移っています。
 
 - 現在の内訳と次の作業は [ledgers/revision_queue.md](ledgers/revision_queue.md) で確認（保存ごとに自動再生成）
 - 改善課題と追加語候補は [docs/design_improvement_proposal_2026-08.md](docs/design_improvement_proposal_2026-08.md) に集約（仕様同期・品質バグ・表紙・収録語の抜け監査）

@@ -115,6 +115,7 @@ D-27,,GPT-6 系,model,openai,needs_review,Stage15。Astra／Sol／Terra／Luna �
 D-30,,Grok 系,model,xai,ready,,content/entries/model/D-30_grok[済].md
 D-35,,Cursor Composer,model,other_closed,ready,title を Cursor Composer に更新（2026-04-30）,content/entries/model/D-35_cursor_composer[済].md
 D-36,,Muse 系,model,other_closed,needs_review,Stage16。Meta の Llama 後継。Spark／Wonder／Ember は API 提供、Glimmer・Spark Open は重み公開,content/entries/model/D-36_muse[人書].md
+D-37,,Jev,model,other_closed,needs_review,Stage16 追補。TypeSafe AI の判断特化モデル。文章を書かず型と確率で答える。出力は無料,content/entries/model/D-37_jev[人書].md
 D-40,,Llama 系,model,open,ready,,content/entries/model/D-40_llama[済].md
 D-41,,Mistral 系,model,open,ready,,content/entries/model/D-41_mistral[済].md
 D-42,,Gemma 系,model,open,ready,,content/entries/model/D-42_gemma[済].md
