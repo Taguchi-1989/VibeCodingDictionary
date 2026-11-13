@@ -16,7 +16,7 @@ evaluation_date: 2026-11-13
 last_audited: 2026-11-13
 related_terms:
   - Baidu
-  - オープンモデル
+  - Hugging Face
   - MoE
   - Apache 2.0
   - DeepSeek
@@ -94,7 +94,7 @@ Baidu、オープンモデル、MoE
 ## 関連用語
 
 - Baidu
-- オープンモデル
+- Hugging Face
 - MoE
 - Apache 2.0
 - DeepSeek

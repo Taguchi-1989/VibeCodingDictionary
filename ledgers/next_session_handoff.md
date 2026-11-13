@@ -4,11 +4,13 @@
 
 著者の音声指示に沿った回です。ブリーフは [stage16_briefs_2026-11.md](stage16_briefs_2026-11.md)、誌面の収まり・統一感の監査は [docs/quality_audit_2026-11.md](../docs/quality_audit_2026-11.md)。
 
-### 新規 11 件（すべて needs_review。**著者記入欄は空のまま**）
+### 新規 26 件（すべて needs_review。**著者記入欄は空のまま**）
 
 | 帯 | ID |
 | :-- | :-- |
 | 会社 | C-18 Alibaba／C-19 MiniMax／C-20 Xiaomi／C-21 Thinking Machines Lab／C-22 TypeSafe AI（**方針: Artificial Analysis にモデルが載る会社は C 章に立てる**。創業・拠点・代表・主なモデル・特徴） |
+| 会社（追補 3） | C-23 Amazon／C-24 ByteDance／C-25 Baidu／C-26 Tencent／C-27 Cohere／C-28 Liquid AI |
+| 会社のモデル（追補 3、**D-80〜89 を新設**） | D-80 MiniMax M 系／D-81 MiMo／D-82 Inkling／D-83 Amazon Nova／D-84 Doubao 系／D-85 ERNIE 系／D-86 Hunyuan 系／D-87 Command 系／D-88 LFM 系 |
 | モデル | D-36 Muse 系（Meta、Llama の後継）／**D-37 Jev**（TypeSafe AI の判断特化モデル。文章を書かず型と確率で答える。出力は無料） |
 | ベンチマーク | E-35 RoboDojo（ロボット操作）／E-53 評価ハーネス（測る道具）／E-54 ベンチマークの飽和 |
 | 歴史 | H-65 CLAUDE.md に書くことの変遷（足す → 分ける → 削る） |
@@ -27,7 +29,7 @@ C-4 Meta AI と C-10 Moonshot AI は備考だけ追記（`last_audited: 2026-11-
 
 ### 次にやること
 
-- **AA 掲載企業の残り候補**: Amazon（Nova）／Cohere／ByteDance／Tencent／Baidu／Liquid AI／Upstage／IBM。artificialanalysis.ai を直接取得できず、掲載を確認できていないので未着手。許可ホストに足せれば一覧から機械的に拾えます
+- **会社とモデルは対で立てる方針**（著者指示 2026-11-13）。残り候補は Upstage（Solar）／IBM（Granite）。追補 3 の 6 社は AA への掲載そのものを確認できていない（artificialanalysis.ai を直接取得できないため）。C 章の会社枠は C-29 の 1 つだけ空き。次に足すときは範囲の相談が要ります
 - 監査で出た統一感の揺れ（「深掘り先」の句点 80 件、見どころの体言止め 84 か所、関連用語の表記ゆれ）は**未着手**。機械的に直せるものから
 - Meta・Google・arXiv・Artificial Analysis・claude.dev は環境の許可ホストに無く、今回も検索経由。D-36 / D-37 / D-6 / E-35 / E-53 と H-65 の 2 件（2025-04 原文、2026-07 記事）は備考に「一次未確認」
 - 前回からの持ち越し: 未監査のモデル（D-26 / D-41〜D-43 / D-45 / D-55 ほか）、B 章の料金（ChatGPT / Gemini）、`model_snapshots.csv` の 2026Q4 行
@@ -40,7 +42,7 @@ C-4 Meta AI と C-10 Moonshot AI は備考だけ追記（`last_audited: 2026-11-
 
 著者の指示「2 か月ほど更新していないので、直近 1〜3 か月の話題のモデル・Artificial Analysis に出てくる主要モデルを追い、最新ページを更新日付つきで直す。新しい概念は追加。印象欄は残しておいてよい」に沿った回です。ブリーフは [stage15_briefs_2026-11.md](stage15_briefs_2026-11.md)、監査の記録は [freshness_audit_log.md](freshness_audit_log.md) の 2026-11-06 行。
 
-### 新規 11 件（すべて needs_review。**著者記入欄は空のまま**）
+### 新規 26 件（すべて needs_review。**著者記入欄は空のまま**）
 
 | 帯 | ID |
 | :-- | :-- |
