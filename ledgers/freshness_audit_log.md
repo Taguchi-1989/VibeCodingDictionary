@@ -117,3 +117,10 @@ D-14 Claude Mythos Preview（Mythos 5.1 が公開されており位置づけの�
 - **古くなっていた記述**: D-6「Argon・Carbon の 2 本」→ Hydrogen で 3 本／E-26 の出会い方と会話例が「30% 台」前提 → 2026-11 に「ツールあり」で 7 割台／G-20 の開発フローが「言語・スタイル・禁止事項をまとめる」→ 公式は「コードから分からないことだけ」
 - **確認できなかったもの**: Meta・Google DeepMind・arXiv・tbench.ai・Artificial Analysis・claude.dev（許可ホスト外）。RoboDojo の公式順位表、Terminal-Bench 4.0 の首位（報道が割れている）、HLE-Diamond の公開日（09-22 と 10-30 の 2 説）
 
+### 2026-11-13 追記（3 社の取りこぼし確認）
+
+- **誤りになっていた記述**: D-6「Carbon は一般には未提供」→ 2026-11-10 に一般公開／D-52 Sora「ChatGPT Pro・Plus から利用」→ 2026-04-26 にアプリ停止、09-24 に API 終了（`deprecated` に）／D-50 DALL-E「ChatGPT で頼むと DALL-E が動く」→ 2025-03 に GPT Image へ交代（`deprecated` に）／D-55「正式名称は Gemini 2.5 Flash Image」→ 初代の話。2・2.1・Pro まで進んでいる
+- **新規**: D-28 GPT Image 系。**追記**: D-27（GPT-6 Cyber）、J-151（先に限定で出し、あとから広げる例）
+- **Anthropic は platform.claude.com のモデル一覧を直接確認**。Fable 5.2／Opus・Sonnet・Haiku 5.5 で、本書の D-16・D-17 と一致。新しい名前なし
+- **教訓**: D-50・D-52 は半年以上前に事実が変わっていたのに、`last_audited` が無く Tier S の期限超過に埋もれていた。画像・動画系（D-50〜D-59）は**提供終了**という形で古くなる。次回は D-51 Imagen／D-53 Veo／D-54／D-56〜D-59 を同じ目で見る
+

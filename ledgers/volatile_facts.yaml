@@ -36,7 +36,7 @@ facts:
     label: Anthropic の最新モデル世代
     kind: model
     book_says: "D-15〜D-17 に加え、D-16 に Fable 5.2 / Mythos 5.2（2026-11-09）を追記済み（2026-11-13）。D-14 Mythos Preview は deprecated"
-    current_value: "最上段は Claude Fable 5.2 / Mythos 5.2（2026-11-09。Fable 5.2 は $8/$40 に値下げ、Fast mode $16/$80、Pro〜Enterprise で利用可。Mythos 5.2 は検証プログラム経由）。その下に 5.5 世代: Opus 5.5（$4/$20）／Sonnet 5.5（$2/$10）／Haiku 5.5（$0.10/$0.50）。Sonnet 4.5 は 2026-11-30 退役予定（anthropic.com/claude/fable を 2026-11-13 に直接確認）"
+    current_value: "platform.claude.com のモデル一覧（2026-11-13 直接確認）: Latest は Claude Fable 5.2（$8/$40）／Opus 5.5（$4/$20）／Sonnet 5.5（$2/$10）／Haiku 5.5（$0.10/$0.50〜）。限定提供に Mythos 5.2。全モデル文脈 1M・出力 128K。既定 effort は Fable 5.2 high／Opus 5.5 medium／Sonnet 5.5 high／Haiku 5.5 medium"
     last_checked: 2026-11-13
     recheck_days: 90
     source: Anthropic 公式ドキュメント（モデル一覧）
@@ -49,8 +49,8 @@ facts:
     label: OpenAI の最新モデル世代（GPT 系）
     kind: model
     book_says: "D-27「GPT-6 系」（Astra / Sol / Terra / Luna と 6.1）まで収録（2026-11-06）。D-20「GPT-5 系」は 5.6 までの過去世代"
-    current_value: "GPT-6 Astra（2026-09-03、$10/$50、サイバー能力は Daybreak 経由）／GPT-6 Sol・Luna（09-22）／GPT-6.1 Sol（09-29 DevDay）／GPT-6.1 Terra（10-26）／GPT-6 Rosalind（10-30、承認組織のみ）。GPT-5.5 は 2026-10-14 に ChatGPT から引退。GPT-6.1 Astra は公開見送りと報道。すべて検索経由（OpenAI 公式は環境の制限で直接取得不可）"
-    last_checked: 2026-11-06
+    current_value: "GPT-6 Astra（2026-09-03）／Sol・Luna（09-22）／GPT-6.1 Sol（09-29）／GPT-6.1 Terra（10-26）／GPT-6 Rosalind（10-30、承認組織のみ）／GPT-6 Cyber（11-05、Daybreak Red の承認顧客のみ）。画像は GPT Image 2.6（11-04、Flare / Sunburst）で本書 D-28。Sora は 2026-04-26 にアプリ停止・09-24 に API 終了。すべて検索経由"
+    last_checked: 2026-11-13
     recheck_days: 90
     source: OpenAI 公式ドキュメント（Models）
     url: https://developers.openai.com/api/docs/models
@@ -75,7 +75,7 @@ facts:
     label: Google の最新モデル世代（Gemini 系）
     kind: model
     book_says: "D-5「Gemini 3.5〜3.8 系」、D-6「Gemini 4 系」（Argon / Carbon）まで収録（2026-11-06）"
-    current_value: "Gemini 4 は 3 本: Argon（2026-10-13 GA）／Carbon（10-28 発表）／Hydrogen（11-12、Carbon 派生でエージェントの速い実行向け、$1.50/$7.50、3.8 Flash の置き換えと報道）。Argon・Carbon の導入価格 $2/$10 は 11-30 まで、12-01 から $4/$20。すべて検索経由（Google 公式は環境の制限で直接取得不可）"
+    current_value: "Gemini 4 は 3 本: Argon（2026-10-13 GA）／Carbon（10-28 発表、Fairwind で先行提供のあと 11-10 に一般公開。API 有料枠と Google AI Ultra から）／Hydrogen（11-12、$1.50/$7.50、3.8 Flash の置き換え）。Argon・Carbon の導入価格 $2/$10 は 11-30 まで、12-01 から $4/$20。画像は Nano Banana 2.1（10-06）。Veo は 3.1 のまま。すべて検索経由"
     last_checked: 2026-11-13
     recheck_days: 90
     source: Google AI 公式ドキュメント（Gemini models）

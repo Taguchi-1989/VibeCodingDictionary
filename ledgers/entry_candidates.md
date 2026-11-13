@@ -156,6 +156,7 @@
 - **D-25 GPT-1 / GPT-2 系** — OpenAI 初期の言語モデル（2018-2019）
 - **D-26 gpt-oss（OpenAI オープンモデル）** — 2025-08 に公開された gpt-oss-20b／120b。OpenAI 初の公式オープンウェイトモデル
 - **D-27 GPT-6 系** — Astra／Sol／Terra／Luna と 6.1。数字＝世代、名前＝段（Stage15、2026-11-06）
+- **D-28 GPT Image 系** — ChatGPT の画像生成。DALL-E の後継で 2.6 まで（Stage16 追補 5）
 
 ### xAI 系（D-30〜34）
 

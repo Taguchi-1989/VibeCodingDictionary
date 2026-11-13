@@ -13,9 +13,10 @@ start_date: 2025-08-01
 version_status: active
 pricing_note: freemium
 evaluation_date: 2026-04-30
+last_audited: 2026-11-13
 related_terms:
   - Imagen
-  - DALL-E
+  - GPT Image 系
   - Stable Diffusion
   - Gemini
 status: ready
@@ -33,7 +34,7 @@ Google Gemini 系列の画像編集モデルの愛称です。既存画像の構
 
 ## 何をしてくれるか
 
-画像の構図を崩さず衣装・背景・追加要素だけを差し替えます。正式名称は Gemini 2.5 Flash Image で、LMArena の画像評価で上位を維持しています。
+画像の構図を崩さず衣装・背景・追加要素だけを差し替えます。初代の正式名称は Gemini 2.5 Flash Image で、その後 2、2.1、上位の Pro と世代が進んでいます。
 
 ## どこで出会うか
 
@@ -86,7 +87,7 @@ Gemini アプリで画像編集を試すと動作感を一番早く掴めます�
 
 ### 6. 深掘り先
 
-Imagen、DALL-E、Stable Diffusion
+Imagen、GPT Image 系、Stable Diffusion
 
 ## 開発フローでの位置（必須）
 
@@ -99,7 +100,7 @@ Imagen、DALL-E、Stable Diffusion
 ## 関連用語
 
 - Imagen
-- DALL-E
+- GPT Image 系
 - Stable Diffusion
 - Gemini
 
@@ -151,7 +152,7 @@ Imagen、DALL-E、Stable Diffusion
 ## コミュニティ補完メモ
 
 - Imagen（D-51）との住み分け：Imagen はテキストから新規生成が得意。Nano Banana は既存画像の部分編集に強みがある。用途が異なるため競合より補完関係に近い
-- DALL-E（D-50）との住み分け：DALL-E は OpenAI 系。サービス選択軸（Google vs OpenAI）での住み分けが主。機能特性も DALL-E は新規生成寄り
+- GPT Image 系（D-28）との住み分け（2026-11-13 に DALL-E から差し替え）：OpenAI 側の画像モデル。サービス選択軸（Google vs OpenAI）での住み分けが主。DALL-E（D-50）は 2025-03 に ChatGPT で GPT Image へ交代済みで、歴史は D-50 に任せる
 - Stable Diffusion（D-54）との住み分け：Stable Diffusion はオープンソース・ローカル実行が特徴。Nano Banana はクラウドマネージド型。導入コストと制御度のトレードオフ
 
 ## 出典メモ
@@ -159,8 +160,13 @@ Imagen、DALL-E、Stable Diffusion
 - Google Gemini 公式ブログ — checked 2026-04-30
 - Google AI Studio 画像生成ドキュメント — checked 2026-04-30
 - LMArena 画像評価リーダーボード — checked 2026-04-30
+- Nano Banana 2 / 2.1 / Pro に関する報道・Google の発表（検索経由）— checked 2026-11-13
+- Stage 16 ブリーフ 追補 5（ledgers/stage16_briefs_2026-11.md）— checked 2026-11-13
 
 ## 備考
 
 - 「Nano Banana」は愛称で、正式名称は Gemini 2.5 Flash Image（後に Gemini 3 Pro Image / Nano Banana Pro と統合予定）。リリースノートでは正式名で記載されることが多く、愛称と正式名が並立する状況が読者の混乱を招きやすい
 - 2025 年 8 月時点での情報。モデル統合・名称変更の可能性あり（evaluation_date で管理）
+- **2026-11-13 鮮度監査**（一次未確認・検索経由）：「正式名称は Gemini 2.5 Flash Image」は初代の話。Nano Banana 2（2026-02）→ 2.1（2026-10-06、API ID `gemini-nano-banana-2.1`、価格は 2 の半額、文字の描画と複数ターンでの人物の一貫性が向上）。上位に Nano Banana Pro（Gemini 3 Pro Image）。本文の「LMArena で上位を維持」は時点が固定できないため削除し、順位は誌面に載せない（順位の確認は LMArena を直接参照）
+- 関連用語の DALL-E を GPT Image 系（D-28）に差し替え（DALL-E は 2025-03 に ChatGPT で交代済み）
+- 著者の「私のコメント」（後継の Nano Banana 2 や Pro への言及を含む）は触れていない

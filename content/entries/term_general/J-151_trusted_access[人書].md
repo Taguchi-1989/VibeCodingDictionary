@@ -14,7 +14,7 @@ end_date:
 version_status: active
 pricing_note: none
 evaluation_date: 2026-11-06
-last_audited: 2026-11-06
+last_audited: 2026-11-13
 related_terms:
   - Claude Fable / Mythos
   - GPT-6 系
@@ -37,7 +37,7 @@ status: needs_review
 
 ## どこで出会うか
 
-「最上位のモデルは限定提供」というニュースの背景として出会います。2026 年秋に主要 3 社が採用したとされ、Claude Mythos や Gemini 4 Carbon の提供方法がこれに当たります。
+限定提供のニュースの背景として出会います。主要 3 社が 2026 年秋に採用したとされ、Claude Mythos や GPT-6 Cyber が当たります。先に限定で出し、あとから広げる例もあり、Gemini 4 Carbon は 2026-11 に一般公開されました。
 
 ## メイン図
 
@@ -146,6 +146,7 @@ Claude Fable / Mythos、ゾーンとコンジット
 - D-16 Claude Fable / Mythos との住み分け：D-16 は「同じモデルに別の安全装置」という個別モデルの話。本エントリはその背景にある提供方式の考え方を扱う。
 - D-14 Claude Mythos Preview との関係：Project Glasswing は 2026-10-06 に Cyber Verification Program（CVP）へ統合された。
 - J-146 ゾーンとコンジット／J-135 機能安全／J-140 IEC 62443 との橋渡し：「区切って、通せる相手を限る」発想は産業制御のゾーン（区切り）と同じ。著者の専門領域への 1 文の橋渡しとして使える。
+- D-6 Gemini 4 系・D-27 GPT-6 系：個別モデルの提供状況は各エントリに任せ、J-151 は「先に限定で出し、あとから広げる例もある」という考え方だけを扱う。
 - 住み分け：申請手順の詳細と各社プログラムの比較表の全項目は扱わない。
 
 ## 出典メモ
@@ -154,11 +155,13 @@ Claude Fable / Mythos、ゾーンとコンジット
 - Anthropic「Claude Fable and Mythos 5.1」 https://www.anthropic.com/claude-fable-and-mythos-5-1 — checked 2026-11-06
 - Google ブログ「Gemini 4 Carbon」（検索経由・一次未確認） — checked 2026-11-06
 - OpenAI GPT-6 Astra 関連報道（検索経由・一次未確認） — checked 2026-11-06
+- OpenAI GPT-6 Cyber・Daybreak Red 関連報道、Gemini 4 Carbon 一般公開の報道（VentureBeat ほか）（検索経由・一次未確認） — checked 2026-11-13
 
 ## 備考
 
 - Anthropic（公式で確認）: Mythos は Cyber Verification Program（CVP）と Life Sciences Verification Program（LSVP）の承認組織だけが使える。CVP は 2026-10-06 に 3 段へ再編。Defense Access（守りの仕事、審査は数日）、Red Team Access（許可を得た侵入テスト、組織のみ・審査は数週間）、Specialized Access（安全上重要なシステムの試験、米国政府と共同審査）。条件は身元確認・セキュリティ管理の提示・悪用監視のためのデータ保持。
 - OpenAI（一次未確認）: GPT-6 Astra のサイバー能力は信頼アクセスプログラム「Daybreak」経由、生命科学向けの GPT-6 Rosalind は承認組織のみ、と報じられている。
-- Google（一次未確認）: Gemini 4 Carbon は Fairwind プログラムの検証済みサイバー防御組織から先行提供。Gemini 3.5 / 3.8 の Cyber 版も Fairwind 限定。
+- OpenAI 追記（2026-11-13・検索経由・一次未確認）: 信頼アクセスの最上段は Daybreak Red。GPT-6 Cyber（2026-11-05、GPT-6 Astra をもとにした許可された脆弱性研究向けの版）は Daybreak Red の承認顧客に API と Codex で提供され、価格は未公表と報じられている。
+- Google（一次未確認）: Gemini 4 Carbon は Fairwind プログラムの検証済みサイバー防御組織から先行提供され、2026-11-10 に一般公開された（2026-11-13 追記・検索経由・一次未確認。Gemini API の有料枠、企業向け、Google AI Ultra の加入者から）。Gemini 3.5 / 3.8 の Cyber 版は Fairwind 限定。
 - 背景: 守る側と攻める側で同じ能力が使われるデュアルユース（両用）。全員に開けば攻撃にも使われ、全員に閉じれば守る側が後れを取るため、相手を確かめてから開く中間をとる。
 - 対比: オープンウェイト（D-26 / D-48 など）の「誰でも持てる」方向と、「確かめた相手だけ」が 2026 年に同時に進んでいる。

@@ -14,7 +14,7 @@ end_date:
 version_status: active
 pricing_note: paid
 evaluation_date: 2026-11-06
-last_audited: 2026-11-06
+last_audited: 2026-11-13
 related_terms:
   - GPT-5 系
   - Gemini 4 系
@@ -148,11 +148,13 @@ GPT-5 系, トラステッドアクセス, Fast mode
 - D-20 GPT-5 系との住み分け：D-20 は 5.6 までの前世代と旧い接尾辞（mini / Pro）、D-27 は「数字＝世代、名前＝段」の命名と 6 世代に絞る。命名ルールの起点は 5.6 だが、詳細は D-20 側に任せる
 - J-151 トラステッドアクセスとの住み分け：Astra のサイバー能力や Rosalind の限定提供の仕組みは J-151 で扱い、D-27 は「限定提供がある」と示すだけにする
 - G-52 Fast mode との住み分け：6.1 Sol の Ultrafast mode は G-52 側で扱う
-- D-6 Gemini 4 系：同じ「名前＝役割」の流れ（元素名）として対比できる
+- D-6 Gemini 4 系：同じ「名前＝役割」の流れ（元素名）として対比できる。Gemini 4 Carbon は Fairwind で先行提供のあと 2026-11-10 に一般公開された
+- GPT-6 Cyber（2026-11-05）：GPT-6 Astra をもとにした、許可された脆弱性研究向けの版。信頼アクセスの最上段 Daybreak Red の承認顧客にだけ、API と Codex で提供される。仕組みは J-151 に任せ、D-27 は「限定提供の版がある」と示すだけにする（検索経由・一次未確認）
 
 ## 出典メモ
 
 - OpenAI DevDay 2026 Recap（openai.com/index/devday-2026-recap）— checked 2026-11-06（検索経由・二次情報を含む）
+- OpenAI GPT-6 Cyber 関連の報道（提供対象、Daybreak Red、Firefox の欠陥 81 件）— checked 2026-11-13（検索経由・一次未確認。OpenAI 公式は直接取得不可）
 - TechCrunch 2026-09-29 — checked 2026-11-06（検索経由）
 - The New Stack — checked 2026-11-06（検索経由）
 - DataCamp — checked 2026-11-06（検索経由）
@@ -164,6 +166,7 @@ GPT-5 系, トラステッドアクセス, Fast mode
 - 備考用の経緯（一次未確認）：GPT-6 Sol / Luna は 2026-09-22。GPT-6.1 Sol は 2026-09-29（DevDay 2026）、API ID `gpt-6.1-sol`、10-08 に Ultrafast mode が API に追加。GPT-6.1 Terra は 2026-10-26。GPT-6 Rosalind（生命科学向け・承認組織のみ）は 2026-10-30。GPT-5.5 は 2026-10-14 に ChatGPT から引退
 - 備考用の価格（一次未確認・誌面非掲載）：Astra 入力 $10 / 出力 $50、Sol $2 / $10、Luna $0.10 / $0.50（100 万トークンあたり）。Terra は報道で価格が食い違う
 - 備考用の報道（一次未確認）：GPT-6.1 Astra は内部テストでの安全上の懸念から公開が見送られたと、TechCrunch が WSJ 報道として伝えている
+- GPT-6 Cyber（2026-11-13 追記・検索経由・一次未確認）：2026-11-05 に登場。GPT-6 Astra をもとにした、許可された脆弱性研究向けの版で、信頼アクセスの最上段 Daybreak Red の承認顧客に API と Codex で提供されるとされます。価格は未公表。OpenAI の自己評価ではサイバー能力が「Critical」（前の GPT-5.6 Cyber は「High」）、Firefox の深刻な欠陥 81 件を見つけたと発表したと報じられています。本文には出さず、限定提供の例として J-151 側で扱う。OpenAI 公式で刊行前に再確認すること
 - 後継世代の固有名は、ブリーフ時点（2026-11-06）で確認できたものがなく、記載なし。次の世代交代時に D-27 の「始まった」表現を年月つきで見直す
 - o シリーズ（D-22 / D-23）は GPT-5 以降の本流に統合済み
-- evaluation_date / last_audited は 2026-11-06。experience_level: partial は、著者が一部のみ触れている想定の暫定値
+- evaluation_date は 2026-11-06、last_audited は 2026-11-13（GPT-6 Cyber の追記）。experience_level: partial は、著者が一部のみ触れている想定の暫定値

@@ -125,6 +125,7 @@ D-24,,GPT-3 系,model,openai,ready,,content/entries/model/D-24_gpt3[済].md
 D-25,,GPT-1 / GPT-2 系,model,openai,ready,v2テンプレ書き起こし済（2026-04-30）スケルトン D-25.md は archived,content/entries/model/D-25_gpt1_gpt2[済].md
 D-26,,gpt-oss,model,openai,ready,OpenAI初の公式オープンウェイトモデル 2025-08,content/entries/model/D-26_gpt_oss[済].md
 D-27,,GPT-6 系,model,openai,needs_review,Stage15。Astra／Sol／Terra／Luna と 6.1。数字＝世代、名前＝段,content/entries/model/D-27_gpt6[人書].md
+D-28,,GPT Image 系,model,openai,needs_review,Stage16 追補 5。ChatGPT の画像生成。DALL-E の後継で 2.6 まで,content/entries/model/D-28_gpt_image[人書].md
 D-30,,Grok 系,model,xai,ready,,content/entries/model/D-30_grok[済].md
 D-35,,Cursor Composer,model,other_closed,ready,title を Cursor Composer に更新（2026-04-30）,content/entries/model/D-35_cursor_composer[済].md
 D-36,,Muse 系,model,other_closed,needs_review,Stage16。Meta の Llama 後継。Spark／Wonder／Ember は API 提供、Glimmer・Spark Open は重み公開,content/entries/model/D-36_muse[人書].md
