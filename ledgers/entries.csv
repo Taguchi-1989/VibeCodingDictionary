@@ -75,6 +75,19 @@ C-14,,AMD,person_org,company,ready,半導体,content/entries/person/C-14_amd[済
 C-15,,Intel,person_org,company,ready,半導体IDM。EUV採用遅れ→18A復活途上,content/entries/person/C-15_intel[済].md
 C-16,,DeepSeek,person_org,company,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/person/C-16_deepseek[済].md
 C-17,,Sakana AI,person_org,company,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/person/C-17_sakana_ai[済].md
+C-18,,Alibaba,person_org,company,needs_review,Stage16 追補。Qwen の開発元。杭州、1999 年創業,content/entries/person/C-18_alibaba[人書].md
+C-19,,MiniMax,person_org,company,needs_review,Stage16 追補。上海、2021 年創業。M 系と動画の Hailuo,content/entries/person/C-19_minimax[人書].md
+C-20,,Xiaomi,person_org,company,needs_review,Stage16 追補。北京、2010 年創業。MiMo を重み公開,content/entries/person/C-20_xiaomi[人書].md
+C-21,,Thinking Machines Lab,person_org,company,needs_review,Stage16 追補。Mira Murati 氏が 2025 年創業。Tinker と Inkling,content/entries/person/C-21_thinking_machines_lab[人書].md
+C-22,,TypeSafe AI,person_org,company,needs_review,Stage16 追補。Jev の開発元。2024 年創業,content/entries/person/C-22_typesafe_ai[人書].md
+C-23,,Amazon,person_org,company,needs_review,Stage16 追補 3。AWS と Bedrock。自社モデルは Nova,content/entries/person/C-23_amazon[人書].md
+C-24,,ByteDance,person_org,company,needs_review,Stage16 追補 3。TikTok の会社。Seed チームと Doubao,content/entries/person/C-24_bytedance[人書].md
+C-25,,Baidu,person_org,company,needs_review,Stage16 追補 3。中国の検索最大手。ERNIE,content/entries/person/C-25_baidu[人書].md
+C-26,,Tencent,person_org,company,needs_review,Stage16 追補 3。WeChat の会社。Hunyuan と Yuanbao,content/entries/person/C-26_tencent[人書].md
+C-27,,Cohere,person_org,company,needs_review,Stage16 追補 3。企業向け専業。Command と North,content/entries/person/C-27_cohere[人書].md
+C-28,,Liquid AI,person_org,company,needs_review,Stage16 追補 3。MIT 発。端末で動く小さなモデル LFM,content/entries/person/C-28_liquid_ai[人書].md
+C-29,,Upstage,person_org,company,needs_review,Stage16 追補 4。韓国、2020 年創業。Solar と書類読み取り,content/entries/person/C-29_upstage[人書].md
+C-30,,IBM,person_org,company,needs_review,Stage16 追補 4。1911 年創業。watsonx と Granite,content/entries/person/C-30_ibm[人書].md
 C-50,,Sam Altman,person_org,person,ready,,content/entries/person/C-50_sam_altman[済].md
 C-51,,Dario Amodei,person_org,person,ready,,content/entries/person/C-51_dario_amodei[済].md
 C-52,,Demis Hassabis,person_org,person,ready,,content/entries/person/C-52_demis_hassabis[済].md
@@ -114,6 +127,8 @@ D-26,,gpt-oss,model,openai,ready,OpenAI初の公式オープンウェイトモ�
 D-27,,GPT-6 系,model,openai,needs_review,Stage15。Astra／Sol／Terra／Luna と 6.1。数字＝世代、名前＝段,content/entries/model/D-27_gpt6[人書].md
 D-30,,Grok 系,model,xai,ready,,content/entries/model/D-30_grok[済].md
 D-35,,Cursor Composer,model,other_closed,ready,title を Cursor Composer に更新（2026-04-30）,content/entries/model/D-35_cursor_composer[済].md
+D-36,,Muse 系,model,other_closed,needs_review,Stage16。Meta の Llama 後継。Spark／Wonder／Ember は API 提供、Glimmer・Spark Open は重み公開,content/entries/model/D-36_muse[人書].md
+D-37,,Jev,model,other_closed,needs_review,Stage16 追補。TypeSafe AI の判断特化モデル。文章を書かず型と確率で答える。出力は無料,content/entries/model/D-37_jev[人書].md
 D-40,,Llama 系,model,open,ready,,content/entries/model/D-40_llama[済].md
 D-41,,Mistral 系,model,open,ready,,content/entries/model/D-41_mistral[済].md
 D-42,,Gemma 系,model,open,ready,,content/entries/model/D-42_gemma[済].md
@@ -137,6 +152,17 @@ D-60,,AlphaGo,model,historical,ready,,content/entries/model/D-60_alphago[済].md
 D-61,,AlphaFold,model,historical,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/model/D-61_alphafold[済].md
 D-70,,Amical,model,ai_solution,ready,情報限定的。公式確認が必要（2026-04-30）,content/entries/model/D-70_amical[済].md
 D-71,,Whisper,model,voice_audio,ready,OpenAI のオープン音声認識モデル,content/entries/model/D-71_whisper[済].md
+D-80,,MiniMax M 系,model,open,needs_review,Stage16 追補 3。MiniMax の文章・コーディング向けモデル。M3 は重み公開,content/entries/model/D-80_minimax_m[人書].md
+D-81,,MiMo,model,open,needs_review,Stage16 追補 3。Xiaomi のモデル。V2.6-Pro を MIT で重み公開,content/entries/model/D-81_mimo[人書].md
+D-82,,Inkling,model,open,needs_review,Stage16 追補 3。Thinking Machines Lab の公開モデル。Apache 2.0,content/entries/model/D-82_inkling[人書].md
+D-83,,Amazon Nova,model,other_closed,needs_review,Stage16 追補 3。Amazon の自社モデル。Bedrock 経由で提供,content/entries/model/D-83_amazon_nova[人書].md
+D-84,,Doubao 系,model,other_closed,needs_review,Stage16 追補 3。ByteDance のモデル。Doubao-Seed 2.x,content/entries/model/D-84_doubao[人書].md
+D-85,,ERNIE 系,model,open,needs_review,Stage16 追補 3。Baidu のモデル。4.5 以降は一部を重み公開,content/entries/model/D-85_ernie[人書].md
+D-86,,Hunyuan 系,model,open,needs_review,Stage16 追補 3。Tencent のモデル。Hy3 を重み公開,content/entries/model/D-86_hunyuan[人書].md
+D-87,,Command 系,model,open,needs_review,Stage16 追補 3。Cohere の企業向けモデル。A+ を Apache 2.0 で公開,content/entries/model/D-87_command[人書].md
+D-88,,LFM 系,model,open,needs_review,Stage16 追補 3。Liquid AI の端末向け小型モデル,content/entries/model/D-88_lfm[人書].md
+D-89,,Solar 系,model,open,needs_review,Stage16 追補 4。Upstage のモデル。韓国語に強い小さめの系統,content/entries/model/D-89_solar[人書].md
+D-90,,Granite 系,model,open,needs_review,Stage16 追補 4。IBM の企業向け小型モデル。Apache 2.0,content/entries/model/D-90_granite[人書].md
 E-1,,SWE-Bench,benchmark,coding,ready,,content/entries/benchmark/E-1_swe_bench[済].md
 E-2,,SWE-Bench Verified,benchmark,coding,ready,,content/entries/benchmark/E-2_swe_bench_verified[済].md
 E-3,,Terminal-Bench,benchmark,coding,ready,,content/entries/benchmark/E-3_terminal_bench[済].md
@@ -155,9 +181,12 @@ E-31,,WebArena,benchmark,agent,ready,v2テンプレ書き起こし済（2026-04-
 E-32,,GAIA,benchmark,agent,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-32_gaia[済].md
 E-33,,AgentBench,benchmark,agent_benchmark,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-33_agentbench[済].md
 E-34,,OSWorld,benchmark,agent,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-34_osworld[済].md
+E-35,,RoboDojo,benchmark,agent,needs_review,Stage16。ロボット操作モデルをシミュレーションと実機の両方で測るベンチ,content/entries/benchmark/E-35_robodojo[人書].md
 E-50,,Chatbot Arena,benchmark,general,ready,,content/entries/benchmark/E-50_chatbot_arena[済].md
 E-51,,LMSYS Arena,benchmark,general,ready,v2テンプレ書き起こし済（2026-04-30）,content/entries/benchmark/E-51_lmsys_arena[済].md
 E-52,,Artificial Analysis Intelligence Index,benchmark,general,needs_review,Stage15。複数ベンチの合成スコア。v5（2026-10-27）は 6 割が非公開テスト,content/entries/benchmark/E-52_artificial_analysis_index[人書].md
+E-53,,評価ハーネス,benchmark,general,needs_review,Stage16。ベンチマークを実行する道具。Harbor・Inspect AI など,content/entries/benchmark/E-53_eval_harness[人書].md
+E-54,,ベンチマークの飽和,benchmark,general,needs_review,Stage16。上位が満点に近づき差が測れなくなること。難しい後継へ乗り換える,content/entries/benchmark/E-54_benchmark_saturation[人書].md
 F-1,301,JavaScript,term_tool,language,ready,旧3桁ID連携→F-1に取り込み済み,content/entries/term_tool/F-1_javascript[済].md
 F-2,302,TypeScript,term_tool,language,ready,旧3桁ID連携 / v2テンプレ書き起こし済（2026-04-29）,content/entries/term_tool/F-2_typescript[済].md
 F-3,,Python,term_tool,language,ready,,content/entries/term_tool/F-3_python[済].md
@@ -327,6 +356,7 @@ H-61,,Preview 版という文化,history,culture,needs_review,台帳登録済み
 H-62,,Anthropic 創業の流れ,history,event,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-62_anthropic_founding[人書].md
 H-63,,Vibe Coding 命名,history,event,needs_review,台帳登録済み・未生成だった分を本書き（2026-08-10、H 章の歴史・文化）,content/entries/history/H-63_vibe_coding_naming[人書].md
 H-64,,DeepSeek ショック,history,event,needs_review,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/history/H-64_deepseek_shock[人書].md
+H-65,,CLAUDE.md に書くことの変遷,history,timeline,needs_review,Stage16。たくさん書く→スキルへ分ける→ほとんど書かない、の流れ,content/entries/history/H-65_claude_md_evolution[人書].md
 I-1,,MCP,mcp,protocol,ready,,content/entries/mcp/I-1_mcp[済].md
 I-2,,MCP Server,mcp,protocol,ready,,content/entries/mcp/I-2_mcp_server[済].md
 I-3,,MCP Client,mcp,protocol,ready,,content/entries/mcp/I-3_mcp_client[済].md

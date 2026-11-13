@@ -107,3 +107,13 @@ D-14 Claude Mythos Preview（Mythos 5.1 が公開されており位置づけの�
 - D-16 Fable 5.1 / Mythos 5.1 の公開日（退役予定日からは 2026-09-01、Anthropic のニュース一覧では 2026-09-15）。本文は「2026 年 9 月」で止めた
 - 未着手のモデルエントリ: D-26 gpt-oss / D-40 Llama / D-41 Mistral / D-42 Gemma / D-43 Qwen（3.8 系が出ている）/ D-45 GLM（5.2・5.3 が出ている）/ D-55 Nano Banana（2.1 が 2026-10 に GA と報道）ほか画像・動画系
 - `model_snapshots.csv` の 2026Q4 行（四半期末に取る。候補: Opus 5.5 $4/$20、Sonnet 5.5 $2/$10、Haiku 5.5 $0.10/$0.50、Fable 5.1 $10/$50、Gemini 4 Argon、GPT-6.1 Sol、Grok 4.7）
+
+---
+
+## 2026-11-13 監査のメモ（Stage 16）
+
+- **確認した事実**: F-model-anthropic（Fable 5.2 / Mythos 5.2、anthropic.com/claude/fable を直接取得）／F-model-google（Gemini 4 Hydrogen、検索経由）／F-model-meta（Muse 系、検索経由。pattern に Muse を追加）／F-bench-aa-index（首位が Fable 5.2 に、検索経由）
+- **押印**: D-6 / D-16 / D-40 / E-3 / E-26 / E-52 / G-20。新規 D-36 / E-35 / E-53 / E-54 / H-65
+- **古くなっていた記述**: D-6「Argon・Carbon の 2 本」→ Hydrogen で 3 本／E-26 の出会い方と会話例が「30% 台」前提 → 2026-11 に「ツールあり」で 7 割台／G-20 の開発フローが「言語・スタイル・禁止事項をまとめる」→ 公式は「コードから分からないことだけ」
+- **確認できなかったもの**: Meta・Google DeepMind・arXiv・tbench.ai・Artificial Analysis・claude.dev（許可ホスト外）。RoboDojo の公式順位表、Terminal-Bench 4.0 の首位（報道が割れている）、HLE-Diamond の公開日（09-22 と 10-30 の 2 説）
+

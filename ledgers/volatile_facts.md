@@ -1,6 +1,6 @@
 # 時変ファクト watchlist（自動生成）
 
-*基準日 2026-11-06 — `python3 scripts/update_volatile_facts.py` が再生成します。定義を変えるときは [volatile_facts.yaml](volatile_facts.yaml) を編集してください。この .md は手で編集しないでください。*
+*基準日 2026-11-13 — `python3 scripts/update_volatile_facts.py` が再生成します。定義を変えるときは [volatile_facts.yaml](volatile_facts.yaml) を編集してください。この .md は手で編集しないでください。*
 
 「最新の Claude は何か」「ChatGPT の月額はいくらか」のような事実は、1 つ変わるだけで複数のエントリが同時に古くなります。エントリ側から鮮度を見る [freshness_queue.md](freshness_queue.md) と対で、こちらは**事実側から影響範囲を引く**ための台帳です。
 
@@ -10,26 +10,26 @@
 
 | 事実ID | 事実 | 種別 | 最終確認 | 期限 | 影響エントリ |
 | :-- | :-- | :-- | :-- | :-- | --: |
-| `F-model-anthropic` | Anthropic の最新モデル世代 | モデル世代 | 2026-11-06（0 日前） | 90 日 | 14 |
-| `F-model-openai` | OpenAI の最新モデル世代（GPT 系） | モデル世代 | 2026-11-06（0 日前） | 90 日 | 25 |
-| `F-model-openai-reasoning` | OpenAI の推論モデル系列（o シリーズ） | モデル世代 | 2026-09-19（48 日前） | 90 日 | 10 |
-| `F-model-google` | Google の最新モデル世代（Gemini 系） | モデル世代 | 2026-11-06（0 日前） | 90 日 | 16 |
-| `F-model-meta` | Meta のオープンウェイトモデル（Llama 系） | モデル世代 | ⏰ **未確認** | 180 日 | 6 |
-| `F-model-xai` | xAI（SpaceXAI）の Grok 系 | モデル世代 | 2026-11-06（0 日前） | 90 日 | 1 |
-| `F-org-anthropic-ipo` | Anthropic の株式上場（IPO） | 提供状況 | 2026-11-06（0 日前） | 14 日 | 1 |
-| `F-spec-context-length` | 主要モデルのコンテキスト長 | 仕様 | ⏰ **未確認** | 90 日 | 10 |
+| `F-model-anthropic` | Anthropic の最新モデル世代 | モデル世代 | 2026-11-13（0 日前） | 90 日 | 12 |
+| `F-model-openai` | OpenAI の最新モデル世代（GPT 系） | モデル世代 | 2026-11-06（7 日前） | 90 日 | 25 |
+| `F-model-openai-reasoning` | OpenAI の推論モデル系列（o シリーズ） | モデル世代 | 2026-09-19（55 日前） | 90 日 | 9 |
+| `F-model-google` | Google の最新モデル世代（Gemini 系） | モデル世代 | 2026-11-13（0 日前） | 90 日 | 15 |
+| `F-model-meta` | Meta のオープンウェイトモデル（Llama 系） | モデル世代 | 2026-11-13（0 日前） | 180 日 | 7 |
+| `F-model-xai` | xAI（SpaceXAI）の Grok 系 | モデル世代 | 2026-11-06（7 日前） | 90 日 | 1 |
+| `F-org-anthropic-ipo` | Anthropic の株式上場（IPO） | 提供状況 | 2026-11-06（7 日前） | 14 日 | 2 |
+| `F-spec-context-length` | 主要モデルのコンテキスト長 | 仕様 | ⏰ **未確認** | 90 日 | 13 |
 | `F-price-chatgpt` | ChatGPT の料金プラン | 料金 | ⏰ **未確認** | 90 日 | 2 |
-| `F-price-claude` | Claude の料金プラン | 料金 | 2026-11-06（0 日前） | 90 日 | 3 |
+| `F-price-claude` | Claude の料金プラン | 料金 | 2026-11-06（7 日前） | 90 日 | 3 |
 | `F-price-gemini` | Gemini の料金プラン・無料枠 | 料金 | ⏰ **未確認** | 90 日 | 2 |
 | `F-price-dev-tools` | 開発ツールの料金（Cursor / Copilot / ホスティング等） | 料金 | ⏰ **未確認** | 90 日 | 27 |
-| `F-bench-swebench` | SWE-Bench 系のスコア水準 | ベンチマーク | ⏰ **未確認** | 90 日 | 15 |
-| `F-bench-aa-index` | Artificial Analysis Intelligence Index の版と上位 | ベンチマーク | 2026-11-06（0 日前） | 60 日 | 1 |
-| `F-bench-leaderboard` | ベンチマークのスコア・順位（数値を書いている箇所） | ベンチマーク | ⏰ **未確認** | 90 日 | 11 |
+| `F-bench-swebench` | SWE-Bench 系のスコア水準 | ベンチマーク | ⏰ **未確認** | 90 日 | 16 |
+| `F-bench-aa-index` | Artificial Analysis Intelligence Index の版と上位 | ベンチマーク | 2026-11-13（0 日前） | 60 日 | 8 |
+| `F-bench-leaderboard` | ベンチマークのスコア・順位（数値を書いている箇所） | ベンチマーク | ⏰ **未確認** | 90 日 | 12 |
 | `F-spec-mcp` | MCP の仕様と公式サーバーの顔ぶれ | 仕様 | ⏰ **未確認** | 90 日 | 19 |
 | `F-availability-preview` | ベータ・プレビュー表記 | 提供状況 | ⏰ **未確認** | 90 日 | 17 |
-| `F-availability-deprecated` | 提供終了・非推奨の表記 | 提供状況 | ⏰ **未確認** | 180 日 | 13 |
+| `F-availability-deprecated` | 提供終了・非推奨の表記 | 提供状況 | ⏰ **未確認** | 180 日 | 16 |
 
-⏰ = 再確認の期限を過ぎているもの（**10 / 18 件**）。
+⏰ = 再確認の期限を過ぎているもの（**9 / 18 件**）。
 
 ---
 
@@ -37,20 +37,20 @@
 
 ### `F-model-anthropic` Anthropic の最新モデル世代
 
-- **本書の記述**: D-15「Claude 5 系」（Sonnet 5 / Opus 5）、D-16「Claude Fable / Mythos」（5 / 5.1）、D-17「Claude 5.5 系」（Opus / Sonnet / Haiku 5.5）まで収録（2026-11-06）。D-14 Mythos Preview は deprecated
-- **最後に確認した実際の値**: 5.5 世代が出そろった: Opus 5.5（2026-09-22、$4/$20、effort 既定 medium）／Sonnet 5.5（09-28、$2/$10）／Haiku 5.5（10-07、$0.10/$0.50）。最上段は Fable 5.1 / Mythos 5.1（2026-09、$10/$50、Mythos は CVP/LSVP 承認組織のみ）。全モデル 1M 文脈・128K 出力。Sonnet 4.5 は 2026-11-30 退役予定。Claude API 版 2026-10-21 で temperature / top_p / top_k 削除
-- **最終確認**: 2026-11-06（0 日前）（期限 90 日）
+- **本書の記述**: D-15〜D-17 に加え、D-16 に Fable 5.2 / Mythos 5.2（2026-11-09）を追記済み（2026-11-13）。D-14 Mythos Preview は deprecated
+- **最後に確認した実際の値**: 最上段は Claude Fable 5.2 / Mythos 5.2（2026-11-09。Fable 5.2 は $8/$40 に値下げ、Fast mode $16/$80、Pro〜Enterprise で利用可。Mythos 5.2 は検証プログラム経由）。その下に 5.5 世代: Opus 5.5（$4/$20）／Sonnet 5.5（$2/$10）／Haiku 5.5（$0.10/$0.50）。Sonnet 4.5 は 2026-11-30 退役予定（anthropic.com/claude/fable を 2026-11-13 に直接確認）
+- **最終確認**: 2026-11-13（0 日前）（期限 90 日）
 - **確認先**: Anthropic 公式ドキュメント（モデル一覧） — https://docs.anthropic.com/en/docs/about-claude/models/overview
 - **注意**: 世代が増えたら D 章に新エントリが要る。旧世代の deprecated 化も同時に確認する
-- **影響エントリ**: 14 件
+- **影響エントリ**: 12 件
 
-  D-10 Claude 3 系、D-11 Claude 3.5 系、D-12 Claude 4 系、D-13 Claude 4.5 系、D-14 Claude Mythos Preview、D-15 Claude 5 系、D-16 Claude Fable / Mythos、D-17 Claude 5.5 系、E-26 Humanity's Last Exam、E-52 Artificial Analysis Intelligence Index、G-5 Context Window、G-52 Fast mode、J-72 H100、J-152 蒸留攻撃
+  D-10 Claude 3 系、D-11 Claude 3.5 系、D-12 Claude 4 系、D-13 Claude 4.5 系、D-14 Claude Mythos Preview、D-15 Claude 5 系、D-16 Claude Fable / Mythos、D-17 Claude 5.5 系、G-5 Context Window、G-52 Fast mode、J-72 H100、J-152 蒸留攻撃
 
 ### `F-model-openai` OpenAI の最新モデル世代（GPT 系）
 
 - **本書の記述**: D-27「GPT-6 系」（Astra / Sol / Terra / Luna と 6.1）まで収録（2026-11-06）。D-20「GPT-5 系」は 5.6 までの過去世代
 - **最後に確認した実際の値**: GPT-6 Astra（2026-09-03、$10/$50、サイバー能力は Daybreak 経由）／GPT-6 Sol・Luna（09-22）／GPT-6.1 Sol（09-29 DevDay）／GPT-6.1 Terra（10-26）／GPT-6 Rosalind（10-30、承認組織のみ）。GPT-5.5 は 2026-10-14 に ChatGPT から引退。GPT-6.1 Astra は公開見送りと報道。すべて検索経由（OpenAI 公式は環境の制限で直接取得不可）
-- **最終確認**: 2026-11-06（0 日前）（期限 90 日）
+- **最終確認**: 2026-11-06（7 日前）（期限 90 日）
 - **確認先**: OpenAI 公式ドキュメント（Models） — https://developers.openai.com/api/docs/models
 - **注意**: 本書では 26 件が GPT の世代名に触れている。世代交代時の影響が最も大きい
 - **影響エントリ**: 25 件
@@ -61,40 +61,40 @@
 
 - **本書の記述**: D-22「o1 系」・D-23「o3 系」を収録。o3 系が最新として書かれている
 - **最後に確認した実際の値**: o1-preview は 2025-07-28、o1-mini は 2025-10-27 に API から削除済み。o3 は 2026-08-26 に ChatGPT から引退、API 側も 2026-12-11 削除予定。推論は GPT-5 以降の本流モデルに統合された
-- **最終確認**: 2026-09-19（48 日前）（期限 90 日）
+- **最終確認**: 2026-09-19（55 日前）（期限 90 日）
 - **確認先**: OpenAI 公式ドキュメント（Models） — https://developers.openai.com/api/docs/deprecations
 - **注意**: 通常モデルへの推論機能統合が進むと、系列そのものの位置づけが変わる
-- **影響エントリ**: 10 件
+- **影響エントリ**: 9 件
 
-  B-26 Azure OpenAI、D-20 GPT-5 系、D-21 GPT-4 系、D-22 o1 系、D-23 o3 系、D-47 DeepSeek R1、E-22 GPQA、E-25 AIME、E-26 Humanity's Last Exam、G-14 Thinking モデル
+  B-26 Azure OpenAI、D-20 GPT-5 系、D-21 GPT-4 系、D-22 o1 系、D-23 o3 系、D-47 DeepSeek R1、E-22 GPQA、E-25 AIME、G-14 Thinking モデル
 
 ### `F-model-google` Google の最新モデル世代（Gemini 系）
 
 - **本書の記述**: D-5「Gemini 3.5〜3.8 系」、D-6「Gemini 4 系」（Argon / Carbon）まで収録（2026-11-06）
-- **最後に確認した実際の値**: Gemini 4 Argon（2026-09-30 発表、10-13 GA、導入価格 $2/$10 は 11-30 まで、12-01 から $4/$20）／Gemini 4 Carbon（10-28 発表、AA Intelligence Index v5 首位、Fairwind の防御組織に先行提供）。3.7 / 3.5 Flash は 2026-10 に非推奨。すべて検索経由（Google 公式は環境の制限で直接取得不可）
-- **最終確認**: 2026-11-06（0 日前）（期限 90 日）
+- **最後に確認した実際の値**: Gemini 4 は 3 本: Argon（2026-10-13 GA）／Carbon（10-28 発表）／Hydrogen（11-12、Carbon 派生でエージェントの速い実行向け、$1.50/$7.50、3.8 Flash の置き換えと報道）。Argon・Carbon の導入価格 $2/$10 は 11-30 まで、12-01 から $4/$20。すべて検索経由（Google 公式は環境の制限で直接取得不可）
+- **最終確認**: 2026-11-13（0 日前）（期限 90 日）
 - **確認先**: Google AI 公式ドキュメント（Gemini models） — https://ai.google.dev/gemini-api/docs/models
 - **注意**: 旧 3 桁 ID の残骸（201 番）も Gemini 2.5 を扱っているので併せて確認する
-- **影響エントリ**: 16 件
+- **影響エントリ**: 15 件
 
-  B-1 Gemini、B-35 Gemini CLI、B-52 Gemini の料金プラン、D-1 Gemini 2 系、D-2 Gemini 2.5 系、D-3 Gemini 3 系、D-4 Gemini 3.1 系、D-5 Gemini 3.5〜3.8 系、D-6 Gemini 4 系、D-27 GPT-6 系、D-55 Nano Banana、E-26 Humanity's Last Exam、E-51 LMSYS Arena、E-52 Artificial Analysis Intelligence Index、G-5 Context Window、J-151 トラステッドアクセス
+  B-1 Gemini、B-35 Gemini CLI、B-52 Gemini の料金プラン、D-1 Gemini 2 系、D-2 Gemini 2.5 系、D-3 Gemini 3 系、D-4 Gemini 3.1 系、D-5 Gemini 3.5〜3.8 系、D-6 Gemini 4 系、D-27 GPT-6 系、D-55 Nano Banana、E-51 LMSYS Arena、E-52 Artificial Analysis Intelligence Index、G-5 Context Window、J-151 トラステッドアクセス
 
 ### `F-model-meta` Meta のオープンウェイトモデル（Llama 系）
 
 - **本書の記述**: D-40「Llama 系」で Llama 1〜4 の系譜を扱う
-- **最後に確認した実際の値**: _未確認_
-- **最終確認**: **未確認**（期限 180 日）
+- **最後に確認した実際の値**: Llama の後継は Muse 系（Meta Superintelligence Labs）。Muse Spark（2026-04-08）→ Spark 1.1＋Meta Model API（07-09）→ Muse Glimmer（08-10、重み公開）→ Muse Spark Open（10-15、重み公開・独自ライセンス）。API 側に Wonder / Ember など。本書は D-36 に収録（2026-11-13）。すべて検索経由
+- **最終確認**: 2026-11-13（0 日前）（期限 180 日）
 - **確認先**: Meta Llama 公式サイト — https://www.llama.com/
 - **注意**: ライセンス条項の変更もここで拾う（商用利用の条件は本書の説明に効く）
-- **影響エントリ**: 6 件
+- **影響エントリ**: 7 件
 
-  B-40 Reddit、D-40 Llama 系、F-86 ollama、J-19 量子化、J-22 パラメータ数の単位、J-86 GQA
+  B-40 Reddit、D-36 Muse 系、D-40 Llama 系、F-86 ollama、J-19 量子化、J-22 パラメータ数の単位、J-86 GQA
 
 ### `F-model-xai` xAI（SpaceXAI）の Grok 系
 
 - **本書の記述**: D-30「Grok 系」は Grok 4 Heavy / Fast まで。2026-11-06 の備考で 4.5〜4.7 と Grok 5 未公開を追記
 - **最後に確認した実際の値**: Grok 4.7（2026-09-21、$2/$6、文脈 50 万）。Grok 5 は 2026-11 時点で未公開。xAI は SpaceX 傘下で SpaceXAI に改称と報道（検索経由）
-- **最終確認**: 2026-11-06（0 日前）（期限 90 日）
+- **最終確認**: 2026-11-06（7 日前）（期限 90 日）
 - **確認先**: xAI 公式ドキュメント（Models） — https://docs.x.ai/docs/models
 - **注意**: Grok 5 が出たら D-30 の改訂か新エントリが要る
 - **影響エントリ**: 1 件
@@ -105,12 +105,12 @@
 
 - **本書の記述**: C-2 本文で「2026 年 10 月に株式上場（IPO）を申請しました」。備考に Nasdaq・銘柄コード ANT
 - **最後に確認した実際の値**: 2026-10-26 に S-1 公開提出（草案は 06-01 に非公開提出）、11-02 に修正版。上場日・価格帯は未定。11 月中の上場目標と報道（検索経由）
-- **最終確認**: 2026-11-06（0 日前）（期限 14 日）
+- **最終確認**: 2026-11-06（7 日前）（期限 14 日）
 - **確認先**: Anthropic 公式ニュース — https://www.anthropic.com/news/s1-sec
 - **注意**: 上場したら C-2 の「申請しました」を「上場しました」に、メイン図の節目の帯も差し替える
-- **影響エントリ**: 1 件
+- **影響エントリ**: 2 件
 
-  C-2 Anthropic
+  C-2 Anthropic、C-19 MiniMax
 
 ### `F-spec-context-length` 主要モデルのコンテキスト長
 
@@ -119,9 +119,9 @@
 - **最終確認**: **未確認**（期限 90 日）
 - **確認先**: 各社のモデル一覧ページ（URL 未設定）
 - **注意**: 数値そのものが入っているので、世代交代のたびに実数がずれる
-- **影響エントリ**: 10 件
+- **影響エントリ**: 13 件
 
-  D-2 Gemini 2.5 系、D-13 Claude 4.5 系、D-15 Claude 5 系、D-16 Claude Fable / Mythos、D-17 Claude 5.5 系、D-48 DeepSeek V4、G-5 Context Window、J-25 Tokenizer・BPE、J-27 RoPE、J-85 スループットとレイテンシ
+  D-2 Gemini 2.5 系、D-13 Claude 4.5 系、D-15 Claude 5 系、D-16 Claude Fable / Mythos、D-17 Claude 5.5 系、D-48 DeepSeek V4、D-80 MiniMax M 系、D-81 MiMo、D-82 Inkling、G-5 Context Window、J-25 Tokenizer・BPE、J-27 RoPE、J-85 スループットとレイテンシ
 
 ### `F-price-chatgpt` ChatGPT の料金プラン
 
@@ -138,7 +138,7 @@
 
 - **本書の記述**: B-50「Claude 料金」が本体。個人 4 段（Free〜Ultra）＋法人 2 段。B-7 Claude Code は金額を書かない方針
 - **最後に確認した実際の値**: Free $0 / Pro $20（年払い $17）/ Max $100（Pro 比 5 倍）/ Ultra $200（5 時間枠なし・週 10 倍）。Team 標準席 $25（年 $20）・プレミアム席 $125（年 $100）、Enterprise 年払い 1 席 $20＋API 従量。旧 Max 20x は Ultra に置き換わった。Fast mode は利用クレジットから
-- **最終確認**: 2026-11-06（0 日前）（期限 90 日）
+- **最終確認**: 2026-11-06（7 日前）（期限 90 日）
 - **確認先**: Anthropic 公式料金ページ — https://www.anthropic.com/pricing
 - **注意**: Claude Code の利用上限は変動が激しい。B-50 に集約し、他エントリへ金額を散らさない方針を保つ
 - **影響エントリ**: 3 件
@@ -174,20 +174,20 @@
 - **最終確認**: **未確認**（期限 90 日）
 - **確認先**: SWE-bench 公式リーダーボード — https://www.swebench.com/
 - **注意**: 上位スコアはモデル更新のたびに動く。「◯% 程度」と幅で書いてあれば直す頻度は下がる
-- **影響エントリ**: 15 件
+- **影響エントリ**: 16 件
 
-  B-10 Devin、D-4 Gemini 3.1 系、E-1 SWE-Bench、E-2 SWE-Bench Verified、E-3 Terminal-Bench、E-4 HumanEval、E-20 MMLU、E-22 GPQA、E-26 Humanity's Last Exam、E-30 TAU-Bench、E-50 Chatbot Arena、E-51 LMSYS Arena、G-46 ナーフ、G-50 Evals、J-114 グッドハートの法則
+  B-10 Devin、D-4 Gemini 3.1 系、E-1 SWE-Bench、E-2 SWE-Bench Verified、E-3 Terminal-Bench、E-4 HumanEval、E-20 MMLU、E-22 GPQA、E-26 Humanity's Last Exam、E-30 TAU-Bench、E-50 Chatbot Arena、E-51 LMSYS Arena、E-54 ベンチマークの飽和、G-46 ナーフ、G-50 Evals、J-114 グッドハートの法則
 
 ### `F-bench-aa-index` Artificial Analysis Intelligence Index の版と上位
 
 - **本書の記述**: E-52 で v5（2026-10-27）を扱い、2026-11 初旬の上位（Gemini 4 Carbon 60 / Claude Opus 5.5 59）をメイン図と備考に置く
-- **最後に確認した実際の値**: v5.0.1。首位 Gemini 4 Carbon（High）60、2 位 Claude Opus 5.5（Max）59（98 モデル中、検索経由）
-- **最終確認**: 2026-11-06（0 日前）（期限 60 日）
+- **最後に確認した実際の値**: 2026-11-09 以降は Claude Fable 5.2（Max）65 が首位、Gemini 4 Carbon（High）60、Claude Opus 5.5（Max）59 と報じられている（検索経由）
+- **最終確認**: 2026-11-13（0 日前）（期限 60 日）
 - **確認先**: Artificial Analysis リーダーボード — https://artificialanalysis.ai/leaderboards/models
 - **注意**: 版が変わるとスコアの意味が変わる（v5 は v4 と直接比較不可）。版番号も一緒に確認する
-- **影響エントリ**: 1 件
+- **影響エントリ**: 8 件
 
-  E-52 Artificial Analysis Intelligence Index
+  C-18 Alibaba、C-19 MiniMax、C-20 Xiaomi、C-29 Upstage、D-80 MiniMax M 系、D-82 Inkling、D-89 Solar 系、E-52 Artificial Analysis Intelligence Index
 
 ### `F-bench-leaderboard` ベンチマークのスコア・順位（数値を書いている箇所）
 
@@ -196,9 +196,9 @@
 - **最終確認**: **未確認**（期限 90 日）
 - **確認先**: 各ベンチマークの公式リーダーボード — https://lmarena.ai/
 - **注意**: 数値を残すか「水準」の表現に逃がすかは編集判断。刊行物としては幅表現が安全
-- **影響エントリ**: 11 件
+- **影響エントリ**: 12 件
 
-  E-1 SWE-Bench、E-2 SWE-Bench Verified、E-4 HumanEval、E-20 MMLU、E-21 MMLU-Pro、E-22 GPQA、E-24 MATH、E-26 Humanity's Last Exam、E-32 GAIA、E-34 OSWorld、E-52 Artificial Analysis Intelligence Index
+  E-1 SWE-Bench、E-2 SWE-Bench Verified、E-4 HumanEval、E-20 MMLU、E-21 MMLU-Pro、E-22 GPQA、E-24 MATH、E-26 Humanity's Last Exam、E-32 GAIA、E-34 OSWorld、E-35 RoboDojo、E-52 Artificial Analysis Intelligence Index
 
 ### `F-spec-mcp` MCP の仕様と公式サーバーの顔ぶれ
 
@@ -229,9 +229,9 @@
 - **最終確認**: **未確認**（期限 180 日）
 - **確認先**: 各サービスの公式アナウンス（URL 未設定）
 - **注意**: 完全終了すると「まだ使える」前提の記述が崩れる。version_status: deprecated と揃える
-- **影響エントリ**: 13 件
+- **影響エントリ**: 16 件
 
-  D-5 Gemini 3.5〜3.8 系、D-10 Claude 3 系、D-11 Claude 3.5 系、D-14 Claude Mythos Preview、D-24 GPT-3 系、D-25 GPT-1 / GPT-2 系、F-104 .webp、F-153 Creative Commons、H-51 Preview から正式版への流れ、I-4 MCP Transport、J-93 Ubuntu、J-142 文書化した情報と力量、J-149 第三者認証と自己宣言
+  C-23 Amazon、D-5 Gemini 3.5〜3.8 系、D-10 Claude 3 系、D-11 Claude 3.5 系、D-14 Claude Mythos Preview、D-24 GPT-3 系、D-25 GPT-1 / GPT-2 系、D-83 Amazon Nova、D-89 Solar 系、F-104 .webp、F-153 Creative Commons、H-51 Preview から正式版への流れ、I-4 MCP Transport、J-93 Ubuntu、J-142 文書化した情報と力量、J-149 第三者認証と自己宣言
 
 ---
 

@@ -13,12 +13,13 @@ start_date: 2023
 version_status: active
 pricing_note: none
 evaluation_date: 2026-04-29
+last_audited: 2026-11-13
 related_terms:
   - Meta
   - オープンモデル
   - Mistral
   - Ollama
-  - ファインチューニング
+  - Muse 系
 status: ready
 ---
 
@@ -97,7 +98,7 @@ Ollama、ファインチューニング、量子化（Quantization）
 - オープンモデル
 - Mistral
 - Ollama
-- ファインチューニング
+- Muse 系
 
 <!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
 
@@ -150,6 +151,7 @@ Ollama、ファインチューニング、量子化（Quantization）
 - Mistral（D-41）との住み分け：Mistral は欧州発の別系統オープンモデル。Llama は「Meta 製・最も広く参照される系統」として位置づけ、比較対象として名前を出す程度に留める
 - DeepSeek（D-46/D-47）・Qwen（D-43）・Gemma（D-42）はそれぞれ別エントリ。本エントリは「オープンモデルの源流として最も影響力が大きい系統」という立場で書く
 - オープンモデル全般のライセンス・コピーレフト論争は別エントリへ。本エントリでは「Meta 独自ライセンス ＝ 厳密な OSS ではない」とだけ注記する
+- Muse 系（D-36）との住み分け（2026-11-13 追記）：Llama 系の後継にあたる Meta Superintelligence Labs のモデル群は D-36 に任せる。本エントリは 2023〜2025 年の Llama の系譜に絞り、Muse の固有名は本文に増やさない
 - Ollama との関係：Ollama はローカル実行のランタイムで、Llama 3 がデフォルト対応モデルとして筆頭に挙がることが多い。Ollama エントリ（F 系等）と参照し合う
 
 ## 出典メモ
@@ -157,7 +159,8 @@ Ollama、ファインチューニング、量子化（Quantization）
 - llama.com — checked 2026-04-29
 - ai.meta.com/blog/llama-4-multimodal-intelligence/ — checked 2026-04-29
 - Hugging Face: Meta-Llama モデルページ — checked 2026-04-29
+- Meta Muse 系に関する報道・Meta 公式ブログ（後継の位置づけ）— checked 2026-11-13（検索経由・直接取得不可）
 
 ## 備考
 
-モデル名・パラメータ数・ライセンス条件は時変情報です。Llama 4 以降の版構成（Scout/Maverick/Behemoth）は evaluation_date 2026-04-29 時点の情報であり、本番利用前に公式を再確認します。「オープンウェイト」という表現は厳密には OSS と異なり、Meta が公開しているのはウェイトファイルとコードであって、学習データは非公開です。
+モデル名・パラメータ数・ライセンス条件は時変情報です。Llama 4 以降の版構成（Scout/Maverick/Behemoth）は evaluation_date 2026-04-29 時点の情報であり、本番利用前に公式を再確認します。後継として、Meta は 2026-04 以降 Muse 系（D-36）を発表しており、Llama のように重みを配るのではなく API 提供が基本で、一部の版だけ重みが公開されたと報じられています（二次情報・一次未確認、詳細は D-36 を参照）。Llama 系のエントリとしては 2025 年までの内容を維持し、last_audited は 2026-11-13 に更新しました。「オープンウェイト」という表現は厳密には OSS と異なり、Meta が公開しているのはウェイトファイルとコードであって、学習データは非公開です。

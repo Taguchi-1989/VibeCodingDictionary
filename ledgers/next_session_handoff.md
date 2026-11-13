@@ -1,10 +1,49 @@
-# 次セッションへの引き継ぎ（2026-11-06 v20 更新）
+# 次セッションへの引き継ぎ（2026-11-13 v21 更新）
+
+## 2026-11-13 セッション成果 — Stage 16（Muse・Hydrogen・Fable 5.2、ベンチマークの世代交代、CLAUDE.md の変遷）
+
+著者の音声指示に沿った回です。ブリーフは [stage16_briefs_2026-11.md](stage16_briefs_2026-11.md)、誌面の収まり・統一感の監査は [docs/quality_audit_2026-11.md](../docs/quality_audit_2026-11.md)。
+
+### 新規 30 件（すべて needs_review。**著者記入欄は空のまま**）
+
+| 帯 | ID |
+| :-- | :-- |
+| 会社 | C-18 Alibaba／C-19 MiniMax／C-20 Xiaomi／C-21 Thinking Machines Lab／C-22 TypeSafe AI（**方針: Artificial Analysis にモデルが載る会社は C 章に立てる**。創業・拠点・代表・主なモデル・特徴） |
+| 会社（追補 3） | C-23 Amazon／C-24 ByteDance／C-25 Baidu／C-26 Tencent／C-27 Cohere／C-28 Liquid AI |
+| 会社のモデル（追補 3、**D-80〜89 を新設**） | D-80 MiniMax M 系／D-81 MiMo／D-82 Inkling／D-83 Amazon Nova／D-84 Doubao 系／D-85 ERNIE 系／D-86 Hunyuan 系／D-87 Command 系／D-88 LFM 系 |
+| 会社とモデル（追補 4） | C-29 Upstage ↔ D-89 Solar 系／C-30 IBM ↔ D-90 Granite 系。**C-30〜39 を会社の追加分として使い始め、D-80〜89 を D-80〜99 に拡張** |
+| モデル | D-36 Muse 系（Meta、Llama の後継）／**D-37 Jev**（TypeSafe AI の判断特化モデル。文章を書かず型と確率で答える。出力は無料） |
+| ベンチマーク | E-35 RoboDojo（ロボット操作）／E-53 評価ハーネス（測る道具）／E-54 ベンチマークの飽和 |
+| 歴史 | H-65 CLAUDE.md に書くことの変遷（足す → 分ける → 削る） |
+
+### 改訂 7 件（`last_audited: 2026-11-13`、著者記入欄は無変更）
+
+D-6（Gemini 4 Hydrogen を足して 3 本に）／D-16（Fable 5.2 / Mythos 5.2）／D-40（Muse 系への導線）／E-26（HLE が「ツールあり」で 7 割台）／E-3（Terminal-Bench 4.0）／E-52（首位の入れ替わり）／G-20（2026-11 の公式ガイドに合わせた）
+
+C-4 Meta AI と C-10 Moonshot AI は備考だけ追記（`last_audited: 2026-11-13`）。
+
+### 著者に確認したいこと
+
+1. （解決済み）音声入力の「JEF」は Jev でした。読み違いで立てた J-153 ジェボンズのパラドックスは著者の指示で削除（J-153 は欠番のまま詰めない）
+2. **誌面の収まり**: validator の上限と、レイアウト見本の字数が食い違っています。とくに「5. はじめに」は 437 件中 271 件が見本の上限（30 字）超え。上限をどちらに寄せるかの判断が要ります（[quality_audit_2026-11.md](../docs/quality_audit_2026-11.md) §1）
+3. 新規 6 件の著者記入欄
+
+### 次にやること
+
+- **会社とモデルは対で立てる方針**（著者指示 2026-11-13）。候補に挙げた会社は Upstage・IBM まで書き終えました。AA への掲載そのものを確認できたのは Inkling・MiniMax-M3・Solar Pro 3 のみ（artificialanalysis.ai を直接取得できないため）。次に足す会社は C-31 から、モデルは D-91 から
+- 監査で出た統一感の揺れ（「深掘り先」の句点 80 件、見どころの体言止め 84 か所、関連用語の表記ゆれ）は**未着手**。機械的に直せるものから
+- Meta・Google・arXiv・Artificial Analysis・claude.dev は環境の許可ホストに無く、今回も検索経由。D-36 / D-37 / D-6 / E-35 / E-53 と H-65 の 2 件（2025-04 原文、2026-07 記事）は備考に「一次未確認」
+- 前回からの持ち越し: 未監査のモデル（D-26 / D-41〜D-43 / D-45 / D-55 ほか）、B 章の料金（ChatGPT / Gemini）、`model_snapshots.csv` の 2026Q4 行
+
+---
+
+## 2026-11-06 v20 の記録
 
 ## 2026-11-06 セッション成果 — 2 か月ぶんのモデル世代交代と新概念を反映
 
 著者の指示「2 か月ほど更新していないので、直近 1〜3 か月の話題のモデル・Artificial Analysis に出てくる主要モデルを追い、最新ページを更新日付つきで直す。新しい概念は追加。印象欄は残しておいてよい」に沿った回です。ブリーフは [stage15_briefs_2026-11.md](stage15_briefs_2026-11.md)、監査の記録は [freshness_audit_log.md](freshness_audit_log.md) の 2026-11-06 行。
 
-### 新規 11 件（すべて needs_review。**著者記入欄は空のまま**）
+### 新規 30 件（すべて needs_review。**著者記入欄は空のまま**）
 
 | 帯 | ID |
 | :-- | :-- |
