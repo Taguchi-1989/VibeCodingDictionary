@@ -1,76 +1,52 @@
 ---
 id: C-28
 title: Liquid AI
-title_reading:
+title_reading: リキッドエーアイ
 category: person_org
 subtype: company
-experience_level:
-reader_level:
-importance:
+experience_level: research_only
+reader_level: 3
+importance: C
 figure_type: structure
 page_layout: spread_v1
-start_date:
-end_date:
-version_status:
-pricing_note:
+start_date: 2023
+version_status: active
+pricing_note: freemium
 evaluation_date: 2026-11-13
-related_terms: []
-status: drafting
+last_audited: 2026-11-13
+related_terms:
+  - LFM 系
+  - Jev
+  - TypeSafe AI
+  - AMD
+status: needs_review
 ---
 
 # Liquid AI
 
-<!--
-バイブコーディング図鑑 スケルトン雛形 v1（2026-04-28 追加）
-- 構造だけ先に置いた状態。本文は status を `drafting` に上げた段階で entry-writer が埋める
-- validator は status: skeleton を archived/sample と同様にスキップする
-- tagline には entry_candidates.md の「一言」を仮で流し込んでいる（本書きで磨き直す）
-
-YAML 補足（本書きで埋める／見直す欄）:
-- subtype: candidate.csv の subtype 列を流し込み済み（後で見直す）
-- experience_level: hands_on / partial / research_only
-- reader_level: 1〜6
-- figure_type: before_after / structure / comparison / workflow / timeline（仮で structure を入れている）
-- version_status: active / preview / deprecated（時変なら埋める）
-- pricing_note: none / paid / freemium（時変なら埋める）
-- related_terms: 3〜5 個目安
-- status: skeleton → drafting → needs_review → ready
--->
-
 ## tagline
 
-<!-- 25〜60 字（推奨 30〜38、略称展開を含む場合 35〜50）。
-     タイトルが略称・ヌメロニム（MCP / a11y / LLM 等）なら冒頭に「{展開} の略。」を入れる（2026-04-28 追加）。
-     例: `Model Context Protocol の略。LLM とツール・データをつなぐ標準規格です。` -->
-
-MIT 発。端末で動く小さなモデル LFM（Stage16 追補 3）
-
+MIT 発の AI 企業です。端末で動く小さなモデル LFM を作っています。
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 
 ## 何をしてくれるか
 
-<!-- 60〜200 字（推奨 80〜150）。役割と仕組みを 2〜4 文で。本書きで埋める。 -->
-
+米国マサチューセッツ州ケンブリッジの AI 企業です。MIT の研究室からのスピンアウトで、スマホ・PC・車など手元の端末で動く小さなモデル LFM（Liquid Foundation Models）を開発しています。
 
 ## どこで出会うか
 
-<!-- 60〜200 字（推奨 80〜150）。読者が遭遇する具体シーン。本書きで埋める。 -->
-
+端末の上で動かす小型モデルの比較記事や、判断に特化したモデルの話題で名前が挙がります。AMD など半導体会社との協業のニュースでも出会います。
 
 ## メイン図
 
 ### 図の狙い
 
-<!-- 1〜2 文。この図で読者に何を掴んでもらうか。本書きで埋める。 -->
-
+「データセンターではなく、手元の端末で動く小さな AI」という立ち位置を、会社・LFM・端末の 3 段で掴んでもらいます。
 
 ## 会話での使い方例
 
-<!-- 25〜50 字（推奨 30〜40）、1 文。本書きで埋める。 -->
-
-「」
-
+「Liquid AI の LFM は、スマホに入る小ささが売りですよね。」
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -78,52 +54,42 @@ MIT 発。端末で動く小さなモデル LFM（Stage16 追補 3）
 
 ### 1. 役割
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+端末の上で動く小型モデルを作る会社です。
 
 ### 2. うれしさ
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+通信なしで速く動く AI を探せます。
 
 ### 3. 注意点
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+ライセンスは独自で、規模により条件が変わります。
 
 ### 4. どこで役立つか
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+スマホや車など、端末に AI を載せたいときです。
 
 ### 5. はじめに
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+2023 年創業、MIT 発、代表モデル LFM の 3 点を押さえます。
 
 ### 6. 深掘り先
 
-<!-- 15〜50 字、1〜3 語をカンマ区切り。本書きで埋める。 -->
-
+LFM 系、Jev、AMD
 
 ## 開発フローでの位置（必須）
 
-<!-- 4〜5 ステップ。本書きで埋める。 -->
-
-1. 
-2. 
-3. 
-4. 
-
+1. 情報収集 — 端末向け小型モデルの記事で Liquid AI の名を確認する
+2. モデル選定 — 載せる端末の性能に合う大きさの LFM を選ぶ
+3. 条件確認 — ライセンスと対応する入力・文脈の長さを読む
+4. 試用 — 手元の端末でモデルを動かして速さを測る
+5. 導入判断 — 品質・速さ・費用を見て採否を決める
 
 ## 関連用語
 
-<!-- 3〜5 個。本書きで埋める。YAML の related_terms と一致させる。 -->
-
-- 用語A —
-- 用語B —
-- 用語C —
-
+- LFM 系
+- Jev
+- TypeSafe AI
+- AMD
 
 <!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
 
@@ -146,17 +112,16 @@ MIT 発。端末で動く小さなモデル LFM（Stage16 追補 3）
 - 👥 誰向けか: 
 <!-- user-input:end key="my_comment" -->
 
-
 <!-- ━━━━━━━━ 裏台帳メモ（誌面には出さない） ━━━━━━━━ -->
 
 ## 誌面ポンチ絵メモ
 
 ### メイン図（左ページ中段 / figure_type: structure）
 
-- 描く内容: 
-- 登場人物（いれば）: 
-- 吹き出し・心の声: 
-- 中央に置くキーワード/ラベル: 
+- 描く内容: 上に「Liquid AI」、その下に小さな「LFM」、さらに下にスマホ・PC・車のアイコンを階段状に配置し、矢印で「端末の上で動く」を示す。脇に巨大なデータセンターを小さく描いて対比させる
+- 登場人物: スマホを手に、通信なしで AI に話しかける人物
+- 吹き出し・心の声: 「ネットにつながなくても、手元で動くんだ」
+- 中央に置くキーワード/ラベル: Liquid AI → 端末で動く
 
 ### 6 視点アイコン（右ページ上段）
 
@@ -164,20 +129,27 @@ MIT 発。端末で動く小さなモデル LFM（Stage16 追補 3）
 
 ### 開発フロー図（右ページ下段）
 
-- Step 1 のアイコン/絵柄: 
-- Step 2 のアイコン/絵柄: 
-- Step 3 のアイコン/絵柄: 
-- Step 4 のアイコン/絵柄: 
-
+- Step 1 のアイコン/絵柄: 虫眼鏡（情報収集）
+- Step 2 のアイコン/絵柄: 大小の端末と合うモデルを結ぶ線（モデル選定）
+- Step 3 のアイコン/絵柄: 契約書（条件確認）
+- Step 4 のアイコン/絵柄: スマホとストップウォッチ（試用）
+- Step 5 のアイコン/絵柄: 判子（導入判断）
 
 ## コミュニティ補完メモ
 
+- D-88 LFM 系との住み分け: 本エントリは開発元の企業に絞り、モデル個別の版・ライセンス・性能は D-88 に譲ります
+- D-37 Jev / C-22 TypeSafe AI との住み分け: 同じ「判断モデル」の文脈で名前が挙がりますが、別の会社です。Liquid AI は端末で動く小型モデル全般の会社として扱います
+- C-14 AMD との関係: 2024-12 の資金調達を AMD が主導したと報じられています。半導体側の話は C-14 に譲ります
 
 ## 出典メモ
 
-<!-- 形式: URL または誌名 — checked YYYY-MM-DD -->
-
-- 
-
+- Liquid AI 公式発表・報道（検索経由） — checked 2026-11-13
+- Wikipedia「Liquid AI」（検索経由） — checked 2026-11-13
 
 ## 備考
+
+- 一次未確認（検索経由・一般知識）。artificialanalysis.ai は環境の許可ホストに無く、Artificial Analysis への掲載そのものは未確認です。主要な LLM 開発元として立てています
+- 創業: 2023 年、MIT CSAIL からのスピンアウト。共同創業者は Ramin Hasani 氏（CEO）、Mathias Lechner 氏（CTO）、Daniela Rus 氏ほか（一般知識）
+- 出発点は線虫の神経回路に着想を得た「リキッドニューラルネットワーク」の研究です。2024-12 に 2.5 億ドルを調達したと報じられています（評価額・資金は誌面に出さない）
+- 判断専用モデル d1 も公開しています
+- 後継モデルの固有名は本文に書き込まず、ここに留めます

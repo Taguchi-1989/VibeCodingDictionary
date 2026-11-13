@@ -1,76 +1,59 @@
 ---
 id: D-82
 title: Inkling
-title_reading:
+title_reading: インクリング
 category: model
 subtype: open
-experience_level:
-reader_level:
-importance:
-figure_type: structure
+experience_level: research_only
+reader_level: 3
+importance: C
+figure_type: comparison
 page_layout: spread_v1
-start_date:
-end_date:
-version_status:
-pricing_note:
+start_date: 2026-07-15
+version_status: active
+pricing_note: freemium
 evaluation_date: 2026-11-13
-related_terms: []
-status: drafting
+last_audited: 2026-11-13
+related_terms:
+  - Thinking Machines Lab
+  - MoE
+  - Apache 2.0
+  - Fine-tuning
+status: needs_review
 ---
 
 # Inkling
 
-<!--
-バイブコーディング図鑑 スケルトン雛形 v1（2026-04-28 追加）
-- 構造だけ先に置いた状態。本文は status を `drafting` に上げた段階で entry-writer が埋める
-- validator は status: skeleton を archived/sample と同様にスキップする
-- tagline には entry_candidates.md の「一言」を仮で流し込んでいる（本書きで磨き直す）
-
-YAML 補足（本書きで埋める／見直す欄）:
-- subtype: candidate.csv の subtype 列を流し込み済み（後で見直す）
-- experience_level: hands_on / partial / research_only
-- reader_level: 1〜6
-- figure_type: before_after / structure / comparison / workflow / timeline（仮で structure を入れている）
-- version_status: active / preview / deprecated（時変なら埋める）
-- pricing_note: none / paid / freemium（時変なら埋める）
-- related_terms: 3〜5 個目安
-- status: skeleton → drafting → needs_review → ready
--->
-
 ## tagline
 
-<!-- 25〜60 字（推奨 30〜38、略称展開を含む場合 35〜50）。
-     タイトルが略称・ヌメロニム（MCP / a11y / LLM 等）なら冒頭に「{展開} の略。」を入れる（2026-04-28 追加）。
-     例: `Model Context Protocol の略。LLM とツール・データをつなぐ標準規格です。` -->
-
-Thinking Machines Lab の公開モデル。Apache 2.0（Stage16 追補 3）
-
+Thinking Machines Lab が出した最初の公開モデルです。重みは公開されています。
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 
 ## 何をしてくれるか
 
-<!-- 60〜200 字（推奨 80〜150）。役割と仕組みを 2〜4 文で。本書きで埋める。 -->
-
+2026-07-15 に公開された汎用モデルです。975B の MoE（専門家の一部だけを動かす構造）で、重みは Apache 2.0 で公開されました。自社向けに作り替える土台として出されています。
 
 ## どこで出会うか
 
-<!-- 60〜200 字（推奨 80〜150）。読者が遭遇する具体シーン。本書きで埋める。 -->
-
+Artificial Analysis の比較ページや、重みを配るモデルの話題で名前が出ます。07-31 には小型版の Inkling Small が続きました。
 
 ## メイン図
 
 ### 図の狙い
 
-<!-- 1〜2 文。この図で読者に何を掴んでもらうか。本書きで埋める。 -->
+大型の Inkling と小型の Inkling Small を並べ、大きさが違っても近い性能という点と、「土台として作り替える」位置づけを掴んでもらいます。
 
+### C. 比較図（figure_type: comparison）
+
+- 左列「Inkling」: 975B の MoE／稼働 41B／文脈 100 万トークン／Apache 2.0
+- 右列「Inkling Small」: 276B の MoE／稼働 12B／文脈 256K／Apache 2.0
+- 下に共通の矢印: 「自社向けに作り替える土台（Tinker）」
+- 比較の軸: 大きさ、動く部分、文脈の長さ
 
 ## 会話での使い方例
 
-<!-- 25〜50 字（推奨 30〜40）、1 文。本書きで埋める。 -->
-
-「」
-
+「Inkling は Apache 2.0 で重みが出ていて、土台として使う前提ですよね。」
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -78,52 +61,42 @@ Thinking Machines Lab の公開モデル。Apache 2.0（Stage16 追補 3）
 
 ### 1. 役割
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+作り替えの土台として出された、重み公開の汎用モデルです。
 
 ### 2. うれしさ
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+Apache 2.0 で、自社向けに調整しやすい条件です。
 
 ### 3. 注意点
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+学習データと学習コードは公開されていません。
 
 ### 4. どこで役立つか
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+重みを配る大型モデルの比較や、作り替えの検討です。
 
 ### 5. はじめに
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+Inkling と Inkling Small の大きさの違いから見ます。
 
 ### 6. 深掘り先
 
-<!-- 15〜50 字、1〜3 語をカンマ区切り。本書きで埋める。 -->
-
+Thinking Machines Lab、MoE、Fine-tuning
 
 ## 開発フローでの位置（必須）
 
-<!-- 4〜5 ステップ。本書きで埋める。 -->
-
-1. 
-2. 
-3. 
-4. 
-
+1. 話題を知る — ニュースや順位表で Inkling を見る
+2. 版を選ぶ — 大型の Inkling か小型の Small かを決める
+3. 重みを取得 — 配布先から入手する
+4. 作り替える — 自社のデータで調整する形を検討する
+5. 使い方を決める — 自前運用か API 利用かを比べる
 
 ## 関連用語
 
-<!-- 3〜5 個。本書きで埋める。YAML の related_terms と一致させる。 -->
-
-- 用語A —
-- 用語B —
-- 用語C —
-
+- Thinking Machines Lab
+- MoE
+- Apache 2.0
+- Fine-tuning
 
 <!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
 
@@ -151,12 +124,12 @@ Thinking Machines Lab の公開モデル。Apache 2.0（Stage16 追補 3）
 
 ## 誌面ポンチ絵メモ
 
-### メイン図（左ページ中段 / figure_type: structure）
+### メイン図（左ページ中段 / figure_type: comparison）
 
-- 描く内容: 
-- 登場人物（いれば）: 
-- 吹き出し・心の声: 
-- 中央に置くキーワード/ラベル: 
+- 描く内容: 左右 2 列。左に大きな人型シルエット（Inkling）、右に一回り小さな人型（Inkling Small）。どちらも光る部分が動く部分。2 体の足元に「Tinker で作り替える土台」と書かれた作業台
+- 登場人物（いれば）: 読者キャラ（非エンジニア）が 2 体を見比べ、作業台の道具を手に取っている
+- 吹き出し・心の声: 読者「小さいほうでも点数が近いの？」／Inkling「975B のうち動くのは 41B」／Small「276B のうち動くのは 12B」
+- 中央に置くキーワード/ラベル: 土台 ／ Apache 2.0 ／ 文脈 100 万トークン／256K（2026-11 時点・報道ベース）
 
 ### 6 視点アイコン（右ページ上段）
 
@@ -164,20 +137,29 @@ Thinking Machines Lab の公開モデル。Apache 2.0（Stage16 追補 3）
 
 ### 開発フロー図（右ページ下段）
 
-- Step 1 のアイコン/絵柄: 
-- Step 2 のアイコン/絵柄: 
-- Step 3 のアイコン/絵柄: 
-- Step 4 のアイコン/絵柄: 
+- Step 1 のアイコン/絵柄: 新聞（ニュース）
+- Step 2 のアイコン/絵柄: 大小 2 つの箱（Inkling / Small）
+- Step 3 のアイコン/絵柄: ダウンロード矢印
+- Step 4 のアイコン/絵柄: 工具と作業台
+- Step 5 のアイコン/絵柄: 分かれ道（自前運用か API か）
 
 
 ## コミュニティ補完メモ
 
+- C-21 Thinking Machines Lab（会社）との住み分け：創業・調達・人員などは C-21 に任せ、本エントリはモデル（Inkling）に絞る
+- Tinker（自社向けに作り替える基盤）は C-21 側で扱う。本エントリは土台としての位置づけだけ書く
+- J-16 Fine-tuning：作り替えの手法の解説は J-16 側に任せる
+- J-18 MoE：総パラメータと稼働パラメータの解説は J-18 側に任せる
+- Apache 2.0 のエントリとの関係：「重みは Apache 2.0、学習データと学習コードは非公開」という区別は本エントリで一言だけ触れる
 
 ## 出典メモ
 
-<!-- 形式: URL または誌名 — checked YYYY-MM-DD -->
-
-- 
-
+- Artificial Analysis の Inkling・Inkling Small に関する比較ページ／記事見出し（検索結果）— checked 2026-11-13
+- Thinking Machines Lab の Inkling に関する報道・解説記事（検索経由・二次情報）— checked 2026-11-13
 
 ## 備考
+
+- **一次未確認（検索経由）**：公開日（2026-07-15、Small は 07-31）、975B／稼働 41B、276B／稼働 12B、文脈 100 万／256K、Apache 2.0、学習データ・コード非公開、「最高性能ではない」という会社自身の発言は、すべて二次情報で公式未確認です（2026-11-13 時点）
+- AA は Inkling Small を「3 分の 1 以下の大きさで Inkling と 1 点差以内」と記事にしましたが、点数と順位は時点で動くため本文には書いていません
+- `pricing_note: freemium` は重みの入手（無料）と、Tinker・API の有償利用が併存する意味づけ。価格は未確認
+- 関連用語に「オープンモデル」の項目は entries.csv に無いため入れていません

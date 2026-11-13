@@ -1,76 +1,59 @@
 ---
 id: D-86
 title: Hunyuan 系
-title_reading:
+title_reading: フンユェン系
 category: model
 subtype: open
-experience_level:
-reader_level:
-importance:
+experience_level: research_only
+reader_level: 3
+importance: C
 figure_type: structure
 page_layout: spread_v1
-start_date:
-end_date:
-version_status:
-pricing_note:
+start_date: 2023-09
+version_status: active
+pricing_note: freemium
 evaluation_date: 2026-11-13
-related_terms: []
-status: drafting
+last_audited: 2026-11-13
+related_terms:
+  - Tencent
+  - Alibaba
+  - Qwen 系
+  - MoE
+status: needs_review
 ---
 
 # Hunyuan 系
 
-<!--
-バイブコーディング図鑑 スケルトン雛形 v1（2026-04-28 追加）
-- 構造だけ先に置いた状態。本文は status を `drafting` に上げた段階で entry-writer が埋める
-- validator は status: skeleton を archived/sample と同様にスキップする
-- tagline には entry_candidates.md の「一言」を仮で流し込んでいる（本書きで磨き直す）
-
-YAML 補足（本書きで埋める／見直す欄）:
-- subtype: candidate.csv の subtype 列を流し込み済み（後で見直す）
-- experience_level: hands_on / partial / research_only
-- reader_level: 1〜6
-- figure_type: before_after / structure / comparison / workflow / timeline（仮で structure を入れている）
-- version_status: active / preview / deprecated（時変なら埋める）
-- pricing_note: none / paid / freemium（時変なら埋める）
-- related_terms: 3〜5 個目安
-- status: skeleton → drafting → needs_review → ready
--->
-
 ## tagline
 
-<!-- 25〜60 字（推奨 30〜38、略称展開を含む場合 35〜50）。
-     タイトルが略称・ヌメロニム（MCP / a11y / LLM 等）なら冒頭に「{展開} の略。」を入れる（2026-04-28 追加）。
-     例: `Model Context Protocol の略。LLM とツール・データをつなぐ標準規格です。` -->
-
-Tencent のモデル。Hy3 を重み公開（Stage16 追補 3）
-
+Tencent が作る AI モデル群で、重みも公開されています。
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 
 ## 何をしてくれるか
 
-<!-- 60〜200 字（推奨 80〜150）。役割と仕組みを 2〜4 文で。本書きで埋める。 -->
-
+WeChat やゲームで知られる Tencent の大規模言語モデル群です。2023 年に初公開され、2026 年には MoE（専門家の組み合わせ）構成の Hy3 の重みが公開されました。
 
 ## どこで出会うか
 
-<!-- 60〜200 字（推奨 80〜150）。読者が遭遇する具体シーン。本書きで埋める。 -->
-
+Tencent の対話アプリ Yuanbao（元宝）などの中身として使われます。海外向けには「Hy」の名で呼ばれ、記事では Hy3 のように名前ごとに登場します。
 
 ## メイン図
 
 ### 図の狙い
 
-<!-- 1〜2 文。この図で読者に何を掴んでもらうか。本書きで埋める。 -->
+Hunyuan が Tencent の手持ちのアプリに組み込まれ、同時に重みも配られる、2 つの出口を持つことを見せます。
 
+### A. 構造図（figure_type: structure）
+
+- 中央「Hunyuan（混元）／海外名 Hy」
+- 上へ: Yuanbao・CodeBuddy・ima（Tencent のアプリ）
+- 下へ: 重み公開の Hy3（295B／稼働 21B の MoE と報じられています）
+- 例示ラベル: 「2026-11 時点」。ライセンスは記事で食い違い
 
 ## 会話での使い方例
 
-<!-- 25〜50 字（推奨 30〜40）、1 文。本書きで埋める。 -->
-
-「」
-
+「Hunyuan は Tencent のアプリに入りつつ、重みも公開されていますよね。」
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -78,52 +61,41 @@ Tencent のモデル。Hy3 を重み公開（Stage16 追補 3）
 
 ### 1. 役割
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+Tencent が自社アプリ向けに育てるモデル群です。
 
 ### 2. うれしさ
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+重みが公開された版は、自分の環境で試せます。
 
 ### 3. 注意点
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+ライセンスの記述が資料によって食い違います。
 
 ### 4. どこで役立つか
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+中国発モデルの選択肢を比べるときに役立ちます。
 
 ### 5. はじめに
 
-<!-- 15〜40 字、1 文。本書きで埋める。 -->
-
+「Hunyuan」と海外名「Hy」を同じものと覚えます。
 
 ### 6. 深掘り先
 
-<!-- 15〜50 字、1〜3 語をカンマ区切り。本書きで埋める。 -->
-
+Tencent、Qwen 系、MoE
 
 ## 開発フローでの位置（必須）
 
-<!-- 4〜5 ステップ。本書きで埋める。 -->
-
-1. 
-2. 
-3. 
-4. 
-
+1. 候補を知る — 中国発の公開モデルとして名前を押さえる
+2. 版を確かめる — Hy3 など使いたい名前の版を確認する
+3. 条件を読む — ライセンスの原文を自分で読む
+4. 試して比べる — 手元の仕事で他社モデルと比べる
 
 ## 関連用語
 
-<!-- 3〜5 個。本書きで埋める。YAML の related_terms と一致させる。 -->
-
-- 用語A —
-- 用語B —
-- 用語C —
-
+- Tencent
+- Alibaba
+- Qwen 系
+- MoE
 
 <!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
 
@@ -153,10 +125,10 @@ Tencent のモデル。Hy3 を重み公開（Stage16 追補 3）
 
 ### メイン図（左ページ中段 / figure_type: structure）
 
-- 描く内容: 
-- 登場人物（いれば）: 
-- 吹き出し・心の声: 
-- 中央に置くキーワード/ラベル: 
+- 描く内容: 中央に「Hunyuan」の箱。上の矢印は Tencent のアプリ群（Yuanbao・CodeBuddy・ima）、下の矢印は「重みを配る」箱（Hy3）
+- 登場人物（いれば）: 読者キャラ（非エンジニア）と Tencent 風の案内役キャラ
+- 吹き出し・心の声: 読者「Hunyuan と Hy は別のもの？」／案内役「同じ系統です。海外向けの名前が Hy です」
+- 中央に置くキーワード/ラベル: 混元／Hy ／ 例示「2026-11 時点」
 
 ### 6 視点アイコン（右ページ上段）
 
@@ -164,20 +136,27 @@ Tencent のモデル。Hy3 を重み公開（Stage16 追補 3）
 
 ### 開発フロー図（右ページ下段）
 
-- Step 1 のアイコン/絵柄: 
-- Step 2 のアイコン/絵柄: 
-- Step 3 のアイコン/絵柄: 
-- Step 4 のアイコン/絵柄: 
-
+- Step 1 のアイコン/絵柄: 地図に立てる旗
+- Step 2 のアイコン/絵柄: 版数が並ぶ名札
+- Step 3 のアイコン/絵柄: 契約書と虫眼鏡
+- Step 4 のアイコン/絵柄: 天秤
 
 ## コミュニティ補完メモ
 
+- C-26 Tencent との住み分け：C-26 は会社・アプリ側の説明。本エントリはモデル側
+- D-43 Qwen 系（Alibaba）との関係：同じ中国発の重み公開モデル。比較の観点は D-43 に任せ、ここは名前の紹介にとどめる
+- J-18 MoE との関係：Hy3 は MoE 構成とされる。仕組みは J-18 へ
 
 ## 出典メモ
 
-<!-- 形式: URL または誌名 — checked YYYY-MM-DD -->
-
-- 
-
+- Tencent 公式発表・技術系ニュース記事（検索経由・二次情報を含む）— checked 2026-11-13
+- ブリーフ ledgers/stage16_briefs_2026-11.md 追補 3 — checked 2026-11-13
 
 ## 備考
+
+- **一次未確認（検索経由）**：Tencent の公式サイトは環境のネットワーク制限で直接取得できず、二次情報を含みます（2026-11-13 時点）。基礎情報は一般知識にもとづきます
+- 時系列（二次情報）：2023-09 初公開／Hy3 preview 2026-04-23（295B の MoE、稼働 21B、文脈 256K、重み公開）／Hy3 正式版 2026-07-06
+- **ライセンスの食い違い**：Apache 2.0 とする記事と、独自ライセンスとする記事があり未確定です。利用前に原文確認が必要です
+- **Hy4 の記載（2026-11-04）**が 1 件ありましたが、裏が取れないため本文には書いていません
+- Artificial Analysis（AA）への掲載そのものは未確認です。主要な LLM 開発元として立てています
+- 価格・版数は時変情報です。次回の鮮度監査で確認してください

@@ -1,16 +1,16 @@
 # 要直しキュー（revision queue）
 
-*自動生成: 2026-11-13 20:45 / `scripts/update_review_queue.py`*
+*自動生成: 2026-11-13 20:52 / `scripts/update_review_queue.py`*
 
 1 画面で「次やるべき・見直すべき・適合済み」が見えるダッシュボード。`scripts/validate_entry.py` のチェックを全件で走らせた結果を集計して再生成しています。手で編集しないでください。
 
 ## status 内訳
 
 - **drafting**: 1 件
-- **needs_review**: 39 件
+- **needs_review**: 54 件
 - **ready**: 452 件
 - **archived**: 7 件
-- **合計**: 499 件
+- **合計**: 514 件
 
 - **自己学習シェルフ（reader_level 6・刊行外）**: 33 件（誌面には出ません。`scripts/preview_gen.py` が除外）
 
@@ -26,7 +26,7 @@ _なし_
 
 _なし（drafting で全パスしたものは自動で needs_review に上がります）_
 
-## 📝 著者レビュー待ち（needs_review・全パス）（28 件）
+## 📝 著者レビュー待ち（needs_review・全パス）（43 件）
 
 | ID | title | status | 概要 |
 | :-- | :-- | :-- | :-- |
@@ -35,6 +35,12 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | C-20 | Xiaomi | needs_review | — |
 | C-21 | Thinking Machines Lab | needs_review | — |
 | C-22 | TypeSafe AI | needs_review | — |
+| C-23 | Amazon | needs_review | — |
+| C-24 | ByteDance | needs_review | — |
+| C-25 | Baidu | needs_review | — |
+| C-26 | Tencent | needs_review | — |
+| C-27 | Cohere | needs_review | — |
+| C-28 | Liquid AI | needs_review | — |
 | D-15 | Claude 5 系 | needs_review | — |
 | D-16 | Claude Fable / Mythos | needs_review | — |
 | D-17 | Claude 5.5 系 | needs_review | — |
@@ -44,6 +50,15 @@ _なし（drafting で全パスしたものは自動で needs_review に上が�
 | D-48 | DeepSeek V4 | needs_review | — |
 | D-5 | Gemini 3.5〜3.8 系 | needs_review | — |
 | D-6 | Gemini 4 系 | needs_review | — |
+| D-80 | MiniMax M 系 | needs_review | — |
+| D-81 | MiMo | needs_review | — |
+| D-82 | Inkling | needs_review | — |
+| D-83 | Amazon Nova | needs_review | — |
+| D-84 | Doubao 系 | needs_review | — |
+| D-85 | ERNIE 系 | needs_review | — |
+| D-86 | Hunyuan 系 | needs_review | — |
+| D-87 | Command 系 | needs_review | — |
+| D-88 | LFM 系 | needs_review | — |
 | E-35 | RoboDojo | needs_review | — |
 | E-52 | Artificial Analysis Intelligence Index | needs_review | — |
 | E-53 | 評価ハーネス | needs_review | — |
