@@ -13,12 +13,13 @@ start_date: 2026-10-27
 version_status: active
 pricing_note: free
 evaluation_date: 2026-11-06
-last_audited: 2026-11-06
+last_audited: 2026-11-13
 related_terms:
   - Chatbot Arena
-  - Terminal-Bench
   - effort レベル
   - グッドハートの法則
+  - 評価ハーネス
+  - ベンチマークの飽和
 status: needs_review
 ---
 
@@ -48,7 +49,7 @@ AI モデルの総合スコアです。複数の試験を 1 つの点数にま�
 
 - 中心に置く概念: 9 つの小テスト → 4 分野（各 25%）→ 1 つの総合点
 - 周辺の要素: Knowledge Work／Coding／Science／General の 4 つの箱、非公開テストの鍵アイコン、effort 別の複数行
-- 関係の描き方: 上から下へのじょうご型。下に例示ラベル「2026-11 時点: Gemini 4 Carbon（High）60、Claude Opus 5.5（Max）59」
+- 関係の描き方: 上から下へのじょうご型。下に例示ラベル「2026-11 時点: Claude Fable 5.2（Max）65、Gemini 4 Carbon（High）60」
 
 ## 会話での使い方例
 
@@ -93,9 +94,10 @@ Chatbot Arena、effort レベル、グッドハートの法則
 ## 関連用語
 
 - Chatbot Arena
-- Terminal-Bench
 - effort レベル
 - グッドハートの法則
+- 評価ハーネス
+- ベンチマークの飽和
 
 <!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
 
@@ -128,7 +130,7 @@ Chatbot Arena、effort レベル、グッドハートの法則
 - 描く内容: 上段に 9 つの小さな試験の箱、中段に 4 分野の箱（各 25%）、下段に 1 つの総合点。じょうごの形。非公開テストには鍵アイコン。右脇に同じモデルが effort 別に複数行ある小さな表
 - 登場人物（いれば）: 読者キャラ（非エンジニア）が表を見上げている
 - 吹き出し・心の声: 読者「同じモデルなのに、点が何行もある？」／表の脇「設定（effort）で点が変わるんだって」
-- 中央に置くキーワード/ラベル: 総合点 ／ 4 分野 各 25% ／ 例示「2026-11 時点: Gemini 4 Carbon（High）60、Claude Opus 5.5（Max）59」
+- 中央に置くキーワード/ラベル: 総合点 ／ 4 分野 各 25% ／ 例示「2026-11 時点: Claude Fable 5.2（Max）65、Gemini 4 Carbon（High）60」
 
 ### 6 視点アイコン（右ページ上段）
 
@@ -149,12 +151,14 @@ Chatbot Arena、effort レベル、グッドハートの法則
 - E-1 SWE-Bench／E-26 Humanity's Last Exam／E-3 Terminal-Bench との関係：Index の構成要素になりうる個別の試験。v5 では Humanity's Last Exam が HLE-Diamond に入れ替わったとされる（二次情報）
 - G-9 effort レベルとの関係：同じモデルでも effort で点とコストが大きく動く（例：Claude Opus 5.5 は low で 35、max で 58 前後、max は 1 タスクあたり約 10 倍のコストと報じられている）。具体値は本文に出さず、ここで保持
 - J-114 グッドハートの法則との関係：指標が目標になると指標として働かなくなる。v5 が約 60% を非公開または答えを伏せた評価にしたのは、既知の問題を学習して点を稼ぐ（汚染）ことへの対策という位置づけ
+- E-53 評価ハーネス／E-54 ベンチマークの飽和との関係：同じモデルでもハーネスと設定で点が変わる（E-53）。Index は飽和した試験を入れ替えて寿命を延ばす設計（E-54）。詳細は各エントリに任せる
 - D-48 DeepSeek V4 との接点：オープンウェイトの首位と全体首位の差が 3 ポイントから 12 ポイントに開いた、と AA が発表したとされる（二次情報）
 
 ## 出典メモ
 
 - artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5（検索経由・二次情報）— checked 2026-11-06
 - artificialanalysis.ai/leaderboards/models（検索経由・二次情報）— checked 2026-11-06
+- 2026-11-09 以降の首位に関する報道・リーダーボード抜粋（検索経由・二次情報）— checked 2026-11-13
 
 ## 備考
 
@@ -162,5 +166,6 @@ Chatbot Arena、effort レベル、グッドハートの法則
 - **start_date 2026-10-27 は v5 の発表日**です。Index 自体の開始日ではありません
 - v5 の概要（二次情報）：9 つの評価を 4 分野（Knowledge Work・Coding・Science・General）に各 25% で配分／約 60% が非公開テストまたは答えを伏せた評価／FrontierCode 2.0 と Terminal-Bench-Science を追加、GDPval-AA・SciCode・AA-LCR を外した／v4 以前と直接比べられず、時系列比較には別の「Progress Index」を使うよう AA が案内／1 タスクあたり出力トークン中央値が 3.5 万から 5.9 万に増加
 - 2026-11 初旬の上位（AA リーダーボードの検索結果抜粋、98 モデル中）：Gemini 4 Carbon（High）60、Claude Opus 5.5（Max）59、Gemini 4 Carbon（Medium）58、Claude Opus 5.5（Xhigh）57。Google 発表では Carbon は 59 とされ、AA の値と 1 点の差があります
+- 2026-11-13 更新（二次情報・一次未確認）：2026-11-09 の Claude Fable 5.2 発表以降は、Fable 5.2（Max）が 65 で首位、Gemini 4 Carbon（High）が 60 と報じられています。メイン図の例示ラベルはこれに合わせて差し替え済み。11-12 公開の Gemini 4 Hydrogen の点は未確認
 - 著者はこのリーダーボードを、ふだん主要モデルの一覧として参照しています（著者記入欄には書いていません）
 - 順位・スコアは時変情報です。次回の鮮度監査で Index の版（v5 以降）を確認してください

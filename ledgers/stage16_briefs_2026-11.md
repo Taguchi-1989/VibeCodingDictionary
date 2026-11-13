@@ -1,0 +1,184 @@
+# Stage 16 ブリーフ（2026-11-13）— Muse・Gemini 4 Hydrogen・Fable 5.2、ベンチマークの世代交代、CLAUDE.md の変遷
+
+*著者の指示（2026-11-13、音声入力）:「著者が書いていない部分のモデルや用語を更新してほしい。ジェボンズ（のパラドックス）は LLM の文脈で入れないといけない。Anthropic のブログを見て、CLAUDE.md に書くべきことがどう変遷したか（昔はいろいろ書け → スキルに書け → 今はほとんど書くな）のページを作ってほしい。ベンチマークも上げてほしい。とくにフィジカル AI（RoboDojo）。Humanity's Last Exam は 70% を超えて飽和が近いので別のベンチで測る話、ベンチマーキングをするツール。モデルは Meta の Muse 系、Google の Argon / Carbon / Hydrogen」。*
+
+*「JEF」「ディシジョンズ APIs」は音声認識の崩れで、確認に対する著者の返答は「Jev です」。**ジェボンズのパラドックス（Jevons paradox）と解釈**して J-153 を立てています（違っていた場合は差し替え）。*
+
+## 情報源の扱い（2026-11-13 確認）
+
+- **直接取得できた一次情報**: code.claude.com（best-practices / memory）、claude.com/blog（steering-claude-code…、using-claude-md-files）、anthropic.com/claude/fable
+- **検索経由（二次情報を含む）**: Meta（ai.meta.com）、Google（deepmind.google）、arXiv、Wikipedia、Artificial Analysis、tbench.ai、claude.dev（「The new rules of context engineering…」の本文）。環境のネットワーク制限で直接取得できません
+- 二次情報だけの数字には「〜と報じられています」「〜とされます」を使い、備考に「一次未確認」と書く
+
+## 書き方の共通指示（全件）
+
+- **「現行」「最新」「主力」と書かない**。時点は年月で固定する
+- 後継の固有名は本文に書き込まず備考へ
+- 価格・スコアは誌面本文には最小限。具体値はメイン図のラベル（「2026-11 時点」つき）か備考へ
+- `evaluation_date: 2026-11-13`、`last_audited: 2026-11-13`
+- 著者記入欄（非エンジニアのつまずき／私のコメント）は**空スケルトンのまま**
+- 既存エントリの改訂では `evaluation_date` を動かさず、`last_audited: 2026-11-13` だけ更新する。**著者記入欄には一切触れない**
+- 文体・字数は [docs/v2_rules_summary.md](../docs/v2_rules_summary.md) と [docs/entry_schema.yaml](../docs/entry_schema.yaml)。見本は `content/entries/benchmark/E-52_artificial_analysis_index[人書].md`
+
+## ID 一覧（空き番号のみ）
+
+| ID | title | title_reading | category | subtype | figure_type | reader_level | importance |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| D-36 | Muse 系 | ミューズ系 | model | other_closed | comparison | 3 | B |
+| E-35 | RoboDojo | ロボドージョー | benchmark | agent | structure | 3 | C |
+| E-53 | 評価ハーネス | ひょうかハーネス | benchmark | general | workflow | 3 | C |
+| E-54 | ベンチマークの飽和 | ベンチマークのほうわ | benchmark | general | timeline | 2-3 | B |
+| H-65 | CLAUDE.md に書くことの変遷 | クロードエムディーにかくことのへんせん | history | timeline | timeline | 3 | B |
+| J-153 | ジェボンズのパラドックス | ジェボンズのパラドックス | term_general | ai_concept | structure | 2-3 | B |
+
+---
+
+## D-36 Muse 系
+
+### 押さえる事実（すべて検索経由。Meta 公式は直接取得不可）
+
+- **Meta Superintelligence Labs（MSL）が作るモデル群**。Llama 系（D-40、2023〜2025）の後継と位置づけられている
+- **Muse Spark**: 2026-04-08 発表。Muse ファミリーの 1 本目。文字・画像などをまとめて扱う推論モデルで、ツール利用・複数エージェントの取りまとめに対応（Meta 公式ブログ、CNBC、Axios）。Alexandr Wang 氏が率いる体制での最初の主要モデルと報じられた
+- **Muse Spark 1.1**: 2026-07-09。**Meta Model API の公開プレビュー**と同時。文脈 100 万トークン、入力 $1.25 / 出力 $4.25（100 万トークンあたり）と報じられています。**Llama と違い、重みを配らずトークン課金で提供する**形に変わった点が大きい
+- **Muse Glimmer**: 2026-08-10。**重み公開**（Apache 2.0、30B の小型モデル、Muse Spark からの蒸留、ノート PC で動かす想定）と報じられています（CNBC）
+- **Muse Spark Open**: 2026-10-15。Muse Spark の重み公開版。総パラメータ 816B／稼働 42B の MoE、文脈 100 万トークン。ライセンスは独自の「Muse Model License」で、製品への表示義務や一定売上以上の提供事業者への別契約があるとされます（二次情報）
+- **API で提供されるほかの名前**: Muse Wonder／Muse Ember／Muse Image／Muse Voice Transcribe（Meta Model API のモデル一覧、検索経由）。Spark は 1.3 まで版が進んだとされます。Muse Wonder（max）は Artificial Analysis の旧版指標（v4.3.2）で 52.4・12 位という記載あり（二次情報）
+- **日付の食い違い**: 英語版 Wikipedia の一部は Muse Spark を 2026-07-09 と書くが、Meta の発表は 2026-04-08（07-09 は 1.1 と API）。備考に残す
+
+### 書き方の指示
+
+- figure_type `comparison`。「API で借りる Muse（Spark・Wonder・Ember）」と「重みをもらえる Muse（Glimmer・Spark Open）」の 2 列
+- 核は「**Llama は配るモデルだった。Muse は“貸す”が基本で、一部だけ配る**」
+- 注意点は「同じ Muse でも、使える場所とライセンスが名前ごとに違う」
+- D-40 Llama 系、J-36 蒸留、オープンウェイトに関する既存エントリと相互参照。related_terms は既存エントリのタイトルと一致させる
+- `start_date: 2026-04-08`、`version_status: active`、`pricing_note: paid`
+
+---
+
+## E-35 RoboDojo
+
+### 押さえる事実（すべて検索経由。arXiv・公式サイトは直接取得不可）
+
+- **ロボットを動かす汎用モデル（VLA などの操作ポリシー）を、シミュレーションと実機の両方で測る統一ベンチマーク**。論文は arXiv 2607.04434（2026-07-05）「RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies」
+- 規模: **シミュレーション 42 課題＋実機 18 課題**、5 つの能力軸（汎化・精密さ など）、公開時点で 30 のポリシーを統合。**RealEval** という仕組みで、クラウド経由で実機評価を回せる
+- **点が低いのが特徴**: 公開時（2026-07）のシミュレーション首位は成功率 8.80%（スコア 13.07）。実機 18 課題の最高平均成功率は 12.8%（π0.5）と報じられています。2026 年夏〜秋にかけて各社が 13〜35% 台の自己申告を出しており、公式の順位表とは別に扱う必要があります
+- **言語モデル側も載せ始めた**: Anthropic は 2026-11-09 の Claude Fable 5.2 の発表ページで「RoboDojo Sim」を掲載（Fable 5.2 64.9%、Fable 5.1 27.6%、Opus 5.5 39.4%、GPT-6 Astra 29.8%）。**これは一次情報（anthropic.com/claude/fable）で確認済み**。ただし論文の順位表（ロボット専用ポリシー）とは測り方・設定が違う可能性が高く、**並べて比べない**
+- 中国語圏の百科記事は公開日を 2026-08-12 とするが、arXiv の日付（07-05）と合わない。備考へ
+- 名前の「Dojo」は道場
+
+### 書き方の指示
+
+- figure_type `structure`。左に「シミュレーション 42 課題」、右に「実機 18 課題」、下で 1 枚の順位表に合流
+- 核は「**文章の試験は 7 割を超えたが、ロボットの手仕事はまだ 1〜2 割**。伸びしろが残る試験」
+- 注意点は「自己申告の点と公式の順位表は別」「シミュレーションの点と実機の点は別」
+- J-6 フィジカル AI、J-7 VLA、J-5 世界モデル、E-54 ベンチマークの飽和 と相互参照
+- `start_date: 2026-07-05`、`version_status: active`、`pricing_note: free`
+
+---
+
+## E-53 評価ハーネス
+
+### 押さえる事実
+
+- **ベンチマークを実際に走らせるための道具（実行基盤）**。問題集（ベンチマーク）そのものではなく、「モデルやエージェントに問題を渡し、隔離した環境で動かし、採点して記録する」側の仕組み
+- **Harbor**: コンテナ環境でエージェントとモデルを評価・改善するための枠組み。**Terminal-Bench 4.0 は Harbor の上に作られ**、`harbor run -d terminal-bench/terminal-bench@4.0.0` で実行する（tbench.ai・harborframework.com、検索経由）
+- **Inspect AI**: 英国 AI Security Institute が公開している評価フレームワーク。研究論文では、ベンチマークを Inspect 互換のラッパー（`inspect_harbor`）経由で読み込む例がある（検索経由）
+- **同じモデルでも、ハーネスと設定で点が変わる**: ツールあり／なし、effort（考える量）、時間・CPU・メモリの割り当て。例: Humanity's Last Exam は「ツールあり」と「ツールなし」で別の数字。Terminal-Bench 4.0 は課題ごとの時間・CPU・メモリを較正し直した版（2026-08-28）
+- Anthropic の Claude Code 文書でも、モデル（考える側）とハーネス（Claude Code 本体＝実行する側）を分けて説明している。本書の G 章「ハーネス」系エントリがあれば相互参照（タイトルは既存に合わせる）
+- 一般の読者にとっての意味: **スコアを読むときは「何で、どの設定で測ったか」をセットで見る**
+
+### 書き方の指示
+
+- figure_type `workflow`。問題集 → ハーネス（隔離環境で実行）→ 採点 → 順位表、の流れ
+- 核は「**問題集と試験会場は別物**。会場（ハーネス）が変わると点も変わる」
+- E-3 Terminal-Bench、E-52 Artificial Analysis Intelligence Index、effort レベル と相互参照
+- `version_status: active`、`pricing_note: free`（多くが OSS）
+
+---
+
+## E-54 ベンチマークの飽和
+
+### 押さえる事実
+
+- **上位モデルの点が満点近くに張りつき、モデルの差を測れなくなること**。問題が学習データに混ざる「汚染」と並ぶ、ベンチマークの寿命の原因
+- **歴史の型**: MMLU（E-20）・HumanEval（E-4）・GSM8K（E-23）は飽和 → MMLU-Pro、SWE-bench Verified など難しい後継へ。本書の E 章はその世代交代を並べている
+- **2026 年秋の実例**
+  - **Humanity's Last Exam（E-26）**: 公開時（2025 年初め）は上位でも 1 桁〜10% 前後だった。**2026-11-09 の Claude Fable 5.2 は「ツールあり」で 74.2%**（Fable 5.1 65.6%、Opus 5.5 67.7%、GPT-6 Astra 57.2%。**anthropic.com/claude/fable で確認した一次情報**）。「人類最後の試験」が 2 年足らずで 7 割を超えた
+  - **HLE-Diamond**: Center for AI Safety と Scale AI が元の問題を 1 年かけて磨き直した 1,000 問（推論 500＋知識 500）の版。Artificial Analysis は v5 で元の HLE をこれに入れ替えたとされます（検索経由）
+  - **SWE-bench Pro**: 2026-09 時点で「飽和しつつある」と評され、2026-09-22 の V2 もすでに天井近くと報じられています（二次情報）
+  - **Terminal-Bench 4.0（2026-08-28）**: 飽和した課題・解法が公開された課題など 8 件を外して 66 課題に。「連続的に更新するベンチマーク」に運用を変えた（tbench.ai、検索経由）
+- **次に使われ始めた物差し（2026-11 の Fable 5.2 発表ページに並ぶもの）**: FrontierCode 2.0／FrontierSWE v2（エージェントによるコーディング）、AutomationBench（業務フロー）、Terminal-Bench-Science、OSWorld 2.1（PC 操作）、Remote Labor Index（請負仕事）、AA-Briefcase、RoboDojo Sim（E-35）。**多くがまだ 4〜7 割台、Remote Labor Index は 41.3%**。知識を問う試験から、**長い仕事をやり切れるかを測る試験**へ重心が移っている
+- グッドハートの法則（J-114）: 指標が目標になると指標として働かなくなる
+
+### 書き方の指示
+
+- figure_type `timeline`。古い試験が天井に当たるたび、難しい試験にバトンが渡る階段の図。右端に「知識の試験 → 仕事の試験」
+- 核は「**満点が近い試験は、もう差を教えてくれない**。記事で引かれている試験が“まだ効く試験か”を見る」
+- 具体スコアはメイン図の例示ラベル（「2026-11 時点」）と備考へ。本文は「7 割を超えた」程度
+- E-26 Humanity's Last Exam、E-20 MMLU、E-3 Terminal-Bench、E-52、J-114 と相互参照
+- `version_status: active`、`pricing_note: free`
+
+---
+
+## H-65 CLAUDE.md に書くことの変遷
+
+### 押さえる事実（Anthropic の公開情報を時系列で。★＝2026-11-13 に直接取得して確認）
+
+| 時期 | 出どころ | 何と言っていたか |
+| :-- | :-- | :-- |
+| 2025-04 | Anthropic Engineering「Claude Code: Best practices for agentic coding」（2025-04-18。現在は code.claude.com/docs/en/best-practices へ転送され、当時の本文は直接確認できない＝**記憶・二次情報**） | **書くことを勧める時期**。よく使う bash コマンド、主要ファイル、コードスタイル、テストのやり方、リポジトリの作法、開発環境、想定外の挙動や注意点を書く。「IMPORTANT」「YOU MUST」のような強調で従わせやすくなる、`#` キーで指示を CLAUDE.md に追記できる、と案内 |
+| 2025-10-16 | 「Introducing Agent Skills」（claude.com/blog/skills、検索経由） | **スキル登場**。必要なときだけ読み込む（プログレッシブディスクロージャ）。常時読み込みの CLAUDE.md と役割が分かれ始める |
+| 2025-11-25 ★ | 「Using CLAUDE.md files: Customizing Claude Code for your codebase」 | まだ**足す寄り**。プロジェクトの概要とディレクトリ構成、自作ツールの使い方、標準の作業手順（テスト要件・コミット形式）を書く。ただし「簡潔で人が読める形に」「単純に始めて、困ったときだけ足す」「`/init` の出力は出発点」「長くなったら別ファイルに分ける」も併記 |
+| 2026-02 | Claude Code v2.1.59 前後で **auto memory**（検索経由・二次情報） | **Claude が自分でメモを書く**仕組み（MEMORY.md）。人が CLAUDE.md に足していた「学び」の一部が、Claude 側の仕事になる |
+| 2026-06-18 ★ | 「Steering Claude Code: when to use CLAUDE.md, skills, hooks, and subagents」（Michael Segner） | **振り分けの時期**。舵取りの手段は 7 つ（CLAUDE.md／rules／skills／subagents／hooks／output styles／システムプロンプトへの追記）。「CLAUDE.md は Claude が常に持っておくべき事実のため」「**手順はスキルへ**」「必ず起きてほしいことはフックへ」「**CLAUDE.md は 200 行未満、持ち主を決め、変更はコードのようにレビュー**」 |
+| 2026-07-24 | 「The new rules of context engineering for Claude 5 generation models」（Thariq Shihipar とされる。本文は claude.dev にあり直接取得不可＝**検索経由**） | **削る時期**。Claude Opus 5／Fable 5 向けに Claude Code のシステムプロンプトを 80% 超削っても、コーディング評価で測れる低下はなかった、と公表。「システムプロンプトでも CLAUDE.md やスキルでも、制約をかけすぎていた」。CLAUDE.md を規則集として育てたチームは技術的負債を抱えている、という趣旨の記述があったと報じられています。削減率は実質 70% 前後という第三者の指摘もあり |
+| 2026-11 ★ | Claude Code 公式ドキュメント（best-practices / memory） | **「Keep CLAUDE.md short」**。「毎セッション読み込まれるので、どの行も毎回 Claude の注意を少しずつ使う」「**コードから読み取れないことだけ書く**」。アーキテクチャやファイル構成の説明は「Claude が自分でリポジトリを読むので不要」。チームの手順はスキルへ、例外なしのルールはフック・deny ルールへ。「IMPORTANT を足しても直らないなら、長すぎるか、フックに移すべき行」。`/doctor` が削れる箇所を提案、`/doctor prompt-audit`（v2.1.283 以降）が「古いモデル向けに書かれた指示」や矛盾を指摘。目安は 1 ファイル 200 行未満 |
+
+- **3 段の流れ**: ① 足す（2025 年春〜秋）→ ② 分ける（2025 年秋〜2026 年春：スキル・rules・フック・auto memory）→ ③ 削る（2026 年夏〜：モデルが賢くなり、書きすぎが害になる）
+- **なぜ変わったか**: モデルが賢くなり、補助輪だった指示が要らなくなった／常時読み込みは毎回文脈（コンテキスト）を使う／手順は必要なときだけ読めばよい（スキル）／守らせたいことは「お願い」ではなく仕組み（フック）で
+- **今も残すもの**（2026-11 の公式文書）: コードから分からないこと。チェックを走らせるコマンド、落とし穴、理由、ツールの既定と違う取り決め
+- 強調語（IMPORTANT）の評価が 2025-04 と 2026-11 で逆転している点は、変遷を示す分かりやすい 1 例
+
+### 書き方の指示
+
+- figure_type `timeline`。「足す → 分ける → 削る」の 3 段。CLAUDE.md の紙が、だんだん薄くなり、横にスキル・フック・メモの箱が増える
+- 核は「**昔の“たくさん書け”は間違いではなく、当時のモデルに合っていた**。モデルが変われば、書く量も変わる」
+- 「ほとんど書くな」と断定しない。公式の言い方は「コードから分からないことだけ」「短く保つ」
+- 一次未確認の 2 件（2025-04 の原文、2026-07 の本文）は備考に明記
+- G-20 CLAUDE.md、G-22 SKILL.md、G-21 AGENTS.md、G-45 プログレッシブディスクロージャ、G-11 コンテキストエンジニアリング、フック関連エントリと相互参照（タイトルは既存に合わせる）
+- `start_date: 2025-04-18`、`version_status: active`、`pricing_note: free`
+- **このリポジトリ自身の CLAUDE.md（約 200 行）がまさに①〜②の作法で書かれている**ことは誌面に書かない（備考に 1 行だけ）
+
+---
+
+## J-153 ジェボンズのパラドックス
+
+### 押さえる事実
+
+- **効率が上がって安く使えるようになるほど、使う総量はかえって増える**という経済の現象。英国の経済学者ウィリアム・スタンレー・ジェボンズが 1865 年の著書『石炭問題（The Coal Question）』で、蒸気機関の効率が上がるほど石炭の総消費が増えたことを指摘した
+- **AI での引かれ方**: 2025-01 の DeepSeek ショック（H-64）の直後、Microsoft のサティア・ナデラ CEO が「Jevons paradox strikes again!（ジェボンズのパラドックスがまた起きた）」と投稿し、AI の文脈で一気に広まった（著者・AI の知識。今回の検索では再確認できず＝備考へ）
+- **2026 年のデータ（すべて二次情報）**: a16z のデータとして「2026-05 以降、平均トークン単価は 67% 下がったが、トークンへの総支出は 122〜160% 増えた」と報じられています。別の集計では、1 トークンあたりの価格は 2023 年から約 90% 下がった一方で、LLM への総支出は 2025 年末からほぼ倍。背景はエージェントが人よりはるかに多くのトークンを使うこと
+- **読者に効く場面**: 「単価が下がったのに請求が増えた」「モデルが安くなったのにデータセンターと電力の投資が増え続ける」の説明になる
+- **限界**: 必ず起きる法則ではない。需要が価格に強く反応するときにだけ起きる。投資を正当化する決まり文句としても使われるので、**「だから需要は無限」という主張とは分けて読む**
+
+### 書き方の指示
+
+- figure_type `structure`。中心に「安くなる」、そこから「使い道が増える」「1 回に使う量が増える（エージェント）」へ矢印が伸び、合流して「総量は増える」
+- 核は「**1 回は安くなった。でも回数が桁違いに増えた**」
+- reader_level 2-3。数式は使わない
+- H-64 DeepSeek ショック、トークン、データセンターと電力、ムーアの法則 など既存エントリと相互参照（タイトルは既存に合わせる）
+- `version_status` は概念なので空でよい（既存の J 章概念エントリに合わせる）、`pricing_note` も同様
+
+---
+
+## 改訂対象（既存エントリ。`last_audited: 2026-11-13`、著者記入欄は触らない）
+
+| ID | 何を直すか | 根拠 |
+| :-- | :-- | :-- |
+| D-6 Gemini 4 系 | **Gemini 4 Hydrogen（2026-11-12）**を追加。Carbon から派生した、エージェント作業を速く回すための版。入力 $1.50 / 出力 $7.50、Gemini 3.8 Flash の置き換えと報じられています。3 本とも文脈 100 万トークン。API ID は `gemini-4-hydrogen` / `-argon` / `-carbon`。「Argon ／ Carbon の 2 本」という記述を 3 本に。Google DeepMind のモデルカード（直接取得不可）は「Carbon と Argon は長く深い推論、Hydrogen はエージェントの速い実行」と位置づけ | 検索経由 |
+| D-16 Claude Fable / Mythos | **Fable 5.2 / Mythos 5.2（2026-11-09）**を追記。Fable 5.2 は $8 / $40（5.1 の $10 / $50 から値下げ）、Fast mode $16 / $80（最大 2.5 倍速）、Pro / Max / Ultra / Team / Enterprise で利用可。Mythos 5.2 は引き続き検証プログラム経由。数日単位の作業・数百以上のサブエージェントの取りまとめをうたう | anthropic.com/claude/fable ★ |
+| D-40 Llama 系 | 「後継は Muse 系（D-36）」への導線を備考と関連に。本文に Muse の固有名を増やしすぎない | 検索経由 |
+| E-26 Humanity's Last Exam | 2026-11 に「ツールあり」で 74.2%（Fable 5.2）。磨き直し版 HLE-Diamond。E-54 への導線。「まだ誰も解けない試験」という書きぶりが残っていれば時点を固定 | anthropic.com ★／検索経由 |
+| E-3 Terminal-Bench | 4.0（2026-08-28、66 課題、Harbor 上、連続更新型に）。E-53 への導線 | 検索経由 |
+| E-52 AA Intelligence Index | 2026-11-09 以降は Claude Fable 5.2（max）が 65 で首位、Gemini 4 Carbon（high）60 と報じられています。メイン図の例示ラベルと備考を更新 | 検索経由 |
+| G-20 CLAUDE.md | 2026-11 の公式ガイド（短く保つ／コードから分からないことだけ／200 行未満／手順はスキルへ／`/doctor`）と食い違う記述がないか確認し、H-65 への導線を足す | code.claude.com ★ |

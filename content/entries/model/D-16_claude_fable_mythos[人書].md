@@ -14,7 +14,7 @@ end_date:
 version_status: active
 pricing_note: paid
 evaluation_date: 2026-11-06
-last_audited: 2026-11-06
+last_audited: 2026-11-13
 related_terms:
   - Claude Mythos Preview
   - トラステッドアクセス
@@ -47,10 +47,11 @@ Fable は API のほか、AWS・Google Cloud・Microsoft Azure でも使えま�
 
 ### B. 登場シーン（figure_type: structure）
 
-- 中央: モデル本体（Fable 5 / Mythos 5 は 2026-06-09 公開、5.1 は 2026 年 9 月公開）
+- 中央: モデル本体（Fable 5 / Mythos 5 は 2026-06-09 公開、5.1 は 2026 年 9 月、5.2 は 2026-11-09 公開）
 - 左の出口: Fable — 誰でも通れる扉。サイバー面では脆弱性を見つけられるが攻撃コードは作らない
 - 右の出口: Mythos — 検問つきの扉。CVP・LSVP の承認組織のみ
-- 共通値: 文脈 100 万トークン・出力 12.8 万トークン・入力 $10 / 出力 $50（2026-11 時点）
+- 共通値: 文脈 100 万トークン・出力 12.8 万トークン（2026-11 時点）
+- 価格ラベル: Fable 5.2 は入力 $8 / 出力 $40（5.1 の $10 / $50 から値下げ）。高速モード（Fast mode）は $16 / $80 で最大 2.5 倍速（2026-11 時点）
 
 ## 会話での使い方例
 
@@ -147,13 +148,17 @@ Mythos は申請と審査が要り、誰でも使えません。
 - 前身の Claude Mythos Preview（D-14、2026-04 発表、Project Glasswing 経由の限定提供）は、2026-06-09 に非推奨になりました。本エントリはその後継にあたります。
 - 検証済みの組織だけに開く提供方式の一般論は J-151 トラステッドアクセスが担当します。本エントリは Anthropic の Fable / Mythos に絞ります。
 - 5 系の総論は D-15、5.5 世代は D-17 を参照してください。
+- Fable 5.2 の値下げ・高速モードの価格は誌面本文に出さず、メイン図のラベル（2026-11 時点）と備考で扱います。Artificial Analysis での順位は E-52 側に任せます。
 
 ## 出典メモ
 
 - Anthropic「Claude Fable and Mythos 5.1」https://www.anthropic.com/claude-fable-and-mythos-5-1 — checked 2026-11-06
 - Anthropic 公式ドキュメント「Fable 5 overview」https://platform.claude.com/docs/en/models/fable-5/overview — checked 2026-11-06
+- Anthropic「Claude Fable」https://www.anthropic.com/claude/fable（5.2 の価格・提供プラン）— checked 2026-11-13（直接取得）
 - Anthropic「Cyber Verification Program」https://www.anthropic.com/news/cyber-verification-program — checked 2026-11-06
 
 ## 備考
 
 モデル名・価格・提供状況は時変情報です。公式は Fable と Mythos を「same model with different safeguards」と説明しています。Mythos 5.1 は 2026-11 時点で米国の組織に限定されています。Fable 5.1 / Mythos 5.1 は 2026 年 9 月公開で、価格は据え置き、キャッシュ読み出しを 75% 値下げし、典型的な使い方で約 25% 安くなると説明されています。公式の退役予定日は「2027-09-01 より前にはしない」で、Anthropic のニュース一覧の掲載日は 2026-09-15 のため、日付は月までで書いています。思考は常時オンで、effort の既定は high です。Project Glasswing は 2026-10-06 に Cyber Verification Program（CVP）へ統合され、CVP は Defense / Red Team / Specialized の 3 段に再編されました。Glasswing 参加組織は 2026-04〜07 に検証済み脆弱性 12 万 9,000 件以上を報告しています。Mythos 5 は 2026-06-12 に一時提供停止、輸出規制の解除を受けて 2026-07-01 に再開と報じられています（二次情報）。
+
+**2026-11-13 追記（Fable 5.2 / Mythos 5.2）**：2026-11-09 に公開。Anthropic 公式ページ（直接取得）によると、Fable 5.2 は入力 $8 / 出力 $40（100 万トークンあたり。5.1 の $10 / $50 から値下げ）、高速モード（Fast mode）は $16 / $80 で最大 2.5 倍速です。Pro / Max / Ultra / Team / Enterprise の各プランで利用でき、数日単位の作業や数百以上のサブエージェントの取りまとめをうたっています。Mythos 5.2 は引き続き検証プログラム経由の提供です。上の「5.1」の記述（キャッシュ値下げ、退役予定日、米国限定など）は 5.1 時点のもので、5.2 で変わったかは未確認です。本文の「まず Opus 5.5 を試す」案内も 5.1 時点の公式案内で、5.2 時点の再確認が必要です。

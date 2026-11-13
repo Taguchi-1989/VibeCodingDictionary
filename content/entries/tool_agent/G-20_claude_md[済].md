@@ -14,12 +14,12 @@ end_date:
 version_status: active
 pricing_note: none
 evaluation_date: 2026-04-29
+last_audited: 2026-11-13
 related_terms:
   - Claude Code
-  - System Prompt
-  - Context
   - AGENTS.md
   - Memory
+  - CLAUDE.md に書くことの変遷
 status: ready
 ---
 
@@ -33,7 +33,7 @@ Claude Code（略称 CC）がセッション開始時に自動で読む、プロ
 
 ## 何をしてくれるか
 
-プロジェクトのルートや `~/.claude/` に置くと、CC がセッション開始時に読み込みます。規約や注意事項を書いておけば、毎回手入力しなくても CC が文脈を把握した状態で動き始めます。
+プロジェクトのルートや `~/.claude/` に置くと、CC がセッション開始時に読み込みます。コードから分からない規約や注意事項を書いておけば、毎回手入力しなくても CC が文脈を把握した状態で動き始めます。
 
 ## どこで出会うか
 
@@ -69,7 +69,7 @@ CC がセッション開始時に読む、プロジェクト専用の記憶フ�
 
 ### 3. 注意点
 
-書きすぎると Context を圧迫し、応答が劣化することがあります。
+毎回読まれるため、長いと注意が散ります。短く保つのが公式の勧めです。
 
 ### 4. どこで役立つか
 
@@ -81,23 +81,22 @@ CC がセッション開始時に読む、プロジェクト専用の記憶フ�
 
 ### 6. 深掘り先
 
-AGENTS.md、Memory、Context Window
+AGENTS.md、Memory、CLAUDE.md に書くことの変遷
 
 ## 開発フローでの位置（必須）
 
-1. 規約を整理 — 言語・スタイル・禁止事項を箇条書きにまとめる
+1. 規約を整理 — コードから分からないことだけを選んで箇条書きにする
 2. CLAUDE.md を作成 — プロジェクトルートに置き、規約や注意点を記述する
 3. CC が読み込む — セッション開始時に CC がプロジェクトの文脈を把握する
 4. 変更時に更新 — チームの合意を得てファイルを修正し Git でレビューする
-5. 肥大化を防ぐ — 不要なルールを削り、Context の圧迫を定期的に解消する
+5. 肥大化を防ぐ — 200 行未満を目安に削り、手順はスキルへ移す
 
 ## 関連用語
 
 - Claude Code
-- System Prompt
-- Context
 - AGENTS.md
 - Memory
+- CLAUDE.md に書くことの変遷
 
 <!-- ━━━━━━━━ 著者記入欄（右ページ下段に印刷される／AI は触らない） ━━━━━━━━ -->
 
@@ -151,14 +150,18 @@ AGENTS.md、Memory、Context Window
 - SKILL.md（G-22）との住み分け：CLAUDE.md はプロジェクト全体の記憶。SKILL.md はエージェントが参照するスキル・手順書単位のファイル。役割分担が異なる。
 - .claude/settings.json（G-23）との住み分け：設定ファイルで権限・ツール・Hook を制御し、CLAUDE.md は自然言語で文脈・規約を伝える。両者は補完関係。
 - Hook（G-31）/ Slash Command（G-32）は CLAUDE.md 内で言及されることが多いが、別エントリで詳細を扱う。
-- Memory（別エントリ候補）との住み分け：CLAUDE.md はファイルベースの静的な記憶。Memory は CC が実行中に動的に書き込む仕組み。
+- Memory（別エントリ候補）との住み分け：CLAUDE.md は人が書くファイルベースの記憶。Memory（auto memory）は CC が実行中に自分でメモを書く仕組み。
+- H-65 CLAUDE.md に書くことの変遷への導線：「昔はいろいろ書け → スキルへ分けろ → 今は短く、コードから分からないことだけ」という推奨の移り変わりは H-65 に任せる。本エントリは 2026-11 時点の公式ガイドに沿った現在形の説明にとどめる
+- 手順はスキル（G-22）へ、例外なしのルールはフック・deny ルールへ、という振り分けが 2026-11 の公式ガイド。`/doctor` が削れる箇所を提案する
 
 ## 出典メモ
 
 - docs.anthropic.com/en/docs/claude-code/memory — checked 2026-04-29
+- code.claude.com（best-practices / memory）— checked 2026-11-13
+- claude.com/blog「Steering Claude Code: when to use CLAUDE.md, skills, hooks, and subagents」（2026-06-18）— checked 2026-11-13
 
 ## 備考
 
 - CLAUDE.md の読み込み順はグローバル（`~/.claude/CLAUDE.md`）→ プロジェクトルート → サブディレクトリの順。優先度はより具体的（内側）なほど高い。
-- ファイルが大きくなると Context Window を圧迫するため、定期的な整理が推奨される。
+- ファイルが大きくなると Context Window を圧迫するため、定期的な整理が推奨される。2026-11 の公式ガイド（一次確認済み）：毎セッション読み込まれるので短く保つ／コードから読み取れないことだけ書く／1 ファイル 200 行未満が目安／手順はスキルへ／例外なしのルールはフックへ／`/doctor` が削れる箇所を提案（`/doctor prompt-audit` は古いモデル向けの指示や矛盾を指摘）。2026-11-13 に本文の「規約を何でも書く」寄りの記述を改めた。
 - 本書プロジェクト自身が CLAUDE.md を持っている（`C:\Users\user\Desktop\Vibecodingカタログ\CLAUDE.md`）ため、自己言及の実例として扱いやすい。
