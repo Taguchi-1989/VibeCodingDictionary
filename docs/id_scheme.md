@@ -100,6 +100,7 @@ letter は保管用の識別子として固定する（並び替えたらリン�
 | D-10〜19 | Anthropic 系 | D-10 Claude Sonnet 系 / D-11 Claude Opus 系 / D-12 Claude Haiku 系 |
 | D-20〜29 | OpenAI 系 | D-20 GPT-5 系 / D-21 o 系 |
 | D-30〜39 | オープンモデル | D-30 Llama / D-31 Mistral |
+| D-80〜89 | AA 掲載企業のモデル（追加分、2026-11-13 新設） | D-80 MiniMax M 系 / D-81 MiMo / D-82 Inkling。Artificial Analysis に名前が挙がる会社のモデルで、既存のサブ範囲に空きが無いものを置く |
 
 ### E — ベンチマーク・評価指標
 

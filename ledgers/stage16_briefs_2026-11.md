@@ -286,3 +286,62 @@
 
 - **C-4 Meta AI**: 2025 年以降は Meta Superintelligence Labs が Muse 系（D-36）を開発、Llama の後継。`last_audited: 2026-11-13`
 - **C-10 Moonshot AI**: Kimi K3.1 Pro が 2026-11 時点で AA のオープンウェイト上位（46 点）と報じられている。`last_audited: 2026-11-13`
+
+---
+
+## 追補 3（2026-11-13 同日）: 会社とモデルを対で書く
+
+著者の指示:「会社もモデルも書いてほしい」。追補 2 の方針を広げ、**AA に名前が挙がる会社は「会社（C 章）＋その会社のモデル（D 章）」を対で立てます**。モデル側は空きのある **D-80〜89 を「AA 掲載企業のモデル（追加分）」**として使います（[id_scheme.md](../docs/id_scheme.md) に追記）。
+
+すべて検索経由（二次情報を含む）。artificialanalysis.ai 本体は直接取得できませんが、**Inkling・Inkling Small・MiniMax-M3 は AA の比較ページ／記事の見出しが検索結果に出ており、掲載を確認**。Amazon・ByteDance・Baidu・Tencent・Cohere・Liquid AI は AA への掲載そのものは未確認で、主要な LLM 開発元として立てます（備考に明記）。Upstage・IBM は今回調べきれず未着手。
+
+### 共通の書き方
+
+- 会社: 既存の C-16 DeepSeek／C-10 Moonshot AI と同じ frontmatter の入れ方。モデル: 既存の D-44 Kimi／D-48 DeepSeek V4／D-36 Muse 系に合わせる
+- 会社の「5. はじめに」は「創業年・創業者（代表）・代表モデル」の 3 点を押さえる型
+- 評価額・売上・順位・ベンチマーク点は誌面本文に出さず備考へ。「最新」「主力」「必ず」は使わない。時点は年月で固定
+- 創業年・創業者などの基礎情報は一般知識（AI の学習知識）にもとづく。備考に「一次未確認（検索経由・一般知識）」
+- `evaluation_date` / `last_audited`: 2026-11-13、`experience_level: research_only`。著者記入欄は空のまま
+- 字数: tagline 25〜45／何をしてくれるか・どこで出会うか 各 60〜100／会話例 25〜50 の 1 文を「」で／見どころ各 15〜30（合計 120〜240）／開発フロー 5 段 80〜180／左ページ合計 155〜250／関連用語 4〜5 個・合計 20〜50 字（entries.csv のタイトルと完全一致。この追補の新規どうしは可）
+
+### 会社 6 件（category は既存に合わせ person_org / company、figure_type structure、reader_level 3）
+
+| ID | title | title_reading | importance |
+| :-- | :-- | :-- | :-- |
+| C-23 | Amazon | アマゾン | B |
+| C-24 | ByteDance | バイトダンス | C |
+| C-25 | Baidu | バイドゥ | C |
+| C-26 | Tencent | テンセント | C |
+| C-27 | Cohere | コヒア | C |
+| C-28 | Liquid AI | リキッドエーアイ | C |
+
+- **C-23 Amazon**: 1994 年、ジェフ・ベゾス氏が米国シアトルで創業。クラウドの AWS（2006 年〜）が AI の窓口で、**Amazon Bedrock** は自社と他社（Anthropic など）のモデルをまとめて貸す場。Anthropic への大口出資者でもある。自社モデルは **Nova（D-83）**。2026-07 に Nova の一部（Premier・Omni・Reel・Canvas）を縮小して次の旗艦に集中、社内の AGI Lab を閉じたと報じられる。次の基盤モデルは 2026 年末の re:Invent で発表予定とされる。核:「**自分でも作るが、他社のモデルを貸す場所としての顔が大きい**」。related 候補: Amazon Nova／Anthropic／NVIDIA／Microsoft AI
+- **C-24 ByteDance**: 2012 年、張一鳴（チャン・イーミン）氏が北京で創業。TikTok／抖音の会社。AI は **Seed** チームが開発し、対話アプリ **Doubao（豆包）** と、企業向けクラウド **Volcano Engine（火山引擎）** で提供。LLM は **Doubao（Seed）系（D-84）**、動画生成は Seedance（本書 D-56）。核:「**動画アプリの会社。中国で最も使われる対話 AI のひとつを持つ**」。related 候補: Doubao 系／Seedance／Tencent／Alibaba
+- **C-25 Baidu**: 2000 年、李彦宏（ロビン・リー）氏が北京で創業。中国の検索最大手。2023-03 に **ERNIE Bot（文心一言）** を中国の大手で最初に公開。モデルは **ERNIE 系（D-85）**、開発基盤は Qianfan（千帆）。自動運転（Apollo）も手がける。2025 年から ERNIE の重み公開に舵を切った。核:「**中国の検索の会社。対話 AI を国内で最初に出し、のちに配る側に回った**」。related 候補: ERNIE 系／Alibaba／Tencent／DeepSeek
+- **C-26 Tencent**: 1998 年、馬化騰（ポニー・マー）氏らが深圳で創業。WeChat（微信）とゲームの会社。LLM は **Hunyuan（混元、海外名 Hy）系（D-86）**、対話アプリは **Yuanbao（元宝）**。画像・3D・動画の生成モデルも重み公開している。核:「**WeChat の会社。自前のモデルを、手持ちのアプリに組み込んで届ける**」。related 候補: Hunyuan 系／Alibaba／ByteDance／DeepSeek
+- **C-27 Cohere**: 2019 年、カナダ・トロントで創業。創業者は Aidan Gomez 氏（Transformer 論文＝本書 H-58 の共著者のひとり）、Ivan Zhang 氏、Nick Frosst 氏。**企業向け専業**で、自社の環境に置ける（手元やプライベートクラウドで動かせる）ことを売りにする。モデルは **Command 系（D-87）**、検索用の Embed／Rerank、企業向け作業環境 **North**。2026-04 にドイツの Aleph Alpha と統合（買収・合併と報道が割れる）。上場は未定。核:「**一般向けチャットを持たない、企業の中で動かす AI の会社**」。related 候補: Command 系／Transformer 論文／RAG／Embedding（タイトルは CSV で確認）
+- **C-28 Liquid AI**: 2023 年、MIT CSAIL からのスピンアウト。米国マサチューセッツ州ケンブリッジ。共同創業者は Ramin Hasani 氏（CEO）、Mathias Lechner 氏（CTO）、Daniela Rus 氏ほか。線虫の神経回路に着想を得た「リキッドニューラルネットワーク」の研究が出発点。2024-12 に AMD 主導で 2.5 億ドルを調達。モデルは **LFM 系（D-88）**: スマホ・PC・車など**端末の上で動く小さなモデル**。判断専用モデル d1 も出しており、Jev（D-37）と同じ「判断モデル」の文脈で名前が挙がる。核:「**データセンターではなく、手元の端末で動く小さな AI を作る会社**」。related 候補: LFM 系／Jev／SLM 系の既存タイトル／AMD
+
+### モデル 9 件（category model、reader_level 3、figure_type は下表）
+
+| ID | title | title_reading | subtype | figure_type | importance |
+| :-- | :-- | :-- | :-- | :-- | :-- |
+| D-80 | MiniMax M 系 | ミニマックス エム系 | open | structure | C |
+| D-81 | MiMo | ミモ | open | structure | C |
+| D-82 | Inkling | インクリング | open | comparison | C |
+| D-83 | Amazon Nova | アマゾン ノヴァ | other_closed | structure | C |
+| D-84 | Doubao 系 | ドウバオ系 | other_closed | structure | C |
+| D-85 | ERNIE 系 | アーニー系 | open | timeline | C |
+| D-86 | Hunyuan 系 | フンユェン系 | open | structure | C |
+| D-87 | Command 系 | コマンド系 | open | structure | C |
+| D-88 | LFM 系 | エルエフエム系 | open | structure | C |
+
+- **D-80 MiniMax M 系**（会社 C-19）: 文章・コーディング向け。M2.7 → **M3（2026-06 公開）**。428B の MoE（稼働約 23B）、文脈 100 万トークン、画像・動画入力と PC 操作に対応。重みは公開されているが、**独自の MiniMax Community License**（商用では「Built with MiniMax M3」の表示が要るとされる）。AA に掲載あり。動画の Hailuo は別系統。`start_date: 2026-06`、pricing_note freemium 相当は既存に合わせる
+- **D-81 MiMo**（会社 C-20）: **MiMo-V2.6-Pro（2026-09-21 または 22）**。約 1.02 兆パラメータの MoE（稼働約 42B）、文脈 100 万、文字・画像・動画・音声。**MIT ライセンス**で重み公開。軽量の Flash（309B）、高速版 UltraSpeed も。Xiaomi は「AA Intelligence Index で 46 点、重みを落とせるモデルで最高」と発表（同点で Kimi K3.1 Pro を首位とする記事もあり、時点で入れ替わる）。核:「家電メーカーが出した、自由に使える大型モデル」
+- **D-82 Inkling**（会社 C-21）: **2026-07-15**。975B の MoE（稼働 41B）、文脈 100 万、**Apache 2.0** で重み公開（学習データと学習コードは非公開）。**Inkling Small（07-31）** は 276B（稼働 12B）、文脈 256K で、AA は「3 分の 1 以下の大きさで Inkling と 1 点差以内」と記事にした。会社自身が「最高性能ではない」と述べ、**Tinker で自社向けに作り替える土台**として出している。comparison 図は「Inkling ／ Inkling Small」の 2 列
+- **D-83 Amazon Nova**（会社 C-23）: 2024-12 の re:Invent で初代（Micro／Lite／Pro／Premier、画像の Canvas、動画の Reel）。**Nova 2（2025-12）**: Lite・Sonic（音声）が一般提供、Pro・Omni はプレビュー。**Nova Act**（ブラウザ操作エージェント）、**Nova Forge**（自社モデルづくり）。2026-07 に Premier・Omni・Reel・Canvas を縮小と報道（Premier は 2026-09-14 に提供終了予定とされた）。**Amazon Bedrock 経由でだけ使える**のが特徴。`version_status: active`、備考に縮小の報道
+- **D-84 Doubao 系**（会社 C-24）: **Doubao-Seed-2.0（2026-02-14）**: Pro／Lite／Mini の 3 段と Code。**Seed 2.1（2026-06-23、Pro／Turbo、文脈 256K）** と報じられる（二次情報）。Volcano Engine の API は同じモデル ID のまま週 1 回以上更新されるとされ、**版が見えにくい**。重みは非公開。核:「アプリ Doubao の中身。名前は Doubao、開発チームは Seed」
+- **D-85 ERNIE 系**（会社 C-25）: 2019 年からの系譜（ERNIE 1.0 は BERT 系の研究）。2023-03 ERNIE Bot。**ERNIE 4.5 を 2025-06 に Apache 2.0 で重み公開**。ERNIE 5.0／5.1（2026-05-08）は API のみ。**ERNIE-5.5-Flash-Base（2026-11-05）**: 280B の MoE（稼働 14B）を重み公開。ただし**仕上げの学習前の“素”のモデル**で、ライセンスは Baidu 独自。5.5 Flash Preview（11-11）は API 提供、Apache 2.0 での重み公開を 11-25 までにと予告（予定）。timeline 図
+- **D-86 Hunyuan 系**（会社 C-26）: 2023-09 に初公開。**Hy3 preview（2026-04-23）**: 295B の MoE（稼働 21B）、文脈 256K、重み公開。**Hy3 正式版（2026-07-06）**。ライセンスは Apache 2.0 とする記事と独自ライセンスとする記事があり未確定。Yuanbao・CodeBuddy・ima の中身。Hy4 の記載（2026-11-04）が 1 件あるが裏が取れず備考のみ。「Hy」は海外向けの名前
+- **D-87 Command 系**（会社 C-27）: 企業向け。Command R／R+（2024、RAG＝検索して答える用途に強い）→ Command A（2025-03）→ **Command A+（2026-05-20）**: MoE、48 言語、少ないハードウェアで動くことを重視、**Cohere 初の Apache 2.0 での重み公開**と Gomez 氏が投稿。音声認識の Cohere Transcribe（2026-03、Apache 2.0）も。核:「自社の中に置いて動かす前提のモデル」
+- **D-88 LFM 系**（会社 C-28）: Liquid Foundation Models。LFM2（2025）→ LFM2.5（2026、2.6B で文脈 128K・ツール呼び出し対応など）→ **LFM3（2026-10-27）**: 約 2B 級の 6 モデル（文章・画像・音声・omni・判断）を 1 つの土台で。LFM3-1.7B は文脈 256K、**LFM Open License v1.0**（独自。一定規模以上の企業は別契約とされる）。判断モデル d1（d1-ultra は 2026-10-15）。核:「**スマホに入る大きさ**。賢さより、手元で速く動くこと」

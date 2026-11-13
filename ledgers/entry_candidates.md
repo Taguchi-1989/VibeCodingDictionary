@@ -200,6 +200,18 @@
 - **D-70 Amical** — ローカルで動く音声認識モデル／ツール（著者確認済で実在）。一次情報 URL は執筆時に確定する（2026-04-24 時点の WebSearch では該当なし、表記ゆれか新興モデルの可能性）
 - **D-71 Whisper** — OpenAI が公開したオープンな音声認識モデル。多言語対応、ローカル実行可能（whisper.cpp などの派生あり）。音声書き起こしの事実上の標準
 
+### AA 掲載企業のモデル・追加分（D-80〜89）
+
+- **D-80 MiniMax M 系** — MiniMax の文章・コーディング向けモデル。M3 は重み公開（Stage16 追補 3）
+- **D-81 MiMo** — Xiaomi のモデル。V2.6-Pro を MIT で重み公開（Stage16 追補 3）
+- **D-82 Inkling** — Thinking Machines Lab の公開モデル。Apache 2.0（Stage16 追補 3）
+- **D-83 Amazon Nova** — Amazon の自社モデル。Bedrock 経由で提供（Stage16 追補 3）
+- **D-84 Doubao 系** — ByteDance のモデル。Doubao-Seed 2.x（Stage16 追補 3）
+- **D-85 ERNIE 系** — Baidu のモデル。4.5 以降は一部を重み公開（Stage16 追補 3）
+- **D-86 Hunyuan 系** — Tencent のモデル。Hy3 を重み公開（Stage16 追補 3）
+- **D-87 Command 系** — Cohere の企業向けモデル。A+ を Apache 2.0 で公開（Stage16 追補 3）
+- **D-88 LFM 系** — Liquid AI の端末向け小型モデル（Stage16 追補 3）
+
 ## E — ベンチマーク・評価指標
 
 ### コーディング・エンジニアリング（E-1〜19）
@@ -709,6 +721,12 @@
 - **C-20 Xiaomi** — 北京、2010 年創業。MiMo を重み公開（Stage16 追補）
 - **C-21 Thinking Machines Lab** — Mira Murati 氏が 2025 年創業。Tinker と Inkling（Stage16 追補）
 - **C-22 TypeSafe AI** — Jev の開発元。2024 年創業（Stage16 追補）
+- **C-23 Amazon** — AWS と Bedrock。自社モデルは Nova（Stage16 追補 3）
+- **C-24 ByteDance** — TikTok の会社。Seed チームと Doubao（Stage16 追補 3）
+- **C-25 Baidu** — 中国の検索最大手。ERNIE（Stage16 追補 3）
+- **C-26 Tencent** — WeChat の会社。Hunyuan と Yuanbao（Stage16 追補 3）
+- **C-27 Cohere** — 企業向け専業。Command と North（Stage16 追補 3）
+- **C-28 Liquid AI** — MIT 発。端末で動く小さなモデル LFM（Stage16 追補 3）
 - **D-61 AlphaFold** — タンパク質の立体構造を予測しノーベル賞につながったモデル
 - **G-24 Temperature** — 出力のばらつきを決める設定値
 - **G-25 AI のメモリ機能** — 過去の会話から好みや前提を覚えておく仕組み

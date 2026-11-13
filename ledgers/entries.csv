@@ -80,6 +80,12 @@ C-19,,MiniMax,person_org,company,needs_review,Stage16 追補。上海、2021 年
 C-20,,Xiaomi,person_org,company,needs_review,Stage16 追補。北京、2010 年創業。MiMo を重み公開,content/entries/person/C-20_xiaomi[人書].md
 C-21,,Thinking Machines Lab,person_org,company,needs_review,Stage16 追補。Mira Murati 氏が 2025 年創業。Tinker と Inkling,content/entries/person/C-21_thinking_machines_lab[人書].md
 C-22,,TypeSafe AI,person_org,company,needs_review,Stage16 追補。Jev の開発元。2024 年創業,content/entries/person/C-22_typesafe_ai[人書].md
+C-23,,Amazon,person_org,company,drafting,Stage16 追補 3。AWS と Bedrock。自社モデルは Nova,content/entries/person/C-23_amazon.md
+C-24,,ByteDance,person_org,company,drafting,Stage16 追補 3。TikTok の会社。Seed チームと Doubao,content/entries/person/C-24_bytedance.md
+C-25,,Baidu,person_org,company,drafting,Stage16 追補 3。中国の検索最大手。ERNIE,content/entries/person/C-25_baidu.md
+C-26,,Tencent,person_org,company,drafting,Stage16 追補 3。WeChat の会社。Hunyuan と Yuanbao,content/entries/person/C-26_tencent.md
+C-27,,Cohere,person_org,company,drafting,Stage16 追補 3。企業向け専業。Command と North,content/entries/person/C-27_cohere.md
+C-28,,Liquid AI,person_org,company,drafting,Stage16 追補 3。MIT 発。端末で動く小さなモデル LFM,content/entries/person/C-28_liquid_ai.md
 C-50,,Sam Altman,person_org,person,ready,,content/entries/person/C-50_sam_altman[済].md
 C-51,,Dario Amodei,person_org,person,ready,,content/entries/person/C-51_dario_amodei[済].md
 C-52,,Demis Hassabis,person_org,person,ready,,content/entries/person/C-52_demis_hassabis[済].md
@@ -144,6 +150,15 @@ D-60,,AlphaGo,model,historical,ready,,content/entries/model/D-60_alphago[済].md
 D-61,,AlphaFold,model,historical,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/model/D-61_alphafold[済].md
 D-70,,Amical,model,ai_solution,ready,情報限定的。公式確認が必要（2026-04-30）,content/entries/model/D-70_amical[済].md
 D-71,,Whisper,model,voice_audio,ready,OpenAI のオープン音声認識モデル,content/entries/model/D-71_whisper[済].md
+D-80,,MiniMax M 系,model,open,drafting,Stage16 追補 3。MiniMax の文章・コーディング向けモデル。M3 は重み公開,content/entries/model/D-80_minimax_m.md
+D-81,,MiMo,model,open,drafting,Stage16 追補 3。Xiaomi のモデル。V2.6-Pro を MIT で重み公開,content/entries/model/D-81_mimo.md
+D-82,,Inkling,model,open,drafting,Stage16 追補 3。Thinking Machines Lab の公開モデル。Apache 2.0,content/entries/model/D-82_inkling.md
+D-83,,Amazon Nova,model,other_closed,drafting,Stage16 追補 3。Amazon の自社モデル。Bedrock 経由で提供,content/entries/model/D-83_amazon_nova.md
+D-84,,Doubao 系,model,other_closed,drafting,Stage16 追補 3。ByteDance のモデル。Doubao-Seed 2.x,content/entries/model/D-84_doubao.md
+D-85,,ERNIE 系,model,open,drafting,Stage16 追補 3。Baidu のモデル。4.5 以降は一部を重み公開,content/entries/model/D-85_ernie.md
+D-86,,Hunyuan 系,model,open,drafting,Stage16 追補 3。Tencent のモデル。Hy3 を重み公開,content/entries/model/D-86_hunyuan.md
+D-87,,Command 系,model,open,drafting,Stage16 追補 3。Cohere の企業向けモデル。A+ を Apache 2.0 で公開,content/entries/model/D-87_command.md
+D-88,,LFM 系,model,open,drafting,Stage16 追補 3。Liquid AI の端末向け小型モデル,content/entries/model/D-88_lfm.md
 E-1,,SWE-Bench,benchmark,coding,ready,,content/entries/benchmark/E-1_swe_bench[済].md
 E-2,,SWE-Bench Verified,benchmark,coding,ready,,content/entries/benchmark/E-2_swe_bench_verified[済].md
 E-3,,Terminal-Bench,benchmark,coding,ready,,content/entries/benchmark/E-3_terminal_bench[済].md
