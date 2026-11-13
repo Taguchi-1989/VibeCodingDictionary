@@ -10,15 +10,16 @@ importance: C
 figure_type: timeline
 page_layout: spread_v1
 start_date: 2021
-version_status: active
+version_status: deprecated
 pricing_note: freemium
 evaluation_date: 2026-04-29
+last_audited: 2026-11-13
 related_terms:
   - OpenAI
   - ChatGPT
   - 拡散モデル
   - Stable Diffusion
-  - Imagen
+  - GPT Image 系
 status: ready
 ---
 
@@ -26,7 +27,7 @@ status: ready
 
 ## tagline
 
-OpenAI のテキストから画像を生成するモデルです。指示文を書くだけで画像が出力されます。
+OpenAI の画像生成モデルです。2025 年 3 月に ChatGPT では GPT Image へ交代しました。
 
 <!-- ━━━━━━━━ 左ページ ━━━━━━━━ -->
 
@@ -36,23 +37,24 @@ OpenAI のテキストから画像を生成するモデルです。指示文を�
 
 ## どこで出会うか
 
-ChatGPT のチャット画面から「猫が宇宙服を着た絵を描いて」と頼むと DALL-E が動きます。画像つき資料の下書き作成や SNS 投稿用の素材づくりで使われることがあります。
+2023 年 10 月から 2025 年 3 月まで、ChatGPT で絵を頼むと DALL-E 3 が動いていました。以降は GPT Image 系が動きます。画像生成の歴史や比較の文脈で名前を目にすることがあります。
 
 ## メイン図
 
 ### 図の狙い
 
-DALL-E 1（2021）→ DALL-E 2（2022）→ DALL-E 3（2023）の 3 世代を時系列で示し、各世代でどう精度と利便性が上がってきたかを 1 枚で把握できるようにします。
+DALL-E 1（2021）→ DALL-E 2（2022）→ DALL-E 3（2023）の 3 世代と、2025 年 3 月の GPT Image への交代を時系列で示し、DALL-E の位置づけを 1 枚で把握できるようにします。
 
 ### タイムライン（figure_type: timeline）
 
 - DALL-E 1（2021年1月）：テキストから画像生成の概念実証。品質はまだ荒削り
 - DALL-E 2（2022年4月）：解像度と写実性が大幅に向上。インペインティング（部分修正）も対応
 - DALL-E 3（2023年10月）：ChatGPT との統合。プロンプトの読み取り精度が向上し、指示通りの画像が出やすくなりました
+- 2025年3月：ChatGPT の画像生成が GPT Image（D-28）に交代。以降 ChatGPT で DALL-E 3 は動きません
 
 ## 会話での使い方例
 
-「DALL-E に頼めば ChatGPT から直接画像が生成できます。」
+「DALL-E は ChatGPT の絵を担った画像モデルで、今は GPT Image に交代しました。」
 
 <!-- ━━━━━━━━ 右ページ ━━━━━━━━ -->
 
@@ -76,11 +78,11 @@ DALL-E 1（2021）→ DALL-E 2（2022）→ DALL-E 3（2023）の 3 世代を時
 
 ### 5. はじめに
 
-ChatGPT 統合済みの DALL-E 3 が現在の入口です。
+今の入口は GPT Image 系で、DALL-E は歴史として読みます。
 
 ### 6. 深掘り先
 
-拡散モデル、Stable Diffusion、Imagen
+GPT Image 系、拡散モデル、Stable Diffusion
 
 ## 開発フローでの位置（必須）
 
@@ -96,7 +98,7 @@ ChatGPT 統合済みの DALL-E 3 が現在の入口です。
 - ChatGPT
 - 拡散モデル
 - Stable Diffusion
-- Imagen
+- GPT Image 系
 
 <!-- ━━━━━━━━ 著者記入欄（AI は触らない） ━━━━━━━━ -->
 
@@ -125,7 +127,7 @@ ChatGPT 統合済みの DALL-E 3 が現在の入口です。
 
 ### メイン図（左ページ中段 / figure_type: timeline）
 
-- 描く内容: 横軸に「2021 DALL-E 1」→「2022 DALL-E 2」→「2023 DALL-E 3」を矢印で結ぶ。各世代の代表的な変化（荒削り→高解像度→ChatGPT 統合）を吹き出しで添える
+- 描く内容: 横軸に「2021 DALL-E 1」→「2022 DALL-E 2」→「2023 DALL-E 3」を矢印で結び、末尾に「2025-03 GPT Image へ交代」の分岐矢印を足す（2026-11-13 追記）。各世代の代表的な変化（荒削り→高解像度→ChatGPT 統合）を吹き出しで添える
 - 登場人物: 画面脇に人物キャラクター（著者）が DALL-E 3 の時系列を指差している
 - 吹き出し・心の声: DALL-E 3 の箇所に「ChatGPT から直接指示できます」と吹き出し
 - 中央に置くキーワード: テキスト → 画像
@@ -146,6 +148,7 @@ ChatGPT 統合済みの DALL-E 3 が現在の入口です。
 
 - Stable Diffusion（D-54）との住み分け：D-54 はオープンソースで自前環境構築・細かいパラメータ制御が中心。DALL-E は ChatGPT 経由で気軽に試せる「入口」として位置づける
 - Imagen（D-51）との住み分け：D-51 は Google のモデル。本エントリは OpenAI 系の文脈で書く
+- GPT Image 系（D-28）との住み分け（2026-11-13 追記）：2025-03 以降の ChatGPT の画像生成は D-28。本エントリは DALL-E 1〜3 の歴史に絞る
 - Sora（D-52）との住み分け：D-52 は動画生成。本エントリは静止画のみ扱う
 - 拡散モデル（J-23）の詳細な仕組みは J-23 に委ねる。本エントリでは「ノイズから段階的に生成」の一句に留める
 
@@ -153,7 +156,13 @@ ChatGPT 統合済みの DALL-E 3 が現在の入口です。
 
 - openai.com/dall-e-3 — checked 2026-04-29
 - OpenAI blog "DALL-E 3 is now available in ChatGPT Plus" — checked 2026-04-29
+- OpenAI の GPT Image に関する発表・報道（検索経由）— checked 2026-11-13
+- Stage 16 ブリーフ 追補 5（ledgers/stage16_briefs_2026-11.md）— checked 2026-11-13
 
 ## 備考
 
-モデル名・提供形態・商用利用条件は時変情報です。API 経由の単独提供は後継サービス（GPT-Image 系）に移行中で、評価日時点では ChatGPT 統合が主な利用経路です。商用利用前に最新の利用規約を確認してください。
+モデル名・提供形態・商用利用条件は時変情報です。商用利用前に利用規約を確認してください。
+
+- **2026-11-13 鮮度監査**：ChatGPT の画像生成は 2025-03 に GPT Image 1（GPT-4o ベース）へ交代しており、「ChatGPT で頼むと DALL-E が動く」は 2025-03 以降は当てはまらないため、本文を過去の話として時点を固定した（一次未確認・検索経由）。旧備考の「評価日時点では ChatGPT 統合が主な利用経路」は上書き
+- `version_status` は active → deprecated に変更。D-14 Claude Mythos Preview が後継登場後に deprecated へ変えた前例に合わせ、「後継に交代済みで、新規に勧めない」状態を deprecated と判断した。DALL-E の API の最終提供終了日は未確認
+- 著者の「私のコメント」は 2026-04 時点の印象のため触れていない

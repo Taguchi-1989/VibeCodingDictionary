@@ -1,6 +1,6 @@
 # 著者記入欄キュー（author fill queue）
 
-*自動生成: 2026-11-13 21:05 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
+*自動生成: 2026-11-13 21:14 / `scripts/update_author_fill_queue.py`。手で編集しないでください。*
 
 「非エンジニアのつまずき」「私のコメント」は**著者本人しか書けない欄**です。AI は空スケルトンを置くだけで、中身には触りません。
 
@@ -8,8 +8,8 @@
 
 - **完了**（つまずき 1 件以上 ＋ コメント 4 ラベル全部）: 452 件
 - **途中**（書きかけで止まっている）: 0 件
-- **手つかず**（両方まるごと空）: 47 件
-- **合計**: 499 件
+- **手つかず**（両方まるごと空）: 48 件
+- **合計**: 500 件
 
 ---
 
@@ -19,9 +19,9 @@ _なし_
 
 ---
 
-## ⬜ 手つかず（両方まるごと空）（47 件）
+## ⬜ 手つかず（両方まるごと空）（48 件）
 
-letter 別: C 13件 / D 20件 / E 4件 / G 1件 / H 7件 / J 2件
+letter 別: C 13件 / D 21件 / E 4件 / G 1件 / H 7件 / J 2件
 
 | ID | title | status | reader_level | path |
 | :-- | :-- | :-- | :-- | :-- |
@@ -44,6 +44,7 @@ letter 別: C 13件 / D 20件 / E 4件 / G 1件 / H 7件 / J 2件
 | D-16 | Claude Fable / Mythos | needs_review | 3 | `content/entries/model/D-16_claude_fable_mythos[人書].md` |
 | D-17 | Claude 5.5 系 | needs_review | 2-3 | `content/entries/model/D-17_claude55[人書].md` |
 | D-27 | GPT-6 系 | needs_review | 2-3 | `content/entries/model/D-27_gpt6[人書].md` |
+| D-28 | GPT Image 系 | needs_review | 2-3 | `content/entries/model/D-28_gpt_image[人書].md` |
 | D-36 | Muse 系 | needs_review | 3 | `content/entries/model/D-36_muse[人書].md` |
 | D-37 | Jev | needs_review | 3 | `content/entries/model/D-37_jev[人書].md` |
 | D-48 | DeepSeek V4 | needs_review | 3 | `content/entries/model/D-48_deepseek_v4[人書].md` |

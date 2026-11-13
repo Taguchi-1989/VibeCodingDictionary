@@ -370,3 +370,41 @@
 
 - 会社は C-18（Alibaba）、モデルは D-87（Command 系）・D-88（LFM 系）の入れ方に合わせる（ファイル名は Glob で確認）
 - IBM はタイトルが略称なので、**tagline 冒頭に「International Business Machines の略。」**を入れ、`title_reading` は「インターナショナルビジネスマシーンズ」とする（表の「アイビーエム」ではなくこちらを採用。略称ルール）
+
+---
+
+## 追補 5（2026-11-13 同日）: Google・OpenAI・Anthropic の最新モデルの取りこぼし
+
+著者の指示:「Google のモデルや OpenAI、Anthropic のモデルの最新も入れてね」。3 社について 2026-11-13 時点でもう一度確認しました。
+
+### 確認結果
+
+- **Anthropic（platform.claude.com のモデル一覧を直接取得して確認 ★）**: 掲載の「Latest models」は Claude Fable 5.2／Opus 5.5／Sonnet 5.5／Haiku 5.5 の 4 本。限定提供に Mythos 5.2。**本書の D-16（5.2 追記済み）と D-17 で足りており、新しい名前は無い**。既定の effort は Fable 5.2 が high、Opus 5.5 が medium、Sonnet 5.5 が high、Haiku 5.5 が medium。全モデル文脈 100 万・出力 12.8 万トークン。提供終了は「2027 年秋より前には行わない」と明記
+- **Google（検索経由）**
+  - **Gemini 4 Carbon が 2026-11-10 に一般公開**（VentureBeat ほか複数）。Gemini API の有料枠、企業向け、Google AI Ultra の加入者（Gemini アプリ・検索の AI Mode・Antigravity）で使える。API の無料枠には無い。導入価格 $2／$10 は 11-30 まで、12-01 から $4／$20。**D-6 の「Carbon は一般には未提供」は誤りになった**
+  - **Gemini 4 Hydrogen（11-12）** は D-6 に反映済み。Gemini アプリと Google 検索で 3.8 Flash を置き換えたと報じられる
+  - 画像: **Nano Banana 2（2026-02）→ Nano Banana 2.1（2026-10-06、API ID `gemini-nano-banana-2.1`、価格は 2 の半額、文字の描画と複数ターンでの人物の一貫性が向上）**。上位に Nano Banana Pro（Gemini 3 Pro Image）。**D-55 の「正式名称は Gemini 2.5 Flash Image」は初代の話**で、世代が進んでいる
+  - 動画: Veo は 3.1（2025-10）と 3.1 Lite（2026-04）まで。Veo 4 は 2026-09 時点で未公開（第三者サイトの確認）。D-53 は今回触らない
+- **OpenAI（検索経由）**
+  - **GPT-6 Cyber（2026-11-05）**: GPT-6 Astra をもとにした、許可された脆弱性研究向けの版。信頼アクセスの最上段 **Daybreak Red** の承認顧客に、API と Codex で提供。価格は未公表。OpenAI の自己評価でサイバー能力が「Critical」（前の GPT-5.6 Cyber は「High」）。Firefox の深刻な欠陥 81 件を見つけたと発表
+  - **画像は DALL-E から GPT Image に替わっている**: GPT Image 1（2025-03、GPT-4o ベース。ChatGPT で DALL-E 3 を置き換え）→ 1.5（2025-12-16）→ GPT Image 2（2026-04）→ 2.5（2026-09-08）→ **2.6（2026-11-04）**。2.6 は**動く GIF の生成**と、**自分・ペット・キャラクターの参照画像を保存して使い回す機能**。API は速さ重視の **Flare**（最短 6 秒）と品質重視の **Sunburst** の 2 本。ChatGPT と Codex の全プランで使える。**D-50 の「ChatGPT で頼むと DALL-E が動く」は 2025-03 以降は当てはまらない**
+  - **Sora は終了**: アプリと sora.com は 2026-04-26 に停止、API は 2026-09-24 に終了。理由は公式には示されず、計算資源・費用・企業向けへの集中と報じられる。後継の動画モデルは 2026-10 時点で発表なし（映像スタートアップとの協議の報道あり）。**D-52 の「ChatGPT Pro・Plus から sora.com で利用」は誤りになった**
+
+### 新規 1 件
+
+| ID | title | title_reading | category | subtype | figure_type | reader_level | importance |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| D-28 | GPT Image 系 | ジーピーティー イメージ系 | model | openai | timeline | 2-3 | B |
+
+- **D-28 GPT Image 系**: 上の「画像は DALL-E から GPT Image に替わっている」の事実で書く。核:「**ChatGPT で絵を頼むと動くのは、今は DALL-E ではなく GPT Image**。絵専用の別モデルではなく、会話するモデルの系統が絵も描く」。timeline 図（DALL-E 3 → GPT Image 1 → 1.5 → 2 → 2.5 → 2.6）。注意点は「版ごとに機能が増え、名前（Flare／Sunburst）も増える」。frontmatter は D-27（GPT-6 系）に合わせる。`start_date: 2025-03`、`version_status: active`、related は DALL-E／ChatGPT／Nano Banana／拡散モデル系の既存タイトル（CSV で確認）。タイトルが略称を含むので tagline 冒頭で「GPT（Generative Pre-trained Transformer）」の展開までは不要（既存の GPT-6 系・GPT-5 系に合わせる）
+
+### 改訂 6 件（`last_audited: 2026-11-13`、`evaluation_date`・status・著者記入欄は変えない）
+
+| ID | 何を直すか |
+| :-- | :-- |
+| D-6 Gemini 4 系 | Carbon が 2026-11-10 に一般公開。「一般には未提供」「自分では使えない」「鍵のかかった Carbon」という本文・会話例・見どころ 3・開発フロー・メイン図・ポンチ絵メモを直す。新しい核は「**最初は限定、約 2 週間で一般公開。ただし有料枠と上位プランから**」。導入価格の期限は備考へ |
+| D-27 GPT-6 系 | GPT-6 Cyber（2026-11-05）を備考とコミュニティ補完メモに追記。本文は「限定提供の版がある」の範囲で必要最小限 |
+| J-151 トラステッドアクセス | Google の例を「Carbon は Fairwind で先行提供のあと 2026-11-10 に一般公開」に。OpenAI の例に Daybreak Red と GPT-6 Cyber。本文で「最上位は限定提供のまま」と読める箇所があれば「**先に限定で出し、あとから広げる例もある**」に |
+| D-50 DALL-E | 「ChatGPT で頼むと DALL-E が動く」を過去の話として時点を固定（2025-03 に GPT Image へ交代）。`version_status` は既存の退役済みモデルの入れ方に合わせて見直す。D-28 への導線。著者の「私のコメント」は 2026-04 時点の印象なので触らない |
+| D-52 Sora | 2026-04-26 にアプリ停止、2026-09-24 に API 終了。tagline・どこで出会うか・見どころ・開発フローを過去形と「終了した」に。`version_status: deprecated`。メイン図の年表に終了を足す |
+| D-55 Nano Banana | 「正式名称は Gemini 2.5 Flash Image」を初代の話にし、Nano Banana 2／2.1／Pro の世代を反映。LMArena の順位の記述は時点を固定するか備考へ |

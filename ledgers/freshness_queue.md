@@ -8,13 +8,13 @@
 
 ## 1. 全体像
 
-- 監査対象: **499 件**（skeleton / sample / archived と前付け・巻末は対象外）
-- 期限超過: **226 件**
+- 監査対象: **500 件**（skeleton / sample / archived と前付け・巻末は対象外）
+- 期限超過: **223 件**
 - 確認日が読めない: 0 件
 
 | Tier | 意味 | 再確認の期限 | 件数 | 期限超過 |
 | :-- | :-- | --: | --: | --: |
-| S（高） | モデル・サービス・ベンチマーク・MCP・有料/フリーミアム・preview/deprecated | 90 日 | 198 | 125 |
+| S（高） | モデル・サービス・ベンチマーク・MCP・有料/フリーミアム・preview/deprecated | 90 日 | 199 | 122 |
 | A（中） | ツール用語・人物組織・ワークフロー、または本文に時変シグナル 3 種以上 | 180 日 | 124 | 101 |
 | B（低） | 一般用語・歴史・概念など、外の世界が動いても古くならないもの | 365 日 | 177 | 0 |
 
@@ -22,9 +22,9 @@
 
 | 経過 | 件数 |
 | :-- | --: |
-| 90 日以内 | 141 |
+| 90 日以内 | 145 |
 | 91〜180 日 | 81 |
-| 181〜365 日 | 277 |
+| 181〜365 日 | 274 |
 
 ---
 
@@ -37,8 +37,8 @@
 | term_tool | 80 | ツールのバージョン・推奨手順の変化 |
 | service | 45 | 料金プラン・無料枠・提供地域・名称変更 |
 | person_org | 25 | 所属・役職・社名の変更 |
-| model | 21 | 後継モデルの有無・提供終了・コンテキスト長 |
 | benchmark | 18 | スコアの更新・上位モデルの入れ替わり |
+| model | 18 | 後継モデルの有無・提供終了・コンテキスト長 |
 | mcp | 11 | 公式／コミュニティの別・配布場所・対応クライアント |
 | term_general | 8 | 本文の時変シグナルを参照 |
 | term_llm | 6 | 本文の時変シグナルを参照 |
@@ -50,7 +50,7 @@
 
 ## 3. 期限超過エントリ
 
-### Tier S（高） — 125 件（期限 90 日）
+### Tier S（高） — 122 件（期限 90 日）
 
 | ID | 用語 | category | 最終確認 | 経過 | 時変シグナル | path |
 | :-- | :-- | :-- | :-- | --: | :-- | :-- |
@@ -81,9 +81,7 @@
 | D-42 | Gemma 系 | model | 2026-04-29※ | 198 日 | — | `content/entries/model/D-42_gemma[済].md` |
 | D-43 | Qwen 系 | model | 2026-04-29※ | 198 日 | モデル名／バージョン／時点表現 | `content/entries/model/D-43_qwen[済].md` |
 | D-47 | DeepSeek R1 | model | 2026-04-29※ | 198 日 | モデル名／時点表現 | `content/entries/model/D-47_deepseek_r1[済].md` |
-| D-50 | DALL-E | model | 2026-04-29※ | 198 日 | 時点表現 | `content/entries/model/D-50_dall_e[済].md` |
 | D-51 | Imagen | model | 2026-04-29※ | 198 日 | — | `content/entries/model/D-51_imagen[済].md` |
-| D-52 | Sora | model | 2026-04-29※ | 198 日 | 提供状況 | `content/entries/model/D-52_sora[済].md` |
 | D-54 | Stable Diffusion | model | 2026-04-29※ | 198 日 | バージョン | `content/entries/model/D-54_stable_diffusion[済].md` |
 | D-71 | Whisper | model | 2026-04-29※ | 198 日 | バージョン | `content/entries/model/D-71_whisper[済].md` |
 | E-2 | SWE-Bench Verified | benchmark | 2026-04-29※ | 198 日 | — | `content/entries/benchmark/E-2_swe_bench_verified[済].md` |
@@ -134,7 +132,6 @@
 | D-35 | Cursor Composer | model | 2026-04-30※ | 197 日 | — | `content/entries/model/D-35_cursor_composer[済].md` |
 | D-45 | GLM | model | 2026-04-30※ | 197 日 | モデル名／バージョン | `content/entries/model/D-45_glm[済].md` |
 | D-53 | Veo | model | 2026-04-30※ | 197 日 | 時点表現 | `content/entries/model/D-53_veo[済].md` |
-| D-55 | Nano Banana | model | 2026-04-30※ | 197 日 | モデル名／バージョン | `content/entries/model/D-55_nano_banana[済].md` |
 | D-56 | Seedance | model | 2026-04-30※ | 197 日 | — | `content/entries/model/D-56_seedance[済].md` |
 | D-57 | Flow | model | 2026-04-30※ | 197 日 | 価格 | `content/entries/model/D-57_flow[済].md` |
 | D-58 | Whisk | model | 2026-04-30※ | 197 日 | — | `content/entries/model/D-58_whisk[済].md` |
@@ -381,14 +378,6 @@ _なし_
 
 - `モデル名` 2025 年 1 月、o1 系と同等の推論性能をオープンウェイトで達成し「DeepSeek ショック」と呼ばれました。deepseek.com の API や Hugging Fa…
 
-**D-50 DALL-E**（198 日経過）
-
-- `時点表現` - DALL-E 1（2021年1月）：テキストから画像生成の概念実証。品質はまだ荒削り
-
-**D-52 Sora**（198 日経過）
-
-- `提供状況` - 2024-02：Sora 発表（研究プレビュー）— テキスト→動画の衝撃デモが公開
-
 **D-54 Stable Diffusion**（198 日経過）
 
 - `バージョン` SD 1.4 から SD3.5・Flux 系まで世代を追い、「ウェイト公開のモデルがどう進化してきたか」を一目で捉えてもらいます。
@@ -488,10 +477,6 @@ _なし_
 **D-53 Veo**（197 日経過）
 
 - `時点表現` テキスト・画像・既存動画を入力として、リアルな質感とカメラワークを持つ動画を生成します。Veo 3（2025 年）では環境音・対話・効果音まで含む音声付き動画を出力できます。
-
-**D-55 Nano Banana**（197 日経過）
-
-- `モデル名` 画像の構図を崩さず衣装・背景・追加要素だけを差し替えます。正式名称は Gemini 2.5 Flash Image で、LMArena の画像評価で上位を維持しています。
 
 **D-57 Flow**（197 日経過）
 
