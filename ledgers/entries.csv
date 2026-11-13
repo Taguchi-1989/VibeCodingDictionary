@@ -75,6 +75,11 @@ C-14,,AMD,person_org,company,ready,半導体,content/entries/person/C-14_amd[済
 C-15,,Intel,person_org,company,ready,半導体IDM。EUV採用遅れ→18A復活途上,content/entries/person/C-15_intel[済].md
 C-16,,DeepSeek,person_org,company,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/person/C-16_deepseek[済].md
 C-17,,Sakana AI,person_org,company,ready,収録語の抜け監査（提案書 §4）で追加、v2 テンプレ本書き済（2026-08-10）,content/entries/person/C-17_sakana_ai[済].md
+C-18,,Alibaba,person_org,company,needs_review,Stage16 追補。Qwen の開発元。杭州、1999 年創業,content/entries/person/C-18_alibaba[人書].md
+C-19,,MiniMax,person_org,company,needs_review,Stage16 追補。上海、2021 年創業。M 系と動画の Hailuo,content/entries/person/C-19_minimax[人書].md
+C-20,,Xiaomi,person_org,company,needs_review,Stage16 追補。北京、2010 年創業。MiMo を重み公開,content/entries/person/C-20_xiaomi[人書].md
+C-21,,Thinking Machines Lab,person_org,company,needs_review,Stage16 追補。Mira Murati 氏が 2025 年創業。Tinker と Inkling,content/entries/person/C-21_thinking_machines_lab[人書].md
+C-22,,TypeSafe AI,person_org,company,needs_review,Stage16 追補。Jev の開発元。2024 年創業,content/entries/person/C-22_typesafe_ai[人書].md
 C-50,,Sam Altman,person_org,person,ready,,content/entries/person/C-50_sam_altman[済].md
 C-51,,Dario Amodei,person_org,person,ready,,content/entries/person/C-51_dario_amodei[済].md
 C-52,,Demis Hassabis,person_org,person,ready,,content/entries/person/C-52_demis_hassabis[済].md
@@ -485,4 +490,3 @@ J-149,,第三者認証と自己宣言,term_general,management_system,ready,Stage
 J-150,,トレーサビリティ,term_general,management_system,ready,Stage14。後から辿れるように残す。J-133 は動いているものを見る話で目的が違う,content/entries/term_general/J-150_traceability[済].md
 J-151,,トラステッドアクセス,term_general,ai_safety,needs_review,Stage15。最強能力を検証済み組織だけに開く。CVP／Daybreak／Fairwind,content/entries/term_general/J-151_trusted_access[人書].md
 J-152,,蒸留攻撃,term_general,ai_safety,needs_review,Stage15。他社モデルの能力を無断で写し取る。preserved thinking などの対策,content/entries/term_general/J-152_distillation_attacks[人書].md
-J-153,,ジェボンズのパラドックス,term_general,ai_concept,needs_review,Stage16。効率が上がって安くなるほど総消費が増える現象。AI のトークン単価と総支出,content/entries/term_general/J-153_jevons_paradox[人書].md

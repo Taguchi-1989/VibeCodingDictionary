@@ -13,6 +13,7 @@ start_date: 2023-03
 version_status: active
 pricing_note: freemium
 evaluation_date: 2026-04-29
+last_audited: 2026-11-13
 related_terms:
   - Kimi
   - DeepSeek V3
@@ -152,6 +153,7 @@ Kimi（D-44）、DeepSeek V3（D-46）、Qwen（D-43）
 - D-44 Kimi との住み分け: 本エントリは企業としての Moonshot AI を扱います。モデルの仕様・使い方は D-44 Kimi へ誘導します
 - C-2 Anthropic との住み分け: どちらも AI 企業エントリですが、Anthropic は Claude（B-2）の開発元として別エントリで扱います
 - D-46 DeepSeek V3 との住み分け: Kimi K2 と DeepSeek 系の性能比較は D-46 側で触れるのが自然です。本エントリは企業紹介にとどめます
+- E-52 Artificial Analysis Intelligence Index との関係: Kimi K3.1 Pro が 2026-11 時点でオープンウェイトの上位（46 点）と報じられています（2026-11-13 追記）。順位は時点で入れ替わるため、詳細は E-52 側で扱います
 
 
 ## 出典メモ
@@ -165,3 +167,4 @@ Kimi（D-44）、DeepSeek V3（D-46）、Qwen（D-43）
 - 「六小虎」の構成: Zhipu AI / MiniMax / Baichuan Intelligence / 01.AI / Moonshot AI / StepFun の 6 社。記事によって表記ゆれがあります
 - Kimi K2 は 2025 年公開のオープンウェイトモデル。コーディング・エージェンティック性能で注目されました（evaluation_date 以降の動向は再確認が必要）
 - 共同創業者: Yang Zhilin（楊植麟、CEO）/ Zhou Xinyu / Wu Yuxin。Alibaba・Tencent などが出資しています
+- 追記（2026-11-13）: Kimi K3.1 Pro が 2026-11 時点で Artificial Analysis のオープンウェイト上位（46 点）と報じられています。同じ 46 点で Xiaomi の MiMo を首位とする記事もあり、時点で入れ替わります。誌面本文は evaluation_date（2026-04-29）時点のままです。検索経由の情報で、一次未確認です

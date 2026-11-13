@@ -16,14 +16,14 @@
 | `F-model-google` | Google の最新モデル世代（Gemini 系） | モデル世代 | 2026-11-13（0 日前） | 90 日 | 15 |
 | `F-model-meta` | Meta のオープンウェイトモデル（Llama 系） | モデル世代 | 2026-11-13（0 日前） | 180 日 | 7 |
 | `F-model-xai` | xAI（SpaceXAI）の Grok 系 | モデル世代 | 2026-11-06（7 日前） | 90 日 | 1 |
-| `F-org-anthropic-ipo` | Anthropic の株式上場（IPO） | 提供状況 | 2026-11-06（7 日前） | 14 日 | 1 |
+| `F-org-anthropic-ipo` | Anthropic の株式上場（IPO） | 提供状況 | 2026-11-06（7 日前） | 14 日 | 2 |
 | `F-spec-context-length` | 主要モデルのコンテキスト長 | 仕様 | ⏰ **未確認** | 90 日 | 10 |
 | `F-price-chatgpt` | ChatGPT の料金プラン | 料金 | ⏰ **未確認** | 90 日 | 2 |
 | `F-price-claude` | Claude の料金プラン | 料金 | 2026-11-06（7 日前） | 90 日 | 3 |
 | `F-price-gemini` | Gemini の料金プラン・無料枠 | 料金 | ⏰ **未確認** | 90 日 | 2 |
 | `F-price-dev-tools` | 開発ツールの料金（Cursor / Copilot / ホスティング等） | 料金 | ⏰ **未確認** | 90 日 | 27 |
 | `F-bench-swebench` | SWE-Bench 系のスコア水準 | ベンチマーク | ⏰ **未確認** | 90 日 | 16 |
-| `F-bench-aa-index` | Artificial Analysis Intelligence Index の版と上位 | ベンチマーク | 2026-11-13（0 日前） | 60 日 | 1 |
+| `F-bench-aa-index` | Artificial Analysis Intelligence Index の版と上位 | ベンチマーク | 2026-11-13（0 日前） | 60 日 | 4 |
 | `F-bench-leaderboard` | ベンチマークのスコア・順位（数値を書いている箇所） | ベンチマーク | ⏰ **未確認** | 90 日 | 12 |
 | `F-spec-mcp` | MCP の仕様と公式サーバーの顔ぶれ | 仕様 | ⏰ **未確認** | 90 日 | 19 |
 | `F-availability-preview` | ベータ・プレビュー表記 | 提供状況 | ⏰ **未確認** | 90 日 | 17 |
@@ -108,9 +108,9 @@
 - **最終確認**: 2026-11-06（7 日前）（期限 14 日）
 - **確認先**: Anthropic 公式ニュース — https://www.anthropic.com/news/s1-sec
 - **注意**: 上場したら C-2 の「申請しました」を「上場しました」に、メイン図の節目の帯も差し替える
-- **影響エントリ**: 1 件
+- **影響エントリ**: 2 件
 
-  C-2 Anthropic
+  C-2 Anthropic、C-19 MiniMax
 
 ### `F-spec-context-length` 主要モデルのコンテキスト長
 
@@ -185,9 +185,9 @@
 - **最終確認**: 2026-11-13（0 日前）（期限 60 日）
 - **確認先**: Artificial Analysis リーダーボード — https://artificialanalysis.ai/leaderboards/models
 - **注意**: 版が変わるとスコアの意味が変わる（v5 は v4 と直接比較不可）。版番号も一緒に確認する
-- **影響エントリ**: 1 件
+- **影響エントリ**: 4 件
 
-  E-52 Artificial Analysis Intelligence Index
+  C-18 Alibaba、C-19 MiniMax、C-20 Xiaomi、E-52 Artificial Analysis Intelligence Index
 
 ### `F-bench-leaderboard` ベンチマークのスコア・順位（数値を書いている箇所）
 

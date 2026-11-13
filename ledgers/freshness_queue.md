@@ -8,23 +8,23 @@
 
 ## 1. 全体像
 
-- 監査対象: **476 件**（skeleton / sample / archived と前付け・巻末は対象外）
-- 期限超過: **228 件**
+- 監査対象: **480 件**（skeleton / sample / archived と前付け・巻末は対象外）
+- 期限超過: **226 件**
 - 確認日が読めない: 0 件
 
 | Tier | 意味 | 再確認の期限 | 件数 | 期限超過 |
 | :-- | :-- | --: | --: | --: |
-| S（高） | モデル・サービス・ベンチマーク・MCP・有料/フリーミアム・preview/deprecated | 90 日 | 176 | 127 |
-| A（中） | ツール用語・人物組織・ワークフロー、または本文に時変シグナル 3 種以上 | 180 日 | 123 | 101 |
+| S（高） | モデル・サービス・ベンチマーク・MCP・有料/フリーミアム・preview/deprecated | 90 日 | 179 | 125 |
+| A（中） | ツール用語・人物組織・ワークフロー、または本文に時変シグナル 3 種以上 | 180 日 | 124 | 101 |
 | B（低） | 一般用語・歴史・概念など、外の世界が動いても古くならないもの | 365 日 | 177 | 0 |
 
 ### 最終確認からの経過
 
 | 経過 | 件数 |
 | :-- | --: |
-| 90 日以内 | 116 |
+| 90 日以内 | 122 |
 | 91〜180 日 | 81 |
-| 181〜365 日 | 279 |
+| 181〜365 日 | 277 |
 
 ---
 
@@ -36,7 +36,7 @@
 | :-- | --: | :-- |
 | term_tool | 80 | ツールのバージョン・推奨手順の変化 |
 | service | 45 | 料金プラン・無料枠・提供地域・名称変更 |
-| person_org | 27 | 所属・役職・社名の変更 |
+| person_org | 25 | 所属・役職・社名の変更 |
 | model | 21 | 後継モデルの有無・提供終了・コンテキスト長 |
 | benchmark | 18 | スコアの更新・上位モデルの入れ替わり |
 | mcp | 11 | 公式／コミュニティの別・配布場所・対応クライアント |
@@ -50,7 +50,7 @@
 
 ## 3. 期限超過エントリ
 
-### Tier S（高） — 127 件（期限 90 日）
+### Tier S（高） — 125 件（期限 90 日）
 
 | ID | 用語 | category | 最終確認 | 経過 | 時変シグナル | path |
 | :-- | :-- | :-- | :-- | --: | :-- | :-- |
@@ -73,11 +73,9 @@
 | B-30 | Amazon Bedrock | service | 2026-04-29※ | 198 日 | モデル名 | `content/entries/service/B-30_amazon_bedrock[済].md` |
 | B-51 | ChatGPT の料金プラン | service | 2026-04-29※ | 198 日 | モデル名／価格 | `content/entries/service/B-51_chatgpt_pricing[済].md` |
 | B-52 | Gemini の料金プラン | service | 2026-04-29※ | 198 日 | モデル名／バージョン | `content/entries/service/B-52_gemini_pricing[済].md` |
-| C-4 | Meta AI | person_org | 2026-04-29※ | 198 日 | — | `content/entries/person/C-4_meta_ai[済].md` |
 | C-6 | Mistral AI | person_org | 2026-04-29※ | 198 日 | モデル名／バージョン | `content/entries/person/C-6_mistral_ai[済].md` |
 | C-7 | Hugging Face | person_org | 2026-04-29※ | 198 日 | モデル名／時点表現 | `content/entries/person/C-7_hugging_face[済].md` |
 | C-8 | Microsoft AI | person_org | 2026-04-29※ | 198 日 | — | `content/entries/person/C-8_microsoft_ai[済].md` |
-| C-10 | Moonshot AI | person_org | 2026-04-29※ | 198 日 | モデル名／時点表現 | `content/entries/person/C-10_moonshot_ai[済].md` |
 | D-26 | gpt-oss | model | 2026-04-29※ | 198 日 | モデル名／バージョン | `content/entries/model/D-26_gpt_oss[済].md` |
 | D-41 | Mistral 系 | model | 2026-04-29※ | 198 日 | モデル名／バージョン | `content/entries/model/D-41_mistral[済].md` |
 | D-42 | Gemma 系 | model | 2026-04-29※ | 198 日 | — | `content/entries/model/D-42_gemma[済].md` |
@@ -363,11 +361,6 @@ _なし_
 
 - `モデル名` Llama や Mistral などのオープンモデルを探すとき、最初に行き着く場所です。transformers ライブラリは Python で AI を扱う事実上の標準で、コード…
 - `時点表現` - 中心に置く概念: Hugging Face（2016 年設立）
-
-**C-10 Moonshot AI**（198 日経過）
-
-- `モデル名` 「Moonshot の Kimi K2、オープンウェイトで DeepSeek 系と並ぶ評価らしいですよね。」
-- `時点表現` 2023 年創業の中国 AI 企業。長文処理に強い LLM「Kimi」シリーズを開発しています。
 
 **D-26 gpt-oss**（198 日経過）
 
